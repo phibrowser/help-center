@@ -37,6 +37,64 @@ pnpm build
 
 No open implementation issues are known at initial setup time. Future content structure can be expanded once Phi has finalized the Help, FAQ, and Docs information architecture.
 
+## Content scope update
+
+The site's short-term purpose was refined to be primarily an information site:
+host help docs and orient new users. It is intentionally not a download landing
+page, because the official marketing site already makes downloading prominent.
+
+Changes made for this scope:
+
+- Added a `Get started` page (`site/get-started/index.md`) that folds in the two
+  install methods. The official `.dmg` download from
+  <https://phibrowser.com/download/> is presented as the primary path, with
+  Homebrew (`brew install --cask phibrowser/tap/phi`) as the alternative.
+- Removed the placeholder `FAQ` and `Docs` sections. FAQ content is already
+  covered on the marketing site, and a separate Docs section is not meaningful
+  yet. The site now has two sections: `Get started` and `Help`.
+- The home page stays informational: neutral hero actions (`Get started`,
+  `Browse Help`) with no strong download call-to-action.
+
+Open issue: the repo-level `README.md` and `package.json` still describe the
+project as a "Help, FAQ, and documentation site for Phi." These were left as-is
+as repository metadata; update them if the FAQ/Docs framing should be dropped
+there too.
+
+## New-user guides
+
+The `Help` section was filled in with narrative new-user guides that orient a
+brand-new Phi user. They intentionally **complement, not duplicate**, the
+official FAQ at <https://phibrowser.com/help/>, which is already a thorough
+Q&A reference. These guides give the "what / why / how to think about it" and
+cross-link to the official FAQ for step-level answers.
+
+Pages under `site/help/`:
+
+- `index.md` — overview ("What is Phi"), doubling as the Guides landing page.
+- `layouts.md` — why a vertical sidebar, the three layout modes (Performance /
+  Balanced / Comfortable), tabs/pinned tabs/bookmarks (and how bookmarks differ
+  per mode), Split View, Tab Groups, and how the assistant reads layout context.
+- `ai.md` — Memory, the Assistant, and Skills (Memory's local-first handling,
+  how to reach the assistant, what it can do).
+- `automation.md` — agentic capabilities: on-demand actions, scheduled tasks,
+  Phi Sentinel (the menu-bar background orchestrator), and Phi Link (Telegram).
+- `privacy.md` — local-first model, what Phi does not collect, the cloud-LLM
+  processing nuance, viewing/deleting memory, turning AI off (which permanently
+  wipes memory), and the open-source core.
+
+The `get-started/index.md` page also gained a "First run" and "Coming from
+Chrome?" section. The sidebar in `site/.vitepress/config.mts` is grouped into
+`Get started` and `Guides`.
+
+Source material and accuracy: the guides were grounded in user-facing facts
+confirmed from the official site (phibrowser.com and the full answer text of its
+`/help/` FAQ) and the sibling repositories `../phibrowser-mac/` and
+`../phi-ai/`. Concrete UI references that appear in the guides (e.g.
+`Settings → Phi AI`, `View → Always show bookmark bar`, right-click
+`Open as Split`, the floating chat button, the menu-bar Sentinel, `cmd+tab`) are
+taken directly from the official FAQ rather than invented. Anything not
+confirmed there is kept general, and step-level detail is deferred to the FAQ.
+
 ## Future updates
 
 When raising the minimum Node.js or pnpm major version, update all of these together:
