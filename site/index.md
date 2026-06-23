@@ -5,6 +5,10 @@ hero:
   name: Phi Help Center
   text: Help, FAQ, and documentation
   tagline: Find answers, product guidance, and reference material for Phi.
+  image:
+    light: /phi-mark-dark.svg
+    dark: /phi-mark-light.svg
+    alt: Phi
   actions:
     - theme: brand
       text: Browse Help
