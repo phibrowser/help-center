@@ -1,0 +1,5 @@
+/* Enlarge the nav bar logo (default is 24px). */
+.VPNavBarTitle .logo {
+  height: 32px;
+  width: auto;
+}
