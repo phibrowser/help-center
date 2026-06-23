@@ -1,6 +1,6 @@
 # Help Center
 
-Help, FAQ, and documentation site for Phinomenon.
+Help, FAQ, and documentation site for Phi.
 
 ## Requirements
 

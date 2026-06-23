@@ -2,7 +2,7 @@
   "name": "help-center",
   "version": "0.1.0",
   "private": true,
-  "description": "Help, FAQ, and documentation site for Phinomenon.",
+  "description": "Help, FAQ, and documentation site for Phi.",
   "type": "module",
   "scripts": {
     "dev": "vitepress dev site --port ${PORT:-3000}",

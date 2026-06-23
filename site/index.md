@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: Phinomenon Help Center
+  name: Phi Help Center
   text: Help, FAQ, and documentation
-  tagline: Find answers, product guidance, and reference material for Phinomenon.
+  tagline: Find answers, product guidance, and reference material for Phi.
   actions:
     - theme: brand
       text: Browse Help

@@ -2,7 +2,7 @@
 
 ## Original requirement
 
-Create a public GitHub repository under the `Phinomenon` organization for a Help, FAQ, and Docs site. The site must use VitePress with pnpm, Prettier, Husky, and lint-staged. User-facing site content must live under `site/` so repository-level AI and handoff documentation can use `docs/` without colliding with the VitePress content tree.
+Create a public GitHub repository under the `phibrowser` organization for a Help, FAQ, and Docs site. The site must use VitePress with pnpm, Prettier, Husky, and lint-staged. User-facing site content must live under `site/` so repository-level AI and handoff documentation can use `docs/` without colliding with the VitePress content tree.
 
 The requested toolchain policy is minimum Node.js 24 and minimum pnpm 11, without maximum version caps or patch-level locks.
 
@@ -35,7 +35,7 @@ pnpm build
 
 ## Open issues
 
-No open implementation issues are known at initial setup time. Future content structure can be expanded once Phinomenon has finalized the Help, FAQ, and Docs information architecture.
+No open implementation issues are known at initial setup time. Future content structure can be expanded once Phi has finalized the Help, FAQ, and Docs information architecture.
 
 ## Future updates
 

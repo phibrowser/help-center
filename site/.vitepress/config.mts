@@ -1,8 +1,8 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "Phinomenon Help Center",
-  description: "Help, FAQ, and documentation for Phinomenon.",
+  title: "Phi Help Center",
+  description: "Help, FAQ, and documentation for Phi.",
   cleanUrls: true,
   themeConfig: {
     nav: [
@@ -22,7 +22,7 @@ export default defineConfig({
       },
     ],
     socialLinks: [
-      { icon: "github", link: "https://github.com/Phinomenon/help-center" },
+      { icon: "github", link: "https://github.com/phibrowser/help-center" },
     ],
   },
 });
