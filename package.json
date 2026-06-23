@@ -1,0 +1,28 @@
+{
+  "name": "help-center",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Help, FAQ, and documentation site for Phinomenon.",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev site --port ${PORT:-3000}",
+    "build": "vitepress build site",
+    "preview": "vitepress preview site --port ${PORT:-3000}",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky"
+  },
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=11"
+  },
+  "lint-staged": {
+    "*": "prettier --write --ignore-unknown"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.8",
+    "prettier": "^3.8.4",
+    "vitepress": "^1.6.4"
+  }
+}
