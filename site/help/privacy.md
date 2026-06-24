@@ -31,7 +31,3 @@ One important caveat: turning AI off **permanently wipes all memory and AI-relat
 ## Open source
 
 Phi's core is open source, so its behavior can be inspected rather than taken purely on trust.
-
----
-
-For specific questions about Phi's privacy model and data handling, see the [official FAQ](https://phibrowser.com/help/).

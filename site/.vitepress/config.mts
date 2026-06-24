@@ -1,8 +1,8 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "Phi Help Center",
-  description: "Help and getting-started docs for Phi.",
+  title: "Phi Help",
+  description: "Help and FAQ for Phi Browser.",
   cleanUrls: true,
   head: [
     ["link", { rel: "icon", type: "image/svg+xml", href: "/icon.svg" }],
@@ -12,22 +12,34 @@ export default defineConfig({
   themeConfig: {
     logo: { light: "/phi-mark-dark.svg", dark: "/phi-mark-light.svg" },
     nav: [
-      { text: "Get started", link: "/get-started/" },
       { text: "Help", link: "/help/" },
+      { text: "FAQ", link: "/faq/" },
     ],
     sidebar: [
       {
-        text: "Get started",
-        items: [{ text: "Install", link: "/get-started/" }],
-      },
-      {
-        text: "Guides",
+        text: "Help",
         items: [
           { text: "Overview", link: "/help/" },
+          { text: "Get started", link: "/get-started/" },
           { text: "Layouts & navigation", link: "/help/layouts" },
           { text: "Meet Phi AI", link: "/help/ai" },
           { text: "Automation & Phi Link", link: "/help/automation" },
           { text: "Privacy & your data", link: "/help/privacy" },
+        ],
+      },
+      {
+        text: "FAQ",
+        items: [
+          { text: "Overview", link: "/faq/" },
+          { text: "Layouts & navigation", link: "/faq/layouts" },
+          { text: "Bookmarks & tabs", link: "/faq/bookmarks" },
+          { text: "Split View & Tab Groups", link: "/faq/split-view" },
+          { text: "AI features", link: "/faq/ai" },
+          { text: "Phi Sentinel", link: "/faq/sentinel" },
+          { text: "Phi Link", link: "/faq/link" },
+          { text: "Pricing & availability", link: "/faq/pricing" },
+          { text: "Privacy & data", link: "/faq/privacy" },
+          { text: "Getting started", link: "/faq/getting-started" },
         ],
       },
     ],

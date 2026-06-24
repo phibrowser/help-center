@@ -1,6 +1,6 @@
-# Help Center
+# Phi Help
 
-Help, FAQ, and documentation site for Phi.
+Help and FAQ for Phi Browser.
 
 ## Requirements
 
@@ -31,7 +31,7 @@ PORT=4000 pnpm dev
 
 ## Site content
 
-User-facing Help, FAQ, and Docs content lives in `site/`.
+User-facing Help and FAQ content lives in `site/`.
 
 Repository handoff notes and AI implementation documentation live in `docs/` so they do not conflict with the VitePress content tree.
 

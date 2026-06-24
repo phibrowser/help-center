@@ -2,24 +2,26 @@
 layout: home
 
 hero:
-  name: Phi Help Center
-  text: Help and getting started
-  tagline: Get started with Phi, then find guidance and answers.
+  name: Phi Help
+  text: Help and FAQ
+  tagline: Get started with Phi Browser, then find guidance and quick answers.
   image:
     light: /phi-mark-dark.svg
     dark: /phi-mark-light.svg
-    alt: Phi
+    alt: Phi Browser
   actions:
     - theme: brand
       text: Get started
       link: /get-started/
     - theme: alt
-      text: Browse Help
-      link: /help/
+      text: Read the FAQ
+      link: /faq/
 
 features:
-  - title: Get started
-    details: Install Phi and learn the basics to get up and running.
   - title: Help
-    details: Step-by-step guidance for common user tasks and support flows.
+    details: Guides that orient you — install and first run, layouts, AI, automation, and privacy.
+    link: /help/
+  - title: FAQ
+    details: Quick answers to common questions about Phi Browser.
+    link: /faq/
 ---

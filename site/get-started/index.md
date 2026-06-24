@@ -1,6 +1,6 @@
 # Get started
 
-Phi is a browser for macOS (Apple Silicon, macOS 14 or newer). Install it with either method below, then walk through first run.
+Phi Browser runs on macOS (Apple Silicon, macOS 14 or newer). Install it with either method below, then walk through first run.
 
 ## Install Phi
 
@@ -16,11 +16,7 @@ If you use [Homebrew](https://brew.sh/), install Phi with:
 brew install --cask phibrowser/tap/phi
 ```
 
-This automatically taps `phibrowser/tap` and installs the Phi cask. To upgrade later:
-
-```sh
-brew upgrade --cask phi
-```
+This automatically taps `phibrowser/tap` and installs the Phi cask. Updates are handled by Phi itself, so you do not need to upgrade through Homebrew.
 
 ## First run
 

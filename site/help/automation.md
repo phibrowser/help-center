@@ -34,7 +34,3 @@ You can set it up two ways:
 - **Your own Telegram bot** — for more control, create a bot via Telegram's BotFather, generate a token, and paste it into Phi's settings. This lets you customize the bot's name and avatar.
 
 The same assistant identity carries over, so the experience stays consistent between desktop and phone.
-
----
-
-For specific questions about agentic tasks, Phi Sentinel, and Phi Link, see the [official FAQ](https://phibrowser.com/help/).

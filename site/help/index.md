@@ -1,10 +1,10 @@
-# What is Phi
+# What is Phi Browser
 
-Phi is the browser that knows you, and gets things done.
+Phi Browser is the browser that knows you, and gets things done.
 
 It is an intelligent browser for macOS, built on the Chromium engine with a native macOS interface. The core is open source, your data stays local-first, and the AI is included — Phi is free to use for now, with AI usage covered. Phi learns how you work, anticipates what you need, and can take care of routine tasks for you.
 
-These guides give you the big picture and the "why" behind how Phi is built. For quick, specific answers, see the [official FAQ](https://phibrowser.com/help/).
+These guides give you the big picture and the "why" behind how Phi is built. For quick, specific answers, see the [FAQ](/faq/).
 
 ## Made for macOS
 
@@ -36,4 +36,4 @@ See [Privacy & your data](/help/privacy) for the details.
 - [Meet Phi AI](/help/ai) — Memory, the Assistant, and Skills.
 - [Automation & Phi Link](/help/automation) — agentic tasks, Phi Sentinel, and Telegram.
 - [Privacy & your data](/help/privacy) — how your data is handled.
-- [Official FAQ](https://phibrowser.com/help/) — quick answers to specific questions.
+- [FAQ](/faq/) — quick answers to specific questions.

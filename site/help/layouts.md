@@ -54,7 +54,3 @@ A simple split of responsibilities: **Split View is for comparison and multitask
 ## The assistant understands your layout
 
 When you chat from a Split View, Phi can use context from both pages. When you chat from a Tab Group, it can use context from the whole group — so you can ask across related pages without explaining your setup. (Tip: use **cmd+tab** to cycle through recent tabs.)
-
----
-
-For step-by-step answers about layouts, tabs, Split View, and Tab Groups, see the [official FAQ](https://phibrowser.com/help/).

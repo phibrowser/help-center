@@ -29,7 +29,3 @@ Skills are reusable workflows. Teach the assistant a multi-step task once, and i
 
 - [Automation & Phi Link](/help/automation) — let Phi take actions and run scheduled tasks, and reach your assistant from Telegram.
 - [Privacy & your data](/help/privacy) — where your data lives and how to stay in control.
-
----
-
-For specific questions about Memory, the Assistant, and Skills, see the [official FAQ](https://phibrowser.com/help/).
