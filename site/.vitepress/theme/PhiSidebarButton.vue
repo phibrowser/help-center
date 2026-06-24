@@ -67,7 +67,7 @@ function openPhiSidebar() {
 }
 
 .phi-ai-icon {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
 </style>

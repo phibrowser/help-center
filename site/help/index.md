@@ -16,10 +16,10 @@ New to Phi? Start with [Getting started](/get-started/) to install and walk thro
 
 Phi's AI is built in and on by default. Rather than one vague "AI", it comes in four parts that each do something different:
 
-- **Memory** — quietly builds context from how you browse, so the assistant understands you without you teaching it anything.
+- **[Memory](/help/memory)** — quietly builds context from how you browse, so the assistant understands you without you teaching it anything.
 - **Assistant** — a chat companion you name yourself, ask questions, and delegate work to.
-- **Agentic** — actually does things for you, from one-off actions to scheduled tasks that run in the background.
-- **Skills** — reusable workflows the assistant can run on demand.
+- **Agentic** — actually does things for you, from one-off actions to background and scheduled tasks that run on their own.
+- **[Skills](/help/skills)** — reusable workflows the assistant can run on demand.
 
 Read [Meet your assistant](/help/ai) for Memory, talking to it, and Skills, and [Automation & Phi Link](/help/automation) for agentic tasks and using Phi from your phone.
 
@@ -33,8 +33,12 @@ See [Privacy & your data](/help/privacy) for the details.
 
 - [Getting started](/get-started/) — install Phi and first run.
 - [Layouts & navigation](/help/layouts) — modes, the sidebar, tabs, Split View, Tab Groups.
+- [Themes & appearance](/help/themes) — color themes, light/dark, and what the theme colors.
 - [Meet your assistant](/help/ai) — Memory, talking to it, and Skills.
+- [Memory](/help/memory) — how the assistant learns from your browsing and how you stay in control.
+- [Skills](/help/skills) — reusable workflows: browse the built-in set and create your own.
 - [New tab & widgets](/help/new-tab) — the personalized new tab and its widgets.
 - [Automation & Phi Link](/help/automation) — agentic tasks, Phi Sentinel, and Telegram.
+- [Phi Sentinel](/help/sentinel) — the background app that runs automation and hosts Private AI.
 - [Privacy & your data](/help/privacy) — how your data is handled.
 - [FAQ](/faq/) — quick answers to specific questions.

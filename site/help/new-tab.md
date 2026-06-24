@@ -1,12 +1,12 @@
 # New tab & widgets
 
-Phi replaces the standard new tab with a personalized home page. Every new tab gives you a greeting, a single box to search or ask, and a grid of widgets you arrange yourself. It adapts to your light or dark theme automatically.
+Phi replaces the standard new tab with a personalized home page. Every new tab gives you a greeting, a single box to search or ask, and a grid of widgets you arrange yourself. It follows your [theme and light/dark choice](/help/themes) automatically.
 
 ## Your new tab
 
 - **A greeting** — a personalized welcome that changes over time, drawn from what Phi knows about you. You can share it or chat with your assistant about it.
-- **One box to search or ask** — type to search the web, ask your assistant a question, or go straight to a URL, all from the same place. You can attach a tab or a file and bring Skills into the conversation.
-- **Quick access** — reach recent conversations and your widgets from the menu in the top-right corner.
+- **One box to search or ask** — type to search the web, ask your assistant a question, or go straight to a URL, all from the same place. You can [attach a tab](/help/ai#chat-with-tabs) or a file and bring Skills into the conversation.
+- **Quick access** — reach recent conversations, your widgets, and the [Skills](/help/skills) library from the menu in the top-right corner.
 
 Because the search box is wired to your assistant, the new tab is often the fastest place to start something — a search, a question, or a task — without opening a separate chat first. See [Meet your assistant](/help/ai) for what it can do.
 

@@ -296,6 +296,232 @@ Open issues:
   way to detect "running inside Phi" from a normal page today, so it is not
   gated; revisit if a detection signal becomes available.
 
+## Memory guide (2026-06-24)
+
+Added a dedicated Help chapter for the Memory system at `site/help/memory.md`,
+linked in the `Help` sidebar (after `Meet your assistant`) and in the overview's
+four-part list and "Where to go next" list. Until now Memory only existed as a
+short `## Memory` sub-section inside `site/help/ai.md`.
+
+Why: Memory is the first of Phi's four AI parts but had no page of its own. The
+owner asked for a standalone guide that explains what Memory is, how it learns
+from browsing, how the assistant uses it, and how the user stays in control, and
+that also points to **Anamnesis**, the standalone version of the same system for
+Chrome/Chromium browsers.
+
+Decisions (agreed with the owner):
+
+- The old `## Memory` section in `ai.md` was trimmed to a one-sentence teaser
+  that links to `/help/memory`. The `## Memory` heading is kept so the `#memory`
+  anchor still resolves, but the canonical link in `site/help/privacy.md` was
+  repointed from `/help/ai#memory` to `/help/memory`.
+- Anamnesis gets a short section with an outbound link to
+  <https://phibrowser.com/anamnesis/>, not a deep comparison.
+- Depth is concept-first in the house style (second person, why-focused, plain
+  text, no images) while naming the key user-facing features.
+
+Source material: the Memory implementation at
+`../phi-ai/ai-extension/lexington/` (codename "lexington"; the standalone build
+is "Anamnesis"), plus the product framing on
+<https://phibrowser.com/news/introduce-memory-system-for-ai/> and
+<https://phibrowser.com/anamnesis/>. User-facing terminology used in the guide —
+**observations**, **Memory Galaxy**, per-site **memory collection**, import /
+export, and **Anamnesis** — matches the extension. Internal details (the
+egocentric knowledge-graph layers, the observation pipeline, IndexedDB stores,
+retrieval/RRF) were deliberately left out.
+
+Open issue: the Memory feature evolves in the extension repo. If the user-facing
+concepts or controls (Memory Galaxy, memory collection toggle, import/export) are
+renamed or reworked there, update `site/help/memory.md` to match. Anamnesis is a
+separate product on the Chrome Web Store; if its model (BYO API key, portability)
+changes, revisit that section.
+
+Entry point (follow-up): the Memory Galaxy section now says where to open Memory. On the new tab there
+is an entry just below the search box; in the browser chrome the button's position depends on the
+[layout mode](/help/layouts) — **bottom-left** in Performance and Balanced, **top-right** in
+Comfortable. Confirmed against `../phibrowser-mac/`: a `MemoryButton` in
+`Sources/UserInterface/WebContent/Header/HeaderTrailingArea.swift` (top-right header, Comfortable) and
+a bottom-bar memory button in `Sources/UserInterface/WebContent/FloatingSidebar/` (the floating
+sidebar used in the non-Comfortable modes), both opening `chrome://memory`; the new-tab entry is in
+`sidecar/src/components/newtab-view.tsx` (`openMemoryPage`). If the button placement or the
+mode→position mapping changes, update `site/help/memory.md`.
+
+## Phi Sentinel guide & Private AI (2026-06-24)
+
+Promoted Phi Sentinel to its own Help chapter at `site/help/sentinel.md`, linked in the `Help`
+sidebar (after `Automation & Phi Link`) and in the overview's "Where to go next" list.
+
+Why: the owner asked the Help section to cover Phi Sentinel and its Private AI feature (running AI
+on-device, which the owner colloquially calls "Local LLM"). Until now Sentinel was only a short
+`## Phi Sentinel` sub-section inside `site/help/automation.md`, framed purely as the scheduled-task
+orchestrator, and there was zero coverage of Private AI anywhere. Private AI is about privacy and
+_where_ AI runs, not automation, so it did not fit under "Automation & Phi Link"; a dedicated Sentinel
+guide covers both jobs Sentinel does — keeping automation running, and hosting Private AI.
+
+Decisions (agreed with the owner):
+
+- Dedicated `site/help/sentinel.md`; the `## Phi Sentinel` section in `automation.md` was trimmed to a
+  one-sentence pointer to it (heading kept so the `#phi-sentinel` anchor still resolves).
+- Terminology: use **Private AI** (the real Sentinel UI name). "Local LLM" is just the owner's
+  colloquial name and is not used as the headline; the page only notes lightly that it runs a model on
+  your Mac.
+- Depth: concept + key practical points (what / why: privacy, offline, no per-request cost; per-task
+  coverage — Memory and Data search on-device by default, Chat and Web tasks stay on Phi Cloud unless a
+  stronger model is installed; bring-your-own provider; Apple Silicon + 16 GB gate). No install
+  walkthrough, model catalog, ports, or MLX/Runner internals.
+- `site/help/privacy.md` got a sentence noting Private AI can keep some tasks entirely on-device. The
+  FAQ (`faq/sentinel.md`) was intentionally left unchanged this pass.
+
+Source material: the Sentinel repo at `../sentinel/` — `docs/architecture-overview.md`,
+`docs/llm-integration.md`, and the Private AI UI strings under
+`ui/src/components/experimental/private-ai/`. User-facing terms used in the guide (**Private AI**,
+task labels **Chat / Memory / Web tasks / Data search**, **Phi Cloud**, **On this Mac**, **Apple
+Silicon**, 16 GB RAM) come straight from those UI strings. Internal mechanics (MLX servers,
+`127.0.0.1` ports, model IDs, the Local LLM subsystem / AI Gateway split, Runner supervision) were
+deliberately omitted.
+
+Open issue: Private AI is an evolving, experimental Sentinel feature. If the shipped models, the
+per-task routing defaults (which tasks are local by default), the hardware gate, or the "Private AI"
+naming change, update `site/help/sentinel.md` and the privacy.md note to match.
+
+## Skills guide (2026-06-24)
+
+Promoted Skills to its own Help chapter at `site/help/skills.md`, linked in the `Help` sidebar (after
+`Memory`) and in the overview's four-part list and "Where to go next" list. Until now Skills was only
+a short `## Skills` sub-section inside `site/help/ai.md`; that section was trimmed to a one-sentence
+teaser linking to `/help/skills`.
+
+Why: the owner asked to pull Skills out and cover it properly, "for example the Skill marketplace".
+
+Important reality check (drove the content): the owner expected a "Skill marketplace / store". An
+exploration of `../phi-ai/phi-agent/` and `../phi-ai/ai-extension/sidecar/` found **no marketplace,
+store, community publishing, or cross-user skill sharing**. What actually exists is a **Skills library
+/ management page** in the Sidecar extension (`sidecar/src/pages/skills/index.tsx`): a spotlight of
+featured built-in Skills, browse/filter (**All / Built-in / User created / Enabled**) + search, and
+per-skill **Add/Remove to your library**, **Enable/Disable**, **View**. Built-in Skills are
+Phi-maintained and opt-in; users create their own via a built-in **Skill Creator** meta-skill (user
+skills are plain-markdown instructions, **Edit/Delete**). Skills always run through the assistant —
+auto-discovered when relevant, or picked explicitly from the Skills list while composing a message.
+
+Decision (agreed with the owner): write the built-in **Skills library** faithfully and do **not** use
+"marketplace / store / community" wording, since that feature does not exist yet. Terminology used:
+**Skills**, **built-in Skills**, **your library**, **Skill Creator**, **Enable/Disable**. Internal
+mechanics (`SKILL.md` format, trusted JS scripts / `allowed-tools`, `/api/skills` routes, server
+storage) were deliberately omitted.
+
+Entry point: a follow-up added how to reach the Skills library — the **menu in the top-right corner of
+the new tab** (the `⋮` overflow menu in `sidecar/src/components/newtab-menu.tsx`, which holds Recent
+Conversations, Widgets, and a **Skills** item, `skills.menuLabel`). `site/help/new-tab.md`'s "Quick
+access" line was updated to list the Skills library alongside recent conversations and widgets, for
+consistency with how that menu is already described there.
+
+Source material: `../phi-ai/phi-agent/` (skills service, `skills/built-in/`) and
+`../phi-ai/ai-extension/sidecar/` (the Skills page and `src/locales/en.json` strings).
+
+Open issue: if a real Skill marketplace / sharing / publishing feature ships later, `site/help/skills.md`
+should be expanded to cover it (the owner already anticipates this framing).
+
+## Themes & appearance guide (2026-06-24)
+
+Added a Help chapter for the theme system at `site/help/themes.md`, linked in the `Help` sidebar
+(after `Layouts & navigation`, grouping the two browser-appearance guides) and in the overview's
+"Where to go next" list. `site/help/new-tab.md`'s "adapts to your light or dark theme" line was
+repointed to link the new guide.
+
+Why: the owner asked for a guide on the theme system, with scope including (but not limited to) the
+new tab, the window, the selected-text background on web pages (which can be turned off), and the
+sidebar.
+
+Decisions / framing:
+
+- Treat it as one unified Phi Browser feature set in **Settings → General**, not per-surface controls.
+  Two sections: **Theme** (the **Color** preset swatches + an **Opacity** slider + the **Apply theme
+  to text selection on web pages** toggle) and **Appearance** (**Color appearance**: System / Light /
+  Dark).
+- Scope section spells out what the theme colors: the **window** (toolbar / address bar / tabs, with
+  Opacity controlling tint strength), the **sidebar** (selected/hovered tabs), the **new tab** (it
+  follows the window theme automatically), and **selected text on web pages** (the toggle, on by
+  default).
+- Concept + key practical points, house voice; no internals.
+
+Source material: `../phibrowser-mac/` —
+`Sources/UserInterface/Preferences/General/GeneralSettingView.swift` (the Theme + Appearance UI),
+`Sources/Utilities/Theme/ThemedColors.swift` (the eight built-in presets: Pure (default), Mint, Mist,
+Aqua, Iris, Petal, Coral, Amber), and `Sources/Notifications/MessageCard/WindowThemeMessageRouter.swift`
+(`selectionTintEnabled`, the web-page selection tint toggle). The new tab inherits the native window
+theme via the extension's window-theme bridge (`../phi-ai/ai-extension/window-theme/`), so the NTP is
+documented as following the browser theme rather than having its own control. (The lexington popup's
+standalone System/Light/Dark selector applies to the standalone/Anamnesis build, not Phi Browser, so
+it was intentionally not described here.)
+
+Open issue: preset names and the exact Settings layout can change in the browser repo. If the presets,
+the Opacity control, or the selection-tint toggle label change, update `site/help/themes.md`.
+
+## Chat with Tabs (2026-06-24)
+
+Added a `## Chat with Tabs` section to `site/help/ai.md` (right after "Talking to it"), plus a bullet
+in that page's "different sides" list, and linked "attach a tab" from `site/help/new-tab.md`'s ask-box
+line to it (`/help/ai#chat-with-tabs`). The redundant Split View / Tab Group sentence at the end of
+"Talking to it" was folded into the new section to avoid duplication.
+
+Why: the owner asked to introduce the Chat with Tabs feature somewhere suitable and to note that the
+auto-add-current-tab-on-open behavior can be turned off in settings. No new page — Chat with Tabs is a
+facet of talking to the assistant, so it lives in `ai.md`.
+
+What it documents:
+
+- You can attach one or more open tabs to a conversation as context and ask across them; because the
+  assistant understands Split View and Tab Groups, attaching a grouped tab can bring the whole set.
+- By default, opening the assistant auto-attaches the current tab. This is the
+  **Automatically add current tab as context to new conversation** toggle under **Settings → Phi AI →
+  AI Sidebar**; turn it off to start with nothing attached (you can still attach tabs manually).
+
+Source material: `../phi-ai/ai-extension/sidecar/src/services/features.ts` — the Chat with Tabs
+service and `getInitialChatAttachment` (auto-attach priority Tab Group > Split View > single tab); and
+`../phibrowser-mac/Sources/UserInterface/Preferences/AISettings/AISettingView.swift` — the **AI
+Sidebar** section toggle (exact label "Automatically add current tab as context to new conversation",
+backed by `PhiPreferences.AISettings.enableChatWithTabs`). The "Settings → Phi AI" literal menu path
+is kept (it is the real menu name), consistent with privacy.md and the FAQ.
+
+Open issue: if the toggle label, its Settings location (AI Sidebar section), or the auto-attach
+behavior changes, update the `## Chat with Tabs` section in `site/help/ai.md`.
+
+## Agent / agentic expansion (2026-06-24)
+
+Expanded the agentic coverage in `site/help/automation.md` in place (no new page). It previously had
+only a thin intro plus `## On-demand actions` and `## Scheduled tasks` ("two modes") and did not cover
+the agent's background work or its approval/control story.
+
+Why: the owner asked to fill out the **Agent** feature.
+
+What changed:
+
+- Intro now frames three ways the agent works: act **now** (on-demand), run **in the background**
+  (Shadow Tasks), and run **on a schedule** (scheduled tasks).
+- **On-demand actions** enriched with the confirm-before-acting behavior (Confirm / Deny, risk-flagged).
+- New `## Background tasks` section introducing **Shadow Tasks**: detached background runs that wait for
+  approval, report progress/results/artifacts on the Shadow Tasks page (results do not auto-return to
+  chat), notify on completion (Phi Link), and can be cancelled or rerun.
+- `## Scheduled tasks` tied to background tasks + Phi Sentinel.
+- New short `## Staying in control` consolidating the safety story; links to privacy.
+- Existing `## On-demand actions`, `## Scheduled tasks`, `## Phi Sentinel`, `## Phi Link` headings kept
+  so anchors (notably `/help/automation#scheduled-tasks`, used by `sentinel.md`) still resolve.
+- `site/help/index.md`'s four-part **Agentic** bullet nudged to mention background tasks.
+
+Decision (agreed with the owner): use the real product name **Shadow Tasks**, concept-first. The
+`shadow:` command prefix and the technical task-page internals (Run ID, Worker Debug, Live Stream) were
+intentionally left out as too power-user.
+
+Source material: `../phi-ai/phi-agent/` (README + `agents/tools/runtime-descriptors.ts`:
+`browser_task.execute`, `shadow_task.execute`, `scheduled_task.*`, `user_action.request` with low/
+medium/high risk + Confirm/Deny) and `../phi-ai/ai-extension/sidecar/` (the Shadow Tasks page and
+`src/locales/en.json` → `shadowTasks`: Waiting for approval → Queued → Running → Completed, Cancel /
+Rerun, artifacts).
+
+Open issue: if Shadow Tasks is renamed, or the approval/notification flow changes, update
+`site/help/automation.md`. FAQ (`faq/ai.md`) still has only the older agentic Q&As (on-demand /
+scheduled); a "background tasks" Q&A could be added later if desired.
+
 ## Future updates
 
 When raising the minimum Node.js or pnpm major version, update all of these together:
