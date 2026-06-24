@@ -36,9 +36,9 @@ No. Memory data stays local. Language models may process tasks, but your persona
 
 No. Phi does not use your memory data, browsing context, or AI interactions to train models.
 
-## What is the Phi AI Assistant?
+## What is the assistant?
 
-The assistant you interact with directly inside the browser. You choose its name and avatar during onboarding, so it has its own identity rather than feeling like a generic chatbot.
+The companion you interact with directly inside the browser. You choose its name and avatar during onboarding and call it by that name from then on, so it has its own identity rather than feeling like a generic chatbot.
 
 ## How do I talk to the assistant?
 

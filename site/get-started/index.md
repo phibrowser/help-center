@@ -34,4 +34,4 @@ Feeling a little lost at first is normal: Phi is organized around different assu
 
 ## Next steps
 
-Start with the [overview](/help/), then read the guides: [layouts & navigation](/help/layouts), [Meet Phi AI](/help/ai), [automation & Phi Link](/help/automation), and [privacy](/help/privacy).
+Start with the [overview](/help/), then read the guides: [layouts & navigation](/help/layouts), [your assistant](/help/ai), [automation & Phi Link](/help/automation), and [privacy](/help/privacy).

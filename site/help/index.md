@@ -21,7 +21,7 @@ Phi's AI is built in and on by default. Rather than one vague "AI", it comes in 
 - **Agentic** — actually does things for you, from one-off actions to scheduled tasks that run in the background.
 - **Skills** — reusable workflows the assistant can run on demand.
 
-Read [Meet Phi AI](/help/ai) for Memory, the Assistant, and Skills, and [Automation & Phi Link](/help/automation) for agentic tasks and using Phi from your phone.
+Read [Meet your assistant](/help/ai) for Memory, talking to it, and Skills, and [Automation & Phi Link](/help/automation) for agentic tasks and using Phi from your phone.
 
 ## Your data stays yours
 
@@ -33,7 +33,8 @@ See [Privacy & your data](/help/privacy) for the details.
 
 - [Getting started](/get-started/) — install Phi and first run.
 - [Layouts & navigation](/help/layouts) — modes, the sidebar, tabs, Split View, Tab Groups.
-- [Meet Phi AI](/help/ai) — Memory, the Assistant, and Skills.
+- [Meet your assistant](/help/ai) — Memory, talking to it, and Skills.
+- [New tab & widgets](/help/new-tab) — the personalized new tab and its widgets.
 - [Automation & Phi Link](/help/automation) — agentic tasks, Phi Sentinel, and Telegram.
 - [Privacy & your data](/help/privacy) — how your data is handled.
 - [FAQ](/faq/) — quick answers to specific questions.

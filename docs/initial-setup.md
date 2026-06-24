@@ -190,6 +190,52 @@ Open issue: the in-site FAQ duplicates the Strapi-backed official FAQ by hand, s
 the two can drift. If the official FAQ changes often, consider generating
 `site/faq/` from the same Strapi source instead of maintaining it manually.
 
+## Assistant voice: do not call it "Phi AI" (2026-06-24)
+
+Editorial decision from the owner on how to refer to Phi's AI: we generally do
+**not** call it "Phi AI". After install, the user gives the assistant a name and
+an avatar and refers to it by that name from then on. It is meant to feel like a
+real presence working alongside you — not a traditional bot, "an AI", or a
+model you operate.
+
+Applied:
+
+- `site/help/ai.md` retitled from `Meet Phi AI` to `Meet your assistant` and
+  rewritten to lead with the named companion; Memory, talking to it, and Skills
+  are framed as sides of that companion. The `## Memory` heading is kept
+  verbatim because `site/help/privacy.md` links to its `#memory` anchor.
+- The `Meet Phi AI` label/link text was updated to `Meet your assistant` (or
+  `your assistant` in lowercase prose) in the sidebar (`config.mts`), the Help
+  overview, and the Get started page.
+- The FAQ question `What is the Phi AI Assistant?` became `What is the
+assistant?`.
+
+Deliberately left as-is: the literal settings path **Settings → Phi AI** in
+`get-started`, `privacy`, and the FAQ. That is the actual menu name in the
+product (a UI label), not a conversational way of naming the assistant.
+
+## New tab & widgets guide (2026-06-24)
+
+Added a Help chapter for the new tab page and widgets at
+`site/help/new-tab.md`, linked in the `Help` sidebar (after `Meet your
+assistant`) and in the overview's "Where to go next" list. The owner asked for
+an "NTP & Widgets" chapter; the page is titled **New tab & widgets** because
+"NTP" is internal jargon and the site is end-user facing.
+
+Source material: grounded in the Phi AI extension at
+`../phi-ai/ai-extension/sidecar/` (and the widget catalog in
+`../phi-ai/memory/src/artifacts/catalog.ts`). Only user-visible behavior was
+written up; implementation details (the Sidecar/Lexington split, per-widget
+iframes, `chrome.storage`/IndexedDB persistence, dev-only controls) were
+deliberately left out. The built-in widget list (Clock, Weather, Quote of the
+day, Memory image, Pomodoro, Currency, Quick translator, Top sites, GitHub
+stars, Recent reads, Hot posts, Daily report, Weekly report) and the management
+verbs (Move & Resize, Refresh, Edit, Delete) match the extension's catalog and
+localized strings.
+
+Open issue: these features evolve in the extension repo. If widgets are
+added/removed or renamed there, update `site/help/new-tab.md` to match.
+
 ## Future updates
 
 When raising the minimum Node.js or pnpm major version, update all of these together:
