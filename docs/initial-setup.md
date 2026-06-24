@@ -152,24 +152,28 @@ top-level section.
 Information architecture is now two pillars — **Help** and **FAQ**:
 
 - Top nav is `Help` and `FAQ`.
-- The sidebar has one `Help` group (Overview, Get started, Layouts &
+- The sidebar has one `Help` group (Overview, Getting started, Layouts &
   navigation, Meet Phi AI, Automation & Phi Link, Privacy & your data) and a
-  `FAQ` group. `Get started` keeps its `/get-started/` URL; it is no longer a
-  separate top-level nav/sidebar group, just an item inside `Help`.
+  `FAQ` group. The install page keeps its `/get-started/` URL; it is no longer a
+  separate top-level nav/sidebar group, just an item inside `Help`, and is now
+  labeled `Getting started`.
 
 FAQ content lives under `site/faq/`, one page per category (the owner asked to
 split the original single page):
 
-- `index.md` is the FAQ landing — a short intro plus a linked list of the nine
-  topic pages.
+- `index.md` is the FAQ landing — a short intro plus a linked list of the topic
+  pages.
 - Each category is its own page (`layouts`, `bookmarks`, `split-view`, `ai`,
-  `sentinel`, `link`, `pricing`, `privacy`, `getting-started`) with the category
-  as `H1` and each question as `H2`, so the in-page outline lists the questions.
-- It mirrors the full official FAQ (~50 Q&A), rewritten in the site's voice and
-  grounded in the same source — the published FAQ at
-  <https://phibrowser.com/help/>, which is served from Strapi (there is no
-  static FAQ source file in the repo; the live page is the canonical text).
-- The FAQ sidebar group lists the landing page plus all nine category pages.
+  `sentinel`, `link`, `pricing`, `privacy`) with the category as `H1` and each
+  question as `H2`, so the in-page outline lists the questions.
+- It mirrors the full official FAQ, rewritten in the site's voice and grounded
+  in the same source — the published FAQ at <https://phibrowser.com/help/>,
+  which is served from Strapi (there is no static FAQ source file in the repo;
+  the live page is the canonical text).
+- The FAQ sidebar group lists the landing page plus the category pages.
+- The official FAQ's "Getting started" category was not duplicated as a FAQ
+  page; that material already lives in the Help `Getting started` guide (its
+  "Coming from Chrome?" section), so the FAQ landing links there instead.
 
 Guide cross-links were repointed and simplified, per the owner: now that the FAQ
 is in-site and always present in the nav, the four deep guides (`layouts.md`,

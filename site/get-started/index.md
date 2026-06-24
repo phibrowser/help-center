@@ -1,4 +1,4 @@
-# Get started
+# Getting started
 
 Phi Browser runs on macOS (Apple Silicon, macOS 14 or newer). Install it with either method below, then walk through first run.
 

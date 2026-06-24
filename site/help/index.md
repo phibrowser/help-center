@@ -10,7 +10,7 @@ These guides give you the big picture and the "why" behind how Phi is built. For
 
 Phi runs on Apple Silicon Macs (M1 and newer) on macOS 14 or later. It feels at home on macOS: a native interface, a vertical sidebar, and a choice of three layout modes so you decide how much space goes to the page versus browser controls.
 
-New to Phi? Start with [Get started](/get-started/) to install and walk through first run, then learn your way around in [Layouts & navigation](/help/layouts).
+New to Phi? Start with [Getting started](/get-started/) to install and walk through first run, then learn your way around in [Layouts & navigation](/help/layouts).
 
 ## A browser with four AI parts
 
@@ -31,7 +31,7 @@ See [Privacy & your data](/help/privacy) for the details.
 
 ## Where to go next
 
-- [Get started](/get-started/) — install Phi and first run.
+- [Getting started](/get-started/) — install Phi and first run.
 - [Layouts & navigation](/help/layouts) — modes, the sidebar, tabs, Split View, Tab Groups.
 - [Meet Phi AI](/help/ai) — Memory, the Assistant, and Skills.
 - [Automation & Phi Link](/help/automation) — agentic tasks, Phi Sentinel, and Telegram.

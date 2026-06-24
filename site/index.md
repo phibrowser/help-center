@@ -11,7 +11,7 @@ hero:
     alt: Phi Browser
   actions:
     - theme: brand
-      text: Get started
+      text: Getting started
       link: /get-started/
     - theme: alt
       text: Read the FAQ

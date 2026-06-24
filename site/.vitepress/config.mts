@@ -20,7 +20,7 @@ export default defineConfig({
         text: "Help",
         items: [
           { text: "Overview", link: "/help/" },
-          { text: "Get started", link: "/get-started/" },
+          { text: "Getting started", link: "/get-started/" },
           { text: "Layouts & navigation", link: "/help/layouts" },
           { text: "Meet Phi AI", link: "/help/ai" },
           { text: "Automation & Phi Link", link: "/help/automation" },
@@ -39,7 +39,6 @@ export default defineConfig({
           { text: "Phi Link", link: "/faq/link" },
           { text: "Pricing & availability", link: "/faq/pricing" },
           { text: "Privacy & data", link: "/faq/privacy" },
-          { text: "Getting started", link: "/faq/getting-started" },
         ],
       },
     ],
