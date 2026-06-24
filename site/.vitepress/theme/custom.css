@@ -3,3 +3,22 @@
   height: 32px;
   width: auto;
 }
+
+/*
+ * Pair the Phi assistant button right after the search box, both kept together
+ * on the left while the nav menu stays on the right.
+ *
+ * By default the search box is `flex-grow: 1` (a transparent full-width bar with
+ * the visible pill on its left), which would strand the button far to the right.
+ * Instead: shrink the search box to its pill, reorder it ahead of the button,
+ * and give the button `margin-right: auto` so everything after it is pushed to
+ * the far right.
+ */
+.VPNavBar .content-body .VPNavBarSearch {
+  order: -1;
+  flex-grow: 0;
+}
+
+.VPNavBar .content-body .phi-ai-button {
+  margin-right: auto;
+}

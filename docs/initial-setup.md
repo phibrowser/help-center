@@ -236,6 +236,66 @@ localized strings.
 Open issue: these features evolve in the extension repo. If widgets are
 added/removed or renamed there, update `site/help/new-tab.md` to match.
 
+## Search (2026-06-24)
+
+Enabled VitePress's built-in local search (`themeConfig.search.provider:
+"local"`, backed by MiniSearch) instead of Algolia DocSearch.
+
+Rationale: the site is tiny (~17 pages, English) and statically deployed. Local
+search builds its index at build time and runs entirely in the browser — no
+external service, API keys, crawler, or approval, and no search queries sent to
+a third party, which fits the site's local-first/privacy framing. Algolia is
+aimed at large, multi-page (or multi-repo) docs that need analytics, ranking
+control, or stronger typo tolerance; it would be over-engineered here and adds a
+network dependency.
+
+Revisit if the content grows to hundreds of pages (the client-side index gets
+heavy) or there is a real need for search analytics or cross-site search. If
+Chinese content is ever added, local search still works but MiniSearch needs CJK
+tokenization options (CJK does not split on spaces).
+
+## Phi assistant button in the nav bar (2026-06-24)
+
+Added an AI button next to the search box that is meant to open Phi Browser's
+own AI assistant sidebar.
+
+Why this needs a contract: investigation of `../phi-ai/` and `../phibrowser-mac/`
+found **no page-facing API** for an ordinary web page to open Phi's sidebar. The
+sidebar is native (`phibrowser-mac` `ChatButton` -> `Tab.toggleAIChat()`); the
+only injected page API (`window.__phiCtx.askPhi`) exists solely inside new-tab
+widget sandboxes, and `externally_connectable` is limited to
+`account.phibrowser.com`. So the button cannot work until Phi adds a listener.
+
+Agreed approach (with the owner): the page emits a message and Phi implements
+the listener later.
+
+- Contract: the button calls
+  `window.postMessage({ source: "phi-help", type: "phi:open-sidebar" }, window.location.origin)`.
+- Phi Browser (a content script injected into pages, or the native layer) should
+  listen on `window` for a `message` whose `data.source === "phi-help"` and
+  `data.type === "phi:open-sidebar"`, and toggle the assistant sidebar.
+- In any non-Phi browser nothing is listening, so the click is a harmless no-op.
+
+Implementation:
+
+- `site/.vitepress/theme/PhiSidebarButton.vue` — the button (a sparkles/AI icon)
+  and the `postMessage` call.
+- `site/.vitepress/theme/index.ts` now extends the default theme and renders the
+  button in the `nav-bar-content-before` slot. The default search box is
+  `flex-grow: 1` (a transparent full-width bar with the visible pill on its
+  left), so `custom.css` shrinks it (`flex-grow: 0`), reorders it ahead of the
+  button (`order: -1`), and gives the button `margin-right: auto`. The result is
+  the search pill and the button paired together on the left, with the nav menu
+  pushed to the right.
+
+Open issues:
+
+- The browser-side listener does not exist yet; the button is inert until Phi
+  ships it. If the message shape changes, update both sides.
+- The button shows in every browser (the site is public). There is no reliable
+  way to detect "running inside Phi" from a normal page today, so it is not
+  gated; revisit if a detection signal becomes available.
+
 ## Future updates
 
 When raising the minimum Node.js or pnpm major version, update all of these together:

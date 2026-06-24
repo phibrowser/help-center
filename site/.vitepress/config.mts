@@ -11,6 +11,9 @@ export default defineConfig({
   ],
   themeConfig: {
     logo: { light: "/phi-mark-dark.svg", dark: "/phi-mark-light.svg" },
+    search: {
+      provider: "local",
+    },
     nav: [
       { text: "Help", link: "/help/" },
       { text: "FAQ", link: "/faq/" },
