@@ -26,6 +26,7 @@ export default defineConfig({
           { text: "Getting started", link: "/get-started/" },
           { text: "Layouts & navigation", link: "/help/layouts/" },
           { text: "Spaces & Profiles", link: "/help/spaces/" },
+          { text: "Bookmarks & pinned tabs", link: "/help/bookmarks/" },
           { text: "Themes & appearance", link: "/help/themes/" },
           { text: "Meet your assistant", link: "/help/ai/" },
           { text: "Memory", link: "/help/memory/" },

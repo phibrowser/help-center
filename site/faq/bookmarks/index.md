@@ -20,6 +20,18 @@ They are two ends of the same thing — the pages you care about. Tabs are what 
 
 Pinned tabs sit at the top of the sidebar for pages you live in, like favorite tools or dashboards. Bookmarks sit below them and store pages you want to keep for later without keeping them active.
 
-## Is this similar to Arc?
+## What happens when I click a bookmark?
 
-The sidebar-as-workspace model shares Arc's philosophy, but Phi is not duplicating Arc's design.
+It opens in place — the bookmark's sidebar entry becomes its live tab, instead of spawning a throwaway tab. If the bookmark is already open, clicking it just activates that tab rather than making a second copy. Close the page and the bookmark stays in the sidebar, ready to reopen.
+
+## Are bookmarks and pinned tabs per Space?
+
+Bookmarks are per Space — each Space keeps its own set. Pinned tabs belong to your Profile, so they appear across every Space that shares that Profile. See [Spaces & Profiles](/faq/spaces/).
+
+## How do I pin or unpin a tab?
+
+Right-click a tab and choose **Pin**, or drag it into the pinned grid at the top of the sidebar. **Unpin** returns it to the tab list. You can reorder pinned tabs by dragging, and use **Pin Split** to keep a two-pane setup as one pinned item.
+
+## Is this similar to Arc or Dia?
+
+The living-sidebar model — bookmarks that open in place and pinned tabs at the top — is inspired by Arc and Dia rather than copied. Unlike Arc, which dropped traditional bookmarks and previews links from pinned tabs in a Peek window, Phi keeps a full bookmark tree with folders and opens links normally in the tab. See the [Bookmarks & pinned tabs](/help/bookmarks/) guide for the full comparison.

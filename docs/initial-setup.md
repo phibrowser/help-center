@@ -700,6 +700,62 @@ guides lead with that distinction to prevent the obvious confusion.
   updates") rather than naming build numbers, so they should not need updates as
   the policy changes. Revisit only if the menu strings or the restore flow change.
 
+## Bookmarks & pinned tabs guide (2026-06-25)
+
+### Requirement
+
+Add a dedicated chapter on bookmarks and pinned tabs. The owner's framing: Phi's
+bookmarks open in place as a tab (like Arc/Dia), and pinned tabs are also borrowed
+from Arc/Dia — verify against `../phibrowser-mac/` and the web before writing.
+
+### How
+
+- Added `site/help/bookmarks/index.md` — "Bookmarks & pinned tabs" Help guide.
+- Enriched the existing `site/faq/bookmarks/index.md` (did not add a new FAQ page,
+  since one already exists) with Q&As on click-in-place behavior, per-Space vs
+  per-Profile scope, pin/unpin, and an updated Arc/Dia comparison.
+- Registered the Help page in `site/.vitepress/config.mts` sidebar (after Spaces)
+  and added a pointer in `site/help/index.md`.
+
+### Key facts (verified against source, not assumed)
+
+- `Sources/States/BrowserState+Bookmark.swift` (`openBookmark(_:)`) — clicking a
+  bookmark activates its bound tab if already open (`setAsActiveTab()`), otherwise
+  creates a tab bound to the bookmark via `customGuid`. This is the "opens in place
+  as a tab" behavior, not a throwaway new tab.
+- `LocalStore+Bookmark.swift` `bookmarksPublisher(profileId:spaceId:)` — bookmarks
+  are scoped per (Profile, Space). `LocalStore.swift` `getAllPinnedTabs(for
+profileId:)` — pinned tabs are scoped per Profile (shared across that Profile's
+  Spaces). Consistent with the Spaces & Profiles guide.
+- Verified UI strings: **Add to Bookmark** / **Add to Bookmark Bar** (Comfortable)
+  / **Add to Folder** / **New Nested Folder** / **Add Split to Bookmark**, and
+  **Pin** / **Unpin** / **Pin Split** / **Unpin Split** (`TabModel+Sidebar.swift`,
+  `BookmarkModel+Sidebar.swift`). Drag-to-pin is confirmed by the pinned-grid empty
+  hint "Drag tabs here or pin them from the tab list"
+  (`PinnedTabViewController.swift`). Bookmarks support folders/nesting and pinned
+  tabs support drag reordering.
+
+### Comparison facts (web-verified, June 2026)
+
+- **Arc** has no traditional bookmarks (uses pinned tabs + Favorites) and opens
+  links from pinned tabs in a **Peek** window. The guide explicitly says Phi has
+  **no Peek equivalent** and keeps a real bookmark tree — do not attribute Peek
+  behavior to Phi.
+- **Dia** keeps bookmarks but surfaces them mainly via its command bar; Phi keeps
+  them visible in the sidebar.
+- Phi pinned tabs are per-Profile, framed as closer to Arc's cross-Space Favorites
+  than Arc's per-Space pinned tabs.
+
+### Validation
+
+`pnpm format:check` and `pnpm build` both pass.
+
+### Open issues
+
+- Some interactions (drag a tab out of the grid to unpin, drag-to-bookmark exact
+  affordance) are documented from established behavior / the existing layouts
+  guide rather than fully traced in code; revisit if pin/unpin drag rules change.
+
 ## Future updates
 
 When raising the minimum Node.js or pnpm major version, update all of these together:
