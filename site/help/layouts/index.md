@@ -22,20 +22,9 @@ Phi offers three layout modes so you can choose how much screen space goes to co
 
 ## Tabs, pinned tabs, and bookmarks
 
-In Phi, tabs and bookmarks live together in the sidebar, because they are really two ends of the same thing — the pages you care about. Phi treats bookmarks as part of your active workspace rather than an archive you open twice a year.
+In Phi, tabs, pinned tabs, and bookmarks all live together in the sidebar, because they are really ends of the same thing — the pages you care about. **Tabs** are open right now, **pinned tabs** sit at the top for pages you live in, and **bookmarks** sit below for pages you want to keep. A simple way to think about it: **pinned tabs are pages you live in; bookmarks are pages you want to keep.**
 
-- **Tabs** are the pages you have open right now.
-- **Pinned tabs** sit at the top of the sidebar: persistent pages you want readily available, like favorite tools, dashboards, or inboxes.
-- **Bookmarks** sit below pinned tabs: pages you want to keep for later without keeping them open.
-
-A simple way to think about it: **pinned tabs are pages you live in; bookmarks are pages you want to keep.**
-
-How you make bookmarks depends on your mode:
-
-- In **Comfortable Mode**, bookmarks behave much like Chrome. Show the bookmark bar with **View → Always show bookmark bar**, and use the **Bookmarks** menu in the menu bar.
-- In **Balanced** and **Performance Mode**, there is no traditional bookmark bar. Instead, drag a tab into the sidebar to bookmark it. The sidebar becomes the main place you organize pages.
-
-If you have used Arc, this sidebar-as-workspace model will feel familiar. Phi is not copying Arc, but it shares the idea that a browser can be structured like a workspace instead of a growing pile of tabs.
+For how bookmarks open in place as tabs, how to pin and organize pages, and how this compares to Arc and Dia, see [Bookmarks & pinned tabs](/help/bookmarks/).
 
 ## Split View
 

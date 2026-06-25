@@ -716,6 +716,10 @@ from Arc/Dia — verify against `../phibrowser-mac/` and the web before writing.
   per-Profile scope, pin/unpin, and an updated Arc/Dia comparison.
 - Registered the Help page in `site/.vitepress/config.mts` sidebar (after Spaces)
   and added a pointer in `site/help/index.md`.
+- Trimmed the overlapping "Tabs, pinned tabs, and bookmarks" section in
+  `site/help/layouts/index.md` to a short overview that points to the new chapter,
+  removing the duplicated per-mode bookmark-creation detail (still covered in the
+  bookmarks FAQ) and the standalone Arc paragraph (now in the new chapter).
 
 ### Key facts (verified against source, not assumed)
 
