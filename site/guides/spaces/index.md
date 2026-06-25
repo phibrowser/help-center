@@ -46,4 +46,4 @@ If you came from **Dia**, the difference is bigger. Dia dropped Spaces and uses 
 
 ## How this connects to the rest of Phi
 
-Spaces build on the sidebar workspace described in [Layouts & navigation](/help/layouts/), and per-Space colors use the same palette as [Themes & appearance](/help/themes/). Because Profiles isolate cookies and history, what the assistant can see is scoped to the Profile you are browsing in — see [Privacy & your data](/help/privacy/) for how your data is handled.
+Spaces build on the sidebar workspace described in [Layouts & navigation](/guides/layouts/), and per-Space colors use the same palette as [Themes & appearance](/guides/themes/). Because Profiles isolate cookies and history, what the assistant can see is scoped to the Profile you are browsing in — see [Privacy & your data](/guides/privacy/) for how your data is handled.

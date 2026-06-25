@@ -37,4 +37,4 @@ This is the right tool for moving to a new Mac or keeping a personal copy — th
 
 ## How this connects to the rest of Phi
 
-A Time Machine snapshot includes the data behind [Spaces & Profiles](/help/spaces/) and [Memory](/help/memory/), so rolling back returns those to how they were at the snapshot. Everything stays on your Mac, in line with Phi's local-first approach described in [Privacy & your data](/help/privacy/).
+A Time Machine snapshot includes the data behind [Spaces & Profiles](/guides/spaces/) and [Memory](/guides/memory/), so rolling back returns those to how they were at the snapshot. Everything stays on your Mac, in line with Phi's local-first approach described in [Privacy & your data](/guides/privacy/).

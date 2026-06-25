@@ -827,6 +827,34 @@ government/health sites, so it would not earn rich results here.
   themselves should be collapsible too, wrap each group's questions in an outer
   `::: details`.
 
+## Deploy under /help/, rename guides to /guides/ (2026-06-25)
+
+### Why
+
+The site is deployed under the `/help/` sub-path of the main domain (replacing
+philanding's old `/help` FAQ). Setting VitePress `base: "/help/"` alone left the
+internal Help-guides section — routed at `/help/` — served at `/help/help/`,
+an awkward double segment. Renaming the guides route to `/guides/` makes the
+final URLs clean: `/help/guides/...` for guides, `/help/faq/` for the FAQ,
+`/help/` for the landing page.
+
+### How
+
+- `site/.vitepress/config.mts` — set `base` via a `base` constant. VitePress
+  prepends `base` to assets, theme links, and route-relative Markdown links
+  automatically, **but not to raw `head` tag attributes**, so the favicon /
+  apple-touch-icon hrefs are built as `` `${base}icon.svg` `` etc. explicitly.
+  Nav and sidebar guide links point at `/guides/...`; the sidebar group is still
+  labelled "Help".
+- Renamed `site/help/` → `site/guides/` (`git mv`), and rewrote every
+  guide-route link across the Markdown (`/help/...` → `/guides/...`) — including
+  cross-links in the guides, the FAQ, `get-started`, and the home hero action.
+  FAQ category anchors (`/faq/#...`) and the `base` value were left untouched.
+
+Note the distinction: `base` (`/help/`) is the deploy prefix; `/guides/` is the
+in-site route for the guides. Markdown stays route-relative (`/guides/`,
+`/faq/`) and resolves under `/help/` at runtime.
+
 ## Future updates
 
 When raising the minimum Node.js or pnpm major version, update all of these together:

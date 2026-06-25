@@ -24,7 +24,7 @@ Phi offers three layout modes so you can choose how much screen space goes to co
 
 In Phi, tabs, pinned tabs, and bookmarks all live together in the sidebar, because they are really ends of the same thing — the pages you care about. **Tabs** are open right now, **pinned tabs** sit at the top for pages you live in, and **bookmarks** sit below for pages you want to keep. A simple way to think about it: **pinned tabs are pages you live in; bookmarks are pages you want to keep.**
 
-For how bookmarks open in place as tabs, how to pin and organize pages, and how this compares to Arc and Dia, see [Bookmarks & pinned tabs](/help/bookmarks/).
+For how bookmarks open in place as tabs, how to pin and organize pages, and how this compares to Arc and Dia, see [Bookmarks & pinned tabs](/guides/bookmarks/).
 
 ## Split View
 

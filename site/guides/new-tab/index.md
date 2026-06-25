@@ -1,14 +1,14 @@
 # New tab & widgets
 
-Phi replaces the standard new tab with a personalized home page. Every new tab gives you a greeting, a single box to search or ask, and a grid of widgets you arrange yourself. It follows your [theme and light/dark choice](/help/themes/) automatically.
+Phi replaces the standard new tab with a personalized home page. Every new tab gives you a greeting, a single box to search or ask, and a grid of widgets you arrange yourself. It follows your [theme and light/dark choice](/guides/themes/) automatically.
 
 ## Your new tab
 
 - **A greeting** — a personalized welcome that changes over time, drawn from what Phi knows about you. You can share it or chat with your assistant about it.
-- **One box to search or ask** — type to search the web, ask your assistant a question, or go straight to a URL, all from the same place. You can [attach a tab](/help/ai/#chat-with-tabs) or a file and bring Skills into the conversation.
-- **Quick access** — reach recent conversations, your widgets, and the [Skills](/help/skills/) library from the menu in the top-right corner.
+- **One box to search or ask** — type to search the web, ask your assistant a question, or go straight to a URL, all from the same place. You can [attach a tab](/guides/ai/#chat-with-tabs) or a file and bring Skills into the conversation.
+- **Quick access** — reach recent conversations, your widgets, and the [Skills](/guides/skills/) library from the menu in the top-right corner.
 
-Because the search box is wired to your assistant, the new tab is often the fastest place to start something — a search, a question, or a task — without opening a separate chat first. See [Meet your assistant](/help/ai/) for what it can do.
+Because the search box is wired to your assistant, the new tab is often the fastest place to start something — a search, a question, or a task — without opening a separate chat first. See [Meet your assistant](/guides/ai/) for what it can do.
 
 ## Widgets
 
@@ -34,9 +34,9 @@ Your layout is saved on your device, so the new tab looks the same each time you
 
 The widget library suggests a few widgets to start with, based on what Phi remembers about you, and some widgets personalize their content the same way — for example, surfacing pages you actually return to. You can also ask your assistant to **create a custom widget** for you, or **refine** an existing one, right from a conversation.
 
-This builds on the same local-first memory as the rest of Phi: what widgets draw on stays on your device and under your control. See [Privacy & your data](/help/privacy/) for the details.
+This builds on the same local-first memory as the rest of Phi: what widgets draw on stays on your device and under your control. See [Privacy & your data](/guides/privacy/) for the details.
 
 ## What's next
 
-- [Meet your assistant](/help/ai/) — Memory, talking to it, and Skills.
-- [Privacy & your data](/help/privacy/) — where your data lives and how to stay in control.
+- [Meet your assistant](/guides/ai/) — Memory, talking to it, and Skills.
+- [Privacy & your data](/guides/privacy/) — where your data lives and how to stay in control.

@@ -1,6 +1,6 @@
 # Frequently asked questions
 
-Quick answers to common questions about Phi Browser, grouped by topic. For the bigger picture and the "why" behind how Phi is built, read the [Help guides](/help/). New to Phi Browser? See [Getting started](/get-started/).
+Quick answers to common questions about Phi Browser, grouped by topic. For the bigger picture and the "why" behind how Phi is built, read the [Help guides](/guides/). New to Phi Browser? See [Getting started](/get-started/).
 
 ## Layouts & navigation
 
@@ -19,7 +19,7 @@ Most modern screens are wide, not tall. Vertical space is what you run out of fi
 ## Spaces & Profiles
 
 ::: details What is the difference between a Space and a Profile?
-A **Space** is a workspace in the sidebar with its own name, icon, color, and bookmarks. A **Profile** is the isolation layer underneath it: each Profile has its own cookies, history, logins, and extensions. Spaces organize how things look and feel; Profiles decide what is kept separate. For the full picture, see [Spaces & Profiles](/help/spaces/) in the Help guides.
+A **Space** is a workspace in the sidebar with its own name, icon, color, and bookmarks. A **Profile** is the isolation layer underneath it: each Profile has its own cookies, history, logins, and extensions. Spaces organize how things look and feel; Profiles decide what is kept separate. For the full picture, see [Spaces & Profiles](/guides/spaces/) in the Help guides.
 :::
 
 ::: details Can one Profile have several Spaces?
@@ -85,7 +85,7 @@ Right-click a tab and choose **Pin**, or drag it into the pinned grid at the top
 :::
 
 ::: details Is this similar to Arc or Dia?
-The living-sidebar model — bookmarks that open in place and pinned tabs at the top — is inspired by Arc and Dia rather than copied. Unlike Arc, which dropped traditional bookmarks and previews links from pinned tabs in a Peek window, Phi keeps a full bookmark tree with folders and opens links normally in the tab. See the [Bookmarks & pinned tabs](/help/bookmarks/) guide for the full comparison.
+The living-sidebar model — bookmarks that open in place and pinned tabs at the top — is inspired by Arc and Dia rather than copied. Unlike Arc, which dropped traditional bookmarks and previews links from pinned tabs in a Peek window, Phi keeps a full bookmark tree with folders and opens links normally in the tab. See the [Bookmarks & pinned tabs](/guides/bookmarks/) guide for the full comparison.
 :::
 
 ## Split View & Tab Groups
@@ -243,7 +243,7 @@ No. Phi does not use your browsing-derived memory or AI interactions to train mo
 ## Time Machine backups
 
 ::: details What is Phi's Time Machine?
-It is a **version rollback** safety net. Before certain major updates, Phi automatically saves a snapshot of the current version and your data, so you can return to it if a new release does not work for you. For the full picture, see [Time Machine backups](/help/time-machine/) in the Help guides.
+It is a **version rollback** safety net. Before certain major updates, Phi automatically saves a snapshot of the current version and your data, so you can return to it if a new release does not work for you. For the full picture, see [Time Machine backups](/guides/time-machine/) in the Help guides.
 :::
 
 ::: details Is this Apple's Time Machine?
