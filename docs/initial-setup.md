@@ -760,6 +760,24 @@ profileId:)` — pinned tabs are scoped per Profile (shared across that Profile'
   affordance) are documented from established behavior / the existing layouts
   guide rather than fully traced in code; revisit if pin/unpin drag rules change.
 
+## Fix wrong tab-cycling shortcut (2026-06-25)
+
+`site/help/layouts/index.md` told users to press **cmd+tab** to cycle through
+recent tabs. That is the macOS app switcher, not an in-app shortcut — the claim
+was wrong (and an earlier note here citing it as "taken directly from the official
+FAQ" was mistaken).
+
+Verified against `../phibrowser-mac/`
+`Sources/UserInterface/Preferences/Shortcuts/Shortcuts.swift:219-220`: the
+most-recently-used tab switcher (command `PHI_TAB_SWITCHER_FORWARD` /
+`PHI_TAB_SWITCHER_BACKWARD`, menu title "Show Tab Switcher") defaults to
+**ctrl+tab** forward and **ctrl+shift+tab** backward, dispatched via
+`CommandDispatcher.swift` → `TabSwitchManager.handleStep(_:)`. The shortcut is
+user-customizable (`Shortcuts+Custom.swift`), so the guide states the default.
+
+Updated the tip to ctrl+tab / ctrl+shift+tab. (The error was in the Help layouts
+guide; `faq/layouts` never mentioned the shortcut.)
+
 ## Future updates
 
 When raising the minimum Node.js or pnpm major version, update all of these together:
