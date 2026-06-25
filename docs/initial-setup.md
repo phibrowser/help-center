@@ -778,6 +778,92 @@ user-customizable (`Shortcuts+Custom.swift`), so the guide states the default.
 Updated the tip to ctrl+tab / ctrl+shift+tab. (The error was in the Help layouts
 guide; `faq/layouts` never mentioned the shortcut.)
 
+## FAQ collapsed into a single page (2026-06-25)
+
+### Why
+
+The plan had been to migrate everything here and retire philanding's
+Strapi-backed `/help` FAQ. The boss wants to keep a one-page FAQ in that
+familiar collapsible form. Keeping both the philanding FAQ and our FAQ indexed
+would split SEO across duplicate content, so we consolidate to one place.
+
+The FAQ here was previously split across ten per-topic pages
+(`/faq/<topic>/`, questions as H2s). We considered keeping those for their
+per-URL SEO and deriving a one-page accordion view from them at build time
+(a data loader + a Vue component). We dropped that in favour of the simplest
+thing that works: **one hand-written Markdown page** at `/faq/`, using
+VitePress's built-in `::: details` collapsible container. The per-topic pages
+were removed, so there is a single source with nothing to keep in sync — and no
+custom component, data loader, or Strapi dependency.
+
+Trade-off accepted: we give up the "one focused URL per topic" structure. The
+single page is still fully crawlable (the `::: details` answer bodies render
+into the static HTML), and category H2s give it heading structure and
+deep-link anchors. We deliberately did **not** add `FAQPage` JSON-LD: since
+Google's 2023 change, FAQ rich results are limited to authoritative
+government/health sites, so it would not earn rich results here.
+
+### How
+
+- `site/faq/index.md` — the whole FAQ on one page. An H2 per category, then one
+  `::: details <question>` block per question with the answer in its body.
+  Category order matches the former sidebar order.
+- Removed: the ten `site/faq/<topic>/` pages, plus the short-lived derived
+  approach's `site/faq/all.data.ts` loader, `FaqAccordion.vue` component,
+  `/faq/all/` page, the `enhanceApp` registration in `theme/index.ts`, and the
+  local-search `_render` hook in `config.mts`.
+- `site/.vitepress/config.mts` — the FAQ sidebar group collapses to the single
+  `/faq/` entry.
+- Cross-links that pointed at the removed per-topic pages now target the single
+  page with a category anchor: in-page `(#spaces-profiles)` from the bookmarks
+  answer, and `/faq/#ai-features` / `/faq/#phi-sentinel` from the Skills,
+  Memory, and Sentinel Help guides.
+
+### Open items
+
+- philanding `/help` still needs to be removed / 301'd / noindexed in its own
+  repo to eliminate the cross-domain duplicate. Not done here (separate repo).
+- Categories are plain H2 headings with per-question collapse. If the categories
+  themselves should be collapsible too, wrap each group's questions in an outer
+  `::: details`.
+
+## Deploy under /help/, rename guides to /guides/ (2026-06-25)
+
+### Why
+
+The site is deployed under the `/help/` sub-path of the main domain (replacing
+philanding's old `/help` FAQ). Setting VitePress `base: "/help/"` alone left the
+internal Help-guides section — routed at `/help/` — served at `/help/help/`,
+an awkward double segment. Renaming the guides route to `/guides/` makes the
+final URLs clean: `/help/guides/...` for guides, `/help/faq/` for the FAQ,
+`/help/` for the landing page.
+
+### How
+
+- `site/.vitepress/config.mts` — set `base` via a `base` constant. VitePress
+  prepends `base` to assets, theme links, and route-relative Markdown links
+  automatically, **but not to raw `head` tag attributes**, so the favicon /
+  apple-touch-icon hrefs are built as `` `${base}icon.svg` `` etc. explicitly.
+  Nav and sidebar guide links point at `/guides/...`; the sidebar group is still
+  labelled "Help".
+- Renamed `site/help/` → `site/guides/` (`git mv`), and rewrote every
+  guide-route link across the Markdown (`/help/...` → `/guides/...`) — including
+  cross-links in the guides, the FAQ, `get-started`, and the home hero action.
+  FAQ category anchors (`/faq/#...`) and the `base` value were left untouched.
+
+Note the distinction: `base` (`/help/`) is the deploy prefix; `/guides/` is the
+in-site route for the guides. Markdown stays route-relative (`/guides/`,
+`/faq/`) and resolves under `/help/` at runtime.
+
+### Sitemap
+
+`sitemap: { hostname: "https://phibrowser.com/help/" }` emits `/help/sitemap.xml`
+with absolute `<loc>` URLs under the sub-path. Because phibrowser.com's
+`robots.txt` is served by philanding (the help-center only owns `/help/*`),
+philanding's `app/robots.ts` lists this file as a second `Sitemap:` entry so
+crawlers discover the help-center pages. The hostname is hard-coded to
+production; a staging deploy would need it parameterised.
+
 ## Future updates
 
 When raising the minimum Node.js or pnpm major version, update all of these together:

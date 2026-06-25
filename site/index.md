@@ -20,7 +20,7 @@ hero:
 features:
   - title: Help
     details: Guides that orient you — install and first run, layouts, AI, automation, and privacy.
-    link: /help/
+    link: /guides/
   - title: FAQ
     details: Quick answers to common questions about Phi Browser.
     link: /faq/

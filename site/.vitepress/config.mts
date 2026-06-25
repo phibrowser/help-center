@@ -1,13 +1,27 @@
 import { defineConfig } from "vitepress";
 
+// Deployed under the /help/ sub-path. VitePress prepends this base to asset and
+// internal-link URLs (nav/sidebar links, theme logo, bundled assets) and to
+// route-relative Markdown links automatically — so Markdown keeps writing
+// /faq/ and /guides/... and they resolve under /help/ at runtime. Raw `head`
+// tags are the exception: VitePress does not rewrite their attributes, so the
+// icon hrefs below include `base` explicitly.
+const base = "/help/";
+
 export default defineConfig({
   title: "Phi Help",
   description: "Help and FAQ for Phi Browser.",
+  base,
+  // Emitted at /help/sitemap.xml. The hostname includes the /help/ base so the
+  // generated <loc> URLs are absolute under the sub-path (e.g.
+  // https://phibrowser.com/help/faq/). philanding's robots.txt references this
+  // file as a second sitemap so search engines discover the help-center pages.
+  sitemap: { hostname: "https://phibrowser.com/help/" },
   cleanUrls: true,
   head: [
-    ["link", { rel: "icon", type: "image/svg+xml", href: "/icon.svg" }],
-    ["link", { rel: "icon", sizes: "any", href: "/favicon.ico" }],
-    ["link", { rel: "apple-touch-icon", href: "/apple-touch-icon.png" }],
+    ["link", { rel: "icon", type: "image/svg+xml", href: `${base}icon.svg` }],
+    ["link", { rel: "icon", sizes: "any", href: `${base}favicon.ico` }],
+    ["link", { rel: "apple-touch-icon", href: `${base}apple-touch-icon.png` }],
   ],
   themeConfig: {
     logo: { light: "/phi-mark-dark.svg", dark: "/phi-mark-light.svg" },
@@ -15,43 +29,28 @@ export default defineConfig({
       provider: "local",
     },
     nav: [
-      { text: "Help", link: "/help/" },
+      { text: "Help", link: "/guides/" },
       { text: "FAQ", link: "/faq/" },
     ],
     sidebar: [
       {
         text: "Help",
         items: [
-          { text: "Overview", link: "/help/" },
+          { text: "Overview", link: "/guides/" },
           { text: "Getting started", link: "/get-started/" },
-          { text: "Layouts & navigation", link: "/help/layouts/" },
-          { text: "Spaces & Profiles", link: "/help/spaces/" },
-          { text: "Bookmarks & pinned tabs", link: "/help/bookmarks/" },
-          { text: "Themes & appearance", link: "/help/themes/" },
-          { text: "Meet your assistant", link: "/help/ai/" },
-          { text: "Memory", link: "/help/memory/" },
-          { text: "Skills", link: "/help/skills/" },
-          { text: "New tab & widgets", link: "/help/new-tab/" },
-          { text: "Automation & Phi Link", link: "/help/automation/" },
-          { text: "Phi Sentinel", link: "/help/sentinel/" },
-          { text: "Privacy & your data", link: "/help/privacy/" },
-          { text: "Time Machine backups", link: "/help/time-machine/" },
-        ],
-      },
-      {
-        text: "FAQ",
-        items: [
-          { text: "Overview", link: "/faq/" },
-          { text: "Layouts & navigation", link: "/faq/layouts/" },
-          { text: "Spaces & Profiles", link: "/faq/spaces/" },
-          { text: "Bookmarks & tabs", link: "/faq/bookmarks/" },
-          { text: "Split View & Tab Groups", link: "/faq/split-view/" },
-          { text: "AI features", link: "/faq/ai/" },
-          { text: "Phi Sentinel", link: "/faq/sentinel/" },
-          { text: "Phi Link", link: "/faq/link/" },
-          { text: "Pricing & availability", link: "/faq/pricing/" },
-          { text: "Privacy & data", link: "/faq/privacy/" },
-          { text: "Time Machine backups", link: "/faq/time-machine/" },
+          { text: "Frequently asked questions", link: "/faq/" },
+          { text: "Layouts & navigation", link: "/guides/layouts/" },
+          { text: "Spaces & Profiles", link: "/guides/spaces/" },
+          { text: "Bookmarks & pinned tabs", link: "/guides/bookmarks/" },
+          { text: "Themes & appearance", link: "/guides/themes/" },
+          { text: "Meet your assistant", link: "/guides/ai/" },
+          { text: "Memory", link: "/guides/memory/" },
+          { text: "Skills", link: "/guides/skills/" },
+          { text: "New tab & widgets", link: "/guides/new-tab/" },
+          { text: "Automation & Phi Link", link: "/guides/automation/" },
+          { text: "Phi Sentinel", link: "/guides/sentinel/" },
+          { text: "Privacy & your data", link: "/guides/privacy/" },
+          { text: "Time Machine backups", link: "/guides/time-machine/" },
         ],
       },
     ],
