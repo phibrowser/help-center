@@ -22,7 +22,7 @@ Because you named it during onboarding, it has its own identity rather than feel
 
 There are a few ways to reach it:
 
-- Use the **floating chat button**.
+- Click the **Chat** button. Where it sits depends on your [layout](/help/layouts/): the bottom of the sidebar in Performance, or the top-right of the page header in Balanced and Comfortable.
 - **Right-click** a page, a link, or selected text and ask about it directly.
 
 Asking in context beats copying things into a separate chat window. It can answer questions, summarize content, explain pages, and help with tasks, drawing on context from the current tab, what it remembers about you, and your connected external data.

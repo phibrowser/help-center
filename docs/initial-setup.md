@@ -91,7 +91,7 @@ confirmed from the official site (phibrowser.com and the full answer text of its
 `/help/` FAQ) and the sibling repositories `../phibrowser-mac/` and
 `../phi-ai/`. Concrete UI references that appear in the guides (e.g.
 `Settings → Phi AI`, `View → Always show bookmark bar`, right-click
-`Open as Split`, the floating chat button, the menu-bar Sentinel, `cmd+tab`) are
+`Open as Split`, the **Chat** button, the menu-bar Sentinel, `cmd+tab`) are
 taken directly from the official FAQ rather than invented. Anything not
 confirmed there is kept general, and step-level detail is deferred to the FAQ.
 
@@ -553,6 +553,42 @@ Verified with `pnpm build`: 0 dead links, and `site/.vitepress/dist/` now emits
 Convention going forward: **author every new content page as `<section>/<name>/index.md`**, and
 write internal links with a trailing slash (`/section/name/`, anchors as `/section/name/#anchor`).
 A flat `<name>.md` would publish at `/section/name` (no trailing slash) and break the convention.
+
+## Fix "floating chat button" wording (2026-06-25)
+
+Corrected the description of how users open the assistant. The guides said to use
+the **floating chat button**, which is inaccurate — there is no floating button.
+
+Confirmed against `../phibrowser-mac/`: the control is `ChatButton`
+(`Sources/UserInterface/Sidebar/Bottom/ChatButton.swift`), a capsule button
+labeled **Chat** that opens the AI Chat sidebar via `state.toggleAIChat()`.
+There is no floating button — the "floating" wording was wrong.
+
+Its position is **layout-dependent**, gated on `LayoutMode.showsNavigationAtTop`
+(`= self != .performance`, in `Sources/UserInterface/Preferences/PhiPreferences.swift`).
+`ChatButton` is rendered in exactly two places (whole-repo grep confirmed):
+
+- **Sidebar bottom bar** (`Sidebar/Bottom/SidebarBottomBar.swift`,
+  `SidebarBottomBarSwiftUIView`). Visible only when `navigationAtTop == false`,
+  i.e. **Performance** — `updateChatButtonVisibility()` hides it when
+  `navigationAtTop`.
+- **Page header trailing (top-right) area** (`WebContent/Header/HeaderTrailingArea.swift`).
+  Shown when `showChatButton = navigationAtTop && …`, i.e. **Balanced** and
+  **Comfortable**.
+
+So: bottom of the sidebar in Performance; top-right of the page header in
+Balanced and Comfortable. (Balanced and Comfortable share the same
+`HeaderTrailingArea` component; the docs describe them together — decided with
+the owner, "option B".)
+
+Changed the phrasing to a layout-aware description in:
+
+- `site/help/ai/index.md` (the "Talking to it" list) — links to `/help/layouts/`
+- `site/faq/ai/index.md` ("How do I talk to the assistant?")
+- the UI-reference list in this doc's "Naming, positioning, and structure" note
+
+If the `navigationAtTop` → position mapping changes, or `ChatButton` moves out of
+either mount point, update both guides to match.
 
 ## Future updates
 

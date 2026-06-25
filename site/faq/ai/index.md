@@ -42,7 +42,7 @@ The companion you interact with directly inside the browser. You choose its name
 
 ## How do I talk to the assistant?
 
-Use the **floating chat button**, or right-click a page, link, or selected text to ask context-aware questions.
+Click the **Chat** button — at the bottom of the sidebar in Performance mode, or in the top-right of the page header in Balanced and Comfortable — or right-click a page, link, or selected text to ask context-aware questions.
 
 ## What can the assistant do?
 
