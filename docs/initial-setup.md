@@ -590,6 +590,58 @@ Changed the phrasing to a layout-aware description in:
 If the `navigationAtTop` → position mapping changes, or `ChatButton` moves out of
 either mount point, update both guides to match.
 
+## Content scope update — Spaces & Profiles guides (2026-06-25)
+
+### Requirement
+
+Add Spaces / Profiles coverage to the Help and FAQ, derived from the real
+`../phibrowser-mac/` implementation, and contrast Phi's model with Arc and Dia.
+
+### How
+
+Added two new pages and wired them into navigation:
+
+- `site/help/spaces/index.md` — "Spaces & Profiles" Help guide: the two-layer
+  model (Space = look/feel + bookmarks; Profile = cookies/history/logins/extensions
+  isolation), what lives in a Space, create/switch/rename/delete, URL Rules, and a
+  "Coming from Arc or Dia" comparison.
+- `site/faq/spaces/index.md` — matching concise Q&A.
+- Registered both in `site/.vitepress/config.mts` sidebar (after Layouts), and
+  added pointers in `site/help/index.md` and `site/faq/index.md`.
+
+Facts were verified against the source, not assumed. Key code references:
+
+- `Sources/States/Space/SpaceManager.swift`, `Sources/States/ProfileManager.swift` —
+  a Space binds to exactly one `profileId`; a Profile can back multiple Spaces
+  (N Spaces : 1 Profile).
+- `Sources/UserInterface/Sidebar/Spaces/CreateSpacePanel.swift` — confirmed UI
+  copy: "Each space has its own independent bookmarks" and "Each profile has its
+  own cookies, history, and extensions." Profile picker offers **New Profile**.
+- `Sources/States/Space/URLRouter.swift`, `LocalStorage/LocalStore+SpaceURLRule.swift`,
+  `Sidebar/Spaces/SpaceURLRulesEditor.swift`, `SpaceChooserView.swift` — URL Rules
+  match types (Domain suffix / Domain / Domain contains / URL), **Ask every time**
+  → **Open in which Space?** chooser, most-specific-rule-wins precedence.
+- Pinned tabs are Profile-scoped (shared across Spaces of the same Profile);
+  bookmarks and the optional theme override are per-Space.
+
+Comparison facts (Arc same two-layer model; Dia dropped Spaces, uses Profiles as
+workspaces in separate windows) were cross-checked via web sources in June 2026,
+since the knowledge cutoff predates current Dia behavior. Per owner guidance, the
+guides frame URL Rules as _inspired by_ Arc's Air Traffic Control (Arc's own
+branded routing feature), not invented by Phi and not claimed to be identical.
+
+### Validation
+
+`pnpm format:check` and `pnpm build` both pass; the two new pages render.
+
+### Open issues
+
+- The Swift URL-matching logic is mirrored by a C++ `phi::PhiURLRouter` with no
+  automated drift check. If routing precedence changes on either side, the URL
+  Rules section of both guides may need revisiting.
+- Arc/Dia behavior is competitor-dependent and may drift; revisit the comparison
+  if either product changes its Spaces/Profiles model.
+
 ## Future updates
 
 When raising the minimum Node.js or pnpm major version, update all of these together:

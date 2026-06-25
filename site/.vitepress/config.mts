@@ -25,6 +25,7 @@ export default defineConfig({
           { text: "Overview", link: "/help/" },
           { text: "Getting started", link: "/get-started/" },
           { text: "Layouts & navigation", link: "/help/layouts/" },
+          { text: "Spaces & Profiles", link: "/help/spaces/" },
           { text: "Themes & appearance", link: "/help/themes/" },
           { text: "Meet your assistant", link: "/help/ai/" },
           { text: "Memory", link: "/help/memory/" },
@@ -40,6 +41,7 @@ export default defineConfig({
         items: [
           { text: "Overview", link: "/faq/" },
           { text: "Layouts & navigation", link: "/faq/layouts/" },
+          { text: "Spaces & Profiles", link: "/faq/spaces/" },
           { text: "Bookmarks & tabs", link: "/faq/bookmarks/" },
           { text: "Split View & Tab Groups", link: "/faq/split-view/" },
           { text: "AI features", link: "/faq/ai/" },

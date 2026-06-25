@@ -5,6 +5,7 @@ Quick answers to common questions about Phi Browser, grouped by topic. For the b
 ## Topics
 
 - [Layouts & navigation](/faq/layouts/) — layout modes and the vertical sidebar.
+- [Spaces & Profiles](/faq/spaces/) — separate workspaces and isolated cookies, history, and logins.
 - [Bookmarks & tabs](/faq/bookmarks/) — pinned tabs, bookmarks, and the sidebar workspace.
 - [Split View & Tab Groups](/faq/split-view/) — working with two pages and grouping related tabs.
 - [AI features](/faq/ai/) — Memory, the Assistant, agentic actions, and Skills.

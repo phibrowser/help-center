@@ -33,6 +33,7 @@ See [Privacy & your data](/help/privacy/) for the details.
 
 - [Getting started](/get-started/) — install Phi and first run.
 - [Layouts & navigation](/help/layouts/) — modes, the sidebar, tabs, Split View, Tab Groups.
+- [Spaces & Profiles](/help/spaces/) — separate workspaces, isolated Profiles, and URL routing rules.
 - [Themes & appearance](/help/themes/) — color themes, light/dark, and what the theme colors.
 - [Meet your assistant](/help/ai/) — Memory, talking to it, and Skills.
 - [Memory](/help/memory/) — how the assistant learns from your browsing and how you stay in control.
