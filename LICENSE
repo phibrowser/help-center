@@ -1,0 +1,39 @@
+Phi Help Center — Licensing
+===========================
+
+Copyright (c) 2026 Phinomenon Inc.
+
+This repository contains two kinds of material, licensed separately.
+
+Documentation content
+----------------------
+
+The user-facing Help and FAQ content — the Markdown files under `site/`
+(`site/**/*.md`) and the prose and screenshots embedded in them — is licensed
+under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+International License (CC BY-NC-SA 4.0).
+
+You are free to share and adapt this content, including by quoting it
+elsewhere, provided you give appropriate credit to Phinomenon Inc., do not use
+it for commercial purposes, and distribute any derivative work under the same
+license. The full legal text is in `LICENSE-CONTENT`, or at
+https://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+Source code
+-----------
+
+The site source code — the VitePress theme and configuration under
+`site/.vitepress/` (including `config.mts`, CSS, and Vue components), the
+repository configuration and tooling at the root, and the internal notes under
+`docs/` — is licensed under the MIT License. The full legal text is in
+`LICENSE-CODE`.
+
+Trademarks
+----------
+
+The names "Phi" and "Phi Browser", together with the Phi logos and brand
+assets under `site/public/` (including `icon.svg`, `phi-mark-light.svg`,
+`phi-mark-dark.svg`, `favicon.ico`, and `apple-touch-icon.png`), are
+trademarks of Phinomenon Inc. They are NOT covered by either license above.
+All rights to them are reserved, and the licenses above do not grant any right
+to use them.
