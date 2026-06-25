@@ -42,4 +42,5 @@ See [Privacy & your data](/help/privacy/) for the details.
 - [Automation & Phi Link](/help/automation/) — agentic tasks, Phi Sentinel, and Telegram.
 - [Phi Sentinel](/help/sentinel/) — the background app that runs automation and hosts Private AI.
 - [Privacy & your data](/help/privacy/) — how your data is handled.
+- [Time Machine backups](/help/time-machine/) — rolling back to a previous version after a major update.
 - [FAQ](/faq/) — quick answers to specific questions.

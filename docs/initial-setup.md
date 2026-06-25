@@ -642,6 +642,64 @@ branded routing feature), not invented by Phi and not claimed to be identical.
 - Arc/Dia behavior is competitor-dependent and may drift; revisit the comparison
   if either product changes its Spaces/Profiles model.
 
+## Time Machine backups guides (2026-06-25)
+
+### Requirement
+
+Add Time Machine coverage to Help and FAQ, derived from the real
+`../phibrowser-mac/` implementation.
+
+### How
+
+Added two pages and wired them into navigation:
+
+- `site/help/time-machine/index.md` — "Time Machine backups" Help guide.
+- `site/faq/time-machine/index.md` — matching concise Q&A.
+- Registered both in `site/.vitepress/config.mts` sidebar (after Privacy) and
+  added pointers in `site/help/index.md` and `site/faq/index.md`.
+
+### Key facts (verified against source, not assumed)
+
+The crucial framing decision: Phi's Time Machine is a **version rollback** safety
+net, **not** Apple's Time Machine and **not** a continuous/scheduled backup. The
+guides lead with that distinction to prevent the obvious confusion.
+
+- `Sources/Application/TimeMachine/TimeMachineSnapshotManager.swift`,
+  `TimeMachineBootstrap.swift` — a snapshot is created automatically at launch,
+  only when the running build matches the rollback policy's `backupTriggerBuild`,
+  and only once per such build. Users do not trigger or schedule it.
+- `Sources/Application/TimeMachine/TimeMachineModels.swift` — a snapshot captures
+  the previous app version plus its data (Phi data always; Chromium data when the
+  policy sets `includeChromiumData`). `menuTitle` format is
+  `Phi <version> (<build>) on yyyy.M.d`.
+- `Sources/Application/AppController+Menu.swift` — verified UI copy: Help menu
+  **Time Machine Backups**; empty state **No Backups Available** (catalog-read
+  failure shows **Backups Unavailable**); confirm title **"Restore Time Machine
+  Backup?"** with body "Phi will quit and restore %@. The current app and selected
+  user data will be replaced." and a **Restore** button.
+- `Sources/Networking/TimeMachinePackageDownloader.swift`,
+  `TimeMachineRestoreCoordinator.swift` — restore downloads the previous version
+  (`rollbackPackageURL`, SHA-256 verified), so a network connection is required;
+  the restore is crash-recoverable.
+- Snapshots are local-only: no cloud, no account binding, not cross-device, not
+  encrypted (the guides say "stored locally on your Mac" and do not claim
+  encryption).
+- The sibling **Manage User Data** (`AppController+Menu.swift:282-293`:
+  **Export User Data…** / **Import User Data…**) is the user-controlled manual
+  backup; the guides point to it as the tool for new-Mac migration, which Time
+  Machine intentionally does not cover.
+
+### Validation
+
+`pnpm format:check` and `pnpm build` both pass; the two new pages render.
+
+### Open issues
+
+- Behavior is policy-driven (`Resources/TimeMachineRollbackPolicy.json`). The
+  guides stay general about _when_ snapshots appear ("before certain major
+  updates") rather than naming build numbers, so they should not need updates as
+  the policy changes. Revisit only if the menu strings or the restore flow change.
+
 ## Future updates
 
 When raising the minimum Node.js or pnpm major version, update all of these together:

@@ -13,5 +13,6 @@ Quick answers to common questions about Phi Browser, grouped by topic. For the b
 - [Phi Link](/faq/link/) — using your assistant from Telegram.
 - [Pricing & availability](/faq/pricing/) — what Phi costs today.
 - [Privacy & data](/faq/privacy/) — the local-first model and what Phi does not collect.
+- [Time Machine backups](/faq/time-machine/) — version rollback after a major update, and exporting your own data.
 
 New to Phi Browser? See [Getting started](/get-started/) in the Help section.

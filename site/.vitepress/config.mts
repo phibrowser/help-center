@@ -34,6 +34,7 @@ export default defineConfig({
           { text: "Automation & Phi Link", link: "/help/automation/" },
           { text: "Phi Sentinel", link: "/help/sentinel/" },
           { text: "Privacy & your data", link: "/help/privacy/" },
+          { text: "Time Machine backups", link: "/help/time-machine/" },
         ],
       },
       {
@@ -49,6 +50,7 @@ export default defineConfig({
           { text: "Phi Link", link: "/faq/link/" },
           { text: "Pricing & availability", link: "/faq/pricing/" },
           { text: "Privacy & data", link: "/faq/privacy/" },
+          { text: "Time Machine backups", link: "/faq/time-machine/" },
         ],
       },
     ],
