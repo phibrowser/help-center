@@ -43,4 +43,4 @@ It keeps the same principles: your memory stays yours and lives with you, and yo
 - [Meet your assistant](/help/ai/) — how you reach it, talk to it, and what Skills are.
 - [New tab & widgets](/help/new-tab/) — the personalized new tab that Memory helps fill.
 - [Privacy & your data](/help/privacy/) — where your data lives and how to stay in control.
-- [FAQ](/faq/ai/) — quick answers to specific questions about Memory and the assistant.
+- [FAQ](/faq/#ai-features) — quick answers to specific questions about Memory and the assistant.

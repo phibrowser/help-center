@@ -40,4 +40,4 @@ Private AI deepens Phi's local-first approach: it lets the AI itself — not jus
 
 - [Automation & Phi Link](/help/automation/) — on-demand actions, scheduled tasks, and using Phi from Telegram.
 - [Privacy & your data](/help/privacy/) — where your data lives and how to stay in control.
-- [FAQ](/faq/sentinel/) — quick answers about Phi Sentinel.
+- [FAQ](/faq/#phi-sentinel) — quick answers about Phi Sentinel.

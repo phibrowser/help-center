@@ -37,4 +37,4 @@ Skills run through your assistant, not on their own. Once a Skill is enabled, th
 
 - [Meet your assistant](/help/ai/) — how you reach it and what it can do.
 - [Automation & Phi Link](/help/automation/) — letting the assistant take actions and run scheduled tasks.
-- [FAQ](/faq/ai/) — quick answers about the assistant and its AI features.
+- [FAQ](/faq/#ai-features) — quick answers about the assistant and its AI features.
