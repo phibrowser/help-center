@@ -12,6 +12,11 @@ export default defineConfig({
   title: "Phi Help",
   description: "Help and FAQ for Phi Browser.",
   base,
+  // Emitted at /help/sitemap.xml. The hostname includes the /help/ base so the
+  // generated <loc> URLs are absolute under the sub-path (e.g.
+  // https://phibrowser.com/help/faq/). philanding's robots.txt references this
+  // file as a second sitemap so search engines discover the help-center pages.
+  sitemap: { hostname: "https://phibrowser.com/help/" },
   cleanUrls: true,
   head: [
     ["link", { rel: "icon", type: "image/svg+xml", href: `${base}icon.svg` }],

@@ -855,6 +855,15 @@ Note the distinction: `base` (`/help/`) is the deploy prefix; `/guides/` is the
 in-site route for the guides. Markdown stays route-relative (`/guides/`,
 `/faq/`) and resolves under `/help/` at runtime.
 
+### Sitemap
+
+`sitemap: { hostname: "https://phibrowser.com/help/" }` emits `/help/sitemap.xml`
+with absolute `<loc>` URLs under the sub-path. Because phibrowser.com's
+`robots.txt` is served by philanding (the help-center only owns `/help/*`),
+philanding's `app/robots.ts` lists this file as a second `Sitemap:` entry so
+crawlers discover the help-center pages. The hostname is hard-coded to
+production; a staging deploy would need it parameterised.
+
 ## Future updates
 
 When raising the minimum Node.js or pnpm major version, update all of these together:
