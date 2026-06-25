@@ -26,11 +26,11 @@ A theme is applied across the browser, not a single surface:
 
 - **The window** — the toolbar, address bar, and tabs take on the theme color. The **Opacity** slider sets how strong that tint is.
 - **The sidebar** — selected and hovered tabs pick up the theme.
-- **The new tab** — your [new tab](/help/new-tab) follows the same theme automatically, so it matches the rest of the browser; change themes and it repaints along with everything else.
+- **The new tab** — your [new tab](/help/new-tab/) follows the same theme automatically, so it matches the rest of the browser; change themes and it repaints along with everything else.
 - **Selected text on web pages** — by default, highlighting text on a page tints the selection with your theme color. If you would rather pages keep their own native selection color, turn off **Apply theme to text selection on web pages** in the Theme settings.
 
 ## What's next
 
-- [Layouts & navigation](/help/layouts) — modes, the sidebar, tabs, Split View, and Tab Groups.
-- [New tab & widgets](/help/new-tab) — the personalized new tab your theme colors.
-- [Privacy & your data](/help/privacy) — where your data lives and how to stay in control.
+- [Layouts & navigation](/help/layouts/) — modes, the sidebar, tabs, Split View, and Tab Groups.
+- [New tab & widgets](/help/new-tab/) — the personalized new tab your theme colors.
+- [Privacy & your data](/help/privacy/) — where your data lives and how to stay in control.

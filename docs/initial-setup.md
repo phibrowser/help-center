@@ -522,6 +522,38 @@ Open issue: if Shadow Tasks is renamed, or the approval/notification flow change
 `site/help/automation.md`. FAQ (`faq/ai.md`) still has only the older agentic Q&As (on-demand /
 scheduled); a "background tasks" Q&A could be added later if desired.
 
+## Trailing-slash URLs via directory-index pages (2026-06-25)
+
+Why: the owner asked to enable **trailing slash** for the site, so every page URL ends in
+`/` (e.g. `/help/layouts/` rather than `/help/layouts`).
+
+VitePress 1.6.4 has no `trailingSlash` config option — only `cleanUrls` (already `true`), which
+strips the `.html` extension but does not add a trailing slash. The repo also has no host-level
+config (Netlify/Vercel/Cloudflare) where a redirect rule could be added. The only reliable,
+host-independent way to get trailing-slash URLs in VitePress is the **directory-index** layout:
+a page authored as `foo/index.md` builds to `foo/index.html`, which is served at `/foo/`.
+
+What changed:
+
+- Every non-index content page was moved from `<name>.md` to `<name>/index.md` (via `git mv`):
+  all of `site/help/*.md` and `site/faq/*.md`. The already-index pages
+  (`site/index.md`, `site/help/index.md`, `site/faq/index.md`, `site/get-started/index.md`)
+  were left in place.
+- All internal root-relative links were rewritten to the trailing-slash form across the Markdown
+  content and `site/.vitepress/config.mts` (nav + sidebar): `/help/layouts` → `/help/layouts/`,
+  and anchors moved the slash before the hash, e.g. `/help/privacy#turning-ai-off` →
+  `/help/privacy/#turning-ai-off`. Section landing links that were already slashed (`/help/`,
+  `/faq/`, `/get-started/`) were untouched.
+- `cleanUrls: true` is kept. With the directory-index layout the page paths already carry the
+  trailing slash; `cleanUrls` still governs whether the `.html` is shown and is orthogonal here.
+
+Verified with `pnpm build`: 0 dead links, and `site/.vitepress/dist/` now emits
+`help/<name>/index.html` / `faq/<name>/index.html` for every page.
+
+Convention going forward: **author every new content page as `<section>/<name>/index.md`**, and
+write internal links with a trailing slash (`/section/name/`, anchors as `/section/name/#anchor`).
+A flat `<name>.md` would publish at `/section/name` (no trailing slash) and break the convention.
+
 ## Future updates
 
 When raising the minimum Node.js or pnpm major version, update all of these together:

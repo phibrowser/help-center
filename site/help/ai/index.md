@@ -4,17 +4,17 @@ Phi comes with an assistant built into the browser and on by default — you do 
 
 That naming is the point: rather than thinking of it as "an AI", a chatbot, or a model you operate, it is meant to feel like someone who works alongside you in the browser — a presence with its own identity that gets to know you over time. The rest of this guide describes the different sides of that companion:
 
-- **[Memory](/help/memory)** — how it gets to know you.
+- **[Memory](/help/memory/)** — how it gets to know you.
 - **Talking to it** — how you reach it and ask for things.
 - **Chat with Tabs** — bring open pages into the conversation as context.
-- **[Skills](/help/skills)** — workflows it can carry out for you.
-- **Acting on your behalf** — it can take actions and run tasks, not just answer. See [Automation & Phi Link](/help/automation).
+- **[Skills](/help/skills/)** — workflows it can carry out for you.
+- **Acting on your behalf** — it can take actions and run tasks, not just answer. See [Automation & Phi Link](/help/automation/).
 
-Prefer a plain browser with none of this? You can turn it all off — see [Privacy & your data](/help/privacy#turning-ai-off).
+Prefer a plain browser with none of this? You can turn it all off — see [Privacy & your data](/help/privacy/#turning-ai-off).
 
 ## Memory
 
-Memory is how it gets to know you. As you browse, it quietly builds a picture of what matters to you — automatically, stored locally on your device, and yours to view, manage, and delete. See [Memory](/help/memory) for the full picture.
+Memory is how it gets to know you. As you browse, it quietly builds a picture of what matters to you — automatically, stored locally on your device, and yours to view, manage, and delete. See [Memory](/help/memory/) for the full picture.
 
 ## Talking to it
 
@@ -29,15 +29,15 @@ Asking in context beats copying things into a separate chat window. It can answe
 
 ## Chat with Tabs
 
-The assistant can bring the pages you have open into a conversation as context. Attach one or more tabs and ask across them — compare them, summarize them, or pull details from several at once — without copying anything into a separate window. Because it understands [Split View and Tab Groups](/help/layouts), attaching a grouped tab can bring the whole set along, so you can ask about related pages without explaining how they fit together.
+The assistant can bring the pages you have open into a conversation as context. Attach one or more tabs and ask across them — compare them, summarize them, or pull details from several at once — without copying anything into a separate window. Because it understands [Split View and Tab Groups](/help/layouts/), attaching a grouped tab can bring the whole set along, so you can ask about related pages without explaining how they fit together.
 
 By default, opening the assistant attaches the tab you are currently on, so you can ask about what is in front of you right away. If you would rather start each conversation with nothing attached, turn off **Automatically add current tab as context to new conversation** under **Settings → Phi AI → AI Sidebar**. You can still attach tabs by hand whenever you want.
 
 ## Skills
 
-Skills are reusable workflows. Teach it a multi-step task once, and it can repeat it later on demand — turning a recurring job into a single request. Phi ships a set of built-in Skills you can browse and add, and you can create your own. See [Skills](/help/skills) for the full picture.
+Skills are reusable workflows. Teach it a multi-step task once, and it can repeat it later on demand — turning a recurring job into a single request. Phi ships a set of built-in Skills you can browse and add, and you can create your own. See [Skills](/help/skills/) for the full picture.
 
 ## What's next
 
-- [Automation & Phi Link](/help/automation) — let it take actions and run scheduled tasks, and reach it from Telegram.
-- [Privacy & your data](/help/privacy) — where your data lives and how to stay in control.
+- [Automation & Phi Link](/help/automation/) — let it take actions and run scheduled tasks, and reach it from Telegram.
+- [Privacy & your data](/help/privacy/) — where your data lives and how to stay in control.

@@ -4,13 +4,13 @@ Quick answers to common questions about Phi Browser, grouped by topic. For the b
 
 ## Topics
 
-- [Layouts & navigation](/faq/layouts) — layout modes and the vertical sidebar.
-- [Bookmarks & tabs](/faq/bookmarks) — pinned tabs, bookmarks, and the sidebar workspace.
-- [Split View & Tab Groups](/faq/split-view) — working with two pages and grouping related tabs.
-- [AI features](/faq/ai) — Memory, the Assistant, agentic actions, and Skills.
-- [Phi Sentinel](/faq/sentinel) — the background orchestrator for scheduled tasks.
-- [Phi Link](/faq/link) — using your assistant from Telegram.
-- [Pricing & availability](/faq/pricing) — what Phi costs today.
-- [Privacy & data](/faq/privacy) — the local-first model and what Phi does not collect.
+- [Layouts & navigation](/faq/layouts/) — layout modes and the vertical sidebar.
+- [Bookmarks & tabs](/faq/bookmarks/) — pinned tabs, bookmarks, and the sidebar workspace.
+- [Split View & Tab Groups](/faq/split-view/) — working with two pages and grouping related tabs.
+- [AI features](/faq/ai/) — Memory, the Assistant, agentic actions, and Skills.
+- [Phi Sentinel](/faq/sentinel/) — the background orchestrator for scheduled tasks.
+- [Phi Link](/faq/link/) — using your assistant from Telegram.
+- [Pricing & availability](/faq/pricing/) — what Phi costs today.
+- [Privacy & data](/faq/privacy/) — the local-first model and what Phi does not collect.
 
 New to Phi Browser? See [Getting started](/get-started/) in the Help section.

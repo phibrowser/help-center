@@ -31,10 +31,10 @@ You are not limited to the built-in set. Phi includes a **Skill Creator** that h
 
 ## Using Skills in chat
 
-Skills run through your assistant, not on their own. Once a Skill is enabled, the assistant can reach for it on its own when your request matches what it does. You can also bring a Skill into a conversation yourself — pick it from the Skills list when you are writing a message, including from the [new tab's ask box](/help/new-tab) — when you want to be explicit about which one to use.
+Skills run through your assistant, not on their own. Once a Skill is enabled, the assistant can reach for it on its own when your request matches what it does. You can also bring a Skill into a conversation yourself — pick it from the Skills list when you are writing a message, including from the [new tab's ask box](/help/new-tab/) — when you want to be explicit about which one to use.
 
 ## What's next
 
-- [Meet your assistant](/help/ai) — how you reach it and what it can do.
-- [Automation & Phi Link](/help/automation) — letting the assistant take actions and run scheduled tasks.
-- [FAQ](/faq/ai) — quick answers about the assistant and its AI features.
+- [Meet your assistant](/help/ai/) — how you reach it and what it can do.
+- [Automation & Phi Link](/help/automation/) — letting the assistant take actions and run scheduled tasks.
+- [FAQ](/faq/ai/) — quick answers about the assistant and its AI features.

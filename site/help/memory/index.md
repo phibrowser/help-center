@@ -16,11 +16,11 @@ What you do recently counts for more than something you did once. Relevance deca
 
 What Memory learns is not a black box. **Memory Galaxy** is a view that lays it all out as a map centered on you — the themes that describe how you relate to things, the entities you engage with (sites, topics, people, skills), and the intents behind your browsing. You can look through it to see what the assistant has picked up and how the pieces connect, rather than taking it on trust.
 
-You can open your Memory whenever you want to look. On the new tab, there is an entry just below the search box. In the browser itself, where to find it depends on your [layout mode](/help/layouts): in **Performance** and **Balanced** it sits at the **bottom-left**, and in **Comfortable** it moves to the **top-right**.
+You can open your Memory whenever you want to look. On the new tab, there is an entry just below the search box. In the browser itself, where to find it depends on your [layout mode](/help/layouts/): in **Performance** and **Balanced** it sits at the **bottom-left**, and in **Comfortable** it moves to the **top-right**.
 
 ## How the assistant uses it
 
-When you ask the assistant a question, summarize a page, or hand it a task, it draws on what it remembers about you alongside what is in front of you right now — the current tab, or a whole [Split View or Tab Group](/help/layouts). That is what lets it answer in a way that fits you without you having to re-explain your situation each time. Memory also feeds the personalized [new tab and its widgets](/help/new-tab), where what it knows shows up as something useful rather than staying hidden. For more on reaching and talking to the assistant, see [Meet your assistant](/help/ai).
+When you ask the assistant a question, summarize a page, or hand it a task, it draws on what it remembers about you alongside what is in front of you right now — the current tab, or a whole [Split View or Tab Group](/help/layouts/). That is what lets it answer in a way that fits you without you having to re-explain your situation each time. Memory also feeds the personalized [new tab and its widgets](/help/new-tab/), where what it knows shows up as something useful rather than staying hidden. For more on reaching and talking to the assistant, see [Meet your assistant](/help/ai/).
 
 ## Staying in control
 
@@ -30,7 +30,7 @@ Everything Memory builds is stored locally on your device and stays under your c
 - **Turn off memory collection for a site** when there are pages you would rather it not learn from.
 - **Import and export** your memory, so it is portable and genuinely yours rather than locked in.
 
-Your memory is never used to train AI models. For where your data lives and what Phi does and does not collect, see [Privacy & your data](/help/privacy). Note that turning AI off entirely also wipes your memory — see [turning AI off](/help/privacy#turning-ai-off) before you do.
+Your memory is never used to train AI models. For where your data lives and what Phi does and does not collect, see [Privacy & your data](/help/privacy/). Note that turning AI off entirely also wipes your memory — see [turning AI off](/help/privacy/#turning-ai-off) before you do.
 
 ## Memory beyond Phi: Anamnesis
 
@@ -40,7 +40,7 @@ It keeps the same principles: your memory stays yours and lives with you, and yo
 
 ## What's next
 
-- [Meet your assistant](/help/ai) — how you reach it, talk to it, and what Skills are.
-- [New tab & widgets](/help/new-tab) — the personalized new tab that Memory helps fill.
-- [Privacy & your data](/help/privacy) — where your data lives and how to stay in control.
-- [FAQ](/faq/ai) — quick answers to specific questions about Memory and the assistant.
+- [Meet your assistant](/help/ai/) — how you reach it, talk to it, and what Skills are.
+- [New tab & widgets](/help/new-tab/) — the personalized new tab that Memory helps fill.
+- [Privacy & your data](/help/privacy/) — where your data lives and how to stay in control.
+- [FAQ](/faq/ai/) — quick answers to specific questions about Memory and the assistant.
