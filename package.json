@@ -7,8 +7,8 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev site --port ${PORT:-3000}",
-    "build": "vitepress build site",
-    "preview": "vitepress preview site --port ${PORT:-3000}",
+    "build": "vitepress build site --outDir site/.vitepress/dist/help",
+    "preview": "vitepress preview site --outDir site/.vitepress/dist/help --port ${PORT:-3000}",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "prepare": "husky"

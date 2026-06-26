@@ -864,6 +864,42 @@ philanding's `app/robots.ts` lists this file as a second `Sitemap:` entry so
 crawlers discover the help-center pages. The hostname is hard-coded to
 production; a staging deploy would need it parameterised.
 
+## Build output nested under `dist/help/` (2026-06-26)
+
+### Why
+
+After `base` was set to `/help/`, the first production deploy 404'd: requests
+arrived at the Worker with the `/help` prefix intact (the upstream forwards
+`/help/*` verbatim without stripping the prefix), but the build emitted a flat
+tree to `site/.vitepress/dist/`. VitePress's `base` only rewrites URLs inside
+the generated HTML/JS — it does **not** physically nest the output. So the
+served layout (root = `/`) and the URL layout (`/help/...`) were misaligned:
+`/help/` looked for `dist/help/index.html` (absent), and even the root
+`index.html`, had it been hit, referenced `/help/assets/...` while the files sat
+at `dist/assets/...`. Every asset would 404.
+
+### How
+
+Align the on-disk layout with the `/help/` base by emitting into a `help/`
+subdirectory and pointing the asset server at its parent:
+
+- `package.json` `build`/`preview` scripts pass
+  `--outDir site/.vitepress/dist/help` (the VitePress CLI resolves `--outDir`
+  relative to the repo root / cwd, not to `site/`).
+- `wrangler.jsonc` `assets.directory` stays at `./site/.vitepress/dist` (the
+  parent), so `/help/*` maps to the real `dist/help/*` directory.
+
+`base`, the sitemap hostname, and the `head` icon hrefs were left unchanged —
+they already pointed at `/help/`; only the physical structure had to catch up.
+`.gitignore` still ignores `site/.vitepress/dist` (the parent), so the nested
+output is covered.
+
+### Open issues
+
+None. Note that this couples the deploy to upstream forwarding the `/help`
+prefix unstripped; if the upstream is ever changed to strip the prefix, the
+build would need to drop the `help/` nesting (or `base` would change to `/`).
+
 ## Future updates
 
 When raising the minimum Node.js or pnpm major version, update all of these together:

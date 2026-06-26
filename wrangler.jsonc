@@ -4,7 +4,11 @@
   "name": "phibrowser-help-center",
   "compatibility_date": "2026-06-26",
   "assets": {
-    // VitePress content lives under site/, not the default docs/.
+    // VitePress content lives under site/, not the default docs/. The build
+    // emits into dist/help/ (matching the "/help/" base) so the served path and
+    // the on-disk layout line up; this directory is the parent so /help/* maps
+    // to dist/help/*. Requests are forwarded to the Worker with the /help
+    // prefix intact, so the prefix must exist as a real directory here.
     "directory": "./site/.vitepress/dist",
   },
 }
