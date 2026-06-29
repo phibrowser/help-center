@@ -218,6 +218,7 @@ export default defineConfig({
     ["link", { rel: "apple-touch-icon", href: `${base}apple-touch-icon.png` }],
   ],
   themeConfig: {
+    externalLinkIcon: true,
     logo: { light: "/phi-mark-dark.svg", dark: "/phi-mark-light.svg" },
     search: {
       provider: "local",

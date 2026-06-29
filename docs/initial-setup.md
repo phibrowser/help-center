@@ -1231,6 +1231,26 @@ This makes build and preview resolve the same nested output directory from a sin
 
 None known. Preview is still a local long-running server, so automated validation should generally stop at `pnpm build`; verify `pnpm preview` manually when changing deployment layout or VitePress output configuration.
 
+## External-link arrows (2026-06-29)
+
+### Requirement
+
+The owner asked to follow the top navigation bar's behavior and add an arrow indicator to every link that opens in a new tab (`target="_blank"`).
+
+Work timestamp: 2026-06-29 15:31:42 CST.
+
+Follow-up timestamp: 2026-06-29 15:36:23 CST. The owner clarified that the home page **GitHub** hero button should also receive the arrow.
+
+### How
+
+`site/.vitepress/config.mts` now sets `themeConfig.externalLinkIcon: true`, which enables VitePress's built-in external-link arrow for Markdown-rendered document links such as the Phi download page, Homebrew, and Anamnesis links.
+
+`site/.vitepress/theme/custom.css` also adds the same masked arrow icon to `.VPButton[target="_blank"]` so home hero buttons rendered outside `.vp-doc` — currently the **GitHub** action — match the top-nav treatment too.
+
+### Open issues
+
+None known. If future custom components render new-tab links outside VitePress's `VPLink`, `.vp-doc`, or `.VPButton` surfaces, add them to the same shared arrow treatment instead of hand-writing arrow characters in content.
+
 ## Future updates
 
 When raising the minimum Node.js or pnpm major version, update all of these together:
