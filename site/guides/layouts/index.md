@@ -1,6 +1,6 @@
 # Layouts & navigation
 
-Phi organizes browsing around a vertical sidebar and a choice of layout modes. If you are coming from Chrome or Safari, this is the biggest change — and the thing most worth getting comfortable with first.
+Phi organizes browsing around a vertical sidebar and a choice of layout modes. If you are switching from Chrome or Safari, this is the biggest change — and the thing most worth getting comfortable with first.
 
 ## Why a vertical sidebar?
 
@@ -16,15 +16,17 @@ Phi offers three layout modes so you can choose how much screen space goes to co
 
 ### Which should I start with?
 
-- Coming from Chrome: start with **Comfortable**.
+- Switching from Chrome or Safari: start with **Comfortable**.
 - Prefer a modern sidebar browser: start with **Balanced**.
 - Want maximum page space: use **Performance**.
+
+For broader migration advice, see [Switching to Phi](/guides/switching-to-phi/).
 
 ## Tabs, pinned tabs, and bookmarks
 
 In Phi, tabs, pinned tabs, and bookmarks all live together in the sidebar, because they are really ends of the same thing — the pages you care about. **Tabs** are open right now, **pinned tabs** sit at the top for pages you live in, and **bookmarks** sit below for pages you want to keep. A simple way to think about it: **pinned tabs are pages you live in; bookmarks are pages you want to keep.**
 
-For how bookmarks open in place as tabs, how to pin and organize pages, and how this compares to Arc and Dia, see [Bookmarks & pinned tabs](/guides/bookmarks/).
+For how bookmarks open in place as tabs, and how to pin and organize pages, see [Bookmarks & pinned tabs](/guides/bookmarks/). For Arc and Dia migration notes, see [Switching to Phi](/guides/switching-to-phi/).
 
 ## Split View
 

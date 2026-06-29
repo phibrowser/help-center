@@ -38,12 +38,6 @@ Open **URL Rules** from the sidebar to manage every Space's rules in one place. 
 
 Set a rule to **Ask every time** instead of routing silently. When a matching link opens, Phi shows an **Open in which Space?** chooser so you can pick — your current Space is marked, and you can keep the page where you are. When several rules could match, the most specific one wins (a longer path beats a shorter one; an exact host beats a wildcard).
 
-## Coming from Arc or Dia
-
-If you used **Arc**, this model will feel familiar: Arc also separates Spaces (tab groups with their own look) from Profiles (the cookies-and-logins isolation layer that can be scoped to one or more Spaces), so the mental model transfers directly. Phi's **URL Rules** are inspired by Arc's Air Traffic Control — Arc's own feature for routing links into Spaces — rather than a copy of it.
-
-If you came from **Dia**, the difference is bigger. Dia dropped Spaces and uses Profiles as its workspace concept, with each Profile opening in a separate window. Phi keeps Spaces as a layer above Profiles, so you switch contexts with one click inside a single window instead of managing a window per context — while still getting full Profile-level separation when you want it.
-
 ## How this connects to the rest of Phi
 
-Spaces build on the sidebar workspace described in [Layouts & navigation](/guides/layouts/), and per-Space colors use the same palette as [Themes & appearance](/guides/themes/). Because Profiles isolate cookies and history, what the assistant can see is scoped to the Profile you are browsing in — see [Privacy & your data](/guides/privacy/) for how your data is handled.
+Spaces build on the sidebar workspace described in [Layouts & navigation](/guides/layouts/), and per-Space colors use the same palette as [Themes & appearance](/guides/themes/). If you are switching from Arc or Dia, see [Switching to Phi](/guides/switching-to-phi/) for the migration comparison. Because Profiles isolate cookies and history, what the assistant can see is scoped to the Profile you are browsing in — see [Privacy & your data](/guides/privacy/) for how your data is handled.

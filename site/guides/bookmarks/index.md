@@ -1,6 +1,6 @@
 # Bookmarks & pinned tabs
 
-In Phi the sidebar is your workspace, and bookmarks and pinned tabs are the two ways you keep the pages that matter. This chapter goes deeper than [Layouts & navigation](/guides/layouts/) on how they behave — starting with the one thing that surprises people coming from Chrome: in Phi, a bookmark opens in place as a tab.
+In Phi the sidebar is your workspace, and bookmarks and pinned tabs are the two ways you keep the pages that matter. This chapter goes deeper than [Layouts & navigation](/guides/layouts/) on how they behave — starting with the thing that surprises many people moving from traditional browsers: in Phi, a bookmark opens in place as a tab.
 
 ## Bookmarks that open in place
 
@@ -19,7 +19,7 @@ Bookmarks are scoped to the Space you are in — each [Space](/guides/spaces/) k
 
 ## Pinned tabs
 
-Pinned tabs sit at the top of the sidebar in a grid, for the handful of pages you live in — your mail, a dashboard, a project tool. They are persistent: a pinned tab stays in the grid even after you close its page, and clicking it opens the page back up. Pinned tabs are inspired by Arc and Dia, where the same "apps at the top" pattern keeps your anchors one click away.
+Pinned tabs sit at the top of the sidebar in a grid, for the handful of pages you live in — your mail, a dashboard, a project tool. They are persistent: a pinned tab stays in the grid even after you close its page, and clicking it opens the page back up.
 
 - **Pin a tab** by right-clicking it and choosing **Pin**, or by dragging it into the pinned grid. **Unpin** from the same menu returns it to the tab list.
 - **Reorder** pinned tabs by dragging them around the grid.
@@ -34,10 +34,4 @@ A simple split of responsibilities:
 - **Pinned tabs** are pages you live in — always at the top, one click away, and shared across the Spaces on your Profile.
 - **Bookmarks** are pages you want to keep — organized in folders, scoped to one Space, and opened in place when you need them.
 
-## Coming from Arc or Dia
-
-The living-sidebar behavior and pinned tabs are inspired by Arc and Dia rather than copied from them, and a few differences are worth knowing:
-
-- **Arc** dropped traditional bookmarks entirely in favor of pinned tabs and Favorites, and previews links you open from a pinned tab in a separate Peek window. Phi keeps a full bookmark tree with folders, and opening a link navigates normally inside the tab — there is no Peek equivalent.
-- **Dia** keeps bookmarks but surfaces them mainly through its command bar; Phi keeps them visible and organized in the sidebar.
-- Phi's pinned tabs are scoped to the **Profile**, so they follow you across that Profile's Spaces — closer in spirit to Arc's cross-Space Favorites than to Arc's per-Space pinned tabs.
+If you are switching from Arc or Dia, see [Switching to Phi](/guides/switching-to-phi/) for how Phi's living sidebar, bookmarks, and pinned tabs compare.

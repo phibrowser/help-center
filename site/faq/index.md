@@ -9,7 +9,7 @@ Phi has three modes that trade screen space for familiarity. **Performance** giv
 :::
 
 ::: details Which layout should I start with?
-Coming from Chrome or Safari, start with **Comfortable** for the easiest transition. If you want a modern sidebar browser with a visible address bar, try **Balanced**. If you want maximum page space, use **Performance**.
+If you are switching from Chrome or Safari, start with **Comfortable** for the easiest transition. If you want a modern sidebar browser with a visible address bar, try **Balanced**. If you want maximum page space, use **Performance**. See [Switching to Phi](/guides/switching-to-phi/) for the fuller migration guide.
 :::
 
 ::: details Why a vertical sidebar?
@@ -47,7 +47,7 @@ Deleting a Space also removes the pinned tabs and bookmarks that belong to it. T
 :::
 
 ::: details How is this different from Arc and Dia?
-Phi's model follows **Arc**'s: Spaces are the look-and-feel layer, Profiles are the isolation layer, and a Profile can be shared by several Spaces. Phi's **URL Rules** are inspired by Arc's Air Traffic Control — Arc's own feature for routing links into Spaces — rather than a copy of it. **Dia** dropped Spaces and uses Profiles as its workspace, each in a separate window; Phi keeps Spaces above Profiles so you switch contexts with one click in a single window.
+Phi keeps **Spaces** as the visible workspace layer and **Profiles** as the isolation layer underneath. That is close to Arc's two-layer model, while Dia uses Profiles more directly as workspaces in separate windows. For the full comparison, see [Switching to Phi](/guides/switching-to-phi/).
 :::
 
 ## Bookmarks & tabs
@@ -85,7 +85,7 @@ Right-click a tab and choose **Pin**, or drag it into the pinned grid at the top
 :::
 
 ::: details Is this similar to Arc or Dia?
-The living-sidebar model — bookmarks that open in place and pinned tabs at the top — is inspired by Arc and Dia rather than copied. Unlike Arc, which dropped traditional bookmarks and previews links from pinned tabs in a Peek window, Phi keeps a full bookmark tree with folders and opens links normally in the tab. See the [Bookmarks & pinned tabs](/guides/bookmarks/) guide for the full comparison.
+Yes. Phi uses the same broad living-sidebar idea — saved pages stay visible and pinned pages sit at the top — while keeping its own bookmark tree and behavior. See [Switching to Phi](/guides/switching-to-phi/) for the migration comparison and [Bookmarks & pinned tabs](/guides/bookmarks/) for the feature details.
 :::
 
 ## Split View & Tab Groups

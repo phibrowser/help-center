@@ -39,6 +39,7 @@ export default defineConfig({
         items: [
           { text: "Overview", link: "/guides/" },
           { text: "Getting started", link: "/get-started/" },
+          { text: "Switching to Phi", link: "/guides/switching-to-phi/" },
           { text: "Frequently asked questions", link: "/faq/" },
           { text: "Layouts & navigation", link: "/guides/layouts/" },
           { text: "Spaces & Profiles", link: "/guides/spaces/" },

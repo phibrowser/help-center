@@ -967,6 +967,25 @@ Work timestamp: 2026-06-29 11:58:16 CST.
 
 The browser-side listener for `phi:open-sidebar` still needs to ship before this button should be restored. Once that contract is implemented and tested in Phi Browser, re-enable the `nav-bar-content-before` slot in `site/.vitepress/theme/index.ts` and revisit the search/button spacing rules.
 
+## Migration guide consolidation (2026-06-29)
+
+### Requirement
+
+The owner noticed that `Coming from Chrome`, `Coming from Arc`, and `Coming from Dia` migration guidance was scattered across several feature pages. They asked first whether consolidation was appropriate, then approved creating a central migration guide while keeping feature pages useful in context.
+
+Work timestamp: 2026-06-29 12:10:42 CST.
+
+### How
+
+- Added `site/guides/switching-to-phi/index.md` as the central migration page for Chrome, Safari, Arc, and Dia users.
+- Added **Switching to Phi** to the VitePress sidebar immediately after **Getting started** in `site/.vitepress/config.mts`.
+- Added the new page to the guide overview in `site/guides/index.md`.
+- Shortened the migration and competitor-comparison content in `site/get-started/index.md`, `site/guides/layouts/index.md`, `site/guides/spaces/index.md`, `site/guides/bookmarks/index.md`, and `site/faq/index.md` so those pages keep only contextual tips and links to the central migration page.
+
+### Open issues
+
+Arc and Dia behavior can change independently of Phi. Keep the detailed comparison centralized in `site/guides/switching-to-phi/index.md`, and update the shorter contextual links only if the page title or route changes.
+
 ## Future updates
 
 When raising the minimum Node.js or pnpm major version, update all of these together:

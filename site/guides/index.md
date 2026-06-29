@@ -32,6 +32,7 @@ See [Privacy & your data](/guides/privacy/) for the details.
 ## Where to go next
 
 - [Getting started](/get-started/) — install Phi and first run.
+- [Switching to Phi](/guides/switching-to-phi/) — migration notes for Chrome, Safari, Arc, and Dia users.
 - [Layouts & navigation](/guides/layouts/) — modes, the sidebar, tabs, Split View, Tab Groups.
 - [Spaces & Profiles](/guides/spaces/) — separate workspaces, isolated Profiles, and URL routing rules.
 - [Bookmarks & pinned tabs](/guides/bookmarks/) — bookmarks that open in place as tabs, and pinned tabs.

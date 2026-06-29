@@ -26,11 +26,9 @@ The first time you open Phi, onboarding helps you set things up:
 - **Name your assistant** — you choose the assistant's name and avatar, so it has its own identity rather than feeling like a generic chatbot.
 - **AI is on by default** — Phi's AI features are enabled out of the box. You can turn them off later in **Settings → Phi AI** if you prefer a plain browser.
 
-## Coming from Chrome?
+## Switching from another browser?
 
-If you are used to Chrome or Safari, start with **Comfortable Mode** for the easiest transition — tabs on top and a visible URL bar, close to what you already know. Once the basics feel natural, try **Balanced Mode** for more of Phi's intended workflow, and **Performance Mode** if you come to like the sidebar and want maximum page space.
-
-Feeling a little lost at first is normal: Phi is organized around different assumptions than a traditional browser. The fastest way to get it is to **use it as a browser first** — browse normally, open tabs, pin a few pages, bookmark a couple, and try the assistant on a page you are already reading. Phi makes more sense through use than through explanation.
+If you are used to Chrome or Safari, start with **Comfortable Mode** for the easiest transition. For a fuller migration map for Chrome, Safari, Arc, and Dia users, see [Switching to Phi](/guides/switching-to-phi/).
 
 ## Next steps
 
