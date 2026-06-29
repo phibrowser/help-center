@@ -1,3 +1,7 @@
+---
+description: "Learn how Phi Browser's built-in assistant works, including naming your assistant, talking to it, Chat with Tabs, Memory, Skills, and agentic actions."
+---
+
 # Meet your assistant
 
 Phi comes with an assistant built into the browser and on by default — you do not set up a separate AI account or sign in anywhere, it is simply there. One of the first things you do is give it a name and an avatar, and from then on you just call it by that name.

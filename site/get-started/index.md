@@ -1,3 +1,7 @@
+---
+description: "Install Phi Browser on macOS, complete first run, import from another browser, and choose the next guide for learning Phi's sidebar and AI features."
+---
+
 # Getting started
 
 Phi Browser runs on macOS (Apple Silicon, macOS 14 or newer). Install it with either method below, then walk through first run.

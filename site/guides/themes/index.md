@@ -1,3 +1,7 @@
+---
+description: "Customize Phi Browser with color themes, light or dark appearance, opacity, sidebar styling, new tab theming, and optional webpage selection tinting."
+---
+
 # Themes & appearance
 
 Phi lets you set how the browser looks — a color **theme** plus a **light or dark** choice — and it carries across the whole browser rather than one screen. Pick a look once and the window, the sidebar, and your new tab all follow it.

@@ -1,3 +1,7 @@
+---
+description: "Learn where Phi Browser stores your data, what it does not collect, how Memory and cloud AI processing work, and how to control or delete AI data."
+---
+
 # Privacy & your data
 
 Phi is built around a local-first architecture. The idea is simple: Phi can know you well without your personal context becoming a cloud-owned asset.

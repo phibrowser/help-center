@@ -1,3 +1,7 @@
+---
+description: "Understand Phi Browser's living bookmarks, sidebar bookmark organization, pinned tabs, per-Space and per-Profile behavior, and when to use each."
+---
+
 # Bookmarks & pinned tabs
 
 In Phi the sidebar is your workspace, and bookmarks and pinned tabs are the two ways you keep the pages that matter. This chapter goes deeper than [Layouts & navigation](/guides/layouts/) on how they behave — starting with the thing that surprises many people moving from traditional browsers: in Phi, a bookmark opens in place as a tab.

@@ -1,3 +1,7 @@
+---
+description: "Use Phi Skills to save repeatable workflows for your assistant, manage built-in and user-created Skills, and trigger them from chat when needed."
+---
+
 # Skills
 
 A Skill is a reusable instruction you can hand to your assistant. Teach it a multi-step task once, and from then on you can trigger the whole thing with a single request instead of spelling out the steps every time — turning a recurring job into something the assistant just knows how to do.

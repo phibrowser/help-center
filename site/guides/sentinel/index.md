@@ -1,3 +1,7 @@
+---
+description: "Understand Phi Sentinel, the macOS menu bar companion that keeps automation running and can route some AI tasks through Private AI on your Mac."
+---
+
 # Phi Sentinel
 
 Phi Sentinel is a small companion app that lives in the macOS **menu bar**, separate from the browser. Keeping it apart is deliberate: the browser stays light while a quiet background layer keeps working even when no window is open. It does two main jobs — it keeps your automation running, and it hosts **Private AI**.

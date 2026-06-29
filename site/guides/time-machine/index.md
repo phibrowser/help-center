@@ -1,3 +1,7 @@
+---
+description: "Learn how Phi Browser's Time Machine rollback snapshots work, when they are created, how restore differs from Apple Time Machine, and when to export user data."
+---
+
 # Time Machine backups
 
 Time Machine is Phi's safety net for updates. Before certain major updates, Phi automatically saves a snapshot of the current version and your data, so if a new release does not work the way you expected, you can roll back to the version you were on. It is there for the rare update that changes a lot at once.

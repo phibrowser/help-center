@@ -1,3 +1,7 @@
+---
+description: "Find quick answers about Phi Browser layouts, Spaces, bookmarks, Split View, AI features, Phi Sentinel, Phi Link, pricing, privacy, and Time Machine backups."
+---
+
 # Frequently asked questions
 
 Quick answers to common questions about Phi Browser, grouped by topic. For the bigger picture and the "why" behind how Phi is built, read the [Guide](/guides/). New to Phi Browser? See [Getting started](/get-started/).

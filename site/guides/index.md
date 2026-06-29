@@ -1,3 +1,7 @@
+---
+description: "Understand what makes Phi Browser different: a native macOS interface, local-first data, Memory, Skills, automation, and an assistant built into browsing."
+---
+
 # What is Phi Browser
 
 Phi Browser is the browser that knows you, and gets things done.

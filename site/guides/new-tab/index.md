@@ -1,3 +1,7 @@
+---
+description: "Set up Phi Browser's personalized new tab page with search, assistant access, quick links, built-in widgets, custom layouts, and widgets powered by Memory."
+---
+
 # New tab & widgets
 
 Phi replaces the standard new tab with a personalized home page. Every new tab gives you a greeting, a single box to search or ask, and a grid of widgets you arrange yourself. It follows your [theme and light/dark choice](/guides/themes/) automatically.

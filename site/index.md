@@ -1,5 +1,7 @@
 ---
 layout: home
+title: "Guide and FAQ for Phi Browser"
+description: "Get started with Phi Browser, learn its sidebar-first workflow, and find quick answers about AI, privacy, automation, Spaces, bookmarks, and more."
 
 hero:
   name: Phi Help

@@ -1,3 +1,7 @@
+---
+description: "A migration guide for moving to Phi Browser from Chrome, Safari, Arc, or Dia, including layout choices, bookmarks, Spaces, Profiles, and AI features."
+---
+
 # Switching to Phi
 
 If you are moving to Phi from Chrome, Safari, Arc, or Dia, this guide explains the mental model changes first. The detailed feature guides still cover each area in depth; this page gives you the migration map.

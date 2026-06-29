@@ -1,3 +1,7 @@
+---
+description: "Learn how Phi Browser uses Spaces for workspaces and Profiles for isolated cookies, history, logins, extensions, URL Rules, bookmarks, and pinned tabs."
+---
+
 # Spaces & Profiles
 
 Spaces and Profiles let you keep separate worlds in one browser — work and personal, a side project, a client, a research topic — without juggling windows or logging in and out. They are two layers that do different jobs, and Phi keeps them simple by letting one sit on top of the other.

@@ -986,6 +986,39 @@ Work timestamp: 2026-06-29 12:10:42 CST.
 
 Arc and Dia behavior can change independently of Phi. Keep the detailed comparison centralized in `site/guides/switching-to-phi/index.md`, and update the shorter contextual links only if the page title or route changes.
 
+## SEO metadata enrichment (2026-06-29)
+
+### Requirement
+
+The owner asked to improve SEO because the site's titles and descriptions were too thin. Work started at 2026-06-29 12:30:21 CST. At 2026-06-29 12:33:18 CST, the owner asked to keep SEO metadata in each page's Markdown frontmatter instead of centralizing copy in `site/.vitepress/config.mts`, because colocating metadata with content is harder to forget when editing pages. At 2026-06-29 12:37:31 CST, the owner refined the convention: ordinary content pages should let VitePress derive the page title from the document H1, and should only set frontmatter `title` when the page needs a deliberate title override.
+
+### How
+
+Every published Markdown page now has a frontmatter `description` field beside the content it summarizes. Ordinary content pages do **not** repeat `title`; VitePress falls back to the document H1, keeping the browser/search title aligned with the visible page heading. Only pages that need a deliberate override should set frontmatter `title`; currently the home page keeps an explicit `title` because it uses VitePress's home layout rather than a normal H1 article page.
+
+`site/.vitepress/config.mts` keeps only site-wide SEO plumbing:
+
+- `transformHead` emits a canonical URL for each page under `https://phibrowser.com/help/`.
+- `transformHead` emits Open Graph and Twitter summary metadata using VitePress's `pageData` title and description. For ordinary pages, the title comes from the H1 fallback and the description comes from frontmatter.
+- `sitemap.hostname` reuses the shared `productionBaseUrl` constant so canonical and sitemap URL bases stay aligned.
+
+The implementation deliberately keeps page content and URLs unchanged. It does not add an OG image because the repository currently has only icons/logos, not a purpose-built social preview image.
+
+### Validation
+
+Validated with:
+
+```sh
+pnpm format:check
+pnpm build
+```
+
+The generated HTML was spot-checked for the home page, Memory guide, and FAQ page to confirm `<title>`, `meta name="description"`, canonical, Open Graph, and Twitter metadata are present.
+
+### Open issues
+
+When new Markdown pages are added, include `description` in the page frontmatter. Do not add `title` unless the page intentionally needs a title different from its H1. If a branded social preview image is created later, add `og:image` and `twitter:image` metadata in the shared `createSocialHead` helper.
+
 ## Future updates
 
 When raising the minimum Node.js or pnpm major version, update all of these together:

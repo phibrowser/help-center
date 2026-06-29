@@ -1,3 +1,7 @@
+---
+description: "Learn how Phi Browser handles on-demand actions, Shadow Tasks, scheduled tasks, approvals, Phi Sentinel background work, and Phi Link notifications."
+---
+
 # Automation & Phi Link
 
 "Agentic" means Phi's AI can do more than answer questions — it can take action inside the browser, perform tasks for you, and in some cases keep doing so over time. There are three ways it works: act **now** (on-demand actions), run **in the background** (Shadow Tasks), and run **on a schedule** (scheduled tasks).

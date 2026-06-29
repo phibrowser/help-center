@@ -1,3 +1,7 @@
+---
+description: "Learn Phi Browser's Performance, Balanced, and Comfortable layouts, how the vertical sidebar works, and how tabs, Split View, and Tab Groups fit together."
+---
+
 # Layouts & navigation
 
 Phi organizes browsing around a vertical sidebar and a choice of layout modes. If you are switching from Chrome or Safari, this is the biggest change — and the thing most worth getting comfortable with first.

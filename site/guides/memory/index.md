@@ -1,3 +1,7 @@
+---
+description: "Learn how Phi Browser's Memory helps the assistant understand your browsing context, builds observations locally, powers Memory Galaxy, and stays under your control."
+---
+
 # Memory
 
 Memory is how your assistant gets to know you. It is the part of Phi that turns a browser you use into a browser that understands you — so that over time the assistant is not starting from scratch every time you ask it something.
