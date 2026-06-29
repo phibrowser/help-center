@@ -1019,6 +1019,35 @@ The generated HTML was spot-checked for the home page, Memory guide, and FAQ pag
 
 When new Markdown pages are added, include `description` in the page frontmatter. Do not add `title` unless the page intentionally needs a title different from its H1. If a branded social preview image is created later, add `og:image` and `twitter:image` metadata in the shared `createSocialHead` helper.
 
+## Guide-only sidebar structure (2026-06-29)
+
+### Requirement
+
+The owner questioned the sidebar hierarchy: the top navigation presents **Guide** and **FAQ** as peers, but the global left sidebar showed **FAQ** inside a top-level **Guide** group. They also noted that the one-page FAQ already has a right-side table of contents, so it does not need a duplicate left-side FAQ directory.
+
+Work timestamp: 2026-06-29 12:53:26 CST.
+
+### How
+
+`site/.vitepress/config.mts` now uses path-based sidebars instead of one global sidebar:
+
+- `/guides/` uses `guideSidebar`.
+- `/get-started/` also uses `guideSidebar`, because the page is still part of the Guide journey even though its URL remains `/get-started/`.
+- `/faq/` has no left sidebar match, so it relies on the page's right-side outline for FAQ category navigation.
+
+The Guide sidebar is grouped by user task instead of a single **Guide** wrapper:
+
+- **Start here** — overview, getting started, switching to Phi.
+- **Browser workspace** — layouts, Spaces & Profiles, bookmarks, themes, new tab.
+- **Assistant & automation** — assistant, Memory, Skills, automation, Sentinel.
+- **Privacy & recovery** — privacy and Time Machine backups.
+
+This keeps the top navigation and sidebar hierarchy consistent: **Guide** and **FAQ** remain peer destinations, while the left sidebar only organizes Guide content.
+
+### Open issues
+
+None known. If the FAQ becomes multi-page again, revisit whether it should get its own section-specific left sidebar. While it remains one page, the right-side outline should be enough.
+
 ## Future updates
 
 When raising the minimum Node.js or pnpm major version, update all of these together:

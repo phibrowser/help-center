@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-import type { HeadConfig } from "vitepress";
+import type { DefaultTheme, HeadConfig } from "vitepress";
 
 // Deployed under the /help/ sub-path. VitePress prepends this base to asset and
 // internal-link URLs (nav/sidebar links, theme logo, bundled assets) and to
@@ -41,6 +41,44 @@ function createSocialHead(
   ];
 }
 
+const guideSidebar: DefaultTheme.SidebarItem[] = [
+  {
+    text: "Start here",
+    items: [
+      { text: "What is Phi Browser", link: "/guides/" },
+      { text: "Getting started", link: "/get-started/" },
+      { text: "Switching to Phi", link: "/guides/switching-to-phi/" },
+    ],
+  },
+  {
+    text: "Browser workspace",
+    items: [
+      { text: "Layouts & navigation", link: "/guides/layouts/" },
+      { text: "Spaces & Profiles", link: "/guides/spaces/" },
+      { text: "Bookmarks & pinned tabs", link: "/guides/bookmarks/" },
+      { text: "Themes & appearance", link: "/guides/themes/" },
+      { text: "New tab & widgets", link: "/guides/new-tab/" },
+    ],
+  },
+  {
+    text: "Assistant & automation",
+    items: [
+      { text: "Meet your assistant", link: "/guides/ai/" },
+      { text: "Memory", link: "/guides/memory/" },
+      { text: "Skills", link: "/guides/skills/" },
+      { text: "Automation & Phi Link", link: "/guides/automation/" },
+      { text: "Phi Sentinel", link: "/guides/sentinel/" },
+    ],
+  },
+  {
+    text: "Privacy & recovery",
+    items: [
+      { text: "Privacy & your data", link: "/guides/privacy/" },
+      { text: "Time Machine backups", link: "/guides/time-machine/" },
+    ],
+  },
+];
+
 export default defineConfig({
   title: "Phi Help",
   description: "Help and FAQ for Phi Browser.",
@@ -77,29 +115,10 @@ export default defineConfig({
       { text: "Guide", link: "/guides/" },
       { text: "FAQ", link: "/faq/" },
     ],
-    sidebar: [
-      {
-        text: "Guide",
-        items: [
-          { text: "Overview", link: "/guides/" },
-          { text: "Getting started", link: "/get-started/" },
-          { text: "Switching to Phi", link: "/guides/switching-to-phi/" },
-          { text: "Frequently asked questions", link: "/faq/" },
-          { text: "Layouts & navigation", link: "/guides/layouts/" },
-          { text: "Spaces & Profiles", link: "/guides/spaces/" },
-          { text: "Bookmarks & pinned tabs", link: "/guides/bookmarks/" },
-          { text: "Themes & appearance", link: "/guides/themes/" },
-          { text: "Meet your assistant", link: "/guides/ai/" },
-          { text: "Memory", link: "/guides/memory/" },
-          { text: "Skills", link: "/guides/skills/" },
-          { text: "New tab & widgets", link: "/guides/new-tab/" },
-          { text: "Automation & Phi Link", link: "/guides/automation/" },
-          { text: "Phi Sentinel", link: "/guides/sentinel/" },
-          { text: "Privacy & your data", link: "/guides/privacy/" },
-          { text: "Time Machine backups", link: "/guides/time-machine/" },
-        ],
-      },
-    ],
+    sidebar: {
+      "/guides/": guideSidebar,
+      "/get-started/": guideSidebar,
+    },
     socialLinks: [
       { icon: "github", link: "https://github.com/phibrowser/help-center" },
     ],
