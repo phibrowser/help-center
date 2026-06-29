@@ -1129,6 +1129,53 @@ URLs were deliberately left lowercase and unchanged; this is a visible label con
 
 None known. For future pages, keep the H1, sidebar label, and title-style link text consistent, while keeping route slugs lowercase.
 
+## Home page feature cards for Phi benefits (2026-06-29)
+
+### Requirement
+
+The owner asked to improve the feature-card block at the bottom of the home page so it lists four Phi Browser advantages and includes icons, using the supplied VitePress-style card reference as visual direction.
+
+Work timestamp: 2026-06-29 14:47:31 CST.
+
+### How
+
+`site/index.md` now uses four home `features` cards with emoji icons:
+
+- **A calmer workspace** — sidebar-first layouts, Spaces, pinned tabs, and bookmarks.
+- **An assistant with context** — the named assistant and tab-aware conversations.
+- **Memory you control** — visible, manageable Memory grounded in the user's choices.
+- **Automation when you need it** — on-demand actions, Shadow Tasks, scheduled work, and Phi Sentinel.
+
+Each card links to the most relevant Guide page. The implementation uses VitePress's built-in home feature `icon` field, so no custom component or CSS was needed.
+
+### Open issues
+
+None known. If the marketing positioning for Phi Browser changes, revisit these four benefit titles and links together with the home hero copy.
+
+## Home page hero title update (2026-06-29)
+
+### Requirement
+
+The owner asked to change the home page title to:
+
+```text
+Phi Browser
+
+The browser that knows you
+```
+
+Work timestamp: 2026-06-29 14:51:01 CST.
+
+### How
+
+`site/index.md` now uses **Phi Browser** as the home hero `name` and **The browser that knows you** as the hero `text`. The home page frontmatter `title` was also aligned to `Phi Browser — The browser that knows you` so browser-tab and social metadata match the visible hero headline.
+
+The existing tagline, hero actions, logo image, and four benefit cards were left unchanged.
+
+### Open issues
+
+None known. If the Help Center should keep a more utility-focused SEO title, revisit only the frontmatter `title` while leaving the visible hero headline intact.
+
 ## Future updates
 
 When raising the minimum Node.js or pnpm major version, update all of these together:
