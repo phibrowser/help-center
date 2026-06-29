@@ -13,7 +13,7 @@ hero:
     alt: Phi Browser
   actions:
     - theme: brand
-      text: What Is Phi Browser?
+      text: What is Phi Browser?
       link: /what-is-phi-browser/
     - theme: alt
       text: Quick Start
