@@ -900,6 +900,73 @@ None. Note that this couples the deploy to upstream forwarding the `/help`
 prefix unstripped; if the upstream is ever changed to strip the prefix, the
 build would need to drop the `help/` nesting (or `base` would change to `/`).
 
+## Main-site link, Guide naming, and theme swatches (2026-06-29)
+
+### Requirement
+
+The owner asked to address three Help-site issues:
+
+1. Add a way to jump back to the main Phi Browser site at <https://phibrowser.com>.
+2. Rename the visible `Help` content category to `Guide`.
+3. Make the `Choosing a theme` section show the real theme colors from `../phibrowser-mac/` instead of listing color names only.
+
+Work timestamp: 2026-06-29 11:25:21 CST.
+
+### How
+
+- `site/.vitepress/config.mts` now adds a top-nav **Phi Browser** link to `https://phibrowser.com` and renames the guide nav/sidebar label from **Help** to **Guide**. The deployed base remains `/help/`, and guide URLs remain `/guides/`; this is a visible information-architecture label change, not a route migration.
+- `site/index.md` now presents the site as **Guide and FAQ**, and the guide feature card is labelled **Guide**.
+- `site/faq/index.md` prose references to the old **Help guides** category now point to **Guide**. Product UI references to the actual macOS **Help** menu were intentionally left unchanged.
+- `site/guides/themes/index.md` now includes a light/dark color table with rendered swatches and hex values. The values are copied from `../phibrowser-mac/Sources/Utilities/Theme/ThemedColors.swift`, using each built-in theme's `.themeColor` values: Pure, Mint, Mist, Aqua, Iris, Petal, Coral, and Amber.
+- `site/.vitepress/theme/custom.css` adds the small swatch style used by the theme table.
+
+### Open issues
+
+None known. If `phibrowser-mac` changes the built-in theme palette or the settings picker behavior, update the table in `site/guides/themes/index.md` to match. If the product later wants the whole site name changed away from **Phi Help**, revisit `README.md`, `package.json`, `site/.vitepress/config.mts`, and `site/index.md` together.
+
+## Stable scrollbar gutter (2026-06-29)
+
+### Requirement
+
+On short pages such as the home page, the browser did not show a vertical scrollbar. On longer content pages, the vertical scrollbar appeared and reduced the available layout width, causing the nav/content layout to shift horizontally between pages.
+
+Work timestamp: 2026-06-29 11:54:49 CST. Updated at 2026-06-29 12:04:00 CST to avoid showing a disabled-looking scrollbar on pages that are too short to scroll.
+
+### How
+
+`site/.vitepress/theme/custom.css` now applies a global `html` rule:
+
+```css
+html {
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+```
+
+`overflow-y: auto` lets the browser hide the vertical scrollbar on pages that are too short to scroll. `scrollbar-gutter: stable` asks modern engines to reserve the scrollbar gutter anyway, so short and long pages keep the same layout width without forcing a visible scrollbar.
+
+### Open issues
+
+Browsers that do not support `scrollbar-gutter` may still shift horizontally when moving between short and long pages with classic scrollbars. Modern browsers that support `scrollbar-gutter: stable` should hide the scrollbar on short pages while keeping the layout stable.
+
+## Temporarily hide the Phi assistant nav button (2026-06-29)
+
+### Requirement
+
+The owner asked to temporarily hide the AI button in the Help Center navbar because the browser-side feature is not finished yet.
+
+Work timestamp: 2026-06-29 11:58:16 CST.
+
+### How
+
+`site/.vitepress/theme/index.ts` no longer mounts `PhiSidebarButton.vue` into VitePress's `nav-bar-content-before` slot. The `PhiSidebarButton.vue` component and its `window.postMessage({ source: "phi-help", type: "phi:open-sidebar" }, window.location.origin)` contract were intentionally left in the tree so the button can be re-enabled without rediscovering the integration plan.
+
+`site/.vitepress/theme/custom.css` was adjusted so the search box itself keeps `margin-right: auto`. This preserves the intended navbar layout — search on the left, nav links on the right — now that the hidden button no longer provides that spacer.
+
+### Open issues
+
+The browser-side listener for `phi:open-sidebar` still needs to ship before this button should be restored. Once that contract is implemented and tested in Phi Browser, re-enable the `nav-bar-content-before` slot in `site/.vitepress/theme/index.ts` and revisit the search/button spacing rules.
+
 ## Future updates
 
 When raising the minimum Node.js or pnpm major version, update all of these together:

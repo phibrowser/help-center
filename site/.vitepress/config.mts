@@ -29,12 +29,13 @@ export default defineConfig({
       provider: "local",
     },
     nav: [
-      { text: "Help", link: "/guides/" },
+      { text: "Phi Browser", link: "https://phibrowser.com" },
+      { text: "Guide", link: "/guides/" },
       { text: "FAQ", link: "/faq/" },
     ],
     sidebar: [
       {
-        text: "Help",
+        text: "Guide",
         items: [
           { text: "Overview", link: "/guides/" },
           { text: "Getting started", link: "/get-started/" },

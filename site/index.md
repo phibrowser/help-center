@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: Phi Help
-  text: Help and FAQ
-  tagline: Get started with Phi Browser, then find guidance and quick answers.
+  text: Guide and FAQ
+  tagline: Get started with Phi Browser, then find guides and quick answers.
   image:
     light: /phi-mark-dark.svg
     dark: /phi-mark-light.svg
@@ -18,7 +18,7 @@ hero:
       link: /faq/
 
 features:
-  - title: Help
+  - title: Guide
     details: Guides that orient you — install and first run, layouts, AI, automation, and privacy.
     link: /guides/
   - title: FAQ

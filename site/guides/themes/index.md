@@ -6,9 +6,24 @@ You will find these controls in **Settings → General**.
 
 ## Choosing a theme
 
-Under **Theme**, the **Color** row offers a set of named presets, shown as color swatches: **Pure** (the default), **Mint**, **Mist**, **Aqua**, **Iris**, **Petal**, **Coral**, and **Amber**. Each is a full color scheme with its own light and dark versions, so a theme looks right whichever appearance you are in.
+Under **Theme**, the **Color** row offers a set of named presets, shown as color swatches. Each is a full color scheme with its own light and dark versions, so a theme looks right whichever appearance you are in.
 
-Next to it, an **Opacity** slider controls how much the colored layer shows through the window — dial the tint up for more color, or down for something closer to plain.
+These are Phi's built-in theme accent colors:
+
+| Preset             | Light                                                                     | Dark                                                                      |
+| ------------------ | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| **Pure** (default) | <span class="theme-color-chip" style="--swatch: #3aa4d5"></span>`#3aa4d5` | <span class="theme-color-chip" style="--swatch: #1e7099"></span>`#1e7099` |
+| **Mint**           | <span class="theme-color-chip" style="--swatch: #73bd4b"></span>`#73bd4b` | <span class="theme-color-chip" style="--swatch: #48802a"></span>`#48802a` |
+| **Mist**           | <span class="theme-color-chip" style="--swatch: #57aed9"></span>`#57aed9` | <span class="theme-color-chip" style="--swatch: #1e7099"></span>`#1e7099` |
+| **Aqua**           | <span class="theme-color-chip" style="--swatch: #4bb9bd"></span>`#4bb9bd` | <span class="theme-color-chip" style="--swatch: #2a7d80"></span>`#2a7d80` |
+| **Iris**           | <span class="theme-color-chip" style="--swatch: #6357d9"></span>`#6357d9` | <span class="theme-color-chip" style="--swatch: #3d339c"></span>`#3d339c` |
+| **Petal**          | <span class="theme-color-chip" style="--swatch: #b857d9"></span>`#b857d9` | <span class="theme-color-chip" style="--swatch: #82339c"></span>`#82339c` |
+| **Coral**          | <span class="theme-color-chip" style="--swatch: #d95757"></span>`#d95757` | <span class="theme-color-chip" style="--swatch: #9c3e3e"></span>`#9c3e3e` |
+| **Amber**          | <span class="theme-color-chip" style="--swatch: #d9b857"></span>`#d9b857` | <span class="theme-color-chip" style="--swatch: #9c8133"></span>`#9c8133` |
+
+In Phi's picker, **Pure** is displayed as a white swatch with the blue accent as its selection ring. The table above shows the actual accent colors the theme uses elsewhere.
+
+Next to the colors, an **Opacity** slider controls how much the colored layer shows through the window — dial the tint up for more color, or down for something closer to plain.
 
 ## Light, dark, or system
 

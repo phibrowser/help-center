@@ -1,3 +1,9 @@
+/* Keep short and long pages at the same layout width without forcing a visible scrollbar. */
+html {
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
 /* Enlarge the nav bar logo (default is 24px). */
 .VPNavBarTitle .logo {
   height: 32px;
@@ -5,20 +11,26 @@
 }
 
 /*
- * Pair the Phi assistant button right after the search box, both kept together
- * on the left while the nav menu stays on the right.
+ * Keep search on the left while the nav menu stays on the right.
  *
  * By default the search box is `flex-grow: 1` (a transparent full-width bar with
- * the visible pill on its left), which would strand the button far to the right.
- * Instead: shrink the search box to its pill, reorder it ahead of the button,
- * and give the button `margin-right: auto` so everything after it is pushed to
- * the far right.
+ * the visible pill on its left). Shrink it to the visible pill and use
+ * `margin-right: auto` to push the nav menu to the far right.
  */
 .VPNavBar .content-body .VPNavBarSearch {
   order: -1;
   flex-grow: 0;
+  margin-right: auto;
 }
 
-.VPNavBar .content-body .phi-ai-button {
-  margin-right: auto;
+.theme-color-chip {
+  display: inline-block;
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-right: 0.45rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 999px;
+  background: var(--swatch);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 35%);
+  vertical-align: -0.12em;
 }
