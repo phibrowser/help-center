@@ -883,11 +883,9 @@ at `dist/assets/...`. Every asset would 404.
 Align the on-disk layout with the `/help/` base by emitting into a `help/`
 subdirectory and pointing the asset server at its parent:
 
-- `package.json` `build`/`preview` scripts pass
-  `--outDir site/.vitepress/dist/help` (the VitePress CLI resolves `--outDir`
-  relative to the repo root / cwd, not to `site/`).
-- `wrangler.jsonc` `assets.directory` stays at `./site/.vitepress/dist` (the
-  parent), so `/help/*` maps to the real `dist/help/*` directory.
+- `site/.vitepress/config.mts` sets `outDir: ".vitepress/dist/help"`, resolved relative to the VitePress root (`site/`). This keeps build and preview on the same nested output directory.
+- `package.json` `build` runs `vitepress build site`; `preview` runs `vitepress preview site --port ${PORT:-3000}` and relies on the shared config `outDir`.
+- `wrangler.jsonc` `assets.directory` stays at `./site/.vitepress/dist` (the parent), so `/help/*` maps to the real `dist/help/*` directory.
 
 `base`, the sitemap hostname, and the `head` icon hrefs were left unchanged —
 they already pointed at `/help/`; only the physical structure had to catch up.
@@ -1175,6 +1173,63 @@ The existing tagline, hero actions, logo image, and four benefit cards were left
 ### Open issues
 
 None known. If the Help Center should keep a more utility-focused SEO title, revisit only the frontmatter `title` while leaving the visible hero headline intact.
+
+## Sitemap metadata enrichment (2026-06-29)
+
+### Requirement
+
+The owner asked to optimize the generated sitemap so it gives search engines more crawling hints, including update frequency and recent update dates.
+
+Work timestamp: 2026-06-29 14:55:10 CST.
+
+### How
+
+`site/.vitepress/config.mts` now uses VitePress's `sitemap.transformItems` hook to enrich every generated sitemap URL with:
+
+- `lastmod` — the source Markdown file's most recent Git commit timestamp, emitted as a full ISO 8601 / RFC3339-compatible timestamp. If the build environment has no Git metadata, the file modification time is used as a fallback.
+- `changefreq` — `weekly` for the home page and FAQ, `monthly` for the more stable guide pages.
+- `priority` — `1.0` for the home page, `0.8` for key entry pages (`What is Phi Browser?`, `Getting Started`, and FAQ), and `0.6` for the remaining guide pages.
+
+The sitemap still uses `https://phibrowser.com/help/` as its production URL base and is still emitted at `/help/sitemap.xml` inside the nested build output.
+
+### Open issues
+
+Search engines treat `changefreq` and `priority` as hints, not commands. If the site starts publishing frequent release notes or time-sensitive pages, revisit the frequency map instead of applying one global value to all pages.
+
+Follow-up at 2026-06-29 15:01:55 CST: `lastmod` was changed from date-only (`YYYY-MM-DD`) to full ISO 8601 timestamps. Date-only sitemap values are generally valid, but full timestamps better match the owner's preference and make update recency more precise.
+
+## Preview nested output fix (2026-06-29)
+
+### Requirement
+
+The owner reported that `pnpm preview` failed after `pnpm build` with:
+
+```text
+ENOENT: no such file or directory, open '/Users/sjdhome/Projects/Phi/help-center/site/.vitepress/dist/404.html'
+```
+
+Work timestamp: 2026-06-29 15:00:04 CST.
+
+### How
+
+Root cause: the build output is intentionally nested under `site/.vitepress/dist/help/` to match the deployed `/help/` base, but the preview command still resolved its runtime `outDir` as the default parent directory `site/.vitepress/dist/` and tried to read `404.html` there.
+
+The fix moves the output directory into VitePress config:
+
+```ts
+outDir: ".vitepress/dist/help";
+```
+
+Then `package.json` no longer passes `--outDir` in either script:
+
+- `pnpm build` → `vitepress build site`
+- `pnpm preview` → `vitepress preview site --port ${PORT:-3000}`
+
+This makes build and preview resolve the same nested output directory from a single source of truth.
+
+### Open issues
+
+None known. Preview is still a local long-running server, so automated validation should generally stop at `pnpm build`; verify `pnpm preview` manually when changing deployment layout or VitePress output configuration.
 
 ## Future updates
 

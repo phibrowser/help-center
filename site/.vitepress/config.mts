@@ -1,3 +1,6 @@
+import { execFileSync } from "node:child_process";
+import { existsSync, statSync } from "node:fs";
+import { resolve } from "node:path";
 import { defineConfig } from "vitepress";
 import type { DefaultTheme, HeadConfig } from "vitepress";
 
@@ -21,6 +24,78 @@ function getPagePath(relativePath: string): string {
 
 function getCanonicalUrl(relativePath: string): string {
   return new URL(getPagePath(relativePath), productionBaseUrl).href;
+}
+
+function normalizeRoutePath(url: string): string {
+  const pathname =
+    url.startsWith("http://") || url.startsWith("https://")
+      ? new URL(url).pathname
+      : `/${url}`;
+  const routePath = pathname.startsWith(base)
+    ? pathname.slice(base.length - 1)
+    : pathname;
+
+  if (routePath === "" || routePath === "/") {
+    return "/";
+  }
+
+  return routePath.endsWith("/") ? routePath : `${routePath}/`;
+}
+
+function getSourceFileForRoute(routePath: string): string | undefined {
+  const candidates =
+    routePath === "/"
+      ? [resolve("site", "index.md")]
+      : [
+          resolve("site", routePath.replace(/^\/|\/$/g, ""), "index.md"),
+          resolve("site", `${routePath.replace(/^\/|\/$/g, "")}.md`),
+        ];
+
+  return candidates.find((candidate) => existsSync(candidate));
+}
+
+function getLastModifiedIsoTimestamp(routePath: string): string | undefined {
+  const sourceFile = getSourceFileForRoute(routePath);
+
+  if (!sourceFile) {
+    return undefined;
+  }
+
+  try {
+    const gitDate = execFileSync(
+      "git",
+      ["log", "-1", "--format=%cI", "--", sourceFile],
+      { encoding: "utf8" },
+    ).trim();
+
+    if (gitDate) {
+      return gitDate;
+    }
+  } catch {
+    // Fall back to the file timestamp below when the build does not have git metadata.
+  }
+
+  return statSync(sourceFile).mtime.toISOString();
+}
+
+function getSitemapChangeFrequency(routePath: string): "weekly" | "monthly" {
+  return routePath === "/" || routePath === "/faq/" ? "weekly" : "monthly";
+}
+
+function getSitemapPriority(routePath: string): number {
+  if (routePath === "/") {
+    return 1;
+  }
+
+  if (
+    routePath === "/what-is-phi-browser/" ||
+    routePath === "/get-started/" ||
+    routePath === "/faq/"
+  ) {
+    return 0.8;
+  }
+
+  return 0.6;
 }
 
 function createSocialHead(
@@ -105,11 +180,26 @@ export default defineConfig({
   title: "Phi Help",
   description: "Help and FAQ for Phi Browser.",
   base,
+  outDir: ".vitepress/dist/help",
   // Emitted at /help/sitemap.xml. The hostname includes the /help/ base so the
   // generated <loc> URLs are absolute under the sub-path (e.g.
   // https://phibrowser.com/help/faq/). philanding's robots.txt references this
   // file as a second sitemap so search engines discover the help-center pages.
-  sitemap: { hostname: productionBaseUrl },
+  sitemap: {
+    hostname: productionBaseUrl,
+    transformItems(items) {
+      return items.map((item) => {
+        const routePath = normalizeRoutePath(item.url);
+
+        return {
+          ...item,
+          lastmod: item.lastmod ?? getLastModifiedIsoTimestamp(routePath),
+          changefreq: getSitemapChangeFrequency(routePath),
+          priority: getSitemapPriority(routePath),
+        };
+      });
+    },
+  },
   cleanUrls: true,
   transformHead({ description, pageData, title }) {
     if (pageData.isNotFound || pageData.relativePath === "") {
