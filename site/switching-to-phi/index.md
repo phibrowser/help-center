@@ -2,7 +2,7 @@
 description: "A migration guide for moving to Phi Browser from Chrome, Safari, Arc, or Dia, including layout choices, bookmarks, Spaces, Profiles, and AI features."
 ---
 
-# Switching To Phi
+# Switching to Phi
 
 If you are moving to Phi from Chrome, Safari, Arc, or Dia, this guide explains the mental model changes first. The detailed feature guides still cover each area in depth; this page gives you the migration map.
 
@@ -62,4 +62,4 @@ If you are new to Phi, read these in order:
 2. [Layouts & Navigation](/layouts/) — choose the right layout mode and learn the sidebar.
 3. [Spaces & Profiles](/spaces/) — understand workspaces, isolation, and URL routing.
 4. [Bookmarks & Pinned Tabs](/bookmarks/) — learn how saved pages become part of your workspace.
-5. [Meet Your Assistant](/ai/) — understand the built-in AI once the browser basics feel natural.
+5. [Meet your assistant](/ai/) — understand the built-in AI once the browser basics feel natural.

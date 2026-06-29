@@ -200,11 +200,11 @@ model you operate.
 
 Applied:
 
-- `site/help/ai.md` retitled from `Meet Phi AI` to `Meet Your Assistant` and
+- `site/help/ai.md` retitled from `Meet Phi AI` to `Meet your assistant` and
   rewritten to lead with the named companion; Memory, talking to it, and Skills
   are framed as sides of that companion. The `## Memory` heading is kept
   verbatim because `site/help/privacy.md` links to its `#memory` anchor.
-- The `Meet Phi AI` label/link text was updated to `Meet Your Assistant` (or
+- The `Meet Phi AI` label/link text was updated to `Meet your assistant` (or
   `your assistant` in lowercase prose) in the sidebar (`config.mts`), the Help
   overview, and the Get started page.
 - The FAQ question `What is the Phi AI Assistant?` became `What is the
@@ -299,7 +299,7 @@ Open issues:
 ## Memory guide (2026-06-24)
 
 Added a dedicated Help chapter for the Memory system at `site/help/memory.md`,
-linked in the `Help` sidebar (after `Meet Your Assistant`) and in the overview's
+linked in the `Help` sidebar (after `Meet your assistant`) and in the overview's
 four-part list and "Where to go next" list. Until now Memory only existed as a
 short `## Memory` sub-section inside `site/help/ai.md`.
 
@@ -978,7 +978,7 @@ Work timestamp: 2026-06-29 12:10:42 CST.
 ### How
 
 - Added `site/guides/switching-to-phi/index.md` as the central migration page for Chrome, Safari, Arc, and Dia users.
-- Added **Switching To Phi** to the VitePress sidebar immediately after **Getting Started** in `site/.vitepress/config.mts`.
+- Added **Switching to Phi** to the VitePress sidebar immediately after **Getting Started** in `site/.vitepress/config.mts`.
 - Added the new page to the guide overview in `site/guides/index.md`.
 - Shortened the migration and competitor-comparison content in `site/get-started/index.md`, `site/guides/layouts/index.md`, `site/guides/spaces/index.md`, `site/guides/bookmarks/index.md`, and `site/faq/index.md` so those pages keep only contextual tips and links to the central migration page.
 
@@ -1052,7 +1052,7 @@ None known. If the FAQ becomes multi-page again, revisit whether it should get i
 
 ### Requirement
 
-After the Guide sidebar was grouped by user task, the owner questioned whether URLs should mirror those groups. We decided **not** to encode sidebar group names such as `browser-workspace` into URLs because sidebar grouping is more likely to change than page identity. The owner then asked to flatten guide article URLs directly under the deployed `/help/` base, while keeping the top nav item named **Guide** and pointing it at **What Is Phi Browser?**.
+After the Guide sidebar was grouped by user task, the owner questioned whether URLs should mirror those groups. We decided **not** to encode sidebar group names such as `browser-workspace` into URLs because sidebar grouping is more likely to change than page identity. The owner then asked to flatten guide article URLs directly under the deployed `/help/` base, while keeping the top nav item named **Guide** and pointing it at **What is Phi Browser?**.
 
 Work timestamp: 2026-06-29 14:19:30 CST.
 
@@ -1086,7 +1086,7 @@ The project currently has no in-repo redirect mechanism; `wrangler.jsonc` only s
 
 ### Requirement
 
-The owner asked to change the home page hero buttons to three actions: **What Is Phi Browser?**, **Quick Start**, and **GitHub**, with the first button using the emphasized brand style.
+The owner asked to change the home page hero buttons to three actions: **What is Phi Browser?**, **Quick Start**, and **GitHub**, with the first button using the emphasized brand style.
 
 Work timestamp: 2026-06-29 14:32:05 CST.
 
@@ -1094,7 +1094,7 @@ Work timestamp: 2026-06-29 14:32:05 CST.
 
 `site/index.md` now sets the hero actions to:
 
-- **What Is Phi Browser?** — brand button, linking to `/what-is-phi-browser/`.
+- **What is Phi Browser?** — brand button, linking to `/what-is-phi-browser/`.
 - **Quick Start** — secondary button, linking to `/get-started/`.
 - **GitHub** — secondary button, linking to `https://github.com/phibrowser/help-center`.
 
@@ -1114,10 +1114,10 @@ Work timestamp: 2026-06-29 14:37:21 CST.
 
 Article H1s and corresponding navigation/link labels now use title-style capitalization, for example:
 
-- **What Is Phi Browser?**
+- **What is Phi Browser?**
 - **Layouts & Navigation**
 - **Bookmarks & Pinned Tabs**
-- **Meet Your Assistant**
+- **Meet your assistant**
 - **Privacy & Your Data**
 - **Time Machine Backups**
 

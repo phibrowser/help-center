@@ -13,7 +13,7 @@ Phi has three modes that trade screen space for familiarity. **Performance** giv
 :::
 
 ::: details Which layout should I start with?
-If you are switching from Chrome or Safari, start with **Comfortable** for the easiest transition. If you want a modern sidebar browser with a visible address bar, try **Balanced**. If you want maximum page space, use **Performance**. See [Switching To Phi](/switching-to-phi/) for the fuller migration guide.
+If you are switching from Chrome or Safari, start with **Comfortable** for the easiest transition. If you want a modern sidebar browser with a visible address bar, try **Balanced**. If you want maximum page space, use **Performance**. See [Switching to Phi](/switching-to-phi/) for the fuller migration guide.
 :::
 
 ::: details Why a vertical sidebar?
@@ -51,7 +51,7 @@ Deleting a Space also removes the pinned tabs and bookmarks that belong to it. T
 :::
 
 ::: details How is this different from Arc and Dia?
-Phi keeps **Spaces** as the visible workspace layer and **Profiles** as the isolation layer underneath. That is close to Arc's two-layer model, while Dia uses Profiles more directly as workspaces in separate windows. For the full comparison, see [Switching To Phi](/switching-to-phi/).
+Phi keeps **Spaces** as the visible workspace layer and **Profiles** as the isolation layer underneath. That is close to Arc's two-layer model, while Dia uses Profiles more directly as workspaces in separate windows. For the full comparison, see [Switching to Phi](/switching-to-phi/).
 :::
 
 ## Bookmarks & tabs
@@ -89,7 +89,7 @@ Right-click a tab and choose **Pin**, or drag it into the pinned grid at the top
 :::
 
 ::: details Is this similar to Arc or Dia?
-Yes. Phi uses the same broad living-sidebar idea — saved pages stay visible and pinned pages sit at the top — while keeping its own bookmark tree and behavior. See [Switching To Phi](/switching-to-phi/) for the migration comparison and [Bookmarks & Pinned Tabs](/bookmarks/) for the feature details.
+Yes. Phi uses the same broad living-sidebar idea — saved pages stay visible and pinned pages sit at the top — while keeping its own bookmark tree and behavior. See [Switching to Phi](/switching-to-phi/) for the migration comparison and [Bookmarks & Pinned Tabs](/bookmarks/) for the feature details.
 :::
 
 ## Split View & Tab Groups

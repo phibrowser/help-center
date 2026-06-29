@@ -32,7 +32,7 @@ The first time you open Phi, onboarding helps you set things up:
 
 ## Switching from another browser?
 
-If you are used to Chrome or Safari, start with **Comfortable Mode** for the easiest transition. For a fuller migration map for Chrome, Safari, Arc, and Dia users, see [Switching To Phi](/switching-to-phi/).
+If you are used to Chrome or Safari, start with **Comfortable Mode** for the easiest transition. For a fuller migration map for Chrome, Safari, Arc, and Dia users, see [Switching to Phi](/switching-to-phi/).
 
 ## Next steps
 

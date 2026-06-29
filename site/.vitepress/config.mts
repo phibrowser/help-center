@@ -45,9 +45,9 @@ const guideSidebar: DefaultTheme.SidebarItem[] = [
   {
     text: "Start Here",
     items: [
-      { text: "What Is Phi Browser?", link: "/what-is-phi-browser/" },
+      { text: "What is Phi Browser?", link: "/what-is-phi-browser/" },
       { text: "Getting Started", link: "/get-started/" },
-      { text: "Switching To Phi", link: "/switching-to-phi/" },
+      { text: "Switching to Phi", link: "/switching-to-phi/" },
     ],
   },
   {
@@ -63,7 +63,7 @@ const guideSidebar: DefaultTheme.SidebarItem[] = [
   {
     text: "Assistant & Automation",
     items: [
-      { text: "Meet Your Assistant", link: "/ai/" },
+      { text: "Meet your assistant", link: "/ai/" },
       { text: "Memory", link: "/memory/" },
       { text: "Skills", link: "/skills/" },
       { text: "Automation & Phi Link", link: "/automation/" },

@@ -24,7 +24,7 @@ You can open your Memory whenever you want to look. On the new tab, there is an 
 
 ## How the assistant uses it
 
-When you ask the assistant a question, summarize a page, or hand it a task, it draws on what it remembers about you alongside what is in front of you right now — the current tab, or a whole [Split View or Tab Group](/layouts/). That is what lets it answer in a way that fits you without you having to re-explain your situation each time. Memory also feeds the personalized [new tab and its widgets](/new-tab/), where what it knows shows up as something useful rather than staying hidden. For more on reaching and talking to the assistant, see [Meet Your Assistant](/ai/).
+When you ask the assistant a question, summarize a page, or hand it a task, it draws on what it remembers about you alongside what is in front of you right now — the current tab, or a whole [Split View or Tab Group](/layouts/). That is what lets it answer in a way that fits you without you having to re-explain your situation each time. Memory also feeds the personalized [new tab and its widgets](/new-tab/), where what it knows shows up as something useful rather than staying hidden. For more on reaching and talking to the assistant, see [Meet your assistant](/ai/).
 
 ## Staying in control
 
@@ -44,7 +44,7 @@ It keeps the same principles: your memory stays yours and lives with you, and yo
 
 ## What's next
 
-- [Meet Your Assistant](/ai/) — how you reach it, talk to it, and what Skills are.
+- [Meet your assistant](/ai/) — how you reach it, talk to it, and what Skills are.
 - [New Tab & Widgets](/new-tab/) — the personalized new tab that Memory helps fill.
 - [Privacy & Your Data](/privacy/) — where your data lives and how to stay in control.
 - [FAQ](/faq/#ai-features) — quick answers to specific questions about Memory and the assistant.

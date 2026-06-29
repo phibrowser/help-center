@@ -2,7 +2,7 @@
 description: "Understand what makes Phi Browser different: a native macOS interface, local-first data, Memory, Skills, automation, and an assistant built into browsing."
 ---
 
-# What Is Phi Browser?
+# What is Phi Browser?
 
 Phi Browser is the browser that knows you, and gets things done.
 
@@ -25,7 +25,7 @@ Phi's AI is built in and on by default. Rather than one vague "AI", it comes in 
 - **Agentic** — actually does things for you, from one-off actions to background and scheduled tasks that run on their own.
 - **[Skills](/skills/)** — reusable workflows the assistant can run on demand.
 
-Read [Meet Your Assistant](/ai/) for Memory, talking to it, and Skills, and [Automation & Phi Link](/automation/) for agentic tasks and using Phi from your phone.
+Read [Meet your assistant](/ai/) for Memory, talking to it, and Skills, and [Automation & Phi Link](/automation/) for agentic tasks and using Phi from your phone.
 
 ## Your data stays yours
 
@@ -36,12 +36,12 @@ See [Privacy & Your Data](/privacy/) for the details.
 ## Where to go next
 
 - [Getting Started](/get-started/) — install Phi and first run.
-- [Switching To Phi](/switching-to-phi/) — migration notes for Chrome, Safari, Arc, and Dia users.
+- [Switching to Phi](/switching-to-phi/) — migration notes for Chrome, Safari, Arc, and Dia users.
 - [Layouts & Navigation](/layouts/) — modes, the sidebar, tabs, Split View, Tab Groups.
 - [Spaces & Profiles](/spaces/) — separate workspaces, isolated Profiles, and URL routing rules.
 - [Bookmarks & Pinned Tabs](/bookmarks/) — bookmarks that open in place as tabs, and pinned tabs.
 - [Themes & Appearance](/themes/) — color themes, light/dark, and what the theme colors.
-- [Meet Your Assistant](/ai/) — Memory, talking to it, and Skills.
+- [Meet your assistant](/ai/) — Memory, talking to it, and Skills.
 - [Memory](/memory/) — how the assistant learns from your browsing and how you stay in control.
 - [Skills](/skills/) — reusable workflows: browse the built-in set and create your own.
 - [New Tab & Widgets](/new-tab/) — the personalized new tab and its widgets.

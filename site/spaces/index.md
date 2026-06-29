@@ -44,4 +44,4 @@ Set a rule to **Ask every time** instead of routing silently. When a matching li
 
 ## How this connects to the rest of Phi
 
-Spaces build on the sidebar workspace described in [Layouts & Navigation](/layouts/), and per-Space colors use the same palette as [Themes & Appearance](/themes/). If you are switching from Arc or Dia, see [Switching To Phi](/switching-to-phi/) for the migration comparison. Because Profiles isolate cookies and history, what the assistant can see is scoped to the Profile you are browsing in — see [Privacy & Your Data](/privacy/) for how your data is handled.
+Spaces build on the sidebar workspace described in [Layouts & Navigation](/layouts/), and per-Space colors use the same palette as [Themes & Appearance](/themes/). If you are switching from Arc or Dia, see [Switching to Phi](/switching-to-phi/) for the migration comparison. Because Profiles isolate cookies and history, what the assistant can see is scoped to the Profile you are browsing in — see [Privacy & Your Data](/privacy/) for how your data is handled.

@@ -12,7 +12,7 @@ Phi replaces the standard new tab with a personalized home page. Every new tab g
 - **One box to search or ask** — type to search the web, ask your assistant a question, or go straight to a URL, all from the same place. You can [attach a tab](/ai/#chat-with-tabs) or a file and bring Skills into the conversation.
 - **Quick access** — reach recent conversations, your widgets, and the [Skills](/skills/) library from the menu in the top-right corner.
 
-Because the search box is wired to your assistant, the new tab is often the fastest place to start something — a search, a question, or a task — without opening a separate chat first. See [Meet Your Assistant](/ai/) for what it can do.
+Because the search box is wired to your assistant, the new tab is often the fastest place to start something — a search, a question, or a task — without opening a separate chat first. See [Meet your assistant](/ai/) for what it can do.
 
 ## Widgets
 
@@ -42,5 +42,5 @@ This builds on the same local-first memory as the rest of Phi: what widgets draw
 
 ## What's next
 
-- [Meet Your Assistant](/ai/) — Memory, talking to it, and Skills.
+- [Meet your assistant](/ai/) — Memory, talking to it, and Skills.
 - [Privacy & Your Data](/privacy/) — where your data lives and how to stay in control.
