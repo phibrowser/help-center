@@ -4,9 +4,9 @@ import type { DefaultTheme, HeadConfig } from "vitepress";
 // Deployed under the /help/ sub-path. VitePress prepends this base to asset and
 // internal-link URLs (nav/sidebar links, theme logo, bundled assets) and to
 // route-relative Markdown links automatically — so Markdown keeps writing
-// /faq/ and /guides/... and they resolve under /help/ at runtime. Raw `head`
-// tags are the exception: VitePress does not rewrite their attributes, so the
-// icon hrefs below include `base` explicitly.
+// route paths such as /faq/ and /memory/ and they resolve under /help/ at
+// runtime. Raw `head` tags are the exception: VitePress does not rewrite their
+// attributes, so the icon hrefs below include `base` explicitly.
 const base = "/help/";
 const productionOrigin = "https://phibrowser.com";
 const productionBaseUrl = `${productionOrigin}${base}`;
@@ -43,41 +43,63 @@ function createSocialHead(
 
 const guideSidebar: DefaultTheme.SidebarItem[] = [
   {
-    text: "Start here",
+    text: "Start Here",
     items: [
-      { text: "What is Phi Browser", link: "/guides/" },
-      { text: "Getting started", link: "/get-started/" },
-      { text: "Switching to Phi", link: "/guides/switching-to-phi/" },
+      { text: "What Is Phi Browser?", link: "/what-is-phi-browser/" },
+      { text: "Getting Started", link: "/get-started/" },
+      { text: "Switching To Phi", link: "/switching-to-phi/" },
     ],
   },
   {
-    text: "Browser workspace",
+    text: "Browser Workspace",
     items: [
-      { text: "Layouts & navigation", link: "/guides/layouts/" },
-      { text: "Spaces & Profiles", link: "/guides/spaces/" },
-      { text: "Bookmarks & pinned tabs", link: "/guides/bookmarks/" },
-      { text: "Themes & appearance", link: "/guides/themes/" },
-      { text: "New tab & widgets", link: "/guides/new-tab/" },
+      { text: "Layouts & Navigation", link: "/layouts/" },
+      { text: "Spaces & Profiles", link: "/spaces/" },
+      { text: "Bookmarks & Pinned Tabs", link: "/bookmarks/" },
+      { text: "Themes & Appearance", link: "/themes/" },
+      { text: "New Tab & Widgets", link: "/new-tab/" },
     ],
   },
   {
-    text: "Assistant & automation",
+    text: "Assistant & Automation",
     items: [
-      { text: "Meet your assistant", link: "/guides/ai/" },
-      { text: "Memory", link: "/guides/memory/" },
-      { text: "Skills", link: "/guides/skills/" },
-      { text: "Automation & Phi Link", link: "/guides/automation/" },
-      { text: "Phi Sentinel", link: "/guides/sentinel/" },
+      { text: "Meet Your Assistant", link: "/ai/" },
+      { text: "Memory", link: "/memory/" },
+      { text: "Skills", link: "/skills/" },
+      { text: "Automation & Phi Link", link: "/automation/" },
+      { text: "Phi Sentinel", link: "/sentinel/" },
     ],
   },
   {
-    text: "Privacy & recovery",
+    text: "Privacy & Recovery",
     items: [
-      { text: "Privacy & your data", link: "/guides/privacy/" },
-      { text: "Time Machine backups", link: "/guides/time-machine/" },
+      { text: "Privacy & Your Data", link: "/privacy/" },
+      { text: "Time Machine Backups", link: "/time-machine/" },
     ],
   },
 ];
+
+const guideSidebarPaths = [
+  "/what-is-phi-browser/",
+  "/get-started/",
+  "/switching-to-phi/",
+  "/layouts/",
+  "/spaces/",
+  "/bookmarks/",
+  "/themes/",
+  "/new-tab/",
+  "/ai/",
+  "/memory/",
+  "/skills/",
+  "/automation/",
+  "/sentinel/",
+  "/privacy/",
+  "/time-machine/",
+];
+
+const sidebar = Object.fromEntries(
+  guideSidebarPaths.map((path) => [path, guideSidebar]),
+);
 
 export default defineConfig({
   title: "Phi Help",
@@ -112,13 +134,10 @@ export default defineConfig({
     },
     nav: [
       { text: "Phi Browser", link: "https://phibrowser.com" },
-      { text: "Guide", link: "/guides/" },
+      { text: "Guide", link: "/what-is-phi-browser/" },
       { text: "FAQ", link: "/faq/" },
     ],
-    sidebar: {
-      "/guides/": guideSidebar,
-      "/get-started/": guideSidebar,
-    },
+    sidebar,
     socialLinks: [
       { icon: "github", link: "https://github.com/phibrowser/help-center" },
     ],

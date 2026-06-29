@@ -13,16 +13,19 @@ hero:
     alt: Phi Browser
   actions:
     - theme: brand
-      text: Getting started
+      text: What Is Phi Browser?
+      link: /what-is-phi-browser/
+    - theme: alt
+      text: Quick Start
       link: /get-started/
     - theme: alt
-      text: Read the FAQ
-      link: /faq/
+      text: GitHub
+      link: https://github.com/phibrowser/help-center
 
 features:
   - title: Guide
     details: Guides that orient you — install and first run, layouts, AI, automation, and privacy.
-    link: /guides/
+    link: /what-is-phi-browser/
   - title: FAQ
     details: Quick answers to common questions about Phi Browser.
     link: /faq/

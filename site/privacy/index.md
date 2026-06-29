@@ -2,13 +2,13 @@
 description: "Learn where Phi Browser stores your data, what it does not collect, how Memory and cloud AI processing work, and how to control or delete AI data."
 ---
 
-# Privacy & your data
+# Privacy & Your Data
 
 Phi is built around a local-first architecture. The idea is simple: Phi can know you well without your personal context becoming a cloud-owned asset.
 
 ## Where your data lives
 
-What Phi remembers about you — your [Memory](/guides/memory/) — is stored locally on your device. It is built there as you browse and is meant to stay with you, under your control.
+What Phi remembers about you — your [Memory](/memory/) — is stored locally on your device. It is built there as you browse and is meant to stay with you, under your control.
 
 ## What Phi does not collect
 
@@ -22,7 +22,7 @@ Phi does not sell your browsing-derived data, and it does not use your memory, b
 
 A nuance worth knowing: large language models from providers such as Anthropic, OpenAI, or Google may be used to process tasks. But your personal memory stays local, is not treated as a cloud-owned asset, and is never used for training.
 
-You can also narrow what leaves your Mac at all. With **Private AI**, run through [Phi Sentinel](/guides/sentinel/), some of those tasks run entirely on your own machine, so they need no cloud model in the first place.
+You can also narrow what leaves your Mac at all. With **Private AI**, run through [Phi Sentinel](/sentinel/), some of those tasks run entirely on your own machine, so they need no cloud model in the first place.
 
 ## Staying in control
 

@@ -1,19 +1,19 @@
 ---
-description: "Find quick answers about Phi Browser layouts, Spaces, bookmarks, Split View, AI features, Phi Sentinel, Phi Link, pricing, privacy, and Time Machine backups."
+description: "Find quick answers about Phi Browser layouts, Spaces, bookmarks, Split View, AI features, Phi Sentinel, Phi Link, pricing, privacy, and Time Machine Backups."
 ---
 
-# Frequently asked questions
+# Frequently Asked Questions
 
-Quick answers to common questions about Phi Browser, grouped by topic. For the bigger picture and the "why" behind how Phi is built, read the [Guide](/guides/). New to Phi Browser? See [Getting started](/get-started/).
+Quick answers to common questions about Phi Browser, grouped by topic. For the bigger picture and the "why" behind how Phi is built, read the [Guide](/what-is-phi-browser/). New to Phi Browser? See [Getting Started](/get-started/).
 
-## Layouts & navigation
+## Layouts & Navigation
 
 ::: details What are the three layout modes?
 Phi has three modes that trade screen space for familiarity. **Performance** gives the most room to the page and uses the vertical sidebar for tabs and bookmarks. **Balanced** keeps the sidebar but adds a URL bar above the content. **Comfortable** looks closest to a traditional browser, with tabs on top and a visible URL bar. You pick one during onboarding and can change it anytime.
 :::
 
 ::: details Which layout should I start with?
-If you are switching from Chrome or Safari, start with **Comfortable** for the easiest transition. If you want a modern sidebar browser with a visible address bar, try **Balanced**. If you want maximum page space, use **Performance**. See [Switching to Phi](/guides/switching-to-phi/) for the fuller migration guide.
+If you are switching from Chrome or Safari, start with **Comfortable** for the easiest transition. If you want a modern sidebar browser with a visible address bar, try **Balanced**. If you want maximum page space, use **Performance**. See [Switching To Phi](/switching-to-phi/) for the fuller migration guide.
 :::
 
 ::: details Why a vertical sidebar?
@@ -23,7 +23,7 @@ Most modern screens are wide, not tall. Vertical space is what you run out of fi
 ## Spaces & Profiles
 
 ::: details What is the difference between a Space and a Profile?
-A **Space** is a workspace in the sidebar with its own name, icon, color, and bookmarks. A **Profile** is the isolation layer underneath it: each Profile has its own cookies, history, logins, and extensions. Spaces organize how things look and feel; Profiles decide what is kept separate. For the full picture, see [Spaces & Profiles](/guides/spaces/) in the Guide.
+A **Space** is a workspace in the sidebar with its own name, icon, color, and bookmarks. A **Profile** is the isolation layer underneath it: each Profile has its own cookies, history, logins, and extensions. Spaces organize how things look and feel; Profiles decide what is kept separate. For the full picture, see [Spaces & Profiles](/spaces/) in the Guide.
 :::
 
 ::: details Can one Profile have several Spaces?
@@ -51,7 +51,7 @@ Deleting a Space also removes the pinned tabs and bookmarks that belong to it. T
 :::
 
 ::: details How is this different from Arc and Dia?
-Phi keeps **Spaces** as the visible workspace layer and **Profiles** as the isolation layer underneath. That is close to Arc's two-layer model, while Dia uses Profiles more directly as workspaces in separate windows. For the full comparison, see [Switching to Phi](/guides/switching-to-phi/).
+Phi keeps **Spaces** as the visible workspace layer and **Profiles** as the isolation layer underneath. That is close to Arc's two-layer model, while Dia uses Profiles more directly as workspaces in separate windows. For the full comparison, see [Switching To Phi](/switching-to-phi/).
 :::
 
 ## Bookmarks & tabs
@@ -89,7 +89,7 @@ Right-click a tab and choose **Pin**, or drag it into the pinned grid at the top
 :::
 
 ::: details Is this similar to Arc or Dia?
-Yes. Phi uses the same broad living-sidebar idea — saved pages stay visible and pinned pages sit at the top — while keeping its own bookmark tree and behavior. See [Switching to Phi](/guides/switching-to-phi/) for the migration comparison and [Bookmarks & pinned tabs](/guides/bookmarks/) for the feature details.
+Yes. Phi uses the same broad living-sidebar idea — saved pages stay visible and pinned pages sit at the top — while keeping its own bookmark tree and behavior. See [Switching To Phi](/switching-to-phi/) for the migration comparison and [Bookmarks & Pinned Tabs](/bookmarks/) for the feature details.
 :::
 
 ## Split View & Tab Groups
@@ -244,10 +244,10 @@ Yes. Your memory data lives on your device, and you can view, manage, and delete
 No. Phi does not use your browsing-derived memory or AI interactions to train models, and it does not sell your browsing-derived data.
 :::
 
-## Time Machine backups
+## Time Machine Backups
 
 ::: details What is Phi's Time Machine?
-It is a **version rollback** safety net. Before certain major updates, Phi automatically saves a snapshot of the current version and your data, so you can return to it if a new release does not work for you. For the full picture, see [Time Machine backups](/guides/time-machine/) in the Guide.
+It is a **version rollback** safety net. Before certain major updates, Phi automatically saves a snapshot of the current version and your data, so you can return to it if a new release does not work for you. For the full picture, see [Time Machine Backups](/time-machine/) in the Guide.
 :::
 
 ::: details Is this Apple's Time Machine?

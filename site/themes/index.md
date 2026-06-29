@@ -2,7 +2,7 @@
 description: "Customize Phi Browser with color themes, light or dark appearance, opacity, sidebar styling, new tab theming, and optional webpage selection tinting."
 ---
 
-# Themes & appearance
+# Themes & Appearance
 
 Phi lets you set how the browser looks — a color **theme** plus a **light or dark** choice — and it carries across the whole browser rather than one screen. Pick a look once and the window, the sidebar, and your new tab all follow it.
 
@@ -45,11 +45,11 @@ A theme is applied across the browser, not a single surface:
 
 - **The window** — the toolbar, address bar, and tabs take on the theme color. The **Opacity** slider sets how strong that tint is.
 - **The sidebar** — selected and hovered tabs pick up the theme.
-- **The new tab** — your [new tab](/guides/new-tab/) follows the same theme automatically, so it matches the rest of the browser; change themes and it repaints along with everything else.
+- **The new tab** — your [new tab](/new-tab/) follows the same theme automatically, so it matches the rest of the browser; change themes and it repaints along with everything else.
 - **Selected text on web pages** — by default, highlighting text on a page tints the selection with your theme color. If you would rather pages keep their own native selection color, turn off **Apply theme to text selection on web pages** in the Theme settings.
 
 ## What's next
 
-- [Layouts & navigation](/guides/layouts/) — modes, the sidebar, tabs, Split View, and Tab Groups.
-- [New tab & widgets](/guides/new-tab/) — the personalized new tab your theme colors.
-- [Privacy & your data](/guides/privacy/) — where your data lives and how to stay in control.
+- [Layouts & Navigation](/layouts/) — modes, the sidebar, tabs, Split View, and Tab Groups.
+- [New Tab & Widgets](/new-tab/) — the personalized new tab your theme colors.
+- [Privacy & Your Data](/privacy/) — where your data lives and how to stay in control.

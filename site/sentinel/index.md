@@ -8,7 +8,7 @@ Phi Sentinel is a small companion app that lives in the macOS **menu bar**, sepa
 
 ## Keeping automation running
 
-Some of what Phi does is meant to outlive the moment you asked for it. [Scheduled tasks](/guides/automation/#scheduled-tasks) need to keep running on their own schedule even after you close the browser, and that is what Phi Sentinel is for. It executes those tasks, keeps your AI task history, and lets automation continue in the background — so a price check every few hours or a page you are watching keeps going whether or not the browser is open.
+Some of what Phi does is meant to outlive the moment you asked for it. [Scheduled tasks](/automation/#scheduled-tasks) need to keep running on their own schedule even after you close the browser, and that is what Phi Sentinel is for. It executes those tasks, keeps your AI task history, and lets automation continue in the background — so a price check every few hours or a page you are watching keeps going whether or not the browser is open.
 
 ## Private AI
 
@@ -38,10 +38,10 @@ Open Phi Sentinel from the menu bar, find **Private AI** in its settings, and sw
 
 ## Staying in control
 
-Private AI deepens Phi's local-first approach: it lets the AI itself — not just your memory — run on your own machine. For where your data lives and what Phi does and does not collect, see [Privacy & your data](/guides/privacy/).
+Private AI deepens Phi's local-first approach: it lets the AI itself — not just your memory — run on your own machine. For where your data lives and what Phi does and does not collect, see [Privacy & Your Data](/privacy/).
 
 ## What's next
 
-- [Automation & Phi Link](/guides/automation/) — on-demand actions, scheduled tasks, and using Phi from Telegram.
-- [Privacy & your data](/guides/privacy/) — where your data lives and how to stay in control.
+- [Automation & Phi Link](/automation/) — on-demand actions, scheduled tasks, and using Phi from Telegram.
+- [Privacy & Your Data](/privacy/) — where your data lives and how to stay in control.
 - [FAQ](/faq/#phi-sentinel) — quick answers about Phi Sentinel.

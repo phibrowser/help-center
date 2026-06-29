@@ -2,7 +2,7 @@
 description: "A migration guide for moving to Phi Browser from Chrome, Safari, Arc, or Dia, including layout choices, bookmarks, Spaces, Profiles, and AI features."
 ---
 
-# Switching to Phi
+# Switching To Phi
 
 If you are moving to Phi from Chrome, Safari, Arc, or Dia, this guide explains the mental model changes first. The detailed feature guides still cover each area in depth; this page gives you the migration map.
 
@@ -16,9 +16,9 @@ The fastest way to learn Phi is to use it as a browser first: browse normally, o
 
 Good next reads:
 
-- [Layouts & navigation](/guides/layouts/) for the three layout modes and sidebar basics.
-- [Bookmarks & pinned tabs](/guides/bookmarks/) for how saved pages work in Phi.
-- [Privacy & your data](/guides/privacy/) if you want to understand the local-first model before enabling AI features.
+- [Layouts & Navigation](/layouts/) for the three layout modes and sidebar basics.
+- [Bookmarks & Pinned Tabs](/bookmarks/) for how saved pages work in Phi.
+- [Privacy & Your Data](/privacy/) if you want to understand the local-first model before enabling AI features.
 
 ## Coming from Arc
 
@@ -34,9 +34,9 @@ Phi does not have Arc's Peek equivalent. Opening a link from a pinned tab naviga
 
 Good next reads:
 
-- [Spaces & Profiles](/guides/spaces/) for Spaces, Profiles, and URL Rules.
-- [Bookmarks & pinned tabs](/guides/bookmarks/) for living bookmarks and Profile-scoped pinned tabs.
-- [Themes & appearance](/guides/themes/) for per-Space colors and global themes.
+- [Spaces & Profiles](/spaces/) for Spaces, Profiles, and URL Rules.
+- [Bookmarks & Pinned Tabs](/bookmarks/) for living bookmarks and Profile-scoped pinned tabs.
+- [Themes & Appearance](/themes/) for per-Space colors and global themes.
 
 ## Coming from Dia
 
@@ -50,16 +50,16 @@ Pinned tabs in Phi follow the same "apps at the top" pattern that modern sidebar
 
 Good next reads:
 
-- [Layouts & navigation](/guides/layouts/) for the sidebar and layout modes.
-- [Spaces & Profiles](/guides/spaces/) for why Phi separates visible workspaces from account isolation.
-- [Bookmarks & pinned tabs](/guides/bookmarks/) for the sidebar's living page model.
+- [Layouts & Navigation](/layouts/) for the sidebar and layout modes.
+- [Spaces & Profiles](/spaces/) for why Phi separates visible workspaces from account isolation.
+- [Bookmarks & Pinned Tabs](/bookmarks/) for the sidebar's living page model.
 
 ## What to read next
 
 If you are new to Phi, read these in order:
 
-1. [Getting started](/get-started/) — install Phi and finish first run.
-2. [Layouts & navigation](/guides/layouts/) — choose the right layout mode and learn the sidebar.
-3. [Spaces & Profiles](/guides/spaces/) — understand workspaces, isolation, and URL routing.
-4. [Bookmarks & pinned tabs](/guides/bookmarks/) — learn how saved pages become part of your workspace.
-5. [Meet your assistant](/guides/ai/) — understand the built-in AI once the browser basics feel natural.
+1. [Getting Started](/get-started/) — install Phi and finish first run.
+2. [Layouts & Navigation](/layouts/) — choose the right layout mode and learn the sidebar.
+3. [Spaces & Profiles](/spaces/) — understand workspaces, isolation, and URL routing.
+4. [Bookmarks & Pinned Tabs](/bookmarks/) — learn how saved pages become part of your workspace.
+5. [Meet Your Assistant](/ai/) — understand the built-in AI once the browser basics feel natural.

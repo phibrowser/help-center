@@ -152,11 +152,11 @@ top-level section.
 Information architecture is now two pillars — **Help** and **FAQ**:
 
 - Top nav is `Help` and `FAQ`.
-- The sidebar has one `Help` group (Overview, Getting started, Layouts &
-  navigation, Meet Phi AI, Automation & Phi Link, Privacy & your data) and a
+- The sidebar has one `Help` group (Overview, Getting Started, Layouts &
+  navigation, Meet Phi AI, Automation & Phi Link, Privacy & Your Data) and a
   `FAQ` group. The install page keeps its `/get-started/` URL; it is no longer a
   separate top-level nav/sidebar group, just an item inside `Help`, and is now
-  labeled `Getting started`.
+  labeled `Getting Started`.
 
 FAQ content lives under `site/faq/`, one page per category (the owner asked to
 split the original single page):
@@ -171,8 +171,8 @@ split the original single page):
   which is served from Strapi (there is no static FAQ source file in the repo;
   the live page is the canonical text).
 - The FAQ sidebar group lists the landing page plus the category pages.
-- The official FAQ's "Getting started" category was not duplicated as a FAQ
-  page; that material already lives in the Help `Getting started` guide (its
+- The official FAQ's "Getting Started" category was not duplicated as a FAQ
+  page; that material already lives in the Help `Getting Started` guide (its
   "Coming from Chrome?" section), so the FAQ landing links there instead.
 
 Guide cross-links were repointed and simplified, per the owner: now that the FAQ
@@ -200,11 +200,11 @@ model you operate.
 
 Applied:
 
-- `site/help/ai.md` retitled from `Meet Phi AI` to `Meet your assistant` and
+- `site/help/ai.md` retitled from `Meet Phi AI` to `Meet Your Assistant` and
   rewritten to lead with the named companion; Memory, talking to it, and Skills
   are framed as sides of that companion. The `## Memory` heading is kept
   verbatim because `site/help/privacy.md` links to its `#memory` anchor.
-- The `Meet Phi AI` label/link text was updated to `Meet your assistant` (or
+- The `Meet Phi AI` label/link text was updated to `Meet Your Assistant` (or
   `your assistant` in lowercase prose) in the sidebar (`config.mts`), the Help
   overview, and the Get started page.
 - The FAQ question `What is the Phi AI Assistant?` became `What is the
@@ -214,12 +214,12 @@ Deliberately left as-is: the literal settings path **Settings → Phi AI** in
 `get-started`, `privacy`, and the FAQ. That is the actual menu name in the
 product (a UI label), not a conversational way of naming the assistant.
 
-## New tab & widgets guide (2026-06-24)
+## New Tab & Widgets guide (2026-06-24)
 
 Added a Help chapter for the new tab page and widgets at
 `site/help/new-tab.md`, linked in the `Help` sidebar (after `Meet your
 assistant`) and in the overview's "Where to go next" list. The owner asked for
-an "NTP & Widgets" chapter; the page is titled **New tab & widgets** because
+an "NTP & Widgets" chapter; the page is titled **New Tab & Widgets** because
 "NTP" is internal jargon and the site is end-user facing.
 
 Source material: grounded in the Phi AI extension at
@@ -299,7 +299,7 @@ Open issues:
 ## Memory guide (2026-06-24)
 
 Added a dedicated Help chapter for the Memory system at `site/help/memory.md`,
-linked in the `Help` sidebar (after `Meet your assistant`) and in the overview's
+linked in the `Help` sidebar (after `Meet Your Assistant`) and in the overview's
 four-part list and "Where to go next" list. Until now Memory only existed as a
 short `## Memory` sub-section inside `site/help/ai.md`.
 
@@ -421,10 +421,10 @@ Source material: `../phi-ai/phi-agent/` (skills service, `skills/built-in/`) and
 Open issue: if a real Skill marketplace / sharing / publishing feature ships later, `site/help/skills.md`
 should be expanded to cover it (the owner already anticipates this framing).
 
-## Themes & appearance guide (2026-06-24)
+## Themes & Appearance guide (2026-06-24)
 
 Added a Help chapter for the theme system at `site/help/themes.md`, linked in the `Help` sidebar
-(after `Layouts & navigation`, grouping the two browser-appearance guides) and in the overview's
+(after `Layouts & Navigation`, grouping the two browser-appearance guides) and in the overview's
 "Where to go next" list. `site/help/new-tab.md`'s "adapts to your light or dark theme" line was
 repointed to link the new guide.
 
@@ -642,7 +642,7 @@ branded routing feature), not invented by Phi and not claimed to be identical.
 - Arc/Dia behavior is competitor-dependent and may drift; revisit the comparison
   if either product changes its Spaces/Profiles model.
 
-## Time Machine backups guides (2026-06-25)
+## Time Machine Backups guides (2026-06-25)
 
 ### Requirement
 
@@ -653,7 +653,7 @@ Add Time Machine coverage to Help and FAQ, derived from the real
 
 Added two pages and wired them into navigation:
 
-- `site/help/time-machine/index.md` — "Time Machine backups" Help guide.
+- `site/help/time-machine/index.md` — "Time Machine Backups" Help guide.
 - `site/faq/time-machine/index.md` — matching concise Q&A.
 - Registered both in `site/.vitepress/config.mts` sidebar (after Privacy) and
   added pointers in `site/help/index.md` and `site/faq/index.md`.
@@ -700,7 +700,7 @@ guides lead with that distinction to prevent the obvious confusion.
   updates") rather than naming build numbers, so they should not need updates as
   the policy changes. Revisit only if the menu strings or the restore flow change.
 
-## Bookmarks & pinned tabs guide (2026-06-25)
+## Bookmarks & Pinned Tabs guide (2026-06-25)
 
 ### Requirement
 
@@ -710,7 +710,7 @@ from Arc/Dia — verify against `../phibrowser-mac/` and the web before writing.
 
 ### How
 
-- Added `site/help/bookmarks/index.md` — "Bookmarks & pinned tabs" Help guide.
+- Added `site/help/bookmarks/index.md` — "Bookmarks & Pinned Tabs" Help guide.
 - Enriched the existing `site/faq/bookmarks/index.md` (did not add a new FAQ page,
   since one already exists) with Q&As on click-in-place behavior, per-Space vs
   per-Profile scope, pin/unpin, and an updated Arc/Dia comparison.
@@ -978,7 +978,7 @@ Work timestamp: 2026-06-29 12:10:42 CST.
 ### How
 
 - Added `site/guides/switching-to-phi/index.md` as the central migration page for Chrome, Safari, Arc, and Dia users.
-- Added **Switching to Phi** to the VitePress sidebar immediately after **Getting started** in `site/.vitepress/config.mts`.
+- Added **Switching To Phi** to the VitePress sidebar immediately after **Getting Started** in `site/.vitepress/config.mts`.
 - Added the new page to the guide overview in `site/guides/index.md`.
 - Shortened the migration and competitor-comparison content in `site/get-started/index.md`, `site/guides/layouts/index.md`, `site/guides/spaces/index.md`, `site/guides/bookmarks/index.md`, and `site/faq/index.md` so those pages keep only contextual tips and links to the central migration page.
 
@@ -1037,16 +1037,97 @@ Work timestamp: 2026-06-29 12:53:26 CST.
 
 The Guide sidebar is grouped by user task instead of a single **Guide** wrapper:
 
-- **Start here** — overview, getting started, switching to Phi.
-- **Browser workspace** — layouts, Spaces & Profiles, bookmarks, themes, new tab.
-- **Assistant & automation** — assistant, Memory, Skills, automation, Sentinel.
-- **Privacy & recovery** — privacy and Time Machine backups.
+- **Start Here** — overview, getting started, switching to Phi.
+- **Browser Workspace** — layouts, Spaces & Profiles, bookmarks, themes, new tab.
+- **Assistant & Automation** — assistant, Memory, Skills, automation, Sentinel.
+- **Privacy & Recovery** — privacy and Time Machine Backups.
 
 This keeps the top navigation and sidebar hierarchy consistent: **Guide** and **FAQ** remain peer destinations, while the left sidebar only organizes Guide content.
 
 ### Open issues
 
 None known. If the FAQ becomes multi-page again, revisit whether it should get its own section-specific left sidebar. While it remains one page, the right-side outline should be enough.
+
+## Flat guide URLs under `/help/` (2026-06-29)
+
+### Requirement
+
+After the Guide sidebar was grouped by user task, the owner questioned whether URLs should mirror those groups. We decided **not** to encode sidebar group names such as `browser-workspace` into URLs because sidebar grouping is more likely to change than page identity. The owner then asked to flatten guide article URLs directly under the deployed `/help/` base, while keeping the top nav item named **Guide** and pointing it at **What Is Phi Browser?**.
+
+Work timestamp: 2026-06-29 14:19:30 CST.
+
+### How
+
+Guide article source files were moved out of `site/guides/` and into flat topic directories under `site/`:
+
+- `site/guides/index.md` → `site/what-is-phi-browser/index.md`
+- `site/guides/<topic>/index.md` → `site/<topic>/index.md`
+
+Because the VitePress `base` remains `/help/`, final public URLs are now flat under the Help Center prefix, for example:
+
+- `/help/what-is-phi-browser/`
+- `/help/layouts/`
+- `/help/memory/`
+- `/help/privacy/`
+- `/help/faq/`
+
+`site/.vitepress/config.mts` now points the top nav **Guide** item to `/what-is-phi-browser/`. The Guide sidebar still keeps the task-based groupings (**Start Here**, **Browser Workspace**, **Assistant & Automation**, **Privacy & Recovery**), but its links now target the flat routes. The sidebar is attached to each flat Guide route through a `guideSidebarPaths` list; `/faq/` remains outside that list and therefore has no left sidebar.
+
+All internal Markdown links were rewritten from `/guides/...` to the corresponding flat route.
+
+### Open issues
+
+The project currently has no in-repo redirect mechanism; `wrangler.jsonc` only serves static assets under `site/.vitepress/dist`. If old `/help/guides/...` URLs have been crawled or shared, add 301 redirects in the upstream routing layer or a Worker before deploying this migration publicly. Suggested mapping:
+
+- `/help/guides/` → `/help/what-is-phi-browser/`
+- `/help/guides/<topic>/` → `/help/<topic>/`
+
+## Home page hero actions update (2026-06-29)
+
+### Requirement
+
+The owner asked to change the home page hero buttons to three actions: **What Is Phi Browser?**, **Quick Start**, and **GitHub**, with the first button using the emphasized brand style.
+
+Work timestamp: 2026-06-29 14:32:05 CST.
+
+### How
+
+`site/index.md` now sets the hero actions to:
+
+- **What Is Phi Browser?** — brand button, linking to `/what-is-phi-browser/`.
+- **Quick Start** — secondary button, linking to `/get-started/`.
+- **GitHub** — secondary button, linking to `https://github.com/phibrowser/help-center`.
+
+### Open issues
+
+None known.
+
+## Title-case article labels (2026-06-29)
+
+### Requirement
+
+The owner asked to capitalize article titles consistently, after first changing **Getting started** to **Getting Started** and then asking for the same treatment on titles such as **Layouts & navigation**.
+
+Work timestamp: 2026-06-29 14:37:21 CST.
+
+### How
+
+Article H1s and corresponding navigation/link labels now use title-style capitalization, for example:
+
+- **What Is Phi Browser?**
+- **Layouts & Navigation**
+- **Bookmarks & Pinned Tabs**
+- **Meet Your Assistant**
+- **Privacy & Your Data**
+- **Time Machine Backups**
+
+The Guide sidebar group labels were also normalized to title-style capitalization: **Start Here**, **Browser Workspace**, **Assistant & Automation**, and **Privacy & Recovery**.
+
+URLs were deliberately left lowercase and unchanged; this is a visible label convention only.
+
+### Open issues
+
+None known. For future pages, keep the H1, sidebar label, and title-style link text consistent, while keeping route slugs lowercase.
 
 ## Future updates
 
