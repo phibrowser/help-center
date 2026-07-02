@@ -47,7 +47,7 @@ URL Rules open matching sites in a Space you assign, no matter where you click o
 :::
 
 ::: details What happens if I delete a Space?
-Deleting a Space also removes the pinned tabs and bookmarks that belong to it. This cannot be undone. The Profile and its cookies, history, and logins are not deleted by removing a Space.
+Deleting a Space also removes the bookmarks and URL Rules that belong to it. This cannot be undone. Pinned tabs belong to the Profile rather than the Space, so they stay, and the Profile with its cookies, history, and logins is not deleted by removing a Space.
 :::
 
 ::: details How is this different from Arc and Dia?
@@ -61,7 +61,7 @@ Phi treats bookmarks as part of your active browsing workspace, not a hidden arc
 :::
 
 ::: details How do bookmarks work in Comfortable Mode?
-Comfortable Mode behaves much like Chrome. Show the bookmark bar with **View → Always show bookmark bar**, or use the **Bookmarks** menu in the menu bar.
+Comfortable Mode behaves much like Chrome. Show the bookmark bar with **View → Always Show Bookmark Bar**. There is also a **Bookmarks** menu in the menu bar, available in every layout mode.
 :::
 
 ::: details How do bookmarks work in Balanced and Performance Mode?
@@ -129,7 +129,7 @@ Yes. Phi ships with AI features enabled by default, because they are a core part
 :::
 
 ::: details Can I turn all AI features off?
-Yes, in **Settings → Phi AI**. Note that turning AI off **permanently erases all memory and AI-related data**, and this cannot be undone.
+Yes, in **Settings → Phi AI**. Turning AI off closes your AI conversations and disconnects any External Data Connectors. Your Memory stays on your device; to erase it as well, use the clear option on the Memory page — that deletion is permanent.
 :::
 
 ::: details What are the main AI components?
@@ -161,11 +161,11 @@ No. Phi does not use your memory data, browsing context, or AI interactions to t
 :::
 
 ::: details What is the assistant?
-The companion you interact with directly inside the browser. You choose its name and avatar during onboarding and call it by that name from then on, so it has its own identity rather than feeling like a generic chatbot.
+The companion you interact with directly inside the browser. You give it a name during onboarding — it generates a matching avatar for itself — and call it by that name from then on, so it has its own identity rather than feeling like a generic chatbot.
 :::
 
 ::: details How do I talk to the assistant?
-Click the **Chat** button — at the bottom of the sidebar in Performance mode, or in the top-right of the page header in Balanced and Comfortable — or right-click a page, link, or selected text to ask context-aware questions.
+Click the **Chat** button — at the bottom of the sidebar in Performance mode, or in the top-right of the page header in Balanced and Comfortable — or select text on a page, right-click, and choose **Ask [your assistant] about…** to ask about it in context.
 :::
 
 ::: details What can the assistant do?
@@ -191,7 +191,7 @@ Phi Sentinel is the background AI orchestrator for Phi Browser. It executes sche
 :::
 
 ::: details Why is Phi Sentinel separate from the browser?
-So scheduled tasks and persistent AI workflows can keep running even when the browser is closed.
+So scheduled tasks and persistent AI workflows can keep running even when the browser window is closed.
 :::
 
 ::: details Why was it designed this way?
@@ -259,7 +259,7 @@ No. It is not a continuous or scheduled backup. A snapshot is created automatica
 :::
 
 ::: details What does a snapshot include?
-The previous app version plus the Phi data that belongs to it — bookmarks, Spaces, pinned tabs, settings, Memory, and browsing state — so a rollback restores a consistent setup.
+The Phi data that belongs to the previous version — bookmarks, Spaces, pinned tabs, settings, Memory, and browsing state — plus a record of which app version to restore. The app itself is downloaded during the restore, so a rollback returns a consistent setup.
 :::
 
 ::: details Where are snapshots stored?

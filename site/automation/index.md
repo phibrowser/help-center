@@ -18,23 +18,24 @@ Sometimes you do not want to sit and watch. The agent can run a task **detached 
 
 A background task:
 
-- **waits for your approval** before it starts,
+- starts only when you **explicitly ask** for background execution,
 - runs on its own, so you can keep browsing or close the conversation,
-- reports its progress, results, and any files it produces on the **Shadow Tasks** page — results do not come back into the chat on their own,
+- pauses and asks you to **confirm** if it runs into a risky step,
+- reports its progress, results, and any files it produces on Phi Sentinel's **Scheduled Tasks** page — results do not come back into the chat on their own,
 - **notifies you when it finishes**, which is especially handy with [Phi Link](#phi-link) on your phone,
 - can be **cancelled** while running, or **rerun** once it is done.
 
 ## Scheduled tasks
 
-Scheduled tasks are recurring automations that run on a schedule you define. For example, Phi can monitor a product price every few hours, watch a page for changes, or repeat another browser-based task automatically. They are really background tasks that repeat — kept running by [Phi Sentinel](/sentinel/) even when the browser is closed. This is where Phi behaves less like a browser with AI features and more like a persistent system that keeps working when you are not watching it.
+Scheduled tasks are recurring automations that run on a schedule you define. For example, Phi can monitor a product price every few hours, watch a page for changes, or repeat another browser-based task automatically. They are really background tasks that repeat — kept running by [Phi Sentinel](/sentinel/) even when the browser window is closed. This is where Phi behaves less like a browser with AI features and more like a persistent system that keeps working when you are not watching it.
 
 ## Staying in control
 
-The agent is built to act with your knowledge, not behind your back. It asks you to confirm before consequential actions, background tasks need your approval before they run, and you can stop a running task at any time. For where your data lives and how the AI is handled, see [Privacy & Your Data](/privacy/).
+The agent is built to act with your knowledge, not behind your back. It asks you to confirm before consequential actions, background tasks start only when you ask for them and pause for confirmation on risky steps, and you can stop a running task at any time. For where your data lives and how the AI is handled, see [Privacy & Your Data](/privacy/).
 
 ## Phi Sentinel
 
-Scheduled tasks need to keep running even when the browser is closed. **Phi Sentinel** is the background app in the macOS menu bar that makes that possible — and it also hosts Private AI, the option to run some AI on your own Mac. See [Phi Sentinel](/sentinel/) for the full picture.
+Scheduled tasks need to keep running even when the browser window is closed. **Phi Sentinel** is the background app in the macOS menu bar that makes that possible — and it also hosts Private AI, the option to run some AI on your own Mac. See [Phi Sentinel](/sentinel/) for the full picture.
 
 ## Phi Link
 

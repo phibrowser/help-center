@@ -16,7 +16,7 @@ Phi offers three layout modes so you can choose how much screen space goes to co
 
 - **Performance** — gives the most room to the page. It uses the vertical sidebar for tabs and bookmarks and removes the URL bar from the content area.
 - **Balanced** — keeps the vertical sidebar but adds the URL bar above the content. It is the middle ground between space efficiency and familiarity.
-- **Comfortable** — looks closest to a traditional browser: tabs on top, a visible URL bar, and a layout close to Chrome — though the sidebar still exists.
+- **Comfortable** — looks closest to a traditional browser: tabs on top, a visible URL bar, and a layout close to Chrome. Tabs move to the horizontal strip, so the sidebar steps back from day-to-day navigation.
 
 ### Which should I start with?
 

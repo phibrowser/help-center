@@ -27,7 +27,7 @@ This automatically taps `phibrowser/tap` and installs the Phi cask. Updates are 
 The first time you open Phi, onboarding helps you set things up:
 
 - **Choose a layout mode** — Performance, Balanced, or Comfortable. You can change this anytime, so pick whatever sounds closest to how you browse today. See [Layouts & Navigation](/layouts/) for what each mode means.
-- **Name your assistant** — you choose the assistant's name and avatar, so it has its own identity rather than feeling like a generic chatbot.
+- **Meet your assistant** — once you are in the browser, a banner at the top of the new tab invites you to get to know your assistant: give it a name, and it generates a matching avatar for itself, so it has its own identity rather than feeling like a generic chatbot. You can also skip this and come back to it later.
 - **AI is on by default** — Phi's AI features are enabled out of the box. You can turn them off later in **Settings → Phi AI** if you prefer a plain browser.
 
 ## Switching from another browser?

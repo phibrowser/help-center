@@ -20,8 +20,8 @@ Widgets are small cards you pin to the new tab — a clock, the weather, your mo
 
 ### Built-in widgets
 
-- **At a glance** — Clock (local time and date for any time zone), Weather (current conditions for a location), Quote of the day, and a personalized Memory image.
-- **Tools** — Pomodoro focus timer, Currency exchange rates, and a Quick translator.
+- **At a glance** — Clock (local time and date for any time zone), Weather (current conditions for a location), Quote of the day, and Image of the day (an ambient image drawn from your recent memory themes).
+- **Tools** — Pomodoro focus timer, Currency converter, and a Quick translator.
 - **Shortcuts** — Top sites (the sites you visit most) and GitHub stars (the star trend for a repo).
 - **Your activity** — Recent reads (pages you read recently), Hot posts (trending items from sources like Hacker News or Reddit), and a Daily report and Weekly report summarizing what you have been doing.
 

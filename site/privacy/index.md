@@ -30,9 +30,9 @@ Memory is not a black box. You can **view, manage, and delete** what Phi remembe
 
 ### Turning AI off
 
-If you want a plain browser, you can disable all AI features in **Settings → Phi AI**.
+If you want a plain browser, you can disable all AI features in **Settings → Phi AI**. Turning AI off closes your AI conversations and disconnects any External Data Connectors.
 
-One important caveat: turning AI off **permanently wipes all memory and AI-related data** Phi has stored. This cannot be undone, so save anything you want to keep first.
+Your Memory is not deleted by this switch — it stays on your device. If you want to erase what Phi remembers as well, use the clear option on the Memory page; that deletion is permanent and cannot be undone.
 
 ## Open source
 

@@ -17,7 +17,7 @@ If what you want is a backup you control — to move to a new Mac, or keep a cop
 
 ## When a snapshot is created
 
-You do not start a Time Machine snapshot yourself. Phi creates one automatically, just before launching into a qualifying update, and only once per such update. Most updates do not trigger one at all. When a snapshot does exist, it captures the previous app version together with the Phi data that belongs to it — your bookmarks, Spaces, pinned tabs, settings, Memory, and browsing state — so that a rollback restores a consistent setup rather than a mismatched mix.
+You do not start a Time Machine snapshot yourself. Phi creates one automatically, just before launching into a qualifying update, and only once per such update. Most updates do not trigger one at all. When a snapshot does exist, it captures the Phi data that belongs to the previous version — your bookmarks, Spaces, pinned tabs, settings, Memory, and browsing state — together with a record of which app version it pairs with, so that a rollback restores a consistent setup rather than a mismatched mix. The app itself is not stored in the snapshot; it is downloaded during the restore.
 
 Snapshots are stored **locally on your Mac**. They are not uploaded to the cloud, not tied to your account, and cannot be moved to another Mac.
 

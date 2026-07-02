@@ -8,7 +8,7 @@ Phi Sentinel is a small companion app that lives in the macOS **menu bar**, sepa
 
 ## Keeping automation running
 
-Some of what Phi does is meant to outlive the moment you asked for it. [Scheduled tasks](/automation/#scheduled-tasks) need to keep running on their own schedule even after you close the browser, and that is what Phi Sentinel is for. It executes those tasks, keeps your AI task history, and lets automation continue in the background — so a price check every few hours or a page you are watching keeps going whether or not the browser is open.
+Some of what Phi does is meant to outlive the moment you asked for it. [Scheduled tasks](/automation/#scheduled-tasks) need to keep running on their own schedule even after you close the browser window, and that is what Phi Sentinel is for. It executes those tasks, keeps your AI task history, and lets automation continue in the background — so a price check every few hours or a page you are watching keeps going whether or not a browser window is open.
 
 ## Private AI
 

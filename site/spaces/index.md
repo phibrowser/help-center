@@ -17,7 +17,7 @@ A simple way to hold it: **Spaces organize how things look and feel; Profiles de
 
 ## What lives in a Space
 
-- **A name, an icon, and a color.** Pick from a set of SF Symbol icons (house, briefcase, book, and so on) so each Space is recognizable at a glance in the sidebar.
+- **A name, an icon, and a color.** Pick from Phi's built-in icon set or use an emoji, so each Space is recognizable at a glance in the sidebar.
 - **Its own bookmarks.** Each Space has an independent set of bookmarks, so a work Space's saved pages do not clutter a personal one.
 - **Its own theme (optional).** A Space can use its own color theme or follow your global theme. Switching into the Space applies its theme so the window matches the context you are in.
 - **Pinned tabs** are shared across Spaces that use the same Profile, since they belong to the Profile's logged-in session rather than to one Space.
@@ -27,13 +27,13 @@ A simple way to hold it: **Spaces organize how things look and feel; Profiles de
 - **Create** a Space from the Spaces strip in the sidebar. You give it a name and choose which Profile it belongs to — or create a **New Profile** right there if this Space should be fully separate.
 - **Switch** between Spaces from the sidebar with a single click. The sidebar's tabs, bookmarks, and theme change to match, and Phi reopens the Space's window if it is not already open.
 - **Rename** or **Change Icon** / **Change Theme** from the Space's menu. Choose **Follow Global** to drop a per-Space theme override.
-- **Delete** a Space from the same menu. Deleting a Space also removes the pinned tabs and bookmarks that belong to it, and cannot be undone.
+- **Delete** a Space from the same menu. Deleting a Space also removes the bookmarks and URL Rules that belong to it, and cannot be undone. Pinned tabs belong to the Profile rather than the Space, so they are not affected.
 
 ## URL Rules: send sites to the right Space automatically
 
 Spaces are most useful when the right pages land in the right place without you thinking about it. **URL Rules** do that: a rule matches a site and opens it in the Space you assign, no matter where you click or type the link.
 
-Open **URL Rules** from the sidebar to manage every Space's rules in one place. Each rule matches by:
+Open **URL Rules…** from the **Spaces** menu in the menu bar — or from the Spaces section in Settings — to manage every Space's rules in one place. Each rule matches by:
 
 - **Domain suffix** — `figma.com` and all its subdomains.
 - **Domain** — one exact host, like `www.example.com`.

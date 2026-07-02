@@ -15,9 +15,9 @@ This is the idea Arc and Dia popularized: the sidebar holds living things, not a
 ## Making and organizing bookmarks
 
 - **Create a bookmark** by dragging a tab into the sidebar, or right-click a tab and choose **Add to Bookmark** (it reads **Add to Bookmark Bar** in Comfortable Mode). Use **Add to Folder** to drop it straight into a folder.
-- **Organize with folders.** Bookmarks nest into folders, and you can make a sub-folder with **New Nested Folder**.
+- **Organize with folders.** Bookmarks nest into folders, and you can make a sub-folder with **New Nested Folder…**.
 - **Save a Split as one bookmark.** From a Split View, **Add Split to Bookmark** keeps both pages as a single entry that reopens the pair together.
-- **Manage a bookmark** from its right-click menu: **Rename**, **Edit**, **Open in New Tab**, **Open as Split**, **Copy Link**, and **Delete**.
+- **Manage a bookmark** from its right-click menu: **Copy Link**, **Rename…**, **Edit…**, **Open in New Tab**, **Open as Split**, and **Delete**.
 
 Bookmarks are scoped to the Space you are in — each [Space](/spaces/) keeps its own set, so a work Space's saved pages do not clutter a personal one.
 

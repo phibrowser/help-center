@@ -34,7 +34,7 @@ Everything Memory builds is stored locally on your device and stays under your c
 - **Turn off memory collection for a site** when there are pages you would rather it not learn from.
 - **Import and export** your memory, so it is portable and genuinely yours rather than locked in.
 
-Your memory is never used to train AI models. For where your data lives and what Phi does and does not collect, see [Privacy & Your Data](/privacy/). Note that turning AI off entirely also wipes your memory — see [turning AI off](/privacy/#turning-ai-off) before you do.
+Your memory is never used to train AI models. For where your data lives and what Phi does and does not collect, see [Privacy & Your Data](/privacy/). Note that [turning AI off](/privacy/#turning-ai-off) does not erase your memory — if you want it gone too, delete it from the Memory page, which is permanent.
 
 ## Memory beyond Phi: Anamnesis
 
