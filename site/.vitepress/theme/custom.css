@@ -11,15 +11,30 @@ html {
 }
 
 /*
- * Keep search on the left while the nav menu stays on the right.
+ * Keep search (and the Ask Phi button) on the left while the nav menu stays on
+ * the right.
  *
  * By default the search box is `flex-grow: 1` (a transparent full-width bar with
- * the visible pill on its left). Shrink it to the visible pill and use
- * `margin-right: auto` to push the nav menu to the far right.
+ * the visible pill on its left). Shrink it to the visible pill; the `Ask Phi`
+ * button that follows it carries `margin-right: auto` to push the nav menu to
+ * the far right. When the button is hidden (non-Phi browsers) the search box
+ * still owns the spacer via the fallback rule below.
  */
 .VPNavBar .content-body .VPNavBarSearch {
   order: -1;
   flex-grow: 0;
+}
+
+.VPNavBar .content-body .phi-ai-button {
+  margin-right: auto;
+}
+
+/*
+ * Fallback: the Ask Phi button gates its own visibility and is absent in non-Phi
+ * browsers. Without it, restore the spacer on the search box so the nav menu
+ * still sits on the right. `:has()` keeps this scoped to the button-less case.
+ */
+.VPNavBar .content-body:not(:has(.phi-ai-button)) .VPNavBarSearch {
   margin-right: auto;
 }
 

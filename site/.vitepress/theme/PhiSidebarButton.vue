@@ -1,21 +1,51 @@
 <script setup lang="ts">
+import { onMounted, ref } from "vue";
+
 // Opens Phi Browser's own AI assistant sidebar.
 //
-// Phi does not (yet) expose a page-facing API to open its native sidebar, so
-// this dispatches an agreed message that Phi's content script / native layer
-// is expected to listen for and act on. The contract is documented in
-// docs/initial-setup.md. In any other browser nothing is listening, so the
-// click is a harmless no-op.
+// Phi's AI sidebar is the "Sidecar" extension (id below). It declares this
+// origin in externally_connectable, and its background script answers our
+// messages via chrome.runtime.onMessageExternal. So we talk to it directly
+// with chrome.runtime.sendMessage — there is no native/postMessage hop.
+//
+// The button is hidden unless we can confirm we are inside Phi with the Sidecar
+// installed: on mount we send a "phi:ping" probe and only render once it
+// resolves. In a normal Chrome (extension absent) the callback carries
+// chrome.runtime.lastError; in Firefox/Safari window.chrome is undefined. Both
+// leave the button hidden. Contract documented in docs/initial-setup.md.
+const EXT_ID = "fenmfiepnpdlhplemgijlimpbebebljo";
+
+const isPhi = ref(false);
+
+function sendToExt(msg: unknown, cb?: (resp: unknown) => void): boolean {
+  const rt = (window as unknown as { chrome?: any }).chrome?.runtime;
+  if (!rt?.sendMessage) return false;
+  try {
+    rt.sendMessage(EXT_ID, msg, (resp: unknown) => {
+      // Read lastError to swallow "Could not establish connection" noise.
+      const err = rt.lastError;
+      cb?.(err ? undefined : resp);
+    });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+onMounted(() => {
+  sendToExt({ source: "phi-help", type: "phi:ping" }, (resp: unknown) => {
+    if ((resp as { ok?: boolean } | undefined)?.ok) isPhi.value = true;
+  });
+});
+
 function openPhiSidebar() {
-  window.postMessage(
-    { source: "phi-help", type: "phi:open-sidebar" },
-    window.location.origin,
-  );
+  sendToExt({ source: "phi-help", type: "phi:open-sidebar" });
 }
 </script>
 
 <template>
   <button
+    v-if="isPhi"
     type="button"
     class="phi-ai-button"
     aria-label="Ask Phi"

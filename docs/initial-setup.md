@@ -256,6 +256,11 @@ tokenization options (CJK does not split on spaces).
 
 ## Phi assistant button in the nav bar (2026-06-24)
 
+> Superseded. The `window.postMessage` contract below never worked and was
+> replaced on 2026-07-03. For how the button works now, see
+> [`phi-assistant-button.md`](./phi-assistant-button.md). This entry is kept as
+> history.
+
 Added an AI button next to the search box that is meant to open Phi Browser's
 own AI assistant sidebar.
 
@@ -949,6 +954,9 @@ Browsers that do not support `scrollbar-gutter` may still shift horizontally whe
 
 ## Temporarily hide the Phi assistant nav button (2026-06-29)
 
+> Historical. The button was restored on 2026-07-03; see
+> [`phi-assistant-button.md`](./phi-assistant-button.md).
+
 ### Requirement
 
 The owner asked to temporarily hide the AI button in the Help Center navbar because the browser-side feature is not finished yet.
@@ -1250,6 +1258,23 @@ Follow-up timestamp: 2026-06-29 15:36:23 CST. The owner clarified that the home 
 ### Open issues
 
 None known. If future custom components render new-tab links outside VitePress's `VPLink`, `.vp-doc`, or `.VPButton` surfaces, add them to the same shared arrow treatment instead of hand-writing arrow characters in content.
+
+## Restore the Phi assistant button via externally_connectable (2026-07-03)
+
+The owner asked to re-enable the hidden AI button so that clicking it opens Phi
+Browser's AI sidebar, and to show it **only** when running inside Phi. This
+shipped: the button now talks to the Sidecar extension directly via
+`externally_connectable` + `onMessageExternal` (replacing the inert
+`window.postMessage` contract from 2026-06-24), gates its visibility on a
+`phi:ping` probe, and reuses `toggleChatSidebar(true)` — no native change.
+
+Work timestamp: 2026-07-03 12:40:04 CST.
+
+The feature is now live, so its durable reference (architecture, message
+contract, files across help-center + Sidecar, security model, local dev, and the
+deferred search-to-sidebar path) lives in its own document:
+[`phi-assistant-button.md`](./phi-assistant-button.md). Keep that file current
+instead of appending further Phi-button notes here.
 
 ## Future updates
 
