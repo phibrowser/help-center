@@ -1,5 +1,7 @@
 # Initial setup notes
 
+> **Archived:** This document records the initial setup and older handoff notes only. Do not append new work here. Create a focused document under `docs/` for future changes.
+
 ## Original requirement
 
 Create a public GitHub repository under the `phibrowser` organization for a Help, FAQ, and Docs site. The site must use VitePress with pnpm, Prettier, Husky, and lint-staged. User-facing site content must live under `site/` so repository-level AI and handoff documentation can use `docs/` without colliding with the VitePress content tree.

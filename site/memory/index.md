@@ -1,5 +1,5 @@
 ---
-description: "Learn how Phi Browser's Memory helps the assistant understand your browsing context, builds observations locally, powers Memory Galaxy, and stays under your control."
+description: "Learn how Phi Browser's Memory helps the assistant understand your browsing context, builds observations locally, powers Nebula, and stays under your control."
 ---
 
 # Memory
@@ -16,9 +16,9 @@ From that activity it also extracts small, specific facts about you — your int
 
 What you do recently counts for more than something you did once. Relevance decays: a current habit outweighs a one-off detour from months ago, so the picture stays in step with your life instead of being anchored to your past.
 
-## Memory Galaxy
+## Nebula
 
-What Memory learns is not a black box. **Memory Galaxy** is a view that lays it all out as a map centered on you — the themes that describe how you relate to things, the entities you engage with (sites, topics, people, skills), and the intents behind your browsing. You can look through it to see what the assistant has picked up and how the pieces connect, rather than taking it on trust.
+What Memory learns is not a black box. **Nebula** is the current visual Memory view, replacing the older Memory Galaxy experience. It turns what Phi has learned into a starfield-like map of memories and clusters, so you can explore the themes, places, topics, and activity patterns that shape your assistant's context. You can look through it to see what the assistant has picked up and how the pieces connect, rather than taking it on trust.
 
 You can open your Memory whenever you want to look. On the new tab, there is an entry just below the search box. In the browser itself, where to find it depends on your [layout mode](/layouts/): in **Performance** and **Balanced** it sits at the **bottom-left**, and in **Comfortable** it moves to the **top-right**.
 
