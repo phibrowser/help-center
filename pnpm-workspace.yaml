@@ -1,4 +1,7 @@
 allowBuilds:
+  # core-js only ships a postinstall funding banner; its build script is not
+  # needed by the prebuilt posthog-js bundle that pulls it in.
+  core-js: false
   esbuild: true
   sharp: true
   workerd: true
