@@ -34,6 +34,10 @@ If you want a plain browser, you can disable all AI features in **Settings → P
 
 Your Memory is not deleted by this switch — it stays on your device. If you want to erase what Phi remembers as well, use the clear option on the Memory page; that deletion is permanent and cannot be undone.
 
+## Browsing privately
+
+For sessions that should leave nothing behind on your Mac either, open an [Incognito Space](/incognito/) from the **File** menu. Its history, cookies, and site data live only in memory, AI features sit out entirely, and closing it destroys the session.
+
 ## Open source
 
 Phi's core is open source, so its behavior can be inspected rather than taken purely on trust.
