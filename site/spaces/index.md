@@ -40,7 +40,13 @@ Open **URL Rules…** from the **Spaces** menu in the menu bar — or from the S
 - **Domain contains** — any host containing a word, like `git`.
 - **URL** — a host plus a path prefix, like `example.com/team`.
 
+Besides your regular Spaces, a rule can target **Incognito**: matching sites then open in an [Incognito Space](/incognito/), created on demand when none is open.
+
 Set a rule to **Ask every time** instead of routing silently. When a matching link opens, Phi shows an **Open in which Space?** chooser so you can pick — your current Space is marked, and you can keep the page where you are. When several rules could match, the most specific one wins (a longer path beats a shorter one; an exact host beats a wildcard).
+
+## Incognito Spaces: a Space without a trace
+
+For browsing that should leave nothing behind, **File → New Incognito Space** opens a private Space right in the sidebar strip. It has the same workspace feel, but an in-memory session backs it instead of a Profile: no bookmarks, no pinned tabs, no AI, and nothing written to disk. Closing it destroys the session. See [Incognito Spaces](/incognito/) for the full picture.
 
 ## How this connects to the rest of Phi
 

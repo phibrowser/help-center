@@ -1,5 +1,5 @@
 ---
-description: "Find quick answers about Phi Browser layouts, Spaces, bookmarks, Split View, AI features, Phi Sentinel, Phi Link, pricing, privacy, and Time Machine Backups."
+description: "Find quick answers about Phi Browser layouts, Spaces, Incognito Spaces, bookmarks, Split View, AI features, Phi Sentinel, Phi Link, pricing, privacy, and Time Machine Backups."
 ---
 
 # Frequently Asked Questions
@@ -52,6 +52,36 @@ Deleting a Space also removes the bookmarks and URL Rules that belong to it. Thi
 
 ::: details How is this different from Arc and Dia?
 Phi keeps **Spaces** as the visible workspace layer and **Profiles** as the isolation layer underneath. That is close to Arc's two-layer model, while Dia uses Profiles more directly as workspaces in separate windows. For the full comparison, see [Switching to Phi](/switching-to-phi/).
+:::
+
+## Incognito Spaces
+
+::: details What is an Incognito Space?
+A private Space in the sidebar. It appears in the Spaces strip like any other Space, but an in-memory session backs it and nothing about it is written to disk. Open one with **File → New Incognito Space**; a single one is named **Incognito**, and several open at once are numbered **Incognito 1**, **Incognito 2**, and so on. For the full picture, see [Incognito Spaces](/incognito/) in the Guide.
+:::
+
+::: details Do Incognito Spaces share a session with each other?
+Yes. All open Incognito Spaces share one private session — sign in to a site in one and you are signed in to it in the others. That session is separate from your regular Profiles and also from the classic **New Incognito Window**, whose session never mixes with it.
+:::
+
+::: details What is unavailable in an Incognito Space?
+Bookmarks and pinned tabs are not shown and cannot be created, the assistant chat and the Memory button are unavailable, importing browser data is blocked, and only extensions you have allowed to run in incognito are active. The theme is fixed to Phi's dark Incognito look; the icon can be changed, but the choice dies with the Space.
+:::
+
+::: details What happens when I close an Incognito Space?
+Phi asks **"This will also close this Incognito Space, are you sure?"** (check **Do not ask again** to skip it from then on), closes the Space's windows, and removes it from the strip. When the last Incognito Space window closes — or Phi quits — the shared private session is destroyed. Files you downloaded stay on your Mac.
+:::
+
+::: details Can URL Rules send a site to an Incognito Space?
+Yes. The URL Rules editor offers one generic **Incognito** target alongside your regular Spaces — a rule never points at a specific Incognito Space, since those exist only while open. When such a rule matches, Phi uses a live Incognito Space or opens a new one on demand. Routing is one-way: rules never pull a navigation out of a private session back into a regular Space.
+:::
+
+::: details Do extensions work in an Incognito Space?
+Not unless you allow them individually, as in any Chromium-based browser. The private session is always built on your default Profile, so only that Profile's extensions can run there. In a window on the default Profile, choose **Manage Extensions** from the Extensions menu (or type `phi://extensions`), open the extension's **Details**, and turn on **Allow in Incognito**. Extensions installed on other Profiles never appear in an Incognito Space, and new extensions cannot be installed from inside a private session.
+:::
+
+::: details Are Incognito Spaces included in Time Machine Backups?
+No. Snapshots exclude them entirely — their sessions are meant to die with their windows — so restoring a backup never brings an Incognito Space back.
 :::
 
 ## Bookmarks & tabs

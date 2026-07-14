@@ -130,6 +130,7 @@ const guideSidebar: DefaultTheme.SidebarItem[] = [
     items: [
       { text: "Layouts & Navigation", link: "/layouts/" },
       { text: "Spaces & Profiles", link: "/spaces/" },
+      { text: "Incognito Spaces", link: "/incognito/" },
       { text: "Bookmarks & Pinned Tabs", link: "/bookmarks/" },
       { text: "Themes & Appearance", link: "/themes/" },
       { text: "New Tab & Widgets", link: "/new-tab/" },
@@ -160,6 +161,7 @@ const guideSidebarPaths = [
   "/switching-to-phi/",
   "/layouts/",
   "/spaces/",
+  "/incognito/",
   "/bookmarks/",
   "/themes/",
   "/new-tab/",
