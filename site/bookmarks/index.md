@@ -38,4 +38,4 @@ A simple split of responsibilities:
 - **Pinned tabs** are pages you live in — always at the top, one click away, and shared across the Spaces on your Profile.
 - **Bookmarks** are pages you want to keep — organized in folders, scoped to one Space, and opened in place when you need them.
 
-If you are switching from Arc or Dia, see [Switching to Phi](/switching-to-phi/) for how Phi's living sidebar, bookmarks, and pinned tabs compare.
+If you are switching from Arc or Dia, see [Switching to Phi](/switching-to-phi/) for how Phi's living sidebar, bookmarks, and pinned tabs compare. To bring bookmarks in from another browser or a file, or to save a Space's bookmarks back out to HTML, see [Importing & Exporting](/import-export/).
