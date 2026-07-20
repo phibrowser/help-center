@@ -274,6 +274,14 @@ Yes. Your memory data lives on your device, and you can view, manage, and delete
 No. Phi does not use your browsing-derived memory or AI interactions to train models, and it does not sell your browsing-derived data.
 :::
 
+::: details Does Phi collect usage statistics?
+Yes. Phi sends anonymous usage statistics to Phinomenon only while the **Help improve Phi's features and performance** switch is on, and the switch ships enabled. The statistics are about the browser itself — which features get used and how the app performs. They never include the pages you visit, your Memory, or your AI conversations. Reports carry a random installation identifier that has nothing to do with your Phi account. See [Privacy & Your Data](/privacy/#usage-statistics).
+:::
+
+::: details How do I turn usage statistics off?
+Open `phi://settings` and turn off **Help improve Phi's features and performance** in the **You and Phi** section, then click the **Relaunch** button that appears so the change takes effect. Turning the switch off also deletes the random identifier attached to your earlier reports; if you turn it back on later, Phi creates a new one.
+:::
+
 ## Time Machine Backups
 
 ::: details What is Phi's Time Machine?
