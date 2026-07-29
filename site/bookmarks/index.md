@@ -31,6 +31,12 @@ Pinned tabs sit at the top of the sidebar in a grid, for the handful of pages yo
 
 Pinned tabs belong to your **Profile**, not to a single Space, so they appear across every Space that shares that Profile. Bookmarks, by contrast, are per Space — see [Spaces & Profiles](/spaces/) for how those layers fit together.
 
+## Returning to the original page
+
+Following links in a pinned tab or bookmark may take it away from its original URL. To go back, double-click the pinned tab or click the favicon of a bookmark that is open as a tab.
+
+To keep the current page, hold **Command (⌘)** while you double-click the pinned tab or click the bookmark's favicon. The current page moves to the tab list as a separate tab, and the pinned tab or bookmark returns to its original URL.
+
 ## Which should I use?
 
 A simple split of responsibilities:

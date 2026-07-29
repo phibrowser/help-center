@@ -36,7 +36,7 @@ For how bookmarks open in place as tabs, and how to pin and organize pages, see 
 
 Split View places two pages side by side in the same window — useful for reading and writing at once, comparing two pages, or keeping documentation next to a web app instead of jumping back and forth.
 
-To create one: right-click a tab, bookmark, or pinned tab and choose **Open as Split**, or drag a tab onto the current page.
+To create one, right-click a tab, bookmark, or pinned tab and choose **Open as Split**, or drag a tab onto the current page. You can also hold **Option (⌥)** and click a pinned tab, bookmark, or link on a webpage. Phi opens it beside the current tab in Split View.
 
 ## Tab Groups
 

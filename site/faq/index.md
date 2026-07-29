@@ -118,6 +118,10 @@ Bookmarks are per Space — each Space keeps its own set. Pinned tabs belong to 
 Right-click a tab and choose **Pin**, or drag it into the pinned grid at the top of the sidebar. **Unpin** returns it to the tab list. You can reorder pinned tabs by dragging, and use **Pin Split** to keep a two-pane setup as one pinned item.
 :::
 
+::: details How do I return a pinned tab or bookmark to its original page?
+Double-click the pinned tab, or click the favicon of a bookmark that is open as a tab. To keep the current page, hold **Command (⌘)** while you double-click the pinned tab or click the bookmark's favicon. The current page moves to the tab list as a separate tab, and the pinned tab or bookmark returns to its original URL.
+:::
+
 ::: details Is this similar to Arc or Dia?
 Yes. Phi uses the same broad living-sidebar idea — saved pages stay visible and pinned pages sit at the top — while keeping its own bookmark tree and behavior. See [Switching to Phi](/switching-to-phi/) for the migration comparison and [Bookmarks & Pinned Tabs](/bookmarks/) for the feature details.
 :::
@@ -133,7 +137,7 @@ Split View lets you place two pages next to each other inside the same Phi windo
 :::
 
 ::: details How do I create a Split View?
-Right-click a tab, bookmark, or pinned tab and choose **Open as Split**, or drag a tab onto the current page.
+Right-click a tab, bookmark, or pinned tab and choose **Open as Split**, or drag a tab onto the current page. You can also hold **Option (⌥)** and click a pinned tab, bookmark, or link on a webpage. Phi opens it beside the current tab in Split View.
 :::
 
 ::: details What are Tab Groups?
