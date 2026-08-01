@@ -268,6 +268,8 @@ Phi Browser is built around a local-first architecture: what Phi remembers stays
 
 ::: details What does Phi definitely not collect?
 Phi never collects your memory data, your AI interactions, or your browsing context, and it does not use them for training.
+
+Phi does send a small always-on anonymous count (how many installations set Phi as default, use Spaces, use Profiles, and that a crash happened), and, only if you switch it on, detailed usage statistics and crash reports. See [what Phi does send](/privacy/#what-phi-does-send).
 :::
 
 ::: details Are my memories stored locally?
