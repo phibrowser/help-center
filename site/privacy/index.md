@@ -20,7 +20,7 @@ Phi will never collect:
 
 Phi does not sell your browsing-derived data, and it does not use your memory, browsing context, or AI interactions to train models.
 
-A nuance worth knowing: large language models from providers such as Anthropic, OpenAI, Google, or SpaceXAI may be used to process tasks. When you use **Phi Cloud**, the content a request needs in order to be answered is sent to the provider of the model you picked, because that is the only way a model can answer it. It passes through us without being stored, it arrives under our account rather than yours, and it is never used for training. With **Private AI** it does not leave your Mac at all. Your personal memory stays local either way, and is never treated as a cloud-owned asset.
+A nuance worth knowing: large language models from providers such as Anthropic, OpenAI, Google, or SpaceXAI may be used to process tasks. When you use **Phi Cloud**, the content a request needs to be answered is sent to the provider of the model you picked, because that is the only way a model can answer it. It passes through us without being stored, it arrives under our account rather than yours, and it is never used for training. With **Private AI** it does not leave your Mac at all. Your personal memory stays local either way, and is never treated as a cloud-owned asset.
 
 ## What Phi does send
 
