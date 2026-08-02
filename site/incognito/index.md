@@ -51,7 +51,7 @@ The toggle is per-extension and covers Incognito Spaces and incognito windows al
 
 ## Closing an Incognito Space
 
-Choose **Close Incognito Space** from the **Spaces** menu, or simply close the Space's last tab. Either way Phi asks **"This will also close this Incognito Space, are you sure?"** first, and closing the Space also removes it from the strip. Check **Do not ask again** to skip the confirmation from then on.
+Choose **Close Incognito Space** from the **Spaces** menu, or close the Space's last tab. Either way Phi asks **"This will also close this Incognito Space, are you sure?"** first, and closing the Space also removes it from the strip. Check **Do not ask again** to skip the confirmation from then on.
 
 The shared private session survives as long as any Incognito Space is still open. When the last Incognito Space window closes, or Phi quits, the in-memory session is destroyed along with everything in it. There is no cleanup step afterwards, because none of it was ever on disk.
 
