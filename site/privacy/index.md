@@ -8,7 +8,7 @@ Phi is built around a local-first architecture. The idea is simple: Phi can know
 
 ## Where your data lives
 
-What Phi remembers about you — your [Memory](/memory/) — is stored locally on your device. It is built there as you browse and is meant to stay with you, under your control.
+What Phi remembers about you, your [Memory](/memory/), is stored locally on your device. It is built there as you browse and is meant to stay with you, under your control.
 
 ## What Phi does not collect
 
@@ -51,7 +51,7 @@ If you have already uninstalled Phi, install it again and sign in to the same ac
 
 If you want a plain browser, you can disable all AI features in **Settings → Phi AI**. Turning AI off closes your AI conversations and disconnects any External Data Connectors.
 
-Your Memory is not deleted by this switch — it stays on your device. If you want to erase what Phi remembers as well, use the clear option on the Memory page; that deletion is permanent and cannot be undone.
+Your Memory is not deleted by this switch, and it stays on your device. If you want to erase what Phi remembers as well, use the clear option on the Memory page; that deletion is permanent and cannot be undone.
 
 ## Browsing privately
 
