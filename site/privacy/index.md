@@ -1,5 +1,5 @@
 ---
-description: "Learn where Phi Browser stores your data, what it does not collect, how Memory and cloud AI processing work, and how to control or delete AI data."
+description: "Learn where Phi Browser stores your data, what it does not collect, how Memory and cloud AI processing work, what anonymous usage statistics include, and how to control or delete AI data."
 ---
 
 # Privacy & Your Data
@@ -23,6 +23,16 @@ Phi does not sell your browsing-derived data, and it does not use your memory, b
 A nuance worth knowing: large language models from providers such as Anthropic, OpenAI, or Google may be used to process tasks. But your personal memory stays local, is not treated as a cloud-owned asset, and is never used for training.
 
 You can also narrow what leaves your Mac at all. With **Private AI**, run through [Phi Sentinel](/sentinel/), some of those tasks run entirely on your own machine, so they need no cloud model in the first place.
+
+## Usage statistics
+
+Phi does have one telemetry switch: **Help improve Phi's features and performance**. It is on by default, and while it stays on, Phi sends anonymous usage statistics to Phinomenon.
+
+The statistics are about the browser itself: which features get used and how the app performs. They never include the pages you visit, their content, your Memory, or your AI conversations.
+
+Each report carries a random identifier created for your installation. It has nothing to do with your Phi account, and it belongs to the browser as a whole, not to any Space or Profile. Turning the switch off deletes the identifier; turning it back on later creates a new one, so your old reports and any new ones cannot be linked.
+
+To change the setting, open `phi://settings` and look in the **You and Phi** section, just below your account row. When you flip the switch, a **Relaunch** button appears next to it, and the new choice takes effect once Phi relaunches.
 
 ## Staying in control
 
