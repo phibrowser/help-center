@@ -27,7 +27,7 @@ A **Space** is a workspace in the sidebar with its own name, icon, color, and bo
 :::
 
 ::: details Can one Profile have several Spaces?
-Yes. Each Space belongs to exactly one Profile, but a Profile can back several Spaces. Spaces that share a Profile share the same logins and pinned tabs. To keep two Spaces fully separated — including cookies and signed-in accounts — give them different Profiles.
+Yes. Each Space belongs to exactly one Profile, but a Profile can back several Spaces. Spaces that share a Profile share the same logins and pinned tabs. To keep two Spaces fully separated, cookies and signed-in accounts included, give them different Profiles.
 :::
 
 ::: details How do I create a Space?
@@ -61,7 +61,7 @@ A private Space in the sidebar. It appears in the Spaces strip like any other Sp
 :::
 
 ::: details Do Incognito Spaces share a session with each other?
-Yes. All open Incognito Spaces share one private session — sign in to a site in one and you are signed in to it in the others. That session is separate from your regular Profiles and also from the classic **New Incognito Window**, whose session never mixes with it.
+Yes. All open Incognito Spaces share one private session, so sign in to a site in one and you are signed in to it in the others. That session is separate from your regular Profiles and also from the classic **New Incognito Window**, whose session never mixes with it.
 :::
 
 ::: details What is unavailable in an Incognito Space?
@@ -69,11 +69,11 @@ Bookmarks and pinned tabs are not shown and cannot be created, the assistant cha
 :::
 
 ::: details What happens when I close an Incognito Space?
-Phi asks **"This will also close this Incognito Space, are you sure?"** (check **Do not ask again** to skip it from then on), closes the Space's windows, and removes it from the strip. When the last Incognito Space window closes — or Phi quits — the shared private session is destroyed. Files you downloaded stay on your Mac.
+Phi asks **"This will also close this Incognito Space, are you sure?"** (check **Do not ask again** to skip it from then on), closes the Space's windows, and removes it from the strip. When the last Incognito Space window closes, or Phi quits, the shared private session is destroyed. Files you downloaded stay on your Mac.
 :::
 
 ::: details Can URL Rules send a site to an Incognito Space?
-Yes. The URL Rules editor offers one generic **Incognito** target alongside your regular Spaces — a rule never points at a specific Incognito Space, since those exist only while open. When such a rule matches, Phi uses a live Incognito Space or opens a new one on demand. Routing is one-way: rules never pull a navigation out of a private session back into a regular Space.
+Yes. The URL Rules editor offers one generic **Incognito** target alongside your regular Spaces. A rule never points at a specific Incognito Space, since those exist only while open. When such a rule matches, Phi uses a live Incognito Space or opens a new one on demand. Routing is one-way: rules never pull a navigation out of a private session back into a regular Space.
 :::
 
 ::: details Do extensions work in an Incognito Space?
@@ -81,7 +81,7 @@ Not unless you allow them individually, as in any Chromium-based browser. The pr
 :::
 
 ::: details Are Incognito Spaces included in Time Machine Backups?
-No. Snapshots exclude them entirely — their sessions are meant to die with their windows — so restoring a backup never brings an Incognito Space back.
+No. Snapshots exclude them entirely, because their sessions are meant to die with their windows, so restoring a backup never brings an Incognito Space back.
 :::
 
 ## Bookmarks & tabs
@@ -99,7 +99,7 @@ There is no traditional bookmark bar in these modes. Instead, drag a tab into th
 :::
 
 ::: details Why are tabs and bookmarks in the same sidebar?
-They are two ends of the same thing — the pages you care about. Tabs are what you are using now; bookmarks are what you have saved. Keeping them together reflects how you constantly move between those states.
+They are two ends of the same thing: the pages you care about. Tabs are what you are using now; bookmarks are what you have saved. Keeping them together reflects how you constantly move between those states.
 :::
 
 ::: details What is the difference between pinned tabs and bookmarks?
@@ -107,11 +107,11 @@ Pinned tabs sit at the top of the sidebar for pages you live in, like favorite t
 :::
 
 ::: details What happens when I click a bookmark?
-It opens in place — the bookmark's sidebar entry becomes its live tab, instead of spawning a throwaway tab. If the bookmark is already open, clicking it just activates that tab rather than making a second copy. Close the page and the bookmark stays in the sidebar, ready to reopen.
+It opens in place, so the bookmark's sidebar entry becomes its live tab instead of spawning a throwaway tab. If the bookmark is already open, clicking it just activates that tab rather than making a second copy. Close the page and the bookmark stays in the sidebar, ready to reopen.
 :::
 
 ::: details Are bookmarks and pinned tabs per Space?
-Bookmarks are per Space — each Space keeps its own set. Pinned tabs belong to your Profile, so they appear across every Space that shares that Profile. See [Spaces & Profiles](#spaces-profiles).
+Bookmarks are per Space, and each Space keeps its own set. Pinned tabs belong to your Profile, so they appear across every Space that shares that Profile. See [Spaces & Profiles](#spaces-profiles).
 :::
 
 ::: details How do I pin or unpin a tab?
@@ -123,7 +123,7 @@ Double-click the pinned tab, or click the favicon of a bookmark that is open as 
 :::
 
 ::: details Is this similar to Arc or Dia?
-Yes. Phi uses the same broad living-sidebar idea — saved pages stay visible and pinned pages sit at the top — while keeping its own bookmark tree and behavior. See [Switching to Phi](/switching-to-phi/) for the migration comparison and [Bookmarks & Pinned Tabs](/bookmarks/) for the feature details.
+Yes. Phi uses the same broad living-sidebar idea, where saved pages stay visible and pinned pages sit at the top, while keeping its own bookmark tree and behaviour. See [Switching to Phi](/switching-to-phi/) for the migration comparison and [Bookmarks & Pinned Tabs](/bookmarks/) for the feature details.
 :::
 
 ## Split View & Tab Groups
@@ -133,7 +133,7 @@ Tabs are your current pages. Split View places two pages side by side. Tab Group
 :::
 
 ::: details What is Split View?
-Split View lets you place two pages next to each other inside the same Phi window — useful for reading and writing at once, comparing two pages, or keeping documentation next to a web app.
+Split View lets you place two pages next to each other inside the same Phi window, which is useful for reading and writing at once, comparing two pages, or keeping documentation next to a web app.
 :::
 
 ::: details How do I create a Split View?
@@ -141,7 +141,7 @@ Right-click a tab, bookmark, or pinned tab and choose **Open as Split**, or drag
 :::
 
 ::: details What are Tab Groups?
-Tab Groups let you collect related tabs into one named group — handy for a project, trip, research topic, or shopping session.
+Tab Groups let you collect related tabs into one named group, handy for a project, trip, research topic, or shopping session.
 :::
 
 ::: details How do Split View and Tab Groups work together?
@@ -149,7 +149,7 @@ They are designed to work together: you can use Split View inside a group and mo
 :::
 
 ::: details Can the assistant understand a Split View or a whole Tab Group?
-Yes. When you chat from a Split View, Phi can use context from both pages; from a Tab Group, it can use context from the whole group — so you can ask across related pages without explaining your setup.
+Yes. When you chat from a Split View, Phi can use context from both pages; from a Tab Group, it can use context from the whole group, so you can ask across related pages without explaining your setup.
 :::
 
 ::: details Are Tab Groups the same as bookmarks?
@@ -163,7 +163,7 @@ Yes. Phi ships with AI features enabled by default, because they are a core part
 :::
 
 ::: details Can I turn all AI features off?
-Yes, in **Settings → Phi AI**. Turning AI off closes your AI conversations and disconnects any External Data Connectors. Your Memory stays on your device; to erase it as well, use the clear option on the Memory page — that deletion is permanent.
+Yes, in **Settings → Phi AI**. Turning AI off closes your AI conversations and disconnects any External Data Connectors. Your Memory stays on your device; to erase it as well, use the clear option on the Memory page, and that deletion is permanent.
 :::
 
 ::: details What are the main AI components?
@@ -175,7 +175,7 @@ Phi Memory is the system that builds context from your browsing behavior over ti
 :::
 
 ::: details Do I need to save memories manually?
-No. Memory is automatic — Phi observes relevant browsing behavior and builds context for you in the background.
+No. Memory is automatic. Phi observes relevant browsing behaviour and builds context for you in the background.
 :::
 
 ::: details Where is Phi Memory stored?
@@ -195,11 +195,11 @@ No. Phi does not use your memory data, browsing context, or AI interactions to t
 :::
 
 ::: details What is the assistant?
-The companion you interact with directly inside the browser. You give it a name during onboarding — it generates a matching avatar for itself — and call it by that name from then on, so it has its own identity rather than feeling like a generic chatbot.
+The companion you interact with directly inside the browser. You give it a name during onboarding, it generates a matching avatar for itself, and you call it by that name from then on, so it has its own identity rather than feeling like a generic chatbot.
 :::
 
 ::: details How do I talk to the assistant?
-Click the **Chat** button — at the bottom of the sidebar in Performance mode, or in the top-right of the page header in Balanced and Comfortable — or select text on a page, right-click, and choose **Ask [your assistant] about…** to ask about it in context.
+Click the **Chat** button, which sits at the bottom of the sidebar in Performance mode and in the top-right of the page header in Balanced and Comfortable. Or select text on a page, right-click, and choose **Ask [your assistant] about…** to ask about it in context.
 :::
 
 ::: details What can the assistant do?
@@ -207,7 +207,7 @@ It can answer questions, summarize content, explain pages, and help with tasks, 
 :::
 
 ::: details What does "agentic" mean?
-It means the AI can do more than answer questions — it can take action inside the browser and perform tasks for you, from one-off actions to recurring automations.
+It means the AI can do more than answer questions. It can take action inside the browser and perform tasks for you, from one-off actions to recurring automations.
 :::
 
 ::: details What are on-demand actions?
@@ -215,7 +215,7 @@ Tasks the assistant performs when you ask, such as navigating pages or interacti
 :::
 
 ::: details What are scheduled tasks?
-Recurring automations that run on a schedule you define — for example, monitoring a product price or watching a page for changes.
+Recurring automations that run on a schedule you define, for example monitoring a product price or watching a page for changes.
 :::
 
 ## Phi Sentinel
@@ -239,7 +239,7 @@ Phi Link connects Phi Browser to Telegram so you can use your assistant from you
 :::
 
 ::: details How do I set up Phi Link?
-Two ways: use the official Phi Link bot (the easiest path — scan a QR code and finish in one click), or create your own Telegram bot through BotFather and paste its token into Phi's settings.
+Two ways: use the official Phi Link bot, which is the easiest path since you scan a QR code and finish in one click, or create your own Telegram bot through BotFather and paste its token into Phi's settings.
 :::
 
 ::: details What can Phi Link do?
@@ -268,6 +268,8 @@ Phi Browser is built around a local-first architecture: what Phi remembers stays
 
 ::: details What does Phi definitely not collect?
 Phi never collects your memory data, your AI interactions, or your browsing context, and it does not use them for training.
+
+Phi does send a small always-on anonymous count (how many installations set Phi as default, use Spaces, use Profiles, and that a crash happened), and, only if you switch it on, detailed usage statistics and crash reports. See [what Phi does send](/privacy/#what-phi-does-send).
 :::
 
 ::: details Are my memories stored locally?
@@ -297,11 +299,11 @@ No. It does not back up your Mac and is unrelated to the macOS feature of the sa
 :::
 
 ::: details Does it back up my browsing all the time?
-No. It is not a continuous or scheduled backup. A snapshot is created automatically and only occasionally — right before an update that carries more risk than usual — and only once per such update. If you want a backup you control, use **Export User Data** instead.
+No. It is not a continuous or scheduled backup. A snapshot is created automatically and only occasionally, right before an update that carries more risk than usual, and only once per such update. If you want a backup you control, use **Export User Data** instead.
 :::
 
 ::: details What does a snapshot include?
-The Phi data that belongs to the previous version — bookmarks, Spaces, pinned tabs, settings, Memory, and browsing state — plus a record of which app version to restore. The app itself is downloaded during the restore, so a rollback returns a consistent setup.
+The Phi data that belongs to the previous version, meaning bookmarks, Spaces, pinned tabs, settings, Memory, and browsing state, plus a record of which app version to restore. The app itself is downloaded during the restore, so a rollback returns a consistent setup.
 :::
 
 ::: details Where are snapshots stored?
@@ -313,5 +315,5 @@ Open the **Help** menu, choose **Time Machine Backups**, and pick a snapshot (li
 :::
 
 ::: details How is this different from exporting my data?
-Time Machine handles update rollbacks automatically. To create and keep your own backup — for moving to a new Mac or keeping a personal copy — use **Manage User Data** in the **Help** menu (**Export User Data…** and **Import User Data…**).
+Time Machine handles update rollbacks automatically. To create and keep your own backup, for moving to a new Mac or keeping a personal copy, use **Manage User Data** in the **Help** menu (**Export User Data…** and **Import User Data…**).
 :::
