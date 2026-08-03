@@ -4,7 +4,7 @@ description: "Customize Phi Browser with color themes, light or dark appearance,
 
 # Themes & Appearance
 
-Phi lets you set how the browser looks — a color **theme** plus a **light or dark** choice — and it carries across the whole browser rather than one screen. Pick a look once and the window, the sidebar, and your new tab all follow it.
+Phi lets you set how the browser looks, a colour **theme** plus a **light or dark** choice, and it carries across the whole browser rather than one screen. Pick a look once and the window, the sidebar, and your new tab all follow it.
 
 You will find these controls in **Settings → General**.
 
@@ -27,15 +27,15 @@ These are Phi's built-in theme accent colors:
 
 In Phi's picker, **Pure** is displayed as a white swatch with the blue accent as its selection ring. The table above shows the actual accent colors the theme uses elsewhere.
 
-Next to the colors, an **Opacity** slider controls how much the colored layer shows through the window — dial the tint up for more color, or down for something closer to plain.
+Next to the colors, an **Opacity** slider controls how much the coloured layer shows through the window. Dial the tint up for more colour, or down for something closer to plain.
 
 ## Light, dark, or system
 
 **Appearance** is a separate choice from the theme's color. Under **Color appearance** you can pick:
 
-- **System** — follow your macOS setting and switch with it.
-- **Light** — always light.
-- **Dark** — always dark.
+- **System**, follow your macOS setting and switch with it.
+- **Light**, always light.
+- **Dark**, always dark.
 
 Your chosen theme keeps its character in either mode; this just decides which version of it you see.
 
@@ -43,13 +43,13 @@ Your chosen theme keeps its character in either mode; this just decides which ve
 
 A theme is applied across the browser, not a single surface:
 
-- **The window** — the toolbar, address bar, and tabs take on the theme color. The **Opacity** slider sets how strong that tint is.
-- **The sidebar** — selected and hovered tabs pick up the theme.
-- **The new tab** — your [new tab](/new-tab/) follows the same theme automatically, so it matches the rest of the browser; change themes and it repaints along with everything else.
-- **Selected text on web pages** — by default, highlighting text on a page tints the selection with your theme color. If you would rather pages keep their own native selection color, turn off **Apply theme to text selection on web pages** in the Theme settings.
+- **The window**, the toolbar, address bar, and tabs take on the theme color. The **Opacity** slider sets how strong that tint is.
+- **The sidebar**, selected and hovered tabs pick up the theme.
+- **The new tab**, your [new tab](/new-tab/) follows the same theme automatically, so it matches the rest of the browser; change themes and it repaints along with everything else.
+- **Selected text on web pages**, by default, highlighting text on a page tints the selection with your theme color. If you would rather pages keep their own native selection color, turn off **Apply theme to text selection on web pages** in the Theme settings.
 
 ## What's next
 
-- [Layouts & Navigation](/layouts/) — modes, the sidebar, tabs, Split View, and Tab Groups.
-- [New Tab & Widgets](/new-tab/) — the personalized new tab your theme colors.
-- [Privacy & Your Data](/privacy/) — where your data lives and how to stay in control.
+- [Layouts & Navigation](/layouts/), modes, the sidebar, tabs, Split View, and Tab Groups.
+- [New Tab & Widgets](/new-tab/), the personalized new tab your theme colors.
+- [Privacy & Your Data](/privacy/), where your data lives and how to stay in control.

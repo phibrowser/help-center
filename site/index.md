@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Phi Browser — The browser that knows you"
+title: "Phi Browser, the browser that knows you"
 description: "Get started with Phi Browser, learn its sidebar-first workflow, and find quick answers about AI, privacy, automation, Spaces, bookmarks, and more."
 
 hero:

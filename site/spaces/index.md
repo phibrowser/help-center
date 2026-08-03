@@ -4,12 +4,12 @@ description: "Learn how Phi Browser uses Spaces for workspaces and Profiles for 
 
 # Spaces & Profiles
 
-Spaces and Profiles let you keep separate worlds in one browser — work and personal, a side project, a client, a research topic — without juggling windows or logging in and out. They are two layers that do different jobs, and Phi keeps them simple by letting one sit on top of the other.
+Spaces and Profiles let you keep separate worlds in one browser, whether that is work and personal, a side project, a client, or a research topic, without juggling windows or signing in and out. They are two layers that do different jobs, and Phi keeps them simple by letting one sit on top of the other.
 
 ## The two layers
 
 - A **Space** is a workspace in the sidebar. It has its own name, icon, and color, and its own bookmarks. Switching Spaces re-dresses the sidebar around the task you are in.
-- A **Profile** is the isolation layer underneath. Each Profile has its own cookies, history, logins, and extensions — so two Profiles can be signed in to the same site with different accounts at the same time.
+- A **Profile** is the isolation layer underneath. Each Profile has its own cookies, history, logins, and extensions, so two Profiles can be signed in to the same site with different accounts at the same time.
 
 The relationship is one-way: **each Space belongs to one Profile, and a Profile can back several Spaces.** Spaces that share a Profile share the same logins and pinned tabs; Spaces on different Profiles are fully separated.
 
@@ -24,7 +24,7 @@ A simple way to hold it: **Spaces organize how things look and feel; Profiles de
 
 ## Creating, switching, and managing Spaces
 
-- **Create** a Space from the Spaces strip in the sidebar. You give it a name and choose which Profile it belongs to — or create a **New Profile** right there if this Space should be fully separate.
+- **Create** a Space from the Spaces strip in the sidebar. You give it a name and choose which Profile it belongs to, or create a **New Profile** right there if this Space should be fully separate.
 - **Switch** between Spaces from the sidebar with a single click. The sidebar's tabs, bookmarks, and theme change to match, and Phi reopens the Space's window if it is not already open.
 - **Rename** or **Change Icon** / **Change Theme** from the Space's menu. Choose **Follow Global** to drop a per-Space theme override.
 - **Delete** a Space from the same menu. Deleting a Space also removes the bookmarks and URL Rules that belong to it, and cannot be undone. Pinned tabs belong to the Profile rather than the Space, so they are not affected.
@@ -33,16 +33,16 @@ A simple way to hold it: **Spaces organize how things look and feel; Profiles de
 
 Spaces are most useful when the right pages land in the right place without you thinking about it. **URL Rules** do that: a rule matches a site and opens it in the Space you assign, no matter where you click or type the link.
 
-Open **URL Rules…** from the **Spaces** menu in the menu bar — or from the Spaces section in Settings — to manage every Space's rules in one place. Each rule matches by:
+Open **URL Rules…** from the **Spaces** menu in the menu bar, or from the Spaces section in Settings, to manage every Space's rules in one place. Each rule matches by:
 
-- **Domain suffix** — `figma.com` and all its subdomains.
-- **Domain** — one exact host, like `www.example.com`.
-- **Domain contains** — any host containing a word, like `git`.
-- **URL** — a host plus a path prefix, like `example.com/team`.
+- **Domain suffix**, `figma.com` and all its subdomains.
+- **Domain**, one exact host, like `www.example.com`.
+- **Domain contains**, any host containing a word, like `git`.
+- **URL**, a host plus a path prefix, like `example.com/team`.
 
 Besides your regular Spaces, a rule can target **Incognito**: matching sites then open in an [Incognito Space](/incognito/), created on demand when none is open.
 
-Set a rule to **Ask every time** instead of routing silently. When a matching link opens, Phi shows an **Open in which Space?** chooser so you can pick — your current Space is marked, and you can keep the page where you are. When several rules could match, the most specific one wins (a longer path beats a shorter one; an exact host beats a wildcard).
+Set a rule to **Ask every time** instead of routing silently. When a matching link opens, Phi shows an **Open in which Space?** chooser so you can pick. Your current Space is marked, and you can keep the page where you are. When several rules could match, the most specific one wins (a longer path beats a shorter one; an exact host beats a wildcard).
 
 ## Incognito Spaces: a Space without a trace
 
@@ -50,4 +50,4 @@ For browsing that should leave nothing behind, **File → New Incognito Space** 
 
 ## How this connects to the rest of Phi
 
-Spaces build on the sidebar workspace described in [Layouts & Navigation](/layouts/), and per-Space colors use the same palette as [Themes & Appearance](/themes/). If you are switching from Arc or Dia, see [Switching to Phi](/switching-to-phi/) for the migration comparison. Because Profiles isolate cookies and history, what the assistant can see is scoped to the Profile you are browsing in — see [Privacy & Your Data](/privacy/) for how your data is handled.
+Spaces build on the sidebar workspace described in [Layouts & Navigation](/layouts/), and per-Space colors use the same palette as [Themes & Appearance](/themes/). If you are switching from Arc or Dia, see [Switching to Phi](/switching-to-phi/) for the migration comparison. Because Profiles isolate cookies and history, what the assistant can see is scoped to the Profile you are browsing in. See [Privacy & Your Data](/privacy/) for how your data is handled.

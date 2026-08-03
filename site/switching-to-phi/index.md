@@ -26,7 +26,7 @@ Phi should feel familiar if Arc's sidebar model worked for you, but the details 
 
 Arc and Phi both separate the workspace layer from the isolation layer. In Phi, a **Space** is the visible workspace in the sidebar, while a **Profile** is the cookies, history, logins, and extensions underneath. A Profile can back several Spaces, so you can have multiple workspaces that share the same signed-in session.
 
-Phi's **URL Rules** are inspired by Arc's Air Traffic Control: matching sites can open in the Space you assign, or ask you where to open them. The exact implementation is Phi's own, but the goal is the same — put links in the right context automatically.
+Phi's **URL Rules** are inspired by Arc's Air Traffic Control: matching sites can open in the Space you assign, or ask you where to open them. The exact implementation is Phi's own, but the goal is the same: put links in the right context automatically.
 
 The biggest bookmark difference is that Phi keeps a full bookmark tree with folders. Arc dropped traditional bookmarks in favor of pinned tabs and Favorites; Phi keeps both ideas. Bookmarks stay organized in the sidebar and open in place as live tabs. Pinned tabs sit at the top for pages you live in, and they are scoped to the Profile, so they follow you across Spaces that share that Profile.
 
@@ -58,8 +58,8 @@ Good next reads:
 
 If you are new to Phi, read these in order:
 
-1. [Getting Started](/get-started/) — install Phi and finish first run.
-2. [Layouts & Navigation](/layouts/) — choose the right layout mode and learn the sidebar.
-3. [Spaces & Profiles](/spaces/) — understand workspaces, isolation, and URL routing.
-4. [Bookmarks & Pinned Tabs](/bookmarks/) — learn how saved pages become part of your workspace.
-5. [Meet your assistant](/ai/) — understand the built-in AI once the browser basics feel natural.
+1. [Getting Started](/get-started/), install Phi and finish first run.
+2. [Layouts & Navigation](/layouts/), choose the right layout mode and learn the sidebar.
+3. [Spaces & Profiles](/spaces/), understand workspaces, isolation, and URL routing.
+4. [Bookmarks & Pinned Tabs](/bookmarks/), learn how saved pages become part of your workspace.
+5. [Meet your assistant](/ai/), understand the built-in AI once the browser basics feel natural.

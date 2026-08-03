@@ -6,7 +6,7 @@ import type { DefaultTheme, HeadConfig } from "vitepress";
 
 // Deployed under the /help/ sub-path. VitePress prepends this base to asset and
 // internal-link URLs (nav/sidebar links, theme logo, bundled assets) and to
-// route-relative Markdown links automatically — so Markdown keeps writing
+// route-relative Markdown links automatically, so Markdown keeps writing
 // route paths such as /faq/ and /memory/ and they resolve under /help/ at
 // runtime. Raw `head` tags are the exception: VitePress does not rewrite their
 // attributes, so the icon hrefs below include `base` explicitly.
@@ -143,9 +143,9 @@ const guideSidebar: DefaultTheme.SidebarItem[] = [
     items: [
       { text: "Meet your assistant", link: "/ai/" },
       { text: "Memory", link: "/memory/" },
-      { text: "Skills", link: "/skills/" },
+      { text: "Browser Skills", link: "/skills/" },
       { text: "Automation & Phi Link", link: "/automation/" },
-      { text: "The phi-browser Skill", link: "/phi-browser-skill/" },
+      { text: "The phi-browser skill", link: "/phi-browser-skill/" },
       { text: "Agent Password Manager", link: "/agent-passwords/" },
       { text: "Phi Sentinel", link: "/sentinel/" },
     ],
