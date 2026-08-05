@@ -65,3 +65,363 @@ html {
   -webkit-mask-image: var(--icon);
   mask-image: var(--icon);
 }
+
+/* Shared phibrowser.com consent controls. */
+.phi-privacy-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: auto;
+  border-top: 1px solid var(--vp-c-gutter);
+  padding: 20px 24px;
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+}
+
+.phi-privacy-controls button,
+.phi-consent-banner button,
+.phi-consent-dialog button {
+  border: 0;
+  padding: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+}
+
+.phi-privacy-controls button {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.phi-privacy-controls button:hover {
+  color: var(--vp-c-text-1);
+}
+
+.phi-privacy-choices-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.phi-privacy-choices-button svg {
+  width: 30px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.phi-consent-banner {
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid rgb(255 255 255 / 20%);
+  background: rgb(26 26 26 / 96%);
+  color: white;
+  backdrop-filter: blur(20px);
+}
+
+.phi-consent-banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 20px 24px;
+}
+
+.phi-consent-banner p,
+.phi-consent-intro,
+.phi-consent-opt-out p,
+.phi-consent-category p {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.phi-consent-banner p {
+  max-width: 660px;
+  color: rgb(255 255 255 / 72%);
+  font-size: 14px;
+}
+
+.phi-consent-banner a,
+.phi-consent-dialog a {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.phi-consent-banner-actions {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.phi-consent-banner-actions > div {
+  display: flex;
+  gap: 12px;
+}
+
+.phi-consent-secondary-button,
+.phi-consent-save-button {
+  cursor: pointer;
+  border-radius: 999px !important;
+  padding: 8px 22px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+.phi-consent-secondary-button {
+  border: 1px solid rgb(255 255 255 / 30%) !important;
+  background: rgb(255 255 255 / 10%) !important;
+  color: white !important;
+}
+
+.phi-consent-secondary-button:hover {
+  background: rgb(255 255 255 / 20%) !important;
+}
+
+.phi-consent-link-button {
+  cursor: pointer;
+  color: rgb(255 255 255 / 72%) !important;
+  font-size: 14px !important;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.phi-consent-dialog-backdrop {
+  position: fixed;
+  z-index: 101;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgb(0 0 0 / 65%);
+}
+
+.phi-consent-dialog {
+  width: min(100%, 576px);
+  max-height: 85vh;
+  overflow-y: auto;
+  border: 1px solid rgb(255 255 255 / 20%);
+  border-radius: 16px;
+  padding: 24px;
+  background: #1a1a1a;
+  color: white;
+  box-shadow: 0 24px 80px rgb(0 0 0 / 45%);
+}
+
+.phi-consent-dialog-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.phi-consent-dialog h2 {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.phi-consent-close-button {
+  cursor: pointer;
+  color: rgb(255 255 255 / 60%) !important;
+  font-size: 18px !important;
+}
+
+.phi-consent-intro {
+  margin-top: 8px;
+  color: rgb(255 255 255 / 62%);
+  font-size: 14px;
+}
+
+.phi-consent-opt-out {
+  margin-top: 16px;
+  border: 1px solid rgb(255 255 255 / 15%);
+  border-radius: 12px;
+  padding: 16px;
+  background: rgb(255 255 255 / 5%);
+  color: rgb(255 255 255 / 72%);
+  font-size: 14px;
+}
+
+.phi-consent-opt-out .phi-consent-secondary-button,
+.phi-consent-status {
+  margin-top: 12px;
+}
+
+.phi-consent-status {
+  color: white;
+  font-weight: 600;
+}
+
+.phi-consent-categories {
+  margin-top: 20px;
+}
+
+.phi-consent-category {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  border-top: 1px solid rgb(255 255 255 / 10%);
+  padding: 16px 0;
+}
+
+.phi-consent-category h3,
+.phi-consent-category label {
+  margin: 0;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.phi-consent-category p {
+  margin-top: 4px;
+  color: rgb(255 255 255 / 60%);
+  font-size: 14px;
+}
+
+.phi-consent-category small {
+  display: block;
+  margin-top: 4px;
+  color: rgb(255 255 255 / 52%);
+  font-size: 12px;
+}
+
+.phi-consent-category > span {
+  flex-shrink: 0;
+  color: rgb(255 255 255 / 60%);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.phi-consent-switch {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.phi-consent-switch input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.phi-consent-switch span {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 20%);
+  transition: background-color 0.2s;
+}
+
+.phi-consent-switch span::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  transition: transform 0.2s;
+}
+
+.phi-consent-switch input:checked + span {
+  background: #6d5dfc;
+}
+
+.phi-consent-switch input:checked + span::after {
+  transform: translateX(20px);
+}
+
+.phi-consent-switch input:focus-visible + span,
+.phi-privacy-controls button:focus-visible,
+.phi-consent-banner button:focus-visible,
+.phi-consent-dialog button:focus-visible,
+.phi-consent-dialog a:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+
+.phi-consent-save-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+
+.phi-consent-save-button {
+  background: white !important;
+  color: black !important;
+}
+
+.phi-consent-save-button:hover {
+  background: rgb(255 255 255 / 88%) !important;
+}
+
+.phi-consent-banner-enter-active,
+.phi-consent-banner-leave-active,
+.phi-consent-dialog-enter-active,
+.phi-consent-dialog-leave-active {
+  transition:
+    opacity 0.25s,
+    transform 0.25s;
+}
+
+.phi-consent-banner-enter-from,
+.phi-consent-banner-leave-to {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.phi-consent-dialog-enter-from,
+.phi-consent-dialog-leave-to {
+  opacity: 0;
+}
+
+@media (max-width: 767px) {
+  .phi-privacy-controls {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .phi-consent-banner-content {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .phi-consent-banner-actions {
+    align-items: flex-start;
+  }
+
+  .phi-consent-dialog-backdrop {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .phi-consent-dialog {
+    width: 100%;
+    max-height: 88vh;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-radius: 0;
+  }
+}

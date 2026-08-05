@@ -28,6 +28,7 @@
     "wrangler": "^4.104.0"
   },
   "dependencies": {
-    "posthog-js": "^1.398.2"
+    "posthog-js": "^1.398.2",
+    "zod": "^4.4.3"
   }
 }

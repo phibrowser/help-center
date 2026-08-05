@@ -1,51 +1,106 @@
-# Analytics: cookieless PostHog
+# Analytics and shared cookie consent
 
-Added 2026-07-09. Source of truth for how the help center reports analytics.
+Implemented 2026-08-05 16:27:23 CST (+0800). Source of truth for Help analytics and its shared phibrowser.com consent behavior.
 
 ## Why
 
-The help center benefits from lightweight analytics — which pages readers reach, which they bounce from, what they search for — so the docs can be improved with evidence rather than guesswork.
+The requirement was to make a first visit directly to `https://phibrowser.com/help/` show the same category-based Cookie Banner behavior as the main site and to share the visitor's choice across both applications.
 
-An earlier draft mirrored the marketing site (philanding) with Google Analytics 4 + PostHog + a cookie-consent banner. That was reconsidered and dropped for this site, because:
+Help previously initialized PostHog immediately in cookieless memory mode and intentionally showed no banner. That behavior no longer matched the shared-site requirement. Help now follows the main site's strict Statistics consent rule: no analytics SDK or analytics request exists before a Statistics grant.
 
-- This is a **documentation surface for a privacy-first product**. Its own privacy page (`site/privacy/index.md`) stresses local-first, "does not sell browsing-derived data." Putting Google's ad-tech tracker on it reads as off-brand.
-- **GA4 uses cookies**, which under GDPR/ePrivacy forces an opt-in consent banner — friction for someone who arrived to solve a problem.
-- The industry trend for docs/devtool sites is exactly the opposite: **cookieless, privacy-first analytics** (Plausible, Fathom, or PostHog's cookieless mode) that need **no consent banner**.
+The Help vendor scope remains intentionally narrower than the main site:
 
-So the help center runs **PostHog only, in cookieless mode, with no GA and no consent banner**. The marketing site keeps its own heavier GA + PostHog + consent setup unchanged.
+| Category   | Help behavior                         | Shared main-site effect                                 |
+| ---------- | ------------------------------------- | ------------------------------------------------------- |
+| Functional | Consent storage only; always on       | Same definition                                         |
+| Statistics | PostHog only, loaded after a grant    | The main site may load PostHog and Google Analytics     |
+| Marketing  | No marketing vendor is loaded by Help | The main site may load its advertising conversion tools |
 
-## How it works
+Help does **not** load Google Analytics or the X Ads Pixel. It still reads and writes both optional category choices so navigating between `/help/` and the main site preserves one decision.
 
-This is a VitePress site. The integration is small:
+## Shared storage contract
 
-- `theme/analytics/analytics.ts` — `initAnalytics()` defers to `requestIdleCallback` (with a `setTimeout` fallback for older Safari), then lazily `import()`s and initializes PostHog.
-- `theme/analytics/posthog-client.ts` — a shared-promise lazy loader for the `posthog-js` singleton, so the ~60 KiB library is code-split into its own async chunk (kept off the critical load path).
-- `theme/index.ts` — calls `initAnalytics()` from the client-only branch of `enhanceApp` (guarded by `import.meta.env.SSR`).
+Both applications use the same-origin `localStorage` record under `phi_cookie_consent`. Although the UI calls this a cookie choice, the consent record itself is local storage rather than an HTTP cookie.
 
-### Cookieless configuration
+```json
+{
+  "version": 2,
+  "statistics": "granted" | "denied",
+  "marketing": "granted" | "denied",
+  "updatedAt": 1754382443000,
+  "gpcActiveAtSave": false
+}
+```
 
-PostHog is initialized with:
+Sharing works because production serves both applications from the same origin, `https://phibrowser.com`; URL paths do not partition local storage. A standalone preview or deployment on another origin cannot share the record.
 
-- `persistence: "memory"` — state lives only in the page's JS runtime; **no cookies, no localStorage, nothing written to the device**.
-- `person_profiles: "identified_only"` — no anonymous person profile is created. The site never calls `identify()`, so no personal identifier is stored.
-- `defaults: "2025-05-24"` — enables autocapture and `capture_pageview: "history_change"`, so VitePress SPA navigations are tracked automatically (no manual pageview call).
-- `disable_surveys: true` — surveys/flags/session-recording are unused; this avoids fetching the extra `surveys.js` payload.
-- `api_host: "https://us.i.posthog.com"`, `ui_host: "https://us.posthog.com"` — direct connection to PostHog US Cloud.
+`site/.vitepress/theme/consent/consent.ts` mirrors the philanding v2 contract:
 
-Because nothing is stored on the visitor's device and no personal data is collected, **no GDPR cookie-consent banner is required**.
+- Validates untrusted storage data with `zod/mini`.
+- Migrates legacy `{"analytics":"denied"}` to an all-denied v2 record.
+- Treats legacy `{"analytics":"granted"}` as absent and asks again because the old bundled grant was not per-category consent.
+- Keeps an in-memory fallback if local storage writes fail.
+- Applies the same Global Privacy Control precedence as the main site.
 
-### Shared, public ID
+Under GPC, both optional categories are denied and the first-visit Banner is suppressed. A deliberate choice saved from the preferences panel while GPC is visible overrides the signal for this site, matching philanding.
 
-`phc_khD82ML7hPHCa9Br3QpjpD67GFXFGaLLrMDw8RAd3gZQ` (in `analytics.ts`) is a public, write-only PostHog project API key — inlined into the browser bundle regardless, so it is hardcoded. Since help-center shares the `phibrowser.com` domain with the marketing site, it is the same key; help traffic can be filtered by host in PostHog.
+## UI behavior
 
-## Dependency and build note
+`site/.vitepress/theme/CookieConsent.vue` is mounted once through the VitePress default theme's `layout-bottom` slot.
 
-`posthog-js` is a runtime dependency. It transitively pulls in `core-js`, whose only build script is a postinstall funding banner the prebuilt bundle does not need — it is set to `false` in `pnpm-workspace.yaml` `allowBuilds` so `pnpm` does not error on the ignored script.
+- With no effective choice, the Banner appears after 800 ms.
+- Accept all and Reject all have identical visual weight.
+- Customize settings exposes Functional, Statistics, and Marketing categories.
+- Cookie Settings and Your Privacy Choices remain available in the global Help footer so withdrawing consent is as easy as granting it.
+- Your Privacy Choices provides the same one-click Marketing opt-out semantics as the main site.
+- Privacy links point to the main site's `/privacy/` policy. The Help page at `/help/privacy/` describes Phi Browser product data rather than website tracking.
 
-## Extending: custom events
+Every save writes the shared record and immediately applies the effective choice on Help.
 
-For explicit events later, resolve the singleton via `loadPostHog()` and call `posthog.capture("event_name", { ... })`. Keep to anonymous, cookieless events — do not call `identify()` — to preserve the no-banner property. There are no custom events today; the setup is autocapture + pageviews only.
+## PostHog lifecycle
+
+The integration is split by responsibility:
+
+- `site/.vitepress/theme/analytics/analytics.ts` restores a returning Statistics grant at idle.
+- `site/.vitepress/theme/analytics/posthog-client.ts` owns one shared lazy-load and initialization promise.
+- `site/.vitepress/theme/consent/apply-consent.ts` applies a new grant or denial immediately.
+- `site/.vitepress/theme/analytics/posthog-sanitize.ts` removes `code` and `q` query parameters from automatically captured current/referrer URL properties while preserving attribution parameters.
+
+PostHog uses the same public project key and initialization policy as philanding:
+
+- `api_host: "https://us.i.posthog.com"`
+- `ui_host: "https://us.posthog.com"`
+- `defaults: "2025-05-24"`
+- `opt_out_capturing_by_default: true` as defense in depth
+- `disable_surveys: true`
+
+There is no `persistence: "memory"` override anymore. After Statistics consent, PostHog uses its normal persistence so its analytics behavior aligns with the main site. Before consent, the dynamic import is not executed at all; opted-out initialization alone is insufficient because PostHog can still request remote configuration and write persistence.
+
+On Statistics denial, Help opts out an already initialized PostHog singleton and best-effort removes `_ga*` and `ph_*` first-party cookies plus `ph_*` local-storage entries. Removing `_ga*` matters even though Help does not load GA because the decision is shared with the main site. Marketing denial similarly removes observed `_twpid`, `_twclid`, and `muc_ads` cookies without loading an advertising SDK.
+
+## Validation
+
+Automated project validation completed during implementation:
+
+```sh
+pnpm format:check
+pnpm build
+```
+
+The production build confirms that PostHog remains a dynamically imported chunk. A static build cannot prove browser network behavior or production routing.
+
+## Required follow-up
+
+| Action                                                                                                              | Owner                                                                   | Timing / dependency                                         | Evidence of completion                                                                              |
+| ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| Review the final Banner/preferences wording and provider disclosure                                                 | Privacy/legal owner with the relevant jurisdiction and engagement scope | Before production publication                               | Written approval against the final deployed copy and privacy policy                                 |
+| Verify a fresh production-origin visit sends no PostHog request and creates no `_ga*` or `ph_*` data before consent | Deploying engineer or QA                                                | After deployment to `https://phibrowser.com/help/`          | DevTools Network/Application capture for fresh, reject, Statistics-only, and GPC cases              |
+| Verify choices made on Help are reflected by the main site's settings, and vice versa                               | Deploying engineer or QA                                                | After both current builds are on the same production origin | Recorded cross-navigation test showing the same `phi_cookie_consent` v2 value and matching UI state |
+
+Omitting the production-origin checks risks shipping a routing, caching, or vendor-runtime difference that the static build cannot detect.
 
 ## Open issues
 
-None. If cross-site (marketing ↔ help) funnel analysis is ever needed, note it would require identifiers that reintroduce a consent obligation — a deliberate trade-off that was declined here in favor of a banner-free help site.
+- Cross-tab synchronization remains unchanged from philanding: another already-open tab observes a new decision only after reload. A shared `storage` event bridge in both applications would be required to resolve this live.
+- Marketing cookie cleanup is best-effort and must be rechecked if the main site changes advertising vendors.
+- Consent has no expiry. The stored `updatedAt` value enables a future policy-defined re-prompt interval.
