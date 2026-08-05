@@ -39,12 +39,12 @@ It is a house style call and it is not negotiable, but there is a reason worth k
 
 Four replacements cover almost everything:
 
-| The em-dash was doing | Use instead |
-|---|---|
+| The em-dash was doing                    | Use instead                                                      |
+| ---------------------------------------- | ---------------------------------------------------------------- |
 | Apposition, renaming the thing just said | **Comma.** `Spaces, separate workspaces, each with its own tabs` |
-| Introducing a list or an explanation | **Colon.** `Two kinds: built-in, and your own` |
-| A second, related thought | **Full stop.** Two sentences. |
-| A genuine aside | **Brackets**, or cut it. Usually cut it. |
+| Introducing a list or an explanation     | **Colon.** `Two kinds: built-in, and your own`                   |
+| A second, related thought                | **Full stop.** Two sentences.                                    |
+| A genuine aside                          | **Brackets**, or cut it. Usually cut it.                         |
 
 A pair of em-dashes wrapping a clause is nearly always a comma pair, or a clause that belongs in its own sentence.
 
@@ -58,10 +58,10 @@ Getting a name wrong makes a reader doubt everything else on the page. These are
 
 ### Two different things are called "skill"
 
-| Thing | Write it as | Never |
-|---|---|---|
-| Instructions you teach the assistant inside Phi | **Browser Skills** (capital B, capital S) | "Skills" alone in a context where both could be meant |
-| The package that lets an outside AI agent drive Phi | **the phi-browser skill** (lowercase, hyphenated, **singular**) | "the phi-browser Skill", "phi-browser skills" |
+| Thing                                               | Write it as                                                     | Never                                                 |
+| --------------------------------------------------- | --------------------------------------------------------------- | ----------------------------------------------------- |
+| Instructions you teach the assistant inside Phi     | **Browser Skills** (capital B, capital S)                       | "Skills" alone in a context where both could be meant |
+| The package that lets an outside AI agent drive Phi | **the phi-browser skill** (lowercase, hyphenated, **singular**) | "the phi-browser Skill", "phi-browser skills"         |
 
 If a page mentions one and a reader might think of the other, add a callout pointing at the other page. Both `/skills/` and `/phi-browser-skill/` carry one.
 
@@ -73,17 +73,17 @@ One exception, and it is a real one: **"a login" as a noun** means a saved crede
 
 ### The rest
 
-| Write | Not |
-|---|---|
-| Phi, or Phi Browser | "the Phi browser", "PHI" |
+| Write                                              | Not                               |
+| -------------------------------------------------- | --------------------------------- |
+| Phi, or Phi Browser                                | "the Phi browser", "PHI"          |
 | Phinomenon Inc. on first mention, Phinomenon after | "the company", "we at Phinomenon" |
-| Phi Cloud | "our cloud", "the cloud AI" |
-| Private AI | "local AI", "offline mode" |
-| Phi Sentinel, then Sentinel | "the Sentinel app" |
-| Memory (capital M, the feature) | "memories", "the memory system" |
-| Spaces, Profiles (capital, the features) | "spaces", "workspaces" |
-| macOS | "MacOS", "Mac OS", "OSX" |
-| Apple Silicon | "M-series", "ARM Macs" |
+| Phi Cloud                                          | "our cloud", "the cloud AI"       |
+| Private AI                                         | "local AI", "offline mode"        |
+| Phi Sentinel, then Sentinel                        | "the Sentinel app"                |
+| Memory (capital M, the feature)                    | "memories", "the memory system"   |
+| Spaces, Profiles (capital, the features)           | "spaces", "workspaces"            |
+| macOS                                              | "MacOS", "Mac OS", "OSX"          |
+| Apple Silicon                                      | "M-series", "ARM Macs"            |
 
 **Menu paths** use arrows and bold: **Settings → Developer → Agent control**.
 
@@ -97,7 +97,7 @@ These are the ones that cost us. Style errors are embarrassing; these are the on
 
 Write what the product does **today**. A reader who follows your instructions and finds no such button stops trusting the whole site.
 
-Describing a *planned* capability is fine when it is explicitly conditional and clearly future: "Sharing Skills is something we expect to add. When it arrives, ...". What is not fine is present tense for something that does not exist yet.
+Describing a _planned_ capability is fine when it is explicitly conditional and clearly future: "Sharing Skills is something we expect to add. When it arrives, ...". What is not fine is present tense for something that does not exist yet.
 
 ### Do not overclaim privacy
 
@@ -131,7 +131,7 @@ description: "One sentence, what the reader will be able to do. Used in search a
 
 **One H1**, matching the nav label. Sentence case.
 
-**Headings are labels, not questions**, unless the page genuinely answers a literal user question. "Why Bitwarden" not "Why Bitwarden?". The FAQ is the exception, because its headings *are* questions.
+**Headings are labels, not questions**, unless the page genuinely answers a literal user question. "Why Bitwarden" not "Why Bitwarden?". The FAQ is the exception, because its headings _are_ questions.
 
 **Link lists** use a comma, never a dash gloss:
 

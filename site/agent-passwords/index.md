@@ -46,8 +46,8 @@ If the vault is locked when a request comes in, Phi asks for your **master passw
 
 Not all requests are equal, and the prompt is honest about the difference. Each request is one of three kinds, colour-coded by how far the secret travels:
 
-| Kind                 | What actually happens                                                                                                                                                                                                                  |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kind                 | What actually happens                                                                                                                                                                                                                   |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 🟢 **Autofill only** | Phi fills the saved login into the page itself. The agent triggers the fill but **never receives the username or password**.                                                                                                            |
 | 🟠 **Command use**   | The value is released to the agent so a command it runs can use it, for example a database password injected into a CLI's environment. The agent's tooling scrubs it from output, but Phi cannot stop the agent from keeping the value. |
 | 🔴 **Full access**   | The saved item, which might be a password, note, card, identity, or key, is shared with the agent directly, and the agent may record it in its context.                                                                                 |

@@ -84,7 +84,7 @@ These changed meaning, not style. They are the reason the sweep was worth doing.
 >
 > **After** — Phi comes with an assistant built into the browser, on once you are signed in.
 
-Signing in is the choice. Saying "on by default" implies it was switched on *for* the user, which is the opposite of what happens and the opposite of what the Privacy Policy says.
+Signing in is the choice. Saying "on by default" implies it was switched on _for_ the user, which is the opposite of what happens and the opposite of what the Privacy Policy says.
 
 ### Local-first, told as only half the story
 
@@ -118,15 +118,15 @@ Nothing in the help centre mentioned that automation can get an account banned, 
 
 ## Words to cut
 
-| Cut | Why |
-|---|---|
-| simply, just, easy, quickly | Only ever read by someone who is stuck |
-| please note, it is worth noting, keep in mind | Say the thing |
-| powerful, seamless, intuitive, robust | Marketing adjectives that carry no information |
-| leverage, utilise | Use "use" |
-| in order to | "to" |
-| a variety of, a number of | Say how many, or say "several" |
-| allows you to, enables you to | "lets you", or make the reader the subject |
+| Cut                                           | Why                                            |
+| --------------------------------------------- | ---------------------------------------------- |
+| simply, just, easy, quickly                   | Only ever read by someone who is stuck         |
+| please note, it is worth noting, keep in mind | Say the thing                                  |
+| powerful, seamless, intuitive, robust         | Marketing adjectives that carry no information |
+| leverage, utilise                             | Use "use"                                      |
+| in order to                                   | "to"                                           |
+| a variety of, a number of                     | Say how many, or say "several"                 |
+| allows you to, enables you to                 | "lets you", or make the reader the subject     |
 
 > **Before** — Phi allows you to simply leverage a variety of powerful layout modes in order to customise your workspace.
 >
