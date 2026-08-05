@@ -125,9 +125,8 @@ onBeforeUnmount(() => {
       >
         <div class="phi-consent-banner-content">
           <p>
-            Across phibrowser.com, we use required storage to run our sites and
-            — only with your permission — analytics and advertising measurement
-            technologies. See our
+            We use cookies to run this site and, only with your permission, to
+            analyze traffic and measure our advertising. See our
             <a href="/privacy/">Privacy Policy</a> for details.
           </p>
 
@@ -185,9 +184,8 @@ onBeforeUnmount(() => {
           </div>
 
           <p class="phi-consent-intro">
-            Choose which technologies phibrowser.com may use. Your choice is
-            shared between the main site and Help on this browser, and you can
-            change it here at any time. See our
+            Choose which cookies this site may use. Your choice is saved on this
+            browser and you can change it here at any time. See our
             <a href="/privacy/">Privacy Policy</a> for details.
           </p>
 
@@ -218,9 +216,8 @@ onBeforeUnmount(() => {
               <div>
                 <h3>Functional</h3>
                 <p>
-                  Required for the sites to work, such as remembering your
-                  cookie choices. Always on; contains no analytics and no
-                  advertising.
+                  Required for the site to work, such as remembering your cookie
+                  choices. Always on; contains no analytics and no advertising.
                 </p>
               </div>
               <span>Always on</span>
@@ -230,8 +227,8 @@ onBeforeUnmount(() => {
               <div>
                 <label for="phi-consent-statistics">Statistics</label>
                 <p>
-                  Help us understand how phibrowser.com is used. Help uses
-                  PostHog; the main site may also use Google Analytics.
+                  Help us understand how the site is used through analytics
+                  services (Google Analytics, PostHog).
                 </p>
                 <small v-if="gpcActive && !statisticsOn">
                   Turned off by your browser’s Global Privacy Control signal.
@@ -251,9 +248,9 @@ onBeforeUnmount(() => {
               <div>
                 <label for="phi-consent-marketing">Marketing</label>
                 <p>
-                  Allow advertising conversion tools on the main Phi Browser
-                  site to measure whether ads work. Help does not load these
-                  tools, but shares your choice with the main site.
+                  Allow our advertising partners' conversion tools to measure
+                  whether our ads work. Used for ad measurement on this site,
+                  not for showing you ads here.
                 </p>
                 <small v-if="gpcActive && !marketingOn">
                   Turned off by your browser’s Global Privacy Control signal.

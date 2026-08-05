@@ -1,6 +1,6 @@
 # Analytics and shared cookie consent
 
-Implemented 2026-08-05 16:27:23 CST (+0800). Source of truth for Help analytics and its shared phibrowser.com consent behavior.
+Implemented 2026-08-05 16:27:23 CST (+0800). User-facing copy refined 2026-08-05 16:43:45 CST (+0800). Source of truth for Help analytics and its shared phibrowser.com consent behavior.
 
 ## Why
 
@@ -53,7 +53,8 @@ Under GPC, both optional categories are denied and the first-visit Banner is sup
 - Customize settings exposes Functional, Statistics, and Marketing categories.
 - Cookie Settings and Your Privacy Choices remain available in the global Help footer so withdrawing consent is as easy as granting it.
 - Your Privacy Choices provides the same one-click Marketing opt-out semantics as the main site.
-- Privacy links point to the main site's `/privacy/` policy. The Help page at `/help/privacy/` describes Phi Browser product data rather than website tracking.
+- Privacy links point to the site's `/privacy/` policy. The Help page at `/help/privacy/` describes Phi Browser product data rather than website tracking.
+- User-facing copy consistently says "this site" because visitors experience the root pages and `/help/` as one phibrowser.com website. Application boundaries and path-specific vendor loading remain internal implementation details.
 
 Every save writes the shared record and immediately applies the effective choice on Help.
 
