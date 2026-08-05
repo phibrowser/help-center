@@ -71,6 +71,7 @@ The connection is designed to be unreachable by anything you have not approved:
 
 ## What's next
 
+- [The Phi CLI](/phi-cli/), the same automation as a `phi` command in your terminal, for scripts and quick one-off drives.
 - [Agent Password Manager](/agent-passwords/), how agents sign in with your vault without seeing your passwords.
 - [Browser Skills](/skills/), the other kind of skill, taught to Phi's own assistant.
 - [Spaces & Profiles](/spaces/), the workspaces and login identities agent Spaces are built on.
