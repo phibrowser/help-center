@@ -2,7 +2,12 @@ import { execFileSync } from "node:child_process";
 import { existsSync, statSync } from "node:fs";
 import { resolve } from "node:path";
 import { defineConfig } from "vitepress";
-import type { DefaultTheme, HeadConfig } from "vitepress";
+import type { HeadConfig } from "vitepress";
+import {
+  localeConfig,
+  localeRoutePrefixes,
+  ZH_HANS_LOCALE,
+} from "./i18n-config";
 
 // Deployed under the /help/ sub-path. VitePress prepends this base to asset and
 // internal-link URLs (nav/sidebar links, theme logo, bundled assets) and to
@@ -13,6 +18,19 @@ import type { DefaultTheme, HeadConfig } from "vitepress";
 const base = "/help/";
 const productionOrigin = "https://phibrowser.com";
 const productionBaseUrl = `${productionOrigin}${base}`;
+
+function getLocaleIndex(value: unknown): string | undefined {
+  if (
+    typeof value === "object" &&
+    value !== null &&
+    "localeIndex" in value &&
+    typeof value.localeIndex === "string"
+  ) {
+    return value.localeIndex;
+  }
+
+  return undefined;
+}
 
 function getPagePath(relativePath: string): string {
   if (relativePath === "index.md") {
@@ -78,6 +96,20 @@ function getLastModifiedIsoTimestamp(routePath: string): string | undefined {
   return statSync(sourceFile).mtime.toISOString();
 }
 
+function stripLocalePrefix(routePath: string): string {
+  for (const prefix of localeRoutePrefixes) {
+    if (routePath === `${prefix}/`) {
+      return "/";
+    }
+
+    if (routePath.startsWith(`${prefix}/`)) {
+      return routePath.slice(prefix.length);
+    }
+  }
+
+  return routePath;
+}
+
 function getSitemapChangeFrequency(routePath: string): "weekly" | "monthly" {
   return routePath === "/" || routePath === "/faq/" ? "weekly" : "monthly";
 }
@@ -116,83 +148,10 @@ function createSocialHead(
   ];
 }
 
-const guideSidebar: DefaultTheme.SidebarItem[] = [
-  {
-    text: "Start Here",
-    items: [
-      { text: "What is Phi Browser?", link: "/what-is-phi-browser/" },
-      { text: "Getting Started", link: "/get-started/" },
-      { text: "Switching to Phi", link: "/switching-to-phi/" },
-      { text: "Quick tips for Phi Browser", link: "/tips-and-shortcuts/" },
-    ],
-  },
-  {
-    text: "Browser Workspace",
-    items: [
-      { text: "Layouts & Navigation", link: "/layouts/" },
-      { text: "Spaces & Profiles", link: "/spaces/" },
-      { text: "Incognito Spaces", link: "/incognito/" },
-      { text: "Bookmarks & Pinned Tabs", link: "/bookmarks/" },
-      { text: "Importing & Exporting", link: "/import-export/" },
-      { text: "Managing Tabs & Bookmarks", link: "/tab-management/" },
-      { text: "Themes & Appearance", link: "/themes/" },
-      { text: "New Tab & Widgets", link: "/new-tab/" },
-    ],
-  },
-  {
-    text: "Assistant & Automation",
-    items: [
-      { text: "Meet your assistant", link: "/ai/" },
-      { text: "Memory", link: "/memory/" },
-      { text: "Browser Skills", link: "/skills/" },
-      { text: "Automation & Phi Link", link: "/automation/" },
-      { text: "The phi-browser skill", link: "/phi-browser-skill/" },
-      { text: "The Phi CLI", link: "/phi-cli/" },
-      { text: "Agent Password Manager", link: "/agent-passwords/" },
-      { text: "Phi Sentinel", link: "/sentinel/" },
-    ],
-  },
-  {
-    text: "Privacy & Recovery",
-    items: [
-      { text: "Privacy & Your Data", link: "/privacy/" },
-      { text: "Time Machine Backups", link: "/time-machine/" },
-    ],
-  },
-];
-
-const guideSidebarPaths = [
-  "/what-is-phi-browser/",
-  "/get-started/",
-  "/tips-and-shortcuts/",
-  "/switching-to-phi/",
-  "/layouts/",
-  "/tab-management/",
-  "/spaces/",
-  "/incognito/",
-  "/bookmarks/",
-  "/import-export/",
-  "/themes/",
-  "/new-tab/",
-  "/ai/",
-  "/memory/",
-  "/skills/",
-  "/automation/",
-  "/phi-browser-skill/",
-  "/phi-cli/",
-  "/agent-passwords/",
-  "/sentinel/",
-  "/privacy/",
-  "/time-machine/",
-];
-
-const sidebar = Object.fromEntries(
-  guideSidebarPaths.map((path) => [path, guideSidebar]),
-);
-
 export default defineConfig({
   title: "Phi Help",
   description: "Help and FAQ for Phi Browser.",
+  locales: localeConfig,
   base,
   outDir: ".vitepress/dist/help",
   // Emitted at /help/sitemap.xml. The hostname includes the /help/ base so the
@@ -204,14 +163,33 @@ export default defineConfig({
     transformItems(items) {
       return items.map((item) => {
         const routePath = normalizeRoutePath(item.url);
+        const contentRoutePath = stripLocalePrefix(routePath);
 
         return {
           ...item,
           lastmod: item.lastmod ?? getLastModifiedIsoTimestamp(routePath),
-          changefreq: getSitemapChangeFrequency(routePath),
-          priority: getSitemapPriority(routePath),
+          changefreq: getSitemapChangeFrequency(contentRoutePath),
+          priority: getSitemapPriority(contentRoutePath),
         };
       });
+    },
+  },
+  markdown: {
+    config(markdown) {
+      const renderFence = markdown.renderer.rules.fence;
+
+      if (!renderFence) {
+        return;
+      }
+
+      markdown.renderer.rules.fence = (...args) => {
+        const html = renderFence(...args);
+        const environment = args[3];
+
+        return getLocaleIndex(environment) === ZH_HANS_LOCALE
+          ? html.replace('title="Copy Code"', 'title="复制代码"')
+          : html;
+      };
     },
   },
   cleanUrls: true,
@@ -236,13 +214,47 @@ export default defineConfig({
     logo: { light: "/phi-mark-dark.svg", dark: "/phi-mark-light.svg" },
     search: {
       provider: "local",
+      options: {
+        locales: {
+          [ZH_HANS_LOCALE]: {
+            translations: {
+              button: {
+                buttonText: "搜索",
+                buttonAriaLabel: "搜索文档",
+              },
+              modal: {
+                displayDetails: "显示详细列表",
+                resetButtonTitle: "清除搜索",
+                backButtonTitle: "关闭搜索",
+                noResultsText: "未找到相关结果",
+                footer: {
+                  selectText: "选择",
+                  selectKeyAriaLabel: "回车键",
+                  navigateText: "切换",
+                  navigateUpKeyAriaLabel: "向上箭头",
+                  navigateDownKeyAriaLabel: "向下箭头",
+                  closeText: "关闭",
+                  closeKeyAriaLabel: "Esc 键",
+                },
+              },
+            },
+          },
+        },
+        miniSearch: {
+          options: {
+            tokenize(text) {
+              return Array.from(
+                new Intl.Segmenter(undefined, { granularity: "word" }).segment(
+                  text,
+                ),
+              )
+                .filter((segment) => segment.isWordLike)
+                .map((segment) => segment.segment);
+            },
+          },
+        },
+      },
     },
-    nav: [
-      { text: "Phi Browser", link: "https://phibrowser.com" },
-      { text: "Guide", link: "/what-is-phi-browser/" },
-      { text: "FAQ", link: "/faq/" },
-    ],
-    sidebar,
     socialLinks: [
       { icon: "github", link: "https://github.com/phibrowser/help-center" },
     ],

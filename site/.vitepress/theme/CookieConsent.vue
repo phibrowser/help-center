@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { onBeforeUnmount, onMounted, ref } from "vue";
+import { useData } from "vitepress";
+import { computed, onBeforeUnmount, onMounted, ref } from "vue";
 import { applyConsent } from "./consent/apply-consent";
 import {
   ALL_DENIED,
@@ -9,6 +10,7 @@ import {
   storeConsent,
   type ConsentChoices,
 } from "./consent/consent";
+import { getCustomThemeCopy } from "./i18n";
 
 type PreferencesVariant = "settings" | "privacy-choices";
 
@@ -18,6 +20,9 @@ const statisticsOn = ref(false);
 const marketingOn = ref(false);
 const gpcActive = ref(false);
 const optedOut = ref(false);
+
+const { lang } = useData();
+const copy = computed(() => getCustomThemeCopy(lang.value));
 
 let bannerTimer: number | undefined;
 
@@ -85,16 +90,16 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <footer class="phi-privacy-controls" aria-label="Privacy controls">
+  <footer class="phi-privacy-controls" :aria-label="copy.privacyControls">
     <button type="button" @click="openPreferences('settings')">
-      Cookie Settings
+      {{ copy.cookieSettings }}
     </button>
     <button
       type="button"
       class="phi-privacy-choices-button"
       @click="openPreferences('privacy-choices')"
     >
-      Your Privacy Choices
+      {{ copy.privacyChoices }}
       <svg viewBox="0 0 30 14" aria-hidden="true">
         <path
           d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z"
@@ -121,13 +126,13 @@ onBeforeUnmount(() => {
       <section
         v-if="bannerVisible && preferencesVariant === null"
         class="phi-consent-banner"
-        aria-label="Cookie consent"
+        :aria-label="copy.cookieConsent"
       >
         <div class="phi-consent-banner-content">
           <p>
-            We use cookies to run this site and, only with your permission, to
-            analyze traffic and measure our advertising. See our
-            <a href="/privacy/">Privacy Policy</a> for details.
+            {{ copy.bannerBeforePolicy }}
+            <a href="/privacy/">{{ copy.privacyPolicy }}</a>
+            {{ copy.bannerAfterPolicy }}
           </p>
 
           <div class="phi-consent-banner-actions">
@@ -137,14 +142,14 @@ onBeforeUnmount(() => {
                 class="phi-consent-secondary-button"
                 @click="persistChoices(ALL_DENIED)"
               >
-                Reject all
+                {{ copy.rejectAll }}
               </button>
               <button
                 type="button"
                 class="phi-consent-secondary-button"
                 @click="persistChoices(ALL_GRANTED)"
               >
-                Accept all
+                {{ copy.acceptAll }}
               </button>
             </div>
             <button
@@ -152,7 +157,7 @@ onBeforeUnmount(() => {
               class="phi-consent-link-button"
               @click="openPreferences('settings')"
             >
-              Customize settings
+              {{ copy.customizeSettings }}
             </button>
           </div>
         </div>
@@ -172,10 +177,12 @@ onBeforeUnmount(() => {
           aria-labelledby="phi-consent-dialog-title"
         >
           <div class="phi-consent-dialog-heading">
-            <h2 id="phi-consent-dialog-title">Cookie preferences</h2>
+            <h2 id="phi-consent-dialog-title">
+              {{ copy.cookiePreferences }}
+            </h2>
             <button
               type="button"
-              aria-label="Close"
+              :aria-label="copy.close"
               class="phi-consent-close-button"
               @click="closePreferences"
             >
@@ -184,22 +191,18 @@ onBeforeUnmount(() => {
           </div>
 
           <p class="phi-consent-intro">
-            Choose which cookies this site may use. Your choice is saved on this
-            browser and you can change it here at any time. See our
-            <a href="/privacy/">Privacy Policy</a> for details.
+            {{ copy.preferencesBeforePolicy }}
+            <a href="/privacy/">{{ copy.privacyPolicy }}</a>
+            {{ copy.preferencesAfterPolicy }}
           </p>
 
           <div
             v-if="preferencesVariant === 'privacy-choices'"
             class="phi-consent-opt-out"
           >
-            <p>
-              Sharing data with advertising partners for ad measurement may be
-              considered a “sale” or “sharing” under some U.S. state laws. You
-              can opt out with one click.
-            </p>
+            <p>{{ copy.saleAndSharingDescription }}</p>
             <p v-if="optedOut" class="phi-consent-status" role="status">
-              You’re opted out on this browser.
+              {{ copy.optedOut }}
             </p>
             <button
               v-else
@@ -207,31 +210,27 @@ onBeforeUnmount(() => {
               class="phi-consent-secondary-button"
               @click="optOutOfSaleAndSharing"
             >
-              Opt out of sale and sharing
+              {{ copy.optOutOfSaleAndSharing }}
             </button>
           </div>
 
           <div class="phi-consent-categories">
             <div class="phi-consent-category">
               <div>
-                <h3>Functional</h3>
-                <p>
-                  Required for the site to work, such as remembering your cookie
-                  choices. Always on; contains no analytics and no advertising.
-                </p>
+                <h3>{{ copy.functional }}</h3>
+                <p>{{ copy.functionalDescription }}</p>
               </div>
-              <span>Always on</span>
+              <span>{{ copy.alwaysOn }}</span>
             </div>
 
             <div class="phi-consent-category">
               <div>
-                <label for="phi-consent-statistics">Statistics</label>
-                <p>
-                  Help us understand how the site is used through analytics
-                  services (Google Analytics, PostHog).
-                </p>
+                <label for="phi-consent-statistics">
+                  {{ copy.statistics }}
+                </label>
+                <p>{{ copy.statisticsDescription }}</p>
                 <small v-if="gpcActive && !statisticsOn">
-                  Turned off by your browser’s Global Privacy Control signal.
+                  {{ copy.gpcDisabled }}
                 </small>
               </div>
               <label class="phi-consent-switch">
@@ -246,14 +245,12 @@ onBeforeUnmount(() => {
 
             <div class="phi-consent-category">
               <div>
-                <label for="phi-consent-marketing">Marketing</label>
-                <p>
-                  Allow our advertising partners' conversion tools to measure
-                  whether our ads work. Used for ad measurement on this site,
-                  not for showing you ads here.
-                </p>
+                <label for="phi-consent-marketing">
+                  {{ copy.marketing }}
+                </label>
+                <p>{{ copy.marketingDescription }}</p>
                 <small v-if="gpcActive && !marketingOn">
-                  Turned off by your browser’s Global Privacy Control signal.
+                  {{ copy.gpcDisabled }}
                 </small>
               </div>
               <label class="phi-consent-switch">
@@ -273,7 +270,7 @@ onBeforeUnmount(() => {
               class="phi-consent-save-button"
               @click="savePreferences"
             >
-              Save choices
+              {{ copy.saveChoices }}
             </button>
           </div>
         </section>

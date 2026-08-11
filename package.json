@@ -7,8 +7,9 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev site --port ${PORT:-3000}",
-    "build": "vitepress build site",
+    "build": "pnpm test:i18n && vitepress build site",
     "preview": "vitepress preview site --port ${PORT:-3000}",
+    "test:i18n": "node scripts/test-cjk-emphasis.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "prepare": "husky"

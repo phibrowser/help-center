@@ -1,0 +1,257 @@
+# Simplified Chinese internationalization implementation
+
+Implementation performed: 2026-08-10 11:10:44 CST (+0800).
+
+CJK emphasis rendering fix performed: 2026-08-10 14:41:29 CST (+0800).
+
+Targeted-markup refinement and automated test performed: 2026-08-10 16:23:48 CST (+0800).
+
+Pilot branch integration updated: 2026-08-11 10:09:59 CST (+0800).
+
+Exploratory branch renamed: 2026-08-11 12:21:47 CST (+0800).
+
+Status: implemented and validated locally on the `experiment/zh-hans-i18n` branch. Not independently translated-reviewed, privacy-reviewed, legally reviewed, deployed, or published.
+
+Pilot maturity warning: this branch is explicitly an i18n test, not a complete or production-ready multilingual release. Only Simplified Chinese is implemented. The other seven requested locales are not ready, and exercising the architecture with one translated locale cannot reveal every routing, typography, search, content-workflow, or deployment issue that later languages may expose. The implementation and its checks are expected to require further refinement as those locales are piloted.
+
+## Why this work was done
+
+The requested language set is:
+
+- German (`de`)
+- Spanish (`es`)
+- French (`fr`)
+- Japanese (`ja`)
+- Korean (`ko`)
+- Dutch (`nl`)
+- Simplified Chinese (`zh-Hans`)
+- Traditional Chinese (`zh-Hant`)
+
+The owner requested a complete Simplified Chinese implementation first so that the i18n system can be verified before the other seven locale trees are added. The initial approved pilot scope included all 22 content pages, the VitePress shell, local search, the Ask Phi control, and Cookie Consent.
+
+While the pilot branch was being created from the latest `origin/main`, upstream added the Phi CLI as a twenty-third English page. The owner approved translating that page rather than accepting partial locale coverage, so the final pilot contains 23 English and 23 Simplified Chinese pages. This preserves page parity but does not change the branch's experimental status.
+
+## Implementation status
+
+English remains at its existing `/help/...` routes. Simplified Chinese is available at matching `/help/zh-Hans/...` routes.
+
+Examples:
+
+| English         | Simplified Chinese      |
+| --------------- | ----------------------- |
+| `/help/`        | `/help/zh-Hans/`        |
+| `/help/memory/` | `/help/zh-Hans/memory/` |
+| `/help/faq/`    | `/help/zh-Hans/faq/`    |
+
+The existing implicit English language tag, `en-US`, was preserved rather than changing the site's English SEO targeting as part of this implementation. Simplified Chinese uses the script-specific `zh-Hans` tag.
+
+## How it was implemented
+
+### Locale configuration
+
+`site/.vitepress/i18n-config.ts` now owns the locale-specific navigation and theme configuration.
+
+It defines:
+
+- the English root locale;
+- the `zh-Hans` locale and `/zh-Hans/` route prefix;
+- one shared guide structure;
+- translated navigation, sidebar, accessibility, document-footer, appearance, and not-found copy;
+- locale-aware sidebar links.
+
+The guide structure is shared, while each locale supplies labels. This keeps route parity explicit without introducing a runtime i18n framework.
+
+### Content
+
+`site/zh-Hans/` contains a complete translated tree matching the 23 English Markdown files currently on this branch.
+
+The translation preserves:
+
+- page structure and frontmatter descriptions;
+- 72 FAQ detail entries;
+- code fences and custom containers;
+- all 164 internal cross-page links;
+- all 11 cross-page anchor links.
+
+Translated internal links use `/zh-Hans/` destinations so they cannot silently return readers to English. Durable cross-page anchors use explicit IDs where translated headings would otherwise change the generated slug.
+
+The terminology was checked against the current `zh-Hans` values in `../phibrowser-mac/Resources/Localizable.xcstrings`. In particular:
+
+- Profile is translated as “个人资料”.
+- Balanced is translated as “均衡”.
+- Open as Split is translated as “以分屏打开”.
+- New Incognito Window is translated as “新建无痕式窗口”.
+
+### CJK emphasis markup
+
+Markdown-it's CommonMark emphasis rules do not recognize some closing `**` delimiters when emphasized content ends in a punctuation token and the delimiter is immediately followed by text. A link also ends in a punctuation token for this purpose. For example, `**[记忆](...)**会` rendered the link but left both pairs of asterisks visible. Multiple affected spans on one line could also be paired across unrelated text and produce incorrect nested emphasis.
+
+The 403 spans that VitePress parses correctly remain normal Markdown. Only the 57 parser-incompatible spans use semantic `<strong>...</strong>` markup. Markdown links inside those exceptions remain normal Markdown links, so `<strong>[记忆](...)</strong>会` renders as a bold link without adding typographically unwanted spaces around Chinese text.
+
+`scripts/test-cjk-emphasis.mjs` renders CJK Markdown with the installed VitePress renderer. It fails when a Markdown strong span cannot close in its surrounding context, when a prose delimiter is emitted literally, or when the intended and rendered strong-span counts differ. `pnpm test:i18n` runs it directly, and `pnpm build` runs it before the production build. The check covers any present `zh-Hans`, `zh-Hant`, `ja`, and `ko` trees.
+
+### Theme and custom components
+
+The default VitePress theme receives locale-specific labels through `themeConfig`.
+
+`site/.vitepress/theme/i18n.ts` contains a small typed dictionary for project-owned Vue UI:
+
+- Ask Phi;
+- footer privacy controls;
+- Cookie Consent banner;
+- Cookie preferences dialog;
+- consent category and Global Privacy Control text;
+- accessibility labels.
+
+`CookieConsent.vue` and `PhiSidebarButton.vue` select this copy from VitePress's reactive active language. Consent storage and analytics behavior were not changed.
+
+The main-site Privacy Policy link intentionally remains `/privacy/`. The main marketing site does not currently publish a Chinese policy route, so Chinese Help users still reach the English authoritative policy.
+
+### Search
+
+VitePress still uses local MiniSearch indexes and generates one independent index per locale.
+
+The implementation adds:
+
+- Simplified Chinese search button, modal, footer, and accessibility copy;
+- a shared `Intl.Segmenter` word tokenizer so CJK queries are tokenized rather than relying on whitespace;
+- representative English and Simplified Chinese query checks.
+
+VitePress 1.6.4 applies one tokenizer configuration to all locale indexes. English query behavior was therefore tested after adding the CJK-capable tokenizer.
+
+### Markdown-rendered UI
+
+Installed VitePress 1.6.4 does not support the newer per-locale `markdown` key documented by current online VitePress documentation.
+
+The project has one code block. A narrow Markdown fence-renderer adaptation changes its Simplified Chinese copy-button title to “复制代码”, while locale-scoped CSS changes the copied-state label to “已复制”. English remains “Copy Code” and “Copied”.
+
+This workaround is intentionally limited to the missing 1.6.4 capability. It should be removed after a future VitePress upgrade provides and validates native per-locale Markdown renderer copy.
+
+### SEO and sitemap
+
+The existing canonical URL function already includes the locale source path, so translated pages receive self-referencing canonical URLs.
+
+The sitemap priority and change-frequency policy now strips known locale prefixes before classifying a page. This gives corresponding English and Simplified Chinese pages the same policy.
+
+VitePress generates reciprocal sitemap alternatives for every page pair:
+
+- English uses `hreflang="en-US"`.
+- Simplified Chinese uses `hreflang="zh-Hans"`.
+
+No automatic browser-language redirect was added.
+
+### Deployment
+
+No Wrangler or output-directory change was needed.
+
+The existing layout produces files such as:
+
+```text
+site/.vitepress/dist/help/zh-Hans/memory/index.html
+```
+
+under the same Cloudflare assets root.
+
+## Validation performed
+
+### Repository validation
+
+The final validation commands are recorded in the task handoff. The implementation is required to pass:
+
+```sh
+pnpm format:check
+pnpm test:i18n
+pnpm build
+```
+
+### Generated output checks
+
+The local production build generates:
+
+- 47 HTML files: 23 English pages, 23 Simplified Chinese pages, and the not-found document;
+- `<html lang="en-US">` on English pages;
+- `<html lang="zh-Hans">` on Simplified Chinese pages;
+- self-referencing English and Simplified Chinese canonical URLs;
+- reciprocal `en-US` and `zh-Hans` sitemap alternatives;
+- one English and one `zh-Hans` local-search index;
+- English and Simplified Chinese corresponding-page links in the language menu;
+- localized code-copy labels.
+
+Automated structural checks verify:
+
+- 23 English and 23 Simplified Chinese Markdown files;
+- no missing or extra translated route files;
+- matching heading, FAQ detail, and code-fence counts;
+- 23 translated descriptions;
+- no unintended English root-relative Markdown links in `site/zh-Hans/`;
+- all 164 translated internal page targets exist;
+- all 11 translated cross-page anchors exist in rendered HTML;
+- all 403 regular Markdown strong spans render correctly;
+- only the 57 parser-incompatible spans use targeted `<strong>` markup;
+- no literal `**` delimiter remains in generated Simplified Chinese prose;
+- the reported bold-link case renders as `<strong><a ...>记忆</a></strong>`.
+
+Representative search checks return results for:
+
+- English: `memory`, `incognito space`, and `password manager`;
+- Simplified Chinese: `记忆`, `无痕空间`, and `密码管理器`.
+
+## Manual verification requested from the owner
+
+The owner should perform this before approving the i18n mechanism or asking for the other seven locales.
+
+1. Start the documented local development environment.
+2. Open `/help/` and switch to Simplified Chinese.
+3. From `/help/zh-Hans/memory/`, switch to English and back; confirm the deep page is preserved.
+4. On `/help/zh-Hans/what-is-phi-browser/`, confirm the linked “记忆” and “浏览器技能” labels are both bold and clickable, with no visible asterisks.
+5. Search for `记忆`, `无痕空间`, and `密码管理器` and open results.
+6. Check desktop and mobile navigation, sidebar labels, outline labels, previous/next links, appearance controls, skip link, and return-to-top copy.
+7. On `/help/zh-Hans/get-started/`, use the code-copy button and confirm “复制代码” and “已复制”.
+8. Open Cookie Settings from the footer and inspect every category and accessibility label. A previously stored shared consent choice can suppress the first-visit banner, so use the footer control or a clean browser profile.
+9. In Phi Browser with Sidecar installed, verify that the Ask Phi button displays “询问 Phi”. The button remains hidden in browsers where the Phi extension contract is unavailable.
+10. Check a nonexistent `/help/zh-Hans/...` URL and confirm the hydrated not-found experience is Chinese.
+11. Inspect a translated page's language tag, canonical URL, and corresponding language-menu target.
+
+Evidence of completion should be a recorded QA result, including the tested build or commit and any screenshots or defects found.
+
+## Open issues and resolution conditions
+
+| Open issue                                                                                            | Responsible party                                                                                         | Required timing                                          | Resolution condition and evidence                                                                                      |
+| ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Simplified Chinese prose has not had independent native-language review                               | Simplified Chinese content reviewer with Phi product knowledge                                            | Before public deployment                                 | Review all 23 final Markdown files; record approval or corrections against the reviewed commit                         |
+| Translated Cookie Consent and privacy wording has not had privacy/legal review                        | Privacy or legal professional qualified for the applicable publication jurisdictions and engagement scope | Before public deployment                                 | Review the final rendered copy, consent behavior, and policy destination; record approval against the deployed wording |
+| The linked main-site Privacy Policy remains English                                                   | Product, privacy, and main-site owners                                                                    | Before describing the Chinese journey as fully localized | Approve the English authoritative destination or publish and link an approved Chinese policy                           |
+| Runtime mobile, extension-only Ask Phi, and locale not-found behavior has not been manually exercised | Help-center owner                                                                                         | Before approving this pilot                              | Complete the manual verification checklist and retain the QA result                                                    |
+| Simplified Chinese search relevance has only representative automated coverage                        | Help-center owner and Simplified Chinese reviewer                                                         | During pilot QA                                          | Test real user queries and record acceptable results or required tokenizer changes                                     |
+| Per-locale Markdown copy uses a VitePress 1.6.4 workaround                                            | Help-center maintainer                                                                                    | On a future VitePress upgrade                            | Replace it with native locale Markdown configuration after dependency review and passing regression tests              |
+| The i18n architecture has only been exercised with one translated locale                              | Help-center owner and maintainers                                                                         | Before treating the design as stable                     | Pilot at least one additional locale, record newly discovered issues, and update architecture and checks               |
+| The remaining seven requested locales are not implemented                                             | Locale content owners                                                                                     | After the owner accepts this pilot                       | Add one complete reviewed content and copy set per locale and repeat parity, search, SEO, and manual validation        |
+
+## Adding the remaining locales
+
+For each future locale:
+
+1. Add the canonical locale and route prefix to `i18n-config.ts`.
+2. Supply all locale theme labels using the existing shared guide structure.
+3. Add local-search UI translations.
+4. Add project-owned component copy in `theme/i18n.ts`.
+5. Add a complete 23-file Markdown tree with locale-scoped links, updating this count whenever the English source tree changes. Keep normal Markdown emphasis by default; use `<strong>` only where `pnpm test:i18n` reports a parser-incompatible CJK span.
+6. Add language-specific search segmentation only if the shared tokenizer and acceptance tests require it.
+7. Run the same parity, link, anchor, generated metadata, search, and manual checks.
+8. Obtain locale content review and any required privacy/legal review before publication.
+
+Do not use Simplified Chinese as a fallback for `zh-Hant`. Traditional Chinese must receive its own reviewed content, and missing Traditional Chinese copy should fall back to English rather than Simplified Chinese.
+
+## Required follow-up
+
+No external publication action was performed.
+
+Before this implementation can be described as published or production-effective:
+
+1. The help-center owner must complete functional pilot QA.
+2. A Simplified Chinese product-content reviewer must review the final content.
+3. The appropriate privacy/legal professional must review the final consent and privacy wording.
+4. An authorized release owner must approve and perform deployment.
+5. The release owner must verify production `/help/zh-Hans/...` routing and retain deployment evidence.
+
+Failure to complete the first three reviews can ship broken navigation, inaccurate product terminology, or privacy wording whose legal meaning has not been verified.
