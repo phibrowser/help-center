@@ -9,7 +9,7 @@
     "dev": "vitepress dev site --port ${PORT:-3000}",
     "build": "pnpm test:i18n && vitepress build site",
     "preview": "vitepress preview site --port ${PORT:-3000}",
-    "test:i18n": "node scripts/test-cjk-emphasis.mjs",
+    "test:i18n": "node scripts/test-i18n.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "prepare": "husky"

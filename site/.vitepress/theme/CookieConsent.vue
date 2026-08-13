@@ -10,7 +10,7 @@ import {
   storeConsent,
   type ConsentChoices,
 } from "./consent/consent";
-import { getCustomThemeCopy } from "./i18n";
+import type { HelpThemeConfig } from "../i18n/types.ts";
 
 type PreferencesVariant = "settings" | "privacy-choices";
 
@@ -21,8 +21,8 @@ const marketingOn = ref(false);
 const gpcActive = ref(false);
 const optedOut = ref(false);
 
-const { lang } = useData();
-const copy = computed(() => getCustomThemeCopy(lang.value));
+const { theme } = useData<HelpThemeConfig>();
+const copy = computed(() => theme.value.customThemeCopy);
 
 let bannerTimer: number | undefined;
 

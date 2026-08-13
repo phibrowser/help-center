@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useData } from "vitepress";
 import { computed, onMounted, ref } from "vue";
-import { getCustomThemeCopy } from "./i18n";
+import type { HelpThemeConfig } from "../i18n/types.ts";
 
 // Opens Phi Browser's own AI assistant sidebar.
 //
@@ -18,8 +18,8 @@ import { getCustomThemeCopy } from "./i18n";
 const EXT_ID = "fenmfiepnpdlhplemgijlimpbebebljo";
 
 const isPhi = ref(false);
-const { lang } = useData();
-const copy = computed(() => getCustomThemeCopy(lang.value));
+const { theme } = useData<HelpThemeConfig>();
+const copy = computed(() => theme.value.customThemeCopy);
 
 function sendToExt(msg: unknown, cb?: (resp: unknown) => void): boolean {
   const rt = (window as unknown as { chrome?: any }).chrome?.runtime;

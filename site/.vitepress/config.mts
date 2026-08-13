@@ -4,9 +4,13 @@ import { resolve } from "node:path";
 import { defineConfig } from "vitepress";
 import type { HeadConfig } from "vitepress";
 import {
+  defaultLocaleResource,
+  getLocaleResource,
+} from "./i18n/locales/index.ts";
+import {
   localeConfig,
   localeRoutePrefixes,
-  ZH_HANS_LOCALE,
+  localeSearchOptions,
 } from "./i18n-config";
 
 // Deployed under the /help/ sub-path. VitePress prepends this base to asset and
@@ -186,23 +190,44 @@ export default defineConfig({
         const html = renderFence(...args);
         const environment = args[3];
 
-        return getLocaleIndex(environment) === ZH_HANS_LOCALE
-          ? html.replace('title="Copy Code"', 'title="复制代码"')
-          : html;
+        const localeIndex = getLocaleIndex(environment);
+        const resource = getLocaleResource(
+          localeIndex ?? defaultLocaleResource.key,
+        );
+
+        const copyCodeTitle = markdown.utils.escapeHtml(
+          resource.markdown.copyCode,
+        );
+
+        return html.replace(
+          /(<button(?=[^>]*\bclass="[^"]*\bcopy\b[^"]*")[^>]*\btitle=")[^"]*(")/,
+          `$1${copyCodeTitle}$2`,
+        );
       };
     },
   },
   cleanUrls: true,
-  transformHead({ description, pageData, title }) {
+  transformHead({ description, pageData, siteData, title }) {
+    const localeIndex = siteData.localeIndex ?? defaultLocaleResource.key;
+    const resource = getLocaleResource(localeIndex);
+    const localizedMarkdownCopy: HeadConfig = [
+      "style",
+      {},
+      `:root { --vp-code-copy-copied-text-content: ${JSON.stringify(resource.markdown.copied)}; }`,
+    ];
+
     if (pageData.isNotFound || pageData.relativePath === "") {
-      return;
+      return [localizedMarkdownCopy];
     }
 
-    return createSocialHead(
-      title,
-      description,
-      getCanonicalUrl(pageData.relativePath),
-    );
+    return [
+      localizedMarkdownCopy,
+      ...createSocialHead(
+        title,
+        description,
+        getCanonicalUrl(pageData.relativePath),
+      ),
+    ];
   },
   head: [
     ["link", { rel: "icon", type: "image/svg+xml", href: `${base}icon.svg` }],
@@ -215,31 +240,7 @@ export default defineConfig({
     search: {
       provider: "local",
       options: {
-        locales: {
-          [ZH_HANS_LOCALE]: {
-            translations: {
-              button: {
-                buttonText: "搜索",
-                buttonAriaLabel: "搜索文档",
-              },
-              modal: {
-                displayDetails: "显示详细列表",
-                resetButtonTitle: "清除搜索",
-                backButtonTitle: "关闭搜索",
-                noResultsText: "未找到相关结果",
-                footer: {
-                  selectText: "选择",
-                  selectKeyAriaLabel: "回车键",
-                  navigateText: "切换",
-                  navigateUpKeyAriaLabel: "向上箭头",
-                  navigateDownKeyAriaLabel: "向下箭头",
-                  closeText: "关闭",
-                  closeKeyAriaLabel: "Esc 键",
-                },
-              },
-            },
-          },
-        },
+        locales: localeSearchOptions,
         miniSearch: {
           options: {
             tokenize(text) {
