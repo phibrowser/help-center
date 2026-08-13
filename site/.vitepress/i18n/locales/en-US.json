@@ -82,6 +82,7 @@
       }
     }
   },
+  "searchQueries": ["memory", "incognito space", "password manager"],
   "customTheme": {
     "askPhi": "Ask Phi",
     "privacyControls": "Privacy controls",
