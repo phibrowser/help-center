@@ -28,14 +28,14 @@ Arc and Phi both separate the workspace layer from the isolation layer. In Phi, 
 
 Phi's **URL Rules** are inspired by Arc's Air Traffic Control: matching sites can open in the Space you assign, or ask you where to open them. The exact implementation is Phi's own, but the goal is the same: put links in the right context automatically.
 
-The biggest bookmark difference is that Phi keeps a full bookmark tree with folders. Arc dropped traditional bookmarks in favor of pinned tabs and Favorites; Phi keeps both ideas. Bookmarks stay organized in the sidebar and open in place as live tabs. Pinned tabs sit at the top for pages you live in, and they are scoped to the Profile, so they follow you across Spaces that share that Profile.
+The biggest bookmark difference is that Phi keeps a full bookmark tree with folders. Arc dropped traditional bookmarks in favor of pinned tabs and Favorites; Phi keeps both ideas. Bookmarks stay organized in the sidebar and open in place as live tabs. Pinned tabs sit at the top for pages you live in, and you choose whether they belong to one Space, one Profile, or the whole App.
 
 Phi does not have Arc's Peek equivalent. Opening a link from a pinned tab navigates normally inside the tab.
 
 Good next reads:
 
 - [Spaces & Profiles](/spaces/) for Spaces, Profiles, and URL Rules.
-- [Bookmarks & Pinned Tabs](/bookmarks/) for living bookmarks and Profile-scoped pinned tabs.
+- [Bookmarks & Pinned Tabs](/bookmarks/) for living bookmarks and configurable pinned tab scope.
 - [Themes & Appearance](/themes/) for per-Space colors and global themes.
 
 ## Coming from Dia

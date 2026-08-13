@@ -1,5 +1,5 @@
 ---
-description: "Understand Phi Browser's living bookmarks, sidebar bookmark organization, pinned tabs, per-Space and per-Profile behavior, and when to use each."
+description: "Understand Phi Browser's living bookmarks, sidebar organization, pinned tabs, configurable scope, and when to use each."
 ---
 
 # Bookmarks & Pinned Tabs
@@ -29,7 +29,21 @@ Pinned tabs sit at the top of the sidebar in a grid, for the handful of pages yo
 - **Reorder** pinned tabs by dragging them around the grid.
 - **Pin a Split.** **Pin Split** keeps a two-pane setup as a single pinned item that reopens both sides; **Unpin Split** undoes it.
 
-Pinned tabs belong to your **Profile**, not to a single Space, so they appear across every Space that shares that Profile. Bookmarks, by contrast, are per Space. See [Spaces & Profiles](/spaces/) for how those layers fit together.
+## Choose a pinned tab scope
+
+Open **Settings → Spaces**, then use **Pinned tab scope** to choose how widely your pinned tabs are shared. **Profile** is the default.
+
+| Scope       | Where pinned tabs appear                                       |
+| ----------- | -------------------------------------------------------------- |
+| **Space**   | Each Space has its own pinned tabs.                            |
+| **Profile** | Spaces using the same Profile share pinned tabs.               |
+| **App**     | Pinned tabs are shared across all regular Profiles and Spaces. |
+
+Incognito Spaces never show or allow pinned tabs, regardless of the scope you choose.
+
+Changing scope also moves your existing pinned tabs into the new arrangement. When you move to a narrower scope, Phi copies the current pinned tabs into each existing destination, and those copies can then be changed independently. When you move to a broader scope, Phi merges the existing sets. Unchanged copies are combined, while different versions are kept. Phi shows a confirmation before making either change.
+
+Bookmarks are always scoped to one Space. The pinned tab setting does not affect them. See [Spaces & Profiles](/spaces/) for how those layers fit together.
 
 ## Returning to the original page
 
@@ -41,7 +55,7 @@ To keep the current page, hold **Command (⌘)** while you double-click the pinn
 
 A simple split of responsibilities:
 
-- **Pinned tabs** are pages you live in, always at the top, one click away, and shared across the Spaces on your Profile.
+- **Pinned tabs** are pages you live in, always at the top, one click away, and shared at the Space, Profile, or App scope you choose.
 - **Bookmarks** are pages you want to keep, organised in folders, scoped to one Space, and opened in place when you need them.
 
 If you are switching from Arc or Dia, see [Switching to Phi](/switching-to-phi/) for how Phi's living sidebar, bookmarks, and pinned tabs compare. To bring bookmarks in from another browser or a file, or to save a Space's bookmarks back out to HTML, see [Importing & Exporting](/import-export/).

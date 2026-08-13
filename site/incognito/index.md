@@ -23,7 +23,7 @@ An Incognito Space always uses Phi's dedicated dark Incognito theme, so per-Spac
 
 - **History, cookies, and site data** live only in memory and die with the session.
 - **Bookmarks are unavailable.** An Incognito Space shows no bookmarks and does not let you create any.
-- **Pinned tabs are not shown.** Pinned tabs belong to a Profile's session, and an Incognito Space has no Profile behind it.
+- **Pinned tabs are not shown.** Incognito Spaces never show or allow pinned tabs, regardless of the pinned tab scope selected for regular browsing.
 - **AI features sit out.** The assistant chat is unavailable, and the sidebar's Memory button is hidden.
 - **Extensions sit out unless invited.** Only extensions you have allowed to run in incognito are active in a private session. See [below](#extensions-in-an-incognito-space).
 - **Importing browser data is blocked.** Phi refuses with _"Browser data can't be imported into Incognito. Switch to a regular Space or window, then try again."_
