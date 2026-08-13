@@ -4,9 +4,23 @@ import process from "node:process";
 
 import { createMarkdownRenderer } from "vitepress";
 
-const CJK_LOCALES = ["zh-Hans", "zh-Hant", "ja", "ko"];
+import {
+  defaultLocaleResource,
+  localeResources,
+} from "../site/.vitepress/i18n/locales/index.ts";
+
 const MARKDOWN_STRONG_PATTERN = /\*\*(.+?)\*\*/g;
 const HTML_STRONG_PATTERN = /<strong(?:\s|>)/g;
+const LANGUAGE_AGNOSTIC_FILES = [
+  "site/.vitepress/config.mts",
+  "site/.vitepress/i18n-config.ts",
+  "site/.vitepress/i18n/guide.ts",
+  "site/.vitepress/i18n/types.ts",
+  "site/.vitepress/theme/CookieConsent.vue",
+  "site/.vitepress/theme/PhiSidebarButton.vue",
+  "site/.vitepress/theme/custom.css",
+  "scripts/test-i18n.mjs",
+];
 
 async function collectMarkdownFiles(directory) {
   const entries = await readdir(directory, { withFileTypes: true });
@@ -96,19 +110,84 @@ function removeRenderedCode(html) {
     .replace(/<code(?:\s[^>]*)?>[\s\S]*?<\/code>/g, "");
 }
 
+function getContentDirectory(resource) {
+  return resource.root ? "site" : path.join("site", resource.key);
+}
+
+function isLocalizedContentFile(file, localizedDirectoryNames) {
+  const relativePath = path.relative("site", file);
+  return localizedDirectoryNames.some(
+    (directory) =>
+      relativePath === directory || relativePath.startsWith(`${directory}/`),
+  );
+}
+
 const renderer = await createMarkdownRenderer(process.cwd(), {}, "/help/");
 const failures = [];
+const localeSpecificTokens = localeResources.flatMap((resource) => [
+  ...(resource.root ? [] : [resource.key]),
+  resource.lang,
+  resource.label,
+]);
+
+for (const file of LANGUAGE_AGNOSTIC_FILES) {
+  const source = await readFile(file, "utf8");
+  for (const token of new Set(localeSpecificTokens)) {
+    if (source.includes(token)) {
+      failures.push(
+        `${file} contains locale-specific token ${JSON.stringify(token)}`,
+      );
+    }
+  }
+}
+
+const localizedResources = localeResources.filter((resource) => !resource.root);
+const localizedDirectoryNames = localizedResources.map(
+  (resource) => resource.key,
+);
+const rootFiles = (
+  await collectMarkdownFiles(getContentDirectory(defaultLocaleResource))
+).filter((file) => !isLocalizedContentFile(file, localizedDirectoryNames));
+const rootRelativeFiles = rootFiles.map((file) => path.relative("site", file));
 let checkedFiles = 0;
 
-for (const locale of CJK_LOCALES) {
-  const localeDirectory = path.join("site", locale);
+for (const resource of localeResources) {
+  const contentDirectory = getContentDirectory(resource);
   let files;
 
   try {
-    files = await collectMarkdownFiles(localeDirectory);
+    files = await collectMarkdownFiles(contentDirectory);
   } catch (error) {
-    if (error?.code === "ENOENT") continue;
+    if (error?.code === "ENOENT") {
+      failures.push(
+        `Locale ${resource.key} has no content directory at ${contentDirectory}`,
+      );
+      continue;
+    }
     throw error;
+  }
+
+  if (resource.root) {
+    files = files.filter(
+      (file) => !isLocalizedContentFile(file, localizedDirectoryNames),
+    );
+  } else {
+    const localizedRelativeFiles = files.map((file) =>
+      path.relative(contentDirectory, file),
+    );
+    const missingFiles = rootRelativeFiles.filter(
+      (file) => !localizedRelativeFiles.includes(file),
+    );
+    const extraFiles = localizedRelativeFiles.filter(
+      (file) => !rootRelativeFiles.includes(file),
+    );
+
+    for (const file of missingFiles) {
+      failures.push(`Locale ${resource.key} is missing ${file}`);
+    }
+    for (const file of extraFiles) {
+      failures.push(`Locale ${resource.key} has unexpected page ${file}`);
+    }
   }
 
   for (const file of files) {
@@ -145,14 +224,14 @@ for (const locale of CJK_LOCALES) {
 }
 
 if (failures.length > 0) {
-  console.error("CJK emphasis validation failed:\n");
+  console.error("i18n validation failed:\n");
   for (const failure of failures) console.error(`- ${failure}`);
   console.error(
-    "\nUse <strong>...</strong> only for the reported parser-incompatible spans.",
+    "\nUse <strong>...</strong> only for parser-incompatible emphasis spans.",
   );
   process.exitCode = 1;
 } else {
   console.log(
-    `CJK emphasis validation passed for ${checkedFiles} Markdown files.`,
+    `i18n validation passed for ${localeResources.length} locales and ${checkedFiles} Markdown files.`,
   );
 }

@@ -4,10 +4,6 @@ html {
   scrollbar-gutter: stable;
 }
 
-html[lang="zh-Hans"] {
-  --vp-code-copy-copied-text-content: "已复制";
-}
-
 /* Enlarge the nav bar logo (default is 24px). */
 .VPNavBarTitle .logo {
   height: 32px;

@@ -1,0 +1,118 @@
+{
+  "key": "zh-Hans",
+  "label": "简体中文",
+  "lang": "zh-Hans",
+  "root": false,
+  "site": {
+    "title": "Phi 帮助",
+    "description": "Phi Browser 帮助与常见问题。"
+  },
+  "theme": {
+    "nav": {
+      "product": "Phi Browser",
+      "guide": "指南",
+      "faq": "常见问题"
+    },
+    "groups": {
+      "startHere": "从这里开始",
+      "browserWorkspace": "浏览器工作区",
+      "assistantAutomation": "助理与自动化",
+      "privacyRecovery": "隐私与恢复"
+    },
+    "pages": {
+      "whatIsPhi": "什么是 Phi Browser？",
+      "gettingStarted": "开始使用",
+      "switchingToPhi": "迁移到 Phi",
+      "layouts": "布局与导航",
+      "spaces": "空间与个人资料",
+      "incognito": "无痕空间",
+      "bookmarks": "书签与固定标签页",
+      "importExport": "导入与导出",
+      "tabManagement": "管理标签页与书签",
+      "themes": "主题与外观",
+      "newTab": "新标签页与小组件",
+      "assistant": "认识你的助理",
+      "memory": "记忆",
+      "skills": "浏览器技能",
+      "automation": "自动化与 Phi Link",
+      "phiBrowserSkill": "phi-browser skill",
+      "phiCli": "Phi CLI",
+      "agentPasswords": "智能体密码管理器",
+      "sentinel": "Phi Sentinel",
+      "privacy": "隐私与数据",
+      "timeMachine": "时间机器备份"
+    },
+    "controls": {
+      "outline": "本页内容",
+      "previousPage": "上一页",
+      "nextPage": "下一页",
+      "appearance": "外观",
+      "lightMode": "切换到浅色主题",
+      "darkMode": "切换到深色主题",
+      "menu": "菜单",
+      "returnToTop": "返回顶部",
+      "changeLanguage": "切换语言",
+      "skipToContent": "跳到正文"
+    },
+    "notFound": {
+      "title": "页面未找到",
+      "quote": "你访问的页面不存在或已被移动。",
+      "linkLabel": "返回首页",
+      "linkText": "返回首页"
+    }
+  },
+  "search": {
+    "button": {
+      "buttonText": "搜索",
+      "buttonAriaLabel": "搜索文档"
+    },
+    "modal": {
+      "displayDetails": "显示详细列表",
+      "resetButtonTitle": "清除搜索",
+      "backButtonTitle": "关闭搜索",
+      "noResultsText": "未找到相关结果",
+      "footer": {
+        "selectText": "选择",
+        "selectKeyAriaLabel": "回车键",
+        "navigateText": "切换",
+        "navigateUpKeyAriaLabel": "向上箭头",
+        "navigateDownKeyAriaLabel": "向下箭头",
+        "closeText": "关闭",
+        "closeKeyAriaLabel": "Esc 键"
+      }
+    }
+  },
+  "customTheme": {
+    "askPhi": "询问 Phi",
+    "privacyControls": "隐私控制",
+    "cookieSettings": "Cookie 设置",
+    "privacyChoices": "你的隐私选择",
+    "cookieConsent": "Cookie 同意选项",
+    "bannerBeforePolicy": "我们使用 Cookie 来运行本网站；仅在获得你的许可后，才会分析流量并衡量广告效果。详情请参阅我们的",
+    "privacyPolicy": "隐私政策",
+    "bannerAfterPolicy": "。",
+    "rejectAll": "全部拒绝",
+    "acceptAll": "全部接受",
+    "customizeSettings": "自定义设置",
+    "cookiePreferences": "Cookie 偏好设置",
+    "close": "关闭",
+    "preferencesBeforePolicy": "请选择本网站可以使用哪些 Cookie。你的选择会保存在此浏览器中，并且可以随时在这里更改。详情请参阅我们的",
+    "preferencesAfterPolicy": "。",
+    "saleAndSharingDescription": "出于广告衡量目的与广告合作伙伴共享数据，在美国某些州的法律下可能被视为“出售”或“共享”。你可以一键选择退出。",
+    "optedOut": "你已在此浏览器上选择退出。",
+    "optOutOfSaleAndSharing": "选择退出出售和共享",
+    "functional": "功能性",
+    "functionalDescription": "网站正常运行所必需，例如记住你的 Cookie 选择。始终启用；不包含分析或广告用途。",
+    "alwaysOn": "始终启用",
+    "statistics": "统计",
+    "statisticsDescription": "通过分析服务（Google Analytics、PostHog）帮助我们了解网站的使用情况。",
+    "marketing": "营销",
+    "marketingDescription": "允许广告合作伙伴的转化工具衡量我们的广告是否有效。这些工具仅用于衡量本网站的广告效果，不会用于在这里向你展示广告。",
+    "gpcDisabled": "已根据浏览器的全球隐私控制（GPC）信号关闭。",
+    "saveChoices": "保存选择"
+  },
+  "markdown": {
+    "copyCode": "复制代码",
+    "copied": "已复制"
+  }
+}

@@ -10,7 +10,11 @@ Pilot branch integration updated: 2026-08-11 10:09:59 CST (+0800).
 
 Exploratory branch renamed: 2026-08-11 12:21:47 CST (+0800).
 
-Status: implemented and validated locally on the `experiment/zh-hans-i18n` branch. Not independently translated-reviewed, privacy-reviewed, legally reviewed, deployed, or published.
+Language-agnostic resource refactor performed: 2026-08-13 10:35:41 CST (+0800).
+
+Language-support branch renamed: 2026-08-13 12:05:59 CST (+0800).
+
+Status: implemented and validated locally on the `experiment/i18n-language-support` branch. Not independently translated-reviewed, privacy-reviewed, legally reviewed, deployed, or published.
 
 Pilot maturity warning: this branch is explicitly an i18n test, not a complete or production-ready multilingual release. Only Simplified Chinese is implemented. The other seven requested locales are not ready, and exercising the architecture with one translated locale cannot reveal every routing, typography, search, content-workflow, or deployment issue that later languages may expose. The implementation and its checks are expected to require further refinement as those locales are piloted.
 
@@ -49,17 +53,17 @@ The existing implicit English language tag, `en-US`, was preserved rather than c
 
 ### Locale configuration
 
-`site/.vitepress/i18n-config.ts` now owns the locale-specific navigation and theme configuration.
+Locale data is resource-driven rather than embedded in application configuration:
 
-It defines:
+- `site/.vitepress/i18n/locales/*.json` contains translated UI resources;
+- `site/.vitepress/i18n/locales/index.ts` is the explicit locale registration list;
+- `site/.vitepress/i18n/guide.ts` contains the language-neutral guide structure and routes;
+- `site/.vitepress/i18n/types.ts` defines the resource contract;
+- `site/.vitepress/i18n-config.ts` generically builds VitePress locales, navigation, sidebars, search translations, route prefixes, and fallback lookup.
 
-- the English root locale;
-- the `zh-Hans` locale and `/zh-Hans/` route prefix;
-- one shared guide structure;
-- translated navigation, sidebar, accessibility, document-footer, appearance, and not-found copy;
-- locale-aware sidebar links.
+The core configuration does not branch on a language code and contains no translated UI literals. Each resource declares its key, BCP 47 language tag, root status, site metadata, theme labels, search copy, project-owned component copy, and Markdown control labels. Exactly one resource must declare itself as the root locale. Unknown locale indexes fall back to that resource rather than to another translated language.
 
-The guide structure is shared, while each locale supplies labels. This keeps route parity explicit without introducing a runtime i18n framework.
+This keeps route parity explicit without introducing a runtime i18n framework. Adding a language still requires explicit registration, but it does not require modifying the generic configuration or Vue components.
 
 ### Content
 
@@ -88,13 +92,13 @@ Markdown-it's CommonMark emphasis rules do not recognize some closing `**` delim
 
 The 403 spans that VitePress parses correctly remain normal Markdown. Only the 57 parser-incompatible spans use semantic `<strong>...</strong>` markup. Markdown links inside those exceptions remain normal Markdown links, so `<strong>[记忆](...)</strong>会` renders as a bold link without adding typographically unwanted spaces around Chinese text.
 
-`scripts/test-cjk-emphasis.mjs` renders CJK Markdown with the installed VitePress renderer. It fails when a Markdown strong span cannot close in its surrounding context, when a prose delimiter is emitted literally, or when the intended and rendered strong-span counts differ. `pnpm test:i18n` runs it directly, and `pnpm build` runs it before the production build. The check covers any present `zh-Hans`, `zh-Hant`, `ja`, and `ko` trees.
+`scripts/test-i18n.mjs` imports the registered locale resources and validates every registered content tree with the installed VitePress renderer. It fails when a locale directory is missing, page parity differs from the root tree, a Markdown strong span cannot close in context, a prose delimiter is emitted literally, or the intended and rendered strong-span counts differ. It also rejects registered locale keys, language tags, and labels in the generic config, theme adapters, components, CSS, and test itself, preventing future language-specific branches from silently returning. `pnpm test:i18n` runs it directly, and `pnpm build` runs it before the production build. The test contains no language list.
 
 ### Theme and custom components
 
 The default VitePress theme receives locale-specific labels through `themeConfig`.
 
-`site/.vitepress/theme/i18n.ts` contains a small typed dictionary for project-owned Vue UI:
+Each locale JSON resource contains project-owned Vue UI copy for:
 
 - Ask Phi;
 - footer privacy controls;
@@ -103,7 +107,7 @@ The default VitePress theme receives locale-specific labels through `themeConfig
 - consent category and Global Privacy Control text;
 - accessibility labels.
 
-`CookieConsent.vue` and `PhiSidebarButton.vue` select this copy from VitePress's reactive active language. Consent storage and analytics behavior were not changed.
+The generic locale builder attaches `customThemeCopy` to each locale's typed VitePress theme configuration. `CookieConsent.vue` and `PhiSidebarButton.vue` read that active theme data directly; neither component imports the locale registry, knows a language code, or contains translated text. Consent storage and analytics behavior were not changed.
 
 The main-site Privacy Policy link intentionally remains `/privacy/`. The main marketing site does not currently publish a Chinese policy route, so Chinese Help users still reach the English authoritative policy.
 
@@ -113,8 +117,8 @@ VitePress still uses local MiniSearch indexes and generates one independent inde
 
 The implementation adds:
 
-- Simplified Chinese search button, modal, footer, and accessibility copy;
-- a shared `Intl.Segmenter` word tokenizer so CJK queries are tokenized rather than relying on whitespace;
+- search button, modal, footer, and accessibility copy generated from every registered locale resource;
+- a shared `Intl.Segmenter` word tokenizer so scripts without whitespace boundaries are tokenized without language branches;
 - representative English and Simplified Chinese query checks.
 
 VitePress 1.6.4 applies one tokenizer configuration to all locale indexes. English query behavior was therefore tested after adding the CJK-capable tokenizer.
@@ -123,7 +127,7 @@ VitePress 1.6.4 applies one tokenizer configuration to all locale indexes. Engli
 
 Installed VitePress 1.6.4 does not support the newer per-locale `markdown` key documented by current online VitePress documentation.
 
-The project has one code block. A narrow Markdown fence-renderer adaptation changes its Simplified Chinese copy-button title to “复制代码”, while locale-scoped CSS changes the copied-state label to “已复制”. English remains “Copy Code” and “Copied”.
+A narrow Markdown fence-renderer adaptation obtains the copy-button title from the active locale resource. A locale-aware head transform obtains the copied-state CSS label from the same resource. The renderer and CSS mechanism contain no language code or translated literal. English currently supplies “Copy Code” and “Copied”, while Simplified Chinese supplies “复制代码” and “已复制”.
 
 This workaround is intentionally limited to the missing 1.6.4 capability. It should be removed after a future VitePress upgrade provides and validates native per-locale Markdown renderer copy.
 
@@ -231,14 +235,12 @@ Evidence of completion should be a recorded QA result, including the tested buil
 
 For each future locale:
 
-1. Add the canonical locale and route prefix to `i18n-config.ts`.
-2. Supply all locale theme labels using the existing shared guide structure.
-3. Add local-search UI translations.
-4. Add project-owned component copy in `theme/i18n.ts`.
-5. Add a complete 23-file Markdown tree with locale-scoped links, updating this count whenever the English source tree changes. Keep normal Markdown emphasis by default; use `<strong>` only where `pnpm test:i18n` reports a parser-incompatible CJK span.
-6. Add language-specific search segmentation only if the shared tokenizer and acceptance tests require it.
-7. Run the same parity, link, anchor, generated metadata, search, and manual checks.
-8. Obtain locale content review and any required privacy/legal review before publication.
+1. Add one JSON resource under `site/.vitepress/i18n/locales/` that satisfies the typed resource contract, including the canonical BCP 47 tag, VitePress theme labels, search UI, project-owned component copy, and Markdown controls.
+2. Register that resource in `site/.vitepress/i18n/locales/index.ts`. Do not add a language branch to the generic config, theme components, or test.
+3. Add a complete 23-file Markdown tree under `site/<locale>/` with locale-scoped links, updating this count whenever the English source tree changes. Keep normal Markdown emphasis by default; use `<strong>` only where `pnpm test:i18n` reports a parser-incompatible span.
+4. Add language-specific search behavior only if real acceptance tests demonstrate that the shared tokenizer is insufficient. Express the capability through resource data or a generic extension point rather than a language-code conditional.
+5. Run the same parity, link, anchor, generated metadata, search, and manual checks.
+6. Obtain locale content review and any required privacy/legal review before publication.
 
 Do not use Simplified Chinese as a fallback for `zh-Hant`. Traditional Chinese must receive its own reviewed content, and missing Traditional Chinese copy should fall back to English rather than Simplified Chinese.
 
