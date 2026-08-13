@@ -1,0 +1,119 @@
+{
+  "locale": "zh-Hans",
+  "sourceRevision": "4231050b892770b5998235080c4b543a1b27f856",
+  "owners": {
+    "translation": "Initial i18n pilot author",
+    "contentReview": ""
+  },
+  "pages": {
+    "agent-passwords/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "ai/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "automation/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "bookmarks/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "faq/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "get-started/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "import-export/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "incognito/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "layouts/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "memory/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "new-tab/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "phi-browser-skill/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "phi-cli/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "privacy/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "sentinel/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "skills/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "spaces/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "switching-to-phi/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "tab-management/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "themes/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "time-machine/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "what-is-phi-browser/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    }
+  },
+  "reviews": {
+    "productTerminology": {
+      "status": "todo",
+      "owner": "",
+      "evidence": ""
+    },
+    "privacyLegal": {
+      "status": "todo",
+      "owner": "",
+      "evidence": ""
+    },
+    "searchQa": {
+      "status": "todo",
+      "owner": "",
+      "evidence": ""
+    }
+  }
+}

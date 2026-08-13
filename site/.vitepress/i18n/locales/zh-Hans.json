@@ -82,6 +82,7 @@
       }
     }
   },
+  "searchQueries": ["记忆", "无痕空间", "密码管理器"],
   "customTheme": {
     "askPhi": "询问 Phi",
     "privacyControls": "隐私控制",

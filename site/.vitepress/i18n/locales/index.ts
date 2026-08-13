@@ -1,15 +1,20 @@
-import enUS from "./en-US.json" with { type: "json" };
-import zhHans from "./zh-Hans.json" with { type: "json" };
+import { readFileSync } from "node:fs";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+import { LocaleRegistrySchema, LocaleResourceSchema } from "../schema.ts";
 import type { LocaleResource } from "../types.ts";
 
-function defineLocale(resource: LocaleResource): LocaleResource {
-  return resource;
-}
+const localeDirectory = dirname(fileURLToPath(import.meta.url));
+const registry = LocaleRegistrySchema.parse(
+  JSON.parse(readFileSync(resolve(localeDirectory, "registry.json"), "utf8")),
+);
 
-export const localeResources = [
-  defineLocale(enUS),
-  defineLocale(zhHans),
-] as const;
+export const localeResources: readonly LocaleResource[] =
+  registry.resources.map((resourceFile) =>
+    LocaleResourceSchema.parse(
+      JSON.parse(readFileSync(resolve(localeDirectory, resourceFile), "utf8")),
+    ),
+  );
 
 const rootLocales = localeResources.filter((resource) => resource.root);
 

@@ -7,9 +7,13 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev site --port ${PORT:-3000}",
-    "build": "pnpm test:i18n && vitepress build site",
+    "build": "pnpm test:i18n && vitepress build site && pnpm test:i18n:build",
     "preview": "vitepress preview site --port ${PORT:-3000}",
+    "i18n:scaffold": "node scripts/scaffold-locale.mjs",
+    "i18n:status": "node scripts/check-localization-status.mjs",
+    "i18n:promote": "node scripts/promote-locale.mjs",
     "test:i18n": "node scripts/test-i18n.mjs",
+    "test:i18n:build": "node scripts/test-i18n-build.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "prepare": "husky"

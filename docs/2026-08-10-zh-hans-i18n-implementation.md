@@ -14,6 +14,8 @@ Language-agnostic resource refactor performed: 2026-08-13 10:35:41 CST (+0800).
 
 Language-support branch renamed: 2026-08-13 12:05:59 CST (+0800).
 
+Localization handoff workflow added: 2026-08-13 12:39:32 CST (+0800).
+
 Status: implemented and validated locally on the `experiment/i18n-language-support` branch. Not independently translated-reviewed, privacy-reviewed, legally reviewed, deployed, or published.
 
 Pilot maturity warning: this branch is explicitly an i18n test, not a complete or production-ready multilingual release. Only Simplified Chinese is implemented. The other seven requested locales are not ready, and exercising the architecture with one translated locale cannot reveal every routing, typography, search, content-workflow, or deployment issue that later languages may expose. The implementation and its checks are expected to require further refinement as those locales are piloted.
@@ -56,12 +58,13 @@ The existing implicit English language tag, `en-US`, was preserved rather than c
 Locale data is resource-driven rather than embedded in application configuration:
 
 - `site/.vitepress/i18n/locales/*.json` contains translated UI resources;
-- `site/.vitepress/i18n/locales/index.ts` is the explicit locale registration list;
+- `site/.vitepress/i18n/locales/registry.json` is the explicit locale registration list;
+- `site/.vitepress/i18n/locales/index.ts` validates and loads registered resources;
 - `site/.vitepress/i18n/guide.ts` contains the language-neutral guide structure and routes;
 - `site/.vitepress/i18n/types.ts` defines the resource contract;
 - `site/.vitepress/i18n-config.ts` generically builds VitePress locales, navigation, sidebars, search translations, route prefixes, and fallback lookup.
 
-The core configuration does not branch on a language code and contains no translated UI literals. Each resource declares its key, BCP 47 language tag, root status, site metadata, theme labels, search copy, project-owned component copy, and Markdown control labels. Exactly one resource must declare itself as the root locale. Unknown locale indexes fall back to that resource rather than to another translated language.
+The core configuration does not branch on a language code and contains no translated UI literals. Each resource declares its key, BCP 47 language tag, root status, site metadata, theme labels, search copy and representative queries, project-owned component copy, and Markdown control labels. Zod validates external JSON resources at load time. Exactly one resource must declare itself as the root locale. Unknown locale indexes fall back to that resource rather than to another translated language.
 
 This keeps route parity explicit without introducing a runtime i18n framework. Adding a language still requires explicit registration, but it does not require modifying the generic configuration or Vue components.
 
@@ -92,7 +95,9 @@ Markdown-it's CommonMark emphasis rules do not recognize some closing `**` delim
 
 The 403 spans that VitePress parses correctly remain normal Markdown. Only the 57 parser-incompatible spans use semantic `<strong>...</strong>` markup. Markdown links inside those exceptions remain normal Markdown links, so `<strong>[记忆](...)</strong>会` renders as a bold link without adding typographically unwanted spaces around Chinese text.
 
-`scripts/test-i18n.mjs` imports the registered locale resources and validates every registered content tree with the installed VitePress renderer. It fails when a locale directory is missing, page parity differs from the root tree, a Markdown strong span cannot close in context, a prose delimiter is emitted literally, or the intended and rendered strong-span counts differ. It also rejects registered locale keys, language tags, and labels in the generic config, theme adapters, components, CSS, and test itself, preventing future language-specific branches from silently returning. `pnpm test:i18n` runs it directly, and `pnpm build` runs it before the production build. The test contains no language list.
+`scripts/test-i18n.mjs` imports the registered locale resources and validates every registered content tree with the installed VitePress renderer. It fails when a locale directory is missing, page parity differs from the root tree, an internal Help link leaves its locale or points to a missing page or anchor, a Markdown strong span cannot close in context, a prose delimiter is emitted literally, or the intended and rendered strong-span counts differ. It also requires a current English source baseline for every registered locale and rejects registered locale keys, language tags, and labels in the generic config, components, CSS, and test itself, preventing future language-specific branches from silently returning. The test contains no language list.
+
+`scripts/test-i18n-build.mjs` runs after VitePress builds. It validates every generated page's language, canonical URL, reciprocal `hreflang`, locale theme copy, Markdown controls, sitemap entry, local-search index, and resource-declared representative search queries. `pnpm build` runs both source and generated-output validation.
 
 ### Theme and custom components
 
@@ -156,6 +161,14 @@ site/.vitepress/dist/help/zh-Hans/memory/index.html
 
 under the same Cloudflare assets root.
 
+### Translation handoff workflow
+
+`docs/localization-guide.md` is the operational guide for translators, reviewers, and maintainers. New translations begin under `localization/<locale>/`, which is outside the publishable VitePress tree. `pnpm i18n:scaffold` copies the current English tree and records its Git source revision; copied English therefore cannot accidentally appear in the language menu or deployment.
+
+`status.json` tracks owners, every page's translation and independent content-review state, and product terminology, privacy/legal, and search QA gates with evidence. `pnpm i18n:status` reports readiness and stale English baselines. `pnpm i18n:promote` is the explicit publication-tree transition; it refuses incomplete or stale drafts and rolls back copied files and registry changes if source validation fails.
+
+The existing `zh-Hans` status record truthfully marks translation as complete while leaving independent content review and global review gates open.
+
 ## Validation performed
 
 ### Repository validation
@@ -164,9 +177,12 @@ The final validation commands are recorded in the task handoff. The implementati
 
 ```sh
 pnpm format:check
+pnpm i18n:status
 pnpm test:i18n
 pnpm build
 ```
+
+`pnpm i18n:status` may report registered review work still pending without failing when the published content baseline remains current. Draft locales fail until all promotion gates are approved.
 
 ### Generated output checks
 
@@ -220,27 +236,27 @@ Evidence of completion should be a recorded QA result, including the tested buil
 
 ## Open issues and resolution conditions
 
-| Open issue                                                                                            | Responsible party                                                                                         | Required timing                                          | Resolution condition and evidence                                                                                      |
-| ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Simplified Chinese prose has not had independent native-language review                               | Simplified Chinese content reviewer with Phi product knowledge                                            | Before public deployment                                 | Review all 23 final Markdown files; record approval or corrections against the reviewed commit                         |
-| Translated Cookie Consent and privacy wording has not had privacy/legal review                        | Privacy or legal professional qualified for the applicable publication jurisdictions and engagement scope | Before public deployment                                 | Review the final rendered copy, consent behavior, and policy destination; record approval against the deployed wording |
-| The linked main-site Privacy Policy remains English                                                   | Product, privacy, and main-site owners                                                                    | Before describing the Chinese journey as fully localized | Approve the English authoritative destination or publish and link an approved Chinese policy                           |
-| Runtime mobile, extension-only Ask Phi, and locale not-found behavior has not been manually exercised | Help-center owner                                                                                         | Before approving this pilot                              | Complete the manual verification checklist and retain the QA result                                                    |
-| Simplified Chinese search relevance has only representative automated coverage                        | Help-center owner and Simplified Chinese reviewer                                                         | During pilot QA                                          | Test real user queries and record acceptable results or required tokenizer changes                                     |
-| Per-locale Markdown copy uses a VitePress 1.6.4 workaround                                            | Help-center maintainer                                                                                    | On a future VitePress upgrade                            | Replace it with native locale Markdown configuration after dependency review and passing regression tests              |
-| The i18n architecture has only been exercised with one translated locale                              | Help-center owner and maintainers                                                                         | Before treating the design as stable                     | Pilot at least one additional locale, record newly discovered issues, and update architecture and checks               |
-| The remaining seven requested locales are not implemented                                             | Locale content owners                                                                                     | After the owner accepts this pilot                       | Add one complete reviewed content and copy set per locale and repeat parity, search, SEO, and manual validation        |
+| Open issue                                                                                            | Responsible party                                                                                         | Required timing                                          | Resolution condition and evidence                                                                                           |
+| ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Simplified Chinese prose has not had independent native-language review                               | Simplified Chinese content reviewer with Phi product knowledge                                            | Before public deployment                                 | Review all 23 final Markdown files; record approval or corrections against the reviewed commit                              |
+| Translated Cookie Consent and privacy wording has not had privacy/legal review                        | Privacy or legal professional qualified for the applicable publication jurisdictions and engagement scope | Before public deployment                                 | Review the final rendered copy, consent behavior, and policy destination; record approval against the deployed wording      |
+| The linked main-site Privacy Policy remains English                                                   | Product, privacy, and main-site owners                                                                    | Before describing the Chinese journey as fully localized | Approve the English authoritative destination or publish and link an approved Chinese policy                                |
+| Runtime mobile, extension-only Ask Phi, and locale not-found behavior has not been manually exercised | Help-center owner                                                                                         | Before approving this pilot                              | Complete the manual verification checklist and retain the QA result                                                         |
+| Simplified Chinese search relevance has only representative automated coverage                        | Help-center owner and Simplified Chinese reviewer                                                         | During pilot QA                                          | Test real user queries and record acceptable results or required tokenizer changes                                          |
+| Per-locale Markdown copy uses a VitePress 1.6.4 workaround                                            | Help-center maintainer                                                                                    | On a future VitePress upgrade                            | Replace it with native locale Markdown configuration after dependency review and passing regression tests                   |
+| The i18n architecture has only been exercised with one translated locale                              | Help-center owner and maintainers                                                                         | Before treating the design as stable                     | Pilot at least one additional locale through scaffold, review, promotion, and production QA; record newly discovered issues |
+| The remaining seven requested locales are not implemented                                             | Locale content owners                                                                                     | After the owner accepts this pilot                       | Follow `docs/localization-guide.md`; retain current source revision and review evidence for every locale                    |
 
 ## Adding the remaining locales
 
-For each future locale:
+For each future locale, follow `docs/localization-guide.md`:
 
-1. Add one JSON resource under `site/.vitepress/i18n/locales/` that satisfies the typed resource contract, including the canonical BCP 47 tag, VitePress theme labels, search UI, project-owned component copy, and Markdown controls.
-2. Register that resource in `site/.vitepress/i18n/locales/index.ts`. Do not add a language branch to the generic config, theme components, or test.
-3. Add a complete 23-file Markdown tree under `site/<locale>/` with locale-scoped links, updating this count whenever the English source tree changes. Keep normal Markdown emphasis by default; use `<strong>` only where `pnpm test:i18n` reports a parser-incompatible span.
-4. Add language-specific search behavior only if real acceptance tests demonstrate that the shared tokenizer is insufficient. Express the capability through resource data or a generic extension point rather than a language-code conditional.
-5. Run the same parity, link, anchor, generated metadata, search, and manual checks.
-6. Obtain locale content review and any required privacy/legal review before publication.
+1. Run `pnpm i18n:scaffold <locale> '<label>'` from a clean, committed root-content baseline.
+2. Translate the isolated resource and complete 23-file Markdown draft under `localization/<locale>/`.
+3. Assign owners and maintain page and global review evidence in `status.json`.
+4. Use `pnpm i18n:status <locale>` until the draft is current and ready.
+5. Have a maintainer run `pnpm i18n:promote <locale>`; do not manually add language branches to generic code.
+6. Run `pnpm build`, manual locale QA, required content and privacy/legal review, and deployment verification.
 
 Do not use Simplified Chinese as a fallback for `zh-Hant`. Traditional Chinese must receive its own reviewed content, and missing Traditional Chinese copy should fall back to English rather than Simplified Chinese.
 

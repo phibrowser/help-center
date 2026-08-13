@@ -2,6 +2,14 @@ import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 
+import {
+  LOCALIZATION_DIRECTORY,
+  getPromotionBlockers,
+  getRootContentFiles,
+  isRootContentCurrent,
+  readLocalizationStatus,
+} from "./i18n-utils.mjs";
+
 import { createMarkdownRenderer } from "vitepress";
 
 import {
@@ -16,6 +24,7 @@ const LANGUAGE_AGNOSTIC_FILES = [
   "site/.vitepress/i18n-config.ts",
   "site/.vitepress/i18n/guide.ts",
   "site/.vitepress/i18n/types.ts",
+  "site/.vitepress/i18n/schema.ts",
   "site/.vitepress/theme/CookieConsent.vue",
   "site/.vitepress/theme/PhiSidebarButton.vue",
   "site/.vitepress/theme/custom.css",
@@ -110,6 +119,37 @@ function removeRenderedCode(html) {
     .replace(/<code(?:\s[^>]*)?>[\s\S]*?<\/code>/g, "");
 }
 
+function getRenderedAnchorIds(html) {
+  return new Set(
+    [...html.matchAll(/\sid="([^"]+)"/g)].map((match) => match[1]),
+  );
+}
+
+function getInternalLinks(html) {
+  return [...html.matchAll(/<a\s[^>]*href="([^"]+)"/g)]
+    .map((match) => match[1])
+    .filter((href) => href.startsWith("/help/") || href.startsWith("#"));
+}
+
+function resolveLinkSourceFile(href, currentFile, resource) {
+  const [pathPart, anchor] = href.split("#", 2);
+  if (pathPart === "") return { file: currentFile, anchor };
+
+  const localeBase = resource.root ? "/help/" : `/help/${resource.key}/`;
+  if (!pathPart.startsWith(localeBase)) {
+    return { wrongLocale: true };
+  }
+
+  const route = pathPart.slice(localeBase.length).replace(/^\/|\/$/g, "");
+  const contentDirectory = getContentDirectory(resource);
+  return {
+    file: route
+      ? path.join(contentDirectory, route, "index.md")
+      : path.join(contentDirectory, "index.md"),
+    anchor,
+  };
+}
+
 function getContentDirectory(resource) {
   return resource.root ? "site" : path.join("site", resource.key);
 }
@@ -145,11 +185,44 @@ const localizedResources = localeResources.filter((resource) => !resource.root);
 const localizedDirectoryNames = localizedResources.map(
   (resource) => resource.key,
 );
-const rootFiles = (
-  await collectMarkdownFiles(getContentDirectory(defaultLocaleResource))
-).filter((file) => !isLocalizedContentFile(file, localizedDirectoryNames));
+const rootFiles = getRootContentFiles(
+  await collectMarkdownFiles(getContentDirectory(defaultLocaleResource)),
+  localizedDirectoryNames,
+);
 const rootRelativeFiles = rootFiles.map((file) => path.relative("site", file));
 let checkedFiles = 0;
+
+for (const resource of localizedResources) {
+  const statusFile = path.join(
+    LOCALIZATION_DIRECTORY,
+    resource.key,
+    "status.json",
+  );
+  try {
+    const status = await readLocalizationStatus(statusFile);
+    if (status.locale !== resource.key) {
+      failures.push(`${statusFile} locale does not match ${resource.key}`);
+    }
+    for (const blocker of getPromotionBlockers(status, rootRelativeFiles, {
+      requireApproval: false,
+    })) {
+      failures.push(`${statusFile}: ${blocker}`);
+    }
+    if (!isRootContentCurrent(status.sourceRevision, rootFiles)) {
+      failures.push(
+        `${resource.key} translation is stale relative to root content; update ${statusFile}`,
+      );
+    }
+  } catch (error) {
+    if (error?.code === "ENOENT") {
+      failures.push(
+        `${resource.key} is registered but ${statusFile} is missing`,
+      );
+    } else {
+      throw error;
+    }
+  }
+}
 
 for (const resource of localeResources) {
   const contentDirectory = getContentDirectory(resource);
@@ -202,7 +275,8 @@ for (const resource of localeResources) {
       );
     }
 
-    const renderedProse = removeRenderedCode(renderer.render(source));
+    const renderedHtml = renderer.render(source);
+    const renderedProse = removeRenderedCode(renderedHtml);
     const intendedStrongCount =
       countMatches(proseSource, MARKDOWN_STRONG_PATTERN) +
       countMatches(proseSource, HTML_STRONG_PATTERN);
@@ -219,6 +293,30 @@ for (const resource of localeResources) {
       failures.push(
         `${file} intends ${intendedStrongCount} strong spans but renders ${renderedStrongCount}`,
       );
+    }
+
+    for (const href of getInternalLinks(renderedHtml)) {
+      const target = resolveLinkSourceFile(href, file, resource);
+      if (target.wrongLocale) {
+        failures.push(`${file} links outside its locale tree: ${href}`);
+        continue;
+      }
+
+      try {
+        const targetSource = await readFile(target.file, "utf8");
+        if (target.anchor) {
+          const targetHtml = renderer.render(targetSource);
+          if (!getRenderedAnchorIds(targetHtml).has(target.anchor)) {
+            failures.push(`${file} links to missing anchor ${href}`);
+          }
+        }
+      } catch (error) {
+        if (error?.code === "ENOENT") {
+          failures.push(`${file} links to missing page ${href}`);
+        } else {
+          throw error;
+        }
+      }
     }
   }
 }
