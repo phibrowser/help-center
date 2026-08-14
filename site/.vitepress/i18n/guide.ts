@@ -1,7 +1,12 @@
 export const guideGroups = [
   {
     key: "startHere",
-    items: ["whatIsPhi", "gettingStarted", "switchingToPhi"],
+    items: [
+      "whatIsPhi",
+      "gettingStarted",
+      "switchingToPhi",
+      "tipsAndShortcuts",
+    ],
   },
   {
     key: "browserWorkspace",
@@ -39,6 +44,7 @@ export const guideRoutes = {
   whatIsPhi: "/what-is-phi-browser/",
   gettingStarted: "/get-started/",
   switchingToPhi: "/switching-to-phi/",
+  tipsAndShortcuts: "/tips-and-shortcuts/",
   layouts: "/layouts/",
   spaces: "/spaces/",
   incognito: "/incognito/",

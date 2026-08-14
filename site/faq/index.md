@@ -27,7 +27,7 @@ A **Space** is a workspace in the sidebar with its own name, icon, color, and bo
 :::
 
 ::: details Can one Profile have several Spaces?
-Yes. Each Space belongs to exactly one Profile, but a Profile can back several Spaces. Spaces that share a Profile share the same logins and pinned tabs. To keep two Spaces fully separated, cookies and signed-in accounts included, give them different Profiles.
+Yes. Each Space belongs to exactly one Profile, but a Profile can back several Spaces. Spaces that share a Profile share the same logins. Whether they share pinned tabs depends on the pinned tab scope you choose. To keep two Spaces fully separated, cookies and signed-in accounts included, give them different Profiles.
 :::
 
 ::: details How do I create a Space?
@@ -35,7 +35,7 @@ Create a Space from the Spaces strip in the sidebar. Give it a name and choose w
 :::
 
 ::: details What happens when I switch Spaces?
-The sidebar's tabs, bookmarks, and theme change to match the Space, and Phi brings up the Space's window (opening one if needed). Pinned tabs stay the same across Spaces that share a Profile, because they belong to the Profile's session.
+The sidebar's tabs, bookmarks, and theme change to match the Space, and Phi brings up the Space's window (opening one if needed). Pinned tabs change or stay visible according to the Space, Profile, or App scope selected in **Settings → Spaces**.
 :::
 
 ::: details Does each Space have its own bookmarks and theme?
@@ -47,7 +47,7 @@ URL Rules open matching sites in a Space you assign, no matter where you click o
 :::
 
 ::: details What happens if I delete a Space?
-Deleting a Space also removes the bookmarks and URL Rules that belong to it. This cannot be undone. Pinned tabs belong to the Profile rather than the Space, so they stay, and the Profile with its cookies, history, and logins is not deleted by removing a Space.
+Deleting a Space also removes the bookmarks and URL Rules that belong to it. This cannot be undone. Space-scoped pinned tabs belonging to that Space are removed too; Profile-scoped and App-scoped pinned tabs stay. The Profile with its cookies, history, and logins is not deleted by removing a Space.
 :::
 
 ::: details How is this different from Arc and Dia?
@@ -111,7 +111,7 @@ It opens in place, so the bookmark's sidebar entry becomes its live tab instead 
 :::
 
 ::: details Are bookmarks and pinned tabs per Space?
-Bookmarks are per Space, and each Space keeps its own set. Pinned tabs belong to your Profile, so they appear across every Space that shares that Profile. See [Spaces & Profiles](#spaces-profiles).
+Bookmarks are always per Space, and each Space keeps its own set. Pinned tabs can be scoped to one Space, shared by Spaces using the same Profile, or shared across the App. Choose the scope in **Settings → Spaces**. **Profile** is the default. See [Bookmarks & Pinned Tabs](/bookmarks/#choose-a-pinned-tab-scope).
 :::
 
 ::: details How do I pin or unpin a tab?
@@ -167,7 +167,7 @@ Yes, in **Settings → Phi AI**. Turning AI off closes your AI conversations and
 :::
 
 ::: details What are the main AI components?
-Four parts, each with a distinct job: **Memory**, the **Assistant**, **Agentic** capabilities, and **Skills**.
+Four parts, each with a distinct job: **Memory**, the **Assistant**, **Agentic** capabilities, and **Browser Skills**.
 :::
 
 ::: details What is Phi Memory?
@@ -281,7 +281,7 @@ No. Phi does not use your browsing-derived memory or AI interactions to train mo
 :::
 
 ::: details Does Phi collect usage statistics?
-Yes. Phi sends anonymous usage statistics to Phinomenon only while the **Help improve Phi's features and performance** switch is on, and the switch ships enabled. The statistics are about the browser itself — which features get used and how the app performs. They never include the pages you visit, your Memory, or your AI conversations. Reports carry a random installation identifier that has nothing to do with your Phi account. See [Privacy & Your Data](/privacy/#usage-statistics).
+Yes. Phi sends anonymous usage statistics to Phinomenon only while the **Help improve Phi's features and performance** switch is on, and the switch ships enabled. The statistics are about the browser itself: which features get used and how the app performs. They never include the pages you visit, your Memory, or your AI conversations. Reports carry a random installation identifier that has nothing to do with your Phi account. See [Privacy & Your Data](/privacy/#usage-statistics).
 :::
 
 ::: details How do I turn usage statistics off?
