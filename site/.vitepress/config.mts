@@ -123,6 +123,7 @@ const guideSidebar: DefaultTheme.SidebarItem[] = [
       { text: "What is Phi Browser?", link: "/what-is-phi-browser/" },
       { text: "Getting Started", link: "/get-started/" },
       { text: "Switching to Phi", link: "/switching-to-phi/" },
+      { text: "Quick tips for Phi Browser", link: "/tips-and-shortcuts/" },
     ],
   },
   {
@@ -163,6 +164,7 @@ const guideSidebar: DefaultTheme.SidebarItem[] = [
 const guideSidebarPaths = [
   "/what-is-phi-browser/",
   "/get-started/",
+  "/tips-and-shortcuts/",
   "/switching-to-phi/",
   "/layouts/",
   "/tab-management/",
