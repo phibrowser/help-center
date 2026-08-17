@@ -1,6 +1,6 @@
 {
   "locale": "zh-Hans",
-  "sourceRevision": "4231050b892770b5998235080c4b543a1b27f856",
+  "sourceRevision": "d61049718dad90721c42e45263fa6192d14add03",
   "owners": {
     "translation": "Initial i18n pilot author",
     "contentReview": ""
@@ -87,6 +87,10 @@
       "contentReview": "todo"
     },
     "themes/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "tips-and-shortcuts/index.md": {
       "translation": "complete",
       "contentReview": "todo"
     },
