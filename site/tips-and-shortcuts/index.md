@@ -11,6 +11,7 @@ This page collects Phi gestures and shortcuts that are less obvious from the int
 | Action                             | Shortcut or gesture                                                |
 | ---------------------------------- | ------------------------------------------------------------------ |
 | Create a Split View                | Option (⌥)-click a tab, Pinned Tab, bookmark, or eligible web link |
+| Preview a link in a Peek           | Shift (⇧)-click a web link                                         |
 | Switch between recently used tabs  | Control (⌃) + Tab                                                  |
 | Switch in reverse order            | Control (⌃) + Shift (⇧) + Tab                                      |
 | Copy the current page URL          | Command (⌘) + Shift (⇧) + C                                        |
