@@ -37,6 +37,6 @@ features:
     link: /zh-Hans/memory/
   - icon: ⚙️
     title: 需要时自动执行
-    details: 让 Phi 立即行动、在后台运行影子任务，或通过 Phi Sentinel 持续执行定时工作。
+    details: 让 Phi 立即行动、在后台运行 Shadow 任务，或通过 Phi Sentinel 持续执行定时工作。
     link: /zh-Hans/automation/
 ---
