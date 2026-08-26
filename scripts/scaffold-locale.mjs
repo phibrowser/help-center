@@ -3,6 +3,11 @@ import path from "node:path";
 import process from "node:process";
 
 import {
+  defaultLocaleCode,
+  getSupportedLocale,
+  supportedLocales,
+} from "../site/.vitepress/i18n/supported-locales.ts";
+import {
   LOCALIZATION_DIRECTORY,
   SITE_DIRECTORY,
   collectFiles,
@@ -14,17 +19,35 @@ import {
 } from "./i18n-utils.mjs";
 
 const locale = process.argv[2];
-const label = process.argv[3];
+const requestedLabel = process.argv[3];
 
-if (!locale || !label) {
+if (!locale) {
+  console.error("Usage: pnpm i18n:scaffold <locale> [language-menu-label]");
   console.error(
-    "Usage: pnpm i18n:scaffold <BCP-47-locale> <language-menu-label>",
+    `Supported locales: ${supportedLocales
+      .filter((entry) => entry.code !== defaultLocaleCode)
+      .map((entry) => entry.code)
+      .join(", ")}`,
   );
   process.exit(1);
 }
 
-if (!/^[A-Za-z]{2,3}(?:-[A-Za-z0-9]{2,8})*$/.test(locale)) {
-  console.error(`${JSON.stringify(locale)} is not a supported BCP 47 form.`);
+// Locale codes and language-menu names come from the shared catalog so the
+// Help Center and the main site expose the same languages under the same
+// names. The label argument is accepted for compatibility but must agree.
+const catalogEntry = getSupportedLocale(locale);
+if (!catalogEntry || locale === defaultLocaleCode) {
+  console.error(
+    `${JSON.stringify(locale)} is not a translatable locale in site/.vitepress/i18n/supported-locales.json.`,
+  );
+  process.exit(1);
+}
+
+const label = catalogEntry.name;
+if (requestedLabel !== undefined && requestedLabel !== label) {
+  console.error(
+    `Language menu label ${JSON.stringify(requestedLabel)} does not match the catalog name ${JSON.stringify(label)} for ${locale}. Update the shared catalog (and the main site) instead of overriding it per locale.`,
+  );
   process.exit(1);
 }
 

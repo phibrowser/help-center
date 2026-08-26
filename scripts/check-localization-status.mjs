@@ -2,6 +2,10 @@ import path from "node:path";
 import process from "node:process";
 
 import {
+  defaultLocaleCode,
+  getSupportedLocale,
+} from "../site/.vitepress/i18n/supported-locales.ts";
+import {
   LOCALIZATION_DIRECTORY,
   SITE_DIRECTORY,
   collectFiles,
@@ -71,6 +75,11 @@ for (const workspace of workspaces.sort()) {
   if (!isRootContentCurrent(status.sourceRevision, rootFiles)) {
     blockers.unshift(
       `root content changed after ${status.sourceRevision}; rebase the translation and update sourceRevision`,
+    );
+  }
+  if (!getSupportedLocale(locale) || locale === defaultLocaleCode) {
+    blockers.unshift(
+      `${locale} is not a translatable locale in site/.vitepress/i18n/supported-locales.json`,
     );
   }
 

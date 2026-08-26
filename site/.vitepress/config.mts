@@ -6,6 +6,7 @@ import type { HeadConfig } from "vitepress";
 import {
   defaultLocaleResource,
   getLocaleResource,
+  localeResources,
 } from "./i18n/locales/index.ts";
 import {
   localeConfig,
@@ -46,6 +47,60 @@ function getPagePath(relativePath: string): string {
 
 function getCanonicalUrl(relativePath: string): string {
   return new URL(getPagePath(relativePath), productionBaseUrl).href;
+}
+
+// Source paths of translated pages start with their locale key
+// (`<locale>/memory/index.md`); the root locale has no prefix.
+function stripLocaleSourcePrefix(relativePath: string): string {
+  for (const resource of localeResources) {
+    if (resource.root) continue;
+    if (relativePath === resource.key || relativePath === `${resource.key}/`) {
+      return "index.md";
+    }
+    if (relativePath.startsWith(`${resource.key}/`)) {
+      return relativePath.slice(resource.key.length + 1);
+    }
+  }
+
+  return relativePath;
+}
+
+function getLocalizedUrl(
+  contentRelativePath: string,
+  resource: (typeof localeResources)[number],
+): string {
+  const localePrefix = resource.root ? "" : `${resource.key}/`;
+  return new URL(
+    `${localePrefix}${getPagePath(contentRelativePath)}`,
+    productionBaseUrl,
+  ).href;
+}
+
+// Same policy as the main site: every published language variant links to
+// every other one, and `x-default` points at the unprefixed default language.
+// Page parity across registered locales is enforced by `pnpm test:i18n`, so
+// each alternate is guaranteed to exist.
+function createAlternateLinks(relativePath: string): HeadConfig[] {
+  const contentRelativePath = stripLocaleSourcePrefix(relativePath);
+  const links: HeadConfig[] = localeResources.map((resource) => [
+    "link",
+    {
+      rel: "alternate",
+      hreflang: resource.lang,
+      href: getLocalizedUrl(contentRelativePath, resource),
+    },
+  ]);
+
+  links.push([
+    "link",
+    {
+      rel: "alternate",
+      hreflang: "x-default",
+      href: getLocalizedUrl(contentRelativePath, defaultLocaleResource),
+    },
+  ]);
+
+  return links;
 }
 
 function normalizeRoutePath(url: string): string {
@@ -153,6 +208,9 @@ function createSocialHead(
 }
 
 export default defineConfig({
+  // The site-level language is the root locale's tag; per-page <html lang>
+  // comes from each locale entry in `locales`.
+  lang: defaultLocaleResource.lang,
   title: "Phi Help",
   description: "Help and FAQ for Phi Browser.",
   locales: localeConfig,
@@ -168,9 +226,20 @@ export default defineConfig({
       return items.map((item) => {
         const routePath = normalizeRoutePath(item.url);
         const contentRoutePath = stripLocalePrefix(routePath);
+        // VitePress emits one reciprocal alternate per locale. Add the
+        // main site's `x-default` alternate pointing at the default language.
+        // `links` is shared between the items of one page group, so copy it
+        // instead of pushing into it.
+        const defaultLink = item.links?.find(
+          (link) => link.lang === defaultLocaleResource.lang,
+        );
+        const links = defaultLink
+          ? [...item.links, { url: defaultLink.url, lang: "x-default" }]
+          : item.links;
 
         return {
           ...item,
+          ...(links ? { links } : {}),
           lastmod: item.lastmod ?? getLastModifiedIsoTimestamp(routePath),
           changefreq: getSitemapChangeFrequency(contentRoutePath),
           priority: getSitemapPriority(contentRoutePath),
@@ -227,6 +296,7 @@ export default defineConfig({
         description,
         getCanonicalUrl(pageData.relativePath),
       ),
+      ...createAlternateLinks(pageData.relativePath),
     ];
   },
   head: [

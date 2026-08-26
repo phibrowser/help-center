@@ -1,6 +1,6 @@
 import type { DefaultTheme } from "vitepress";
 import type { z } from "zod";
-import type { LocaleResourceSchema } from "./schema.ts";
+import type { LocaleResourceSchema, SupportedLocalesSchema } from "./schema.ts";
 
 export type CustomThemeCopy = z.infer<
   typeof LocaleResourceSchema
@@ -13,3 +13,7 @@ export type HelpThemeConfig = DefaultTheme.Config & {
 export type LocaleResource = z.infer<typeof LocaleResourceSchema> & {
   search: DefaultTheme.LocalSearchTranslations;
 };
+
+export type SupportedLocale = z.infer<
+  typeof SupportedLocalesSchema
+>["locales"][number];

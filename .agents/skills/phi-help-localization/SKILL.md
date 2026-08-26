@@ -31,7 +31,7 @@ Use one of these modes and state it before editing:
 - **Review assistance:** identify issues or apply reviewer-requested corrections without claiming independent approval.
 - **Promotion preparation:** validate readiness and present blockers or the exact promotion action for authorization.
 
-Ask for the canonical BCP 47 locale and native language-menu label if either is missing. Ask who owns translation if the task requires assigning an owner. Do not invent a person's name.
+Ask for the locale if it is missing. It must be one of the non-default codes in `site/.vitepress/i18n/supported-locales.json`, which mirrors the main site's language list; the native language-menu label comes from that catalog and is not chosen per locale. Ask who owns translation if the task requires assigning an owner. Do not invent a person's name.
 
 ## Non-negotiable boundaries
 
@@ -51,8 +51,10 @@ Ask for the canonical BCP 47 locale and native language-menu label if either is 
 Start only from committed, clean root-language Markdown:
 
 ```sh
-pnpm i18n:scaffold <locale> '<native label>'
+pnpm i18n:scaffold <locale>
 ```
+
+If the locale is not in the shared catalog, stop and report it; do not add a language to the catalog without the main site making the same change.
 
 The command must create:
 
@@ -79,6 +81,7 @@ Keep unchanged:
 
 - `key`;
 - `lang`;
+- `label` (the catalog language name);
 - `root: false`;
 - JSON property names and guide route keys;
 - literal product, provider, setting, and command names unless approved target-language product terminology says otherwise.

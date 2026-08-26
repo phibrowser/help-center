@@ -8,6 +8,26 @@ Simplified Chinese (`zh-Hans`) is the only translated locale currently registere
 
 The next requested locales are German (`de`), Spanish (`es`), French (`fr`), Japanese (`ja`), Korean (`ko`), Dutch (`nl`), and Traditional Chinese (`zh-Hant`). Traditional Chinese must receive its own translation and review. It must not silently fall back to Simplified Chinese.
 
+## Shared language model with the main site
+
+Phi Help follows the same language conventions as the main site (`philanding`, `i18n/locales.ts`) so a visitor moving between `phibrowser.com` and `phibrowser.com/help/` meets one language model:
+
+| Convention           | Main site                                      | Phi Help                                                    |
+| -------------------- | ---------------------------------------------- | ----------------------------------------------------------- |
+| Default language     | English, unprefixed (`/privacy/`)              | English, unprefixed (`/help/privacy/`)                      |
+| Other languages      | `/<locale>/…` (`/zh-Hans/privacy/`)            | `/help/<locale>/…` (`/help/zh-Hans/privacy/`)               |
+| Locale codes         | `en de es fr ja ko nl zh-Hans zh-Hant`         | Same list, in `site/.vitepress/i18n/supported-locales.json` |
+| Language menu names  | Native names (`Deutsch`, `简体中文`, …)        | Same names, from the same catalog                           |
+| `<html lang>`        | Locale code (`en`, `zh-Hans`)                  | Locale code (`en`, `zh-Hans`)                               |
+| `hreflang`           | One per complete locale plus `x-default`       | One per registered locale plus `x-default`, head + sitemap  |
+| `x-default`          | Unprefixed English                             | Unprefixed English                                          |
+| Language negotiation | None: no cookie or `Accept-Language` redirect  | None                                                        |
+| Chinese              | Script-first: `zh-Hans` and `zh-Hant` separate | Same; `zh-Hant` never falls back to `zh-Hans`               |
+
+The catalog `site/.vitepress/i18n/supported-locales.json` is the only list of languages this repository recognizes. `pnpm i18n:scaffold`, `pnpm i18n:promote`, `pnpm i18n:status`, and the registry loader all validate against it: a locale outside the catalog cannot be drafted or registered, and a registered locale's `label` must equal the catalog name. Registered languages are shown in catalog order regardless of `registry.json` order.
+
+The main site keeps `/help` outside its own locale routing, so `/<locale>/help/…` returns 404 there; the localized Help entry point is always `/help/<locale>/`. When the main site adds, removes, or renames a language, update the catalog here in the same change. There is no cross-repository check; the two files are kept in sync by hand.
+
 ## Roles and completion evidence
 
 Assign these roles before requesting promotion:
@@ -27,14 +47,16 @@ An agent-generated or translator-generated review is not independent approval. P
 From a clean working tree whose root-language Markdown is committed, run:
 
 ```sh
-pnpm i18n:scaffold <locale> '<language menu label>'
+pnpm i18n:scaffold <locale>
 ```
 
 For example:
 
 ```sh
-pnpm i18n:scaffold fr 'Français'
+pnpm i18n:scaffold fr
 ```
+
+The locale must be one of the non-default codes in `site/.vitepress/i18n/supported-locales.json`; the language-menu label is taken from that catalog (`Français` for `fr`). A second argument is still accepted for compatibility, but it must equal the catalog name. To change a language's name, change the shared catalog (and the main site) rather than one locale's resource.
 
 This creates:
 
@@ -62,7 +84,8 @@ Translate every user-facing value in `resource.json`, including:
 
 Do not change:
 
-- `key` or `lang`, which must remain the requested canonical BCP 47 locale;
+- `key` or `lang`, which must remain the catalog locale code;
+- `label`, which must remain the catalog language name;
 - `root`, which must remain `false`;
 - object keys such as `whatIsPhi`, `privacyControls`, or `copyCode`;
 - product, vendor, or command names unless the product's approved terminology says otherwise.
@@ -192,7 +215,7 @@ pnpm build
 - internal Help links, locale boundaries, and anchors;
 - Markdown emphasis rendering;
 - absence of locale-specific tokens in generic implementation files;
-- generated page language, canonical URL, and reciprocal `hreflang`;
+- generated page language, canonical URL, and reciprocal `hreflang` plus `x-default` in both the page head and the sitemap;
 - locale theme and code-copy labels;
 - one local-search index per locale;
 - every locale's declared representative search queries;

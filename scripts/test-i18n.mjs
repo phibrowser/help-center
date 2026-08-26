@@ -162,6 +162,20 @@ function isLocalizedContentFile(file, localizedDirectoryNames) {
   );
 }
 
+function escapeRegex(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+// Match a locale code or language name only as a whole token, so a short
+// code such as the default language's two-letter tag does not flag ordinary
+// words that merely contain those letters.
+function containsLocaleToken(source, token) {
+  return new RegExp(
+    `(?<![\\p{L}\\p{N}-])${escapeRegex(token)}(?![\\p{L}\\p{N}-])`,
+    "u",
+  ).test(source);
+}
+
 const renderer = await createMarkdownRenderer(process.cwd(), {}, "/help/");
 const failures = [];
 const localeSpecificTokens = localeResources.flatMap((resource) => [
@@ -173,7 +187,7 @@ const localeSpecificTokens = localeResources.flatMap((resource) => [
 for (const file of LANGUAGE_AGNOSTIC_FILES) {
   const source = await readFile(file, "utf8");
   for (const token of new Set(localeSpecificTokens)) {
-    if (source.includes(token)) {
+    if (containsLocaleToken(source, token)) {
       failures.push(
         `${file} contains locale-specific token ${JSON.stringify(token)}`,
       );

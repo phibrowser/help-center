@@ -101,14 +101,27 @@ for (const resource of localeResources) {
       failures.push(`${outputFile} contains a literal ** delimiter`);
     }
 
-    for (const alternate of localeResources) {
-      const alternateRoute = getPublicRoute(alternate, relativeFile);
-      const expected = `<xhtml:link rel="alternate" hreflang="${alternate.lang}" href="https://phibrowser.com${alternateRoute}"`;
-      const sitemapEntry = sitemap.match(
-        new RegExp(`<url><loc>${escapeRegex(canonical)}</loc>[\\s\\S]*?</url>`),
-      )?.[0];
-      if (!sitemapEntry?.includes(expected)) {
-        failures.push(`${canonical} is missing ${alternate.lang} hreflang`);
+    const sitemapEntry = sitemap.match(
+      new RegExp(`<url><loc>${escapeRegex(canonical)}</loc>[\\s\\S]*?</url>`),
+    )?.[0];
+    const expectedAlternates = [
+      ...localeResources.map((alternate) => ({
+        hreflang: alternate.lang,
+        href: `https://phibrowser.com${getPublicRoute(alternate, relativeFile)}`,
+      })),
+      {
+        hreflang: "x-default",
+        href: `https://phibrowser.com${getPublicRoute(defaultLocaleResource, relativeFile)}`,
+      },
+    ];
+    for (const { hreflang, href } of expectedAlternates) {
+      const sitemapLink = `<xhtml:link rel="alternate" hreflang="${hreflang}" href="${href}"`;
+      if (!sitemapEntry?.includes(sitemapLink)) {
+        failures.push(`${canonical} is missing ${hreflang} sitemap hreflang`);
+      }
+      const headLink = `<link rel="alternate" hreflang="${hreflang}" href="${href}">`;
+      if (!html.includes(headLink)) {
+        failures.push(`${outputFile} is missing ${hreflang} head hreflang`);
       }
     }
   }

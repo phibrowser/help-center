@@ -117,6 +117,25 @@ export const LocaleRegistrySchema = z.object({
   resources: z.array(z.string().min(1)).min(1),
 });
 
+const LocaleCodeSchema = z
+  .string()
+  .regex(
+    /^[A-Za-z]{2,3}(?:-[A-Za-z0-9]{2,8})*$/,
+    "locale codes must be canonical BCP 47 language tags",
+  );
+
+export const SupportedLocalesSchema = z.object({
+  defaultLocale: LocaleCodeSchema,
+  locales: z
+    .array(
+      z.object({
+        code: LocaleCodeSchema,
+        name: z.string().min(1),
+      }),
+    )
+    .min(1),
+});
+
 const WorkflowStatusSchema = z.enum([
   "todo",
   "in_progress",

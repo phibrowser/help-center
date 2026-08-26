@@ -4,6 +4,7 @@ import path from "node:path";
 import process from "node:process";
 
 import { LocaleResourceSchema } from "../site/.vitepress/i18n/schema.ts";
+import { getCatalogIssues } from "../site/.vitepress/i18n/supported-locales.ts";
 import {
   LOCALIZATION_DIRECTORY,
   LOCALE_REGISTRY_FILE,
@@ -61,6 +62,9 @@ if (resource.key !== locale || resource.lang !== locale || resource.root) {
   blockers.push(
     "resource key/lang/root do not describe this non-root locale workspace",
   );
+}
+for (const issue of getCatalogIssues(resource)) {
+  blockers.push(`resource.json: ${issue}`);
 }
 for (const file of rootRelativeFiles) {
   if (!draftFiles.includes(file)) blockers.push(`draft is missing ${file}`);

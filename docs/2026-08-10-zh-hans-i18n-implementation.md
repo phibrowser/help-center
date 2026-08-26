@@ -51,6 +51,8 @@ Examples:
 
 The existing implicit English language tag, `en-US`, was preserved rather than changing the site's English SEO targeting as part of this implementation. Simplified Chinese uses the script-specific `zh-Hans` tag.
 
+Superseded on 2026-08-26: English now uses the `en` tag, and language codes, menu names, and `hreflang`/`x-default` follow the main site's conventions. See [`2026-08-26-main-site-i18n-alignment.md`](./2026-08-26-main-site-i18n-alignment.md). References to `en-US` below describe the state at the time of the pilot.
+
 ## How it was implemented
 
 ### Locale configuration
