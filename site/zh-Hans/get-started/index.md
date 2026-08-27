@@ -10,7 +10,7 @@ Phi Browser 支持 macOS（Apple 芯片、macOS 14 或更高版本）。任选�
 
 ### 从官方网站下载
 
-前往 [Phi 下载页面](https://phibrowser.com/download/)，下载 `.dmg` 文件，打开它，然后将 Phi 拖入“应用程序”文件夹。
+前往 [Phi 下载页面](https://phibrowser.com/download/)，下载 `.dmg` 文件，打开它，然后将 Phi 拖入「应用程序」文件夹。
 
 ### 使用 Homebrew 安装
 

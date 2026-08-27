@@ -9,7 +9,7 @@ description: "使用浏览器技能为助理保存可重复执行的工作流程
 有些技能是实用的一次性操作，例如显示当前页面的二维码、将页面保存为 PDF、获取 YouTube 字幕；另一些则封装了你经常执行的较长流程。无论哪种，重点都一样：描述一次，反复使用。
 
 ::: tip 与 phi-browser skill 不是同一回事
-本页介绍的**浏览器技能**，是你在 Phi 内部交给助理的指令。<strong>[phi-browser skill](/zh-Hans/phi-browser-skill/)</strong>则完全不同：它是一个让 Claude Code 等外部 AI 智能体从终端操控 Phi 的软件包。同一个词有两种含义，因此要明确区分：浏览器技能存在于浏览器中，phi-browser skill 存在于你的智能体中。
+本页介绍的**浏览器技能**，是你在 Phi 内部交给助理的指令。<strong>[phi-browser skill](/zh-Hans/phi-browser-skill/)</strong> 则完全不同：它是一个让 Claude Code 等外部 AI 智能体从终端操控 Phi 的软件包。同一个词有两种含义，因此要明确区分：浏览器技能存在于浏览器中，phi-browser skill 存在于你的智能体中。
 :::
 
 ## 内置技能和你自己的技能
@@ -47,7 +47,7 @@ description: "使用浏览器技能为助理保存可重复执行的工作流程
 
 任何有实际后果的操作仍由你负责，例如购买、发送消息或提交表单。启用技能前请先阅读其具体行为，这正是**查看**详情的用途。
 
-而且部分网站不欢迎自动化。Reddit 是一个广为人知的例子：被判定为自动化操作的账户可能受到限制或封禁，决定权属于网站，而不属于我们。如果技能会操作类似网站，你需要自行承担账户风险。详情请参阅[phi-browser skill](/zh-Hans/phi-browser-skill/)。
+而且部分网站不欢迎自动化。Reddit 是一个广为人知的例子：被判定为自动化操作的账户可能受到限制或封禁，决定权属于网站，而不属于我们。如果技能会操作类似网站，你需要自行承担账户风险。详情请参阅 [phi-browser skill](/zh-Hans/phi-browser-skill/)。
 
 ## 接下来
 

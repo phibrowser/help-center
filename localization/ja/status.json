@@ -1,0 +1,123 @@
+{
+  "locale": "ja",
+  "sourceRevision": "55a343da5507a96a2a0414e38f2cae90c6e3ab89",
+  "owners": {
+    "translation": "Phi i18n pipeline (agent run 2026-08-26)",
+    "contentReview": ""
+  },
+  "pages": {
+    "agent-passwords/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "ai/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "automation/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "bookmarks/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "faq/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "get-started/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "import-export/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "incognito/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "layouts/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "memory/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "new-tab/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "phi-browser-skill/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "phi-cli/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "privacy/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "sentinel/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "skills/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "spaces/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "switching-to-phi/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "tab-management/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "themes/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "time-machine/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "tips-and-shortcuts/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "what-is-phi-browser/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    }
+  },
+  "reviews": {
+    "productTerminology": {
+      "status": "todo",
+      "owner": "",
+      "evidence": ""
+    },
+    "privacyLegal": {
+      "status": "todo",
+      "owner": "",
+      "evidence": ""
+    },
+    "searchQa": {
+      "status": "todo",
+      "owner": "",
+      "evidence": ""
+    }
+  }
+}

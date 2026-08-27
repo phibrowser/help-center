@@ -60,7 +60,7 @@ phi -s checkout close               # finish the task, close the Space
 - <strong>你的真实窗口。</strong>`phi -U "Work" goto …`（`click`、`fill`、`snapshot` 等命令同样适用）会操控你某个空间的可见窗口，而不是隐藏窗口。你的单击与 CLI 操作会在同一窗口中交错发生，因此 CLI 会采用小步操作，并在每一步之间重新读取页面。
 - <strong>浏览器管理。</strong>`space-list`、`bookmark-add`、`rules`、`pins` 和 `downloads` 等命令会操作整个应用中的真实浏览器数据，与 phi-browser skill 的能力一致。
 
-两类操作都受<strong>设置 → 开发者 →“允许智能体操作你的空间”</strong>控制。该权限默认关闭，与编程智能体的规则完全相同。开启之前，CLI 只能使用自己的智能体空间。
+两类操作都受<strong>设置 → 开发者 → 「允许智能体操作你的空间」</strong>控制。该权限默认关闭，与编程智能体的规则完全相同。开启之前，CLI 只能使用自己的智能体空间。
 
 ## 登录
 
@@ -81,7 +81,7 @@ phi install skill                # link the skill into every coding agent presen
 phi install skill claude codex   # only these agents
 ```
 
-这与**设置 → 开发者**中的**安装 phi-browser skill**按钮执行的是同一操作，只是无需离开终端：它会把 Phi 内置的 skill 链接到各个智能体的 skills 文件夹，使其随每次 Phi 更新保持最新。
+这与**设置 → 开发者**中的**安装 phi-browser Skill**按钮执行的是同一操作，只是无需离开终端：它会把 Phi 内置的 skill 链接到各个智能体的 skills 文件夹，使其随每次 Phi 更新保持最新。
 
 ::: tip 与浏览器技能不是同一回事
 [浏览器技能](/zh-Hans/skills/)是你教给 Phi 内部助理的工作流程。`phi install skill` 安装的是 phi-browser skill，也就是让外部编程智能体操控 Phi 的软件包。
