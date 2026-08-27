@@ -1,0 +1,126 @@
+{
+  "key": "nl",
+  "label": "Nederlands",
+  "lang": "nl",
+  "root": false,
+  "site": {
+    "title": "Phi Help",
+    "description": "Help en veelgestelde vragen voor Phi Browser."
+  },
+  "theme": {
+    "nav": {
+      "product": "Phi Browser",
+      "guide": "Gids",
+      "faq": "FAQ"
+    },
+    "groups": {
+      "startHere": "Begin hier",
+      "browserWorkspace": "Browserwerkruimte",
+      "assistantAutomation": "Assistent & automatisering",
+      "privacyRecovery": "Privacy & herstel"
+    },
+    "pages": {
+      "whatIsPhi": "Wat is Phi Browser?",
+      "gettingStarted": "Aan de slag",
+      "switchingToPhi": "Overstappen op Phi",
+      "tipsAndShortcuts": "Handige tips voor Phi Browser",
+      "layouts": "Lay-outs & navigatie",
+      "spaces": "Spaces & profielen",
+      "incognito": "Incognito-Spaces",
+      "bookmarks": "Bladwijzers & vastgezette tabbladen",
+      "importExport": "Importeren & exporteren",
+      "tabManagement": "Tabbladen & bladwijzers beheren",
+      "themes": "Thema's & weergave",
+      "newTab": "Nieuw tabblad & widgets",
+      "assistant": "Maak kennis met je assistent",
+      "memory": "Geheugen",
+      "skills": "Browser Skills",
+      "automation": "Automatisering & Phi Link",
+      "phiBrowserSkill": "De phi-browser-skill",
+      "phiCli": "De Phi CLI",
+      "agentPasswords": "Wachtwoordmanager voor agents",
+      "sentinel": "Phi Sentinel",
+      "privacy": "Privacy & je gegevens",
+      "timeMachine": "Time Machine-back-ups"
+    },
+    "controls": {
+      "outline": "Op deze pagina",
+      "previousPage": "Vorige pagina",
+      "nextPage": "Volgende pagina",
+      "appearance": "Weergave",
+      "lightMode": "Schakel over naar het lichte thema",
+      "darkMode": "Schakel over naar het donkere thema",
+      "menu": "Menu",
+      "returnToTop": "Terug naar boven",
+      "changeLanguage": "Taal wijzigen",
+      "skipToContent": "Direct naar de inhoud"
+    },
+    "notFound": {
+      "title": "PAGINA NIET GEVONDEN",
+      "quote": "Maar als je niet van richting verandert, en als je blijft zoeken, kom je misschien uit waar je op afkoerst.",
+      "linkLabel": "naar de startpagina",
+      "linkText": "Breng me naar de startpagina"
+    }
+  },
+  "search": {
+    "button": {
+      "buttonText": "Zoeken",
+      "buttonAriaLabel": "Doorzoek de documentatie"
+    },
+    "modal": {
+      "displayDetails": "Gedetailleerde lijst tonen",
+      "resetButtonTitle": "Zoekopdracht wissen",
+      "backButtonTitle": "Zoeken sluiten",
+      "noResultsText": "Geen resultaten voor",
+      "footer": {
+        "selectText": "om te selecteren",
+        "selectKeyAriaLabel": "enter",
+        "navigateText": "om te navigeren",
+        "navigateUpKeyAriaLabel": "pijl omhoog",
+        "navigateDownKeyAriaLabel": "pijl omlaag",
+        "closeText": "om te sluiten",
+        "closeKeyAriaLabel": "escape"
+      }
+    }
+  },
+  "searchQueries": [
+    "tabblad vastzetten",
+    "geplande taken",
+    "skill maken",
+    "wachtwoordmanager",
+    "back-up terugzetten"
+  ],
+  "customTheme": {
+    "askPhi": "Vraag Phi",
+    "privacyControls": "Privacyinstellingen",
+    "cookieSettings": "Cookie-instellingen",
+    "privacyChoices": "Je privacykeuzes",
+    "cookieConsent": "Cookietoestemming",
+    "bannerBeforePolicy": "We gebruiken cookies om deze site te laten werken en, alleen met jouw toestemming, om het verkeer te analyseren en het effect van onze advertenties te meten. Zie onze",
+    "privacyPolicy": "Privacyverklaring",
+    "bannerAfterPolicy": "voor de details.",
+    "rejectAll": "Alles weigeren",
+    "acceptAll": "Alles accepteren",
+    "customizeSettings": "Instellingen aanpassen",
+    "cookiePreferences": "Cookievoorkeuren",
+    "close": "Sluiten",
+    "preferencesBeforePolicy": "Kies welke cookies deze site mag gebruiken. Je keuze wordt in deze browser bewaard en je kunt die hier op elk moment wijzigen. Zie onze",
+    "preferencesAfterPolicy": "voor de details.",
+    "saleAndSharingDescription": "Het delen van gegevens met advertentiepartners voor advertentiemeting kan volgens de wetgeving van sommige Amerikaanse staten gelden als ‘verkoop’ (sale) of ‘delen’ (sharing). Je kunt je hiervoor met één klik afmelden.",
+    "optedOut": "Je bent in deze browser afgemeld.",
+    "optOutOfSaleAndSharing": "Afmelden voor verkoop en delen",
+    "functional": "Functioneel",
+    "functionalDescription": "Nodig om de site te laten werken, bijvoorbeeld om je cookiekeuzes te onthouden. Staat altijd aan; bevat geen analyse en geen advertenties.",
+    "alwaysOn": "Altijd aan",
+    "statistics": "Statistieken",
+    "statisticsDescription": "Helpen ons via analysediensten (Google Analytics, PostHog) te begrijpen hoe de site wordt gebruikt.",
+    "marketing": "Marketing",
+    "marketingDescription": "Staan de conversietools van onze advertentiepartners toe te meten of onze advertenties werken. Wordt op deze site gebruikt voor advertentiemeting, niet om je hier advertenties te tonen.",
+    "gpcDisabled": "Uitgeschakeld door het Global Privacy Control-signaal van je browser.",
+    "saveChoices": "Keuzes opslaan"
+  },
+  "markdown": {
+    "copyCode": "Kopieer code",
+    "copied": "Gekopieerd"
+  }
+}

@@ -1,3 +1,13 @@
 {
-  "resources": ["en.json", "zh-Hans.json"]
+  "resources": [
+    "en.json",
+    "zh-Hans.json",
+    "de.json",
+    "es.json",
+    "fr.json",
+    "ja.json",
+    "ko.json",
+    "nl.json",
+    "zh-Hant.json"
+  ]
 }
