@@ -6,6 +6,7 @@ import {
   LOCALIZATION_DIRECTORY,
   getPromotionBlockers,
   getRootContentFiles,
+  isRevisionAvailable,
   isRootContentCurrent,
   readLocalizationStatus,
 } from "./i18n-utils.mjs";
@@ -205,6 +206,7 @@ const rootFiles = getRootContentFiles(
 );
 const rootRelativeFiles = rootFiles.map((file) => path.relative("site", file));
 let checkedFiles = 0;
+const unavailableRevisions = new Set();
 
 for (const resource of localizedResources) {
   const statusFile = path.join(
@@ -222,7 +224,11 @@ for (const resource of localizedResources) {
     })) {
       failures.push(`${statusFile}: ${blocker}`);
     }
-    if (!isRootContentCurrent(status.sourceRevision, rootFiles)) {
+    if (!isRevisionAvailable(status.sourceRevision)) {
+      // Shallow CI checkouts cannot see the baseline commit. The staleness
+      // gate still runs in full clones and in i18n:status and i18n:promote.
+      unavailableRevisions.add(status.sourceRevision);
+    } else if (!isRootContentCurrent(status.sourceRevision, rootFiles)) {
       failures.push(
         `${resource.key} translation is stale relative to root content; update ${statusFile}`,
       );
@@ -333,6 +339,12 @@ for (const resource of localeResources) {
       }
     }
   }
+}
+
+for (const revision of unavailableRevisions) {
+  console.warn(
+    `warning: baseline commit ${revision} is not in this checkout (shallow clone?); skipped the root-content staleness check for it.`,
+  );
 }
 
 if (failures.length > 0) {

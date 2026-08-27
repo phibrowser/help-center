@@ -158,6 +158,8 @@ Without a locale argument, the command reports all workspaces. Drafts return a f
 
 `status.json` records `sourceRevision`, the root-language content baseline. `pnpm test:i18n` fails if registered translation content is based on a revision before a later English Markdown change.
 
+This check needs the baseline commit in the local Git history. In a shallow checkout that cannot see it (Cloudflare Workers Builds clones this way, which made every build fail after the check was added on 2026-08-26), `pnpm test:i18n` prints a warning and skips the staleness comparison instead of failing. `pnpm i18n:status` and `pnpm i18n:promote` still refuse to proceed without the baseline, so run them from a full clone.
+
 For a draft that becomes stale:
 
 1. Compare the source revision with the current English pages.

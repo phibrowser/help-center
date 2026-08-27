@@ -98,6 +98,17 @@ export function getRootContentRevision(rootFiles) {
   }).trim();
 }
 
+export function isRevisionAvailable(revision) {
+  try {
+    execFileSync("git", ["cat-file", "-e", `${revision}^{commit}`], {
+      stdio: "ignore",
+    });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 export function isRootContentCurrent(sourceRevision, rootFiles) {
   try {
     const committedChanges = execFileSync(
