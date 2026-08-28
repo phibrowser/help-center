@@ -2,7 +2,17 @@ import { execFileSync } from "node:child_process";
 import { existsSync, statSync } from "node:fs";
 import { resolve } from "node:path";
 import { defineConfig } from "vitepress";
-import type { DefaultTheme, HeadConfig } from "vitepress";
+import type { HeadConfig } from "vitepress";
+import {
+  defaultLocaleResource,
+  getLocaleResource,
+  localeResources,
+} from "./i18n/locales/index.ts";
+import {
+  localeConfig,
+  localeRoutePrefixes,
+  localeSearchOptions,
+} from "./i18n-config";
 
 // Deployed under the /help/ sub-path. VitePress prepends this base to asset and
 // internal-link URLs (nav/sidebar links, theme logo, bundled assets) and to
@@ -14,6 +24,19 @@ const base = "/help/";
 const productionOrigin = "https://phibrowser.com";
 const productionBaseUrl = `${productionOrigin}${base}`;
 
+function getLocaleIndex(value: unknown): string | undefined {
+  if (
+    typeof value === "object" &&
+    value !== null &&
+    "localeIndex" in value &&
+    typeof value.localeIndex === "string"
+  ) {
+    return value.localeIndex;
+  }
+
+  return undefined;
+}
+
 function getPagePath(relativePath: string): string {
   if (relativePath === "index.md") {
     return "";
@@ -24,6 +47,60 @@ function getPagePath(relativePath: string): string {
 
 function getCanonicalUrl(relativePath: string): string {
   return new URL(getPagePath(relativePath), productionBaseUrl).href;
+}
+
+// Source paths of translated pages start with their locale key
+// (`<locale>/memory/index.md`); the root locale has no prefix.
+function stripLocaleSourcePrefix(relativePath: string): string {
+  for (const resource of localeResources) {
+    if (resource.root) continue;
+    if (relativePath === resource.key || relativePath === `${resource.key}/`) {
+      return "index.md";
+    }
+    if (relativePath.startsWith(`${resource.key}/`)) {
+      return relativePath.slice(resource.key.length + 1);
+    }
+  }
+
+  return relativePath;
+}
+
+function getLocalizedUrl(
+  contentRelativePath: string,
+  resource: (typeof localeResources)[number],
+): string {
+  const localePrefix = resource.root ? "" : `${resource.key}/`;
+  return new URL(
+    `${localePrefix}${getPagePath(contentRelativePath)}`,
+    productionBaseUrl,
+  ).href;
+}
+
+// Same policy as the main site: every published language variant links to
+// every other one, and `x-default` points at the unprefixed default language.
+// Page parity across registered locales is enforced by `pnpm test:i18n`, so
+// each alternate is guaranteed to exist.
+function createAlternateLinks(relativePath: string): HeadConfig[] {
+  const contentRelativePath = stripLocaleSourcePrefix(relativePath);
+  const links: HeadConfig[] = localeResources.map((resource) => [
+    "link",
+    {
+      rel: "alternate",
+      hreflang: resource.lang,
+      href: getLocalizedUrl(contentRelativePath, resource),
+    },
+  ]);
+
+  links.push([
+    "link",
+    {
+      rel: "alternate",
+      hreflang: "x-default",
+      href: getLocalizedUrl(contentRelativePath, defaultLocaleResource),
+    },
+  ]);
+
+  return links;
 }
 
 function normalizeRoutePath(url: string): string {
@@ -78,6 +155,20 @@ function getLastModifiedIsoTimestamp(routePath: string): string | undefined {
   return statSync(sourceFile).mtime.toISOString();
 }
 
+function stripLocalePrefix(routePath: string): string {
+  for (const prefix of localeRoutePrefixes) {
+    if (routePath === `${prefix}/`) {
+      return "/";
+    }
+
+    if (routePath.startsWith(`${prefix}/`)) {
+      return routePath.slice(prefix.length);
+    }
+  }
+
+  return routePath;
+}
+
 function getSitemapChangeFrequency(routePath: string): "weekly" | "monthly" {
   return routePath === "/" || routePath === "/faq/" ? "weekly" : "monthly";
 }
@@ -116,83 +207,13 @@ function createSocialHead(
   ];
 }
 
-const guideSidebar: DefaultTheme.SidebarItem[] = [
-  {
-    text: "Start Here",
-    items: [
-      { text: "What is Phi Browser?", link: "/what-is-phi-browser/" },
-      { text: "Getting Started", link: "/get-started/" },
-      { text: "Switching to Phi", link: "/switching-to-phi/" },
-      { text: "Quick tips for Phi Browser", link: "/tips-and-shortcuts/" },
-    ],
-  },
-  {
-    text: "Browser Workspace",
-    items: [
-      { text: "Layouts & Navigation", link: "/layouts/" },
-      { text: "Spaces & Profiles", link: "/spaces/" },
-      { text: "Incognito Spaces", link: "/incognito/" },
-      { text: "Bookmarks & Pinned Tabs", link: "/bookmarks/" },
-      { text: "Importing & Exporting", link: "/import-export/" },
-      { text: "Managing Tabs & Bookmarks", link: "/tab-management/" },
-      { text: "Themes & Appearance", link: "/themes/" },
-      { text: "New Tab & Widgets", link: "/new-tab/" },
-    ],
-  },
-  {
-    text: "Assistant & Automation",
-    items: [
-      { text: "Meet your assistant", link: "/ai/" },
-      { text: "Memory", link: "/memory/" },
-      { text: "Browser Skills", link: "/skills/" },
-      { text: "Automation & Phi Link", link: "/automation/" },
-      { text: "The phi-browser skill", link: "/phi-browser-skill/" },
-      { text: "The Phi CLI", link: "/phi-cli/" },
-      { text: "Agent Password Manager", link: "/agent-passwords/" },
-      { text: "Phi Sentinel", link: "/sentinel/" },
-    ],
-  },
-  {
-    text: "Privacy & Recovery",
-    items: [
-      { text: "Privacy & Your Data", link: "/privacy/" },
-      { text: "Time Machine Backups", link: "/time-machine/" },
-    ],
-  },
-];
-
-const guideSidebarPaths = [
-  "/what-is-phi-browser/",
-  "/get-started/",
-  "/tips-and-shortcuts/",
-  "/switching-to-phi/",
-  "/layouts/",
-  "/tab-management/",
-  "/spaces/",
-  "/incognito/",
-  "/bookmarks/",
-  "/import-export/",
-  "/themes/",
-  "/new-tab/",
-  "/ai/",
-  "/memory/",
-  "/skills/",
-  "/automation/",
-  "/phi-browser-skill/",
-  "/phi-cli/",
-  "/agent-passwords/",
-  "/sentinel/",
-  "/privacy/",
-  "/time-machine/",
-];
-
-const sidebar = Object.fromEntries(
-  guideSidebarPaths.map((path) => [path, guideSidebar]),
-);
-
 export default defineConfig({
+  // The site-level language is the root locale's tag; per-page <html lang>
+  // comes from each locale entry in `locales`.
+  lang: defaultLocaleResource.lang,
   title: "Phi Help",
   description: "Help and FAQ for Phi Browser.",
+  locales: localeConfig,
   base,
   outDir: ".vitepress/dist/help",
   // Emitted at /help/sitemap.xml. The hostname includes the /help/ base so the
@@ -204,27 +225,79 @@ export default defineConfig({
     transformItems(items) {
       return items.map((item) => {
         const routePath = normalizeRoutePath(item.url);
+        const contentRoutePath = stripLocalePrefix(routePath);
+        // VitePress emits one reciprocal alternate per locale. Add the
+        // main site's `x-default` alternate pointing at the default language.
+        // `links` is shared between the items of one page group, so copy it
+        // instead of pushing into it.
+        const defaultLink = item.links?.find(
+          (link) => link.lang === defaultLocaleResource.lang,
+        );
+        const links = defaultLink
+          ? [...item.links, { url: defaultLink.url, lang: "x-default" }]
+          : item.links;
 
         return {
           ...item,
+          ...(links ? { links } : {}),
           lastmod: item.lastmod ?? getLastModifiedIsoTimestamp(routePath),
-          changefreq: getSitemapChangeFrequency(routePath),
-          priority: getSitemapPriority(routePath),
+          changefreq: getSitemapChangeFrequency(contentRoutePath),
+          priority: getSitemapPriority(contentRoutePath),
         };
       });
     },
   },
+  markdown: {
+    config(markdown) {
+      const renderFence = markdown.renderer.rules.fence;
+
+      if (!renderFence) {
+        return;
+      }
+
+      markdown.renderer.rules.fence = (...args) => {
+        const html = renderFence(...args);
+        const environment = args[3];
+
+        const localeIndex = getLocaleIndex(environment);
+        const resource = getLocaleResource(
+          localeIndex ?? defaultLocaleResource.key,
+        );
+
+        const copyCodeTitle = markdown.utils.escapeHtml(
+          resource.markdown.copyCode,
+        );
+
+        return html.replace(
+          /(<button(?=[^>]*\bclass="[^"]*\bcopy\b[^"]*")[^>]*\btitle=")[^"]*(")/,
+          `$1${copyCodeTitle}$2`,
+        );
+      };
+    },
+  },
   cleanUrls: true,
-  transformHead({ description, pageData, title }) {
+  transformHead({ description, pageData, siteData, title }) {
+    const localeIndex = siteData.localeIndex ?? defaultLocaleResource.key;
+    const resource = getLocaleResource(localeIndex);
+    const localizedMarkdownCopy: HeadConfig = [
+      "style",
+      {},
+      `:root { --vp-code-copy-copied-text-content: ${JSON.stringify(resource.markdown.copied)}; }`,
+    ];
+
     if (pageData.isNotFound || pageData.relativePath === "") {
-      return;
+      return [localizedMarkdownCopy];
     }
 
-    return createSocialHead(
-      title,
-      description,
-      getCanonicalUrl(pageData.relativePath),
-    );
+    return [
+      localizedMarkdownCopy,
+      ...createSocialHead(
+        title,
+        description,
+        getCanonicalUrl(pageData.relativePath),
+      ),
+      ...createAlternateLinks(pageData.relativePath),
+    ];
   },
   head: [
     ["link", { rel: "icon", type: "image/svg+xml", href: `${base}icon.svg` }],
@@ -236,13 +309,23 @@ export default defineConfig({
     logo: { light: "/phi-mark-dark.svg", dark: "/phi-mark-light.svg" },
     search: {
       provider: "local",
+      options: {
+        locales: localeSearchOptions,
+        miniSearch: {
+          options: {
+            tokenize(text) {
+              return Array.from(
+                new Intl.Segmenter(undefined, { granularity: "word" }).segment(
+                  text,
+                ),
+              )
+                .filter((segment) => segment.isWordLike)
+                .map((segment) => segment.segment);
+            },
+          },
+        },
+      },
     },
-    nav: [
-      { text: "Phi Browser", link: "https://phibrowser.com" },
-      { text: "Guide", link: "/what-is-phi-browser/" },
-      { text: "FAQ", link: "/faq/" },
-    ],
-    sidebar,
     socialLinks: [
       { icon: "github", link: "https://github.com/phibrowser/help-center" },
     ],

@@ -1,0 +1,127 @@
+{
+  "key": "ko",
+  "label": "한국어",
+  "lang": "ko",
+  "root": false,
+  "site": {
+    "title": "Phi 도움말",
+    "description": "Phi Browser 도움말과 자주 묻는 질문."
+  },
+  "theme": {
+    "nav": {
+      "product": "Phi Browser",
+      "guide": "가이드",
+      "faq": "자주 묻는 질문"
+    },
+    "groups": {
+      "startHere": "여기서 시작하기",
+      "browserWorkspace": "브라우저 작업 공간",
+      "assistantAutomation": "어시스턴트 및 자동화",
+      "privacyRecovery": "개인정보 보호 및 복구"
+    },
+    "pages": {
+      "whatIsPhi": "Phi Browser란 무엇인가요?",
+      "gettingStarted": "시작하기",
+      "switchingToPhi": "Phi로 전환하기",
+      "tipsAndShortcuts": "Phi Browser 빠른 팁",
+      "layouts": "레이아웃 및 탐색",
+      "spaces": "스페이스 및 프로필",
+      "incognito": "시크릿 스페이스",
+      "bookmarks": "북마크 및 고정된 탭",
+      "importExport": "가져오기 및 내보내기",
+      "tabManagement": "탭 및 북마크 관리",
+      "themes": "테마 및 화면 모드",
+      "newTab": "새 탭 및 위젯",
+      "assistant": "어시스턴트 알아보기",
+      "memory": "메모리",
+      "skills": "브라우저 스킬",
+      "automation": "자동화 및 Phi Link",
+      "phiBrowserSkill": "phi-browser 스킬",
+      "phiCli": "Phi CLI",
+      "agentPasswords": "에이전트 비밀번호 관리자",
+      "sentinel": "Phi Sentinel",
+      "privacy": "개인정보 보호 및 데이터",
+      "timeMachine": "Time Machine 백업"
+    },
+    "controls": {
+      "outline": "이 페이지 내용",
+      "previousPage": "이전 페이지",
+      "nextPage": "다음 페이지",
+      "appearance": "화면 모드",
+      "lightMode": "라이트 모드로 전환",
+      "darkMode": "다크 모드로 전환",
+      "menu": "메뉴",
+      "returnToTop": "맨 위로 돌아가기",
+      "changeLanguage": "언어 변경",
+      "skipToContent": "본문으로 건너뛰기"
+    },
+    "notFound": {
+      "title": "페이지를 찾을 수 없어요",
+      "quote": "하지만 방향을 바꾸지 않은 채 계속 나아가다 보면, 결국 지금 향하고 있는 그곳에 도착하게 될지도 몰라요.",
+      "linkLabel": "홈으로 이동",
+      "linkText": "홈으로 데려다주세요"
+    }
+  },
+  "search": {
+    "button": {
+      "buttonText": "검색",
+      "buttonAriaLabel": "문서 검색"
+    },
+    "modal": {
+      "displayDetails": "자세한 목록 표시",
+      "resetButtonTitle": "검색 재설정",
+      "backButtonTitle": "검색 닫기",
+      "noResultsText": "다음 검색어와 일치하는 결과가 없어요:",
+      "footer": {
+        "selectText": "선택",
+        "selectKeyAriaLabel": "엔터",
+        "navigateText": "이동",
+        "navigateUpKeyAriaLabel": "위쪽 화살표",
+        "navigateDownKeyAriaLabel": "아래쪽 화살표",
+        "closeText": "닫기",
+        "closeKeyAriaLabel": "이스케이프"
+      }
+    }
+  },
+  "searchQueries": [
+    "메모리 삭제",
+    "시크릿 스페이스",
+    "비밀번호 관리자",
+    "북마크 가져오기",
+    "다크 모드",
+    "단축키"
+  ],
+  "customTheme": {
+    "askPhi": "Phi에게 물어보기",
+    "privacyControls": "개인정보 보호 설정",
+    "cookieSettings": "쿠키 설정",
+    "privacyChoices": "개인정보 보호 선택",
+    "cookieConsent": "쿠키 동의",
+    "bannerBeforePolicy": "이 사이트 운영에 필요한 쿠키를 사용하고, 허용해 주신 경우에만 트래픽 분석과 광고 성과 측정에도 쿠키를 사용해요. 자세한 내용은",
+    "privacyPolicy": "개인정보 처리방침",
+    "bannerAfterPolicy": "을 확인해 주세요.",
+    "rejectAll": "모두 거부",
+    "acceptAll": "모두 허용",
+    "customizeSettings": "직접 설정하기",
+    "cookiePreferences": "쿠키 환경설정",
+    "close": "닫기",
+    "preferencesBeforePolicy": "이 사이트에서 사용할 수 있는 쿠키를 선택해 주세요. 선택한 내용은 이 브라우저에 저장되고, 언제든지 여기에서 변경할 수 있어요. 자세한 내용은",
+    "preferencesAfterPolicy": "을 확인해 주세요.",
+    "saleAndSharingDescription": "광고 성과 측정을 위해 광고 파트너와 데이터를 공유하는 일은 일부 미국 주법에서 '판매' 또는 '공유'로 간주될 수 있어요. 클릭 한 번으로 거부할 수 있어요.",
+    "optedOut": "이 브라우저에서는 거부 상태예요.",
+    "optOutOfSaleAndSharing": "판매 및 공유 거부",
+    "functional": "기능",
+    "functionalDescription": "쿠키 선택 내용을 기억하는 등 사이트 작동에 꼭 필요해요. 항상 켜져 있고, 분석이나 광고에는 사용되지 않아요.",
+    "alwaysOn": "항상 켜짐",
+    "statistics": "통계",
+    "statisticsDescription": "분석 서비스(Google Analytics, PostHog)를 통해 사이트가 어떻게 사용되는지 파악하는 데 도움이 돼요.",
+    "marketing": "마케팅",
+    "marketingDescription": "광고 파트너의 전환 측정 도구가 광고 효과를 측정할 수 있게 허용해요. 이 사이트에서 광고 성과를 측정하는 데 사용되고, 여기에서 광고를 표시하는 데는 사용되지 않아요.",
+    "gpcDisabled": "브라우저의 Global Privacy Control(GPC) 신호에 따라 꺼졌어요.",
+    "saveChoices": "선택 내용 저장"
+  },
+  "markdown": {
+    "copyCode": "코드 복사",
+    "copied": "복사됨"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "key": "ja",
+  "label": "日本語",
+  "lang": "ja",
+  "root": false,
+  "site": {
+    "title": "Phiヘルプ",
+    "description": "Phi Browserのヘルプとよくある質問。"
+  },
+  "theme": {
+    "nav": {
+      "product": "Phi Browser",
+      "guide": "ガイド",
+      "faq": "よくある質問"
+    },
+    "groups": {
+      "startHere": "まずはここから",
+      "browserWorkspace": "ブラウザのワークスペース",
+      "assistantAutomation": "アシスタントと自動化",
+      "privacyRecovery": "プライバシーと復元"
+    },
+    "pages": {
+      "whatIsPhi": "Phi Browserとは？",
+      "gettingStarted": "はじめに",
+      "switchingToPhi": "Phiへの乗り換え",
+      "tipsAndShortcuts": "Phi Browserの便利なヒント",
+      "layouts": "レイアウトとナビゲーション",
+      "spaces": "スペースとプロファイル",
+      "incognito": "シークレットスペース",
+      "bookmarks": "ブックマークと固定タブ",
+      "importExport": "インポートとエクスポート",
+      "tabManagement": "タブとブックマークの管理",
+      "themes": "テーマと外観",
+      "newTab": "新しいタブとウィジェット",
+      "assistant": "アシスタントの紹介",
+      "memory": "メモリ",
+      "skills": "ブラウザスキル",
+      "automation": "自動化とPhi Link",
+      "phiBrowserSkill": "phi-browser skill",
+      "phiCli": "Phi CLI",
+      "agentPasswords": "エージェントのパスワードマネージャー",
+      "sentinel": "Phi Sentinel",
+      "privacy": "プライバシーとデータ",
+      "timeMachine": "Time Machineバックアップ"
+    },
+    "controls": {
+      "outline": "このページの内容",
+      "previousPage": "前のページ",
+      "nextPage": "次のページ",
+      "appearance": "外観",
+      "lightMode": "ライトテーマに切り替え",
+      "darkMode": "ダークテーマに切り替え",
+      "menu": "メニュー",
+      "returnToTop": "トップに戻る",
+      "changeLanguage": "言語を変更",
+      "skipToContent": "本文へスキップ"
+    },
+    "notFound": {
+      "title": "ページが見つかりません",
+      "quote": "けれど、進む方向を変えずに探し続ければ、いつか、いま向かっている場所にたどり着くのかもしれません。",
+      "linkLabel": "ホームへ移動",
+      "linkText": "ホームに戻る"
+    }
+  },
+  "search": {
+    "button": {
+      "buttonText": "検索",
+      "buttonAriaLabel": "ドキュメントを検索"
+    },
+    "modal": {
+      "displayDetails": "詳細な一覧を表示",
+      "resetButtonTitle": "検索条件をクリア",
+      "backButtonTitle": "検索を閉じる",
+      "noResultsText": "一致する結果が見つかりませんでした:",
+      "footer": {
+        "selectText": "選択",
+        "selectKeyAriaLabel": "Enterキー",
+        "navigateText": "移動",
+        "navigateUpKeyAriaLabel": "上矢印キー",
+        "navigateDownKeyAriaLabel": "下矢印キー",
+        "closeText": "閉じる",
+        "closeKeyAriaLabel": "Escキー"
+      }
+    }
+  },
+  "searchQueries": ["メモリ 削除", "履歴を残さない", "パスワード 自動入力"],
+  "customTheme": {
+    "askPhi": "Phiに質問",
+    "privacyControls": "プライバシーの管理",
+    "cookieSettings": "Cookie設定",
+    "privacyChoices": "プライバシーに関する選択",
+    "cookieConsent": "Cookieの同意",
+    "bannerBeforePolicy": "当サイトでは、サイトの運営のためにCookieを使用します。また、あなたの許可がある場合に限り、トラフィックの分析と広告効果の測定にも使用します。詳しくは",
+    "privacyPolicy": "プライバシーポリシー",
+    "bannerAfterPolicy": "をご覧ください。",
+    "rejectAll": "すべて拒否",
+    "acceptAll": "すべて許可",
+    "customizeSettings": "設定をカスタマイズ",
+    "cookiePreferences": "Cookieの詳細設定",
+    "close": "閉じる",
+    "preferencesBeforePolicy": "当サイトが使用できるCookieを選択してください。選択内容はこのブラウザに保存され、ここでいつでも変更できます。詳しくは",
+    "preferencesAfterPolicy": "をご覧ください。",
+    "saleAndSharingDescription": "広告効果の測定のために広告パートナーとデータを共有することは、米国の一部の州法では「販売」または「共有」と見なされる場合があります。ワンクリックでオプトアウトできます。",
+    "optedOut": "このブラウザではオプトアウト済みです。",
+    "optOutOfSaleAndSharing": "販売と共有のオプトアウト",
+    "functional": "機能",
+    "functionalDescription": "Cookieの選択内容を記憶するなど、サイトの動作に必要なものです。常にオンで、分析や広告は含まれません。",
+    "alwaysOn": "常にオン",
+    "statistics": "統計",
+    "statisticsDescription": "分析サービス（Google Analytics、PostHog）を通じて、サイトの使われ方を理解するのに役立てます。",
+    "marketing": "マーケティング",
+    "marketingDescription": "広告パートナーのコンバージョン測定ツールに、当社の広告が効果を上げているかの測定を許可します。このサイトでの広告効果の測定に使われるもので、ここで広告を表示するためのものではありません。",
+    "gpcDisabled": "お使いのブラウザのグローバルプライバシーコントロール（GPC）シグナルによりオフになっています。",
+    "saveChoices": "選択を保存"
+  },
+  "markdown": {
+    "copyCode": "コードをコピー",
+    "copied": "コピーしました"
+  }
+}

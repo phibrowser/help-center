@@ -1,0 +1,127 @@
+{
+  "key": "es",
+  "label": "Español",
+  "lang": "es",
+  "root": false,
+  "site": {
+    "title": "Ayuda de Phi",
+    "description": "Ayuda y preguntas frecuentes de Phi Browser."
+  },
+  "theme": {
+    "nav": {
+      "product": "Phi Browser",
+      "guide": "Guía",
+      "faq": "Preguntas frecuentes"
+    },
+    "groups": {
+      "startHere": "Empieza aquí",
+      "browserWorkspace": "Espacio de trabajo del navegador",
+      "assistantAutomation": "Asistente y automatización",
+      "privacyRecovery": "Privacidad y recuperación"
+    },
+    "pages": {
+      "whatIsPhi": "¿Qué es Phi Browser?",
+      "gettingStarted": "Primeros pasos",
+      "switchingToPhi": "Cambiar a Phi",
+      "tipsAndShortcuts": "Consejos rápidos para Phi Browser",
+      "layouts": "Diseños y navegación",
+      "spaces": "Espacios y Perfiles",
+      "incognito": "Espacios de Incógnito",
+      "bookmarks": "Marcadores y pestañas fijadas",
+      "importExport": "Importar y exportar",
+      "tabManagement": "Administrar pestañas y marcadores",
+      "themes": "Temas y apariencia",
+      "newTab": "Nueva pestaña y widgets",
+      "assistant": "Conoce a tu asistente",
+      "memory": "Memoria",
+      "skills": "Habilidades del navegador",
+      "automation": "Automatización y Phi Link",
+      "phiBrowserSkill": "La habilidad phi-browser",
+      "phiCli": "La CLI de Phi",
+      "agentPasswords": "Administrador de contraseñas del agente",
+      "sentinel": "Phi Sentinel",
+      "privacy": "Privacidad y tus datos",
+      "timeMachine": "Copias de seguridad de Time Machine"
+    },
+    "controls": {
+      "outline": "En esta página",
+      "previousPage": "Página anterior",
+      "nextPage": "Página siguiente",
+      "appearance": "Apariencia",
+      "lightMode": "Cambiar al tema claro",
+      "darkMode": "Cambiar al tema oscuro",
+      "menu": "Menú",
+      "returnToTop": "Volver arriba",
+      "changeLanguage": "Cambiar idioma",
+      "skipToContent": "Saltar al contenido"
+    },
+    "notFound": {
+      "title": "PÁGINA NO ENCONTRADA",
+      "quote": "Pero si no cambias de dirección, y sigues buscando, puede que acabes justo adonde te diriges.",
+      "linkLabel": "ir a la página de inicio",
+      "linkText": "Llévame al inicio"
+    }
+  },
+  "search": {
+    "button": {
+      "buttonText": "Buscar",
+      "buttonAriaLabel": "Buscar en la documentación"
+    },
+    "modal": {
+      "displayDetails": "Mostrar lista detallada",
+      "resetButtonTitle": "Restablecer búsqueda",
+      "backButtonTitle": "Cerrar búsqueda",
+      "noResultsText": "No se encontraron resultados para",
+      "footer": {
+        "selectText": "para seleccionar",
+        "selectKeyAriaLabel": "enter",
+        "navigateText": "para navegar",
+        "navigateUpKeyAriaLabel": "flecha arriba",
+        "navigateDownKeyAriaLabel": "flecha abajo",
+        "closeText": "para cerrar",
+        "closeKeyAriaLabel": "escape"
+      }
+    }
+  },
+  "searchQueries": [
+    "memoria",
+    "espacio de incógnito",
+    "administrador de contraseñas",
+    "vista dividida",
+    "tareas programadas",
+    "copia de seguridad de time machine"
+  ],
+  "customTheme": {
+    "askPhi": "Preguntar a Phi",
+    "privacyControls": "Controles de privacidad",
+    "cookieSettings": "Configuración de cookies",
+    "privacyChoices": "Tus opciones de privacidad",
+    "cookieConsent": "Consentimiento de cookies",
+    "bannerBeforePolicy": "Usamos cookies para que este sitio funcione y, solo con tu permiso, para analizar el tráfico y medir nuestra publicidad. Consulta nuestra",
+    "privacyPolicy": "Política de privacidad",
+    "bannerAfterPolicy": "para más detalles.",
+    "rejectAll": "Rechazar todo",
+    "acceptAll": "Aceptar todo",
+    "customizeSettings": "Personalizar configuración",
+    "cookiePreferences": "Preferencias de cookies",
+    "close": "Cerrar",
+    "preferencesBeforePolicy": "Elige qué cookies puede usar este sitio. Tu elección se guarda en este navegador y puedes cambiarla aquí en cualquier momento. Consulta nuestra",
+    "preferencesAfterPolicy": "para más detalles.",
+    "saleAndSharingDescription": "Compartir datos con socios publicitarios para medir anuncios puede considerarse una “venta” o un “uso compartido” según las leyes de algunos estados de EE. UU. Puedes excluirte con un clic.",
+    "optedOut": "La exclusión está activada en este navegador.",
+    "optOutOfSaleAndSharing": "Excluirme de la venta y del uso compartido",
+    "functional": "Funcionales",
+    "functionalDescription": "Necesarias para que el sitio funcione, por ejemplo para recordar tus preferencias de cookies. Siempre activas; sin analítica y sin publicidad.",
+    "alwaysOn": "Siempre activas",
+    "statistics": "Estadísticas",
+    "statisticsDescription": "Nos ayudan a entender cómo se usa el sitio mediante servicios de analítica (Google Analytics, PostHog).",
+    "marketing": "Marketing",
+    "marketingDescription": "Permiten que las herramientas de conversión de nuestros socios publicitarios midan si nuestros anuncios funcionan. Se usan para medir la publicidad en este sitio, no para mostrarte anuncios aquí.",
+    "gpcDisabled": "Desactivado por la señal Global Privacy Control de tu navegador.",
+    "saveChoices": "Guardar selección"
+  },
+  "markdown": {
+    "copyCode": "Copiar código",
+    "copied": "Copiado"
+  }
+}

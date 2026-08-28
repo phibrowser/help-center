@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { useData } from "vitepress";
+import { computed, onMounted, ref } from "vue";
+import type { HelpThemeConfig } from "../i18n/types.ts";
 
 // Opens Phi Browser's own AI assistant sidebar.
 //
@@ -16,6 +18,8 @@ import { onMounted, ref } from "vue";
 const EXT_ID = "fenmfiepnpdlhplemgijlimpbebebljo";
 
 const isPhi = ref(false);
+const { theme } = useData<HelpThemeConfig>();
+const copy = computed(() => theme.value.customThemeCopy);
 
 function sendToExt(msg: unknown, cb?: (resp: unknown) => void): boolean {
   const rt = (window as unknown as { chrome?: any }).chrome?.runtime;
@@ -48,8 +52,8 @@ function openPhiSidebar() {
     v-if="isPhi"
     type="button"
     class="phi-ai-button"
-    aria-label="Ask Phi"
-    title="Ask Phi"
+    :aria-label="copy.askPhi"
+    :title="copy.askPhi"
     @click="openPhiSidebar"
   >
     <svg

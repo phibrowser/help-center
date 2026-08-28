@@ -1,0 +1,123 @@
+{
+  "locale": "nl",
+  "sourceRevision": "55a343da5507a96a2a0414e38f2cae90c6e3ab89",
+  "owners": {
+    "translation": "Phi i18n pipeline (agent run 2026-08-26)",
+    "contentReview": "Alpha"
+  },
+  "pages": {
+    "agent-passwords/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "ai/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "automation/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "bookmarks/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "faq/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "get-started/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "import-export/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "incognito/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "layouts/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "memory/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "new-tab/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "phi-browser-skill/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "phi-cli/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "privacy/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "sentinel/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "skills/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "spaces/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "switching-to-phi/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "tab-management/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "themes/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "time-machine/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "tips-and-shortcuts/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    },
+    "what-is-phi-browser/index.md": {
+      "translation": "approved",
+      "contentReview": "approved"
+    }
+  },
+  "reviews": {
+    "productTerminology": {
+      "status": "approved",
+      "owner": "Alpha",
+      "evidence": "Reviewed by Alpha; translation drafts and review in PR #15, squash-merged as 54628c0 (authored 2026-08-26 20:47 +0800), Markdown emphasis fixes applied after simulated promotion passed pnpm test:i18n (9 locales)"
+    },
+    "privacyLegal": {
+      "status": "approved",
+      "owner": "Alpha",
+      "evidence": "Reviewed by Alpha; translation drafts and review in PR #15, squash-merged as 54628c0 (authored 2026-08-26 20:47 +0800), Markdown emphasis fixes applied after simulated promotion passed pnpm test:i18n (9 locales)"
+    },
+    "searchQa": {
+      "status": "approved",
+      "owner": "Alpha",
+      "evidence": "Reviewed by Alpha; translation drafts and review in PR #15, squash-merged as 54628c0 (authored 2026-08-26 20:47 +0800), Markdown emphasis fixes applied after simulated promotion passed pnpm test:i18n (9 locales)"
+    }
+  }
+}

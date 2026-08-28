@@ -1,0 +1,66 @@
+export const guideGroups = [
+  {
+    key: "startHere",
+    items: [
+      "whatIsPhi",
+      "gettingStarted",
+      "switchingToPhi",
+      "tipsAndShortcuts",
+    ],
+  },
+  {
+    key: "browserWorkspace",
+    items: [
+      "layouts",
+      "spaces",
+      "incognito",
+      "bookmarks",
+      "importExport",
+      "tabManagement",
+      "themes",
+      "newTab",
+    ],
+  },
+  {
+    key: "assistantAutomation",
+    items: [
+      "assistant",
+      "memory",
+      "skills",
+      "automation",
+      "phiBrowserSkill",
+      "phiCli",
+      "agentPasswords",
+      "sentinel",
+    ],
+  },
+  {
+    key: "privacyRecovery",
+    items: ["privacy", "timeMachine"],
+  },
+] as const;
+
+export const guideRoutes = {
+  whatIsPhi: "/what-is-phi-browser/",
+  gettingStarted: "/get-started/",
+  switchingToPhi: "/switching-to-phi/",
+  tipsAndShortcuts: "/tips-and-shortcuts/",
+  layouts: "/layouts/",
+  spaces: "/spaces/",
+  incognito: "/incognito/",
+  bookmarks: "/bookmarks/",
+  importExport: "/import-export/",
+  tabManagement: "/tab-management/",
+  themes: "/themes/",
+  newTab: "/new-tab/",
+  assistant: "/ai/",
+  memory: "/memory/",
+  skills: "/skills/",
+  automation: "/automation/",
+  phiBrowserSkill: "/phi-browser-skill/",
+  phiCli: "/phi-cli/",
+  agentPasswords: "/agent-passwords/",
+  sentinel: "/sentinel/",
+  privacy: "/privacy/",
+  timeMachine: "/time-machine/",
+} as const;

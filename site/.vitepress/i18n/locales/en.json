@@ -1,0 +1,120 @@
+{
+  "key": "root",
+  "label": "English",
+  "lang": "en",
+  "root": true,
+  "site": {
+    "title": "Phi Help",
+    "description": "Help and FAQ for Phi Browser."
+  },
+  "theme": {
+    "nav": {
+      "product": "Phi Browser",
+      "guide": "Guide",
+      "faq": "FAQ"
+    },
+    "groups": {
+      "startHere": "Start Here",
+      "browserWorkspace": "Browser Workspace",
+      "assistantAutomation": "Assistant & Automation",
+      "privacyRecovery": "Privacy & Recovery"
+    },
+    "pages": {
+      "whatIsPhi": "What is Phi Browser?",
+      "gettingStarted": "Getting Started",
+      "switchingToPhi": "Switching to Phi",
+      "tipsAndShortcuts": "Quick tips for Phi Browser",
+      "layouts": "Layouts & Navigation",
+      "spaces": "Spaces & Profiles",
+      "incognito": "Incognito Spaces",
+      "bookmarks": "Bookmarks & Pinned Tabs",
+      "importExport": "Importing & Exporting",
+      "tabManagement": "Managing Tabs & Bookmarks",
+      "themes": "Themes & Appearance",
+      "newTab": "New Tab & Widgets",
+      "assistant": "Meet your assistant",
+      "memory": "Memory",
+      "skills": "Browser Skills",
+      "automation": "Automation & Phi Link",
+      "phiBrowserSkill": "The phi-browser skill",
+      "phiCli": "The Phi CLI",
+      "agentPasswords": "Agent Password Manager",
+      "sentinel": "Phi Sentinel",
+      "privacy": "Privacy & Your Data",
+      "timeMachine": "Time Machine Backups"
+    },
+    "controls": {
+      "outline": "On this page",
+      "previousPage": "Previous page",
+      "nextPage": "Next page",
+      "appearance": "Appearance",
+      "lightMode": "Switch to light theme",
+      "darkMode": "Switch to dark theme",
+      "menu": "Menu",
+      "returnToTop": "Return to top",
+      "changeLanguage": "Change language",
+      "skipToContent": "Skip to content"
+    },
+    "notFound": {
+      "title": "PAGE NOT FOUND",
+      "quote": "But if you don't change your direction, and if you keep looking, you may end up where you are heading.",
+      "linkLabel": "go to home",
+      "linkText": "Take me home"
+    }
+  },
+  "search": {
+    "button": {
+      "buttonText": "Search",
+      "buttonAriaLabel": "Search docs"
+    },
+    "modal": {
+      "displayDetails": "Display detailed list",
+      "resetButtonTitle": "Reset search",
+      "backButtonTitle": "Close search",
+      "noResultsText": "No results found for",
+      "footer": {
+        "selectText": "to select",
+        "selectKeyAriaLabel": "enter",
+        "navigateText": "to navigate",
+        "navigateUpKeyAriaLabel": "up arrow",
+        "navigateDownKeyAriaLabel": "down arrow",
+        "closeText": "to close",
+        "closeKeyAriaLabel": "escape"
+      }
+    }
+  },
+  "searchQueries": ["memory", "incognito space", "password manager"],
+  "customTheme": {
+    "askPhi": "Ask Phi",
+    "privacyControls": "Privacy controls",
+    "cookieSettings": "Cookie Settings",
+    "privacyChoices": "Your Privacy Choices",
+    "cookieConsent": "Cookie consent",
+    "bannerBeforePolicy": "We use cookies to run this site and, only with your permission, to analyze traffic and measure our advertising. See our",
+    "privacyPolicy": "Privacy Policy",
+    "bannerAfterPolicy": "for details.",
+    "rejectAll": "Reject all",
+    "acceptAll": "Accept all",
+    "customizeSettings": "Customize settings",
+    "cookiePreferences": "Cookie preferences",
+    "close": "Close",
+    "preferencesBeforePolicy": "Choose which cookies this site may use. Your choice is saved on this browser and you can change it here at any time. See our",
+    "preferencesAfterPolicy": "for details.",
+    "saleAndSharingDescription": "Sharing data with advertising partners for ad measurement may be considered a “sale” or “sharing” under some U.S. state laws. You can opt out with one click.",
+    "optedOut": "You’re opted out on this browser.",
+    "optOutOfSaleAndSharing": "Opt out of sale and sharing",
+    "functional": "Functional",
+    "functionalDescription": "Required for the site to work, such as remembering your cookie choices. Always on; contains no analytics and no advertising.",
+    "alwaysOn": "Always on",
+    "statistics": "Statistics",
+    "statisticsDescription": "Help us understand how the site is used through analytics services (Google Analytics, PostHog).",
+    "marketing": "Marketing",
+    "marketingDescription": "Allow our advertising partners' conversion tools to measure whether our ads work. Used for ad measurement on this site, not for showing you ads here.",
+    "gpcDisabled": "Turned off by your browser’s Global Privacy Control signal.",
+    "saveChoices": "Save choices"
+  },
+  "markdown": {
+    "copyCode": "Copy Code",
+    "copied": "Copied"
+  }
+}

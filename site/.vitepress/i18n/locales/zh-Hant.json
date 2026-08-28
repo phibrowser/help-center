@@ -1,0 +1,120 @@
+{
+  "key": "zh-Hant",
+  "label": "繁體中文",
+  "lang": "zh-Hant",
+  "root": false,
+  "site": {
+    "title": "Phi 說明中心",
+    "description": "Phi Browser 的說明與常見問題。"
+  },
+  "theme": {
+    "nav": {
+      "product": "Phi Browser",
+      "guide": "指南",
+      "faq": "常見問題"
+    },
+    "groups": {
+      "startHere": "從這裡開始",
+      "browserWorkspace": "瀏覽器工作區",
+      "assistantAutomation": "助理與自動化",
+      "privacyRecovery": "隱私權與復原"
+    },
+    "pages": {
+      "whatIsPhi": "什麼是 Phi Browser？",
+      "gettingStarted": "開始使用",
+      "switchingToPhi": "改用 Phi",
+      "tipsAndShortcuts": "Phi Browser 快速訣竅",
+      "layouts": "版面配置與導覽",
+      "spaces": "空間與設定檔",
+      "incognito": "無痕空間",
+      "bookmarks": "書籤與釘選分頁",
+      "importExport": "匯入與匯出",
+      "tabManagement": "管理分頁與書籤",
+      "themes": "主題與外觀",
+      "newTab": "新分頁與小工具",
+      "assistant": "認識你的助理",
+      "memory": "記憶",
+      "skills": "瀏覽器 Skill",
+      "automation": "自動化與 Phi Link",
+      "phiBrowserSkill": "phi-browser skill",
+      "phiCli": "Phi CLI",
+      "agentPasswords": "AI 代理密碼管理員",
+      "sentinel": "Phi Sentinel",
+      "privacy": "隱私權與你的資料",
+      "timeMachine": "時光機備份"
+    },
+    "controls": {
+      "outline": "本頁內容",
+      "previousPage": "上一頁",
+      "nextPage": "下一頁",
+      "appearance": "外觀",
+      "lightMode": "切換至淺色主題",
+      "darkMode": "切換至深色主題",
+      "menu": "選單",
+      "returnToTop": "回到頁首",
+      "changeLanguage": "變更語言",
+      "skipToContent": "跳至內容"
+    },
+    "notFound": {
+      "title": "找不到頁面",
+      "quote": "不過，如果你不改變方向，又繼續找下去，最後可能就會走到你原本前往的地方。",
+      "linkLabel": "前往首頁",
+      "linkText": "帶我回首頁"
+    }
+  },
+  "search": {
+    "button": {
+      "buttonText": "搜尋",
+      "buttonAriaLabel": "搜尋文件"
+    },
+    "modal": {
+      "displayDetails": "顯示詳細清單",
+      "resetButtonTitle": "重設搜尋",
+      "backButtonTitle": "關閉搜尋",
+      "noResultsText": "找不到相關結果",
+      "footer": {
+        "selectText": "選取",
+        "selectKeyAriaLabel": "Enter",
+        "navigateText": "切換",
+        "navigateUpKeyAriaLabel": "向上鍵",
+        "navigateDownKeyAriaLabel": "向下鍵",
+        "closeText": "關閉",
+        "closeKeyAriaLabel": "Esc"
+      }
+    }
+  },
+  "searchQueries": ["記憶", "無痕空間", "分頁群組", "密碼管理員"],
+  "customTheme": {
+    "askPhi": "詢問 Phi",
+    "privacyControls": "隱私權控制項",
+    "cookieSettings": "Cookie 設定",
+    "privacyChoices": "你的隱私權選擇",
+    "cookieConsent": "Cookie 同意聲明",
+    "bannerBeforePolicy": "我們使用 Cookie 來維持本網站運作；只有在取得你的同意後，才會用於分析流量並衡量廣告成效。詳情請參閱我們的",
+    "privacyPolicy": "隱私權政策",
+    "bannerAfterPolicy": "。",
+    "rejectAll": "全部拒絕",
+    "acceptAll": "全部接受",
+    "customizeSettings": "自訂設定",
+    "cookiePreferences": "Cookie 偏好設定",
+    "close": "關閉",
+    "preferencesBeforePolicy": "選擇本網站可以使用哪些 Cookie。你的選擇會儲存在這個瀏覽器上，之後隨時可以回到這裡變更。詳情請參閱我們的",
+    "preferencesAfterPolicy": "。",
+    "saleAndSharingDescription": "依部分美國州法律，為了衡量廣告成效而與廣告合作夥伴分享資料，可能被視為「出售」或「分享」。你只要按一下就能選擇退出。",
+    "optedOut": "你已在這個瀏覽器上選擇退出。",
+    "optOutOfSaleAndSharing": "選擇退出出售與分享",
+    "functional": "功能性",
+    "functionalDescription": "網站運作所必需，例如記住你的 Cookie 選擇。一律啟用；不含任何分析或廣告用途。",
+    "alwaysOn": "一律啟用",
+    "statistics": "統計",
+    "statisticsDescription": "透過分析服務（Google Analytics、PostHog）協助我們瞭解網站的使用情形。",
+    "marketing": "行銷",
+    "marketingDescription": "允許我們廣告合作夥伴的轉換工具衡量我們的廣告是否有效。僅用於本網站的廣告成效衡量，不會在這裡向你顯示廣告。",
+    "gpcDisabled": "已由你瀏覽器的全域隱私控制（Global Privacy Control）訊號關閉。",
+    "saveChoices": "儲存選擇"
+  },
+  "markdown": {
+    "copyCode": "拷貝程式碼",
+    "copied": "已拷貝"
+  }
+}
