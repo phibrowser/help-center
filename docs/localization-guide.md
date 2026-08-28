@@ -4,7 +4,7 @@ This guide is for translators, reviewers, and maintainers adding a language to P
 
 ## Current status
 
-All nine catalog locales are registered. Simplified Chinese (`zh-Hans`) was the pilot; its `status.json` still records open content, privacy/legal, and search QA gates. German (`de`), Spanish (`es`), French (`fr`), Japanese (`ja`), Korean (`ko`), Dutch (`nl`), and Traditional Chinese (`zh-Hant`) were drafted in PR #15 (squash commit `54628c0`) and promoted on 2026-08-27 with review gates recorded under owner Alpha in each `localization/<locale>/status.json`. Traditional Chinese has its own translation and must not fall back to Simplified Chinese.
+All nine catalog locales are registered. Simplified Chinese (`zh-Hans`) was the pilot; on 2026-08-28 its pages and resource were re-translated from scratch by the `phi-translate-validate` process (provenance, seeds, and the owner review list in `docs/i18n-runs/2026-08-28-zh-hans/`), and its `status.json` records open content, privacy/legal, and search QA gates. German (`de`), Spanish (`es`), French (`fr`), Japanese (`ja`), Korean (`ko`), Dutch (`nl`), and Traditional Chinese (`zh-Hant`) were drafted in PR #15 (squash commit `54628c0`) and promoted on 2026-08-27 with review gates recorded under owner Alpha in each `localization/<locale>/status.json`. Traditional Chinese has its own translation and must not fall back to Simplified Chinese.
 
 Registration means the locale is built and shown in the language menu. It is not evidence of deployment or of legal review by a qualified professional; see the role table below for what each gate requires.
 

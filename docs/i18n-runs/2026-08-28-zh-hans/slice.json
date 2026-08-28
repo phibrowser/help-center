@@ -1,0 +1,297 @@
+{
+  "run": "2026-08-28-zh-hans",
+  "locale": "zh-Hans",
+  "sourceRevision": "3c4951dd23800cb84be84d6302acf08fcf04467c",
+  "entries": {
+    "index.md": {
+      "source": "site/index.md",
+      "output": "site/zh-Hans/index.md",
+      "group": "A",
+      "desc": "Home page (VitePress layout: home). Frontmatter only: title, description, hero name/text/tagline, three action buttons, four feature cards. Marketing-flavoured but restrained; card titles are short labels, details are one sentence each. Renders as the landing page of /help/zh-Hans/.",
+      "words": 204,
+      "headingCount": 0,
+      "codeFences": 0,
+      "containers": 0,
+      "requiredAnchorIds": {}
+    },
+    "what-is-phi-browser/index.md": {
+      "source": "site/what-is-phi-browser/index.md",
+      "output": "site/zh-Hans/what-is-phi-browser/index.md",
+      "group": "A",
+      "desc": "Overview page: what makes Phi different (native macOS, local-first data, Memory, Browser Skills, automation). First page a new reader opens. Explanatory prose with a few links.",
+      "words": 647,
+      "headingCount": 5,
+      "codeFences": 0,
+      "containers": 0,
+      "requiredAnchorIds": {}
+    },
+    "get-started/index.md": {
+      "source": "site/get-started/index.md",
+      "output": "site/zh-Hans/get-started/index.md",
+      "group": "A",
+      "desc": "Install (official download, Homebrew commands), first run, importing from another browser, next steps. Contains shell code blocks that must stay verbatim.",
+      "words": 322,
+      "headingCount": 7,
+      "codeFences": 1,
+      "containers": 0,
+      "requiredAnchorIds": {}
+    },
+    "switching-to-phi/index.md": {
+      "source": "site/switching-to-phi/index.md",
+      "output": "site/zh-Hans/switching-to-phi/index.md",
+      "group": "A",
+      "desc": "Migration guide for people coming from Chrome, Safari, Arc, or Dia. Compares habits and maps them to Phi concepts.",
+      "words": 751,
+      "headingCount": 5,
+      "codeFences": 0,
+      "containers": 0,
+      "requiredAnchorIds": {}
+    },
+    "layouts/index.md": {
+      "source": "site/layouts/index.md",
+      "output": "site/zh-Hans/layouts/index.md",
+      "group": "B",
+      "desc": "Performance, Balanced, Comfortable layouts; vertical sidebar; tabs vs pinned tabs vs bookmarks; Split View; Tab Groups. Layout mode names are UI strings.",
+      "words": 627,
+      "headingCount": 8,
+      "codeFences": 0,
+      "containers": 0,
+      "requiredAnchorIds": {}
+    },
+    "spaces/index.md": {
+      "source": "site/spaces/index.md",
+      "output": "site/zh-Hans/spaces/index.md",
+      "group": "B",
+      "desc": "Spaces (workspaces) vs Profiles (isolated cookies/history/logins/extensions); creating and managing Spaces; URL Rules; Incognito Spaces. Heavy on ratified feature names.",
+      "words": 855,
+      "headingCount": 7,
+      "codeFences": 0,
+      "containers": 0,
+      "requiredAnchorIds": {
+        "## URL Rules: send sites to the right Space automatically": "url-rules-send-sites-to-the-right-space-automatically"
+      }
+    },
+    "incognito/index.md": {
+      "source": "site/incognito/index.md",
+      "output": "site/zh-Hans/incognito/index.md",
+      "group": "B",
+      "desc": "Incognito Spaces: opening, appearance, what stays out of a private session, URL Rules into Incognito, extensions, closing.",
+      "words": 977,
+      "headingCount": 8,
+      "codeFences": 0,
+      "containers": 0,
+      "requiredAnchorIds": {
+        "## Extensions in an Incognito Space": "extensions-in-an-incognito-space"
+      }
+    },
+    "bookmarks/index.md": {
+      "source": "site/bookmarks/index.md",
+      "output": "site/zh-Hans/bookmarks/index.md",
+      "group": "C",
+      "desc": "Living bookmarks that open in place, sidebar organisation, pinned tabs, pinned tab scope setting, returning to the original page, which to use.",
+      "words": 842,
+      "headingCount": 7,
+      "codeFences": 0,
+      "containers": 0,
+      "requiredAnchorIds": {
+        "## Choose a pinned tab scope": "choose-a-pinned-tab-scope"
+      }
+    },
+    "import-export/index.md": {
+      "source": "site/import-export/index.md",
+      "output": "site/zh-Hans/import-export/index.md",
+      "group": "C",
+      "desc": "Importing bookmarks and history from another browser or a file (Bookmarks HTML, Safari History JSON, Safari Export Archive ZIP), what each imports, exporting bookmarks to HTML. Has a comparison table.",
+      "words": 1087,
+      "headingCount": 9,
+      "codeFences": 0,
+      "containers": 1,
+      "requiredAnchorIds": {}
+    },
+    "tab-management/index.md": {
+      "source": "site/tab-management/index.md",
+      "output": "site/zh-Hans/tab-management/index.md",
+      "group": "C",
+      "desc": "Multi-select tabs and bookmarks in the sidebar, then close, organise, drag, move or clone across Spaces. Step-like instructions with keyboard modifiers.",
+      "words": 756,
+      "headingCount": 6,
+      "codeFences": 0,
+      "containers": 0,
+      "requiredAnchorIds": {}
+    },
+    "themes/index.md": {
+      "source": "site/themes/index.md",
+      "output": "site/zh-Hans/themes/index.md",
+      "group": "D",
+      "desc": "Colour themes, light/dark/system appearance, opacity, sidebar styling, new tab theming, webpage selection tinting. Setting labels are UI strings.",
+      "words": 534,
+      "headingCount": 5,
+      "codeFences": 0,
+      "containers": 0,
+      "requiredAnchorIds": {}
+    },
+    "new-tab/index.md": {
+      "source": "site/new-tab/index.md",
+      "output": "site/zh-Hans/new-tab/index.md",
+      "group": "D",
+      "desc": "Personalised new tab page: search, assistant access, quick links, built-in widgets, arranging widgets, widgets powered by Memory.",
+      "words": 541,
+      "headingCount": 7,
+      "codeFences": 0,
+      "containers": 0,
+      "requiredAnchorIds": {}
+    },
+    "tips-and-shortcuts/index.md": {
+      "source": "site/tips-and-shortcuts/index.md",
+      "output": "site/zh-Hans/tips-and-shortcuts/index.md",
+      "group": "D",
+      "desc": "Quick tips: shortcut reference table, Split View, saved URL return, Group Overview, multi-select, switch/search/copy, Space personalisation, URL Rules, Picture-in-Picture, asking the assistant. Many keyboard shortcut symbols.",
+      "words": 1162,
+      "headingCount": 13,
+      "codeFences": 0,
+      "containers": 1,
+      "requiredAnchorIds": {}
+    },
+    "ai/index.md": {
+      "source": "site/ai/index.md",
+      "output": "site/zh-Hans/ai/index.md",
+      "group": "E",
+      "desc": "Meet your assistant: naming it, Memory, talking to it, Chat with Tabs, Browser Skills, where questions go (model providers). Must keep the privacy disclosure about questions leaving the Mac.",
+      "words": 782,
+      "headingCount": 7,
+      "codeFences": 0,
+      "containers": 0,
+      "requiredAnchorIds": {
+        "## Chat with Tabs": "chat-with-tabs"
+      }
+    },
+    "memory/index.md": {
+      "source": "site/memory/index.md",
+      "output": "site/zh-Hans/memory/index.md",
+      "group": "E",
+      "desc": "Memory feature: how it learns locally, Nebula view, how the assistant uses it, staying in control (delete, turn off), Anamnesis (standalone Chrome extension).",
+      "words": 842,
+      "headingCount": 7,
+      "codeFences": 0,
+      "containers": 0,
+      "requiredAnchorIds": {}
+    },
+    "skills/index.md": {
+      "source": "site/skills/index.md",
+      "output": "site/zh-Hans/skills/index.md",
+      "group": "E",
+      "desc": "Browser Skills: built-in vs user-created, Skills library, creating, using in chat, the risk warning that a Skill can act. Carries the callout distinguishing the phi-browser skill.",
+      "words": 723,
+      "headingCount": 7,
+      "codeFences": 0,
+      "containers": 1,
+      "requiredAnchorIds": {}
+    },
+    "automation/index.md": {
+      "source": "site/automation/index.md",
+      "output": "site/zh-Hans/automation/index.md",
+      "group": "F",
+      "desc": "On-demand actions, background tasks (Shadow Tasks), scheduled tasks, approvals, Phi Sentinel, Phi Link (Telegram notifications).",
+      "words": 643,
+      "headingCount": 7,
+      "codeFences": 0,
+      "containers": 0,
+      "requiredAnchorIds": {
+        "## Scheduled tasks": "scheduled-tasks",
+        "## Phi Link": "phi-link"
+      }
+    },
+    "sentinel/index.md": {
+      "source": "site/sentinel/index.md",
+      "output": "site/zh-Hans/sentinel/index.md",
+      "group": "F",
+      "desc": "Phi Sentinel macOS menu bar companion: keeps automation running, Private AI on your Mac (task by task, bring your own provider, requirements, turning on), staying in control.",
+      "words": 595,
+      "headingCount": 9,
+      "codeFences": 0,
+      "containers": 0,
+      "requiredAnchorIds": {}
+    },
+    "phi-browser-skill/index.md": {
+      "source": "site/phi-browser-skill/index.md",
+      "output": "site/zh-Hans/phi-browser-skill/index.md",
+      "group": "F",
+      "desc": "The phi-browser skill: lets outside AI coding agents (Claude Code etc.) drive Phi in agent Spaces; taking control; login reuse; responsibility and automation-ban warning; setup; access containment. Carries the callout distinguishing Browser Skills.",
+      "words": 1360,
+      "headingCount": 8,
+      "codeFences": 0,
+      "containers": 1,
+      "requiredAnchorIds": {}
+    },
+    "phi-cli/index.md": {
+      "source": "site/phi-cli/index.md",
+      "output": "site/zh-Hans/phi-cli/index.md",
+      "group": "G",
+      "desc": "The Phi CLI (the phi command): installing, element map, sessions, where commands run, signing in, staying in charge, installing the skill from the terminal. Many code blocks and command names that stay verbatim.",
+      "words": 1120,
+      "headingCount": 9,
+      "codeFences": 5,
+      "containers": 1,
+      "requiredAnchorIds": {}
+    },
+    "agent-passwords/index.md": {
+      "source": "site/agent-passwords/index.md",
+      "output": "site/zh-Hans/agent-passwords/index.md",
+      "group": "G",
+      "desc": "Agent Password Manager with Bitwarden: why Bitwarden, how secrets stay hidden, turning on, approval prompts, three exposure levels, what agents never get, reviewing/revoking, vault timeout, turning off. Security-sensitive wording; keep every qualification.",
+      "words": 1395,
+      "headingCount": 11,
+      "codeFences": 0,
+      "containers": 0,
+      "requiredAnchorIds": {}
+    },
+    "time-machine/index.md": {
+      "source": "site/time-machine/index.md",
+      "output": "site/zh-Hans/time-machine/index.md",
+      "group": "G",
+      "desc": "Phi's own Time Machine rollback snapshots: what it is and is not (vs Apple Time Machine), when snapshots are created, rolling back, exporting your own data.",
+      "words": 636,
+      "headingCount": 6,
+      "codeFences": 0,
+      "containers": 0,
+      "requiredAnchorIds": {
+        "## Exporting your own data": "exporting-your-own-data"
+      }
+    },
+    "privacy/index.md": {
+      "source": "site/privacy/index.md",
+      "output": "site/zh-Hans/privacy/index.md",
+      "group": "H2",
+      "desc": "Privacy and your data: where data lives, what Phi does not collect, what it does send, usage statistics, deleting account/data, turning AI off, browsing privately, open source. Legal-adjacent: preserve meaning exactly; the Privacy Policy is the source of truth.",
+      "words": 977,
+      "headingCount": 10,
+      "codeFences": 0,
+      "containers": 0,
+      "requiredAnchorIds": {
+        "## What Phi does send": "what-phi-does-send",
+        "## Usage statistics": "usage-statistics",
+        "### Turning AI off": "turning-ai-off"
+      }
+    },
+    "faq/index.md": {
+      "source": "site/faq/index.md",
+      "output": "site/zh-Hans/faq/index.md",
+      "group": "H1",
+      "desc": "FAQ: headings ARE questions. Sections: layouts, Spaces and Profiles, Incognito, bookmarks and tabs, Split View and Tab Groups, AI features, Phi Sentinel, Phi Link, pricing, privacy, Time Machine. Answers are short and must match the topic pages term for term.",
+      "words": 3462,
+      "headingCount": 12,
+      "codeFences": 0,
+      "containers": 72,
+      "requiredAnchorIds": {
+        "## AI features": "ai-features",
+        "## Phi Sentinel": "phi-sentinel"
+      }
+    },
+    "resource.json": {
+      "source": "site/.vitepress/i18n/locales/en.json",
+      "output": "site/.vitepress/i18n/locales/zh-Hans.json",
+      "group": "H2",
+      "desc": "Locale resource: site title/description, nav and sidebar labels (page titles are BINDING from refs), theme controls, 404 page, local-search UI, representative searchQueries, Ask Phi button, Cookie Consent banner and preferences dialog (legal meaning must be preserved exactly), code-copy labels. Keep key/lang/label/root and every JSON property name as instructed in docs/localization-guide.md section 2."
+    }
+  }
+}
