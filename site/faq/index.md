@@ -43,7 +43,7 @@ Yes. Every Space has an independent set of bookmarks and can use its own color t
 :::
 
 ::: details What are URL Rules?
-URL Rules open matching sites in a regular Space, Incognito, or Kiosk, no matter where you click or type the link. Manage them under **Settings → Navigation**. You can match by domain suffix, exact domain, "domain contains," or a host plus path prefix. Set a rule to **Ask every time** to get an **Open in which Space?** prompt instead of routing silently. When several rules match, the most specific one wins.
+URL Rules open matching sites in a Space you assign, no matter where you click or type the link. You can match by domain suffix, exact domain, "domain contains," or a host plus path prefix. Set a rule to **Ask every time** to get an **Open in which Space?** prompt instead of routing silently. When several rules match, the most specific one wins.
 :::
 
 ::: details What happens if I delete a Space?
@@ -73,7 +73,7 @@ Phi asks **"This will also close this Incognito Space, are you sure?"** (check *
 :::
 
 ::: details Can URL Rules send a site to an Incognito Space?
-Yes. The URL Rules editor offers one generic **Incognito** target alongside your regular Spaces and Kiosk. A rule never points at a specific Incognito Space, since those exist only while open. When such a rule matches, Phi uses a live Incognito Space or opens a new one on demand. Routing is one-way: rules never pull a navigation out of a private session back into a regular Space.
+Yes. The URL Rules editor offers one generic **Incognito** target alongside your regular Spaces. A rule never points at a specific Incognito Space, since those exist only while open. When such a rule matches, Phi uses a live Incognito Space or opens a new one on demand. Routing is one-way: rules never pull a navigation out of a private session back into a regular Space.
 :::
 
 ::: details Do extensions work in an Incognito Space?
