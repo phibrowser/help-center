@@ -34,6 +34,7 @@ Made by the orchestrator so that all pages agree with each other and with the sh
 - View menu items: 「显示 → 智能体会话记录」 and 「显示 → 智能体自动视图」 (shipped strings), replacing a translator's 查看 → 智能体记录 / 智能体自动跟随.
 - Theme preset names aligned to shipped strings: 纯净, 薄荷绿, 薄雾灰, 水蓝色, 鸢尾色, 花瓣粉, 珊瑚色, 琥珀色. Web selection toggle label: 「将主题应用于网页文本选中效果」.
 - 「智能体凭据授权…」 (shipped) for Agent Credential Approvals; 「移到空间」, 「将标签页移到标签组」 (shipped menu labels); Private AI task names 对话 / 数据搜索 / 网页任务; 「完成」 for Finish; Incognito window as 无痕式窗口 (shipped and Chrome).
+- "Agentic" is 智能体式（Agentic）on every page and agentic tasks are 智能体任务 (owner ruling 2026-08-28; the first pass had left the word bare in `automation` and as 智能体能力 in the FAQ).
 - Cross-page consistency: "coding agent" is 编程智能体 everywhere; "Staying in control" is 由你掌控; "How this connects to the rest of Phi" is 与 Phi 其他部分的关系; the AI Sidebar toggle label is 「自动将当前标签页添加为新对话的上下文」.
 - One emphasis span in `time-machine/index.md` was restructured because CommonMark cannot open `**` before 「 after a CJK character.
 

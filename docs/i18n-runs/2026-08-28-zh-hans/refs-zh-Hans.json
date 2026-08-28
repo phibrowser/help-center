@@ -147,7 +147,9 @@
     "Context (ordinary word)": "上下文",
     "model provider": "模型提供商",
     "local model": "本地模型",
-    "prompt": "提示词"
+    "prompt": "提示词",
+    "Agentic (adjective)": "智能体式（Agentic），English in parentheses on first mention",
+    "agentic tasks": "智能体任务"
   },
   "actionVocabulary": {
     "sign in": "登录",
@@ -212,6 +214,7 @@
     "Pinned tabs: 固定标签页 in prose (shipped human-reviewed macOS strings and Chrome zh-CN both use it); 固定的标签页 only when quoting the sidebar section label of that name.",
     "the phi-browser skill: kept lowercase as in the English house rule because it is a package name; the shipped zh-Hans UI writes phi-browser Skill. Flagged for the owner.",
     "Browser Skills: 浏览器 Skill (Skill stays English in zh per owner ruling 2026-08-06; singular form).",
-    "Time Machine: 时间机器 for both Phi's snapshot feature and Apple's backup feature, matching Apple zh-CN and the shipped Phi strings. Distinguish by context (Phi 的时间机器 vs Apple 的时间机器 / macOS 时间机器)."
+    "Time Machine: 时间机器 for both Phi's snapshot feature and Apple's backup feature, matching Apple zh-CN and the shipped Phi strings. Distinguish by context (Phi 的时间机器 vs Apple 的时间机器 / macOS 时间机器).",
+    "Agentic: 智能体式（Agentic）, parallel to the bound Agent = 智能体 and to zh-Hant's 代理式; agentic tasks = 智能体任务. Owner ruling 2026-08-28 after the first pass left the word inconsistent across pages."
   ]
 }
