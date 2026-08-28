@@ -29,18 +29,18 @@ A simple way to hold it: **Spaces organize how things look and feel; Profiles de
 - **Rename** or **Change Icon** / **Change Theme** from the Space's menu. Choose **Follow Global** to drop a per-Space theme override.
 - **Delete** a Space from the same menu. Deleting a Space also removes the bookmarks and URL Rules that belong to it, and cannot be undone. If pinned tab scope is **Space**, that Space's pinned tabs are removed too. Profile-scoped and App-scoped pinned tabs are not affected.
 
-## URL Rules: route matching sites automatically
+## URL Rules: send sites to the right Space automatically
 
-**URL Rules** match a site and open it in a regular Space, Incognito, or Kiosk, no matter where you click or type the link.
+Spaces are most useful when the right pages land in the right place without you thinking about it. **URL Rules** do that: a rule matches a site and opens it in the Space you assign, no matter where you click or type the link.
 
-Open **URL Rules…** from the **Spaces** menu in the menu bar, or open **Settings → Navigation** and click **Manage URL Rules…**. Each rule matches by:
+Open **URL Rules…** from the **Spaces** menu in the menu bar, or from the Spaces section in Settings, to manage every Space's rules in one place. Each rule matches by:
 
 - **Domain suffix**, `figma.com` and all its subdomains.
 - **Domain**, one exact host, like `www.example.com`.
 - **Domain contains**, any host containing a word, like `git`.
 - **URL**, a host plus a path prefix, like `example.com/team`.
 
-A rule can target a regular Space, **Incognito**, or **Kiosk**. **Incognito** routes matching sites into an [Incognito Space](/incognito/), creating one when needed. **Kiosk** opens each match in a lightweight window outside your Spaces. See [Kiosk](/kiosk/) for how those windows work.
+Besides your regular Spaces, a rule can target **Incognito**: matching sites then open in an [Incognito Space](/incognito/), created on demand when none is open.
 
 Set a rule to **Ask every time** instead of routing silently. When a matching link opens, Phi shows an **Open in which Space?** chooser so you can pick. Your current Space is marked, and you can keep the page where you are. When several rules could match, the most specific one wins (a longer path beats a shorter one; an exact host beats a wildcard).
 

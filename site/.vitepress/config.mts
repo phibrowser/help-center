@@ -134,7 +134,6 @@ const guideSidebar: DefaultTheme.SidebarItem[] = [
       { text: "Incognito Spaces", link: "/incognito/" },
       { text: "Bookmarks & Pinned Tabs", link: "/bookmarks/" },
       { text: "Peek View", link: "/peek/" },
-      { text: "Kiosk", link: "/kiosk/" },
       { text: "Importing & Exporting", link: "/import-export/" },
       { text: "Managing Tabs & Bookmarks", link: "/tab-management/" },
       { text: "Themes & Appearance", link: "/themes/" },

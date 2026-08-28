@@ -33,7 +33,7 @@ One thing does survive on purpose: files you download are saved to your Mac as u
 
 ## Sending sites to Incognito with URL Rules
 
-[URL Rules](/spaces/#url-rules-route-matching-sites-automatically) can route matching sites into private browsing automatically. In the rules editor, the destination picker offers one generic **Incognito** target alongside your regular Spaces and Kiosk, never a specific Incognito Space, because those exist only while they are open. When a rule fires, Phi routes the page into the Incognito Space you are already in or the first live one, and opens a new Incognito Space on demand when none is open.
+[URL Rules](/spaces/#url-rules-send-sites-to-the-right-space-automatically) can route matching sites into private browsing automatically. In the rules editor, the Space picker offers one generic **Incognito** target alongside your regular Spaces, never a specific Incognito Space, because those exist only while they are open. When a rule fires, Phi routes the page into the Incognito Space you are already in or the first live one, and opens a new Incognito Space on demand when none is open.
 
 Routing into Incognito is a one-way valve. A rule can send a navigation into a private session, but nothing is ever routed back out: while you browse in an Incognito Space or an incognito window, URL Rules do not apply, so a link there cannot be pulled out into a regular Space.
 
