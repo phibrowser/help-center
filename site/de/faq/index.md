@@ -43,7 +43,7 @@ Ja. Jeder Space hat einen unabhängigen Satz Lesezeichen und kann ein eigenes Fa
 :::
 
 ::: details Was sind URL-Regeln?
-URL-Regeln öffnen passende Websites in einem Space, den du festlegst, egal wo du den Link anklickst oder eintippst. Eine Regel kann auf eine Domain-Endung, eine exakte Domain, „Domain enthält“ oder einen Host mit Pfad-Präfix passen. Stelle eine Regel auf **Jedes Mal fragen**, und du bekommst die Nachfrage **In welchem Space öffnen?**, statt dass still weitergeleitet wird. Passen mehrere Regeln, gewinnt die spezifischste.
+URL-Regeln öffnen passende Websites in einem regulären Space, in Inkognito oder in Kiosk, egal wo du den Link anklickst oder eintippst. Verwalte sie unter **Einstellungen → Navigation**. Eine Regel kann auf eine Domain-Endung, eine exakte Domain, „Domain enthält“ oder einen Host mit Pfad-Präfix passen. Stelle eine Regel auf **Jedes Mal fragen**, und du bekommst die Nachfrage **In welchem Space öffnen?**, statt dass still weitergeleitet wird. Passen mehrere Regeln, gewinnt die spezifischste.
 :::
 
 ::: details Was passiert, wenn ich einen Space lösche?
@@ -73,7 +73,7 @@ Phi fragt **„Dadurch wird auch dieser Inkognito-Space geschlossen. Bist du sic
 :::
 
 ::: details Können URL-Regeln eine Website an einen Inkognito-Space schicken?
-Ja. Der Editor für URL-Regeln bietet neben deinen regulären Spaces ein generisches Ziel **Inkognito** an. Eine Regel zeigt nie auf einen bestimmten Inkognito-Space, denn die existieren nur, solange sie geöffnet sind. Greift so eine Regel, nutzt Phi einen laufenden Inkognito-Space oder öffnet bei Bedarf einen neuen. Die Weiterleitung ist eine Einbahnstraße: Regeln ziehen eine Navigation nie aus einer privaten Sitzung zurück in einen regulären Space.
+Ja. Der Editor für URL-Regeln bietet neben deinen regulären Spaces und Kiosk ein generisches Ziel **Inkognito** an. Eine Regel zeigt nie auf einen bestimmten Inkognito-Space, denn die existieren nur, solange sie geöffnet sind. Greift so eine Regel, nutzt Phi einen laufenden Inkognito-Space oder öffnet bei Bedarf einen neuen. Die Weiterleitung ist eine Einbahnstraße: Regeln ziehen eine Navigation nie aus einer privaten Sitzung zurück in einen regulären Space.
 :::
 
 ::: details Funktionieren Erweiterungen in einem Inkognito-Space?

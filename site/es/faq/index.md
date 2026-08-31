@@ -43,7 +43,7 @@ Sí. Cada Espacio tiene un conjunto de marcadores independiente y puede usar su 
 :::
 
 ::: details ¿Qué son las Reglas de URL?
-Las Reglas de URL abren los sitios que coinciden en el Espacio que asignes, da igual dónde hagas clic en el enlace o dónde lo escribas. Puedes hacer coincidir por sufijo de dominio, dominio exacto, "el dominio contiene" o un host más un prefijo de ruta. Configura una regla como **Preguntar cada vez** para recibir un selector **¿En qué Espacio abrirlo?** en lugar de un redireccionamiento silencioso. Cuando varias reglas coinciden, gana la más específica.
+Las Reglas de URL abren los sitios que coinciden en un Espacio normal, en Incógnito o en Kiosk, da igual dónde hagas clic en el enlace o dónde lo escribas. Adminístralas en **Configuración → Navegación**. Puedes hacer coincidir por sufijo de dominio, dominio exacto, "el dominio contiene" o un host más un prefijo de ruta. Configura una regla como **Preguntar cada vez** para recibir un selector **¿En qué Espacio abrirlo?** en lugar de un redireccionamiento silencioso. Cuando varias reglas coinciden, gana la más específica.
 :::
 
 ::: details ¿Qué pasa si elimino un Espacio?
@@ -73,7 +73,7 @@ Phi pregunta **"Esto también cerrará este Espacio de incógnito, ¿estás segu
 :::
 
 ::: details ¿Pueden las Reglas de URL enviar un sitio a un Espacio de incógnito?
-Sí. El editor de Reglas de URL ofrece un destino genérico **Incógnito** junto a tus Espacios normales. Una regla nunca apunta a un Espacio de incógnito concreto, porque estos solo existen mientras están abiertos. Cuando una de estas reglas coincide, Phi usa un Espacio de incógnito activo o abre uno nuevo bajo demanda. El enrutamiento es de un solo sentido: las reglas nunca sacan una navegación de una sesión privada para devolverla a un Espacio normal.
+Sí. El editor de Reglas de URL ofrece un destino genérico **Incógnito** junto a tus Espacios normales y Kiosk. Una regla nunca apunta a un Espacio de incógnito concreto, porque estos solo existen mientras están abiertos. Cuando una de estas reglas coincide, Phi usa un Espacio de incógnito activo o abre uno nuevo bajo demanda. El enrutamiento es de un solo sentido: las reglas nunca sacan una navegación de una sesión privada para devolverla a un Espacio normal.
 :::
 
 ::: details ¿Funcionan las extensiones en un Espacio de incógnito?

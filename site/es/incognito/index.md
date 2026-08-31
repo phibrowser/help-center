@@ -33,7 +33,7 @@ Una cosa sí sobrevive a propósito: los archivos que descargas se guardan en tu
 
 ## Enviar sitios a Incógnito con Reglas de URL
 
-Las [Reglas de URL](/es/spaces/#url-rules-send-sites-to-the-right-space-automatically) pueden dirigir los sitios que coincidan hacia la navegación privada automáticamente. En el editor de reglas, el selector de Espacios ofrece un destino genérico **Incógnito** junto a tus Espacios normales, nunca un Espacio de incógnito concreto, porque estos existen solo mientras están abiertos. Cuando una regla se activa, Phi dirige la página al Espacio de incógnito en el que ya estás o al primero que siga vivo, y abre un Espacio de incógnito nuevo bajo demanda cuando no hay ninguno abierto.
+Las [Reglas de URL](/es/spaces/#url-rules-route-matching-sites-automatically) pueden dirigir los sitios que coincidan hacia la navegación privada automáticamente. En el editor de reglas, el selector de destino ofrece una opción genérica **Incógnito** junto a tus Espacios normales y Kiosk, nunca un Espacio de incógnito concreto, porque estos existen solo mientras están abiertos. Cuando una regla se activa, Phi dirige la página al Espacio de incógnito en el que ya estás o al primero que siga vivo, y abre un Espacio de incógnito nuevo bajo demanda cuando no hay ninguno abierto.
 
 Dirigir hacia Incógnito es una válvula de un solo sentido. Una regla puede enviar una navegación a una sesión privada, pero nada se dirige nunca de vuelta: mientras navegas en un Espacio de incógnito o en una ventana de incógnito, las Reglas de URL no se aplican, así que un enlace abierto ahí no puede sacarse a un Espacio normal.
 

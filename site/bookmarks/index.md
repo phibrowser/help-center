@@ -49,6 +49,8 @@ Bookmarks are always scoped to one Space. The pinned tab setting does not affect
 
 Following links in a pinned tab or bookmark may take it away from its original URL. To go back, double-click the pinned tab or click the favicon of a bookmark that is open as a tab.
 
+Links that lead to a different site do not move the tab at all: Phi previews them in a floating [Peek View](/peek/) panel, so the bookmark or pinned tab keeps the page it is bound to.
+
 To keep the current page, hold **Command (⌘)** while you double-click the pinned tab or click the bookmark's favicon. The current page moves to the tab list as a separate tab, and the pinned tab or bookmark returns to its original URL.
 
 ## Which should I use?

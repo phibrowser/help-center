@@ -33,7 +33,7 @@ Eines überlebt mit Absicht: Dateien, die du lädst, werden wie üblich auf dein
 
 ## Websites mit URL-Regeln nach Inkognito schicken
 
-[URL-Regeln](/de/spaces/#url-rules-send-sites-to-the-right-space-automatically) können passende Websites automatisch ins private Surfen lenken. Im Regel-Editor bietet die Space-Auswahl neben deinen regulären Spaces ein generisches Ziel **Inkognito** an, nie einen bestimmten Inkognito-Space, denn die existieren nur, solange sie geöffnet sind. Greift eine Regel, leitet Phi die Seite in den Inkognito-Space, in dem du dich gerade befindest, oder in den ersten aktiven; ist keiner geöffnet, öffnet Phi bei Bedarf einen neuen.
+[URL-Regeln](/de/spaces/#url-rules-route-matching-sites-automatically) können passende Websites automatisch ins private Surfen lenken. Im Regel-Editor bietet die Zielauswahl neben deinen regulären Spaces und Kiosk ein generisches Ziel **Inkognito** an, nie einen bestimmten Inkognito-Space, denn die existieren nur, solange sie geöffnet sind. Greift eine Regel, leitet Phi die Seite in den Inkognito-Space, in dem du dich gerade befindest, oder in den ersten aktiven; ist keiner geöffnet, öffnet Phi bei Bedarf einen neuen.
 
 Das Lenken nach Inkognito ist ein Einwegventil. Eine Regel kann eine Navigation in eine private Sitzung schicken, aber nichts wird je wieder herausgeleitet: Während du in einem Inkognito-Space oder einem Inkognitofenster surfst, greifen URL-Regeln nicht, ein Link dort kann also nicht in einen regulären Space herausgezogen werden.
 

@@ -29,18 +29,18 @@ Een eenvoudig ezelsbruggetje: **Spaces bepalen hoe alles eruitziet en aanvoelt; 
 - **Wijzig naam**, **Wijzig symbool** en **Wijzig thema** vind je in het menu van de Space. Kies **Volg algemeen thema** om een themakeuze per Space weer los te laten.
 - **Verwijder** een Space via hetzelfde menu. Bij het verwijderen van een Space verdwijnen ook de bladwijzers en URL-regels die erbij horen, en dat kan niet ongedaan worden gemaakt. Staat het bereik van vastgezette tabbladen op **Space**, dan worden de vastgezette tabbladen van die Space ook verwijderd. Vastgezette tabbladen met het bereik Profiel of App blijven staan.
 
-## URL-regels: stuur websites automatisch naar de juiste Space {#url-rules-send-sites-to-the-right-space-automatically}
+## URL-regels: stuur overeenkomende sites automatisch door {#url-rules-route-matching-sites-automatically}
 
-Spaces zijn het nuttigst wanneer de juiste pagina's op de juiste plek belanden zonder dat je erover hoeft na te denken. **URL-regels** doen precies dat: een regel herkent een website en opent die in de Space die jij toewijst, waar je de link ook aanklikt of intypt.
+**URL-regels** herkennen een website en openen die in een gewone Space, Incognito of Kiosk, waar je de link ook aanklikt of intypt.
 
-Open **URL-regels…** via het menu **Spaces** in de menubalk, of via het onderdeel Spaces in Instellingen, om de regels van alle Spaces op één plek te beheren. Elke regel herkent op basis van:
+Open **URL-regels…** via het menu **Spaces** in de menubalk, of open **Instellingen → Navigatie** en klik op **Beheer URL-regels…**. Elke regel herkent op basis van:
 
 - **Domeinsuffix**, `figma.com` en alle subdomeinen ervan.
 - **Domein**, precies één host, zoals `www.example.com`.
 - **Domein bevat**, elke host die een woord bevat, zoals `git`.
 - **URL**, een host plus het begin van een pad, zoals `example.com/team`.
 
-Naast je gewone Spaces kan een regel ook **Incognito** als doel hebben: overeenkomende websites openen dan in een [Incognito-Space](/nl/incognito/), die op dat moment wordt aangemaakt als er geen open is.
+Een regel kan een gewone Space, **Incognito** of **Kiosk** als doel hebben. **Incognito** stuurt overeenkomende websites naar een [Incognito-Space](/nl/incognito/), die zo nodig wordt aangemaakt. **Kiosk** opent elke overeenkomende site in een lichtgewicht venster buiten je Spaces. Zie [Kiosk](/nl/kiosk/) voor hoe die vensters werken.
 
 Zet een regel op **Elke keer vragen** in plaats van stil doorsturen. Opent een overeenkomende link, dan toont Phi de keuze **In welke Space openen?** zodat je zelf kiest. Je huidige Space is gemarkeerd, en je kunt de pagina ook laten waar je bent. Als meerdere regels van toepassing kunnen zijn, wint de meest specifieke (een langer pad wint van een korter pad; een exacte host wint van een wildcard).
 

@@ -43,7 +43,7 @@ Oui. Chaque Espace dispose d'un ensemble de favoris indépendant et peut utilise
 :::
 
 ::: details Que sont les Règles d'URL ?
-Les Règles d'URL ouvrent les sites correspondants dans l'Espace que vous leur attribuez, quel que soit l'endroit où vous cliquez ou saisissez le lien. Vous pouvez cibler un suffixe de domaine, un domaine exact, un « domaine contenant », ou un hôte plus un préfixe de chemin. Réglez une règle sur **Demander à chaque fois** pour afficher une invite **Ouvrir dans quel Espace ?** au lieu d'un aiguillage silencieux. Quand plusieurs règles correspondent, la plus spécifique l'emporte.
+Les Règles d'URL ouvrent les sites correspondants dans un Espace normal, en Navigation privée ou dans Kiosk, quel que soit l'endroit où vous cliquez ou saisissez le lien. Gérez-les dans **Paramètres → Navigation**. Vous pouvez cibler un suffixe de domaine, un domaine exact, un « domaine contenant », ou un hôte plus un préfixe de chemin. Réglez une règle sur **Toujours demander** pour afficher une invite **Ouvrir dans quel Espace ?** au lieu d'un aiguillage silencieux. Quand plusieurs règles correspondent, la plus spécifique l'emporte.
 :::
 
 ::: details Que se passe-t-il si je supprime un Espace ?
@@ -73,7 +73,7 @@ Phi demande **« Cela fermera aussi cet Espace de navigation privée, voulez-vo
 :::
 
 ::: details Les Règles d'URL peuvent-elles envoyer un site vers un Espace de navigation privée ?
-Oui. L'éditeur de Règles d'URL propose une cible générique **Navigation privée** aux côtés de vos Espaces habituels. Une règle ne vise jamais un Espace de navigation privée précis, puisque ceux-ci n'existent que tant qu'ils sont ouverts. Quand une telle règle correspond, Phi utilise un Espace de navigation privée déjà ouvert ou en ouvre un à la demande. L'aiguillage est à sens unique : les règles ne font jamais sortir une navigation d'une session privée vers un Espace normal.
+Oui. L'éditeur de Règles d'URL propose une cible générique **Navigation privée** aux côtés de vos Espaces habituels et de Kiosk. Une règle ne vise jamais un Espace de navigation privée précis, puisque ceux-ci n'existent que tant qu'ils sont ouverts. Quand une telle règle correspond, Phi utilise un Espace de navigation privée déjà ouvert ou en ouvre un à la demande. L'aiguillage est à sens unique : les règles ne font jamais sortir une navigation d'une session privée vers un Espace normal.
 :::
 
 ::: details Les extensions fonctionnent-elles dans un Espace de navigation privée ?

@@ -26,16 +26,17 @@ Phi debería resultarte familiar si el modelo de barra lateral de Arc te funcion
 
 Tanto Arc como Phi separan la capa de espacio de trabajo de la capa de aislamiento. En Phi, un **Espacio** es el espacio de trabajo visible en la barra lateral, mientras que un **Perfil** es lo que hay debajo: las cookies, el historial, los inicios de sesión y las extensiones. Un Perfil puede respaldar varios Espacios, así que puedes tener varios espacios de trabajo que comparten la misma sesión iniciada.
 
-Las **Reglas de URL** de Phi se inspiran en el Air Traffic Control de Arc: los sitios que coinciden pueden abrirse en el Espacio que les asignes, o preguntarte dónde abrirse. La implementación exacta es propia de Phi, pero el objetivo es el mismo: poner los enlaces en el contexto correcto automáticamente.
+Las **Reglas de URL** de Phi se inspiran en el Air Traffic Control de Arc: los sitios que coinciden pueden abrirse en un Espacio normal, en Incógnito o en Kiosk, o preguntarte dónde abrirse. La implementación exacta es propia de Phi, pero el objetivo es el mismo: poner los enlaces en el contexto correcto automáticamente.
 
 La mayor diferencia en marcadores es que Phi conserva un árbol de marcadores completo con carpetas. Arc abandonó los marcadores tradicionales en favor de las pestañas fijadas y los Favoritos; Phi conserva ambas ideas. Los marcadores se mantienen organizados en la barra lateral y se abren donde están, como pestañas vivas. Las pestañas fijadas se sitúan arriba para las páginas en las que vives, y tú decides si pertenecen a un Espacio, a un Perfil o a la app entera.
 
-Phi no tiene un equivalente del Peek de Arc. Abrir un enlace desde una pestaña fijada navega con normalidad dentro de la pestaña.
+Phi tiene su propia versión del Peek de Arc. Cuando un enlace en una pestaña fijada o en un marcador lleva a un sitio distinto, Phi lo muestra como vista previa en un panel flotante sobre la página en lugar de alejar esa pestaña de la suya. Puedes cerrar la vista previa, conservarla como pestaña o abrirla junto a la original como Vista dividida. Consulta [Vista Peek](/es/peek/) para el comportamiento completo y el ajuste que la desactiva.
 
 Buenas lecturas para continuar:
 
 - [Espacios y Perfiles](/es/spaces/) para los Espacios, los Perfiles y las Reglas de URL.
 - [Marcadores y pestañas fijadas](/es/bookmarks/) para los marcadores vivos y el alcance configurable de las pestañas fijadas.
+- [Vista Peek](/es/peek/) para ver una vista previa de los enlaces sin salir de la página en la que estás.
 - [Temas y apariencia](/es/themes/) para los colores por Espacio y los temas globales.
 
 ## Si vienes de Dia

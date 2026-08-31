@@ -29,18 +29,18 @@ Une façon simple de le retenir : **les Espaces organisent l'apparence et le con
 - **Renommer**, **Modifier l'icône** et **Modifier le thème** se trouvent dans le menu de l'Espace. Choisissez **Suivre le thème global** pour abandonner le thème propre à l'Espace.
 - **Supprimez** un Espace depuis le même menu. Supprimer un Espace supprime aussi les favoris et les Règles d'URL qui lui appartiennent, et cette action est irréversible. Si la portée des onglets épinglés est **Espace**, les onglets épinglés de cet Espace sont supprimés aussi. Les onglets épinglés de portée Profil ou App ne sont pas affectés.
 
-## Règles d'URL : envoyer les sites vers le bon Espace automatiquement {#url-rules-send-sites-to-the-right-space-automatically}
+## Règles d'URL : diriger automatiquement les sites correspondants {#url-rules-route-matching-sites-automatically}
 
-Les Espaces sont le plus utiles quand les bonnes pages arrivent au bon endroit sans que vous ayez à y penser. C'est le rôle des **Règles d'URL** : une règle reconnaît un site et l'ouvre dans l'Espace que vous lui attribuez, quel que soit l'endroit où vous cliquez ou saisissez le lien.
+Les **Règles d'URL** reconnaissent un site et l'ouvrent dans un Espace normal, en Navigation privée ou dans Kiosk, quel que soit l'endroit où vous cliquez ou saisissez le lien.
 
-Ouvrez **Règles d'URL…** depuis le menu **Espaces** de la barre des menus, ou depuis la section Espaces des Paramètres, pour gérer les règles de tous les Espaces au même endroit. Chaque règle s'applique par :
+Ouvrez **Règles d'URL…** depuis le menu **Espaces** de la barre des menus, ou ouvrez **Paramètres → Navigation** et cliquez sur **Gérer les règles d'URL…**. Chaque règle s'applique par :
 
 - **Suffixe de domaine**, `figma.com` et tous ses sous-domaines.
 - **Domaine**, un hôte exact, comme `www.example.com`.
 - **Le domaine contient**, tout hôte contenant un mot, comme `git`.
 - **URL**, un hôte plus un préfixe de chemin, comme `example.com/team`.
 
-En plus de vos Espaces classiques, une règle peut cibler **Navigation privée** : les sites correspondants s'ouvrent alors dans un [Espace de navigation privée](/fr/incognito/), créé à la demande quand aucun n'est ouvert.
+Une règle peut cibler un Espace normal, **Navigation privée** ou **Kiosk**. **Navigation privée** dirige les sites correspondants vers un [Espace de navigation privée](/fr/incognito/), créé quand il le faut. **Kiosk** ouvre chaque correspondance dans une fenêtre légère en dehors de vos Espaces. Voir [Kiosk](/fr/kiosk/) pour le fonctionnement de ces fenêtres.
 
 Réglez une règle sur **Toujours demander** plutôt que de router en silence. Quand un lien correspondant s'ouvre, Phi affiche un sélecteur **Ouvrir dans quel Espace ?** pour vous laisser choisir. Votre Espace actuel est signalé, et vous pouvez garder la page là où vous êtes. Quand plusieurs règles pourraient correspondre, la plus spécifique l'emporte (un chemin plus long l'emporte sur un plus court ; un hôte exact l'emporte sur une correspondance générique).
 

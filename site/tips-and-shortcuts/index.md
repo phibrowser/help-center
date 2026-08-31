@@ -11,6 +11,7 @@ This page collects Phi gestures and shortcuts that are less obvious from the int
 | Action                             | Shortcut or gesture                                                |
 | ---------------------------------- | ------------------------------------------------------------------ |
 | Create a Split View                | Option (⌥)-click a tab, Pinned Tab, bookmark, or eligible web link |
+| Preview a link in a Peek           | Shift (⇧)-click a web link                                         |
 | Switch between recently used tabs  | Control (⌃) + Tab                                                  |
 | Switch in reverse order            | Control (⌃) + Shift (⇧) + Tab                                      |
 | Copy the current page URL          | Command (⌘) + Shift (⇧) + C                                        |
@@ -74,12 +75,12 @@ Each Space keeps its own icon and theme. Switching Spaces applies the appearance
 
 ## Route sites with URL Rules
 
-Open **Spaces → URL Rules…** from the menu bar, or open URL Rules from **Settings → Spaces**. A rule can match by **Domain suffix**, **Domain**, **Domain contains**, or **URL**.
+Open **Spaces → URL Rules…** from the menu bar, or open **Settings → Navigation** and click **Manage URL Rules…**. A rule can match by **Domain suffix**, **Domain**, **Domain contains**, or **URL**.
 
-Send a match to a regular Space or an Incognito Space. Choose **Ask every time** if you want Phi to ask before moving the page. When several rules match, the most specific rule wins.
+Send a match to a regular Space, Incognito, or Kiosk. Choose **Ask every time** if you want Phi to ask before moving the page. When several rules match, the most specific rule wins.
 
-::: tip Space routing does not isolate cookies
-A URL Rule chooses where a page opens. To keep cookies and signed-in sessions separate, assign the target Spaces to different Profiles.
+::: tip Regular Space routing does not isolate cookies
+Routing a site to a regular Space does not isolate its cookies or signed-in session. Assign the target Spaces to different Profiles when you want that separation.
 :::
 
 ## Keep video visible with Picture-in-Picture

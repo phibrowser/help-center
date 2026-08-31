@@ -1,0 +1,125 @@
+{
+  "run": "2026-08-31-peek-kiosk",
+  "bindingNote": "Shipped Phi product strings (phi-i18n-internal manifests: macos.json from phibrowser-mac@2e438c1, chromium.json) are ground truth for UI labels quoted in these pages. Origin is machine-seeded; defects should be flagged, not silently diverged from.",
+  "keepEnglish": [
+    "Peek",
+    "Kiosk",
+    "Phi",
+    "Phi Browser",
+    "Arc",
+    "Split View brand handling per glossary"
+  ],
+  "peekView": {
+    "zh-Hans": "Peek 视图",
+    "zh-Hant": "Peek 檢視",
+    "ja": "Peekビュー (settings string; the chromium menu string spaces it as Peek ビュー)",
+    "ko": "Peek 뷰",
+    "de": "Peek-Ansicht",
+    "fr": "vue Peek",
+    "es": "vista Peek",
+    "nl": "Peek-weergave"
+  },
+  "shippedLabels": {
+    "Open Link in Peek View": {
+      "zh-Hans": "在 Peek 视图中打开链接",
+      "zh-Hant": "在 Peek 檢視中開啟連結",
+      "ja": "リンクを Peek ビューで開く",
+      "ko": "Peek 뷰에서 링크 열기",
+      "de": "Link in Peek-Ansicht öffnen",
+      "fr": "Ouvrir le lien dans la vue Peek",
+      "es": "Abrir enlace en vista Peek",
+      "nl": "Link openen in Peek-weergave"
+    },
+    "Open in Kiosk": {
+      "zh-Hans": "在 Kiosk 中打开",
+      "zh-Hant": "在 Kiosk 中開啟",
+      "ja": "Kiosk で開く",
+      "ko": "Kiosk에서 열기",
+      "de": "In Kiosk öffnen",
+      "fr": "Ouvrir dans Kiosk",
+      "es": "Abrir en Kiosk",
+      "nl": "Openen in Kiosk"
+    },
+    "Enable Peek View": {
+      "zh-Hans": "启用 Peek 视图",
+      "zh-Hant": "啟用 Peek 檢視",
+      "ja": "Peekビューを有効にする",
+      "ko": "Peek 뷰 사용",
+      "de": "Peek-Ansicht aktivieren",
+      "fr": "Activer la vue Peek",
+      "es": "Activar vista Peek",
+      "nl": "Schakel Peek-weergave in"
+    },
+    "Open external links in Kiosk": {
+      "zh-Hans": "在 Kiosk 中打开外部链接",
+      "zh-Hant": "在 Kiosk 中開啟外部連結",
+      "ja": "外部リンクをKioskで開く",
+      "ko": "외부 링크를 Kiosk에서 열기",
+      "de": "Externe Links in Kiosk öffnen",
+      "fr": "Ouvrir les liens externes dans Kiosk",
+      "es": "Abrir enlaces externos en Kiosk",
+      "nl": "Open externe links in Kiosk"
+    },
+    "Open Kiosk when clicking links with ⌘⌥ held": {
+      "zh-Hans": "按住 ⌘⌥ 点按链接时打开 Kiosk",
+      "zh-Hant": "按住 ⌘⌥ 並點按連結時開啟 Kiosk",
+      "ja": "⌘⌥を押しながらクリックしたリンクをKioskで開く",
+      "ko": "⌘⌥을 누른 채 클릭한 링크를 Kiosk에서 열기",
+      "de": "Kiosk öffnen, wenn Links mit gedrücktem ⌘⌥ angeklickt werden",
+      "fr": "Ouvrir Kiosk en cliquant sur un lien avec ⌘⌥ enfoncées",
+      "es": "Abrir Kiosk al hacer clic en enlaces con ⌘⌥ presionadas",
+      "nl": "Open Kiosk wanneer je met ⌘⌥ ingedrukt op een link klikt"
+    },
+    "Open as Tab": {
+      "zh-Hans": "以标签页打开",
+      "zh-Hant": "以分頁開啟",
+      "ja": "タブで開く",
+      "ko": "탭으로 열기",
+      "de": "Als Tab öffnen",
+      "fr": "Ouvrir dans un onglet",
+      "es": "Abrir como pestaña",
+      "nl": "Open als tabblad"
+    },
+    "Open as Split View": {
+      "zh-Hans": "以分屏打开",
+      "zh-Hant": "以分割畫面開啟",
+      "ja": "分割表示で開く",
+      "ko": "분할 보기로 열기",
+      "de": "Als Split View öffnen",
+      "fr": "Ouvrir en Split View",
+      "es": "Abrir en vista dividida",
+      "nl": "Open als Split View"
+    },
+    "Manage URL Rules…": {
+      "zh-Hans": "管理网址规则…",
+      "zh-Hant": "管理網址規則…",
+      "ja": "URLルールを管理…",
+      "ko": "URL 규칙 관리…",
+      "de": "URL-Regeln verwalten…",
+      "fr": "Gérer les règles d'URL…",
+      "es": "Administrar reglas de URL…",
+      "nl": "Beheer URL-regels…"
+    },
+    "Settings → Navigation": {
+      "zh-Hans": "设置 → 导航",
+      "zh-Hant": "設定 → 導覽",
+      "ja": "設定 → ナビゲーション",
+      "ko": "설정 → 탐색",
+      "de": "Einstellungen → Navigation",
+      "fr": "Paramètres → Navigation",
+      "es": "Configuración → Navegación",
+      "nl": "Instellingen → Navigatie"
+    },
+    "Ask every time": {
+      "zh-Hans": "每次询问",
+      "zh-Hant": "每次都詢問",
+      "ja": "毎回確認する",
+      "ko": "매번 묻기",
+      "de": "Jedes Mal fragen",
+      "fr": "Toujours demander",
+      "es": "Preguntar cada vez",
+      "nl": "Elke keer vragen"
+    }
+  },
+  "anchorMandate": "The Spaces page URL Rules heading changed in English; every locale's explicit anchor must become {#url-rules-route-matching-sites-automatically} and the incognito page link must point at it."
+}

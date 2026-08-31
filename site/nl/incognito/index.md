@@ -33,7 +33,7 @@ Eén ding blijft met opzet bestaan: bestanden die je downloadt, worden zoals gew
 
 ## Sites naar incognito sturen met URL-regels
 
-[URL-regels](/nl/spaces/#url-rules-send-sites-to-the-right-space-automatically) kunnen overeenkomende sites automatisch naar privé browsen leiden. In de regelbewerker biedt de Space-kiezer één generiek doel **Incognito** naast je gewone Spaces, nooit een specifieke Incognito-Space, omdat die alleen bestaan zolang ze open zijn. Wanneer een regel afgaat, leidt Phi de pagina naar de Incognito-Space waarin je al zit of naar de eerste die openstaat, en opent zo nodig een nieuwe Incognito-Space wanneer er geen open is.
+[URL-regels](/nl/spaces/#url-rules-route-matching-sites-automatically) kunnen overeenkomende sites automatisch naar privé browsen leiden. In de regelbewerker biedt de bestemmingskiezer één generiek doel **Incognito** naast je gewone Spaces en Kiosk, nooit een specifieke Incognito-Space, omdat die alleen bestaan zolang ze open zijn. Wanneer een regel afgaat, leidt Phi de pagina naar de Incognito-Space waarin je al zit of naar de eerste die openstaat, en opent zo nodig een nieuwe Incognito-Space wanneer er geen open is.
 
 Routeren naar incognito werkt maar één kant op. Een regel kan een navigatie een privésessie in sturen, maar er wordt nooit iets teruggeleid: terwijl je in een Incognito-Space of een incognitovenster browst, gelden URL-regels niet, dus een link daar kan niet naar een gewone Space worden getrokken.
 
