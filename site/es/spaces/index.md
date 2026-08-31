@@ -29,18 +29,18 @@ Una forma sencilla de recordarlo: **los Espacios organizan cómo se ven y se sie
 - **Renombra** el Espacio, o usa **Cambiar icono** / **Cambiar tema** desde su menú. Elige **Seguir tema global** para quitar el tema propio del Espacio.
 - **Elimina** un Espacio desde el mismo menú. Eliminar un Espacio también borra los marcadores y las Reglas de URL que le pertenecen, y no se puede deshacer. Si el alcance de pestañas fijadas es **Espacio**, las pestañas fijadas de ese Espacio también se eliminan. Las pestañas fijadas con alcance de Perfil o de Aplicación no se ven afectadas.
 
-## Reglas de URL: envía los sitios al Espacio correcto automáticamente {#url-rules-send-sites-to-the-right-space-automatically}
+## Reglas de URL: dirige los sitios que coinciden automáticamente {#url-rules-route-matching-sites-automatically}
 
-Los Espacios resultan más útiles cuando las páginas correctas llegan al lugar correcto sin que tengas que pensarlo. Las **Reglas de URL** hacen justo eso: una regla coincide con un sitio y lo abre en el Espacio que le asignes, sin importar dónde hagas clic en el enlace o dónde lo escribas.
+Las **Reglas de URL** coinciden con un sitio y lo abren en un Espacio normal, en Incógnito o en Kiosk, sin importar dónde hagas clic en el enlace o dónde lo escribas.
 
-Abre **Reglas de URL…** desde el menú **Espacios** de la barra de menús, o desde la sección Espacios de la Configuración, para administrar las reglas de todos los Espacios en un solo lugar. Cada regla coincide por:
+Abre **Reglas de URL…** desde el menú **Espacios** de la barra de menús, o abre **Configuración → Navegación** y haz clic en **Administrar reglas de URL…**. Cada regla coincide por:
 
 - **Sufijo de dominio**, `figma.com` y todos sus subdominios.
 - **Dominio**, un host exacto, como `www.example.com`.
 - **El dominio contiene**, cualquier host que contenga una palabra, como `git`.
 - **URL**, un host más un prefijo de ruta, como `example.com/team`.
 
-Además de tus Espacios normales, una regla puede apuntar a **Incógnito**: los sitios que coincidan se abren entonces en un [Espacio de incógnito](/es/incognito/), creado bajo demanda cuando no hay ninguno abierto.
+Una regla puede apuntar a un Espacio normal, a **Incógnito** o a **Kiosk**. **Incógnito** dirige los sitios que coincidan a un [Espacio de incógnito](/es/incognito/), creando uno cuando hace falta. **Kiosk** abre cada coincidencia en una ventana ligera fuera de tus Espacios. Consulta [Kiosk](/es/kiosk/) para saber cómo funcionan esas ventanas.
 
 Configura una regla como **Preguntar cada vez** en lugar de redirigir en silencio. Cuando se abre un enlace que coincide, Phi muestra un selector **¿En qué Espacio abrirlo?** para que elijas. Tu Espacio actual aparece marcado, y puedes dejar la página donde estás. Cuando varias reglas podrían coincidir, gana la más específica (una ruta más larga vence a una más corta; un host exacto vence a un comodín).
 

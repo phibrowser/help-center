@@ -43,7 +43,7 @@ Ja. Elke Space heeft een onafhankelijke set bladwijzers en kan een eigen kleuren
 :::
 
 ::: details Wat zijn URL-regels?
-URL-regels openen overeenkomende sites in een Space die jij aanwijst, waar je de link ook aanklikt of typt. Je kunt matchen op domeinachtervoegsel, exact domein, 'domein bevat' of een host plus padvoorvoegsel. Zet een regel op **Elke keer vragen** om de vraag **In welke Space openen?** te krijgen in plaats van stille doorsturing. Als meerdere regels overeenkomen, wint de meest specifieke.
+URL-regels openen overeenkomende sites in een gewone Space, Incognito of Kiosk, waar je de link ook aanklikt of typt. Beheer ze onder **Instellingen → Navigatie**. Je kunt matchen op domeinachtervoegsel, exact domein, 'domein bevat' of een host plus padvoorvoegsel. Zet een regel op **Elke keer vragen** om de vraag **In welke Space openen?** te krijgen in plaats van stille doorsturing. Als meerdere regels overeenkomen, wint de meest specifieke.
 :::
 
 ::: details Wat gebeurt er als ik een Space verwijder?
@@ -73,7 +73,7 @@ Phi vraagt **"Hiermee wordt ook deze Incognito-Space gesloten. Weet je het zeker
 :::
 
 ::: details Kunnen URL-regels een site naar een Incognito-Space sturen?
-Ja. De editor voor URL-regels biedt naast je gewone Spaces één generiek doel **Incognito**. Een regel wijst nooit naar een specifieke Incognito-Space, omdat die alleen bestaan zolang ze open zijn. Als zo'n regel overeenkomt, gebruikt Phi een actieve Incognito-Space of opent er op dat moment een nieuwe. De routering is eenrichtingsverkeer: regels halen een navigatie nooit uit een privésessie terug naar een gewone Space.
+Ja. De editor voor URL-regels biedt naast je gewone Spaces en Kiosk één generiek doel **Incognito**. Een regel wijst nooit naar een specifieke Incognito-Space, omdat die alleen bestaan zolang ze open zijn. Als zo'n regel overeenkomt, gebruikt Phi een actieve Incognito-Space of opent er op dat moment een nieuwe. De routering is eenrichtingsverkeer: regels halen een navigatie nooit uit een privésessie terug naar een gewone Space.
 :::
 
 ::: details Werken extensies in een Incognito-Space?

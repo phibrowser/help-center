@@ -11,6 +11,7 @@ Cette page rassemble les gestes et raccourcis de Phi que l'interface ne rend pas
 | Action                                        | Raccourci ou geste                                                                       |
 | --------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | Créer une Split View                          | Clic avec Option (⌥) sur un onglet, un onglet épinglé, un favori ou un lien web éligible |
+| Prévisualiser un lien dans la vue Peek        | Clic avec Maj (⇧) sur un lien web                                                        |
 | Basculer entre les onglets récemment utilisés | Contrôle (⌃) + Tab                                                                       |
 | Basculer dans l'ordre inverse                 | Contrôle (⌃) + Maj (⇧) + Tab                                                             |
 | Copier l'URL de la page actuelle              | Commande (⌘) + Maj (⇧) + C                                                               |
@@ -74,12 +75,12 @@ Chaque Espace conserve sa propre icône et son propre thème. Changer d'Espace a
 
 ## Diriger les sites avec les Règles d'URL
 
-Ouvrez **Espaces → Règles d'URL…** depuis la barre des menus, ou ouvrez les Règles d'URL depuis **Paramètres → Espaces**. Une règle peut correspondre par **Suffixe de domaine**, **Domaine**, **Le domaine contient** ou **URL**.
+Ouvrez **Espaces → Règles d'URL…** depuis la barre des menus, ou ouvrez **Paramètres → Navigation** et cliquez sur **Gérer les règles d'URL…**. Une règle peut correspondre par **Suffixe de domaine**, **Domaine**, **Le domaine contient** ou **URL**.
 
-Envoyez une correspondance vers un Espace normal ou un Espace de navigation privée. Choisissez **Demander à chaque fois** si vous voulez que Phi demande avant de déplacer la page. Quand plusieurs règles correspondent, la règle la plus spécifique l'emporte.
+Envoyez une correspondance vers un Espace normal, la Navigation privée ou Kiosk. Choisissez **Toujours demander** si vous voulez que Phi demande avant de déplacer la page. Quand plusieurs règles correspondent, la règle la plus spécifique l'emporte.
 
-::: tip Le routage entre Espaces n'isole pas les cookies
-Une Règle d'URL choisit où une page s'ouvre. Pour garder les cookies et les sessions connectées séparés, attribuez les Espaces cibles à des Profils différents.
+::: tip Le routage vers un Espace normal n'isole pas les cookies
+Diriger un site vers un Espace normal n'isole ni ses cookies ni sa session connectée. Attribuez les Espaces cibles à des Profils différents quand vous voulez cette séparation.
 :::
 
 ## Garder la vidéo visible avec Picture-in-Picture

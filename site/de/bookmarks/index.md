@@ -49,6 +49,8 @@ Lesezeichen gelten immer für genau einen Space. Die Einstellung für angeheftet
 
 Wenn du in einem angehefteten Tab oder Lesezeichen Links folgst, entfernt es sich womöglich von seiner ursprünglichen URL. Um zurückzukehren, doppelklicke auf den angehefteten Tab oder klicke auf das Favicon eines Lesezeichens, das als Tab geöffnet ist.
 
+Links, die zu einer anderen Website führen, bewegen den Tab überhaupt nicht: Phi zeigt sie als Vorschau in einem schwebenden Panel an, der [Peek-Ansicht](/de/peek/), sodass das Lesezeichen oder der angeheftete Tab bei der Seite bleibt, an die es gebunden ist.
+
 Um die aktuelle Seite zu behalten, halte die **Befehlstaste (⌘)** gedrückt, während du auf den angehefteten Tab doppelklickst oder auf das Favicon des Lesezeichens klickst. Die aktuelle Seite wandert als eigener Tab in die Tab-Liste, und der angeheftete Tab oder das Lesezeichen kehrt zu seiner ursprünglichen URL zurück.
 
 ## Was solltest du wann verwenden?

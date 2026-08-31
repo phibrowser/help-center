@@ -11,6 +11,7 @@ Deze pagina bundelt gebaren en toetscombinaties van Phi die minder duidelijk uit
 | Actie                                      | Toetscombinatie of gebaar                                                          |
 | ------------------------------------------ | ---------------------------------------------------------------------------------- |
 | Een Split View maken                       | Option (⌥)-klik op een tabblad, vastgezet tabblad, bladwijzer of geschikte weblink |
+| Een link vooraf bekijken in een Peek       | Shift (⇧)-klik op een weblink                                                      |
 | Wisselen tussen recent gebruikte tabbladen | Control (⌃) + Tab                                                                  |
 | In omgekeerde volgorde wisselen            | Control (⌃) + Shift (⇧) + Tab                                                      |
 | De URL van de huidige pagina kopiëren      | Command (⌘) + Shift (⇧) + C                                                        |
@@ -74,12 +75,12 @@ Elke Space houdt zijn eigen symbool en thema. Bij het wisselen van Space past Ph
 
 ## Sites routeren met URL-regels
 
-Open **Spaces → URL-regels…** in de menubalk, of open URL-regels via **Instellingen → Spaces**. Een regel kan matchen op **Domeinsuffix**, **Domein**, **Domein bevat** of **URL**.
+Open **Spaces → URL-regels…** in de menubalk, of open **Instellingen → Navigatie** en klik op **Beheer URL-regels…**. Een regel kan matchen op **Domeinsuffix**, **Domein**, **Domein bevat** of **URL**.
 
-Stuur een match naar een gewone Space of een Incognito-Space. Kies **Elke keer vragen** als je wilt dat Phi eerst vraagt voordat de pagina wordt verplaatst. Wanneer meerdere regels matchen, wint de meest specifieke regel.
+Stuur een match naar een gewone Space, Incognito of Kiosk. Kies **Elke keer vragen** als je wilt dat Phi eerst vraagt voordat de pagina wordt verplaatst. Wanneer meerdere regels matchen, wint de meest specifieke regel.
 
-::: tip Space-routering isoleert geen cookies
-Een URL-regel bepaalt waar een pagina opent. Wil je cookies en ingelogde sessies gescheiden houden, wijs de doel-Spaces dan toe aan verschillende Profielen.
+::: tip Routering naar een gewone Space isoleert geen cookies
+Een site naar een gewone Space routeren isoleert de cookies en ingelogde sessies van die site niet. Wijs de doel-Spaces toe aan verschillende Profielen wanneer je die scheiding wilt.
 :::
 
 ## Video in beeld houden met beeld in beeld

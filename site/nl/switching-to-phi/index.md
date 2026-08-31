@@ -26,16 +26,17 @@ Als het zijbalkmodel van Arc voor jou werkte, zal Phi vertrouwd aanvoelen, maar 
 
 Arc en Phi scheiden allebei de werkruimtelaag van de isolatielaag. In Phi is een **Space** de zichtbare werkruimte in de zijbalk, terwijl een **Profiel** eronder de cookies, geschiedenis, inloggegevens en extensies bevat. Eén profiel kan meerdere Spaces ondersteunen, dus je kunt meerdere werkruimtes hebben die dezelfde ingelogde sessie delen.
 
-Phi's **URL-regels** zijn geïnspireerd op Arcs Air Traffic Control: sites die aan een regel voldoen, openen in de Space die jij toewijst, of vragen je waar ze moeten openen. De precieze uitwerking is die van Phi zelf, maar het doel is hetzelfde: links automatisch in de juiste context plaatsen.
+Phi's **URL-regels** zijn geïnspireerd op Arcs Air Traffic Control: sites die aan een regel voldoen, kunnen openen in een gewone Space, Incognito of Kiosk, of vragen je waar ze moeten openen. De precieze uitwerking is die van Phi zelf, maar het doel is hetzelfde: links automatisch in de juiste context plaatsen.
 
 Het grootste verschil bij bladwijzers is dat Phi een volledige bladwijzerboom met mappen behoudt. Arc liet traditionele bladwijzers vallen ten gunste van vastgezette tabbladen en favorieten; Phi houdt beide ideeën aan. Bladwijzers blijven georganiseerd in de zijbalk en openen ter plekke als levende tabbladen. Vastgezette tabbladen staan bovenaan voor pagina's waar je in leeft, en jij bepaalt of ze bij één Space, één profiel of de hele app horen.
 
-Phi heeft geen equivalent van Arcs Peek. Als je een link opent vanuit een vastgezet tabblad, navigeert het tabblad normaal verder.
+Phi heeft een eigen kijk op Arcs Peek. Wanneer een link in een vastgezet tabblad of bladwijzer naar een andere site leidt, toont Phi er een voorbeeld van in een zwevend paneel boven de pagina, in plaats van dat tabblad van zijn eigen pagina weg te halen. Je kunt het voorbeeld sluiten, als tabblad houden of naast het origineel openen als Split View. Zie [Peek-weergave](/nl/peek/) voor het volledige gedrag en de instelling die het uitzet.
 
 Lees hierna:
 
 - [Spaces & profielen](/nl/spaces/) voor Spaces, profielen en URL-regels.
 - [Bladwijzers & vastgezette tabbladen](/nl/bookmarks/) voor levende bladwijzers en het instelbare bereik van vastgezette tabbladen.
+- [Peek-weergave](/nl/peek/) voor het vooraf bekijken van links zonder de pagina te verlaten waar je bent.
 - [Thema's & weergave](/nl/themes/) voor kleuren per Space en globale thema's.
 
 ## Vanuit Dia

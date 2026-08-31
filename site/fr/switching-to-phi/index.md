@@ -26,16 +26,17 @@ Phi devrait vous sembler familier si le modèle de barre latérale d'Arc vous co
 
 Arc et Phi séparent tous deux la couche « espace de travail » de la couche d'isolation. Dans Phi, un **Espace** est l'espace de travail visible dans la barre latérale, tandis qu'un **Profil** regroupe les cookies, l'historique, les identifiants et les extensions en dessous. Un même Profil peut porter plusieurs Espaces : vous pouvez donc avoir plusieurs espaces de travail qui partagent la même session connectée.
 
-Les **Règles d'URL** de Phi s'inspirent de l'Air Traffic Control d'Arc : les sites correspondants peuvent s'ouvrir dans l'Espace que vous leur attribuez, ou vous demander où s'ouvrir. La mise en œuvre est propre à Phi, mais l'objectif est le même : placer automatiquement les liens dans le bon contexte.
+Les **Règles d'URL** de Phi s'inspirent de l'Air Traffic Control d'Arc : les sites correspondants peuvent s'ouvrir dans un Espace normal, en Navigation privée ou dans Kiosk, ou vous demander où s'ouvrir. La mise en œuvre est propre à Phi, mais l'objectif est le même : placer automatiquement les liens dans le bon contexte.
 
 La plus grande différence côté favoris : Phi conserve une arborescence complète de favoris avec des dossiers. Arc a abandonné les favoris traditionnels au profit des onglets épinglés et des Favorites ; Phi garde les deux idées. Les favoris restent organisés dans la barre latérale et s'ouvrent sur place comme des onglets vivants. Les onglets épinglés restent en haut pour les pages où vous vivez, et vous choisissez s'ils appartiennent à un Espace, à un Profil ou à toute l'application.
 
-Phi n'a pas d'équivalent du Peek d'Arc. Ouvrir un lien depuis un onglet épinglé navigue normalement dans l'onglet.
+Phi a sa propre version du Peek d'Arc. Quand un lien d'un onglet épinglé ou d'un favori mène vers un autre site, Phi le prévisualise dans un panneau flottant au-dessus de la page au lieu d'éloigner cet onglet de la sienne. Vous pouvez fermer l'aperçu, le garder comme onglet, ou l'ouvrir à côté de l'original en Split View. Voir [Vue Peek](/fr/peek/) pour le comportement complet et le réglage qui la désactive.
 
 Bonnes lectures pour la suite :
 
 - [Espaces et Profils](/fr/spaces/) pour les Espaces, les Profils et les Règles d'URL.
 - [Favoris et onglets épinglés](/fr/bookmarks/) pour les favoris vivants et la portée configurable des onglets épinglés.
+- [Vue Peek](/fr/peek/) pour prévisualiser les liens sans quitter la page où vous êtes.
 - [Thèmes et apparence](/fr/themes/) pour les couleurs par Espace et les thèmes globaux.
 
 ## Vous venez de Dia

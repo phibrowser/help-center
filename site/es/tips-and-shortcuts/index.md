@@ -11,6 +11,7 @@ Esta página reúne gestos y atajos de Phi que no resultan tan evidentes desde l
 | Acción                                          | Atajo o gesto                                                                                  |
 | ----------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | Crear una Vista dividida                        | Clic con Opción (⌥) en una pestaña, una pestaña fijada, un marcador o un enlace web compatible |
+| Ver la vista previa de un enlace en un Peek     | Clic con Mayúsculas (⇧) en un enlace web                                                       |
 | Cambiar entre las pestañas usadas recientemente | Control (⌃) + Tab                                                                              |
 | Cambiar en orden inverso                        | Control (⌃) + Mayúsculas (⇧) + Tab                                                             |
 | Copiar la URL de la página actual               | Comando (⌘) + Mayúsculas (⇧) + C                                                               |
@@ -74,12 +75,12 @@ Cada Espacio conserva su propio icono y tema. Al cambiar de Espacio se aplica la
 
 ## Dirige los sitios con Reglas de URL
 
-Abre **Espacios → Reglas de URL…** desde la barra de menús, o abre las Reglas de URL desde **Configuración → Espacios**. Una regla puede coincidir por **Sufijo de dominio**, **Dominio**, **El dominio contiene** o **URL**.
+Abre **Espacios → Reglas de URL…** desde la barra de menús, o abre **Configuración → Navegación** y haz clic en **Administrar reglas de URL…**. Una regla puede coincidir por **Sufijo de dominio**, **Dominio**, **El dominio contiene** o **URL**.
 
-Envía una coincidencia a un Espacio normal o a un Espacio de incógnito. Elige **Preguntar cada vez** si quieres que Phi pregunte antes de mover la página. Cuando varias reglas coinciden, gana la más específica.
+Envía una coincidencia a un Espacio normal, a Incógnito o a Kiosk. Elige **Preguntar cada vez** si quieres que Phi pregunte antes de mover la página. Cuando varias reglas coinciden, gana la más específica.
 
-::: tip Dirigir a un Espacio no aísla las cookies
-Una Regla de URL decide dónde se abre una página. Para mantener separadas las cookies y las sesiones iniciadas, asigna los Espacios de destino a Perfiles distintos.
+::: tip Dirigir a un Espacio normal no aísla las cookies
+Dirigir un sitio a un Espacio normal no aísla sus cookies ni su sesión iniciada. Asigna los Espacios de destino a Perfiles distintos cuando quieras esa separación.
 :::
 
 ## Mantén el video a la vista con imagen en imagen

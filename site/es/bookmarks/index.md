@@ -49,6 +49,8 @@ Los marcadores siempre están limitados a un solo Espacio. El ajuste de pestaña
 
 Seguir enlaces en una pestaña fijada o en un marcador puede alejarlo de su URL original. Para volver, haz doble clic en la pestaña fijada, o haz clic en el favicon de un marcador que esté abierto como pestaña.
 
+Los enlaces que llevan a un sitio distinto no mueven la pestaña en absoluto: Phi los abre como vista previa en un panel flotante de [vista Peek](/es/peek/), de modo que el marcador o la pestaña fijada se queda con la página que le corresponde.
+
 Para conservar la página actual, mantén presionada la tecla **Comando (⌘)** mientras haces doble clic en la pestaña fijada o haces clic en el favicon del marcador. La página actual pasa a la lista de pestañas como una pestaña aparte, y la pestaña fijada o el marcador vuelve a su URL original.
 
 ## ¿Cuál deberías usar?

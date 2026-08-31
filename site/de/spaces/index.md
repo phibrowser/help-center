@@ -29,18 +29,18 @@ Eine einfache Merkregel: **Spaces ordnen, wie alles aussieht und sich anfühlt; 
 - **Umbenennen**, **Symbol ändern** und **Design ändern** findest du im Menü des Space. Wähle **Global folgen**, damit der Space wieder dein globales Design verwendet, statt eines eigenen.
 - **Lösche** einen Space über dasselbe Menü. Beim Löschen eines Space werden auch die zugehörigen Lesezeichen und URL-Regeln entfernt; das lässt sich nicht rückgängig machen. Steht der Geltungsbereich angehefteter Tabs auf **Space**, werden auch die angehefteten Tabs dieses Space entfernt. Angeheftete Tabs mit Geltungsbereich Profil oder App sind nicht betroffen.
 
-## URL-Regeln: Websites automatisch in den richtigen Space schicken {#url-rules-send-sites-to-the-right-space-automatically}
+## URL-Regeln: passende Websites automatisch lenken {#url-rules-route-matching-sites-automatically}
 
-Spaces sind am nützlichsten, wenn die richtigen Seiten am richtigen Ort landen, ohne dass du darüber nachdenken musst. Genau das leisten **URL-Regeln**: Eine Regel erkennt eine Website und öffnet sie in dem Space, den du festlegst, egal wo du den Link anklickst oder eintippst.
+**URL-Regeln** erkennen eine Website und öffnen sie in einem regulären Space, in Inkognito oder in Kiosk, egal wo du den Link anklickst oder eintippst.
 
-Öffne **URL-Regeln…** über das Menü **Spaces** in der Menüleiste oder über den Bereich „Spaces“ in den Einstellungen, um die Regeln aller Spaces an einem Ort zu verwalten. Eine Regel greift nach einem dieser Kriterien:
+Öffne **URL-Regeln…** über das Menü **Spaces** in der Menüleiste, oder öffne **Einstellungen → Navigation** und klicke auf **URL-Regeln verwalten…**. Eine Regel greift nach einem dieser Kriterien:
 
 - **Domain-Suffix**, `figma.com` samt aller Subdomains.
 - **Domain**, ein exakter Host wie `www.example.com`.
 - **Domain enthält**, jeder Host, der ein Wort enthält, etwa `git`.
 - **URL**, ein Host plus Pfadpräfix, etwa `example.com/team`.
 
-Neben deinen regulären Spaces kann eine Regel auch **Inkognito** als Ziel haben: Passende Websites öffnen sich dann in einem [Inkognito-Space](/de/incognito/), der bei Bedarf neu erstellt wird, wenn gerade keiner offen ist.
+Eine Regel kann einen regulären Space, **Inkognito** oder **Kiosk** als Ziel haben. **Inkognito** lenkt passende Websites in einen [Inkognito-Space](/de/incognito/) und erstellt bei Bedarf einen neuen. **Kiosk** öffnet jeden Treffer in einem leichtgewichtigen Fenster außerhalb deiner Spaces. Wie diese Fenster funktionieren, steht unter [Kiosk](/de/kiosk/).
 
 Stelle eine Regel auf **Jedes Mal fragen**, statt still umzuleiten. Öffnet sich ein passender Link, zeigt Phi die Auswahl **In welchem Space öffnen?**, damit du entscheiden kannst. Dein aktueller Space ist markiert, und du kannst die Seite auch dort behalten, wo du bist. Könnten mehrere Regeln passen, gewinnt die spezifischste (ein längerer Pfad schlägt einen kürzeren; ein exakter Host schlägt einen Platzhalter).
 

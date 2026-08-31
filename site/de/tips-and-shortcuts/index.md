@@ -11,6 +11,7 @@ Diese Seite sammelt Gesten und Kurzbefehle in Phi, die sich nicht direkt aus der
 | Aktion                                      | Kurzbefehl oder Geste                                                                                                     |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | Split View erstellen                        | Mit gedrückter Wahltaste (⌥) auf einen Tab, einen angehefteten Tab, ein Lesezeichen oder einen geeigneten Weblink klicken |
+| Link in einem Peek als Vorschau anzeigen    | Mit gedrückter Umschalttaste (⇧) auf einen Weblink klicken                                                                |
 | Zwischen zuletzt benutzten Tabs wechseln    | Ctrl-Taste (⌃) + Tab                                                                                                      |
 | In umgekehrter Reihenfolge wechseln         | Ctrl-Taste (⌃) + Umschalttaste (⇧) + Tab                                                                                  |
 | URL der aktuellen Seite kopieren            | Befehlstaste (⌘) + Umschalttaste (⇧) + C                                                                                  |
@@ -74,12 +75,12 @@ Jeder Space behält sein eigenes Symbol und Design. Beim Wechseln der Spaces gil
 
 ## Websites mit URL-Regeln lenken
 
-Öffne **Spaces → URL-Regeln…** in der Menüleiste, oder öffne die URL-Regeln über **Einstellungen → Spaces**. Eine Regel kann nach **Domain-Suffix**, **Domain**, **Domain enthält** oder **URL** greifen.
+Öffne **Spaces → URL-Regeln…** in der Menüleiste, oder öffne **Einstellungen → Navigation** und klicke auf **URL-Regeln verwalten…**. Eine Regel kann nach **Domain-Suffix**, **Domain**, **Domain enthält** oder **URL** greifen.
 
-Schicke Treffer in einen regulären Space oder einen Inkognito-Space. Wähle **Jedes Mal fragen**, wenn Phi vor dem Verschieben der Seite nachfragen soll. Passen mehrere Regeln, gewinnt die spezifischste.
+Schicke Treffer in einen regulären Space, in Inkognito oder in Kiosk. Wähle **Jedes Mal fragen**, wenn Phi vor dem Verschieben der Seite nachfragen soll. Passen mehrere Regeln, gewinnt die spezifischste.
 
-::: tip Space-Routing isoliert keine Cookies
-Eine URL-Regel bestimmt, wo eine Seite geöffnet wird. Damit Cookies und angemeldete Sitzungen getrennt bleiben, weise die Ziel-Spaces unterschiedlichen Profilen zu.
+::: tip Routing in reguläre Spaces isoliert keine Cookies
+Eine Website in einen regulären Space zu lenken isoliert weder ihre Cookies noch ihre angemeldete Sitzung. Weise die Ziel-Spaces unterschiedlichen Profilen zu, wenn du diese Trennung willst.
 :::
 
 ## Videos mit Bild-in-Bild im Blick behalten

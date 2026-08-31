@@ -1,8 +1,8 @@
 {
   "locale": "zh-Hans",
-  "sourceRevision": "3c4951dd23800cb84be84d6302acf08fcf04467c",
+  "sourceRevision": "c4bda7f1af3253116625a1eef42c4d040f84aaf6",
   "owners": {
-    "translation": "AI re-translation run 2026-08-28-zh-hans (docs/i18n-runs/2026-08-28-zh-hans); human translation owner to be assigned",
+    "translation": "AI re-translation run 2026-08-28-zh-hans (docs/i18n-runs/2026-08-28-zh-hans); human translation owner to be assigned; peek/kiosk sync by run 2026-08-31-peek-kiosk (docs/i18n-runs/2026-08-31-peek-kiosk)",
     "contentReview": ""
   },
   "pages": {
@@ -42,6 +42,10 @@
       "translation": "complete",
       "contentReview": "todo"
     },
+    "kiosk/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
     "layouts/index.md": {
       "translation": "complete",
       "contentReview": "todo"
@@ -51,6 +55,10 @@
       "contentReview": "todo"
     },
     "new-tab/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "peek/index.md": {
       "translation": "complete",
       "contentReview": "todo"
     },
@@ -90,11 +98,11 @@
       "translation": "complete",
       "contentReview": "todo"
     },
-    "tips-and-shortcuts/index.md": {
+    "time-machine/index.md": {
       "translation": "complete",
       "contentReview": "todo"
     },
-    "time-machine/index.md": {
+    "tips-and-shortcuts/index.md": {
       "translation": "complete",
       "contentReview": "todo"
     },

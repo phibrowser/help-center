@@ -26,16 +26,17 @@ Wenn das Seitenleisten-Modell von Arc für dich funktioniert hat, dürfte sich P
 
 Arc und Phi trennen beide die Arbeitsbereich-Ebene von der Isolations-Ebene. In Phi ist ein **Space** der sichtbare Arbeitsbereich in der Seitenleiste, während ein **Profil** darunter die Cookies, den Verlauf, die Anmeldedaten und die Erweiterungen bündelt. Ein Profil kann mehreren Spaces zugrunde liegen, du kannst also mehrere Arbeitsbereiche haben, die sich dieselbe angemeldete Sitzung teilen.
 
-Phis **URL-Regeln** sind von Arcs Air Traffic Control inspiriert: Passende Websites öffnen sich in dem Space, den du festlegst, oder fragen dich, wo sie geöffnet werden sollen. Die konkrete Umsetzung ist Phis eigene, aber das Ziel ist dasselbe: Links automatisch in den richtigen Kontext bringen.
+Phis **URL-Regeln** sind von Arcs Air Traffic Control inspiriert: Passende Websites können sich in einem regulären Space, in Inkognito oder in Kiosk öffnen, oder sie fragen dich, wo sie geöffnet werden sollen. Die konkrete Umsetzung ist Phis eigene, aber das Ziel ist dasselbe: Links automatisch in den richtigen Kontext bringen.
 
 Der größte Unterschied bei Lesezeichen: Phi behält einen vollständigen Lesezeichenbaum mit Ordnern. Arc hat klassische Lesezeichen zugunsten von angehefteten Tabs und Favoriten aufgegeben; Phi behält beide Ideen. Lesezeichen bleiben in der Seitenleiste organisiert und öffnen sich an Ort und Stelle als vollwertige Tabs. Angeheftete Tabs sitzen oben für Seiten, in denen du zu Hause bist, und du entscheidest, ob sie zu einem Space, einem Profil oder der ganzen App gehören.
 
-Ein Gegenstück zu Arcs Peek hat Phi nicht. Wenn du einen Link aus einem angehefteten Tab öffnest, navigiert der Tab ganz normal weiter.
+Phi hat seine eigene Version von Arcs Peek. Führt ein Link in einem angehefteten Tab oder Lesezeichen zu einer anderen Website, zeigt Phi ihn als Vorschau in einem schwebenden Panel über der Seite an, statt den Tab von seiner eigenen Seite wegzuführen. Du kannst die Vorschau schließen, als Tab behalten oder neben dem Original als Split View öffnen. Das vollständige Verhalten und die Einstellung zum Ausschalten stehen unter [Peek-Ansicht](/de/peek/).
 
 Gute nächste Lektüre:
 
 - [Spaces & Profile](/de/spaces/) zu Spaces, Profilen und URL-Regeln.
 - [Lesezeichen & angeheftete Tabs](/de/bookmarks/) zu lebendigen Lesezeichen und dem einstellbaren Geltungsbereich angehefteter Tabs.
+- [Peek-Ansicht](/de/peek/) zur Vorschau von Links, ohne die Seite zu verlassen, auf der du gerade bist.
 - [Designs & Erscheinungsbild](/de/themes/) zu Farben pro Space und globalen Designs.
 
 ## Wenn du von Dia kommst

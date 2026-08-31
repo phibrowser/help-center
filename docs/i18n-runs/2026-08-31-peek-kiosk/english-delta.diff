@@ -1,0 +1,128 @@
+diff --git a/site/bookmarks/index.md b/site/bookmarks/index.md
+index a7b1602..bbd7847 100644
+--- a/site/bookmarks/index.md
++++ b/site/bookmarks/index.md
+@@ -49,6 +49,8 @@ Bookmarks are always scoped to one Space. The pinned tab setting does not affect
+ 
+ Following links in a pinned tab or bookmark may take it away from its original URL. To go back, double-click the pinned tab or click the favicon of a bookmark that is open as a tab.
+ 
++Links that lead to a different site do not move the tab at all: Phi previews them in a floating [Peek View](/peek/) panel, so the bookmark or pinned tab keeps the page it is bound to.
++
+ To keep the current page, hold **Command (⌘)** while you double-click the pinned tab or click the bookmark's favicon. The current page moves to the tab list as a separate tab, and the pinned tab or bookmark returns to its original URL.
+ 
+ ## Which should I use?
+diff --git a/site/faq/index.md b/site/faq/index.md
+index e22d73f..6be3719 100644
+--- a/site/faq/index.md
++++ b/site/faq/index.md
+@@ -43,7 +43,7 @@ Yes. Every Space has an independent set of bookmarks and can use its own color t
+ :::
+ 
+ ::: details What are URL Rules?
+-URL Rules open matching sites in a Space you assign, no matter where you click or type the link. You can match by domain suffix, exact domain, "domain contains," or a host plus path prefix. Set a rule to **Ask every time** to get an **Open in which Space?** prompt instead of routing silently. When several rules match, the most specific one wins.
++URL Rules open matching sites in a regular Space, Incognito, or Kiosk, no matter where you click or type the link. Manage them under **Settings → Navigation**. You can match by domain suffix, exact domain, "domain contains," or a host plus path prefix. Set a rule to **Ask every time** to get an **Open in which Space?** prompt instead of routing silently. When several rules match, the most specific one wins.
+ :::
+ 
+ ::: details What happens if I delete a Space?
+@@ -73,7 +73,7 @@ Phi asks **"This will also close this Incognito Space, are you sure?"** (check *
+ :::
+ 
+ ::: details Can URL Rules send a site to an Incognito Space?
+-Yes. The URL Rules editor offers one generic **Incognito** target alongside your regular Spaces. A rule never points at a specific Incognito Space, since those exist only while open. When such a rule matches, Phi uses a live Incognito Space or opens a new one on demand. Routing is one-way: rules never pull a navigation out of a private session back into a regular Space.
++Yes. The URL Rules editor offers one generic **Incognito** target alongside your regular Spaces and Kiosk. A rule never points at a specific Incognito Space, since those exist only while open. When such a rule matches, Phi uses a live Incognito Space or opens a new one on demand. Routing is one-way: rules never pull a navigation out of a private session back into a regular Space.
+ :::
+ 
+ ::: details Do extensions work in an Incognito Space?
+diff --git a/site/incognito/index.md b/site/incognito/index.md
+index d1097ee..65d046e 100644
+--- a/site/incognito/index.md
++++ b/site/incognito/index.md
+@@ -33,7 +33,7 @@ One thing does survive on purpose: files you download are saved to your Mac as u
+ 
+ ## Sending sites to Incognito with URL Rules
+ 
+-[URL Rules](/spaces/#url-rules-send-sites-to-the-right-space-automatically) can route matching sites into private browsing automatically. In the rules editor, the Space picker offers one generic **Incognito** target alongside your regular Spaces, never a specific Incognito Space, because those exist only while they are open. When a rule fires, Phi routes the page into the Incognito Space you are already in or the first live one, and opens a new Incognito Space on demand when none is open.
++[URL Rules](/spaces/#url-rules-route-matching-sites-automatically) can route matching sites into private browsing automatically. In the rules editor, the destination picker offers one generic **Incognito** target alongside your regular Spaces and Kiosk, never a specific Incognito Space, because those exist only while they are open. When a rule fires, Phi routes the page into the Incognito Space you are already in or the first live one, and opens a new Incognito Space on demand when none is open.
+ 
+ Routing into Incognito is a one-way valve. A rule can send a navigation into a private session, but nothing is ever routed back out: while you browse in an Incognito Space or an incognito window, URL Rules do not apply, so a link there cannot be pulled out into a regular Space.
+ 
+diff --git a/site/spaces/index.md b/site/spaces/index.md
+index 292effe..4aee2bf 100644
+--- a/site/spaces/index.md
++++ b/site/spaces/index.md
+@@ -29,18 +29,18 @@ A simple way to hold it: **Spaces organize how things look and feel; Profiles de
+ - **Rename** or **Change Icon** / **Change Theme** from the Space's menu. Choose **Follow Global** to drop a per-Space theme override.
+ - **Delete** a Space from the same menu. Deleting a Space also removes the bookmarks and URL Rules that belong to it, and cannot be undone. If pinned tab scope is **Space**, that Space's pinned tabs are removed too. Profile-scoped and App-scoped pinned tabs are not affected.
+ 
+-## URL Rules: send sites to the right Space automatically
++## URL Rules: route matching sites automatically
+ 
+-Spaces are most useful when the right pages land in the right place without you thinking about it. **URL Rules** do that: a rule matches a site and opens it in the Space you assign, no matter where you click or type the link.
++**URL Rules** match a site and open it in a regular Space, Incognito, or Kiosk, no matter where you click or type the link.
+ 
+-Open **URL Rules…** from the **Spaces** menu in the menu bar, or from the Spaces section in Settings, to manage every Space's rules in one place. Each rule matches by:
++Open **URL Rules…** from the **Spaces** menu in the menu bar, or open **Settings → Navigation** and click **Manage URL Rules…**. Each rule matches by:
+ 
+ - **Domain suffix**, `figma.com` and all its subdomains.
+ - **Domain**, one exact host, like `www.example.com`.
+ - **Domain contains**, any host containing a word, like `git`.
+ - **URL**, a host plus a path prefix, like `example.com/team`.
+ 
+-Besides your regular Spaces, a rule can target **Incognito**: matching sites then open in an [Incognito Space](/incognito/), created on demand when none is open.
++A rule can target a regular Space, **Incognito**, or **Kiosk**. **Incognito** routes matching sites into an [Incognito Space](/incognito/), creating one when needed. **Kiosk** opens each match in a lightweight window outside your Spaces. See [Kiosk](/kiosk/) for how those windows work.
+ 
+ Set a rule to **Ask every time** instead of routing silently. When a matching link opens, Phi shows an **Open in which Space?** chooser so you can pick. Your current Space is marked, and you can keep the page where you are. When several rules could match, the most specific one wins (a longer path beats a shorter one; an exact host beats a wildcard).
+ 
+diff --git a/site/switching-to-phi/index.md b/site/switching-to-phi/index.md
+index d479e97..57c441e 100644
+--- a/site/switching-to-phi/index.md
++++ b/site/switching-to-phi/index.md
+@@ -26,16 +26,17 @@ Phi should feel familiar if Arc's sidebar model worked for you, but the details
+ 
+ Arc and Phi both separate the workspace layer from the isolation layer. In Phi, a **Space** is the visible workspace in the sidebar, while a **Profile** is the cookies, history, logins, and extensions underneath. A Profile can back several Spaces, so you can have multiple workspaces that share the same signed-in session.
+ 
+-Phi's **URL Rules** are inspired by Arc's Air Traffic Control: matching sites can open in the Space you assign, or ask you where to open them. The exact implementation is Phi's own, but the goal is the same: put links in the right context automatically.
++Phi's **URL Rules** are inspired by Arc's Air Traffic Control: matching sites can open in a regular Space, Incognito, or Kiosk, or ask you where to open them. The exact implementation is Phi's own, but the goal is the same: put links in the right context automatically.
+ 
+ The biggest bookmark difference is that Phi keeps a full bookmark tree with folders. Arc dropped traditional bookmarks in favor of pinned tabs and Favorites; Phi keeps both ideas. Bookmarks stay organized in the sidebar and open in place as live tabs. Pinned tabs sit at the top for pages you live in, and you choose whether they belong to one Space, one Profile, or the whole App.
+ 
+-Phi does not have Arc's Peek equivalent. Opening a link from a pinned tab navigates normally inside the tab.
++Phi has its own take on Arc's Peek. When a link in a pinned tab or bookmark leads to a different site, Phi previews it in a floating panel over the page instead of taking that tab away from its own. You can close the preview, keep it as a tab, or open it beside the original as a Split View. See [Peek View](/peek/) for the full behavior and the setting that turns it off.
+ 
+ Good next reads:
+ 
+ - [Spaces & Profiles](/spaces/) for Spaces, Profiles, and URL Rules.
+ - [Bookmarks & Pinned Tabs](/bookmarks/) for living bookmarks and configurable pinned tab scope.
++- [Peek View](/peek/) for previewing links without leaving the page you are on.
+ - [Themes & Appearance](/themes/) for per-Space colors and global themes.
+ 
+ ## Coming from Dia
+diff --git a/site/tips-and-shortcuts/index.md b/site/tips-and-shortcuts/index.md
+index 9009482..4a48ab8 100644
+--- a/site/tips-and-shortcuts/index.md
++++ b/site/tips-and-shortcuts/index.md
+@@ -11,6 +11,7 @@ This page collects Phi gestures and shortcuts that are less obvious from the int
+ | Action                             | Shortcut or gesture                                                |
+ | ---------------------------------- | ------------------------------------------------------------------ |
+ | Create a Split View                | Option (⌥)-click a tab, Pinned Tab, bookmark, or eligible web link |
++| Preview a link in a Peek           | Shift (⇧)-click a web link                                         |
+ | Switch between recently used tabs  | Control (⌃) + Tab                                                  |
+ | Switch in reverse order            | Control (⌃) + Shift (⇧) + Tab                                      |
+ | Copy the current page URL          | Command (⌘) + Shift (⇧) + C                                        |
+@@ -74,12 +75,12 @@ Each Space keeps its own icon and theme. Switching Spaces applies the appearance
+ 
+ ## Route sites with URL Rules
+ 
+-Open **Spaces → URL Rules…** from the menu bar, or open URL Rules from **Settings → Spaces**. A rule can match by **Domain suffix**, **Domain**, **Domain contains**, or **URL**.
++Open **Spaces → URL Rules…** from the menu bar, or open **Settings → Navigation** and click **Manage URL Rules…**. A rule can match by **Domain suffix**, **Domain**, **Domain contains**, or **URL**.
+ 
+-Send a match to a regular Space or an Incognito Space. Choose **Ask every time** if you want Phi to ask before moving the page. When several rules match, the most specific rule wins.
++Send a match to a regular Space, Incognito, or Kiosk. Choose **Ask every time** if you want Phi to ask before moving the page. When several rules match, the most specific rule wins.
+ 
+-::: tip Space routing does not isolate cookies
+-A URL Rule chooses where a page opens. To keep cookies and signed-in sessions separate, assign the target Spaces to different Profiles.
++::: tip Regular Space routing does not isolate cookies
++Routing a site to a regular Space does not isolate its cookies or signed-in session. Assign the target Spaces to different Profiles when you want that separation.
+ :::
+ 
+ ## Keep video visible with Picture-in-Picture
