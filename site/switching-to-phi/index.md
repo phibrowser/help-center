@@ -26,16 +26,17 @@ Phi should feel familiar if Arc's sidebar model worked for you, but the details 
 
 Arc and Phi both separate the workspace layer from the isolation layer. In Phi, a **Space** is the visible workspace in the sidebar, while a **Profile** is the cookies, history, logins, and extensions underneath. A Profile can back several Spaces, so you can have multiple workspaces that share the same signed-in session.
 
-Phi's **URL Rules** are inspired by Arc's Air Traffic Control: matching sites can open in the Space you assign, or ask you where to open them. The exact implementation is Phi's own, but the goal is the same: put links in the right context automatically.
+Phi's **URL Rules** are inspired by Arc's Air Traffic Control: matching sites can open in a regular Space, Incognito, or Kiosk, or ask you where to open them. The exact implementation is Phi's own, but the goal is the same: put links in the right context automatically.
 
 The biggest bookmark difference is that Phi keeps a full bookmark tree with folders. Arc dropped traditional bookmarks in favor of pinned tabs and Favorites; Phi keeps both ideas. Bookmarks stay organized in the sidebar and open in place as live tabs. Pinned tabs sit at the top for pages you live in, and you choose whether they belong to one Space, one Profile, or the whole App.
 
-Phi does not have Arc's Peek equivalent. Opening a link from a pinned tab navigates normally inside the tab.
+Phi has its own take on Arc's Peek. When a link in a pinned tab or bookmark leads to a different site, Phi previews it in a floating panel over the page instead of taking that tab away from its own. You can close the preview, keep it as a tab, or open it beside the original as a Split View. See [Peek View](/peek/) for the full behavior and the setting that turns it off.
 
 Good next reads:
 
 - [Spaces & Profiles](/spaces/) for Spaces, Profiles, and URL Rules.
 - [Bookmarks & Pinned Tabs](/bookmarks/) for living bookmarks and configurable pinned tab scope.
+- [Peek View](/peek/) for previewing links without leaving the page you are on.
 - [Themes & Appearance](/themes/) for per-Space colors and global themes.
 
 ## Coming from Dia

@@ -28,6 +28,8 @@
       "spaces": "Spaces & Profiles",
       "incognito": "Incognito Spaces",
       "bookmarks": "Bookmarks & Pinned Tabs",
+      "peek": "Peek View",
+      "kiosk": "Kiosk",
       "importExport": "Importing & Exporting",
       "tabManagement": "Managing Tabs & Bookmarks",
       "themes": "Themes & Appearance",
