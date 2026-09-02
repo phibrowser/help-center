@@ -27,7 +27,8 @@ Una forma sencilla de recordarlo: **los Espacios organizan cómo se ven y se sie
 - **Crea** un Espacio desde la franja de Espacios en la barra lateral. Le das un nombre y eliges a qué Perfil pertenece, o creas un **Nuevo perfil** ahí mismo si este Espacio debe estar completamente separado.
 - **Cambia** de Espacio desde la barra lateral con un solo clic. Las pestañas, los marcadores y el tema de la barra lateral cambian para coincidir, y Phi reabre la ventana del Espacio si no está ya abierta.
 - **Renombra** el Espacio, o usa **Cambiar icono** / **Cambiar tema** desde su menú. Elige **Seguir tema global** para quitar el tema propio del Espacio.
-- **Elimina** un Espacio desde el mismo menú. Eliminar un Espacio también borra los marcadores y las Reglas de URL que le pertenecen, y no se puede deshacer. Si el alcance de pestañas fijadas es **Espacio**, las pestañas fijadas de ese Espacio también se eliminan. Las pestañas fijadas con alcance de Perfil o de Aplicación no se ven afectadas.
+- **Elimina** un Espacio desde el mismo menú, o con **Espacios → Eliminar Espacio…** en la barra de menús. Eliminar un Espacio también borra los marcadores y las Reglas de URL que le pertenecen, y no se puede deshacer. Si el alcance de pestañas fijadas es **Espacio**, las pestañas fijadas de ese Espacio también se eliminan. Las pestañas fijadas con alcance de Perfil o de Aplicación no se ven afectadas.
+- **No hay un Espacio predeterminado fijo.** Cualquier Espacio se puede eliminar, incluido el que Phi creó la primera vez que lo abriste. La única regla es que Phi conserva siempre al menos un Espacio normal, contando todos los Perfiles, así que **Eliminar** no se ofrece mientras quede un solo Espacio. Crea otro Espacio primero y luego elimina el que ya no quieras. Los Espacios de incógnito no cuentan para ese mínimo; se cierran, no se eliminan.
 
 ## Reglas de URL: dirige los sitios que coinciden automáticamente {#url-rules-route-matching-sites-automatically}
 

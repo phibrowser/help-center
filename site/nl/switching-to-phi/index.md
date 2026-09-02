@@ -30,7 +30,7 @@ Phi's **URL-regels** zijn geïnspireerd op Arcs Air Traffic Control: sites die a
 
 Het grootste verschil bij bladwijzers is dat Phi een volledige bladwijzerboom met mappen behoudt. Arc liet traditionele bladwijzers vallen ten gunste van vastgezette tabbladen en favorieten; Phi houdt beide ideeën aan. Bladwijzers blijven georganiseerd in de zijbalk en openen ter plekke als levende tabbladen. Vastgezette tabbladen staan bovenaan voor pagina's waar je in leeft, en jij bepaalt of ze bij één Space, één profiel of de hele app horen.
 
-Phi heeft een eigen kijk op Arcs Peek. Wanneer een link in een vastgezet tabblad of bladwijzer naar een andere site leidt, toont Phi er een voorbeeld van in een zwevend paneel boven de pagina, in plaats van dat tabblad van zijn eigen pagina weg te halen. Je kunt het voorbeeld sluiten, als tabblad houden of naast het origineel openen als Split View. Zie [Peek-weergave](/nl/peek/) voor het volledige gedrag en de instelling die het uitzet.
+Phi heeft een eigen kijk op Arcs Peek. Wanneer een link in een vastgezet tabblad of bladwijzer naar een andere site leidt, toont Phi er een voorbeeld van in een zwevend paneel boven de pagina, in plaats van dat tabblad van zijn eigen pagina weg te halen. Je kunt het voorbeeld sluiten, als tabblad houden of naast het origineel openen als Split View. Zie [Peek-weergave](/nl/peek/) voor het volledige gedrag en de instellingen waarmee je het uitzet of alleen voor Shift-klik bewaart.
 
 Lees hierna:
 

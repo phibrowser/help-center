@@ -1,0 +1,98 @@
+diff --git a/site/bookmarks/index.md b/site/bookmarks/index.md
+index bbd7847..388760e 100644
+--- a/site/bookmarks/index.md
++++ b/site/bookmarks/index.md
+@@ -49,7 +49,7 @@ Bookmarks are always scoped to one Space. The pinned tab setting does not affect
+ 
+ Following links in a pinned tab or bookmark may take it away from its original URL. To go back, double-click the pinned tab or click the favicon of a bookmark that is open as a tab.
+ 
+-Links that lead to a different site do not move the tab at all: Phi previews them in a floating [Peek View](/peek/) panel, so the bookmark or pinned tab keeps the page it is bound to.
++Links that lead to a different site do not move the tab at all: Phi previews them in a floating [Peek View](/peek/) panel, so the bookmark or pinned tab keeps the page it is bound to. If you would rather have those links open as new tabs, turn off **Automatically peek from pinned tabs and bookmarks** in **Settings → Navigation**.
+ 
+ To keep the current page, hold **Command (⌘)** while you double-click the pinned tab or click the bookmark's favicon. The current page moves to the tab list as a separate tab, and the pinned tab or bookmark returns to its original URL.
+ 
+diff --git a/site/faq/index.md b/site/faq/index.md
+index 6be3719..d722e60 100644
+--- a/site/faq/index.md
++++ b/site/faq/index.md
+@@ -47,7 +47,11 @@ URL Rules open matching sites in a regular Space, Incognito, or Kiosk, no matter
+ :::
+ 
+ ::: details What happens if I delete a Space?
+-Deleting a Space also removes the bookmarks and URL Rules that belong to it. This cannot be undone. Space-scoped pinned tabs belonging to that Space are removed too; Profile-scoped and App-scoped pinned tabs stay. The Profile with its cookies, history, and logins is not deleted by removing a Space.
++Deleting a Space also removes the bookmarks and URL Rules that belong to it. This cannot be undone. Space-scoped pinned tabs belonging to that Space are removed too; Profile-scoped and App-scoped pinned tabs stay. The Profile with its cookies, history, and logins is not deleted by removing a Space. The last remaining Space cannot be deleted; see the next question.
++:::
++
++::: details Is there a default Space that cannot be deleted?
++No. Any Space can be deleted, including the one Phi created when you first opened it. The one rule is that Phi always keeps at least one regular Space, so **Delete** is not offered while a single Space remains. Create another Space first, then delete the one you no longer want. Incognito Spaces do not count towards that one; they are closed rather than deleted.
+ :::
+ 
+ ::: details How is this different from Arc and Dia?
+@@ -122,6 +126,10 @@ Right-click a tab and choose **Pin**, or drag it into the pinned grid at the top
+ Double-click the pinned tab, or click the favicon of a bookmark that is open as a tab. To keep the current page, hold **Command (⌘)** while you double-click the pinned tab or click the bookmark's favicon. The current page moves to the tab list as a separate tab, and the pinned tab or bookmark returns to its original URL.
+ :::
+ 
++::: details Can I stop links in pinned tabs and bookmarks from opening in a Peek?
++Yes. Turn off **Automatically peek from pinned tabs and bookmarks** in **Settings → Navigation**. Links to other sites then open as new tabs, and Shift-click still opens a Peek when you want one. Turn off **Enable Peek View** to switch the feature off entirely. See [Peek View](/peek/).
++:::
++
+ ::: details Is this similar to Arc or Dia?
+ Yes. Phi uses the same broad living-sidebar idea, where saved pages stay visible and pinned pages sit at the top, while keeping its own bookmark tree and behaviour. See [Switching to Phi](/switching-to-phi/) for the migration comparison and [Bookmarks & Pinned Tabs](/bookmarks/) for the feature details.
+ :::
+diff --git a/site/peek/index.md b/site/peek/index.md
+index 9d26a54..2d2e206 100644
+--- a/site/peek/index.md
++++ b/site/peek/index.md
+@@ -12,7 +12,7 @@ Peek works in **Balanced** and **Performance** Mode. Comfortable Mode opens ever
+ 
+ There are three ways to get one:
+ 
+-- **Follow a link out of a bookmark or pinned tab.** When a link in a bookmark or pinned tab leads to a different site, Phi previews it in a Peek instead of taking that tab away from its page. Links that stay on the same site keep navigating in place.
++- **Follow a link out of a bookmark or pinned tab.** When a link in a bookmark or pinned tab leads to a different site, Phi previews it in a Peek instead of taking that tab away from its page. Links that stay on the same site keep navigating in place. This automatic Peek has its own switch, described under [Peek settings](#peek-settings).
+ - **Shift-click a link.** This works in any regular tab, not only bookmarks and pinned tabs.
+ - **Right-click a link and choose "Open Link in Peek View."** Same result as Shift-click, from the page's context menu.
+ 
+@@ -48,10 +48,13 @@ While a tab carries a Peek, the peeked page's favicon appears at the end of that
+ 
+ Peeks survive a restart. When Phi restores your session, a Peek comes back attached to the tab it belonged to.
+ 
+-## Turn Peek off
++## Peek settings
+ 
+-Open **Settings**, go to the **Navigation** tab, and use **Enable Peek View** under **Peek**. It is on by default.
++Open **Settings**, go to the **Navigation** tab, and look under **Peek**. There are two switches, both on by default.
+ 
+-With Peek off, links go back to their plain behavior: a cross-site link in a bookmark or pinned tab opens as a new tab, Shift-click opens a new window, and the right-click item disappears. Any Peek that is open at the time becomes a regular tab rather than vanishing. Switching to Comfortable Mode does the same thing.
++- **Enable Peek View** is the main switch. With it off, links go back to their plain behaviour: a cross-site link in a bookmark or pinned tab opens as a new tab, Shift-click opens a new window, and the right-click item disappears. Any Peek that is open at the time becomes a regular tab rather than vanishing. Switching to Comfortable Mode does the same thing.
++- **Automatically peek from pinned tabs and bookmarks** covers only the automatic case. Turn it off and a cross-site link in a bookmark or pinned tab opens as a new tab, while Shift-click and **Open Link in Peek View** keep working. Choose this if you want a Peek only when you ask for one.
++
++The second switch follows the first. Turning **Enable Peek View** off switches the automatic option off with it, and turning it back on brings the automatic option back. It is greyed out while Peek View is off.
+ 
+ To learn how bookmarks and pinned tabs stay bound to their page in the first place, see [Bookmarks & Pinned Tabs](/bookmarks/). For side-by-side pages and the rest of the sidebar workflow, see [Layouts & Navigation](/layouts/).
+diff --git a/site/spaces/index.md b/site/spaces/index.md
+index 4aee2bf..db5d095 100644
+--- a/site/spaces/index.md
++++ b/site/spaces/index.md
+@@ -27,7 +27,8 @@ A simple way to hold it: **Spaces organize how things look and feel; Profiles de
+ - **Create** a Space from the Spaces strip in the sidebar. You give it a name and choose which Profile it belongs to, or create a **New Profile** right there if this Space should be fully separate.
+ - **Switch** between Spaces from the sidebar with a single click. The sidebar's tabs, bookmarks, and theme change to match, and Phi reopens the Space's window if it is not already open.
+ - **Rename** or **Change Icon** / **Change Theme** from the Space's menu. Choose **Follow Global** to drop a per-Space theme override.
+-- **Delete** a Space from the same menu. Deleting a Space also removes the bookmarks and URL Rules that belong to it, and cannot be undone. If pinned tab scope is **Space**, that Space's pinned tabs are removed too. Profile-scoped and App-scoped pinned tabs are not affected.
++- **Delete** a Space from the same menu, or with **Spaces → Delete Space…** in the menu bar. Deleting a Space also removes the bookmarks and URL Rules that belong to it, and cannot be undone. If pinned tab scope is **Space**, that Space's pinned tabs are removed too. Profile-scoped and App-scoped pinned tabs are not affected.
++- **There is no fixed default Space.** Any Space can be deleted, including the one Phi created when you first opened it. The one rule is that Phi always keeps at least one regular Space, across all Profiles, so **Delete** is not offered while a single Space remains. Create another Space first, then delete the one you no longer want. Incognito Spaces do not count towards that one; they are closed rather than deleted.
+ 
+ ## URL Rules: route matching sites automatically
+ 
+diff --git a/site/switching-to-phi/index.md b/site/switching-to-phi/index.md
+index 57c441e..4ac931e 100644
+--- a/site/switching-to-phi/index.md
++++ b/site/switching-to-phi/index.md
+@@ -30,7 +30,7 @@ Phi's **URL Rules** are inspired by Arc's Air Traffic Control: matching sites ca
+ 
+ The biggest bookmark difference is that Phi keeps a full bookmark tree with folders. Arc dropped traditional bookmarks in favor of pinned tabs and Favorites; Phi keeps both ideas. Bookmarks stay organized in the sidebar and open in place as live tabs. Pinned tabs sit at the top for pages you live in, and you choose whether they belong to one Space, one Profile, or the whole App.
+ 
+-Phi has its own take on Arc's Peek. When a link in a pinned tab or bookmark leads to a different site, Phi previews it in a floating panel over the page instead of taking that tab away from its own. You can close the preview, keep it as a tab, or open it beside the original as a Split View. See [Peek View](/peek/) for the full behavior and the setting that turns it off.
++Phi has its own take on Arc's Peek. When a link in a pinned tab or bookmark leads to a different site, Phi previews it in a floating panel over the page instead of taking that tab away from its own. You can close the preview, keep it as a tab, or open it beside the original as a Split View. See [Peek View](/peek/) for the full behaviour and the settings that turn it off, or keep it for Shift-click only.
+ 
+ Good next reads:
+ 

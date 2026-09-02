@@ -12,7 +12,7 @@ Peek funktioniert in den Modi **Ausgewogen** und **Performance**. Der Modus „K
 
 Es gibt drei Wege zu einem Peek:
 
-- **Folge einem Link aus einem Lesezeichen oder angehefteten Tab.** Führt ein Link in einem Lesezeichen oder angehefteten Tab zu einer anderen Website, zeigt Phi ihn in einem Peek als Vorschau an, statt den Tab von seiner Seite wegzuführen. Links, die auf derselben Website bleiben, navigieren weiterhin an Ort und Stelle.
+- **Folge einem Link aus einem Lesezeichen oder angehefteten Tab.** Führt ein Link in einem Lesezeichen oder angehefteten Tab zu einer anderen Website, zeigt Phi ihn in einem Peek als Vorschau an, statt den Tab von seiner Seite wegzuführen. Links, die auf derselben Website bleiben, navigieren weiterhin an Ort und Stelle. Dieser automatische Peek hat einen eigenen Schalter, beschrieben unter [Peek-Einstellungen](#peek-settings).
 - **Klicke einen Link bei gedrückter Umschalttaste an.** Das funktioniert in jedem regulären Tab, nicht nur in Lesezeichen und angehefteten Tabs.
 - **Klicke einen Link mit der rechten Maustaste an und wähle „Link in Peek-Ansicht öffnen“.** Dasselbe Ergebnis wie der Klick mit gedrückter Umschalttaste, nur aus dem Kontextmenü der Seite.
 
@@ -48,10 +48,13 @@ Solange ein Tab einen Peek trägt, erscheint das Favicon der Vorschauseite am En
 
 Peeks überleben einen Neustart. Wenn Phi deine Sitzung wiederherstellt, kehrt ein Peek mit dem Tab zurück, zu dem er gehörte.
 
-## Peek ausschalten
+## Peek-Einstellungen {#peek-settings}
 
-Öffne die **Einstellungen**, wechsle zum Tab **Navigation** und verwende dort **Peek-Ansicht aktivieren** unter **Peek**. Die Einstellung ist standardmäßig aktiviert.
+Öffne die **Einstellungen**, wechsle zum Tab **Navigation** und sieh unter **Peek** nach. Dort gibt es zwei Schalter, beide standardmäßig aktiviert.
 
-Mit ausgeschaltetem Peek kehren Links zu ihrem gewohnten Verhalten zurück: Ein Link zu einer anderen Website öffnet sich aus einem Lesezeichen oder angehefteten Tab als neuer Tab, der Klick mit gedrückter Umschalttaste öffnet ein neues Fenster, und der Kontextmenüeintrag verschwindet. Ein Peek, der in dem Moment offen ist, wird zu einem regulären Tab, statt einfach zu verschwinden. Der Wechsel in den Modus „Komfortabel“ bewirkt dasselbe.
+- **Peek-Ansicht aktivieren** ist der Hauptschalter. Ist er ausgeschaltet, kehren Links zu ihrem gewohnten Verhalten zurück: Ein Link zu einer anderen Website öffnet sich aus einem Lesezeichen oder angehefteten Tab als neuer Tab, der Klick mit gedrückter Umschalttaste öffnet ein neues Fenster, und der Kontextmenüeintrag verschwindet. Ein Peek, der in dem Moment offen ist, wird zu einem regulären Tab, statt einfach zu verschwinden. Der Wechsel in den Modus „Komfortabel“ bewirkt dasselbe.
+- **Links aus angehefteten Tabs und Lesezeichen automatisch in Peek-Ansicht öffnen** betrifft nur den automatischen Fall. Schaltest du diesen Schalter aus, öffnet sich ein Link zu einer anderen Website aus einem Lesezeichen oder angehefteten Tab als neuer Tab, während der Klick mit gedrückter Umschalttaste und **Link in Peek-Ansicht öffnen** weiterhin funktionieren. Wähle diese Einstellung, wenn du einen Peek nur dann willst, wenn du ihn selbst auslöst.
+
+Der zweite Schalter folgt dem ersten. Schaltest du **Peek-Ansicht aktivieren** aus, geht die automatische Option mit aus; schaltest du ihn wieder ein, kommt sie zurück. Solange die Peek-Ansicht ausgeschaltet ist, ist der zweite Schalter ausgegraut.
 
 Wie Lesezeichen und angeheftete Tabs überhaupt an ihre Seite gebunden bleiben, steht in [Lesezeichen & angeheftete Tabs](/de/bookmarks/). Seiten nebeneinander und der restliche Seitenleisten-Workflow stehen in [Layouts & Navigation](/de/layouts/).

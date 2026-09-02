@@ -12,7 +12,7 @@ La vue Peek fonctionne dans les modes **Équilibré** et **Performance**. En mod
 
 Il existe trois façons d'en obtenir une :
 
-- **Suivez un lien depuis un favori ou un onglet épinglé.** Quand un lien d'un favori ou d'un onglet épinglé mène vers un autre site, Phi le prévisualise dans une vue Peek au lieu d'éloigner cet onglet de sa page. Les liens qui restent sur le même site continuent de naviguer sur place.
+- **Suivez un lien depuis un favori ou un onglet épinglé.** Quand un lien d'un favori ou d'un onglet épinglé mène vers un autre site, Phi le prévisualise dans une vue Peek au lieu d'éloigner cet onglet de sa page. Les liens qui restent sur le même site continuent de naviguer sur place. Cette vue Peek automatique a son propre interrupteur, décrit dans [Réglages de la vue Peek](#peek-settings).
 - **Cliquez sur un lien en maintenant Maj.** Cela fonctionne dans n'importe quel onglet normal, pas seulement dans les favoris et les onglets épinglés.
 - **Faites un clic droit sur un lien et choisissez « Ouvrir le lien dans la vue Peek ».** Même résultat que le clic avec Maj, depuis le menu contextuel de la page.
 
@@ -48,10 +48,13 @@ Tant qu'un onglet porte une vue Peek, la favicon de la page prévisualisée appa
 
 Les vues Peek survivent à un redémarrage. Quand Phi restaure votre session, une vue Peek revient attachée à l'onglet auquel elle appartenait.
 
-## Désactiver la vue Peek
+## Réglages de la vue Peek {#peek-settings}
 
-Ouvrez **Paramètres**, allez dans l'onglet **Navigation**, puis utilisez **Activer la vue Peek** sous **Peek**. Elle est activée par défaut.
+Ouvrez **Paramètres**, allez dans l'onglet **Navigation**, puis regardez sous **Peek**. Vous y trouverez deux interrupteurs, tous deux activés par défaut.
 
-Avec la vue Peek désactivée, les liens retrouvent leur comportement ordinaire : un lien vers un autre site dans un favori ou un onglet épinglé s'ouvre comme un nouvel onglet, le clic avec Maj ouvre une nouvelle fenêtre, et l'élément du clic droit disparaît. Toute vue Peek ouverte à ce moment-là devient un onglet normal au lieu de disparaître. Passer en mode Confortable a le même effet.
+- **Activer la vue Peek** est l'interrupteur principal. Une fois désactivé, les liens retrouvent leur comportement ordinaire : un lien vers un autre site dans un favori ou un onglet épinglé s'ouvre comme un nouvel onglet, le clic avec Maj ouvre une nouvelle fenêtre, et l'élément du clic droit disparaît. Toute vue Peek ouverte à ce moment-là devient un onglet normal au lieu de disparaître. Passer en mode Confortable a le même effet.
+- **Ouvrir automatiquement une vue Peek depuis les onglets épinglés et les favoris** ne couvre que le cas automatique. Désactivez-le et un lien vers un autre site dans un favori ou un onglet épinglé s'ouvre comme un nouvel onglet, tandis que le clic avec Maj et **Ouvrir le lien dans la vue Peek** continuent de fonctionner. Choisissez cette option si vous ne voulez une vue Peek que lorsque vous la demandez.
+
+Le second interrupteur suit le premier. Désactiver **Activer la vue Peek** désactive aussi l'option automatique, et le réactiver la rétablit. Cette option est grisée tant que la vue Peek est désactivée.
 
 Pour comprendre comment les favoris et les onglets épinglés restent liés à leur page, voir [Favoris et onglets épinglés](/fr/bookmarks/). Pour les pages côte à côte et le reste du travail dans la barre latérale, voir [Dispositions et navigation](/fr/layouts/).

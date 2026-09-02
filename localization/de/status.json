@@ -1,8 +1,8 @@
 {
   "locale": "de",
-  "sourceRevision": "c4bda7f1af3253116625a1eef42c4d040f84aaf6",
+  "sourceRevision": "e8cd0d8da5b6e1d8fc5c8eca5598bf0856f4a62e",
   "owners": {
-    "translation": "Phi i18n pipeline (agent run 2026-08-26); peek/kiosk sync by run 2026-08-31-peek-kiosk (docs/i18n-runs/2026-08-31-peek-kiosk)",
+    "translation": "Phi i18n pipeline (agent run 2026-08-26); peek/kiosk sync by run 2026-08-31-peek-kiosk (docs/i18n-runs/2026-08-31-peek-kiosk); last-Space/auto-Peek sync by run 2026-09-02-last-space-auto-peek (docs/i18n-runs/2026-09-02-last-space-auto-peek)",
     "contentReview": "Alpha"
   },
   "pages": {

@@ -1,0 +1,103 @@
+{
+  "run": "2026-09-02-last-space-auto-peek",
+  "bindingNote": "Shipped Phi product strings from phibrowser-mac Resources/Localizable.xcstrings at 082a9373 are ground truth for UI labels quoted in these pages. Origin is machine-seeded; defects should be flagged, not silently diverged from.",
+  "keepEnglish": [
+    "Peek",
+    "Phi",
+    "Phi Browser",
+    "Arc",
+    "Dia",
+    "Shift",
+    "Split View brand handling per glossary"
+  ],
+  "peekView": {
+    "zh-Hans": "Peek 视图",
+    "zh-Hant": "Peek 檢視",
+    "ja": "Peekビュー (settings string; the chromium menu string spaces it as Peek ビュー)",
+    "ko": "Peek 뷰",
+    "de": "Peek-Ansicht",
+    "fr": "vue Peek",
+    "es": "vista Peek",
+    "nl": "Peek-weergave"
+  },
+  "shippedLabels": {
+    "Enable Peek View": {
+      "zh-Hans": "启用 Peek 视图",
+      "zh-Hant": "啟用 Peek 檢視",
+      "ja": "Peekビューを有効にする",
+      "ko": "Peek 뷰 사용",
+      "de": "Peek-Ansicht aktivieren",
+      "fr": "Activer la vue Peek",
+      "es": "Activar vista Peek",
+      "nl": "Schakel Peek-weergave in"
+    },
+    "Open Link in Peek View": {
+      "zh-Hans": "在 Peek 视图中打开链接",
+      "zh-Hant": "在 Peek 檢視中開啟連結",
+      "ja": "リンクをPeekビューで開く",
+      "ko": "Peek 뷰에서 링크 열기",
+      "de": "Link in Peek-Ansicht öffnen",
+      "fr": "Ouvrir le lien dans la vue Peek",
+      "es": "Abrir enlace en vista Peek",
+      "nl": "Link openen in Peek-weergave"
+    },
+    "Settings → Navigation": {
+      "zh-Hans": "设置 → 导航",
+      "zh-Hant": "設定 → 導覽",
+      "ja": "設定 → ナビゲーション",
+      "ko": "설정 → 탐색",
+      "de": "Einstellungen → Navigation",
+      "fr": "Paramètres → Navigation",
+      "es": "Configuración → Navegación",
+      "nl": "Instellingen → Navigatie"
+    },
+    "Peek (settings section title)": {
+      "zh-Hans": "Peek",
+      "zh-Hant": "Peek",
+      "ja": "Peek",
+      "ko": "Peek",
+      "de": "Peek",
+      "fr": "Peek",
+      "es": "Peek",
+      "nl": "Peek"
+    },
+    "Spaces (menu-bar menu title)": {
+      "zh-Hans": "空间",
+      "zh-Hant": "空間",
+      "ja": "スペース",
+      "ko": "스페이스",
+      "de": "Spaces",
+      "fr": "Espaces",
+      "es": "Espacios",
+      "nl": "Spaces"
+    },
+    "Delete Space… (Spaces menu and active-Space context menu)": {
+      "zh-Hans": "删除空间…",
+      "zh-Hant": "刪除空間…",
+      "ja": "スペースを削除…",
+      "ko": "스페이스 삭제…",
+      "de": "Space löschen…",
+      "fr": "Supprimer l'Espace…",
+      "es": "Eliminar Espacio…",
+      "nl": "Verwijder Space…"
+    },
+    "Delete (Space strip context menu item)": {
+      "zh-Hans": "删除",
+      "zh-Hant": "刪除",
+      "ja": "削除",
+      "ko": "삭제",
+      "de": "Löschen",
+      "fr": "Supprimer",
+      "es": "Eliminar",
+      "nl": "Verwijder"
+    }
+  },
+  "unshippedLabels": {
+    "Automatically peek from pinned tabs and bookmarks": {
+      "en": "Automatically peek from pinned tabs and bookmarks",
+      "shippedDescription": "Links that leave a pinned tab’s or bookmark’s site open in a Peek panel instead of a new tab.",
+      "note": "Only the English string exists in Localizable.xcstrings at phibrowser-mac 082a9373 (keys settings.navigations.peek.autoToggle.title / .description). Render by analogy with the shipped Enable Peek View string and the locale's settings register; flag as newly coined."
+    }
+  },
+  "anchorMandate": "The English heading 'Turn Peek off' became 'Peek settings' and is now an in-page link target. Every locale translates the heading and appends the explicit id {#peek-settings}; the new sentence in the first 'Open a Peek' bullet links to (#peek-settings)."
+}
