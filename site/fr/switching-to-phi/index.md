@@ -30,7 +30,7 @@ Les **Règles d'URL** de Phi s'inspirent de l'Air Traffic Control d'Arc : les s
 
 La plus grande différence côté favoris : Phi conserve une arborescence complète de favoris avec des dossiers. Arc a abandonné les favoris traditionnels au profit des onglets épinglés et des Favorites ; Phi garde les deux idées. Les favoris restent organisés dans la barre latérale et s'ouvrent sur place comme des onglets vivants. Les onglets épinglés restent en haut pour les pages où vous vivez, et vous choisissez s'ils appartiennent à un Espace, à un Profil ou à toute l'application.
 
-Phi a sa propre version du Peek d'Arc. Quand un lien d'un onglet épinglé ou d'un favori mène vers un autre site, Phi le prévisualise dans un panneau flottant au-dessus de la page au lieu d'éloigner cet onglet de la sienne. Vous pouvez fermer l'aperçu, le garder comme onglet, ou l'ouvrir à côté de l'original en Split View. Voir [Vue Peek](/fr/peek/) pour le comportement complet et le réglage qui la désactive.
+Phi a sa propre version du Peek d'Arc. Quand un lien d'un onglet épinglé ou d'un favori mène vers un autre site, Phi le prévisualise dans un panneau flottant au-dessus de la page au lieu d'éloigner cet onglet de la sienne. Vous pouvez fermer l'aperçu, le garder comme onglet, ou l'ouvrir à côté de l'original en Split View. Voir [Vue Peek](/fr/peek/) pour le comportement complet et les réglages qui la désactivent, ou la réservent au clic avec Maj.
 
 Bonnes lectures pour la suite :
 

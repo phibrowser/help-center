@@ -47,7 +47,11 @@ Les Règles d'URL ouvrent les sites correspondants dans un Espace normal, en Nav
 :::
 
 ::: details Que se passe-t-il si je supprime un Espace ?
-Supprimer un Espace supprime aussi les favoris et les Règles d'URL qui lui appartiennent. Cette action est irréversible. Les onglets épinglés à l'échelle de cet Espace sont également supprimés ; ceux à l'échelle du Profil ou de l'application restent. Le Profil, avec ses cookies, son historique et ses identifiants, n'est pas supprimé quand on retire un Espace.
+Supprimer un Espace supprime aussi les favoris et les Règles d'URL qui lui appartiennent. Cette action est irréversible. Les onglets épinglés à l'échelle de cet Espace sont également supprimés ; ceux à l'échelle du Profil ou de l'application restent. Le Profil, avec ses cookies, son historique et ses identifiants, n'est pas supprimé quand on retire un Espace. Le dernier Espace restant ne peut pas être supprimé ; consultez la question suivante.
+:::
+
+::: details Existe-t-il un Espace par défaut impossible à supprimer ?
+Non. N'importe quel Espace peut être supprimé, y compris celui que Phi a créé lors du premier démarrage. La seule règle est que Phi conserve toujours au moins un Espace normal ; **Supprimer** n'est donc pas proposé tant qu'il ne reste qu'un seul Espace. Créez d'abord un autre Espace, puis supprimez celui dont vous ne voulez plus. Les Espaces de navigation privée n'entrent pas dans ce compte ; ils sont fermés, pas supprimés.
 :::
 
 ::: details En quoi est-ce différent d'Arc et de Dia ?
@@ -120,6 +124,10 @@ Faites un clic droit sur un onglet et choisissez **Épingler**, ou faites-le gli
 
 ::: details Comment ramener un onglet épinglé ou un favori à sa page d'origine ?
 Double-cliquez sur l'onglet épinglé, ou cliquez sur la favicon d'un favori ouvert dans un onglet. Pour conserver la page en cours, maintenez **Commande (⌘)** pendant le double-clic sur l'onglet épinglé ou le clic sur la favicon du favori. La page en cours passe dans la liste des onglets comme onglet séparé, et l'onglet épinglé ou le favori revient à son URL d'origine.
+:::
+
+::: details Puis-je empêcher les liens des onglets épinglés et des favoris de s'ouvrir dans une vue Peek ?
+Oui. Désactivez **Ouvrir automatiquement une vue Peek depuis les onglets épinglés et les favoris** dans **Paramètres → Navigation**. Les liens vers d'autres sites s'ouvrent alors dans de nouveaux onglets, et le clic avec Maj ouvre toujours une vue Peek quand vous en voulez une. Désactivez **Activer la vue Peek** pour couper entièrement la fonctionnalité. Consultez [Vue Peek](/fr/peek/).
 :::
 
 ::: details Est-ce comparable à Arc ou à Dia ?

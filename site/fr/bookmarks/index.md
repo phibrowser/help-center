@@ -49,7 +49,7 @@ Les favoris sont toujours limités à un seul Espace. Le réglage des onglets é
 
 Suivre des liens dans un onglet épinglé ou un favori peut l'éloigner de son URL d'origine. Pour revenir, double-cliquez sur l'onglet épinglé, ou cliquez sur l'icône de site (la favicon) d'un favori ouvert comme onglet.
 
-Les liens qui mènent vers un autre site ne déplacent pas l'onglet du tout : Phi les prévisualise dans un panneau flottant, la [vue Peek](/fr/peek/), et le favori ou l'onglet épinglé garde ainsi la page à laquelle il est lié.
+Les liens qui mènent vers un autre site ne déplacent pas l'onglet du tout : Phi les prévisualise dans un panneau flottant, la [vue Peek](/fr/peek/), et le favori ou l'onglet épinglé garde ainsi la page à laquelle il est lié. Si vous préférez que ces liens s'ouvrent dans de nouveaux onglets, désactivez **Ouvrir automatiquement une vue Peek depuis les onglets épinglés et les favoris** dans **Paramètres → Navigation**.
 
 Pour conserver la page actuelle, maintenez **Commande (⌘)** pendant que vous double-cliquez sur l'onglet épinglé ou cliquez sur la favicon du favori. La page actuelle rejoint la liste des onglets comme onglet séparé, et l'onglet épinglé ou le favori revient à son URL d'origine.
 

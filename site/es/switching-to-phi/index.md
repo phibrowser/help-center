@@ -30,7 +30,7 @@ Las **Reglas de URL** de Phi se inspiran en el Air Traffic Control de Arc: los s
 
 La mayor diferencia en marcadores es que Phi conserva un árbol de marcadores completo con carpetas. Arc abandonó los marcadores tradicionales en favor de las pestañas fijadas y los Favoritos; Phi conserva ambas ideas. Los marcadores se mantienen organizados en la barra lateral y se abren donde están, como pestañas vivas. Las pestañas fijadas se sitúan arriba para las páginas en las que vives, y tú decides si pertenecen a un Espacio, a un Perfil o a la app entera.
 
-Phi tiene su propia versión del Peek de Arc. Cuando un enlace en una pestaña fijada o en un marcador lleva a un sitio distinto, Phi lo muestra como vista previa en un panel flotante sobre la página en lugar de alejar esa pestaña de la suya. Puedes cerrar la vista previa, conservarla como pestaña o abrirla junto a la original como Vista dividida. Consulta [Vista Peek](/es/peek/) para el comportamiento completo y el ajuste que la desactiva.
+Phi tiene su propia versión del Peek de Arc. Cuando un enlace en una pestaña fijada o en un marcador lleva a un sitio distinto, Phi lo muestra como vista previa en un panel flotante sobre la página en lugar de alejar esa pestaña de la suya. Puedes cerrar la vista previa, conservarla como pestaña o abrirla junto a la original como Vista dividida. Consulta [Vista Peek](/es/peek/) para el comportamiento completo y los ajustes que la desactivan o la reservan solo para el clic con Mayúsculas.
 
 Buenas lecturas para continuar:
 

@@ -12,7 +12,7 @@ Peek werkt in de modi **Gebalanceerd** en **Prestaties**. De modus Comfortabel o
 
 Er zijn drie manieren om er een te krijgen:
 
-- **Volg een link vanuit een bladwijzer of vastgezet tabblad.** Wanneer een link in een bladwijzer of vastgezet tabblad naar een andere site leidt, toont Phi er een voorbeeld van in een Peek, in plaats van dat tabblad van zijn pagina weg te halen. Links die op dezelfde site blijven, navigeren gewoon ter plekke.
+- **Volg een link vanuit een bladwijzer of vastgezet tabblad.** Wanneer een link in een bladwijzer of vastgezet tabblad naar een andere site leidt, toont Phi er een voorbeeld van in een Peek, in plaats van dat tabblad van zijn pagina weg te halen. Links die op dezelfde site blijven, navigeren gewoon ter plekke. Deze automatische Peek heeft een eigen schakelaar, beschreven onder [Peek-instellingen](#peek-settings).
 - **Shift-klik op een link.** Dit werkt in elk gewoon tabblad, niet alleen in bladwijzers en vastgezette tabbladen.
 - **Klik met de rechtermuisknop op een link en kies "Link openen in Peek-weergave".** Zelfde resultaat als Shift-klik, via het rechtsklikmenu van de pagina.
 
@@ -48,10 +48,13 @@ Zolang een tabblad een Peek draagt, verschijnt de favicon van de pagina in de Pe
 
 Peeks overleven een herstart. Wanneer Phi je sessie herstelt, komt een Peek terug bij het tabblad waar hij bij hoorde.
 
-## Peek uitzetten
+## Peek-instellingen {#peek-settings}
 
-Open **Instellingen**, ga naar het tabblad **Navigatie** en gebruik **Schakel Peek-weergave in** onder **Peek**. De functie staat standaard aan.
+Open **Instellingen**, ga naar het tabblad **Navigatie** en kijk onder **Peek**. Daar staan twee schakelaars, allebei standaard aan.
 
-Met Peek uit krijgen links hun gewone gedrag terug: een link naar een andere site in een bladwijzer of vastgezet tabblad opent als een nieuw tabblad, Shift-klik opent een nieuw venster, en het rechtsklikitem verdwijnt. Een Peek die op dat moment openstaat, wordt een gewoon tabblad in plaats van te verdwijnen. Overschakelen naar de modus Comfortabel doet hetzelfde.
+- **Schakel Peek-weergave in** is de hoofdschakelaar. Staat hij uit, dan krijgen links hun gewone gedrag terug: een link naar een andere site in een bladwijzer of vastgezet tabblad opent als een nieuw tabblad, Shift-klik opent een nieuw venster, en het rechtsklikitem verdwijnt. Een Peek die op dat moment openstaat, wordt een gewoon tabblad in plaats van te verdwijnen. Overschakelen naar de modus Comfortabel doet hetzelfde.
+- **Open automatisch een Peek vanuit vastgezette tabbladen en bladwijzers** regelt alleen het automatische geval. Zet je hem uit, dan opent een link naar een andere site in een bladwijzer of vastgezet tabblad als een nieuw tabblad, terwijl Shift-klik en **Link openen in Peek-weergave** blijven werken. Kies dit als je alleen een Peek wilt wanneer je er zelf om vraagt.
+
+De tweede schakelaar volgt de eerste. Zet je **Schakel Peek-weergave in** uit, dan gaat de automatische optie mee uit, en zet je hem weer aan, dan komt de automatische optie terug. Hij is gedimd zolang Peek-weergave uitstaat.
 
 Wil je weten hoe bladwijzers en vastgezette tabbladen überhaupt aan hun pagina gebonden blijven, zie dan [Bladwijzers en vastgezette tabbladen](/nl/bookmarks/). Voor pagina's naast elkaar en de rest van de zijbalkworkflow, zie [Lay-outs en navigatie](/nl/layouts/).

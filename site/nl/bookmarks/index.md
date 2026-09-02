@@ -49,7 +49,7 @@ Bladwijzers horen altijd bij één Space. De instelling voor vastgezette tabblad
 
 Door links te volgen kan een vastgezet tabblad of bladwijzer wegraken van zijn oorspronkelijke URL. Om terug te gaan dubbelklik je op het vastgezette tabblad, of klik je op de favicon van een bladwijzer die als tabblad open staat.
 
-Links die naar een andere site leiden, verplaatsen het tabblad helemaal niet: Phi toont er een voorbeeld van in een zwevend [Peek-weergave](/nl/peek/)-paneel, zodat de bladwijzer of het vastgezette tabblad de pagina houdt waaraan hij gebonden is.
+Links die naar een andere site leiden, verplaatsen het tabblad helemaal niet: Phi toont er een voorbeeld van in een zwevend [Peek-weergave](/nl/peek/)-paneel, zodat de bladwijzer of het vastgezette tabblad de pagina houdt waaraan hij gebonden is. Wil je die links liever als nieuwe tabbladen openen, zet dan **Open automatisch een Peek vanuit vastgezette tabbladen en bladwijzers** uit in **Instellingen → Navigatie**.
 
 Wil je de huidige pagina bewaren, houd dan **Command (⌘)** ingedrukt terwijl je op het vastgezette tabblad dubbelklikt of op de favicon van de bladwijzer klikt. De huidige pagina verhuist als los tabblad naar de tabbladlijst, en het vastgezette tabblad of de bladwijzer keert terug naar zijn oorspronkelijke URL.
 

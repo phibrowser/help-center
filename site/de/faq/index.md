@@ -47,7 +47,11 @@ URL-Regeln öffnen passende Websites in einem regulären Space, in Inkognito ode
 :::
 
 ::: details Was passiert, wenn ich einen Space lösche?
-Mit dem Space werden auch die Lesezeichen und URL-Regeln entfernt, die zu ihm gehören. Das lässt sich nicht rückgängig machen. Auf diesen Space begrenzte angeheftete Tabs werden ebenfalls entfernt; auf Profil oder App begrenzte angeheftete Tabs bleiben. Das Profil mit seinen Cookies, seinem Verlauf und seinen Zugangsdaten wird durch das Löschen eines Spaces nicht gelöscht.
+Mit dem Space werden auch die Lesezeichen und URL-Regeln entfernt, die zu ihm gehören. Das lässt sich nicht rückgängig machen. Auf diesen Space begrenzte angeheftete Tabs werden ebenfalls entfernt; auf Profil oder App begrenzte angeheftete Tabs bleiben. Das Profil mit seinen Cookies, seinem Verlauf und seinen Zugangsdaten wird durch das Löschen eines Spaces nicht gelöscht. Der letzte verbleibende Space lässt sich nicht löschen; siehe die nächste Frage.
+:::
+
+::: details Gibt es einen Standard-Space, der sich nicht löschen lässt?
+Nein. Jeder Space lässt sich löschen, auch der, den Phi beim ersten Start angelegt hat. Die einzige Regel: Phi behält immer mindestens einen regulären Space, deshalb wird **Löschen** nicht angeboten, solange nur ein einziger Space übrig ist. Lege zuerst einen weiteren Space an und lösche dann den, den du nicht mehr brauchst. Inkognito-Spaces zählen dabei nicht mit; sie werden geschlossen, nicht gelöscht.
 :::
 
 ::: details Wie unterscheidet sich das von Arc und Dia?
@@ -120,6 +124,10 @@ Klicke mit der rechten Maustaste auf einen Tab und wähle **Anheften**, oder zie
 
 ::: details Wie bringe ich einen angehefteten Tab oder ein Lesezeichen zurück zur ursprünglichen Seite?
 Doppelklicke auf den angehefteten Tab, oder klicke auf das Favicon eines Lesezeichens, das als Tab geöffnet ist. Um die aktuelle Seite zu behalten, halte die **Befehlstaste (⌘)** gedrückt, während du auf den angehefteten Tab doppelklickst oder auf das Favicon des Lesezeichens klickst. Die aktuelle Seite wandert als eigener Tab in die Tab-Liste, und der angeheftete Tab oder das Lesezeichen kehrt zu seiner ursprünglichen URL zurück.
+:::
+
+::: details Kann ich verhindern, dass sich Links in angehefteten Tabs und Lesezeichen in einem Peek öffnen?
+Ja. Schalte unter **Einstellungen → Navigation** den Schalter **Links aus angehefteten Tabs und Lesezeichen automatisch in Peek-Ansicht öffnen** aus. Links zu anderen Websites öffnen sich dann als neue Tabs, und der Klick mit gedrückter Umschalttaste öffnet weiterhin einen Peek, wenn du einen möchtest. Schalte **Peek-Ansicht aktivieren** aus, um die Funktion ganz abzuschalten. Siehe [Peek-Ansicht](/de/peek/).
 :::
 
 ::: details Ist das ähnlich wie bei Arc oder Dia?

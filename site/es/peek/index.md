@@ -12,7 +12,7 @@ Peek funciona en los modos **Equilibrado** y **Rendimiento**. El modo Cómodo, e
 
 Hay tres formas de conseguir uno:
 
-- **Sigue un enlace desde un marcador o una pestaña fijada.** Cuando un enlace en un marcador o en una pestaña fijada lleva a un sitio distinto, Phi lo muestra en un Peek en lugar de alejar esa pestaña de su página. Los enlaces que se quedan en el mismo sitio siguen navegando en su lugar.
+- **Sigue un enlace desde un marcador o una pestaña fijada.** Cuando un enlace en un marcador o en una pestaña fijada lleva a un sitio distinto, Phi lo muestra en un Peek en lugar de alejar esa pestaña de su página. Los enlaces que se quedan en el mismo sitio siguen navegando en su lugar. Este Peek automático tiene su propio interruptor, descrito en [Configuración de Peek](#peek-settings).
 - **Haz clic en un enlace con la tecla Mayúsculas (⇧) presionada.** Funciona en cualquier pestaña normal, no solo en marcadores y pestañas fijadas.
 - **Haz clic derecho en un enlace y elige "Abrir enlace en vista Peek".** El mismo resultado que el clic con Mayúsculas, desde el menú contextual de la página.
 
@@ -48,10 +48,13 @@ Mientras una pestaña lleva un Peek, el favicon de la página en vista previa ap
 
 Los Peeks sobreviven a un reinicio. Cuando Phi restaura tu sesión, cada Peek vuelve unido a la pestaña a la que pertenecía.
 
-## Desactivar Peek
+## Configuración de Peek {#peek-settings}
 
-Abre la **Configuración**, ve a la pestaña **Navegación** y usa **Activar vista Peek** en la sección **Peek**. La opción está activada de forma predeterminada.
+Abre la **Configuración**, ve a la pestaña **Navegación** y busca la sección **Peek**. Hay dos interruptores, ambos activados de forma predeterminada.
 
-Con Peek desactivado, los enlaces vuelven a su comportamiento de siempre: un enlace a otro sitio en un marcador o una pestaña fijada se abre como pestaña nueva, el clic con Mayúsculas abre una ventana nueva y el elemento del menú del clic derecho ya no aparece. Cualquier Peek abierto en ese momento se convierte en una pestaña normal en lugar de desaparecer. Cambiar al modo Cómodo hace lo mismo.
+- **Activar vista Peek** es el interruptor principal. Con él desactivado, los enlaces vuelven a su comportamiento de siempre: un enlace a otro sitio en un marcador o una pestaña fijada se abre como pestaña nueva, el clic con Mayúsculas abre una ventana nueva y el elemento del menú del clic derecho ya no aparece. Cualquier Peek abierto en ese momento se convierte en una pestaña normal en lugar de desaparecer. Cambiar al modo Cómodo hace lo mismo.
+- **Abrir automáticamente los enlaces de pestañas fijadas y marcadores en vista Peek** cubre solo el caso automático. Desactívalo y un enlace a otro sitio en un marcador o una pestaña fijada se abre como pestaña nueva, mientras que el clic con Mayúsculas y **Abrir enlace en vista Peek** siguen funcionando. Elige esta opción si quieres un Peek solo cuando lo pidas.
+
+El segundo interruptor depende del primero. Al desactivar **Activar vista Peek**, la opción automática se desactiva con él; al volver a activarlo, la opción automática vuelve. El segundo aparece atenuado mientras la vista Peek está desactivada.
 
 Para saber cómo los marcadores y las pestañas fijadas se mantienen vinculados a su página, consulta [Marcadores y pestañas fijadas](/es/bookmarks/). Para las páginas lado a lado y el resto del flujo de trabajo de la barra lateral, consulta [Diseños y navegación](/es/layouts/).

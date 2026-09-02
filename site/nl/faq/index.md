@@ -47,7 +47,11 @@ URL-regels openen overeenkomende sites in een gewone Space, Incognito of Kiosk, 
 :::
 
 ::: details Wat gebeurt er als ik een Space verwijder?
-Als je een Space verwijdert, verdwijnen ook de bladwijzers en URL-regels die erbij horen. Dit kan niet ongedaan worden gemaakt. Vastgezette tabbladen met het bereik Space die bij die Space horen, worden ook verwijderd; vastgezette tabbladen met het bereik Profiel of App blijven staan. Het Profiel zelf, met zijn cookies, geschiedenis en inloggegevens, wordt niet verwijderd als je een Space verwijdert.
+Als je een Space verwijdert, verdwijnen ook de bladwijzers en URL-regels die erbij horen. Dit kan niet ongedaan worden gemaakt. Vastgezette tabbladen met het bereik Space die bij die Space horen, worden ook verwijderd; vastgezette tabbladen met het bereik Profiel of App blijven staan. Het Profiel zelf, met zijn cookies, geschiedenis en inloggegevens, wordt niet verwijderd als je een Space verwijdert. De laatste overgebleven Space kan niet worden verwijderd; zie de volgende vraag.
+:::
+
+::: details Is er een standaard-Space die niet kan worden verwijderd?
+Nee. Elke Space kan worden verwijderd, ook de Space die Phi aanmaakte toen je het voor het eerst opende. De enige regel is dat Phi altijd minstens één gewone Space bewaart, zodat **Verwijder** niet wordt aangeboden zolang er nog maar één Space over is. Maak eerst een andere Space aan en verwijder daarna de Space die je niet meer wilt. Incognito-Spaces tellen daarbij niet mee; die worden gesloten, niet verwijderd.
 :::
 
 ::: details Waarin verschilt dit van Arc en Dia?
@@ -120,6 +124,10 @@ Klik met de rechtermuisknop op een tabblad en kies **Zet vast**, of sleep het na
 
 ::: details Hoe breng ik een vastgezet tabblad of een bladwijzer terug naar de oorspronkelijke pagina?
 Dubbelklik op het vastgezette tabblad, of klik op de favicon van een bladwijzer die als tabblad openstaat. Wil je de huidige pagina bewaren, houd dan **Command (⌘)** ingedrukt terwijl je op het vastgezette tabblad dubbelklikt of op de favicon van de bladwijzer klikt. De huidige pagina verhuist als apart tabblad naar de tabbladlijst, en het vastgezette tabblad of de bladwijzer keert terug naar zijn oorspronkelijke URL.
+:::
+
+::: details Kan ik voorkomen dat links in vastgezette tabbladen en bladwijzers in een Peek openen?
+Ja. Zet **Open automatisch een Peek vanuit vastgezette tabbladen en bladwijzers** uit in **Instellingen → Navigatie**. Links naar andere sites openen dan als nieuwe tabbladen, en Shift-klik opent nog steeds een Peek wanneer je er een wilt. Wil je de functie helemaal uitzetten, zet dan **Schakel Peek-weergave in** uit. Zie [Peek-weergave](/nl/peek/).
 :::
 
 ::: details Lijkt dit op Arc of Dia?

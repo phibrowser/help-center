@@ -47,7 +47,11 @@ Las Reglas de URL abren los sitios que coinciden en un Espacio normal, en Incóg
 :::
 
 ::: details ¿Qué pasa si elimino un Espacio?
-Eliminar un Espacio también borra los marcadores y las Reglas de URL que le pertenecen. Esto no se puede deshacer. Las pestañas fijadas con alcance de Espacio que pertenecían a ese Espacio también se eliminan; las de alcance de Perfil y de Aplicación se conservan. El Perfil, con sus cookies, historial e inicios de sesión, no se elimina al quitar un Espacio.
+Eliminar un Espacio también borra los marcadores y las Reglas de URL que le pertenecen. Esto no se puede deshacer. Las pestañas fijadas con alcance de Espacio que pertenecían a ese Espacio también se eliminan; las de alcance de Perfil y de Aplicación se conservan. El Perfil, con sus cookies, historial e inicios de sesión, no se elimina al quitar un Espacio. El último Espacio que quede no se puede eliminar; consulta la siguiente pregunta.
+:::
+
+::: details ¿Hay un Espacio predeterminado que no se pueda eliminar?
+No. Cualquier Espacio se puede eliminar, incluido el que Phi creó la primera vez que lo abriste. La única regla es que Phi conserva siempre al menos un Espacio normal, así que **Eliminar** no se ofrece mientras quede un solo Espacio. Crea otro Espacio primero y luego elimina el que ya no quieras. Los Espacios de incógnito no cuentan para ese mínimo; se cierran, no se eliminan.
 :::
 
 ::: details ¿En qué se diferencia de Arc y Dia?
@@ -120,6 +124,10 @@ Haz clic derecho en una pestaña y elige **Fijar**, o arrástrala a la cuadrícu
 
 ::: details ¿Cómo devuelvo una pestaña fijada o un marcador a su página original?
 Haz doble clic en la pestaña fijada, o haz clic en el favicon de un marcador que esté abierto como pestaña. Para conservar la página actual, mantén presionada la tecla **Comando (⌘)** mientras haces doble clic en la pestaña fijada o haces clic en el favicon del marcador. La página actual pasa a la lista de pestañas como una pestaña aparte, y la pestaña fijada o el marcador vuelve a su URL original.
+:::
+
+::: details ¿Puedo evitar que los enlaces de las pestañas fijadas y los marcadores se abran en un Peek?
+Sí. Desactiva **Abrir automáticamente los enlaces de pestañas fijadas y marcadores en vista Peek** en **Configuración → Navegación**. Los enlaces a otros sitios se abren entonces como pestañas nuevas, y el clic con Mayúsculas sigue abriendo un Peek cuando quieras uno. Desactiva **Activar vista Peek** para apagar la función por completo. Consulta [Vista Peek](/es/peek/).
 :::
 
 ::: details ¿Se parece a Arc o a Dia?

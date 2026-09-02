@@ -30,7 +30,7 @@ Phis **URL-Regeln** sind von Arcs Air Traffic Control inspiriert: Passende Websi
 
 Der größte Unterschied bei Lesezeichen: Phi behält einen vollständigen Lesezeichenbaum mit Ordnern. Arc hat klassische Lesezeichen zugunsten von angehefteten Tabs und Favoriten aufgegeben; Phi behält beide Ideen. Lesezeichen bleiben in der Seitenleiste organisiert und öffnen sich an Ort und Stelle als vollwertige Tabs. Angeheftete Tabs sitzen oben für Seiten, in denen du zu Hause bist, und du entscheidest, ob sie zu einem Space, einem Profil oder der ganzen App gehören.
 
-Phi hat seine eigene Version von Arcs Peek. Führt ein Link in einem angehefteten Tab oder Lesezeichen zu einer anderen Website, zeigt Phi ihn als Vorschau in einem schwebenden Panel über der Seite an, statt den Tab von seiner eigenen Seite wegzuführen. Du kannst die Vorschau schließen, als Tab behalten oder neben dem Original als Split View öffnen. Das vollständige Verhalten und die Einstellung zum Ausschalten stehen unter [Peek-Ansicht](/de/peek/).
+Phi hat seine eigene Version von Arcs Peek. Führt ein Link in einem angehefteten Tab oder Lesezeichen zu einer anderen Website, zeigt Phi ihn als Vorschau in einem schwebenden Panel über der Seite an, statt den Tab von seiner eigenen Seite wegzuführen. Du kannst die Vorschau schließen, als Tab behalten oder neben dem Original als Split View öffnen. Das vollständige Verhalten und die Einstellungen, mit denen du Peek ausschaltest oder nur für den Klick mit gedrückter Umschalttaste behältst, stehen unter [Peek-Ansicht](/de/peek/).
 
 Gute nächste Lektüre:
 

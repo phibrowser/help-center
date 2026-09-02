@@ -12,7 +12,7 @@ Peek works in **Balanced** and **Performance** Mode. Comfortable Mode opens ever
 
 There are three ways to get one:
 
-- **Follow a link out of a bookmark or pinned tab.** When a link in a bookmark or pinned tab leads to a different site, Phi previews it in a Peek instead of taking that tab away from its page. Links that stay on the same site keep navigating in place.
+- **Follow a link out of a bookmark or pinned tab.** When a link in a bookmark or pinned tab leads to a different site, Phi previews it in a Peek instead of taking that tab away from its page. Links that stay on the same site keep navigating in place. This automatic Peek has its own switch, described under [Peek settings](#peek-settings).
 - **Shift-click a link.** This works in any regular tab, not only bookmarks and pinned tabs.
 - **Right-click a link and choose "Open Link in Peek View."** Same result as Shift-click, from the page's context menu.
 
@@ -48,10 +48,13 @@ While a tab carries a Peek, the peeked page's favicon appears at the end of that
 
 Peeks survive a restart. When Phi restores your session, a Peek comes back attached to the tab it belonged to.
 
-## Turn Peek off
+## Peek settings
 
-Open **Settings**, go to the **Navigation** tab, and use **Enable Peek View** under **Peek**. It is on by default.
+Open **Settings**, go to the **Navigation** tab, and look under **Peek**. There are two switches, both on by default.
 
-With Peek off, links go back to their plain behavior: a cross-site link in a bookmark or pinned tab opens as a new tab, Shift-click opens a new window, and the right-click item disappears. Any Peek that is open at the time becomes a regular tab rather than vanishing. Switching to Comfortable Mode does the same thing.
+- **Enable Peek View** is the main switch. With it off, links go back to their plain behaviour: a cross-site link in a bookmark or pinned tab opens as a new tab, Shift-click opens a new window, and the right-click item disappears. Any Peek that is open at the time becomes a regular tab rather than vanishing. Switching to Comfortable Mode does the same thing.
+- **Automatically peek from pinned tabs and bookmarks** covers only the automatic case. Turn it off and a cross-site link in a bookmark or pinned tab opens as a new tab, while Shift-click and **Open Link in Peek View** keep working. Choose this if you want a Peek only when you ask for one.
+
+The second switch follows the first. Turning **Enable Peek View** off switches the automatic option off with it, and turning it back on brings the automatic option back. It is greyed out while Peek View is off.
 
 To learn how bookmarks and pinned tabs stay bound to their page in the first place, see [Bookmarks & Pinned Tabs](/bookmarks/). For side-by-side pages and the rest of the sidebar workflow, see [Layouts & Navigation](/layouts/).

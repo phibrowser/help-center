@@ -47,7 +47,11 @@ URL Rules open matching sites in a regular Space, Incognito, or Kiosk, no matter
 :::
 
 ::: details What happens if I delete a Space?
-Deleting a Space also removes the bookmarks and URL Rules that belong to it. This cannot be undone. Space-scoped pinned tabs belonging to that Space are removed too; Profile-scoped and App-scoped pinned tabs stay. The Profile with its cookies, history, and logins is not deleted by removing a Space.
+Deleting a Space also removes the bookmarks and URL Rules that belong to it. This cannot be undone. Space-scoped pinned tabs belonging to that Space are removed too; Profile-scoped and App-scoped pinned tabs stay. The Profile with its cookies, history, and logins is not deleted by removing a Space. The last remaining Space cannot be deleted; see the next question.
+:::
+
+::: details Is there a default Space that cannot be deleted?
+No. Any Space can be deleted, including the one Phi created when you first opened it. The one rule is that Phi always keeps at least one regular Space, so **Delete** is not offered while a single Space remains. Create another Space first, then delete the one you no longer want. Incognito Spaces do not count towards that one; they are closed rather than deleted.
 :::
 
 ::: details How is this different from Arc and Dia?
@@ -120,6 +124,10 @@ Right-click a tab and choose **Pin**, or drag it into the pinned grid at the top
 
 ::: details How do I return a pinned tab or bookmark to its original page?
 Double-click the pinned tab, or click the favicon of a bookmark that is open as a tab. To keep the current page, hold **Command (⌘)** while you double-click the pinned tab or click the bookmark's favicon. The current page moves to the tab list as a separate tab, and the pinned tab or bookmark returns to its original URL.
+:::
+
+::: details Can I stop links in pinned tabs and bookmarks from opening in a Peek?
+Yes. Turn off **Automatically peek from pinned tabs and bookmarks** in **Settings → Navigation**. Links to other sites then open as new tabs, and Shift-click still opens a Peek when you want one. Turn off **Enable Peek View** to switch the feature off entirely. See [Peek View](/peek/).
 :::
 
 ::: details Is this similar to Arc or Dia?
