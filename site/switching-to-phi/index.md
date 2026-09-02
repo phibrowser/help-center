@@ -30,7 +30,7 @@ Phi's **URL Rules** are inspired by Arc's Air Traffic Control: matching sites ca
 
 The biggest bookmark difference is that Phi keeps a full bookmark tree with folders. Arc dropped traditional bookmarks in favor of pinned tabs and Favorites; Phi keeps both ideas. Bookmarks stay organized in the sidebar and open in place as live tabs. Pinned tabs sit at the top for pages you live in, and you choose whether they belong to one Space, one Profile, or the whole App.
 
-Phi has its own take on Arc's Peek. When a link in a pinned tab or bookmark leads to a different site, Phi previews it in a floating panel over the page instead of taking that tab away from its own. You can close the preview, keep it as a tab, or open it beside the original as a Split View. See [Peek View](/peek/) for the full behavior and the setting that turns it off.
+Phi has its own take on Arc's Peek. When a link in a pinned tab or bookmark leads to a different site, Phi previews it in a floating panel over the page instead of taking that tab away from its own. You can close the preview, keep it as a tab, or open it beside the original as a Split View. See [Peek View](/peek/) for the full behaviour and the settings that turn it off, or keep it for Shift-click only.
 
 Good next reads:
 
