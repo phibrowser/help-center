@@ -39,11 +39,11 @@ You can also narrow what leaves your Mac at all. With **Private AI**, run throug
 
 ## Usage statistics
 
-Phi does have one telemetry switch: **Help improve Phi's features and performance**. It is on by default, and while it stays on, Phi sends anonymous usage statistics to Phinomenon.
+Phi does have one telemetry switch: **Help improve Phi's features and performance**. It is off until you turn it on, and while it is on, Phi sends detailed usage statistics and crash reports to Phinomenon. The small anonymous counts described above continue either way.
 
 The statistics are about the browser itself: which features get used and how the app performs. They never include the pages you visit, their content, your Memory, or your AI conversations.
 
-Each report carries a random identifier created for your installation. It has nothing to do with your Phi account, and it belongs to the browser as a whole, not to any Space or Profile. Turning the switch off deletes the identifier; turning it back on later creates a new one, so your old reports and any new ones cannot be linked.
+The anonymous counts carry no identifier at all. A crash report is different: while you are signed in it carries your account identifier, so a crash can be tied back to your account. Turning the switch off stops both the detailed statistics and the crash reports; only the anonymous counts continue.
 
 To change the setting, open `phi://settings` and look in the **You and Phi** section, just below your account row. When you flip the switch, a **Relaunch** button appears next to it, and the new choice takes effect once Phi relaunches.
 
