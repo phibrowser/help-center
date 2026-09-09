@@ -53,7 +53,7 @@ La Mémoire n'est pas une boîte noire. Vous pouvez **consulter, gérer et suppr
 
 ### Supprimer votre compte et vos données
 
-Vous le faites vous-même, dans l'app : **Paramètres → Paramètres supplémentaires du navigateur → votre nom, sous Vous et Phi → Supprimer le compte et les données**. Cela supprime le compte et les données stockées avec lui, sur votre Mac et sur nos serveurs, et c'est irréversible. Vous n'avez besoin d'écrire à personne pour être oublié.
+Vous le faites vous-même, dans l'app : **Paramètres → Avancés → Paramètres supplémentaires du navigateur → votre nom, sous Vous et Phi → Supprimer le compte et les données**. Cela supprime le compte et les données stockées avec lui, sur votre Mac et sur nos serveurs, et c'est irréversible. Vous n'avez besoin d'écrire à personne pour être oublié.
 
 Si vous avez déjà désinstallé Phi, réinstallez-le et connectez-vous au même compte pour atteindre ce bouton. La désinstallation efface ce qui se trouvait sur votre Mac, mais elle ne ferme pas le compte. Si vous ne vous êtes jamais connecté, il n'y a pas de compte et rien à supprimer de notre côté.
 

@@ -1,0 +1,49 @@
+{
+  "locale": "zh-Hans",
+  "entries": {
+    "kiosk.actions": "- 点按控制项的主体部分，或按 **⌘O**，把页面移入工具栏中显示的空间。\n- 点按箭头，或按 **⌘⇧O**，打开菜单并选择另一个空间。\n\n这些是默认快捷键。要修改它们，打开**设置 → 快捷键 → Kiosk 与 Peek**，找到**在当前空间中打开 Kiosk 或 Peek**和**显示 Kiosk 的「打开到」菜单**。",
+    "peek.shortcut": "按 **⌘O** 执行**以标签页打开**，把预览移入当前空间。要修改这个快捷键，打开**设置 → 快捷键 → Kiosk 与 Peek**，修改**在当前空间中打开 Kiosk 或 Peek**。Kiosk 共用这一快捷键设置。",
+    "tips.rows": "| 将 Kiosk 页面或 Peek 作为标签页在空间中打开 | Command (⌘) + O |\n| 打开 Kiosk 空间选择菜单 | Command (⌘) + Shift (⇧) + O |",
+    "tips.settings": "在**设置 → 快捷键 → Kiosk 与 Peek**下修改两个用于在空间中打开页面的快捷键。详情见 [Kiosk](/zh-Hans/kiosk/) 和 [Peek 视图](/zh-Hans/peek/)。",
+    "settings.path": "设置 → 高级",
+    "privacy.path": "设置 → 高级 → 更多浏览器设置",
+    "kiosk.global": "## 从任何应用打开 Kiosk {#open-kiosk-from-any-app}\n\n按 **⌘⌥N** 打开一个新的 Kiosk 窗口。要在使用其他应用时也能用这个快捷键，打开**设置 → 导航 → Kiosk**，开启**在任何应用中按下 ⌘⌥N 时打开 Kiosk**。\n\n要修改按键组合，打开**设置 → 快捷键**，在**文件**下找到**新建 Kiosk 窗口**，设置你想用的快捷键。导航页面中的开关会显示你选择的快捷键。",
+    "tips.globalRow": "| 在任何应用中新建 Kiosk 窗口（需先在设置中启用快捷键） | Command (⌘) + Option (⌥) + N |",
+    "tips.globalSettings": "在**设置 → 导航 → Kiosk**下启用 Kiosk 快捷键，让它在任何应用中都可用。要修改按键组合，在**设置 → 快捷键 → 文件**下修改**新建 Kiosk 窗口**。"
+  },
+  "evidence": [
+    {
+      "source": "docs/i18n-runs/2026-09-08-advanced-kiosk/refs.json",
+      "note": "Reused binding zh-Hans labels: 高级, 快捷键, Kiosk 与 Peek, 在当前空间中打开 Kiosk 或 Peek, 显示 Kiosk 的「打开到」菜单, 更多浏览器设置."
+    },
+    {
+      "source": ".agents/skills/phi-translate-validate/references/product-glossary.md",
+      "note": "Reused 设置 and 空间; retained Kiosk and Peek in English."
+    },
+    {
+      "source": "site/zh-Hans/kiosk/index.md",
+      "note": "Retained 点按, 控制项, 工具栏 and 移入 wording."
+    },
+    {
+      "source": "site/zh-Hans/peek/index.md",
+      "note": "Reused 以标签页打开 and Peek 视图."
+    },
+    {
+      "source": "site/zh-Hans/tips-and-shortcuts/index.md",
+      "note": "Retained Command (⌘) and Shift (⇧) shortcut notation."
+    },
+    {
+      "source": "site/zh-Hans/phi-browser-skill/index.md; site/zh-Hans/agent-passwords/index.md; site/zh-Hans/privacy/index.md",
+      "note": "Read existing Settings paths in context. All terms are established; no contested terminology required online research."
+    },
+    {
+      "source": "docs/i18n-runs/2026-09-08-advanced-kiosk/refs.json",
+      "note": "Global shortcut follow-up reuses 导航, 文件, 新建 Kiosk 窗口 and the exact switch template 在任何应用中按下 %@ 时打开 Kiosk with %@ replaced by ⌘⌥N. Describes availability in any app without coining a new feature term."
+    },
+    {
+      "source": "site/zh-Hans/tips-and-shortcuts/index.md",
+      "note": "Global shortcut row retains the established Command (⌘) and Option (⌥) notation. No contested platform terms required online research."
+    }
+  ],
+  "flags": []
+}

@@ -30,6 +30,8 @@ La página llena el panel de borde a borde. Tres controles se sitúan en la fran
 | **Abrir como pestaña**      | Convierte la vista previa en una pestaña normal. La página no se vuelve a cargar, así que la posición de desplazamiento y lo que hayas escrito se conservan. |
 | **Abrir en vista dividida** | Coloca la vista previa junto a la pestaña de la que salió, como una Vista dividida de dos paneles.                                                           |
 
+Presiona **⌘O** para usar **Abrir como pestaña** y mover la vista previa a tu Espacio actual. Para cambiar este atajo, abre **Configuración → Atajos → Kiosk y Peek** y modifica **Abrir Kiosk o Peek en el Espacio actual**. Kiosk usa la misma configuración de atajo.
+
 ## Cerrar un Peek
 
 Cualquiera de estas acciones quita la vista previa:

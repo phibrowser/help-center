@@ -1,0 +1,57 @@
+{
+  "locale": "zh-Hant",
+  "entries": {
+    "kiosk.actions": "- 按一下控制項目的主要部分，或按下 **⌘O**，即可把頁面移進工具列上顯示的空間。\n- 按一下箭頭，或按下 **⌘⇧O**，即可開啟選單並選擇另一個空間。\n\n這些是預設快速鍵。若要變更，請開啟 **設定 → 快速鍵 → Kiosk 與 Peek**，找到 **在目前空間開啟 Kiosk 或 Peek** 和 **顯示 Kiosk 的「開啟於」選單**。",
+    "peek.shortcut": "按下 **⌘O** 即可執行 **以分頁開啟**，把預覽移進你目前的空間。若要變更這個快速鍵，請開啟 **設定 → 快速鍵 → Kiosk 與 Peek**，編輯 **在目前空間開啟 Kiosk 或 Peek**。Kiosk 也使用同一個快速鍵設定。",
+    "tips.rows": "| 將 Kiosk 頁面或 Peek 以分頁開啟於空間中 | Command (⌘) + O |\n| 開啟 Kiosk 的空間選擇選單 | Command (⌘) + Shift (⇧) + O |",
+    "tips.settings": "你可以在 **設定 → 快速鍵 → Kiosk 與 Peek** 中變更用於在空間中開啟頁面的兩個快速鍵。詳情請見 [Kiosk](/zh-Hant/kiosk/) 和 [Peek 檢視](/zh-Hant/peek/)。",
+    "settings.path": "設定 → 進階",
+    "privacy.path": "設定 → 進階 → 其他瀏覽器設定",
+    "kiosk.global": "## 從任何 App 開啟 Kiosk {#open-kiosk-from-any-app}\n\n按下 **⌘⌥N** 即可開啟新的 Kiosk 視窗。若要在使用其他 App 時也能使用這個快速鍵，請開啟 **設定 → 導覽 → Kiosk**，啟用 **在任何 App 中按下 ⌘⌥N 時開啟 Kiosk**。\n\n若要變更按鍵組合，請開啟 **設定 → 快速鍵**，在 **檔案** 下找到 **新增 Kiosk 視窗**，設定你想使用的快速鍵。「導覽」中的開關會顯示你選擇的快速鍵。",
+    "tips.globalRow": "| 從任何 App 開啟新的 Kiosk 視窗（需啟用此快速鍵） | Command (⌘) + Option (⌥) + N |",
+    "tips.globalSettings": "若要在任何 App 中使用 Kiosk 快速鍵，請在 **設定 → 導覽 → Kiosk** 中啟用。若要變更按鍵組合，請在 **設定 → 快速鍵 → 檔案** 中編輯 **新增 Kiosk 視窗**。"
+  },
+  "evidence": [
+    {
+      "path": "docs/i18n-runs/2026-09-08-advanced-kiosk/refs.json",
+      "note": "Current zh-Hant product labels: 進階, 快速鍵, Kiosk 與 Peek, 在目前空間開啟 Kiosk 或 Peek, 顯示 Kiosk 的「開啟於」選單, 其他瀏覽器設定."
+    },
+    {
+      "path": ".agents/skills/phi-translate-validate/references/product-glossary.md",
+      "note": "Ratified 設定 and 空間; Kiosk and Peek remain English."
+    },
+    {
+      "path": "site/zh-Hant/kiosk/index.md",
+      "note": "Existing 控制項目, 工具列, 按一下, 移進空間 wording."
+    },
+    {
+      "path": "site/zh-Hant/peek/index.md",
+      "note": "Existing 以分頁開啟 label and Peek 檢視 title."
+    },
+    {
+      "path": "site/zh-Hant/tips-and-shortcuts/index.md",
+      "note": "Existing 快速鍵 and literal Command (⌘) / Shift (⇧) modifier notation."
+    },
+    {
+      "path": "site/zh-Hant/phi-browser-skill/index.md",
+      "note": "Existing 設定 path context for Developer mode."
+    },
+    {
+      "path": "site/zh-Hant/agent-passwords/index.md",
+      "note": "Existing 設定 path context for Developer mode."
+    },
+    {
+      "path": "site/zh-Hant/privacy/index.md",
+      "note": "Existing 其他瀏覽器設定 wording in account deletion path; only path synchronized."
+    },
+    {
+      "path": "docs/i18n-runs/2026-09-08-advanced-kiosk/refs.json",
+      "note": "Global shortcut labels from Mac revision 3edef1d7341d007f593137c7ce36979310cb97a7: 導覽, 檔案, 新增 Kiosk 視窗, 在任何 App 中按下 %@ 時開啟 Kiosk. Template placeholder replaced with ⌘⌥N. Global shortcut described as usable in any App, matching the shipped switch wording."
+    },
+    {
+      "path": "site/zh-Hant/tips-and-shortcuts/index.md",
+      "note": "Existing Command (⌘) and Option (⌥) notation preserved in the new shortcut row."
+    }
+  ],
+  "flags": []
+}

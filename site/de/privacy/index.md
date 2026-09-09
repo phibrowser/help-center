@@ -53,7 +53,7 @@ Erinnerungen sind keine Blackbox. Du kannst direkt in Phi **ansehen, verwalten u
 
 ### Konto und Daten löschen
 
-Das erledigst du selbst, in der App: **Einstellungen → Weitere Browsereinstellungen → dein Name unter „Phi und ich“ → Konto und Daten löschen**. Dabei werden das Konto und die damit gespeicherten Daten entfernt, auf deinem Mac und auf unseren Servern, und das lässt sich nicht rückgängig machen. Du musst niemandem eine E-Mail schreiben, um vergessen zu werden.
+Das erledigst du selbst, in der App: **Einstellungen → Erweitert → Weitere Browsereinstellungen → dein Name unter „Phi und ich“ → Konto und Daten löschen**. Dabei werden das Konto und die damit gespeicherten Daten entfernt, auf deinem Mac und auf unseren Servern, und das lässt sich nicht rückgängig machen. Du musst niemandem eine E-Mail schreiben, um vergessen zu werden.
 
 Hast du Phi bereits deinstalliert, installiere es erneut und melde dich mit demselben Konto an, um zu dieser Taste zu gelangen. Deinstallieren entfernt, was auf deinem Mac lag, schließt aber nicht das Konto. Wenn du dich nie angemeldet hast, gibt es kein Konto und auf unserer Seite nichts zu löschen.
 

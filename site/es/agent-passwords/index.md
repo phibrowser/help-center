@@ -24,7 +24,7 @@ Además, la forma predeterminada en que los agentes usan una credencial es el au
 
 El Administrador de contraseñas para agentes vive en la pestaña **Desarrollador** de Configuración, que aparece cuando el **Modo de desarrollador** está activado:
 
-1. Abre **Configuración → General** y activa el **Modo de desarrollador**.
+1. Abre **Configuración → Avanzado** y activa el **Modo de desarrollador**.
 2. En la pestaña **Desarrollador**, busca **Administrador de contraseñas para agentes** y activa **Administrador de contraseñas de Bitwarden**.
 3. Inicia sesión en tu cuenta de Bitwarden. Se admiten servidores de EE. UU., de la UE y autoalojados, incluidas cuentas con inicio de sesión en dos pasos. Después desbloquea la caja fuerte con tu contraseña maestra.
 

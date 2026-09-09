@@ -1,0 +1,49 @@
+{
+  "locale": "de",
+  "entries": {
+    "kiosk.actions": "- Klicke auf den Hauptteil des Bedienelements oder drücke **⌘O**, um die Seite in den Space zu bewegen, der in der Symbolleiste angezeigt wird.\n- Klicke auf den Pfeil oder drücke **⌘⇧O**, um das Menü zu öffnen und einen anderen Space auszuwählen.\n\nDas sind die Standardkurzbefehle. Um sie zu ändern, öffne **Einstellungen → Tastaturkurzbefehle → Kiosk & Peek** und suche nach **Kiosk oder Peek im aktuellen Space öffnen** und **Kiosk-Menü „Öffnen in“ anzeigen**.",
+    "peek.shortcut": "Drücke **⌘O**, um die Vorschau mit **Als Tab öffnen** in deinen aktuellen Space zu bewegen. Um diesen Kurzbefehl zu ändern, öffne **Einstellungen → Tastaturkurzbefehle → Kiosk & Peek** und bearbeite **Kiosk oder Peek im aktuellen Space öffnen**. Kiosk verwendet dieselbe Kurzbefehlseinstellung.",
+    "tips.rows": "| Eine Kiosk-Seite oder einen Peek als Tab in einem Space öffnen | Befehlstaste (⌘) + O |\n| Das Menü zur Space-Auswahl in Kiosk öffnen | Befehlstaste (⌘) + Umschalttaste (⇧) + O |",
+    "tips.settings": "Die beiden Kurzbefehle zum Öffnen in einem Space kannst du unter **Einstellungen → Tastaturkurzbefehle → Kiosk & Peek** ändern. Details findest du unter [Kiosk](/de/kiosk/) und [Peek-Ansicht](/de/peek/).",
+    "settings.path": "Einstellungen → Erweitert",
+    "privacy.path": "Einstellungen → Erweitert → Weitere Browsereinstellungen",
+    "kiosk.global": "## Kiosk aus jeder App öffnen {#open-kiosk-from-any-app}\n\nDrücke **⌘⌥N**, um ein neues Kiosk-Fenster zu öffnen. Um diesen Kurzbefehl zu verwenden, während eine andere App aktiv ist, öffne **Einstellungen → Navigation → Kiosk** und schalte **Kiosk öffnen, wenn ⌘⌥N in einer beliebigen App gedrückt wird** ein.\n\nUm die Tastenkombination zu ändern, öffne **Einstellungen → Tastaturkurzbefehle**, suche unter **Ablage** nach **Neues Kiosk-Fenster** und lege deinen gewünschten Kurzbefehl fest. Der Schalter unter Navigation zeigt den von dir gewählten Kurzbefehl an.",
+    "tips.globalRow": "| Ein neues Kiosk-Fenster aus jeder App öffnen, wenn der globale Kurzbefehl aktiviert ist | Befehlstaste (⌘) + Wahltaste (⌥) + N |",
+    "tips.globalSettings": "Aktiviere den globalen Kiosk-Kurzbefehl unter **Einstellungen → Navigation → Kiosk**. Um die Tastenkombination zu ändern, bearbeite **Neues Kiosk-Fenster** unter **Einstellungen → Tastaturkurzbefehle → Ablage**."
+  },
+  "evidence": [
+    {
+      "source": "docs/i18n-runs/2026-09-08-advanced-kiosk/refs.json",
+      "note": "Shipped German labels reused verbatim: Erweitert; Tastaturkurzbefehle; Kiosk & Peek; Kiosk oder Peek im aktuellen Space öffnen; Kiosk-Menü „Öffnen in“ anzeigen; Weitere Browsereinstellungen."
+    },
+    {
+      "source": ".agents/skills/phi-translate-validate/references/product-glossary.md",
+      "note": "Binding German feature terms: Einstellungen and Space; Kiosk and Peek retain their brand spelling."
+    },
+    {
+      "source": "site/de/kiosk/index.md",
+      "note": "Reused established wording: Hauptteil des Bedienelements, Symbolleiste, die Seite in einen Space bewegen."
+    },
+    {
+      "source": "site/de/peek/index.md",
+      "note": "Reused existing label Als Tab öffnen and page title Peek-Ansicht."
+    },
+    {
+      "source": "site/de/tips-and-shortcuts/index.md",
+      "note": "Reused modifier names Befehlstaste (⌘) and Umschalttaste (⇧), plus the existing Einstellungen → Tastaturkurzbefehle path."
+    },
+    {
+      "source": "site/de/privacy/index.md",
+      "note": "Preserved existing Weitere Browsereinstellungen wording, also confirmed by the shipped reference."
+    },
+    {
+      "source": "docs/i18n-runs/2026-09-08-advanced-kiosk/refs.json",
+      "note": "Global shortcut follow-up: reused shipped Navigation, Ablage, Neues Kiosk-Fenster, Tastaturkurzbefehle, and the switch template Kiosk öffnen, wenn %@ in einer beliebigen App gedrückt wird, with %@ replaced by ⌘⌥N."
+    },
+    {
+      "source": "site/de/tips-and-shortcuts/index.md",
+      "note": "Global shortcut follow-up: reused established Befehlstaste (⌘), Wahltaste (⌥), Kurzbefehl, and locale links. All platform terms are bound by current refs or existing German page wording; no contested or newly coined terms."
+    }
+  ],
+  "flags": []
+}

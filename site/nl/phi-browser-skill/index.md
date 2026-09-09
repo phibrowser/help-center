@@ -53,7 +53,7 @@ Onze [Gebruiksvoorwaarden](https://phibrowser.com/terms/) leggen dit volledig va
 
 Alles zit achter **Ontwikkelaarsmodus**, en die staat standaard uit. Drie stappen:
 
-1. **Zet Ontwikkelaarsmodus aan** in **Instellingen → Algemeen**. Dit maakt het tabblad Ontwikkelaar zichtbaar, met daarin agenttoegang, machtigingen en de wachtwoordmanager.
+1. **Zet Ontwikkelaarsmodus aan** in **Instellingen → Geavanceerd**. Dit maakt het tabblad Ontwikkelaar zichtbaar, met daarin agenttoegang, machtigingen en de wachtwoordmanager.
 2. **Installeer de skill** via **Instellingen → Ontwikkelaar → De phi-browser-skill installeren**. De knop **Skill toevoegen aan…** toont elke ondersteunde agent, of **Alle agents**, en koppelt de skill die in Phi is meegeleverd aan de skillsmap van die agent, zodat hij met elke Phi-update actueel blijft. Er is Node 22 of nieuwer voor nodig, en start een net geconfigureerde agent daarna opnieuw. In Pi volstaat `/reload`.
 3. **Sta agents toe te verbinden** met **Instellingen → Ontwikkelaar → Agentbesturing → “Agents toestaan Phi te besturen (CDP)”**. Dit geldt onmiddellijk, zonder herstart.
 

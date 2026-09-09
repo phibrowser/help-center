@@ -53,7 +53,7 @@ Nos [Conditions d'utilisation](https://phibrowser.com/terms/) posent tout cela e
 
 Tout se trouve derrière le **Mode développeur**, désactivé par défaut. Trois étapes :
 
-1. **Activez le Mode développeur** dans **Paramètres → Général**. Cela révèle l'onglet Développeur, qui regroupe l'accès des agents, les autorisations et le gestionnaire de mots de passe.
+1. **Activez le Mode développeur** dans **Paramètres → Avancés**. Cela révèle l'onglet Développeur, qui regroupe l'accès des agents, les autorisations et le gestionnaire de mots de passe.
 2. **Installez le skill** depuis **Paramètres → Développeur → Installer le Skill phi-browser**. Le bouton **Ajouter le skill à…** liste chaque agent pris en charge, ou **Tous les agents**, et lie le skill embarqué dans Phi au dossier de skills de cet agent, pour qu'il reste à jour à chaque mise à jour de Phi. Il faut Node 22 ou plus récent, et vous devriez redémarrer un agent fraîchement configuré. Dans Pi, `/reload` suffit.
 3. **Autorisez les agents à se connecter** avec **Paramètres → Développeur → Contrôle des agents → « Autoriser les agents à contrôler Phi (CDP) »**. Cela s'applique immédiatement, sans relance.
 

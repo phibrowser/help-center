@@ -8,16 +8,23 @@ Deze pagina bundelt gebaren en toetscombinaties van Phi die minder duidelijk uit
 
 ## Overzicht van toetscombinaties
 
-| Actie                                      | Toetscombinatie of gebaar                                                          |
-| ------------------------------------------ | ---------------------------------------------------------------------------------- |
-| Een Split View maken                       | Option (⌥)-klik op een tabblad, vastgezet tabblad, bladwijzer of geschikte weblink |
-| Een link vooraf bekijken in een Peek       | Shift (⇧)-klik op een weblink                                                      |
-| Wisselen tussen recent gebruikte tabbladen | Control (⌃) + Tab                                                                  |
-| In omgekeerde volgorde wisselen            | Control (⌃) + Shift (⇧) + Tab                                                      |
-| De URL van de huidige pagina kopiëren      | Command (⌘) + Shift (⇧) + C                                                        |
-| Open tabbladen doorzoeken                  | Command (⌘) + Shift (⇧) + A                                                        |
-| Naar de vorige of volgende Space gaan      | Command (⌘) + Option (⌥) + ← of →                                                  |
-| Een van de eerste negen Spaces openen      | Control (⌃) + 1 t/m 9                                                              |
+| Actie                                                                                              | Toetscombinatie of gebaar                                                          |
+| -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Een Split View maken                                                                               | Option (⌥)-klik op een tabblad, vastgezet tabblad, bladwijzer of geschikte weblink |
+| Een link vooraf bekijken in een Peek                                                               | Shift (⇧)-klik op een weblink                                                      |
+| Wisselen tussen recent gebruikte tabbladen                                                         | Control (⌃) + Tab                                                                  |
+| In omgekeerde volgorde wisselen                                                                    | Control (⌃) + Shift (⇧) + Tab                                                      |
+| De URL van de huidige pagina kopiëren                                                              | Command (⌘) + Shift (⇧) + C                                                        |
+| Open tabbladen doorzoeken                                                                          | Command (⌘) + Shift (⇧) + A                                                        |
+| Naar de vorige of volgende Space gaan                                                              | Command (⌘) + Option (⌥) + ← of →                                                  |
+| Een van de eerste negen Spaces openen                                                              | Control (⌃) + 1 t/m 9                                                              |
+| Een nieuw Kiosk-venster vanuit elke app openen, met de toetscombinatie voor alle apps ingeschakeld | Command (⌘) + Option (⌥) + N                                                       |
+| Een Kiosk-pagina of Peek als tabblad in een Space openen                                           | Command (⌘) + O                                                                    |
+| Het menu openen om een Space voor Kiosk te kiezen                                                  | Command (⌘) + Shift (⇧) + O                                                        |
+
+Schakel de Kiosk-toetscombinatie voor gebruik in elke app in onder **Instellingen → Navigatie → Kiosk**. Om de toetsen te wijzigen pas je **Nieuw Kiosk-venster** aan onder **Instellingen → Toetscombinaties → Archief**.
+
+Wijzig de twee toetscombinaties voor openen in een Space onder **Instellingen → Toetscombinaties → Kiosk en Peek**. Zie [Kiosk](/nl/kiosk/) en [Peek-weergave](/nl/peek/) voor meer informatie.
 
 ## Een Split View maken
 
@@ -85,7 +92,7 @@ Een site naar een gewone Space routeren isoleert de cookies en ingelogde sessies
 
 ## Video in beeld houden met beeld in beeld
 
-Phi kan een spelende video losmaken wanneer je van tabblad of Space wisselt. Kies het gedrag onder **Instellingen → Algemeen → Automatisch beeld in beeld**.
+Phi kan een spelende video losmaken wanneer je van tabblad of Space wisselt. Kies het gedrag onder **Instellingen → Geavanceerd → Automatisch beeld in beeld**.
 
 | Stand                    | Gedrag                                                                                  |
 | ------------------------ | --------------------------------------------------------------------------------------- |

@@ -30,6 +30,8 @@ La page remplit le panneau bord à bord. Trois commandes occupent la bande à sa
 | **Ouvrir dans un onglet** | Transforme l'aperçu en onglet normal. La page n'est pas rechargée, donc la position de défilement et ce que vous avez saisi restent en l'état. |
 | **Ouvrir en Split View**  | Place l'aperçu à côté de l'onglet d'où il vient, en Split View à deux volets.                                                                  |
 
+Appuyez sur **⌘O** pour utiliser **Ouvrir dans un onglet** et déplacer l'aperçu dans votre Espace actuel. Pour modifier ce raccourci, ouvrez **Paramètres → Raccourcis → Kiosk et Peek** et modifiez **Ouvrir Kiosk ou Peek dans l'Espace actuel**. Kiosk utilise le même réglage de raccourci.
+
 ## Fermer une vue Peek
 
 Chacune de ces actions range l'aperçu :

@@ -22,6 +22,12 @@ Drei übliche Wege, einen zu öffnen:
 
 Ein Kiosk, der von einer Seite in Phi aus geöffnet wird, verwendet das Profil dieser Seite. Ein Link aus einer anderen App verwendet dein zuletzt benutztes Profil.
 
+## Kiosk aus jeder App öffnen {#open-kiosk-from-any-app}
+
+Drücke **⌘⌥N**, um ein neues Kiosk-Fenster zu öffnen. Um diesen Kurzbefehl zu verwenden, während eine andere App aktiv ist, öffne **Einstellungen → Navigation → Kiosk** und schalte **Kiosk öffnen, wenn ⌘⌥N in einer beliebigen App gedrückt wird** ein.
+
+Um die Tastenkombination zu ändern, öffne **Einstellungen → Tastaturkurzbefehle**, suche unter **Ablage** nach **Neues Kiosk-Fenster** und lege deinen gewünschten Kurzbefehl fest. Der Schalter unter Navigation zeigt den von dir gewählten Kurzbefehl an.
+
 ## Passende Links mit URL-Regeln öffnen
 
 Verwende eine URL-Regel, wenn Links zu einer Website sich immer in Kiosk öffnen sollen.
@@ -46,9 +52,10 @@ Phi öffnet die aktuelle Seite erneut mit dem gewählten Profil. Das Konto, das 
 
 Das Bedienelement **Öffnen in [Space]** sitzt rechts in der Symbolleiste des Kiosk.
 
-- Klicke auf den Hauptteil des Bedienelements, um die Seite in den Space zu bewegen, den du zuletzt in einem regulären Phi-Fenster benutzt hast.
-- Klicke auf den Pfeil und wähle einen Space, um die Seite an einen anderen Ort zu bewegen.
-- Mit der Standardbelegung drückst du **⌘O**, um die Hauptaktion auszulösen und die Seite in deinen aktuellen Space zu bewegen.
+- Klicke auf den Hauptteil des Bedienelements oder drücke **⌘O**, um die Seite in den Space zu bewegen, der in der Symbolleiste angezeigt wird.
+- Klicke auf den Pfeil oder drücke **⌘⇧O**, um das Menü zu öffnen und einen anderen Space auszuwählen.
+
+Das sind die Standardkurzbefehle. Um sie zu ändern, öffne **Einstellungen → Tastaturkurzbefehle → Kiosk & Peek** und suche nach **Kiosk oder Peek im aktuellen Space öffnen** und **Kiosk-Menü „Öffnen in“ anzeigen**.
 
 Die Seite wird zu einem regulären Tab im ausgewählten Space. Beim Bewegen in einen anderen Space wird die Seite möglicherweise neu geladen; schicke Eingaben also vorher ab oder sichere deine Arbeit.
 

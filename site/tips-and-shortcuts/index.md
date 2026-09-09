@@ -1,5 +1,5 @@
 ---
-description: "Learn useful Phi Browser gestures, shortcuts, Space customisation, URL Rules, and Picture-in-Picture controls."
+description: "Learn useful Phi Browser gestures, shortcuts, Space customization, URL Rules, and Picture-in-Picture controls."
 ---
 
 # Quick tips for Phi Browser
@@ -8,16 +8,23 @@ This page collects Phi gestures and shortcuts that are less obvious from the int
 
 ## Shortcut reference
 
-| Action                             | Shortcut or gesture                                                |
-| ---------------------------------- | ------------------------------------------------------------------ |
-| Create a Split View                | Option (⌥)-click a tab, Pinned Tab, bookmark, or eligible web link |
-| Preview a link in a Peek           | Shift (⇧)-click a web link                                         |
-| Switch between recently used tabs  | Control (⌃) + Tab                                                  |
-| Switch in reverse order            | Control (⌃) + Shift (⇧) + Tab                                      |
-| Copy the current page URL          | Command (⌘) + Shift (⇧) + C                                        |
-| Search open tabs                   | Command (⌘) + Shift (⇧) + A                                        |
-| Move to the previous or next Space | Command (⌘) + Option (⌥) + ← or →                                  |
-| Open one of the first nine Spaces  | Control (⌃) + 1 to 9                                               |
+| Action                                                                 | Shortcut or gesture                                                |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| Create a Split View                                                    | Option (⌥)-click a tab, Pinned Tab, bookmark, or eligible web link |
+| Preview a link in a Peek                                               | Shift (⇧)-click a web link                                         |
+| Switch between recently used tabs                                      | Control (⌃) + Tab                                                  |
+| Switch in reverse order                                                | Control (⌃) + Shift (⇧) + Tab                                      |
+| Copy the current page URL                                              | Command (⌘) + Shift (⇧) + C                                        |
+| Search open tabs                                                       | Command (⌘) + Shift (⇧) + A                                        |
+| Move to the previous or next Space                                     | Command (⌘) + Option (⌥) + ← or →                                  |
+| Open one of the first nine Spaces                                      | Control (⌃) + 1 to 9                                               |
+| Open a new Kiosk window from any app, with the global shortcut enabled | Command (⌘) + Option (⌥) + N                                       |
+| Open a Kiosk page or Peek as a tab in a Space                          | Command (⌘) + O                                                    |
+| Open the Kiosk Space selection menu                                    | Command (⌘) + Shift (⇧) + O                                        |
+
+Enable the global Kiosk shortcut under **Settings → Navigation → Kiosk**. To change its keys, edit **New Kiosk Window** under **Settings → Shortcuts → File**.
+
+Change the two Open in Space shortcuts under **Settings → Shortcuts → Kiosk & Peek**. See [Kiosk](/kiosk/) and [Peek View](/peek/) for details.
 
 ## Create a Split View
 
@@ -37,7 +44,7 @@ A Pinned Tab or bookmark can move away from the URL you originally saved. You ca
 
 Click a Tab Group header to open Group Overview. It shows a snapshot of each page, with a Split View shown as one combined card.
 
-From Group Overview, you can switch to a page, close a page, create a new tab, or change the group's name and colour. If you use the address bar while Group Overview is open, the new tab joins that group.
+From Group Overview, you can switch to a page, close a page, create a new tab, or change the group's name and color. If you use the address bar while Group Overview is open, the new tab joins that group.
 
 Drag a whole Tab Group into the bookmarks area to turn it into a bookmark folder. Phi keeps the order of its tabs and dissolves the group, but the open tabs stay open.
 
@@ -59,12 +66,12 @@ Control (⌃) + Tab follows recently used order, not the order of tabs in the wi
 - Press Command (⌘) + Shift (⇧) + A to search all open tabs.
 - Press Command (⌘) + Shift (⇧) + C to copy the current tab's URL.
 
-## Personalise each Space
+## Personalize each Space {#personalise-each-space}
 
 Open **Settings → Spaces**, then select a Space.
 
 - Choose an icon from Phi's built-in set, or use an emoji.
-- Choose a theme colour and adjust its saturation.
+- Choose a theme color and adjust its saturation.
 
 Each Space keeps its own icon and theme. Switching Spaces applies the appearance you chose for that Space without changing the others.
 
@@ -85,9 +92,9 @@ Routing a site to a regular Space does not isolate its cookies or signed-in sess
 
 ## Keep video visible with Picture-in-Picture
 
-Phi can pop out playing video when you switch tabs or Spaces. Choose the behaviour under **Settings → General → Auto picture-in-picture**.
+Phi can pop out playing video when you switch tabs or Spaces. Choose the behavior under **Settings → Advanced → Auto picture-in-picture**.
 
-| Mode             | Behaviour                                                                           |
+| Mode             | Behavior                                                                            |
 | ---------------- | ----------------------------------------------------------------------------------- |
 | **Off**          | Never open Picture-in-Picture automatically. Manual Picture-in-Picture still works. |
 | **Normal**       | Pop out playing video when you switch tabs or Spaces.                               |
@@ -95,7 +102,7 @@ Phi can pop out playing video when you switch tabs or Spaces. Choose the behavio
 
 Move or resize a Picture-in-Picture window and Phi remembers its position and size the next time that site opens Picture-in-Picture. This is saved per site in a regular Profile. Incognito Spaces do not retain it. If the saved display is no longer connected, Phi uses the default placement.
 
-To park an open Picture-in-Picture window yourself, move the pointer over it and click the down arrow, labelled **Park at screen edge**. Phi tucks the window against the nearest screen edge and leaves a handle visible. Click the handle to bring the window back. This control works even when automatic Picture-in-Picture is set to **Off**.
+To park an open Picture-in-Picture window yourself, move the pointer over it and click the down arrow, labeled **Park at screen edge**. Phi tucks the window against the nearest screen edge and leaves a handle visible. Click the handle to bring the window back. This control works even when automatic Picture-in-Picture is set to **Off**.
 
 ## Ask the assistant about your current work
 
@@ -112,4 +119,4 @@ When you use Phi Cloud, the content needed to answer your question is sent to a 
 - [Layouts & Navigation](/layouts/), how Split View and Phi's three layouts work.
 - [Bookmarks & Pinned Tabs](/bookmarks/), how saved pages and live tabs work together.
 - [Managing Tabs & Bookmarks](/tab-management/), selecting, grouping, moving, and closing tabs.
-- [Spaces & Profiles](/spaces/), how Spaces organise work and Profiles isolate browsing data.
+- [Spaces & Profiles](/spaces/), how Spaces organize work and Profiles isolate browsing data.

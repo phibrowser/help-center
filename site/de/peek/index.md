@@ -30,6 +30,8 @@ Die Seite füllt das Panel randlos aus. Drei Bedienelemente sitzen in der Leiste
 | **Als Tab öffnen**        | Macht aus der Vorschau einen regulären Tab. Die Seite wird nicht neu geladen; Scrollposition und alles, was du eingetippt hast, bleiben erhalten. |
 | **Als Split View öffnen** | Stellt die Vorschau neben den Tab, aus dem sie kam, als Split View mit zwei Bereichen.                                                            |
 
+Drücke **⌘O**, um die Vorschau mit **Als Tab öffnen** in deinen aktuellen Space zu bewegen. Um diesen Kurzbefehl zu ändern, öffne **Einstellungen → Tastaturkurzbefehle → Kiosk & Peek** und bearbeite **Kiosk oder Peek im aktuellen Space öffnen**. Kiosk verwendet dieselbe Kurzbefehlseinstellung.
+
 ## Einen Peek schließen
 
 Jeder dieser Wege schließt die Vorschau:

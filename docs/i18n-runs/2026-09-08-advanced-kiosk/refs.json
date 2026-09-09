@@ -1,0 +1,131 @@
+{
+  "source": {
+    "repository": "phi-browser-mac",
+    "revision": "41b171ebd88d0b086815a15a954c5fda72fbcd12",
+    "file": "Resources/Localizable.xcstrings"
+  },
+  "locales": {
+    "en": {
+      "settings.navigation.advancedTitle": "Advanced",
+      "settings.navigation.generalTitle": "General",
+      "settings.navigation.shortcutsTitle": "Shortcuts",
+      "settings.shortcuts.group.kiosk": "Kiosk & Peek",
+      "settings.shortcuts.command.kioskOpenInSpace": "Open Kiosk or Peek in current Space",
+      "settings.shortcuts.command.kioskChooseSpace": "Show Kiosk \"Open in\" Menu",
+      "settings.advanced.additionalBrowserSettings.title": "Additional browser settings",
+      "settings.navigations.kiosk.globalShortcut.title": "Open Kiosk when pressing %@ in any app",
+      "settings.navigation.navigationsTitle": "Navigation",
+      "settings.shortcuts.group.file": "File",
+      "settings.shortcuts.command.newKioskWindow": "New Kiosk Window"
+    },
+    "de": {
+      "settings.navigation.advancedTitle": "Erweitert",
+      "settings.navigation.generalTitle": "Allgemein",
+      "settings.navigation.shortcutsTitle": "Tastaturkurzbefehle",
+      "settings.shortcuts.group.kiosk": "Kiosk & Peek",
+      "settings.shortcuts.command.kioskOpenInSpace": "Kiosk oder Peek im aktuellen Space öffnen",
+      "settings.shortcuts.command.kioskChooseSpace": "Kiosk-Menü „Öffnen in“ anzeigen",
+      "settings.advanced.additionalBrowserSettings.title": "Weitere Browsereinstellungen",
+      "settings.navigations.kiosk.globalShortcut.title": "Kiosk öffnen, wenn %@ in einer beliebigen App gedrückt wird",
+      "settings.navigation.navigationsTitle": "Navigation",
+      "settings.shortcuts.group.file": "Ablage",
+      "settings.shortcuts.command.newKioskWindow": "Neues Kiosk-Fenster"
+    },
+    "es": {
+      "settings.navigation.advancedTitle": "Avanzado",
+      "settings.navigation.generalTitle": "General",
+      "settings.navigation.shortcutsTitle": "Atajos",
+      "settings.shortcuts.group.kiosk": "Kiosk y Peek",
+      "settings.shortcuts.command.kioskOpenInSpace": "Abrir Kiosk o Peek en el Espacio actual",
+      "settings.shortcuts.command.kioskChooseSpace": "Mostrar el menú “Abrir en” de Kiosk",
+      "settings.advanced.additionalBrowserSettings.title": "Configuración adicional del navegador",
+      "settings.navigations.kiosk.globalShortcut.title": "Abrir Kiosk al presionar %@ en cualquier aplicación",
+      "settings.navigation.navigationsTitle": "Navegación",
+      "settings.shortcuts.group.file": "Archivo",
+      "settings.shortcuts.command.newKioskWindow": "Nueva ventana de Kiosk"
+    },
+    "fr": {
+      "settings.navigation.advancedTitle": "Avancés",
+      "settings.navigation.generalTitle": "Général",
+      "settings.navigation.shortcutsTitle": "Raccourcis",
+      "settings.shortcuts.group.kiosk": "Kiosk et Peek",
+      "settings.shortcuts.command.kioskOpenInSpace": "Ouvrir Kiosk ou Peek dans l'Espace actuel",
+      "settings.shortcuts.command.kioskChooseSpace": "Afficher le menu « Ouvrir dans » de Kiosk",
+      "settings.advanced.additionalBrowserSettings.title": "Paramètres supplémentaires du navigateur",
+      "settings.navigations.kiosk.globalShortcut.title": "Ouvrir Kiosk en appuyant sur %@ depuis n'importe quelle app",
+      "settings.navigation.navigationsTitle": "Navigation",
+      "settings.shortcuts.group.file": "Fichier",
+      "settings.shortcuts.command.newKioskWindow": "Nouvelle fenêtre Kiosk"
+    },
+    "ja": {
+      "settings.navigation.advancedTitle": "詳細",
+      "settings.navigation.generalTitle": "一般",
+      "settings.navigation.shortcutsTitle": "ショートカット",
+      "settings.shortcuts.group.kiosk": "KioskとPeek",
+      "settings.shortcuts.command.kioskOpenInSpace": "KioskまたはPeekを現在のスペースで開く",
+      "settings.shortcuts.command.kioskChooseSpace": "Kioskの「開く」メニューを表示",
+      "settings.advanced.additionalBrowserSettings.title": "その他のブラウザ設定",
+      "settings.navigations.kiosk.globalShortcut.title": "どのアプリでも%@を押すとKioskを開く",
+      "settings.navigation.navigationsTitle": "ナビゲーション",
+      "settings.shortcuts.group.file": "ファイル",
+      "settings.shortcuts.command.newKioskWindow": "新しいKioskウインドウ"
+    },
+    "ko": {
+      "settings.navigation.advancedTitle": "고급",
+      "settings.navigation.generalTitle": "일반",
+      "settings.navigation.shortcutsTitle": "단축키",
+      "settings.shortcuts.group.kiosk": "Kiosk 및 Peek",
+      "settings.shortcuts.command.kioskOpenInSpace": "Kiosk 또는 Peek을 현재 스페이스에서 열기",
+      "settings.shortcuts.command.kioskChooseSpace": "Kiosk “열기 위치” 메뉴 표시",
+      "settings.advanced.additionalBrowserSettings.title": "추가 브라우저 설정",
+      "settings.navigations.kiosk.globalShortcut.title": "어느 앱에서나 %@를 누르면 Kiosk 열기",
+      "settings.navigation.navigationsTitle": "탐색",
+      "settings.shortcuts.group.file": "파일",
+      "settings.shortcuts.command.newKioskWindow": "새 Kiosk 윈도우"
+    },
+    "nl": {
+      "settings.navigation.advancedTitle": "Geavanceerd",
+      "settings.navigation.generalTitle": "Algemeen",
+      "settings.navigation.shortcutsTitle": "Toetscombinaties",
+      "settings.shortcuts.group.kiosk": "Kiosk en Peek",
+      "settings.shortcuts.command.kioskOpenInSpace": "Open Kiosk of Peek in de huidige Space",
+      "settings.shortcuts.command.kioskChooseSpace": "Toon het “Openen in”-menu van Kiosk",
+      "settings.advanced.additionalBrowserSettings.title": "Aanvullende browserinstellingen",
+      "settings.navigations.kiosk.globalShortcut.title": "Open Kiosk wanneer je in welke app dan ook %@ indrukt",
+      "settings.navigation.navigationsTitle": "Navigatie",
+      "settings.shortcuts.group.file": "Archief",
+      "settings.shortcuts.command.newKioskWindow": "Nieuw Kiosk-venster"
+    },
+    "zh-Hans": {
+      "settings.navigation.advancedTitle": "高级",
+      "settings.navigation.generalTitle": "通用",
+      "settings.navigation.shortcutsTitle": "快捷键",
+      "settings.shortcuts.group.kiosk": "Kiosk 与 Peek",
+      "settings.shortcuts.command.kioskOpenInSpace": "在当前空间中打开 Kiosk 或 Peek",
+      "settings.shortcuts.command.kioskChooseSpace": "显示 Kiosk 的「打开到」菜单",
+      "settings.advanced.additionalBrowserSettings.title": "更多浏览器设置",
+      "settings.navigations.kiosk.globalShortcut.title": "在任何应用中按下 %@ 时打开 Kiosk",
+      "settings.navigation.navigationsTitle": "导航",
+      "settings.shortcuts.group.file": "文件",
+      "settings.shortcuts.command.newKioskWindow": "新建 Kiosk 窗口"
+    },
+    "zh-Hant": {
+      "settings.navigation.advancedTitle": "進階",
+      "settings.navigation.generalTitle": "一般",
+      "settings.navigation.shortcutsTitle": "快速鍵",
+      "settings.shortcuts.group.kiosk": "Kiosk 與 Peek",
+      "settings.shortcuts.command.kioskOpenInSpace": "在目前空間開啟 Kiosk 或 Peek",
+      "settings.shortcuts.command.kioskChooseSpace": "顯示 Kiosk 的「開啟於」選單",
+      "settings.advanced.additionalBrowserSettings.title": "其他瀏覽器設定",
+      "settings.navigations.kiosk.globalShortcut.title": "在任何 App 中按下 %@ 時開啟 Kiosk",
+      "settings.navigation.navigationsTitle": "導覽",
+      "settings.shortcuts.group.file": "檔案",
+      "settings.shortcuts.command.newKioskWindow": "新增 Kiosk 視窗"
+    }
+  },
+  "globalShortcutSource": {
+    "repository": "phi-browser-mac",
+    "revision": "3edef1d7341d007f593137c7ce36979310cb97a7",
+    "file": "Resources/Localizable.xcstrings"
+  }
+}

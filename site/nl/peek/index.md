@@ -30,6 +30,8 @@ De pagina vult het paneel van rand tot rand. In de strook rechts ervan staan dri
 | **Open als tabblad**    | Maakt van het voorbeeld een gewoon tabblad. De pagina wordt niet opnieuw geladen, dus de scrollpositie en alles wat je hebt getypt blijven zoals ze zijn. |
 | **Open als Split View** | Plaatst het voorbeeld naast het tabblad waar het vandaan komt, als een Split View met twee deelvensters.                                                  |
 
+Druk op **⌘O** om **Open als tabblad** te gebruiken en het voorbeeld naar je huidige Space te verplaatsen. Om deze toetscombinatie te wijzigen open je **Instellingen → Toetscombinaties → Kiosk en Peek** en pas je **Open Kiosk of Peek in de huidige Space** aan. Kiosk gebruikt dezelfde instelling voor de toetscombinatie.
+
 ## Een Peek sluiten
 
 Met elk van deze acties verdwijnt het voorbeeld:

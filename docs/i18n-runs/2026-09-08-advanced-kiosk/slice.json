@@ -1,0 +1,49 @@
+{
+  "entries": {
+    "kiosk.actions": {
+      "en": "- Click the main part of the control, or press **⌘O**, to move the page into the Space shown in the toolbar.\n- Click the arrow, or press **⌘⇧O**, to open the menu and choose another Space.\n\nThese are the default shortcuts. To change them, open **Settings → Shortcuts → Kiosk & Peek** and look for **Open Kiosk or Peek in current Space** and **Show Kiosk \"Open in\" Menu**.",
+      "desc": "Replace the three bullets below the Open in [Space] toolbar description with two bullets and a shortcut customization paragraph. Explain toolbar target, not URL Rule priority. Preserve the existing introduction and the paragraph about reloading.",
+      "placeholders": ["⌘O", "⌘⇧O"]
+    },
+    "peek.shortcut": {
+      "en": "Press **⌘O** to use **Open as Tab** and move the preview into your current Space. To change this shortcut, open **Settings → Shortcuts → Kiosk & Peek** and edit **Open Kiosk or Peek in current Space**. Kiosk uses the same shortcut setting.",
+      "desc": "New paragraph after the panel controls table and before Close a Peek. Open as Tab shortcut shares Kiosk customization. Do not add a statement about Cmd+Shift+O being Kiosk-only.",
+      "placeholders": []
+    },
+    "tips.rows": {
+      "en": "| Open a Kiosk page or Peek as a tab in a Space | Command (⌘) + O |\n| Open the Kiosk Space selection menu | Command (⌘) + Shift (⇧) + O |",
+      "desc": "Append two rows to the existing shortcut table; preserve Markdown pipes and existing modifier key naming in this locale.",
+      "placeholders": []
+    },
+    "tips.settings": {
+      "en": "Change the two Open in Space shortcuts under **Settings → Shortcuts → Kiosk & Peek**. See [Kiosk](/kiosk/) and [Peek View](/peek/) for details.",
+      "desc": "Replace the prior Change these two shortcuts paragraph. Explicitly identify the two Open in Space shortcuts because the new global shortcut row now precedes them. Preserve links and the Kiosk & Peek settings path.",
+      "placeholders": []
+    },
+    "settings.path": {
+      "en": "Settings → Advanced",
+      "desc": "Replace only the old Settings → General path on tips (auto Picture-in-Picture), phi-browser-skill (Developer mode), agent-passwords (Developer mode). Use existing locale Settings wording and shipped Advanced label. Do not change themes.",
+      "placeholders": []
+    },
+    "privacy.path": {
+      "en": "Settings → Advanced → Additional browser settings",
+      "desc": "Replace only Settings → Additional Browser Settings prefix in account deletion paragraph; keep every other privacy statement unchanged. Use current product labels.",
+      "placeholders": []
+    },
+    "kiosk.global": {
+      "en": "## Open Kiosk from any app\n\nPress **⌘⌥N** to open a new Kiosk window. To use this shortcut while another app is active, open **Settings → Navigation → Kiosk** and turn on **Open Kiosk when pressing ⌘⌥N in any app**.\n\nTo change the key combination, open **Settings → Shortcuts**, find **New Kiosk Window** under **File**, and set your preferred shortcut. The Navigation switch displays the shortcut you choose.",
+      "desc": "New section between the paragraph about inherited Profiles and the URL Rules heading. Explain default shortcut, Navigation enable switch, and customization under Shortcuts File. Preserve heading structure and add explicit {#open-kiosk-from-any-app} on the translated heading. Shipped switch template %@ must be replaced with ⌘⌥N.",
+      "placeholders": ["⌘⌥N"]
+    },
+    "tips.globalRow": {
+      "en": "| Open a new Kiosk window from any app, with the global shortcut enabled | Command (⌘) + Option (⌥) + N |",
+      "desc": "New shortcut table row immediately BEFORE the two Open in Space shortcut rows. Keep two columns and use existing locale Command/Option key terminology.",
+      "placeholders": ["⌘", "⌥", "N"]
+    },
+    "tips.globalSettings": {
+      "en": "Enable the global Kiosk shortcut under **Settings → Navigation → Kiosk**. To change its keys, edit **New Kiosk Window** under **Settings → Shortcuts → File**.",
+      "desc": "New paragraph immediately after the shortcut table and before the existing paragraph about two Open in Space shortcuts. Distinguish Navigation enable switch from File New Kiosk Window custom binding.",
+      "placeholders": []
+    }
+  }
+}

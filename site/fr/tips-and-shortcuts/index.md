@@ -8,16 +8,23 @@ Cette page rassemble les gestes et raccourcis de Phi que l'interface ne rend pas
 
 ## Récapitulatif des raccourcis
 
-| Action                                        | Raccourci ou geste                                                                       |
-| --------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| Créer une Split View                          | Clic avec Option (⌥) sur un onglet, un onglet épinglé, un favori ou un lien web éligible |
-| Prévisualiser un lien dans la vue Peek        | Clic avec Maj (⇧) sur un lien web                                                        |
-| Basculer entre les onglets récemment utilisés | Contrôle (⌃) + Tab                                                                       |
-| Basculer dans l'ordre inverse                 | Contrôle (⌃) + Maj (⇧) + Tab                                                             |
-| Copier l'URL de la page actuelle              | Commande (⌘) + Maj (⇧) + C                                                               |
-| Rechercher dans les onglets ouverts           | Commande (⌘) + Maj (⇧) + A                                                               |
-| Passer à l'Espace précédent ou suivant        | Commande (⌘) + Option (⌥) + ← ou →                                                       |
-| Ouvrir l'un des neuf premiers Espaces         | Contrôle (⌃) + 1 à 9                                                                     |
+| Action                                                                                         | Raccourci ou geste                                                                       |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Créer une Split View                                                                           | Clic avec Option (⌥) sur un onglet, un onglet épinglé, un favori ou un lien web éligible |
+| Prévisualiser un lien dans la vue Peek                                                         | Clic avec Maj (⇧) sur un lien web                                                        |
+| Basculer entre les onglets récemment utilisés                                                  | Contrôle (⌃) + Tab                                                                       |
+| Basculer dans l'ordre inverse                                                                  | Contrôle (⌃) + Maj (⇧) + Tab                                                             |
+| Copier l'URL de la page actuelle                                                               | Commande (⌘) + Maj (⇧) + C                                                               |
+| Rechercher dans les onglets ouverts                                                            | Commande (⌘) + Maj (⇧) + A                                                               |
+| Passer à l'Espace précédent ou suivant                                                         | Commande (⌘) + Option (⌥) + ← ou →                                                       |
+| Ouvrir l'un des neuf premiers Espaces                                                          | Contrôle (⌃) + 1 à 9                                                                     |
+| Ouvrir une nouvelle fenêtre Kiosk depuis n'importe quelle app, avec le raccourci global activé | Commande (⌘) + Option (⌥) + N                                                            |
+| Ouvrir une page Kiosk ou un aperçu Peek dans un onglet d'un Espace                             | Commande (⌘) + O                                                                         |
+| Ouvrir le menu de sélection d'Espace de Kiosk                                                  | Commande (⌘) + Maj (⇧) + O                                                               |
+
+Activez le raccourci global de Kiosk dans **Paramètres → Navigation → Kiosk**. Pour changer les touches, modifiez **Nouvelle fenêtre Kiosk** dans **Paramètres → Raccourcis → Fichier**.
+
+Modifiez les deux raccourcis d'ouverture dans un Espace dans **Paramètres → Raccourcis → Kiosk et Peek**. Consultez [Kiosk](/fr/kiosk/) et [Vue Peek](/fr/peek/) pour les détails.
 
 ## Créer une Split View
 
@@ -85,7 +92,7 @@ Diriger un site vers un Espace normal n'isole ni ses cookies ni sa session conne
 
 ## Garder la vidéo visible avec Picture-in-Picture
 
-Phi peut détacher la vidéo en cours de lecture quand vous changez d'onglet ou d'Espace. Choisissez le comportement dans **Paramètres → Général → Picture-in-Picture automatique**.
+Phi peut détacher la vidéo en cours de lecture quand vous changez d'onglet ou d'Espace. Choisissez le comportement dans **Paramètres → Avancés → Picture-in-Picture automatique**.
 
 | Mode               | Comportement                                                                                                        |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------- |

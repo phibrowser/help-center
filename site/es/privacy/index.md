@@ -53,7 +53,7 @@ La Memoria no es una caja negra. Puedes **ver, administrar y eliminar** lo que P
 
 ### Eliminar tu cuenta y tus datos
 
-Lo haces tú mismo, en la app: **Configuración → Configuración adicional del navegador → tu nombre, en Tú y Phi → Eliminar cuenta y datos**. Elimina la cuenta y los datos guardados con ella, en tu Mac y en nuestros servidores, y no se puede deshacer. No necesitas escribir a nadie para ser olvidado.
+Lo haces tú mismo, en la app: **Configuración → Avanzado → Configuración adicional del navegador → tu nombre, en Tú y Phi → Eliminar cuenta y datos**. Elimina la cuenta y los datos guardados con ella, en tu Mac y en nuestros servidores, y no se puede deshacer. No necesitas escribir a nadie para ser olvidado.
 
 Si ya desinstalaste Phi, instálalo de nuevo e inicia sesión con la misma cuenta para llegar a ese botón. Desinstalar borra lo que había en tu Mac, pero no cierra la cuenta. Si nunca iniciaste sesión, no hay cuenta y no queda nada que eliminar de nuestro lado.
 

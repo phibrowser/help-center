@@ -1,0 +1,61 @@
+{
+  "locale": "ja",
+  "entries": {
+    "kiosk.actions": "- コントロールの本体をクリックするか、**⌘O**を押すと、ツールバーに表示されているスペースへページを移します。\n- 矢印をクリックするか、**⌘⇧O**を押すと、メニューを開いて別のスペースを選べます。\n\nこれらはデフォルトのショートカットです。変更するには、**設定 → ショートカット → KioskとPeek**を開き、**KioskまたはPeekを現在のスペースで開く**と**Kioskの「開く」メニューを表示**を探します。",
+    "peek.shortcut": "**⌘O**を押すと、**タブで開く**の操作でプレビューを現在のスペースへ移せます。このショートカットを変更するには、**設定 → ショートカット → KioskとPeek**を開き、**KioskまたはPeekを現在のスペースで開く**を編集します。Kioskも同じショートカット設定を使います。",
+    "tips.rows": "| KioskのページやPeekをスペース内のタブとして開く | Command (⌘) + O |\n| Kioskのスペース選択メニューを開く | Command (⌘) + Shift (⇧) + O |",
+    "tips.settings": "スペースで開くための2つのショートカットは、**設定 → ショートカット → KioskとPeek**で変更できます。詳しくは[Kiosk](/ja/kiosk/)と[Peekビュー](/ja/peek/)をご覧ください。",
+    "settings.path": "設定 → 詳細",
+    "privacy.path": "設定 → 詳細 → その他のブラウザ設定",
+    "kiosk.global": "## どのアプリからでもKioskを開く {#open-kiosk-from-any-app}\n\n**⌘⌥N**を押すと、新しいKioskウインドウが開きます。ほかのアプリを使っているときにもこのショートカットを使うには、**設定 → ナビゲーション → Kiosk**を開き、**どのアプリでも⌘⌥Nを押すとKioskを開く**をオンにします。\n\nキーの組み合わせを変更するには、**設定 → ショートカット**を開き、**ファイル**の下にある**新しいKioskウインドウ**で好みのショートカットを設定します。選んだショートカットは、ナビゲーションのスイッチにも表示されます。",
+    "tips.globalRow": "| どのアプリからでも新しいKioskウインドウを開く（ショートカットが有効な場合） | Command (⌘) + Option (⌥) + N |",
+    "tips.globalSettings": "どのアプリからでもKioskを開けるショートカットは、**設定 → ナビゲーション → Kiosk**で有効にできます。キーの組み合わせを変更するには、**設定 → ショートカット → ファイル**の**新しいKioskウインドウ**を編集します。"
+  },
+  "evidence": [
+    {
+      "path": "docs/i18n-runs/2026-09-08-advanced-kiosk/refs.json",
+      "note": "Reused shipped Japanese labels for Advanced, Shortcuts, Kiosk & Peek, both shortcut commands, and Additional browser settings verbatim."
+    },
+    {
+      "path": ".agents/skills/phi-translate-validate/references/product-glossary.md",
+      "note": "Reused 設定 and スペース; retained Kiosk and Peek brand names."
+    },
+    {
+      "path": "site/ja/kiosk/index.md",
+      "note": "Reused コントロールの本体, ツールバー, デフォルトのショートカット, and established page-transfer wording."
+    },
+    {
+      "path": "site/ja/peek/index.md",
+      "note": "Reused タブで開く, プレビュー, and Peekビュー."
+    },
+    {
+      "path": "site/ja/tips-and-shortcuts/index.md",
+      "note": "Preserved existing Command (⌘) and Shift (⇧) modifier naming and 設定 → ショートカット path."
+    },
+    {
+      "path": "site/ja/phi-browser-skill/index.md",
+      "note": "Confirmed existing 設定 → 一般 path for Developer mode."
+    },
+    {
+      "path": "site/ja/agent-passwords/index.md",
+      "note": "Confirmed existing 設定 → 一般 path for Developer mode."
+    },
+    {
+      "path": "site/ja/privacy/index.md",
+      "note": "Confirmed existing 設定 → その他のブラウザ設定 account-deletion path."
+    },
+    {
+      "path": "docs/i18n-runs/2026-09-08-advanced-kiosk/refs.json",
+      "note": "Global shortcut follow-up: reused ナビゲーション, ファイル, ショートカット, 新しいKioskウインドウ, and the shipped switch template どのアプリでも%@を押すとKioskを開く with %@ replaced by ⌘⌥N."
+    },
+    {
+      "path": "site/ja/tips-and-shortcuts/index.md",
+      "note": "Global shortcut follow-up: reused Command (⌘) and Option (⌥) key names; described use from any app directly without coining a platform term."
+    },
+    {
+      "path": "site/ja/kiosk/index.md",
+      "note": "Global shortcut follow-up: reused ウインドウ, ほかのアプリ, and スイッチ wording; retained the established polite register."
+    }
+  ],
+  "flags": []
+}

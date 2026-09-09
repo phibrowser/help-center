@@ -1,0 +1,57 @@
+{
+  "locale": "fr",
+  "entries": {
+    "kiosk.actions": "- Cliquez sur la partie principale de la commande, ou appuyez sur **⌘O**, pour déplacer la page dans l'Espace affiché dans la barre d'outils.\n- Cliquez sur la flèche, ou appuyez sur **⌘⇧O**, pour ouvrir le menu et choisir un autre Espace.\n\nCe sont les raccourcis par défaut. Pour les modifier, ouvrez **Paramètres → Raccourcis → Kiosk et Peek** et repérez **Ouvrir Kiosk ou Peek dans l'Espace actuel** et **Afficher le menu « Ouvrir dans » de Kiosk**.",
+    "peek.shortcut": "Appuyez sur **⌘O** pour utiliser **Ouvrir dans un onglet** et déplacer l'aperçu dans votre Espace actuel. Pour modifier ce raccourci, ouvrez **Paramètres → Raccourcis → Kiosk et Peek** et modifiez **Ouvrir Kiosk ou Peek dans l'Espace actuel**. Kiosk utilise le même réglage de raccourci.",
+    "tips.rows": "| Ouvrir une page Kiosk ou un aperçu Peek dans un onglet d'un Espace | Commande (⌘) + O |\n| Ouvrir le menu de sélection d'Espace de Kiosk | Commande (⌘) + Maj (⇧) + O |",
+    "tips.settings": "Modifiez les deux raccourcis d'ouverture dans un Espace dans **Paramètres → Raccourcis → Kiosk et Peek**. Consultez [Kiosk](/fr/kiosk/) et [Vue Peek](/fr/peek/) pour les détails.",
+    "settings.path": "Paramètres → Avancés",
+    "privacy.path": "Paramètres → Avancés → Paramètres supplémentaires du navigateur",
+    "kiosk.global": "## Ouvrir Kiosk depuis n'importe quelle app {#open-kiosk-from-any-app}\n\nAppuyez sur **⌘⌥N** pour ouvrir une nouvelle fenêtre Kiosk. Pour utiliser ce raccourci lorsqu'une autre app est active, ouvrez **Paramètres → Navigation → Kiosk** et activez **Ouvrir Kiosk en appuyant sur ⌘⌥N depuis n'importe quelle app**.\n\nPour changer la combinaison de touches, ouvrez **Paramètres → Raccourcis**, repérez **Nouvelle fenêtre Kiosk** sous **Fichier**, puis définissez le raccourci de votre choix. Le bouton d'activation dans Navigation affiche le raccourci choisi.",
+    "tips.globalRow": "| Ouvrir une nouvelle fenêtre Kiosk depuis n'importe quelle app, avec le raccourci global activé | Commande (⌘) + Option (⌥) + N |",
+    "tips.globalSettings": "Activez le raccourci global de Kiosk dans **Paramètres → Navigation → Kiosk**. Pour changer les touches, modifiez **Nouvelle fenêtre Kiosk** dans **Paramètres → Raccourcis → Fichier**."
+  },
+  "evidence": [
+    {
+      "path": "docs/i18n-runs/2026-09-08-advanced-kiosk/refs.json",
+      "note": "Binding current Mac labels: Avancés, Raccourcis, Kiosk et Peek, both shortcut command names, and Paramètres supplémentaires du navigateur."
+    },
+    {
+      "path": ".agents/skills/phi-translate-validate/references/product-glossary.md",
+      "note": "Binding Paramètres and Espace; Kiosk and Peek remain in English."
+    },
+    {
+      "path": "site/fr/kiosk/index.md",
+      "note": "Existing toolbar wording: partie principale de la commande and barre d'outils."
+    },
+    {
+      "path": "site/fr/peek/index.md",
+      "note": "Existing control label Ouvrir dans un onglet and page title Vue Peek."
+    },
+    {
+      "path": "site/fr/tips-and-shortcuts/index.md",
+      "note": "Existing modifier names Commande (⌘) and Maj (⇧), plus Paramètres → Raccourcis."
+    },
+    {
+      "path": "site/fr/phi-browser-skill/index.md",
+      "note": "Existing Paramètres wording in the Developer mode path."
+    },
+    {
+      "path": "site/fr/agent-passwords/index.md",
+      "note": "Existing Paramètres wording in the Developer mode path."
+    },
+    {
+      "path": "site/fr/privacy/index.md",
+      "note": "Existing Paramètres and Paramètres supplémentaires du navigateur wording in the account deletion path."
+    },
+    {
+      "path": "docs/i18n-runs/2026-09-08-advanced-kiosk/refs.json",
+      "note": "Global shortcut follow-up uses exact current Mac labels Navigation, Fichier, Nouvelle fenêtre Kiosk, and the global switch template with %@ replaced by ⌘⌥N."
+    },
+    {
+      "path": "site/fr/tips-and-shortcuts/index.md",
+      "note": "Global shortcut row reuses established Commande (⌘) and Option (⌥) names; app wording follows site/fr/kiosk/index.md and the current Mac switch label. No contested terminology or newly coined feature names."
+    }
+  ],
+  "flags": []
+}

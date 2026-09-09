@@ -53,7 +53,7 @@ Unsere [Nutzungsbedingungen](https://phibrowser.com/terms/) legen das vollständ
 
 Alles liegt hinter dem **Entwicklermodus**, und der ist standardmäßig aus. Drei Schritte:
 
-1. **Schalte den Entwicklermodus ein**, unter **Einstellungen → Allgemein**. Damit erscheint der Tab „Entwickler“, in dem Agentenzugriff, Berechtigungen und der Passwortmanager wohnen.
+1. **Schalte den Entwicklermodus ein**, unter **Einstellungen → Erweitert**. Damit erscheint der Tab „Entwickler“, in dem Agentenzugriff, Berechtigungen und der Passwortmanager wohnen.
 2. **Installiere den Skill** über **Einstellungen → Entwickler → phi-browser-Skill installieren**. Die Taste **Skill hinzufügen zu…** listet jeden unterstützten Agenten auf, oder **Alle Agenten**, und verknüpft den in Phi mitgelieferten Skill in den Skills-Ordner des jeweiligen Agenten, sodass er mit jedem Phi-Update aktuell bleibt. Nötig ist Node 22 oder neuer, und einen frisch eingerichteten Agenten solltest du danach neu starten. In Pi genügt `/reload`.
 3. **Erlaube Agenten die Verbindung** über **Einstellungen → Entwickler → Agentensteuerung → „Agenten dürfen Phi steuern (CDP)“**. Die Einstellung gilt sofort, ohne Neustart.
 

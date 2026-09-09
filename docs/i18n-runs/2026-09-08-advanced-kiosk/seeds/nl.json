@@ -1,0 +1,57 @@
+{
+  "locale": "nl",
+  "entries": {
+    "kiosk.actions": "- Klik op het hoofddeel van de knop, of druk op **⌘O**, om de pagina te verplaatsen naar de Space die in de werkbalk wordt getoond.\n- Klik op de pijl, of druk op **⌘⇧O**, om het menu te openen en een andere Space te kiezen.\n\nDit zijn de standaardtoetscombinaties. Om ze te wijzigen open je **Instellingen → Toetscombinaties → Kiosk en Peek** en zoek je **Open Kiosk of Peek in de huidige Space** en **Toon het “Openen in”-menu van Kiosk**.",
+    "peek.shortcut": "Druk op **⌘O** om **Open als tabblad** te gebruiken en het voorbeeld naar je huidige Space te verplaatsen. Om deze toetscombinatie te wijzigen open je **Instellingen → Toetscombinaties → Kiosk en Peek** en pas je **Open Kiosk of Peek in de huidige Space** aan. Kiosk gebruikt dezelfde instelling voor de toetscombinatie.",
+    "tips.rows": "| Een Kiosk-pagina of Peek als tabblad in een Space openen | Command (⌘) + O |\n| Het menu openen om een Space voor Kiosk te kiezen | Command (⌘) + Shift (⇧) + O |",
+    "tips.settings": "Wijzig de twee toetscombinaties voor openen in een Space onder **Instellingen → Toetscombinaties → Kiosk en Peek**. Zie [Kiosk](/nl/kiosk/) en [Peek-weergave](/nl/peek/) voor meer informatie.",
+    "settings.path": "Instellingen → Geavanceerd",
+    "privacy.path": "Instellingen → Geavanceerd → Aanvullende browserinstellingen",
+    "kiosk.global": "## Kiosk vanuit elke app openen {#open-kiosk-from-any-app}\n\nDruk op **⌘⌥N** om een nieuw Kiosk-venster te openen. Om deze toetscombinatie te gebruiken terwijl een andere app actief is, open je **Instellingen → Navigatie → Kiosk** en zet je **Open Kiosk wanneer je in welke app dan ook ⌘⌥N indrukt** aan.\n\nOm de toetscombinatie te wijzigen open je **Instellingen → Toetscombinaties**, zoek je **Nieuw Kiosk-venster** onder **Archief** en stel je de gewenste toetscombinatie in. De schakelaar onder Navigatie toont de toetscombinatie die je kiest.",
+    "tips.globalRow": "| Een nieuw Kiosk-venster vanuit elke app openen, met de toetscombinatie voor alle apps ingeschakeld | Command (⌘) + Option (⌥) + N |",
+    "tips.globalSettings": "Schakel de Kiosk-toetscombinatie voor gebruik in elke app in onder **Instellingen → Navigatie → Kiosk**. Om de toetsen te wijzigen pas je **Nieuw Kiosk-venster** aan onder **Instellingen → Toetscombinaties → Archief**."
+  },
+  "evidence": [
+    {
+      "path": "docs/i18n-runs/2026-09-08-advanced-kiosk/refs.json",
+      "phrase": "Geavanceerd; Toetscombinaties; Kiosk en Peek; Open Kiosk of Peek in de huidige Space; Toon het “Openen in”-menu van Kiosk; Aanvullende browserinstellingen",
+      "note": "Binding current Mac product labels, nl."
+    },
+    {
+      "path": ".agents/skills/phi-translate-validate/references/product-glossary.md",
+      "phrase": "Instellingen; Space; Kiosk; Peek",
+      "note": "Ratified feature vocabulary."
+    },
+    {
+      "path": "site/nl/kiosk/index.md",
+      "phrase": "hoofddeel van de knop; werkbalk; verplaatsen",
+      "note": "Established control and action wording."
+    },
+    {
+      "path": "site/nl/peek/index.md",
+      "phrase": "Open als tabblad; voorbeeld; Peek-weergave",
+      "note": "Established preview action and page title."
+    },
+    {
+      "path": "site/nl/tips-and-shortcuts/index.md",
+      "phrase": "toetscombinaties; Command (⌘); Shift (⇧)",
+      "note": "Existing shortcut vocabulary and modifier notation."
+    },
+    {
+      "path": "site/nl/privacy/index.md",
+      "phrase": "Instellingen; Aanvullende browserinstellingen",
+      "note": "Existing account deletion settings wording."
+    },
+    {
+      "path": "docs/i18n-runs/2026-09-08-advanced-kiosk/refs.json",
+      "phrase": "Open Kiosk wanneer je in welke app dan ook %@ indrukt; Navigatie; Archief; Nieuw Kiosk-venster; Toetscombinaties",
+      "note": "Global shortcut labels from current Mac catalog revision 3edef1d7341d007f593137c7ce36979310cb97a7, nl. Switch placeholder replaced with ⌘⌥N."
+    },
+    {
+      "path": "site/nl/tips-and-shortcuts/index.md",
+      "phrase": "Command (⌘) + Option (⌥)",
+      "note": "Established modifier naming for the new shortcut row. Global scope is described in ordinary prose as use in every app, without introducing a new feature term."
+    }
+  ],
+  "flags": []
+}

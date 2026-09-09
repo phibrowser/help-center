@@ -22,6 +22,12 @@ Er zijn drie gebruikelijke manieren om er een te openen:
 
 Een Kiosk die je opent vanaf een pagina in Phi gebruikt het Profiel van die pagina. Een link die je vanuit een andere app opent, gebruikt je laatst gebruikte Profiel.
 
+## Kiosk vanuit elke app openen {#open-kiosk-from-any-app}
+
+Druk op **⌘⌥N** om een nieuw Kiosk-venster te openen. Om deze toetscombinatie te gebruiken terwijl een andere app actief is, open je **Instellingen → Navigatie → Kiosk** en zet je **Open Kiosk wanneer je in welke app dan ook ⌘⌥N indrukt** aan.
+
+Om de toetscombinatie te wijzigen open je **Instellingen → Toetscombinaties**, zoek je **Nieuw Kiosk-venster** onder **Archief** en stel je de gewenste toetscombinatie in. De schakelaar onder Navigatie toont de toetscombinatie die je kiest.
+
 ## Overeenkomende links openen met URL-regels
 
 Gebruik een URL-regel wanneer links naar een site altijd in Kiosk moeten openen.
@@ -46,9 +52,10 @@ Phi opent de huidige pagina opnieuw met het Profiel dat je hebt gekozen. Het acc
 
 De knop **Openen in [Space]** staat aan de rechterkant van de werkbalk van de Kiosk.
 
-- Klik op het hoofddeel van de knop om de pagina te verplaatsen naar de Space die je het laatst in een gewoon Phi-venster hebt gebruikt.
-- Klik op de pijl en kies een Space om de pagina ergens anders heen te verplaatsen.
-- Met de standaardtoetscombinatie druk je op **⌘O** om de hoofdactie te gebruiken en de pagina naar je huidige Space te verplaatsen.
+- Klik op het hoofddeel van de knop, of druk op **⌘O**, om de pagina te verplaatsen naar de Space die in de werkbalk wordt getoond.
+- Klik op de pijl, of druk op **⌘⇧O**, om het menu te openen en een andere Space te kiezen.
+
+Dit zijn de standaardtoetscombinaties. Om ze te wijzigen open je **Instellingen → Toetscombinaties → Kiosk en Peek** en zoek je **Open Kiosk of Peek in de huidige Space** en **Toon het “Openen in”-menu van Kiosk**.
 
 De pagina wordt een gewoon tabblad in de gekozen Space. Verplaatsen naar een andere Space kan de pagina opnieuw laden, dus verzend of bewaar je werk eerst.
 
