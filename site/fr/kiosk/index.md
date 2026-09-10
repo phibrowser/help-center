@@ -22,6 +22,12 @@ Il existe trois façons courantes d'en ouvrir un :
 
 Un Kiosk ouvert depuis une page dans Phi utilise le Profil de cette page. Un lien ouvert depuis une autre app utilise votre dernier Profil utilisé.
 
+## Ouvrir Kiosk depuis n'importe quelle app {#open-kiosk-from-any-app}
+
+Appuyez sur **⌘⌥N** pour ouvrir une nouvelle fenêtre Kiosk. Pour utiliser ce raccourci lorsqu'une autre app est active, ouvrez **Paramètres → Navigation → Kiosk** et activez **Ouvrir Kiosk en appuyant sur ⌘⌥N depuis n'importe quelle app**.
+
+Pour changer la combinaison de touches, ouvrez **Paramètres → Raccourcis**, repérez **Nouvelle fenêtre Kiosk** sous **Fichier**, puis définissez le raccourci de votre choix. Le bouton d'activation dans Navigation affiche le raccourci choisi.
+
 ## Ouvrir les liens correspondants avec les Règles d'URL
 
 Utilisez une Règle d'URL quand les liens vers un site doivent toujours s'ouvrir dans Kiosk.
@@ -46,9 +52,10 @@ Phi rouvre la page actuelle avec le Profil choisi. Le compte affiché sur le sit
 
 La commande **Ouvrir dans [Espace]** se trouve à droite de la barre d'outils du Kiosk.
 
-- Cliquez sur la partie principale de la commande pour déplacer la page dans le dernier Espace utilisé dans une fenêtre Phi normale.
-- Cliquez sur la flèche et choisissez un Espace pour déplacer la page ailleurs.
-- Avec le raccourci par défaut, appuyez sur **⌘O** pour utiliser l'action principale et déplacer la page dans votre Espace actuel.
+- Cliquez sur la partie principale de la commande, ou appuyez sur **⌘O**, pour déplacer la page dans l'Espace affiché dans la barre d'outils.
+- Cliquez sur la flèche, ou appuyez sur **⌘⇧O**, pour ouvrir le menu et choisir un autre Espace.
+
+Ce sont les raccourcis par défaut. Pour les modifier, ouvrez **Paramètres → Raccourcis → Kiosk et Peek** et repérez **Ouvrir Kiosk ou Peek dans l'Espace actuel** et **Afficher le menu « Ouvrir dans » de Kiosk**.
 
 La page devient un onglet normal dans l'Espace sélectionné. La déplacer vers un autre Espace peut recharger la page ; envoyez ou enregistrez donc votre travail d'abord.
 

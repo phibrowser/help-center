@@ -24,7 +24,7 @@ En plus de cela, la manière par défaut dont les agents utilisent un identifian
 
 Le Gestionnaire de mots de passe pour les agents se trouve dans l'onglet **Développeur** des Paramètres, qui apparaît une fois le **Mode développeur** activé :
 
-1. Ouvrez **Paramètres → Général** et activez le **Mode développeur**.
+1. Ouvrez **Paramètres → Avancés** et activez le **Mode développeur**.
 2. Dans l'onglet **Développeur**, repérez **Gestionnaire de mots de passe pour les agents** et activez **Gestionnaire de mots de passe Bitwarden**.
 3. Connectez-vous à votre compte Bitwarden. Les serveurs américains, européens et auto-hébergés sont pris en charge, y compris les comptes avec connexion en deux étapes. Déverrouillez ensuite le coffre avec votre mot de passe maître.
 

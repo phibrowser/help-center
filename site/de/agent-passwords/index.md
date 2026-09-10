@@ -24,7 +24,7 @@ Obendrein nutzen Agenten Zugangsdaten standardmäßig per automatischem Ausfüll
 
 Der Passwortmanager für Agenten wohnt im Tab **Entwickler** der Einstellungen, der erscheint, sobald der **Entwicklermodus** an ist:
 
-1. Öffne **Einstellungen → Allgemein** und schalte den **Entwicklermodus** ein.
+1. Öffne **Einstellungen → Erweitert** und schalte den **Entwicklermodus** ein.
 2. Suche im Tab **Entwickler** den Abschnitt **Passwortmanager für Agenten** und schalte **Bitwarden-Passwortmanager** ein.
 3. Melde dich bei deinem Bitwarden-Konto an. US-, EU- und selbst gehostete Server werden unterstützt, auch Konten mit zweistufiger Anmeldung. Entsperre den Tresor anschließend mit deinem Master-Passwort.
 

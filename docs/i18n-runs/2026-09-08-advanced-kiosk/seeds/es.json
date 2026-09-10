@@ -1,0 +1,57 @@
+{
+  "locale": "es",
+  "entries": {
+    "kiosk.actions": "- Haz clic en la parte principal del control, o presiona **⌘O**, para mover la página al Espacio que aparece en la barra de herramientas.\n- Haz clic en la flecha, o presiona **⌘⇧O**, para abrir el menú y elegir otro Espacio.\n\nEstos son los atajos predeterminados. Para cambiarlos, abre **Configuración → Atajos → Kiosk y Peek** y busca **Abrir Kiosk o Peek en el Espacio actual** y **Mostrar el menú “Abrir en” de Kiosk**.",
+    "peek.shortcut": "Presiona **⌘O** para usar **Abrir como pestaña** y mover la vista previa a tu Espacio actual. Para cambiar este atajo, abre **Configuración → Atajos → Kiosk y Peek** y modifica **Abrir Kiosk o Peek en el Espacio actual**. Kiosk usa la misma configuración de atajo.",
+    "tips.rows": "| Abrir una página de Kiosk o un Peek como pestaña en un Espacio | Comando (⌘) + O |\n| Abrir el menú de selección de Espacios de Kiosk | Comando (⌘) + Mayúsculas (⇧) + O |",
+    "tips.settings": "Cambia los dos atajos para abrir en un Espacio en **Configuración → Atajos → Kiosk y Peek**. Consulta [Kiosk](/es/kiosk/) y [Vista Peek](/es/peek/) para más detalles.",
+    "settings.path": "Configuración → Avanzado",
+    "privacy.path": "Configuración → Avanzado → Configuración adicional del navegador",
+    "kiosk.global": "## Abrir Kiosk desde cualquier aplicación {#open-kiosk-from-any-app}\n\nPresiona **⌘⌥N** para abrir una nueva ventana de Kiosk. Para usar este atajo mientras otra aplicación está activa, abre **Configuración → Navegación → Kiosk** y activa **Abrir Kiosk al presionar ⌘⌥N en cualquier aplicación**.\n\nPara cambiar la combinación de teclas, abre **Configuración → Atajos**, busca **Nueva ventana de Kiosk** en **Archivo** y configura el atajo que prefieras. El interruptor de Navegación muestra el atajo que elijas.",
+    "tips.globalRow": "| Abrir una nueva ventana de Kiosk desde cualquier aplicación, con el atajo global activado | Comando (⌘) + Opción (⌥) + N |",
+    "tips.globalSettings": "Activa el atajo global de Kiosk en **Configuración → Navegación → Kiosk**. Para cambiar la combinación de teclas, modifica **Nueva ventana de Kiosk** en **Configuración → Atajos → Archivo**."
+  },
+  "evidence": [
+    {
+      "path": "docs/i18n-runs/2026-09-08-advanced-kiosk/refs.json",
+      "note": "Reused every applicable Spanish product label verbatim: Avanzado, Atajos, Kiosk y Peek, Abrir Kiosk o Peek en el Espacio actual, Mostrar el menú “Abrir en” de Kiosk, Configuración adicional del navegador."
+    },
+    {
+      "path": ".agents/skills/phi-translate-validate/references/product-glossary.md",
+      "note": "Reused Configuración, Espacio and Espacios; preserved the Kiosk and Peek brands."
+    },
+    {
+      "path": "site/es/kiosk/index.md",
+      "note": "Preserved the established Haz clic and presiona register and toolbar wording."
+    },
+    {
+      "path": "site/es/peek/index.md",
+      "note": "Reused Abrir como pestaña, vista previa and Vista Peek."
+    },
+    {
+      "path": "site/es/tips-and-shortcuts/index.md",
+      "note": "Reused Comando, Mayúsculas and atajos predeterminados."
+    },
+    {
+      "path": "site/es/phi-browser-skill/index.md",
+      "note": "Retained Configuración in the existing developer-mode settings path."
+    },
+    {
+      "path": "site/es/agent-passwords/index.md",
+      "note": "Retained Configuración in the existing developer-mode settings path."
+    },
+    {
+      "path": "site/es/privacy/index.md",
+      "note": "Retained the established Configuración adicional del navegador wording, also bound by the current product refs. No contested terminology required online research."
+    },
+    {
+      "path": "docs/i18n-runs/2026-09-08-advanced-kiosk/refs.json",
+      "note": "Global shortcut follow-up: reused Navegación, Archivo, Nueva ventana de Kiosk and the exact switch template Abrir Kiosk al presionar %@ en cualquier aplicación, substituting ⌘⌥N for %@."
+    },
+    {
+      "path": "site/es/tips-and-shortcuts/index.md",
+      "note": "Global shortcut follow-up: reused Comando (⌘), Opción (⌥) and atajo conventions with informal imperatives. No newly coined or contested platform terms required online research."
+    }
+  ],
+  "flags": []
+}

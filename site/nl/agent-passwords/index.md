@@ -24,7 +24,7 @@ Daarbovenop is automatisch invullen de standaardmanier waarop agents inloggegeve
 
 De Wachtwoordmanager voor agents staat in het tabblad **Ontwikkelaar** van de instellingen, dat verschijnt zodra **Ontwikkelaarsmodus** aanstaat:
 
-1. Open **Instellingen → Algemeen** en zet **Ontwikkelaarsmodus** aan.
+1. Open **Instellingen → Geavanceerd** en zet **Ontwikkelaarsmodus** aan.
 2. Zoek in het tabblad **Ontwikkelaar** de **Wachtwoordmanager voor agents** en zet **Bitwarden-wachtwoordmanager** aan.
 3. Log in met je Bitwarden-account. Amerikaanse, Europese en zelfgehoste servers worden ondersteund, ook voor accounts met tweestapsverificatie. Ontgrendel daarna de kluis met je hoofdwachtwoord.
 

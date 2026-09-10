@@ -22,6 +22,12 @@ Hay tres formas habituales de abrir uno:
 
 Un Kiosk abierto desde una página de Phi usa el Perfil de esa página. Un enlace abierto desde otra aplicación usa el último Perfil que usaste.
 
+## Abrir Kiosk desde cualquier aplicación {#open-kiosk-from-any-app}
+
+Presiona **⌘⌥N** para abrir una nueva ventana de Kiosk. Para usar este atajo mientras otra aplicación está activa, abre **Configuración → Navegación → Kiosk** y activa **Abrir Kiosk al presionar ⌘⌥N en cualquier aplicación**.
+
+Para cambiar la combinación de teclas, abre **Configuración → Atajos**, busca **Nueva ventana de Kiosk** en **Archivo** y configura el atajo que prefieras. El interruptor de Navegación muestra el atajo que elijas.
+
 ## Abrir enlaces que coinciden con Reglas de URL
 
 Usa una Regla de URL cuando los enlaces a un sitio deban abrirse siempre en Kiosk.
@@ -46,9 +52,10 @@ Phi vuelve a abrir la página actual con el Perfil que elegiste. La cuenta que v
 
 El control **Abrir en [Espacio]** está en el lado derecho de la barra de herramientas del Kiosk.
 
-- Haz clic en la parte principal del control para mover la página al último Espacio que usaste en una ventana normal de Phi.
-- Haz clic en la flecha y elige un Espacio para mover la página a otro lugar.
-- Con el atajo predeterminado, presiona **⌘O** para usar la acción principal y mover la página a tu Espacio actual.
+- Haz clic en la parte principal del control, o presiona **⌘O**, para mover la página al Espacio que aparece en la barra de herramientas.
+- Haz clic en la flecha, o presiona **⌘⇧O**, para abrir el menú y elegir otro Espacio.
+
+Estos son los atajos predeterminados. Para cambiarlos, abre **Configuración → Atajos → Kiosk y Peek** y busca **Abrir Kiosk o Peek en el Espacio actual** y **Mostrar el menú “Abrir en” de Kiosk**.
 
 La página se convierte en una pestaña normal en el Espacio seleccionado. Moverla a otro Espacio puede recargar la página, así que envía o guarda tu trabajo antes.
 

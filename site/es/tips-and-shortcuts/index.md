@@ -8,16 +8,23 @@ Esta página reúne gestos y atajos de Phi que no resultan tan evidentes desde l
 
 ## Referencia de atajos
 
-| Acción                                          | Atajo o gesto                                                                                  |
-| ----------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| Crear una Vista dividida                        | Clic con Opción (⌥) en una pestaña, una pestaña fijada, un marcador o un enlace web compatible |
-| Ver la vista previa de un enlace en un Peek     | Clic con Mayúsculas (⇧) en un enlace web                                                       |
-| Cambiar entre las pestañas usadas recientemente | Control (⌃) + Tab                                                                              |
-| Cambiar en orden inverso                        | Control (⌃) + Mayúsculas (⇧) + Tab                                                             |
-| Copiar la URL de la página actual               | Comando (⌘) + Mayúsculas (⇧) + C                                                               |
-| Buscar entre las pestañas abiertas              | Comando (⌘) + Mayúsculas (⇧) + A                                                               |
-| Ir al Espacio anterior o siguiente              | Comando (⌘) + Opción (⌥) + ← o →                                                               |
-| Abrir uno de los primeros nueve Espacios        | Control (⌃) + 1 a 9                                                                            |
+| Acción                                                                                    | Atajo o gesto                                                                                  |
+| ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Crear una Vista dividida                                                                  | Clic con Opción (⌥) en una pestaña, una pestaña fijada, un marcador o un enlace web compatible |
+| Ver la vista previa de un enlace en un Peek                                               | Clic con Mayúsculas (⇧) en un enlace web                                                       |
+| Cambiar entre las pestañas usadas recientemente                                           | Control (⌃) + Tab                                                                              |
+| Cambiar en orden inverso                                                                  | Control (⌃) + Mayúsculas (⇧) + Tab                                                             |
+| Copiar la URL de la página actual                                                         | Comando (⌘) + Mayúsculas (⇧) + C                                                               |
+| Buscar entre las pestañas abiertas                                                        | Comando (⌘) + Mayúsculas (⇧) + A                                                               |
+| Ir al Espacio anterior o siguiente                                                        | Comando (⌘) + Opción (⌥) + ← o →                                                               |
+| Abrir uno de los primeros nueve Espacios                                                  | Control (⌃) + 1 a 9                                                                            |
+| Abrir una nueva ventana de Kiosk desde cualquier aplicación, con el atajo global activado | Comando (⌘) + Opción (⌥) + N                                                                   |
+| Abrir una página de Kiosk o un Peek como pestaña en un Espacio                            | Comando (⌘) + O                                                                                |
+| Abrir el menú de selección de Espacios de Kiosk                                           | Comando (⌘) + Mayúsculas (⇧) + O                                                               |
+
+Activa el atajo global de Kiosk en **Configuración → Navegación → Kiosk**. Para cambiar la combinación de teclas, modifica **Nueva ventana de Kiosk** en **Configuración → Atajos → Archivo**.
+
+Cambia los dos atajos para abrir en un Espacio en **Configuración → Atajos → Kiosk y Peek**. Consulta [Kiosk](/es/kiosk/) y [Vista Peek](/es/peek/) para más detalles.
 
 ## Crear una Vista dividida
 
@@ -85,7 +92,7 @@ Dirigir un sitio a un Espacio normal no aísla sus cookies ni su sesión iniciad
 
 ## Mantén el video a la vista con imagen en imagen
 
-Phi puede sacar el video en reproducción a una ventana flotante cuando cambias de pestaña o de Espacio. Elige el comportamiento en **Configuración → General → Imagen en imagen automática**.
+Phi puede sacar el video en reproducción a una ventana flotante cuando cambias de pestaña o de Espacio. Elige el comportamiento en **Configuración → Avanzado → Imagen en imagen automática**.
 
 | Modo                   | Comportamiento                                                                                                  |
 | ---------------------- | --------------------------------------------------------------------------------------------------------------- |

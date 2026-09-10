@@ -45,7 +45,7 @@ An agent driving Phi is acting **as you**, from your browser, with your sessions
 
 **Some sites do not want agents, and they will act on it.** A lot of sites treat automated access as a threat to their business, because their content is their business, and they detect it aggressively. Reddit is the well-known example: accounts identified as automated get restricted or banned, and that call is theirs to make, not ours. Point an agent at a site that does not welcome it and you can lose your account there, your history, and anything you kept in it. That risk is yours, and it is not something we can appeal or undo on your behalf.
 
-**Consequential actions are yours to authorise.** An agent can buy things, send messages, submit forms, and change settings on services you are signed in to. Review what it is about to do before you let it. Where Phi asks you to confirm, that confirmation is doing real work.
+**Consequential actions are yours to authorize.** An agent can buy things, send messages, submit forms, and change settings on services you are signed in to. Review what it is about to do before you let it. Where Phi asks you to confirm, that confirmation is doing real work.
 
 Our [Terms of Use](https://phibrowser.com/terms/) set this out in full.
 
@@ -53,7 +53,7 @@ Our [Terms of Use](https://phibrowser.com/terms/) set this out in full.
 
 Everything lives behind **Developer mode**, and it is off by default. Three steps:
 
-1. **Turn on Developer mode** in **Settings → General**. This reveals the Developer tab, which holds agent access, permissions, and the password manager.
+1. **Turn on Developer mode** in **Settings → Advanced**. This reveals the Developer tab, which holds agent access, permissions, and the password manager.
 2. **Install the skill** from **Settings → Developer → Install the phi-browser skill**. The **Add skill to…** button lists each supported agent, or **All agents**, and links the skill bundled inside Phi into that agent's skills folder so it stays current with every Phi update. It needs Node 22 or newer, and you should restart a newly configured agent afterwards. In Pi, `/reload` is enough.
 3. **Allow agents to connect** with **Settings → Developer → Agent control → "Allow agents to control Phi (CDP)"**. It applies immediately, with no relaunch.
 

@@ -53,7 +53,7 @@ Memory is not a black box. You can **view, manage, and delete** what Phi remembe
 
 ### Deleting your account and data
 
-You do this yourself, in the app: **Settings → Additional Browser Settings → your name, under You and Phi → Delete account and data**. It removes the account and the data stored with it, on your Mac and on our servers, and it cannot be undone. You do not need to email anyone to be forgotten.
+You do this yourself, in the app: **Settings → Advanced → Additional browser settings → your name, under You and Phi → Delete account and data**. It removes the account and the data stored with it, on your Mac and on our servers, and it cannot be undone. You do not need to email anyone to be forgotten.
 
 If you have already uninstalled Phi, install it again and sign in to the same account to reach that button. Uninstalling clears what was on your Mac, but it does not close the account. If you never signed in, there is no account and nothing on our side to delete.
 
@@ -69,4 +69,4 @@ For sessions that should leave nothing behind on your Mac either, open an [Incog
 
 ## Open source
 
-Phi's macOS client is open source under Apache-2.0, so its behaviour can be inspected rather than taken purely on trust. To be exact about what that covers: the open part is the client we write, and it embeds a Chromium engine that ships as a prebuilt framework. Chromium is itself an open-source project, but reading our client is not the same as having read every line that runs on your Mac.
+Phi's macOS client is open source under Apache-2.0, so its behavior can be inspected rather than taken purely on trust. To be exact about what that covers: the open part is the client we write, and it embeds a Chromium engine that ships as a prebuilt framework. Chromium is itself an open-source project, but reading our client is not the same as having read every line that runs on your Mac.

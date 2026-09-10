@@ -53,7 +53,7 @@ Nuestros [Términos de uso](https://phibrowser.com/terms/) lo recogen en detalle
 
 Todo vive detrás del **Modo de desarrollador**, que está desactivado de forma predeterminada. Tres pasos:
 
-1. **Activa el Modo de desarrollador** en **Configuración → General**. Esto revela la pestaña Desarrollador, que contiene el acceso de agentes, los permisos y el administrador de contraseñas.
+1. **Activa el Modo de desarrollador** en **Configuración → Avanzado**. Esto revela la pestaña Desarrollador, que contiene el acceso de agentes, los permisos y el administrador de contraseñas.
 2. **Instala la habilidad** desde **Configuración → Desarrollador → Instalar la habilidad phi-browser**. El botón **Añadir habilidad a…** lista cada agente compatible, o **Todos los agentes**, y enlaza la habilidad incluida dentro de Phi en la carpeta de habilidades de ese agente, de modo que se mantiene al día con cada actualización de Phi. Necesita Node 22 o más reciente, y conviene reiniciar un agente recién configurado. En Pi, basta con `/reload`.
 3. **Permite que los agentes se conecten** con **Configuración → Desarrollador → Control de agentes → "Permitir que los agentes controlen Phi (CDP)"**. Se aplica de inmediato, sin reiniciar nada.
 

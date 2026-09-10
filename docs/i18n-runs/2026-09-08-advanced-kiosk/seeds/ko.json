@@ -1,0 +1,49 @@
+{
+  "locale": "ko",
+  "entries": {
+    "kiosk.actions": "- 컨트롤의 기본 영역을 클릭하거나 **⌘O**를 눌러 페이지를 툴바에 표시된 스페이스로 옮기세요.\n- 화살표를 클릭하거나 **⌘⇧O**를 눌러 메뉴를 열고 다른 스페이스를 선택하세요.\n\n이 단축키들은 기본값이에요. 바꾸려면 **설정 → 단축키 → Kiosk 및 Peek**을 열고 **Kiosk 또는 Peek을 현재 스페이스에서 열기**와 **Kiosk “열기 위치” 메뉴 표시**를 찾으세요.",
+    "peek.shortcut": "**⌘O**를 누르면 **탭으로 열기**가 실행되어 미리보기가 현재 스페이스로 이동해요. 이 단축키를 바꾸려면 **설정 → 단축키 → Kiosk 및 Peek**을 열고 **Kiosk 또는 Peek을 현재 스페이스에서 열기**를 수정하세요. Kiosk도 같은 단축키 설정을 사용해요.",
+    "tips.rows": "| Kiosk 페이지나 Peek을 스페이스의 탭으로 열기 | Command(⌘) + O |\n| Kiosk 스페이스 선택 메뉴 열기 | Command(⌘) + Shift(⇧) + O |",
+    "tips.settings": "스페이스에서 열기에 쓰는 두 단축키는 **설정 → 단축키 → Kiosk 및 Peek**에서 바꿀 수 있어요. 자세한 내용은 [Kiosk](/ko/kiosk/)와 [Peek 뷰](/ko/peek/)를 참고하세요.",
+    "settings.path": "설정 → 고급",
+    "privacy.path": "설정 → 고급 → 추가 브라우저 설정",
+    "kiosk.global": "## 어느 앱에서나 Kiosk 열기 {#open-kiosk-from-any-app}\n\n**⌘⌥N**을 누르면 새 Kiosk 윈도우가 열려요. 다른 앱을 사용하는 중에도 이 단축키를 쓰려면 **설정 → 탐색 → Kiosk**를 열고 **어느 앱에서나 ⌘⌥N를 누르면 Kiosk 열기**를 켜세요.\n\n키 조합을 바꾸려면 **설정 → 단축키**를 열고 **파일** 아래의 **새 Kiosk 윈도우**를 찾아 원하는 단축키를 설정하세요. **탐색**의 스위치에는 선택한 단축키가 표시돼요.",
+    "tips.globalRow": "| 어느 앱에서나 새 Kiosk 윈도우 열기, 해당 단축키를 켜 둔 경우 | Command(⌘) + Option(⌥) + N |",
+    "tips.globalSettings": "어느 앱에서나 Kiosk 단축키를 사용하려면 **설정 → 탐색 → Kiosk**에서 켜세요. 키 조합을 바꾸려면 **설정 → 단축키 → 파일**에서 **새 Kiosk 윈도우**를 수정하세요."
+  },
+  "evidence": [
+    {
+      "source": "docs/i18n-runs/2026-09-08-advanced-kiosk/refs.json",
+      "note": "Shipped Korean labels reused verbatim: 고급; 단축키; Kiosk 및 Peek; Kiosk 또는 Peek을 현재 스페이스에서 열기; Kiosk “열기 위치” 메뉴 표시; 추가 브라우저 설정."
+    },
+    {
+      "source": ".agents/skills/phi-translate-validate/references/product-glossary.md",
+      "note": "Binding Korean feature terms: 설정 and 스페이스. Kiosk and Peek retain their brand spelling."
+    },
+    {
+      "source": "site/ko/kiosk/index.md",
+      "note": "Reused established wording: 컨트롤의 기본 영역, 툴바, 스페이스로 페이지 이동."
+    },
+    {
+      "source": "site/ko/peek/index.md",
+      "note": "Reused the existing label 탭으로 열기 and page title Peek 뷰. Used the object marker Peek을, matching the shipped command label."
+    },
+    {
+      "source": "site/ko/tips-and-shortcuts/index.md",
+      "note": "Preserved modifier naming and spacing: Command(⌘), Shift(⇧), and the existing 설정 → 단축키 path."
+    },
+    {
+      "source": "site/ko/privacy/index.md",
+      "note": "Existing 추가 브라우저 설정 matches the shipped reference."
+    },
+    {
+      "source": "site/ko/phi-browser-skill/index.md; site/ko/agent-passwords/index.md",
+      "note": "Confirmed the existing 설정 → 일반 path and developer mode context before translating only the replacement path."
+    },
+    {
+      "source": "docs/i18n-runs/2026-09-08-advanced-kiosk/refs.json",
+      "note": "Global shortcut follow-up: reused 탐색, 파일, 새 Kiosk 윈도우, and the exact switch template 어느 앱에서나 %@를 누르면 Kiosk 열기 with %@ replaced by ⌘⌥N. Existing site/ko/tips-and-shortcuts/index.md supplies Command(⌘) and Option(⌥) key naming. All labels are bound by current Mac refs; no contested or newly coined terms."
+    }
+  ],
+  "flags": []
+}

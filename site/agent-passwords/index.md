@@ -24,7 +24,7 @@ On top of that, the default way agents use a login is autofill, which keeps the 
 
 The Agent Password Manager lives in the **Developer** tab of Settings, which appears once **Developer mode** is on:
 
-1. Open **Settings → General** and turn on **Developer mode**.
+1. Open **Settings → Advanced** and turn on **Developer mode**.
 2. In the **Developer** tab, find **Agent Password Manager** and switch on **Bitwarden password manager**.
 3. Sign in to your Bitwarden account. US, EU, and self-hosted servers are supported, including accounts with two-step sign-in. Then unlock the vault with your master password.
 
@@ -44,7 +44,7 @@ If the vault is locked when a request comes in, Phi asks for your **master passw
 
 ## Three levels of exposure
 
-Not all requests are equal, and the prompt is honest about the difference. Each request is one of three kinds, colour-coded by how far the secret travels:
+Not all requests are equal, and the prompt is honest about the difference. Each request is one of three kinds, color-coded by how far the secret travels:
 
 | Kind                 | What actually happens                                                                                                                                                                                                                   |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -8,16 +8,23 @@ Diese Seite sammelt Gesten und Kurzbefehle in Phi, die sich nicht direkt aus der
 
 ## Kurzbefehle im Überblick
 
-| Aktion                                      | Kurzbefehl oder Geste                                                                                                     |
-| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Split View erstellen                        | Mit gedrückter Wahltaste (⌥) auf einen Tab, einen angehefteten Tab, ein Lesezeichen oder einen geeigneten Weblink klicken |
-| Link in einem Peek als Vorschau anzeigen    | Mit gedrückter Umschalttaste (⇧) auf einen Weblink klicken                                                                |
-| Zwischen zuletzt benutzten Tabs wechseln    | Ctrl-Taste (⌃) + Tab                                                                                                      |
-| In umgekehrter Reihenfolge wechseln         | Ctrl-Taste (⌃) + Umschalttaste (⇧) + Tab                                                                                  |
-| URL der aktuellen Seite kopieren            | Befehlstaste (⌘) + Umschalttaste (⇧) + C                                                                                  |
-| Offene Tabs durchsuchen                     | Befehlstaste (⌘) + Umschalttaste (⇧) + A                                                                                  |
-| Zum vorherigen oder nächsten Space wechseln | Befehlstaste (⌘) + Wahltaste (⌥) + ← oder →                                                                               |
-| Einen der ersten neun Spaces öffnen         | Ctrl-Taste (⌃) + 1 bis 9                                                                                                  |
+| Aktion                                                                                  | Kurzbefehl oder Geste                                                                                                     |
+| --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Split View erstellen                                                                    | Mit gedrückter Wahltaste (⌥) auf einen Tab, einen angehefteten Tab, ein Lesezeichen oder einen geeigneten Weblink klicken |
+| Link in einem Peek als Vorschau anzeigen                                                | Mit gedrückter Umschalttaste (⇧) auf einen Weblink klicken                                                                |
+| Zwischen zuletzt benutzten Tabs wechseln                                                | Ctrl-Taste (⌃) + Tab                                                                                                      |
+| In umgekehrter Reihenfolge wechseln                                                     | Ctrl-Taste (⌃) + Umschalttaste (⇧) + Tab                                                                                  |
+| URL der aktuellen Seite kopieren                                                        | Befehlstaste (⌘) + Umschalttaste (⇧) + C                                                                                  |
+| Offene Tabs durchsuchen                                                                 | Befehlstaste (⌘) + Umschalttaste (⇧) + A                                                                                  |
+| Zum vorherigen oder nächsten Space wechseln                                             | Befehlstaste (⌘) + Wahltaste (⌥) + ← oder →                                                                               |
+| Einen der ersten neun Spaces öffnen                                                     | Ctrl-Taste (⌃) + 1 bis 9                                                                                                  |
+| Ein neues Kiosk-Fenster aus jeder App öffnen, wenn der globale Kurzbefehl aktiviert ist | Befehlstaste (⌘) + Wahltaste (⌥) + N                                                                                      |
+| Eine Kiosk-Seite oder einen Peek als Tab in einem Space öffnen                          | Befehlstaste (⌘) + O                                                                                                      |
+| Das Menü zur Space-Auswahl in Kiosk öffnen                                              | Befehlstaste (⌘) + Umschalttaste (⇧) + O                                                                                  |
+
+Aktiviere den globalen Kiosk-Kurzbefehl unter **Einstellungen → Navigation → Kiosk**. Um die Tastenkombination zu ändern, bearbeite **Neues Kiosk-Fenster** unter **Einstellungen → Tastaturkurzbefehle → Ablage**.
+
+Die beiden Kurzbefehle zum Öffnen in einem Space kannst du unter **Einstellungen → Tastaturkurzbefehle → Kiosk & Peek** ändern. Details findest du unter [Kiosk](/de/kiosk/) und [Peek-Ansicht](/de/peek/).
 
 ## Split View erstellen
 
@@ -85,7 +92,7 @@ Eine Website in einen regulären Space zu lenken isoliert weder ihre Cookies noc
 
 ## Videos mit Bild-in-Bild im Blick behalten
 
-Phi kann ein laufendes Video in ein schwebendes Fenster herauslösen, wenn du den Tab oder Space wechselst. Wähle das Verhalten unter **Einstellungen → Allgemein → Automatisches Bild-in-Bild**.
+Phi kann ein laufendes Video in ein schwebendes Fenster herauslösen, wenn du den Tab oder Space wechselst. Wähle das Verhalten unter **Einstellungen → Erweitert → Automatisches Bild-in-Bild**.
 
 | Modus              | Verhalten                                                                                    |
 | ------------------ | -------------------------------------------------------------------------------------------- |

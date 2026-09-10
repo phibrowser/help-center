@@ -22,6 +22,12 @@ There are three common ways to open one:
 
 A Kiosk opened from a page in Phi uses that page's Profile. A link opened from another app uses your last-used Profile.
 
+## Open Kiosk from any app
+
+Press **⌘⌥N** to open a new Kiosk window. To use this shortcut while another app is active, open **Settings → Navigation → Kiosk** and turn on **Open Kiosk when pressing ⌘⌥N in any app**.
+
+To change the key combination, open **Settings → Shortcuts**, find **New Kiosk Window** under **File**, and set your preferred shortcut. The Navigation switch displays the shortcut you choose.
+
 ## Open matching links with URL Rules
 
 Use a URL Rule when links to a site should always open in Kiosk.
@@ -46,9 +52,10 @@ Phi opens the current page again with the Profile you chose. The account you see
 
 The **Open in [Space]** control is on the right side of the Kiosk toolbar.
 
-- Click the main part of the control to move the page into the Space you last used in a regular Phi window.
-- Click the arrow and choose a Space to move the page somewhere else.
-- With the default shortcut, press **⌘O** to use the main action and move the page into your current Space.
+- Click the main part of the control, or press **⌘O**, to move the page into the Space shown in the toolbar.
+- Click the arrow, or press **⌘⇧O**, to open the menu and choose another Space.
+
+These are the default shortcuts. To change them, open **Settings → Shortcuts → Kiosk & Peek** and look for **Open Kiosk or Peek in current Space** and **Show Kiosk "Open in" Menu**.
 
 The page becomes a regular tab in the selected Space. Moving it to another Space may reload the page, so submit or save any work first.
 

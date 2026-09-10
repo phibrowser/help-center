@@ -53,7 +53,7 @@ Geheugen is geen zwarte doos. Je kunt **bekijken, beheren en verwijderen** wat P
 
 ### Je account en gegevens verwijderen
 
-Dat doe je zelf, in de app: **Instellingen → Aanvullende browserinstellingen → je naam, onder Jij en Phi → Account en gegevens verwijderen**. Hiermee verwijder je het account en de gegevens die erbij horen, op je Mac en op onze servers, en het kan niet ongedaan worden gemaakt. Je hoeft niemand te e-mailen om vergeten te worden.
+Dat doe je zelf, in de app: **Instellingen → Geavanceerd → Aanvullende browserinstellingen → je naam, onder Jij en Phi → Account en gegevens verwijderen**. Hiermee verwijder je het account en de gegevens die erbij horen, op je Mac en op onze servers, en het kan niet ongedaan worden gemaakt. Je hoeft niemand te e-mailen om vergeten te worden.
 
 Heb je Phi al verwijderd, installeer het dan opnieuw en log met hetzelfde account in om die knop te bereiken. De app verwijderen wist wat er op je Mac stond, maar sluit het account niet. Heb je nooit ingelogd, dan is er geen account en staat er aan onze kant niets om te verwijderen.
 
