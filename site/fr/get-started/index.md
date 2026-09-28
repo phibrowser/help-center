@@ -1,5 +1,5 @@
 ---
-description: "Installez Phi Browser sur macOS, effectuez le premier démarrage, importez vos données depuis un autre navigateur et choisissez le prochain guide pour découvrir la barre latérale et les fonctions d'IA de Phi."
+description: "Installez Phi Browser sur macOS, effectuez le premier démarrage, connectez-vous à votre compte Phi, importez vos données depuis un autre navigateur et choisissez le prochain guide pour découvrir la barre latérale et les fonctions d'IA de Phi."
 ---
 
 # Premiers pas
@@ -28,7 +28,18 @@ Cette commande ajoute automatiquement le tap `phibrowser/tap` et installe le cas
 
 - **Choisissez un mode de disposition**, Performance, Équilibré ou Confortable. Vous pourrez en changer à tout moment ; choisissez donc celui qui ressemble le plus à votre façon de naviguer aujourd'hui. Consultez [Dispositions et navigation](/fr/layouts/) pour comprendre chaque mode.
 - **Faites connaissance avec votre assistant**, une fois dans le navigateur, une bannière en haut du nouvel onglet vous invite à le rencontrer : donnez-lui un nom, et il génère un avatar assorti, pour avoir sa propre identité au lieu de ressembler à un chatbot générique. Vous pouvez aussi passer cette étape et y revenir plus tard.
-- **L'IA est activée par défaut**, les fonctions d'IA de Phi sont actives dès l'installation. Vous pourrez les désactiver plus tard dans **Paramètres → Phi AI** si vous préférez un navigateur classique.
+- **Connectez-vous, ou découvrez Phi sans compte**, la connexion avec un compte Phi active les fonctions d'IA et la Mémoire du navigateur. Vous pouvez aussi choisir **Découvrir Phi sans se connecter** et vous connecter plus tard ; voir [Se connecter plus tard](#signing-in-later).
+- **L'IA est activée par défaut**, une fois la connexion effectuée, les fonctions d'IA de Phi sont actives dès l'installation. Vous pourrez les désactiver plus tard dans **Paramètres → Phi AI** si vous préférez un navigateur classique.
+
+## Se connecter plus tard {#signing-in-later}
+
+Si vous avez choisi **Découvrir Phi sans se connecter**, vous pouvez naviguer normalement, mais les fonctions d'IA de Phi et la Mémoire du navigateur restent désactivées tant que vous ne vous connectez pas. Vous pouvez vous connecter quand vous le souhaitez, depuis l'un de ces endroits :
+
+- **Paramètres → Invité**, où Phi vous indique que vous utilisez Phi sans connexion, avec un bouton pour vous connecter.
+- **Paramètres → Phi AI**, où un message indique « Connectez-vous pour utiliser les fonctionnalités d'IA ».
+- **N'importe quelle fonction d'IA**, ouvrez-en une et Phi affiche « Connectez-vous pour utiliser Phi AI » avec un bouton qui ouvre la connexion.
+
+Lorsque vous vous connectez, vos onglets épinglés et vos favoris vous accompagnent.
 
 ## Vous venez d'un autre navigateur ?
 

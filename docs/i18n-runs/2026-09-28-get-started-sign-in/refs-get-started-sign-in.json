@@ -1,0 +1,104 @@
+{
+  "source": "phi-i18n public catalog (translations/<locale>/browser.json) at 5a7727b",
+  "labels": {
+    "explore_phi_without_signing_in": {
+      "en": "Explore Phi without signing in",
+      "zh-Hans": "不登录也能体验 Phi",
+      "zh-Hant": "不登入，直接探索 Phi",
+      "ja": "ログインせずにPhiを試す",
+      "ko": "로그인 없이 Phi 둘러보기",
+      "de": "Phi ohne Anmeldung erkunden",
+      "fr": "Découvrir Phi sans se connecter",
+      "es": "Explora Phi sin iniciar sesión",
+      "nl": "Phi verkennen zonder in te loggen"
+    },
+    "sign_in_to_use_ai_features": {
+      "en": "Sign in to use AI features",
+      "zh-Hans": "登录后即可使用 AI 功能",
+      "zh-Hant": "登入即可使用 AI 功能",
+      "ja": "AI機能を使うにはログインしてください",
+      "ko": "AI 기능을 사용하려면 로그인해 주세요",
+      "de": "Melde dich an, um KI-Funktionen zu nutzen",
+      "fr": "Connectez-vous pour utiliser les fonctionnalités d'IA",
+      "es": "Inicia sesión para usar las funciones de IA",
+      "nl": "Log in om AI-functies te gebruiken"
+    },
+    "sign_in_to_use_phi_ai": {
+      "en": "Sign in to use Phi AI",
+      "zh-Hans": "登录后即可使用 Phi AI",
+      "zh-Hant": "登入即可使用 Phi AI",
+      "ja": "Phi AIを使うにはログインしてください",
+      "ko": "Phi AI를 사용하려면 로그인해 주세요",
+      "de": "Melde dich an, um Phi AI zu nutzen",
+      "fr": "Connectez-vous pour utiliser Phi AI",
+      "es": "Inicia sesión para usar la IA de Phi",
+      "nl": "Log in om Phi AI te gebruiken"
+    },
+    "browser_memory": {
+      "en": "Browser Memory",
+      "zh-Hans": "浏览器记忆",
+      "zh-Hant": "瀏覽器記憶",
+      "ja": "ブラウザメモリ",
+      "ko": "브라우저 메모리",
+      "de": "Browser-Erinnerungen",
+      "fr": "Mémoire du navigateur",
+      "es": "Memoria del navegador",
+      "nl": "Browsergeheugen"
+    },
+    "guest": {
+      "en": "Guest",
+      "zh-Hans": "访客",
+      "zh-Hant": "訪客",
+      "ja": "ゲスト",
+      "ko": "게스트",
+      "de": "Gast",
+      "fr": "Invité",
+      "es": "Invitado",
+      "nl": "Gast"
+    },
+    "sign_in": {
+      "en": "Sign in",
+      "zh-Hans": "登录",
+      "zh-Hant": "登入",
+      "ja": "ログイン",
+      "ko": "로그인",
+      "de": "Anmelden",
+      "fr": "Se connecter",
+      "es": "Iniciar sesión",
+      "nl": "Inloggen"
+    },
+    "settings_978896": {
+      "en": "Settings",
+      "zh-Hans": "设置",
+      "zh-Hant": "設定",
+      "ja": "設定",
+      "ko": "설정",
+      "de": "Einstellungen",
+      "fr": "Réglages",
+      "es": "Configuración",
+      "nl": "Instellingen"
+    },
+    "pinned_tabs": {
+      "en": "Pinned Tabs",
+      "zh-Hans": "固定的标签页",
+      "zh-Hant": "釘選分頁",
+      "ja": "固定タブ",
+      "ko": "고정된 탭",
+      "de": "Angeheftete Tabs",
+      "fr": "Onglets épinglés",
+      "es": "Pestañas fijadas",
+      "nl": "Vastgezette tabbladen"
+    },
+    "bookmarks": {
+      "en": "Bookmarks",
+      "zh-Hans": "书签",
+      "zh-Hant": "書籤",
+      "ja": "ブックマーク",
+      "ko": "북마크",
+      "de": "Lesezeichen",
+      "fr": "Favoris",
+      "es": "Marcadores",
+      "nl": "Bladwijzers"
+    }
+  }
+}
