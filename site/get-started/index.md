@@ -35,7 +35,7 @@ The first time you open Phi, onboarding helps you set things up:
 
 If you chose **Explore Phi without signing in**, you can browse normally, but Phi's AI features and Browser Memory stay off until you sign in. You can sign in whenever you are ready, from any of these places:
 
-- **Settings → Account**, where a card says you are using Phi without signing in, with a button to sign in.
+- **Settings → Guest**, where you'll see that you're using Phi without signing in, with a button to sign in.
 - **Settings → Phi AI**, where a prompt reads "Sign in to use AI features".
 - **Any AI feature itself**, open one and Phi shows "Sign in to use Phi AI" with a button that opens sign-in.
 
