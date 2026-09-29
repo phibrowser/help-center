@@ -1,5 +1,5 @@
 ---
-description: "Installeer Phi Browser op macOS, doorloop de eerste start, importeer vanuit een andere browser en kies de volgende gids over de zijbalk en de AI-functies van Phi."
+description: "Installeer Phi Browser op macOS, doorloop de eerste start, log in met je Phi-account, importeer vanuit een andere browser en kies de volgende gids over de zijbalk en de AI-functies van Phi."
 ---
 
 # Aan de slag
@@ -28,7 +28,18 @@ De eerste keer dat je Phi opent, helpt de introductie je alles in te stellen:
 
 - **Kies een lay-outmodus**: Prestaties, Gebalanceerd of Comfortabel. Je kunt dit altijd nog wijzigen, dus kies wat het dichtst bij je huidige manier van browsen ligt. Zie [Lay-outs en navigatie](/nl/layouts/) voor wat elke modus inhoudt.
 - **Maak kennis met je assistent**: zodra je in de browser bent, nodigt een banner boven aan het nieuwe tabblad je uit om je assistent te leren kennen. Geef hem een naam en hij maakt een bijpassende avatar voor zichzelf, zodat hij een eigen identiteit heeft in plaats van aan te voelen als een generieke chatbot. Je kunt dit ook overslaan en er later op terugkomen.
-- **AI staat standaard aan**: de AI-functies van Phi zijn vanaf het begin ingeschakeld. Je kunt ze later uitzetten via **Instellingen → Phi AI** als je liever een gewone browser hebt.
+- **Log in, of verken Phi zonder account**: als je inlogt met een Phi-account, worden de AI-functies en Browsergeheugen ingeschakeld. Je kunt ook kiezen voor **Phi verkennen zonder in te loggen** en later inloggen; zie [Later inloggen](#signing-in-later).
+- **AI staat standaard aan**: zodra je bent ingelogd, zijn de AI-functies van Phi vanaf het begin ingeschakeld. Je kunt ze later uitzetten via **Instellingen → Phi AI** als je liever een gewone browser hebt.
+
+## Later inloggen {#signing-in-later}
+
+Heb je gekozen voor **Phi verkennen zonder in te loggen**, dan kun je gewoon browsen, maar de AI-functies van Phi en Browsergeheugen blijven uit totdat je inlogt. Je kunt inloggen wanneer je er klaar voor bent, op elk van deze plekken:
+
+- **Instellingen → Gast**: hier zie je dat je Phi zonder inloggen gebruikt, met een knop om in te loggen.
+- **Instellingen → Phi AI**: hier staat de melding 'Log in om AI-functies te gebruiken'.
+- **Een AI-functie zelf**: open er een en Phi toont 'Log in om Phi AI te gebruiken' met een knop die het inlogscherm opent.
+
+Als je inlogt, gaan je vastgezette tabbladen en bladwijzers met je mee.
 
 ## Stap je over van een andere browser?
 
