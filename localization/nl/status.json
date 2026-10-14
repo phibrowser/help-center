@@ -1,6 +1,6 @@
 {
   "locale": "nl",
-  "sourceRevision": "8a7be18d84a0ddbd9c0279da10c364a7b9c45043",
+  "sourceRevision": "b79db2bbf8a420810d25c37821528dadc65411eb",
   "owners": {
     "translation": "Phi i18n pipeline (agent run 2026-08-26); peek/kiosk sync by run 2026-08-31-peek-kiosk (docs/i18n-runs/2026-08-31-peek-kiosk); last-Space/auto-Peek sync by run 2026-09-02-last-space-auto-peek (docs/i18n-runs/2026-09-02-last-space-auto-peek); Advanced/Kiosk sync by AI run 2026-09-08-advanced-kiosk (docs/i18n-runs/2026-09-08-advanced-kiosk); Sync docs by AI run 2026-10-14-sync (docs/i18n-runs/2026-10-14-sync)",
     "contentReview": "Alpha"
@@ -122,9 +122,9 @@
       "evidence": "Reviewed by Alpha; translation drafts and review in PR #15, squash-merged as 54628c0 (authored 2026-08-26 20:47 +0800), Markdown emphasis fixes applied after simulated promotion passed pnpm test:i18n (9 locales); Review reopened for Advanced settings and Kiosk shortcuts; see docs/i18n-runs/2026-09-08-advanced-kiosk. Prior evidence covers earlier content only."
     },
     "privacyLegal": {
-      "status": "approved",
+      "status": "todo",
       "owner": "Alpha",
-      "evidence": "Reviewed by Alpha; translation drafts and review in PR #15, squash-merged as 54628c0 (authored 2026-08-26 20:47 +0800), Markdown emphasis fixes applied after simulated promotion passed pnpm test:i18n (9 locales)"
+      "evidence": "Reviewed by Alpha; translation drafts and review in PR #15, squash-merged as 54628c0 (authored 2026-08-26 20:47 +0800), Markdown emphasis fixes applied after simulated promotion passed pnpm test:i18n (9 locales); Review reopened for the Sync disclosures (new sync page and the privacy page's synced-data bullet); see docs/i18n-runs/2026-10-14-sync. Prior evidence covers earlier content only."
     },
     "searchQa": {
       "status": "todo",
