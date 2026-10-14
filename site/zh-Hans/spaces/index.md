@@ -51,4 +51,4 @@ description: "了解 Phi Browser 如何用空间组织工作区，用个人资�
 
 ## 与 Phi 其他部分的关系
 
-空间建立在[布局与导航](/zh-Hans/layouts/)介绍的侧边栏工作区之上，各空间的颜色与[主题与外观](/zh-Hans/themes/)使用同一套调色板。如果你从 Arc 或 Dia 迁移，可以看看[迁移到 Phi](/zh-Hans/switching-to-phi/)里的迁移对比。由于个人资料隔离了 Cookie 和历史记录，助手能看到的内容也限于你当前所在的个人资料。你的数据如何处理，见[隐私与你的数据](/zh-Hans/privacy/)。
+空间建立在[布局与导航](/zh-Hans/layouts/)介绍的侧边栏工作区之上，各空间的颜色与[主题与外观](/zh-Hans/themes/)使用同一套调色板。如果你从 Arc 或 Dia 迁移，可以看看[迁移到 Phi](/zh-Hans/switching-to-phi/)里的迁移对比。由于个人资料隔离了 Cookie 和历史记录，助手能看到的内容也限于你当前所在的个人资料。你的数据如何处理，见[隐私与你的数据](/zh-Hans/privacy/)。要在多台 Mac 上保留同样的空间和个人资料，见[同步](/zh-Hans/sync/)。

@@ -1,8 +1,8 @@
 {
   "locale": "zh-Hans",
-  "sourceRevision": "6effe67c32e0be67af0e994b83205414dc04bd95",
+  "sourceRevision": "8a7be18d84a0ddbd9c0279da10c364a7b9c45043",
   "owners": {
-    "translation": "AI re-translation run 2026-08-28-zh-hans (docs/i18n-runs/2026-08-28-zh-hans); human translation owner to be assigned; peek/kiosk sync by run 2026-08-31-peek-kiosk (docs/i18n-runs/2026-08-31-peek-kiosk); last-Space/auto-Peek sync by run 2026-09-02-last-space-auto-peek (docs/i18n-runs/2026-09-02-last-space-auto-peek); Advanced/Kiosk sync by AI run 2026-09-08-advanced-kiosk (docs/i18n-runs/2026-09-08-advanced-kiosk)",
+    "translation": "AI re-translation run 2026-08-28-zh-hans (docs/i18n-runs/2026-08-28-zh-hans); human translation owner to be assigned; peek/kiosk sync by run 2026-08-31-peek-kiosk (docs/i18n-runs/2026-08-31-peek-kiosk); last-Space/auto-Peek sync by run 2026-09-02-last-space-auto-peek (docs/i18n-runs/2026-09-02-last-space-auto-peek); Advanced/Kiosk sync by AI run 2026-09-08-advanced-kiosk (docs/i18n-runs/2026-09-08-advanced-kiosk); Sync docs by AI run 2026-10-14-sync (docs/i18n-runs/2026-10-14-sync)",
     "contentReview": ""
   },
   "pages": {
@@ -87,6 +87,10 @@
       "contentReview": "todo"
     },
     "switching-to-phi/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
+    "sync/index.md": {
       "translation": "complete",
       "contentReview": "todo"
     },

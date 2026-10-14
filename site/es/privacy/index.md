@@ -28,6 +28,7 @@ Prioridad local no significa silencio, y es mejor que leas esto aquí a que lo d
 
 - **Un pequeño recuento anónimo, siempre activo.** Phi cuenta cuántas instalaciones lo establecen como navegador predeterminado, usan Espacios, usan Perfiles, y que ocurrió un fallo. Solo recuentos, sin nada adjunto que apunte de vuelta a ti.
 - **Estadísticas detalladas e informes de fallos, solo si los activas.** El ajuste es **Ayudar a mejorar las funciones y el rendimiento de Phi**, en la Configuración. Actívalo y Phi envía estadísticas de uso detalladas e informes de fallos, que llevan tu identificador de cuenta. Desactívalo y no se envía ninguno de los dos; solo continúan los recuentos anónimos de arriba.
+- **Tus datos sincronizados, solo si configuras la sincronización.** Los Espacios, los marcadores, las pestañas fijadas, las Reglas de URL, los ajustes compatibles y el historial de navegación de cada Perfil se suben a nuestro servicio de sincronización para que tus otros Mac puedan obtenerlos. Primero se cifran en tu Mac, con claves que solo tienen tus Mac, así que el servicio almacena copias que no puede leer. Consulta [Sincronización](/es/sync/).
 
 Los informes de fallos van a Sentry y se conservan durante 90 días. Un informe de fallo puede incluir una instantánea de la memoria del proceso que falló, que puede contener de forma incidental fragmentos del contenido de una página o de texto que habías escrito. Esa es una de las razones por las que el interruptor está desactivado hasta que tú lo actives.
 

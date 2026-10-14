@@ -42,6 +42,7 @@ Consulta [Privacidad y tus datos](/es/privacy/) para los detalles.
 - [Diseños y navegación](/es/layouts/), los modos, la barra lateral, las pestañas, la Vista dividida y los Grupos de pestañas.
 - [Espacios y Perfiles](/es/spaces/), espacios de trabajo separados, Perfiles aislados y reglas de enrutamiento de URL.
 - [Marcadores y pestañas fijadas](/es/bookmarks/), marcadores que se abren donde están como pestañas, y pestañas fijadas.
+- [Sincronización](/es/sync/), mantener los Espacios, los marcadores, las pestañas fijadas, las Reglas de URL y los ajustes iguales en cada Mac.
 - [Temas y apariencia](/es/themes/), temas de color, claro y oscuro, y qué cosas colorea el tema.
 - [Conoce a tu asistente](/es/ai/), la Memoria, cómo hablar con él y las Habilidades.
 - [Memoria](/es/memory/), cómo aprende el asistente de tu navegación y cómo mantienes el control.
