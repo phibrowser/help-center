@@ -28,6 +28,7 @@ Local-first betekent niet geruisloos, en dit hoor je hier te lezen in plaats van
 
 - **Een kleine anonieme telling, altijd aan.** Phi telt hoeveel installaties het als standaardbrowser instellen, Spaces gebruiken, Profielen gebruiken, en dat er een crash is opgetreden. Alleen aantallen, zonder iets eraan dat naar jou terugwijst.
 - **Gedetailleerde statistieken en crashrapporten, alleen als je ze inschakelt.** De instelling is **Help de functies en prestaties van Phi te verbeteren** in Instellingen. Zet je die aan, dan verstuurt Phi gedetailleerde gebruiksstatistieken en crashrapporten, voorzien van je account-ID. Zet je die uit, dan wordt geen van beide verstuurd; alleen de anonieme tellingen hierboven gaan door.
+- **Je gesynchroniseerde gegevens, alleen als je Synchronisatie instelt.** Spaces, bladwijzers, vastgezette tabbladen, URL-regels, ondersteunde instellingen en de browsegeschiedenis van elk Profiel worden geüpload naar onze synchronisatiedienst, zodat je andere Macs ze kunnen ophalen. Ze worden eerst op je Mac versleuteld, met sleutels die alleen jouw Macs hebben, zodat de dienst kopieën bewaart die hij niet kan lezen. Zie [Synchronisatie](/nl/sync/).
 
 Crashrapporten gaan naar Sentry en worden 90 dagen bewaard. Een crashrapport kan een momentopname van het geheugen van het vastgelopen proces bevatten, waarin per ongeluk fragmenten van pagina-inhoud of door jou getypte tekst kunnen zitten. Dat is een van de redenen dat de schakelaar uitstaat totdat jij hem aanzet.
 

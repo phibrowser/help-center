@@ -42,6 +42,7 @@ Die Einzelheiten stehen in [Datenschutz & deine Daten](/de/privacy/).
 - [Layouts & Navigation](/de/layouts/), Modi, die Seitenleiste, Tabs, Split View und Tab-Gruppen.
 - [Spaces & Profile](/de/spaces/), getrennte Arbeitsbereiche, isolierte Profile und Regeln für das URL-Routing.
 - [Lesezeichen & angeheftete Tabs](/de/bookmarks/), Lesezeichen, die sich an Ort und Stelle als Tabs öffnen, und angeheftete Tabs.
+- [Synchronisierung](/de/sync/), Spaces, Lesezeichen, angeheftete Tabs, URL-Regeln und Einstellungen auf jedem Mac gleich halten.
 - [Designs & Erscheinungsbild](/de/themes/), Farbdesigns, Hell und Dunkel, und was das Design einfärbt.
 - [Lerne deinen Assistenten kennen](/de/ai/), Erinnerungen, das Gespräch mit ihm und Skills.
 - [Erinnerungen](/de/memory/), wie der Assistent aus deinem Surfen lernt und wie du die Kontrolle behältst.

@@ -42,6 +42,7 @@ Zie [Privacy & je gegevens](/nl/privacy/) voor de details.
 - [Lay-outs & navigatie](/nl/layouts/), de modi, de zijbalk, tabbladen, Split View en tabbladgroepen.
 - [Spaces & profielen](/nl/spaces/), aparte werkruimtes, geïsoleerde profielen en regels voor URL-routering.
 - [Bladwijzers & vastgezette tabbladen](/nl/bookmarks/), bladwijzers die ter plekke als tabblad openen, en vastgezette tabbladen.
+- [Synchronisatie](/nl/sync/), Spaces, bladwijzers, vastgezette tabbladen, URL-regels en instellingen gelijk houden op elke Mac.
 - [Thema's & weergave](/nl/themes/), kleurthema's, licht en donker, en wat het thema precies inkleurt.
 - [Maak kennis met je assistent](/nl/ai/), Geheugen, ermee praten en Skills.
 - [Geheugen](/nl/memory/), hoe de assistent van je browsen leert en hoe jij de controle houdt.

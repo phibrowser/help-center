@@ -42,6 +42,7 @@ See [Privacy & Your Data](/privacy/) for the details.
 - [Layouts & Navigation](/layouts/), modes, the sidebar, tabs, Split View, and Tab Groups.
 - [Spaces & Profiles](/spaces/), separate workspaces, isolated Profiles, and URL routing rules.
 - [Bookmarks & Pinned Tabs](/bookmarks/), bookmarks that open in place as tabs, and pinned tabs.
+- [Sync](/sync/), keeping Spaces, bookmarks, pinned tabs, URL Rules, and settings the same on every Mac.
 - [Themes & Appearance](/themes/), colour themes, light and dark, and what the theme colours.
 - [Meet your assistant](/ai/), Memory, talking to it, and Skills.
 - [Memory](/memory/), how the assistant learns from your browsing and how you stay in control.

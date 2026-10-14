@@ -1,5 +1,5 @@
 ---
-description: "Find quick answers about Phi Browser layouts, Spaces, Incognito Spaces, bookmarks, Split View, AI features, Phi Sentinel, Phi Link, pricing, privacy, and Time Machine Backups."
+description: "Find quick answers about Phi Browser layouts, Spaces, Incognito Spaces, bookmarks, Split View, sync, AI features, Phi Sentinel, Phi Link, pricing, privacy, and Time Machine Backups."
 ---
 
 # Frequently Asked Questions
@@ -162,6 +162,20 @@ Yes. When you chat from a Split View, Phi can use context from both pages; from 
 
 ::: details Are Tab Groups the same as bookmarks?
 No. Tab Groups organize pages you are actively working with; bookmarks store pages for later use.
+:::
+
+## Sync
+
+::: details Does Phi sync between Macs?
+Yes. Sign in to the same Phi account on each Mac and set it up in **Settings → Sync**. Spaces, Profiles, bookmarks, pinned tabs, URL Rules, supported settings, and each Profile's browsing history sync, encrypted on your Mac before upload. Passwords, cookies, autofill, open tabs, Memory, and Phi Chat conversations do not. See [Sync](/sync/) in the Guide.
+:::
+
+::: details What happens if I lose my recovery code?
+If you still have a Mac that is set up for sync, you can add new Macs by approving them from it. The code itself is shown once, is never sent to us, and cannot be re-sent, replaced, or reset. Lose the code and every Mac that is set up, and nothing can unlock the encrypted copy in your account.
+:::
+
+::: details Can I remove a Mac I no longer have?
+Not yet. Each Mac removes itself, from **Settings → Sync → Remove this device from sync…**. A Mac you have lost stays on the account and keeps receiving changes for as long as it is signed in. Removing a Mac also does not change the account's encryption keys, so what that Mac had already synced stays on it.
 :::
 
 ## AI features

@@ -1,5 +1,5 @@
 ---
-description: "Encuentra respuestas rápidas sobre los diseños de Phi Browser, los Espacios, los Espacios de incógnito, los marcadores, la Vista dividida, las funciones de IA, Phi Sentinel, Phi Link, los precios, la privacidad y las copias de seguridad de Time Machine."
+description: "Encuentra respuestas rápidas sobre los diseños de Phi Browser, los Espacios, los Espacios de incógnito, los marcadores, la Vista dividida, la sincronización, las funciones de IA, Phi Sentinel, Phi Link, los precios, la privacidad y las copias de seguridad de Time Machine."
 ---
 
 # Preguntas frecuentes
@@ -162,6 +162,20 @@ Sí. Cuando chateas desde una Vista dividida, Phi puede usar el contexto de amba
 
 ::: details ¿Son los Grupos de pestañas lo mismo que los marcadores?
 No. Los Grupos de pestañas organizan páginas con las que estás trabajando activamente; los marcadores guardan páginas para usarlas más adelante.
+:::
+
+## Sincronización
+
+::: details ¿Phi se sincroniza entre Mac?
+Sí. Inicia sesión con la misma cuenta de Phi en cada Mac y configúrala en **Configuración → Sincronización**. Se sincronizan los Espacios, los Perfiles, los marcadores, las pestañas fijadas, las Reglas de URL, los ajustes compatibles y el historial de navegación de cada Perfil, cifrados en tu Mac antes de subirse. Las contraseñas, las cookies, el autocompletar, las pestañas abiertas, la Memoria y las conversaciones de Phi Chat, no. Consulta [Sincronización](/es/sync/) en la Guía.
+:::
+
+::: details ¿Qué pasa si pierdo mi código de recuperación?
+Si todavía tienes un Mac configurado para la sincronización, puedes agregar Mac nuevos aprobándolos desde él. El código en sí se muestra una sola vez, nunca se nos envía y no se puede volver a enviar, reemplazar ni restablecer. Si pierdes el código y todos los Mac configurados, nada puede desbloquear la copia cifrada de tu cuenta.
+:::
+
+::: details ¿Puedo eliminar un Mac que ya no tengo?
+Todavía no. Cada Mac se elimina a sí mismo, desde **Configuración → Sincronización → Eliminar este dispositivo de la sincronización…**. Un Mac que has perdido sigue en la cuenta y sigue recibiendo cambios mientras tenga la sesión iniciada. Además, eliminar un Mac no cambia las claves de cifrado de la cuenta, así que lo que ese Mac ya había sincronizado se queda en él.
 :::
 
 ## Funciones de IA {#ai-features}

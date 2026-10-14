@@ -28,6 +28,7 @@ Local-first heißt nicht stumm, und du sollst das hier lesen können, statt es i
 
 - **Eine kleine anonyme Zählung, immer aktiv.** Phi zählt, wie viele Installationen es als Standardbrowser festgelegt haben, Spaces verwenden, Profile verwenden, und dass ein Absturz passiert ist. Nur Zählwerte, ohne etwas daran, das auf dich zurückweist.
 - **Detaillierte Statistiken und Absturzberichte, nur wenn du sie einschaltest.** Die Einstellung heißt **Hilf mit, Phis Funktionen und Leistung zu verbessern** in den Einstellungen. Schaltest du sie ein, sendet Phi detaillierte Nutzungsstatistiken und Absturzberichte, die deine Kontokennung tragen. Schaltest du sie aus, wird beides nicht gesendet; nur die anonymen Zählungen oben laufen weiter.
+- **Deine synchronisierten Daten, nur wenn du die Synchronisierung einrichtest.** Spaces, Lesezeichen, angeheftete Tabs, URL-Regeln, unterstützte Einstellungen und der Browserverlauf jedes Profils werden auf unseren Synchronisierungsdienst hochgeladen, damit deine anderen Macs sie abrufen können. Zuvor werden sie auf deinem Mac verschlüsselt, mit Schlüsseln, die nur deine Macs besitzen, sodass der Dienst Kopien speichert, die er nicht lesen kann. Siehe [Synchronisierung](/de/sync/).
 
 Absturzberichte gehen an Sentry und werden 90 Tage aufbewahrt. Ein Absturzbericht kann einen Speicherauszug des abgestürzten Prozesses enthalten, und darin können beiläufig Fragmente von Seiteninhalten oder von dir getipptem Text stecken. Das ist einer der Gründe, warum der Schalter aus ist, bis du ihn einschaltest.
 
