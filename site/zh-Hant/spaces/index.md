@@ -51,4 +51,4 @@ description: "了解 Phi Browser 如何用空間打造工作區、用設定檔�
 
 ## 空間與 Phi 其他部分的關係
 
-空間建立在[版面配置與導覽](/zh-Hant/layouts/)所描述的側邊欄工作區之上，各空間的顏色也使用與[主題與外觀](/zh-Hant/themes/)相同的調色盤。如果你正從 Arc 或 Dia 轉換過來，請見[改用 Phi](/zh-Hant/switching-to-phi/) 的遷移比較。由於設定檔隔離了 Cookie 和歷史記錄，助理能看見的內容，也以你目前瀏覽所在的設定檔為界。關於你的資料如何處理，請見[隱私權與你的資料](/zh-Hant/privacy/)。
+空間建立在[版面配置與導覽](/zh-Hant/layouts/)所描述的側邊欄工作區之上，各空間的顏色也使用與[主題與外觀](/zh-Hant/themes/)相同的調色盤。如果你正從 Arc 或 Dia 轉換過來，請見[改用 Phi](/zh-Hant/switching-to-phi/) 的遷移比較。由於設定檔隔離了 Cookie 和歷史記錄，助理能看見的內容，也以你目前瀏覽所在的設定檔為界。關於你的資料如何處理，請見[隱私權與你的資料](/zh-Hant/privacy/)。若要在多部 Mac 上保有相同的空間和設定檔，請見[同步](/zh-Hant/sync/)。

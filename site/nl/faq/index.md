@@ -1,5 +1,5 @@
 ---
-description: "Vind snelle antwoorden over lay-outs, Spaces, Incognito-Spaces, bladwijzers, Split View, AI-functies, Phi Sentinel, Phi Link, prijzen, privacy en Time Machine-back-ups in Phi Browser."
+description: "Vind snelle antwoorden over lay-outs, Spaces, Incognito-Spaces, bladwijzers, Split View, synchronisatie, AI-functies, Phi Sentinel, Phi Link, prijzen, privacy en Time Machine-back-ups in Phi Browser."
 ---
 
 # Veelgestelde vragen
@@ -162,6 +162,20 @@ Ja. Chat je vanuit een Split View, dan kan Phi context van beide pagina's gebrui
 
 ::: details Zijn Tabbladgroepen hetzelfde als bladwijzers?
 Nee. Tabbladgroepen ordenen pagina's waarmee je actief werkt; bladwijzers bewaren pagina's voor later gebruik.
+:::
+
+## Synchronisatie
+
+::: details Synchroniseert Phi tussen Macs?
+Ja. Log op elke Mac in met hetzelfde Phi-account en stel synchronisatie in via **Instellingen → Synchronisatie**. Spaces, Profielen, bladwijzers, vastgezette tabbladen, URL-regels, ondersteunde instellingen en de browsegeschiedenis van elk Profiel worden gesynchroniseerd, versleuteld op je Mac voordat ze worden geüpload. Wachtwoorden, cookies, automatisch invullen, open tabbladen, Geheugen en gesprekken in Phi Chat niet. Zie [Synchronisatie](/nl/sync/) in de gids.
+:::
+
+::: details Wat gebeurt er als ik mijn herstelcode kwijtraak?
+Heb je nog een Mac die is ingesteld voor synchronisatie, dan kun je nieuwe Macs toevoegen door ze vanaf die Mac goed te keuren. De code zelf wordt één keer getoond, wordt nooit naar ons verstuurd en kan niet opnieuw worden verstuurd, vervangen of gereset. Raak je de code én elke ingestelde Mac kwijt, dan kan niets de versleutelde kopie in je account ontgrendelen.
+:::
+
+::: details Kan ik een Mac verwijderen die ik niet meer heb?
+Nog niet. Elke Mac verwijdert zichzelf, via **Instellingen → Synchronisatie → Verwijder dit apparaat uit synchronisatie…**. Een Mac die je kwijt bent, blijft aan het account gekoppeld en blijft wijzigingen ontvangen zolang hij is ingelogd. Een Mac verwijderen verandert ook de versleutelingssleutels van het account niet, dus wat die Mac al had gesynchroniseerd, blijft erop staan.
 :::
 
 ## AI-functies {#ai-features}

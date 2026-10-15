@@ -42,6 +42,7 @@ Consultez [Confidentialité et vos données](/fr/privacy/) pour le détail.
 - [Dispositions et navigation](/fr/layouts/), les modes, la barre latérale, les onglets, la Split View et les groupes d'onglets.
 - [Espaces et Profils](/fr/spaces/), espaces de travail séparés, Profils isolés et règles de routage d'URL.
 - [Favoris et onglets épinglés](/fr/bookmarks/), des favoris qui s'ouvrent sur place comme des onglets, et les onglets épinglés.
+- [Synchronisation](/fr/sync/), garder les Espaces, les favoris, les onglets épinglés, les Règles d'URL et les réglages identiques sur chaque Mac.
 - [Thèmes et apparence](/fr/themes/), les thèmes de couleur, clair et sombre, et ce que le thème colore.
 - [Découvrez votre assistant](/fr/ai/), la Mémoire, la conversation avec lui et les Skills.
 - [Mémoire](/fr/memory/), comment l'assistant apprend de votre navigation et comment vous gardez la main.

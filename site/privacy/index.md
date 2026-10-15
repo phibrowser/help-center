@@ -28,6 +28,7 @@ Local-first does not mean silent, and you should read this here rather than disc
 
 - **A small anonymous count, always on.** Phi counts how many installations set it as the default browser, use Spaces, use Profiles, and that a crash happened. Counts only, with nothing attached that points back to you.
 - **Detailed statistics and crash reports, only if you switch them on.** The setting is **Help improve Phi's features and performance** in Settings. Turn it on and Phi sends detailed usage statistics and crash reports, carrying your account identifier. Turn it off and neither is sent; only the anonymous counts above continue.
+- **Your synced data, only if you set up Sync.** Spaces, bookmarks, pinned tabs, URL Rules, supported settings, and each Profile's browsing history are uploaded to our sync service so your other Macs can fetch them. They are encrypted on your Mac first, with keys only your Macs hold, so the service stores copies it cannot read. See [Sync](/sync/).
 
 Crash reports go to Sentry and are kept for 90 days. A crash report can include a memory snapshot of the process that failed, which may incidentally contain fragments of page content or text you had typed. That is one of the reasons the switch is off until you turn it on.
 

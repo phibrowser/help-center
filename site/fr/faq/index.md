@@ -1,5 +1,5 @@
 ---
-description: "Trouvez des réponses rapides sur les dispositions de Phi Browser, les Espaces, les Espaces de navigation privée, les favoris, la Split View, les fonctions d'IA, Phi Sentinel, Phi Link, les tarifs, la confidentialité et les Sauvegardes Time Machine."
+description: "Trouvez des réponses rapides sur les dispositions de Phi Browser, les Espaces, les Espaces de navigation privée, les favoris, la Split View, la synchronisation, les fonctions d'IA, Phi Sentinel, Phi Link, les tarifs, la confidentialité et les Sauvegardes Time Machine."
 ---
 
 # Questions fréquentes
@@ -162,6 +162,20 @@ Oui. Quand vous discutez depuis une Split View, Phi peut utiliser le contexte de
 
 ::: details Les Groupes d'onglets sont-ils la même chose que les favoris ?
 Non. Les Groupes d'onglets organisent les pages sur lesquelles vous travaillez activement ; les favoris conservent des pages pour un usage ultérieur.
+:::
+
+## Synchronisation
+
+::: details Phi se synchronise-t-il entre plusieurs Mac ?
+Oui. Connectez-vous au même compte Phi sur chaque Mac et configurez la synchronisation dans **Paramètres → Synchronisation**. Les Espaces, les Profils, les favoris, les onglets épinglés, les Règles d'URL, les réglages pris en charge et l'historique de navigation de chaque Profil sont synchronisés, chiffrés sur votre Mac avant l'envoi. Les mots de passe, les cookies, la saisie automatique, les onglets ouverts, la Mémoire et les conversations Phi Chat ne le sont pas. Voir [Synchronisation](/fr/sync/) dans le Guide.
+:::
+
+::: details Que se passe-t-il si je perds mon code de récupération ?
+Si vous avez encore un Mac configuré pour la synchronisation, vous pouvez ajouter de nouveaux Mac en les approuvant depuis celui-ci. Le code lui-même n'est affiché qu'une fois, ne nous est jamais envoyé, et ne peut être ni renvoyé, ni remplacé, ni réinitialisé. Si vous perdez le code et tous les Mac configurés, plus rien ne peut déverrouiller la copie chiffrée de votre compte.
+:::
+
+::: details Puis-je retirer un Mac que je n'ai plus ?
+Pas encore. Chaque Mac se retire lui-même, depuis **Paramètres → Synchronisation → Supprimer cet appareil de la synchronisation…**. Un Mac perdu reste sur le compte et continue de recevoir les modifications tant qu'il est connecté. Retirer un Mac ne change pas non plus les clés de chiffrement du compte ; ce que ce Mac avait déjà synchronisé y reste donc.
 :::
 
 ## Fonctions d'IA {#ai-features}

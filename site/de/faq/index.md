@@ -1,5 +1,5 @@
 ---
-description: "Schnelle Antworten zu Layouts, Spaces, Inkognito-Spaces, Lesezeichen, Split View, KI-Funktionen, Phi Sentinel, Phi Link, Preisen, Datenschutz und Time Machine-Backups in Phi Browser."
+description: "Schnelle Antworten zu Layouts, Spaces, Inkognito-Spaces, Lesezeichen, Split View, Synchronisierung, KI-Funktionen, Phi Sentinel, Phi Link, Preisen, Datenschutz und Time Machine-Backups in Phi Browser."
 ---
 
 # Häufig gestellte Fragen
@@ -162,6 +162,20 @@ Ja. Chattest du aus einer Split View, kann Phi Kontext von beiden Seiten nutzen;
 
 ::: details Sind Tab-Gruppen dasselbe wie Lesezeichen?
 Nein. Tab-Gruppen ordnen Seiten, mit denen du gerade aktiv arbeitest; Lesezeichen bewahren Seiten für die spätere Nutzung auf.
+:::
+
+## Synchronisierung
+
+::: details Synchronisiert Phi zwischen Macs?
+Ja. Melde dich auf jedem Mac beim selben Phi-Konto an und richte die Synchronisierung unter **Einstellungen → Synchronisierung** ein. Spaces, Profile, Lesezeichen, angeheftete Tabs, URL-Regeln, unterstützte Einstellungen und der Browserverlauf jedes Profils werden synchronisiert, vor dem Hochladen auf deinem Mac verschlüsselt. Passwörter, Cookies, Autofill-Daten, offene Tabs, Erinnerungen und Unterhaltungen in Phi Chat werden nicht synchronisiert. Siehe [Synchronisierung](/de/sync/) im Leitfaden.
+:::
+
+::: details Was passiert, wenn ich meinen Wiederherstellungscode verliere?
+Hast du noch einen Mac, der für die Synchronisierung eingerichtet ist, kannst du neue Macs hinzufügen, indem du sie dort genehmigst. Der Code selbst wird nur einmal angezeigt, nie an uns gesendet und lässt sich weder erneut senden noch ersetzen oder zurücksetzen. Verlierst du den Code und jeden eingerichteten Mac, kann nichts die verschlüsselte Kopie in deinem Konto entsperren.
+:::
+
+::: details Kann ich einen Mac entfernen, den ich nicht mehr habe?
+Noch nicht. Jeder Mac entfernt sich selbst, über **Einstellungen → Synchronisierung → Dieses Gerät aus der Synchronisierung entfernen…**. Ein verlorener Mac bleibt im Konto und empfängt weiter Änderungen, solange er angemeldet ist. Das Entfernen eines Mac ändert außerdem nicht die Verschlüsselungsschlüssel des Kontos, was dieser Mac bereits synchronisiert hatte, bleibt also auf ihm.
 :::
 
 ## KI-Funktionen {#ai-features}
