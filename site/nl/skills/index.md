@@ -23,7 +23,7 @@ Ingebouwde Skills zijn opt-in. Ze staan klaar om door te bladeren, en je voegt d
 
 ## De Skills-bibliotheek
 
-De pagina **Skills** is de plek waar je dit allemaal beheert. Open deze pagina via het menu in de **rechterbovenhoek van het nieuwe tabblad**, hetzelfde menu als voor je widgets, en kies **Skills**.
+De pagina **Skills** is de plek waar je dit allemaal beheert. Open deze pagina via het menu in de **rechterbovenhoek van het nieuwe tabblad**, hetzelfde ⋮-menu waarmee je **Widgets** opent, en kies **Skills**.
 
 De pagina opent met een uitgelichte selectie ingebouwde Skills, en daaronder blader je door de volledige set. Filter op **Alle**, **Ingebouwd**, **Zelfgemaakt** of **Ingeschakeld**, of zoek op naam. Het komt het dichtst bij een galerie van wat je assistent kan.
 

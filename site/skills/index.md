@@ -23,7 +23,7 @@ Built-in Skills are opt-in. They are there to browse, and you add the ones you w
 
 ## The Skills library
 
-The **Skills** page is where you manage all of this. Open it from the menu in the **top-right corner of the new tab**, the same menu that holds your widgets, and choose **Skills**.
+The **Skills** page is where you manage all of this. Open it from the menu in the **top-right corner of the new tab**, the same ⋮ menu that opens **Widgets**, and choose **Skills**.
 
 It opens with a spotlight of featured built-in Skills, and below that you can browse the full set. Filter by **All**, **Built-in**, **User created**, or **Enabled**, or search by name. It is the closest thing to a gallery of what your assistant can do.
 

@@ -23,7 +23,7 @@ Les Skills intégrées ne s'activent que si vous le décidez. Elles sont là pou
 
 ## La bibliothèque de Skills
 
-La page **Skills** est l'endroit où tout cela se gère. Ouvrez-la depuis le menu situé dans le **coin supérieur droit du nouvel onglet**, le même menu que vos widgets, et choisissez **Skills**.
+La page **Skills** est l'endroit où tout cela se gère. Ouvrez-la depuis le menu situé dans le **coin supérieur droit du nouvel onglet**, le même menu ⋮ qui ouvre **Widgets**, et choisissez **Skills**.
 
 Elle s'ouvre sur une sélection de Skills intégrées mises en avant, et en dessous vous pouvez parcourir l'ensemble. Filtrez par **Toutes**, **Intégrées**, **Créées par vous** ou **Activées**, ou cherchez par nom. C'est ce qui se rapproche le plus d'une galerie de ce que votre assistant sait faire.
 

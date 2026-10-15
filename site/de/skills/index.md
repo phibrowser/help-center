@@ -23,7 +23,7 @@ Integrierte Skills sind opt-in. Sie liegen zum Stöbern bereit, und du fügst de
 
 ## Die Skills-Bibliothek
 
-Auf der Seite **Skills** verwaltest du all das. Öffne sie über das Menü **oben rechts im neuen Tab**, dasselbe Menü, in dem auch deine Widgets stecken, und wähle **Skills**.
+Auf der Seite **Skills** verwaltest du all das. Öffne sie über das Menü **oben rechts im neuen Tab**, dasselbe Menü ⋮, über das du auch **Widgets** öffnest, und wähle **Skills**.
 
 Sie beginnt mit einer Auswahl hervorgehobener integrierter Skills, darunter kannst du den kompletten Satz durchstöbern. Filtere nach **Alle**, **Integriert**, **Selbst erstellt** oder **Aktiviert**, oder suche nach Namen. Es ist das, was einer Galerie der Fähigkeiten deines Assistenten am nächsten kommt.
 

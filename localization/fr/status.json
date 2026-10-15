@@ -2,7 +2,7 @@
   "locale": "fr",
   "sourceRevision": "9ccf028e9f87a3b2751de50a82bfe10de38cf252",
   "owners": {
-    "translation": "Phi i18n pipeline (agent run 2026-08-26); peek/kiosk sync by run 2026-08-31-peek-kiosk (docs/i18n-runs/2026-08-31-peek-kiosk); last-Space/auto-Peek sync by run 2026-09-02-last-space-auto-peek (docs/i18n-runs/2026-09-02-last-space-auto-peek); Advanced/Kiosk sync by AI run 2026-09-08-advanced-kiosk (docs/i18n-runs/2026-09-08-advanced-kiosk); Sync docs by AI run 2026-10-14-sync (docs/i18n-runs/2026-10-14-sync); Phi Chat and 2.13 assistant updates by AI run 2026-10-15-phi-chat (docs/i18n-runs/2026-10-15-phi-chat)",
+    "translation": "Phi i18n pipeline (agent run 2026-08-26); peek/kiosk sync by run 2026-08-31-peek-kiosk (docs/i18n-runs/2026-08-31-peek-kiosk); last-Space/auto-Peek sync by run 2026-09-02-last-space-auto-peek (docs/i18n-runs/2026-09-02-last-space-auto-peek); Advanced/Kiosk sync by AI run 2026-09-08-advanced-kiosk (docs/i18n-runs/2026-09-08-advanced-kiosk); Sync docs by AI run 2026-10-14-sync (docs/i18n-runs/2026-10-14-sync); new-tab Widgets sync by AI run 2026-10-14-new-tab-widgets (docs/i18n-runs/2026-10-14-new-tab-widgets); Phi Chat and 2.13 assistant updates by AI run 2026-10-15-phi-chat (docs/i18n-runs/2026-10-15-phi-chat)",
     "contentReview": "Alpha"
   },
   "pages": {
@@ -55,8 +55,8 @@
       "contentReview": "approved"
     },
     "new-tab/index.md": {
-      "translation": "approved",
-      "contentReview": "approved"
+      "translation": "complete",
+      "contentReview": "todo"
     },
     "peek/index.md": {
       "translation": "complete",

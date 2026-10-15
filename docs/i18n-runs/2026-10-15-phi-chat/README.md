@@ -24,6 +24,15 @@ all eight locales.
   global review gates were already `todo`; their evidence now also names
   this run.
 
+## Merge with main
+
+`main` gained the new-tab Widgets run (#26) after this run started. The
+merge conflicted on the Skills library sentence in `skills` (every locale)
+and on `sourceRevision` and the translation owner note in `status.json`.
+The Skills sentence takes #26's wording, which already drops "recent
+conversations"; the owner note keeps both runs. `sourceRevision` then moves
+to the merge commit, as the Widgets branch did with its own merge.
+
 ## Evidence sources
 
 `refs-phi-chat.json` holds 62 shipped strings, quoted verbatim on the
@@ -63,7 +72,7 @@ Translation completion is not content review. Every touched page is at
 
 ## Baseline note
 
-`sourceRevision` points at `9ccf028`, the English commit on this branch.
+`sourceRevision` points at the merge of `main` into this branch (see above).
 The repository squash-merges, so after merge that commit is unreachable
 from `main` and the staleness check is skipped with a warning. Bump every
 `sourceRevision` to the squash commit in a follow-up.

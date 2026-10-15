@@ -10,7 +10,7 @@ Phi replaces the standard new tab with a personalized home page. Every new tab g
 
 - **A greeting**, a personalized welcome that changes over time, drawn from what Phi knows about you. You can share it or chat with your assistant about it.
 - **One box to search or ask**, type to search the web, ask your assistant a question, or go straight to a URL, all from the same place. You can [attach a tab](/ai/#chat-with-tabs) or a file and bring Skills into the conversation.
-- **Quick access**, reach recent conversations, your widgets, and the [Skills](/skills/) library from the menu in the top-right corner.
+- **The ⋮ menu**, in the top-right corner, opens **Widgets** and the [Skills](/skills/) library, and holds **Restore hidden prompts**.
 
 Because the search box is wired to your assistant, the new tab is often the fastest place to start something, whether a search, a question, or a task, without opening a separate chat first. See [Meet your assistant](/ai/) for what it can do.
 
@@ -18,27 +18,57 @@ Because the search box is wired to your assistant, the new tab is often the fast
 
 Widgets are small cards you pin to the new tab: a clock, the weather, your most-visited sites, a focus timer, and more. You choose which ones appear and where they sit.
 
-### Built-in widgets
+### Opening the Widgets panel
 
-- **At a glance**, Clock (local time and date for any time zone), Weather (current conditions for a location), Quote of the day, and Image of the day (an ambient image drawn from your recent memory themes).
-- **Tools**, Pomodoro focus timer, Currency converter, and a Quick translator.
-- **Shortcuts**, Top sites (the sites you visit most) and GitHub stars (the star trend for a repo).
-- **Your activity**, Recent reads (pages you read recently), Hot posts (trending items from sources like Hacker News or Reddit), and a Daily report and Weekly report summarizing what you have been doing.
+Everything about widgets happens in the **Widgets** panel. Open it by choosing **Widgets** from the ⋮ menu in the top-right corner, or by scrolling to the bottom of the page and clicking **Custom**.
+
+The first time **Custom** is on screen, a hint points at it: **Create your own widgets here**. Once you click **Dismiss** or open the panel, it does not come back.
+
+### Suggested widgets
+
+Phi does not show a fixed catalogue to browse. Instead, the panel offers a few suggestions picked from what Phi remembers about you, each titled for you. They are drawn from a set of built-in widget types, for example a clock, the weather, a Pomodoro focus timer, a currency converter, your top sites, pages you read recently, an RSS feed, the stars and forks of a GitHub repository, and a daily or weekly report of what you have been doing.
+
+Click **Refresh** on a suggestion to swap it for a different one.
 
 ### Adding and arranging widgets
 
-Open the widget library from the **Widgets** menu in the top-right corner, or the **Custom** button that appears as you scroll. From there:
+1. Click **Install** on a suggestion. It joins your widgets in the panel straight away.
+2. Drag it onto the page to pin it, or choose **Add to page** from its menu.
 
-- **Drag a widget onto the page** to pin it.
-- Use a pinned widget's menu to **Move & Resize** it, **Refresh** its data, **Edit** it, or **Delete** it.
+While the panel is open you can rearrange the page: drag a pinned widget to move it, drag its edge to resize it, or drag it back onto the panel to take it off the page.
 
-Your layout is saved on your device, so the new tab looks the same each time you open it.
+A pinned widget's menu has:
+
+- **Refresh**, fetch its data again. Only widgets that load data have it.
+- **Edit**, describe a change and Phi rewrites the widget for you.
+- **Delete**, take the widget off the page. It stays in the panel, so you can add it again later.
+- **Delete ALL**, take every widget off the page, after you confirm.
+
+To get rid of a widget for good, choose **Delete** from its menu inside the panel. Phi asks you to confirm first.
+
+Your layout is saved in this browser on your device, so the new tab looks the same each time you open it. It does not sync to your other devices.
+
+### A suggested widget on an empty new tab
+
+If you have no widgets of your own yet, Phi may pin one for you, marked **Suggested**. It draws on your Memory, so a brand-new install may not show one for a while.
+
+A suggested widget you leave alone is replaced the next day by a different one. To decide what happens to it:
+
+- **Keep** makes it yours and stops the daily rotation. Moving, resizing, or editing it counts as keeping it too.
+- **✕** removes this widget. The card briefly shows **Removing**, with **Undo** if you change your mind. A different suggestion can still appear on a later day.
+- **Stop suggesting**, shown while the card says **Removing**, turns suggested widgets off.
+
+### Making your own widget
+
+Click **+** (**Add widget**) in the panel and describe the widget you want. Phi builds it and shows you the result before you save it. If you are not happy with a version, regenerate it. To change a widget later, choose **Edit** from its menu.
+
+Widgets are generated by AI and can occasionally be inaccurate.
 
 ### Widgets that know you
 
-The widget library suggests a few widgets to start with, based on what Phi remembers about you, and some widgets personalise their content the same way, for example by surfacing pages you actually return to. You can also ask your assistant to **create a custom widget** for you, or **refine** an existing one, right from a conversation.
+Suggestions, and some widgets' content, are personalised from what Phi remembers about you, for example by surfacing pages you actually return to.
 
-This builds on the same local-first memory as the rest of Phi: what widgets draw on stays on your device and under your control. See [Privacy & Your Data](/privacy/) for the details.
+This builds on the same local-first memory as the rest of Phi: what widgets draw on stays on your device and under your control. When a widget needs AI, for example to write your daily or weekly report, to make the image of the day, or to build or edit a widget, the content that step needs is sent to a model, as with any other AI request. See [Privacy & Your Data](/privacy/) for where that goes and how to keep more of it on your Mac.
 
 ## What's next
 
