@@ -72,10 +72,10 @@ Translation completion is not content review. Every touched page is at
 
 ## Baseline note
 
-`sourceRevision` points at the merge of `main` into this branch (see above).
-The repository squash-merges, so after merge that commit is unreachable
-from `main` and the staleness check is skipped with a warning. Bump every
-`sourceRevision` to the squash commit in a follow-up.
+During the PR, `sourceRevision` pointed at the merge of `main` into the
+branch (see above). The repository squash-merges, so that commit is
+unreachable from `main`; after #28 merged, every `sourceRevision` was moved
+to the squash commit `eb7f883`, so the staleness check runs again.
 
 ## Owner review list
 
