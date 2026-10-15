@@ -21,8 +21,11 @@ description: "認識 Phi Browser 實用的手勢、快速鍵、空間自訂、�
 | 從任何 App 開啟新的 Kiosk 視窗（需啟用此快速鍵） | Command (⌘) + Option (⌥) + N                                     |
 | 將 Kiosk 頁面或 Peek 以分頁開啟於空間中          | Command (⌘) + O                                                  |
 | 開啟 Kiosk 的空間選擇選單                        | Command (⌘) + Shift (⇧) + O                                      |
+| 從任何 App 開啟或隱藏 Phi Chat（需啟用此快速鍵） | Shift (⇧) 連按三次                                               |
 
 若要在任何 App 中使用 Kiosk 快速鍵，請在 **設定 → 導覽 → Kiosk** 中啟用。若要變更按鍵組合，請在 **設定 → 快速鍵 → 檔案** 中編輯 **新增 Kiosk 視窗**。
+
+Phi Chat 快速鍵預設為關閉。請在 **設定 → Phi 與 AI → Phi Sentinel** 中開啟 **用 Shift Shift Shift 召喚 Phi Chat**。這個快速鍵無法改成其他按鍵。請見 [Phi Chat](/zh-Hant/phi-chat/#opening-phi-chat)。
 
 你可以在 **設定 → 快速鍵 → Kiosk 與 Peek** 中變更用於在空間中開啟頁面的兩個快速鍵。詳情請見 [Kiosk](/zh-Hant/kiosk/) 和 [Peek 檢視](/zh-Hant/peek/)。
 
@@ -110,7 +113,7 @@ Control (⌃) + Tab 依照最近使用的順序切換，而不是視窗中分頁
 - 開啟助理時，預設會附加目前的分頁。如果該分頁屬於某個群組，Phi 可以附加整個群組。
 - 分頁群組或分割畫面可以作為一個單位附加。
 
-若想在不附加目前分頁的情況下開始對話，請在 **設定 → Phi AI → AI 側邊欄** 中關閉 **自動將目前分頁加入新對話作為上下文**。
+若想在不附加目前分頁的情況下開始對話，請在 **設定 → Phi 與 AI → AI 側邊欄** 中關閉 **自動將目前分頁加入新對話作為上下文**。
 
 當你使用 Phi Cloud 時，回答問題所需的內容會傳送給第三方模型供應商處理。使用私有 AI 時，內容會留在你的 Mac 上。詳情請參閱 [隱私權與你的資料](/zh-Hant/privacy/)。
 

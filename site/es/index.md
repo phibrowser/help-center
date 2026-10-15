@@ -37,6 +37,6 @@ features:
     link: /es/memory/
   - icon: ⚙️
     title: Automatización cuando la necesitas
-    details: Pide a Phi que actúe al momento, ejecuta tareas en segundo plano (Shadow Tasks) o deja que Phi Sentinel mantenga en marcha el trabajo programado.
+    details: Pide a Phi que actúe al momento, ejecuta tareas en segundo plano o deja que Phi Sentinel mantenga en marcha el trabajo programado.
     link: /es/automation/
 ---

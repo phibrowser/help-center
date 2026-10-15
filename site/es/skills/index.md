@@ -23,7 +23,7 @@ Las Habilidades integradas no vienen activadas de serie: están ahí para explor
 
 ## La biblioteca de Habilidades
 
-La página **Habilidades** es donde gestionas todo esto. Ábrela desde el menú de la **esquina superior derecha de la nueva pestaña**, el mismo menú donde están tus conversaciones recientes y los widgets, y elige **Habilidades**.
+La página **Habilidades** es donde gestionas todo esto. Ábrela desde el menú de la **esquina superior derecha de la nueva pestaña**, el mismo menú donde están tus widgets, y elige **Habilidades**.
 
 Se abre con una selección destacada de Habilidades integradas y, debajo, puedes explorar el conjunto completo. Filtra por **Todas**, **Integradas**, **Creadas por ti** o **Activadas**, o busca por nombre. Es lo más parecido a una galería de lo que tu asistente puede hacer.
 
@@ -37,9 +37,11 @@ Con cualquier Habilidad puedes:
 
 No estás limitado al conjunto integrado. Phi incluye un **Creador de habilidades** que te ayuda a diseñar y guardar una Habilidad nueva a partir de una descripción de la tarea, así que crear una es, en sí misma, una Habilidad que puedes pedir sin más. Tus propias Habilidades son instrucciones sencillas escritas con tus palabras, y puedes editarlas o eliminarlas en cualquier momento a medida que cambien tus rutinas.
 
-## Usar Habilidades en el chat
+## Usar Habilidades en el chat {#using-skills-in-chat}
 
 Las Habilidades se ejecutan a través de tu asistente, no por su cuenta. Una vez activada una Habilidad, el asistente puede recurrir a ella por sí mismo cuando tu petición encaja con lo que hace. También puedes traer una a la conversación tú mismo: elígela de la lista de Habilidades mientras escribes un mensaje, incluso desde el [cuadro de preguntas de la nueva pestaña](/es/new-tab/), cuando quieras dejar claro cuál usar.
+
+Cuando inicias una conversación nueva en la barra lateral, debajo del cuadro de mensaje se sugieren hasta cuatro de tus Habilidades activadas que encajan con la página actual, por ejemplo resumir un video en una página de video, o explicar o verificar los datos de una página web corriente. Phi las elige a partir de la dirección de la página, no con IA. Al hacer clic en una, se envía de inmediato, junto con lo que ya hubieras escrito.
 
 ## Una Habilidad puede actuar, así que dedícale la misma atención que a tus propios actos
 

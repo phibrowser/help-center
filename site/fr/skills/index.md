@@ -23,7 +23,7 @@ Les Skills intégrées ne s'activent que si vous le décidez. Elles sont là pou
 
 ## La bibliothèque de Skills
 
-La page **Skills** est l'endroit où tout cela se gère. Ouvrez-la depuis le menu situé dans le **coin supérieur droit du nouvel onglet**, le même menu que vos conversations récentes et vos widgets, et choisissez **Skills**.
+La page **Skills** est l'endroit où tout cela se gère. Ouvrez-la depuis le menu situé dans le **coin supérieur droit du nouvel onglet**, le même menu que vos widgets, et choisissez **Skills**.
 
 Elle s'ouvre sur une sélection de Skills intégrées mises en avant, et en dessous vous pouvez parcourir l'ensemble. Filtrez par **Toutes**, **Intégrées**, **Créées par vous** ou **Activées**, ou cherchez par nom. C'est ce qui se rapproche le plus d'une galerie de ce que votre assistant sait faire.
 
@@ -37,9 +37,11 @@ Pour chaque Skill, vous pouvez :
 
 Vous n'êtes pas limité à l'ensemble intégré. Phi inclut un **Créateur de Skills** qui vous aide à concevoir et enregistrer une nouvelle Skill à partir d'une description de la tâche : en créer une est donc en soi une Skill, que vous demandez comme les autres. Vos propres Skills sont des instructions ordinaires, rédigées avec vos mots, et vous pouvez les modifier ou les supprimer à tout moment quand vos routines changent.
 
-## Utiliser les Skills dans la conversation
+## Utiliser les Skills dans la conversation {#using-skills-in-chat}
 
 Les Skills s'exécutent à travers votre assistant, pas toutes seules. Une fois une Skill activée, l'assistant peut s'en saisir de lui-même quand votre demande correspond à ce qu'elle fait. Vous pouvez aussi en amener une vous-même dans une conversation : choisissez-la dans la liste des Skills pendant que vous rédigez un message, y compris depuis le [champ de requête du nouvel onglet](/fr/new-tab/), quand vous voulez être explicite sur celle à utiliser.
+
+Quand vous commencez une nouvelle conversation dans la barre latérale, jusqu'à quatre de vos Skills activées adaptées à la page actuelle sont suggérées sous le champ de message, par exemple résumer une vidéo sur une page vidéo, ou expliquer ou vérifier les faits d'une page web ordinaire. Phi les choisit d'après l'adresse de la page, pas avec l'IA. Cliquer sur l'une d'elles l'envoie immédiatement, avec ce que vous aviez déjà saisi.
 
 ## Une Skill peut agir, alors accordez-lui la même réflexion qu'à vos propres actions
 

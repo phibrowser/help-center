@@ -60,7 +60,7 @@ Si ya desinstalaste Phi, instálalo de nuevo e inicia sesión con la misma cuent
 
 ### Desactivar la IA {#turning-ai-off}
 
-Si quieres un navegador sin más, puedes desactivar todas las funciones de IA en **Configuración → Phi AI**. Desactivar la IA cierra tus conversaciones de IA y desconecta cualquier Conector de datos externos.
+Si quieres un navegador sin más, puedes desactivar todas las funciones de IA en **Configuración → Phi e IA**. Desactivar la IA cierra tus conversaciones de IA y desconecta cualquier Conector de datos externos.
 
 Tu Memoria no se elimina con este interruptor, y permanece en tu dispositivo. Si además quieres borrar lo que Phi recuerda, usa la opción de borrado de la página de Memoria; esa eliminación es permanente y no se puede deshacer.
 

@@ -60,7 +60,7 @@ Hast du Phi bereits deinstalliert, installiere es erneut und melde dich mit dems
 
 ### KI ausschalten {#turning-ai-off}
 
-Wenn du einen schlichten Browser willst, kannst du alle KI-Funktionen unter **Einstellungen → Phi AI** deaktivieren. Wird die KI ausgeschaltet, werden deine KI-Konversationen geschlossen und alle externen Datenverbindungen (External Data Connectors) getrennt.
+Wenn du einen schlichten Browser willst, kannst du alle KI-Funktionen unter **Einstellungen → Phi & KI** deaktivieren. Wird die KI ausgeschaltet, werden deine KI-Konversationen geschlossen und alle externen Datenverbindungen (External Data Connectors) getrennt.
 
 Deine Erinnerungen werden durch diesen Schalter nicht gelöscht und bleiben auf deinem Gerät. Willst du auch löschen, was Phi sich merkt, verwende die Löschoption auf der Seite „Erinnerungen“; diese Löschung ist endgültig und lässt sich nicht rückgängig machen.
 

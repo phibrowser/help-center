@@ -1,8 +1,8 @@
 {
   "locale": "zh-Hans",
-  "sourceRevision": "b79db2bbf8a420810d25c37821528dadc65411eb",
+  "sourceRevision": "9ccf028e9f87a3b2751de50a82bfe10de38cf252",
   "owners": {
-    "translation": "AI re-translation run 2026-08-28-zh-hans (docs/i18n-runs/2026-08-28-zh-hans); human translation owner to be assigned; peek/kiosk sync by run 2026-08-31-peek-kiosk (docs/i18n-runs/2026-08-31-peek-kiosk); last-Space/auto-Peek sync by run 2026-09-02-last-space-auto-peek (docs/i18n-runs/2026-09-02-last-space-auto-peek); Advanced/Kiosk sync by AI run 2026-09-08-advanced-kiosk (docs/i18n-runs/2026-09-08-advanced-kiosk); Sync docs by AI run 2026-10-14-sync (docs/i18n-runs/2026-10-14-sync)",
+    "translation": "AI re-translation run 2026-08-28-zh-hans (docs/i18n-runs/2026-08-28-zh-hans); human translation owner to be assigned; peek/kiosk sync by run 2026-08-31-peek-kiosk (docs/i18n-runs/2026-08-31-peek-kiosk); last-Space/auto-Peek sync by run 2026-09-02-last-space-auto-peek (docs/i18n-runs/2026-09-02-last-space-auto-peek); Advanced/Kiosk sync by AI run 2026-09-08-advanced-kiosk (docs/i18n-runs/2026-09-08-advanced-kiosk); Sync docs by AI run 2026-10-14-sync (docs/i18n-runs/2026-10-14-sync); Phi Chat and 2.13 assistant updates by AI run 2026-10-15-phi-chat (docs/i18n-runs/2026-10-15-phi-chat)",
     "contentReview": ""
   },
   "pages": {
@@ -66,6 +66,10 @@
       "translation": "complete",
       "contentReview": "todo"
     },
+    "phi-chat/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
     "phi-cli/index.md": {
       "translation": "complete",
       "contentReview": "todo"
@@ -119,17 +123,17 @@
     "productTerminology": {
       "status": "todo",
       "owner": "",
-      "evidence": "Review reopened for Advanced settings and Kiosk shortcuts; see docs/i18n-runs/2026-09-08-advanced-kiosk. Prior evidence covers earlier content only."
+      "evidence": "Review reopened for Advanced settings and Kiosk shortcuts; see docs/i18n-runs/2026-09-08-advanced-kiosk. Prior evidence covers earlier content only. Review reopened for the Phi Chat vocabulary; see docs/i18n-runs/2026-10-15-phi-chat."
     },
     "privacyLegal": {
       "status": "todo",
       "owner": "",
-      "evidence": ""
+      "evidence": "Review reopened for the new Phi Chat page, which repeats the model-provider disclosure; see docs/i18n-runs/2026-10-15-phi-chat."
     },
     "searchQa": {
       "status": "todo",
       "owner": "",
-      "evidence": "Review reopened for Advanced settings and Kiosk shortcuts; see docs/i18n-runs/2026-09-08-advanced-kiosk. Prior evidence covers earlier content only."
+      "evidence": "Review reopened for Advanced settings and Kiosk shortcuts; see docs/i18n-runs/2026-09-08-advanced-kiosk. Prior evidence covers earlier content only. Review reopened for the new Phi Chat page; see docs/i18n-runs/2026-10-15-phi-chat."
     }
   }
 }

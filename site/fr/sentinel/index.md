@@ -4,13 +4,13 @@ description: "Comprenez Phi Sentinel, le compagnon de la barre des menus macOS q
 
 # Phi Sentinel
 
-Phi Sentinel est une petite application compagnon qui vit dans la **barre des menus** de macOS, à part du navigateur. Cette séparation est délibérée : le navigateur reste léger pendant qu'une couche discrète en arrière-plan continue de travailler même quand aucune fenêtre n'est ouverte. Elle remplit deux missions principales : maintenir votre automatisation en marche et héberger l'**IA privée**.
+Phi Sentinel est une petite application compagnon qui vit dans la **barre des menus** de macOS, à part du navigateur. Cette séparation est délibérée : le navigateur reste léger pendant qu'une couche discrète en arrière-plan continue de travailler même quand aucune fenêtre n'est ouverte. Elle remplit deux missions principales : maintenir votre automatisation en marche et héberger l'**IA privée**. Son menu propose aussi **Ouvrir Phi Chat**, un accès rapide à [Phi Chat](/fr/phi-chat/) depuis n'importe où.
 
 ## Maintenir l'automatisation en marche
 
 Une partie de ce que fait Phi est censée survivre au moment où vous l'avez demandé. Les [tâches planifiées](/fr/automation/#scheduled-tasks) doivent continuer à s'exécuter selon leur propre planification même après la fermeture de la fenêtre du navigateur, et c'est à cela que sert Phi Sentinel. Il exécute ces tâches, conserve l'historique de vos tâches d'IA et laisse l'automatisation continuer en arrière-plan : une vérification de prix toutes les quelques heures ou une page que vous surveillez continue, qu'une fenêtre de navigateur soit ouverte ou non.
 
-## IA privée
+## IA privée {#private-ai}
 
 Normalement, les tâches d'IA de Phi sont traitées par **Phi Cloud**. L'**IA privée** est l'option pour en exécuter certaines **sur votre Mac à la place**, ou via un fournisseur de modèles que vous choisissez, pour que ce travail ne quitte jamais votre machine.
 

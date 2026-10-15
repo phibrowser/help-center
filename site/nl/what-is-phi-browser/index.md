@@ -21,7 +21,7 @@ Nieuw met Phi? Begin bij [Aan de slag](/nl/get-started/) om het te installeren e
 Phi's AI is ingebouwd en staat aan zodra je bent ingelogd. In plaats van één vage "AI" bestaat hij uit vier onderdelen die elk iets anders doen:
 
 - **[Geheugen](/nl/memory/)** bouwt stilletjes context op uit hoe je browst, zodat de assistent je begrijpt zonder dat je hem iets hoeft aan te leren.
-- **De assistent** is een gesprekspartner die je zelf een naam geeft, aan wie je vragen stelt en aan wie je werk uit handen geeft.
+- **De assistent** is een gesprekspartner die je zelf een naam geeft, aan wie je vragen stelt en aan wie je werk uit handen geeft, in de zijbalk of in [Phi Chat](/nl/phi-chat/), zijn eigen venster.
 - **Agentische taken** doen daadwerkelijk dingen voor je, van eenmalige acties tot achtergrondwerk en gepland werk dat zelfstandig draait.
 - **[Browser Skills](/nl/skills/)** zijn herbruikbare workflows die de assistent op verzoek kan uitvoeren.
 
@@ -45,6 +45,7 @@ Zie [Privacy & je gegevens](/nl/privacy/) voor de details.
 - [Synchronisatie](/nl/sync/), Spaces, bladwijzers, vastgezette tabbladen, URL-regels en instellingen gelijk houden op elke Mac.
 - [Thema's & weergave](/nl/themes/), kleurthema's, licht en donker, en wat het thema precies inkleurt.
 - [Maak kennis met je assistent](/nl/ai/), Geheugen, ermee praten en Skills.
+- [Phi Chat](/nl/phi-chat/), de assistent in een eigen venster, met al je gesprekken.
 - [Geheugen](/nl/memory/), hoe de assistent van je browsen leert en hoe jij de controle houdt.
 - [Browser Skills](/nl/skills/), herbruikbare workflows: blader door de ingebouwde set en maak je eigen Skills.
 - [De phi-browser-skill](/nl/phi-browser-skill/), een externe AI-agent Phi laten besturen.

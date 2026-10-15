@@ -185,7 +185,7 @@ Ja. Phi wordt geleverd met AI-functies die standaard aanstaan, omdat ze een kern
 :::
 
 ::: details Kan ik alle AI-functies uitzetten?
-Ja, via **Instellingen → Phi AI**. AI uitzetten sluit je AI-gesprekken en verbreekt de verbinding met eventuele Externe gegevensconnectors. Je Geheugen blijft op je apparaat staan; wil je dat ook wissen, gebruik dan de wisoptie op de Geheugen-pagina. Dat verwijderen is definitief.
+Ja, via **Instellingen → Phi & AI**. AI uitzetten sluit je AI-gesprekken en verbreekt de verbinding met eventuele Externe gegevensconnectors. Je Geheugen blijft op je apparaat staan; wil je dat ook wissen, gebruik dan de wisoptie op de Geheugen-pagina. Dat verwijderen is definitief.
 :::
 
 ::: details Wat zijn de belangrijkste AI-onderdelen?
@@ -221,7 +221,23 @@ De metgezel waarmee je rechtstreeks in de browser werkt. Je geeft hem tijdens he
 :::
 
 ::: details Hoe praat ik met de assistent?
-Klik op de knop **Chat**, die in de modus Prestaties onder in de zijbalk zit en in Gebalanceerd en Comfortabel rechtsboven in de paginakop. Of selecteer tekst op een pagina, klik met de rechtermuisknop en kies **Vraag [je assistent] naar ...** om er in context over te vragen.
+Klik op de knop **Chat**, die in de modus Prestaties onder in de zijbalk zit en in Gebalanceerd en Comfortabel rechtsboven in de paginakop. Of selecteer tekst op een pagina, klik met de rechtermuisknop en kies **Vraag [je assistent] naar ...** om er in context over te vragen. Je kunt ook met hem praten in [Phi Chat](/nl/phi-chat/), zijn eigen venster.
+:::
+
+::: details Wat is Phi Chat?
+Je assistent in een eigen venster, met een eigen symbool in het Dock. Het heeft dezelfde gesprekken als de zijbalk, en het is de enige plek die gesprekken uit elk Profiel toont, met zoeken, categorieën en de gesprekken waarin je taken rapporteren. Open het via het menubalksymbool van Phi Sentinel, met **Openen in Phi Chat** in de zijbalk, of door drie keer op Shift te drukken zodra je dat hebt ingeschakeld in **Instellingen → Phi & AI**. Zie [Phi Chat](/nl/phi-chat/).
+:::
+
+::: details Waarom zie ik een gesprek niet in de zijbalk?
+De zijbalk toont alleen gesprekken uit het Profiel waarin je zit, plus gesprekken die niet bij een Profiel horen. Gesprekken uit je andere Profielen staan in [Phi Chat](/nl/phi-chat/#conversations-from-every-profile), dat ze allemaal toont.
+:::
+
+::: details Waar komen de resultaten van taken terecht?
+In het gesprek waarin je om de taak vroeg, als antwoord van de assistent. Het gesprek wordt als ongelezen gemarkeerd, en de weergave **Taken** van Phi Chat verzamelt ze. Zie [Automatisering & Phi Link](/nl/automation/#tasks-report-back-to-their-conversation).
+:::
+
+::: details Wat gebeurt er als ik de gebruikslimiet bereik?
+Een banner boven het berichtveld meldt het, en als er een vast tijdstip is, zegt hij wanneer je verder kunt. Tot dan kun je blijven typen, maar niet versturen. Zie [Gebruikslimieten](/nl/ai/#usage-limits).
 :::
 
 ::: details Wat kan de assistent doen?
@@ -265,7 +281,7 @@ Op twee manieren: gebruik de officiële Phi Link-bot, de makkelijkste route omda
 :::
 
 ::: details Wat kan Phi Link doen?
-Chatten met je assistent, meldingen krijgen wanneer taken slagen of mislukken, en workflows voortzetten buiten de browser.
+Chatten met je assistent, de resultaten van voltooide taakuitvoeringen ontvangen, en workflows voortzetten buiten de browser.
 :::
 
 ::: details Gebruikt Phi Link dezelfde assistent-identiteit?

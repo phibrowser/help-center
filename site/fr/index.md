@@ -37,6 +37,6 @@ features:
     link: /fr/memory/
   - icon: ⚙️
     title: L'automatisation quand vous en avez besoin
-    details: Demandez à Phi d'agir maintenant, lancez des Shadow Tasks en arrière-plan, ou confiez le travail planifié à Phi Sentinel.
+    details: Demandez à Phi d'agir maintenant, lancez des tâches en arrière-plan, ou confiez le travail planifié à Phi Sentinel.
     link: /fr/automation/
 ---

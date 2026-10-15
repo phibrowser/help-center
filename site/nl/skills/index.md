@@ -23,7 +23,7 @@ Ingebouwde Skills zijn opt-in. Ze staan klaar om door te bladeren, en je voegt d
 
 ## De Skills-bibliotheek
 
-De pagina **Skills** is de plek waar je dit allemaal beheert. Open deze pagina via het menu in de **rechterbovenhoek van het nieuwe tabblad**, hetzelfde menu als voor je recente gesprekken en widgets, en kies **Skills**.
+De pagina **Skills** is de plek waar je dit allemaal beheert. Open deze pagina via het menu in de **rechterbovenhoek van het nieuwe tabblad**, hetzelfde menu als voor je widgets, en kies **Skills**.
 
 De pagina opent met een uitgelichte selectie ingebouwde Skills, en daaronder blader je door de volledige set. Filter op **Alle**, **Ingebouwd**, **Zelfgemaakt** of **Ingeschakeld**, of zoek op naam. Het komt het dichtst bij een galerie van wat je assistent kan.
 
@@ -37,9 +37,11 @@ Voor elke Skill kun je:
 
 Je bent niet beperkt tot de ingebouwde set. Phi bevat een **Skill-creator** die je helpt een nieuwe Skill te ontwerpen en op te slaan op basis van een beschrijving van de taak; een Skill maken is dus zelf iets wat je de assistent kunt vragen. Je eigen Skills zijn gewone instructies in je eigen woorden, en je kunt ze op elk moment bewerken of verwijderen wanneer je routines veranderen.
 
-## Skills gebruiken in de chat
+## Skills gebruiken in de chat {#using-skills-in-chat}
 
 Skills draaien via je assistent, niet op zichzelf. Zodra een Skill is ingeschakeld, kan de assistent er zelf naar grijpen wanneer je verzoek past bij wat de Skill doet. Je kunt er ook zelf een in het gesprek halen: kies hem uit de Skills-lijst terwijl je een bericht schrijft, ook vanuit het [vraagveld van het nieuwe tabblad](/nl/new-tab/), wanneer je expliciet wilt zijn over welke Skill je gebruikt.
+
+Begin je een nieuw gesprek in de zijbalk, dan worden onder het berichtveld maximaal vier van je ingeschakelde Skills voorgesteld die bij de huidige pagina passen, bijvoorbeeld een video samenvatten op een videopagina, of een gewone webpagina uitleggen of op feiten controleren. Phi kiest ze op basis van het adres van de pagina, niet met AI. Klik je op een Skill, dan wordt hij meteen verstuurd, samen met wat je al had getypt.
 
 ## Een Skill kan handelen, dus denk er net zo over na als over wat je zelf doet
 

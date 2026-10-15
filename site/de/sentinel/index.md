@@ -4,13 +4,13 @@ description: "Phi Sentinel verstehen: der Begleiter in der macOS-Menüleiste, de
 
 # Phi Sentinel
 
-Phi Sentinel ist eine kleine Begleit-App, die in der **Menüleiste** von macOS lebt, getrennt vom Browser. Diese Trennung ist Absicht: Der Browser bleibt leicht, während eine stille Hintergrundschicht weiterarbeitet, auch wenn kein Fenster offen ist. Phi Sentinel hat zwei Hauptaufgaben: Es hält deine Automatisierung am Laufen, und es beherbergt **Private KI**.
+Phi Sentinel ist eine kleine Begleit-App, die in der **Menüleiste** von macOS lebt, getrennt vom Browser. Diese Trennung ist Absicht: Der Browser bleibt leicht, während eine stille Hintergrundschicht weiterarbeitet, auch wenn kein Fenster offen ist. Phi Sentinel hat zwei Hauptaufgaben: Es hält deine Automatisierung am Laufen, und es beherbergt **Private KI**. Sein Menü enthält außerdem **Phi Chat öffnen**, einen schnellen Weg zu [Phi Chat](/de/phi-chat/), wo immer du gerade bist.
 
 ## Automatisierung am Laufen halten
 
 Manches von dem, was Phi tut, soll den Moment überdauern, in dem du darum gebeten hast. [Geplante Aufgaben](/de/automation/#scheduled-tasks) müssen nach ihrem eigenen Zeitplan weiterlaufen, auch nachdem du das Browserfenster geschlossen hast, und genau dafür ist Phi Sentinel da. Es führt diese Aufgaben aus, bewahrt den Verlauf deiner KI-Aufgaben auf und lässt Automatisierung im Hintergrund weiterlaufen, sodass eine Preisprüfung alle paar Stunden oder eine Seite, die du beobachtest, weitergeht, ob ein Browserfenster offen ist oder nicht.
 
-## Private KI
+## Private KI {#private-ai}
 
 Normalerweise erledigt **Phi Cloud** die KI-Aufgaben von Phi. **Private KI** ist die Option, einige davon **stattdessen auf deinem Mac** laufen zu lassen, oder über einen Modellanbieter deiner Wahl, sodass diese Arbeit deinen Rechner nie verlässt.
 

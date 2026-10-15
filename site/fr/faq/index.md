@@ -185,7 +185,7 @@ Oui. Phi est livré avec les fonctions d'IA activées par défaut, parce qu'elle
 :::
 
 ::: details Puis-je désactiver toutes les fonctions d'IA ?
-Oui, dans **Paramètres → Phi AI**. Désactiver l'IA ferme vos conversations d'IA et déconnecte tout Connecteur de données externes. Votre Mémoire reste sur votre appareil ; pour l'effacer aussi, utilisez l'option d'effacement de la page Mémoire, et cette suppression est définitive.
+Oui, dans **Paramètres → Phi et IA**. Désactiver l'IA ferme vos conversations d'IA et déconnecte tout Connecteur de données externes. Votre Mémoire reste sur votre appareil ; pour l'effacer aussi, utilisez l'option d'effacement de la page Mémoire, et cette suppression est définitive.
 :::
 
 ::: details Quels sont les principaux composants d'IA ?
@@ -221,7 +221,23 @@ Le compagnon avec lequel vous interagissez directement dans le navigateur. Vous 
 :::
 
 ::: details Comment parler à l'assistant ?
-Cliquez sur le bouton **Chat**, situé en bas de la barre latérale en mode Performance et en haut à droite de l'en-tête de page en modes Équilibré et Confortable. Vous pouvez aussi sélectionner du texte sur une page, faire un clic droit et choisir **Demander à [votre assistant] à propos de…** pour l'interroger en contexte.
+Cliquez sur le bouton **Chat**, situé en bas de la barre latérale en mode Performance et en haut à droite de l'en-tête de page en modes Équilibré et Confortable. Vous pouvez aussi sélectionner du texte sur une page, faire un clic droit et choisir **Demander à [votre assistant] à propos de…** pour l'interroger en contexte. Vous pouvez aussi lui parler dans [Phi Chat](/fr/phi-chat/), sa propre fenêtre.
+:::
+
+::: details Qu'est-ce que Phi Chat ?
+Votre assistant dans une fenêtre à lui, avec sa propre icône dans le Dock. Il a les mêmes conversations que la barre latérale, et c'est le seul endroit qui affiche les conversations de tous vos Profils, avec la recherche, les catégories et les conversations dans lesquelles vos tâches rendent compte. Ouvrez-le depuis l'icône de Phi Sentinel dans la barre des menus, avec **Ouvrir dans Phi Chat** dans la barre latérale, ou en appuyant trois fois sur Maj (⇧) une fois cette option activée dans **Paramètres → Phi et IA**. Consultez [Phi Chat](/fr/phi-chat/).
+:::
+
+::: details Pourquoi une conversation n'apparaît-elle pas dans la barre latérale ?
+La barre latérale n'affiche que les conversations du Profil dans lequel vous êtes, plus celles qui n'appartiennent à aucun Profil. Les conversations de vos autres Profils se trouvent dans [Phi Chat](/fr/phi-chat/#conversations-from-every-profile), qui les affiche toutes.
+:::
+
+::: details Où vont les résultats des tâches ?
+Dans la conversation où vous avez demandé la tâche, sous forme de réponse de l'assistant. La conversation est marquée comme non lue, et la vue **Tâches** de Phi Chat rassemble ces conversations. Consultez [Automatisation et Phi Link](/fr/automation/#tasks-report-back-to-their-conversation).
+:::
+
+::: details Que se passe-t-il quand j'atteins la limite d'utilisation ?
+Un bandeau au-dessus du champ de message vous prévient et, quand une heure précise est prévue, vous indique quand vous pourrez continuer. D'ici là, vous pouvez continuer à écrire, mais pas envoyer. Consultez [Limites d'utilisation](/fr/ai/#usage-limits).
 :::
 
 ::: details Que peut faire l'assistant ?
@@ -265,7 +281,7 @@ Deux possibilités : utiliser le bot Phi Link officiel, la voie la plus rapide 
 :::
 
 ::: details Que peut faire Phi Link ?
-Discuter avec votre assistant, être averti quand des tâches réussissent ou échouent, et poursuivre vos flux de travail loin du navigateur.
+Discuter avec votre assistant, recevoir les résultats des exécutions de tâches terminées, et poursuivre vos flux de travail loin du navigateur.
 :::
 
 ::: details Phi Link utilise-t-il la même identité d'assistant ?

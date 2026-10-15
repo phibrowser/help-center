@@ -37,6 +37,6 @@ features:
     link: /zh-Hant/memory/
   - icon: ⚙️
     title: 需要時就能用的自動化
-    details: 你可以請 Phi 立即採取行動、讓背景任務在幕後執行，或交給 Phi Sentinel 讓排程工作持續推進。
+    details: 你可以請 Phi 立即採取行動、讓任務在背景執行，或交給 Phi Sentinel 讓排程工作持續推進。
     link: /zh-Hant/automation/
 ---

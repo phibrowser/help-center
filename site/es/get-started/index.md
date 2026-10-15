@@ -29,14 +29,14 @@ La primera vez que abres Phi, la configuración inicial te ayuda a dejarlo todo 
 - **Elige un modo de diseño**: Rendimiento, Equilibrado o Cómodo. Puedes cambiarlo en cualquier momento, así que elige el que más se acerque a cómo navegas hoy. Consulta [Diseños y navegación](/es/layouts/) para ver qué significa cada modo.
 - **Conoce a tu asistente**: ya dentro del navegador, un aviso en la parte superior de la nueva pestaña te invita a conocerlo. Dale un nombre y él mismo genera un avatar a juego, de modo que tiene identidad propia en lugar de sentirse como un chatbot genérico. También puedes saltarte este paso y volver a él más tarde.
 - **Inicia sesión o explora sin cuenta**: al iniciar sesión con una cuenta de Phi se activan las funciones de IA y la Memoria del navegador. También puedes elegir **Explora Phi sin iniciar sesión** e iniciar sesión más tarde; consulta [Iniciar sesión más tarde](#signing-in-later).
-- **La IA viene activada de forma predeterminada**: una vez que inicias sesión, las funciones de IA de Phi están activadas de serie. Puedes desactivarlas más tarde en **Configuración → Phi AI** si prefieres un navegador convencional.
+- **La IA viene activada de forma predeterminada**: una vez que inicias sesión, las funciones de IA de Phi están activadas de serie. Puedes desactivarlas más tarde en **Configuración → Phi e IA** si prefieres un navegador convencional.
 
 ## Iniciar sesión más tarde {#signing-in-later}
 
 Si elegiste **Explora Phi sin iniciar sesión**, puedes navegar con normalidad, pero las funciones de IA de Phi y la Memoria del navegador permanecen desactivadas hasta que inicies sesión. Puedes iniciar sesión cuando quieras desde cualquiera de estos lugares:
 
 - **Configuración → Invitado**: ahí verás que estás usando Phi sin iniciar sesión, junto con un botón para iniciar sesión.
-- **Configuración → Phi AI**: ahí un aviso indica "Inicia sesión para usar las funciones de IA".
+- **Configuración → Phi e IA**: ahí un aviso indica "Inicia sesión para usar las funciones de IA".
 - **Cualquier función de IA**: ábrela y Phi muestra "Inicia sesión para usar la IA de Phi" con un botón que abre el inicio de sesión.
 
 Cuando inicias sesión, tus pestañas fijadas y marcadores te acompañan.

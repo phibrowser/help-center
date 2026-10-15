@@ -21,8 +21,11 @@ description: "了解 Phi Browser 中实用的手势、快捷键、空间自定�
 | 在任何应用中新建 Kiosk 窗口（需先在设置中启用快捷键） | Command (⌘) + Option (⌥) + N                                     |
 | 将 Kiosk 页面或 Peek 作为标签页在空间中打开           | Command (⌘) + O                                                  |
 | 打开 Kiosk 空间选择菜单                               | Command (⌘) + Shift (⇧) + O                                      |
+| 在任何应用中打开或隐藏 Phi Chat（需先启用快捷键）     | 连按三次 Shift (⇧)                                               |
 
 在**设置 → 导航 → Kiosk**下启用 Kiosk 快捷键，让它在任何应用中都可用。要修改按键组合，在**设置 → 快捷键 → 文件**下修改**新建 Kiosk 窗口**。
+
+Phi Chat 快捷键默认关闭。在**设置 → Phi 与 AI → Phi Sentinel** 下打开**用 Shift Shift Shift 召唤 Phi Chat** 即可启用。它不能改成其他按键。见 [Phi Chat](/zh-Hans/phi-chat/#opening-phi-chat)。
 
 在**设置 → 快捷键 → Kiosk 与 Peek**下修改两个用于在空间中打开页面的快捷键。详情见 [Kiosk](/zh-Hans/kiosk/) 和 [Peek 视图](/zh-Hans/peek/)。
 

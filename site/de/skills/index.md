@@ -23,7 +23,7 @@ Integrierte Skills sind opt-in. Sie liegen zum Stöbern bereit, und du fügst de
 
 ## Die Skills-Bibliothek
 
-Auf der Seite **Skills** verwaltest du all das. Öffne sie über das Menü **oben rechts im neuen Tab**, dasselbe Menü, in dem auch deine letzten Unterhaltungen und die Widgets stecken, und wähle **Skills**.
+Auf der Seite **Skills** verwaltest du all das. Öffne sie über das Menü **oben rechts im neuen Tab**, dasselbe Menü, in dem auch deine Widgets stecken, und wähle **Skills**.
 
 Sie beginnt mit einer Auswahl hervorgehobener integrierter Skills, darunter kannst du den kompletten Satz durchstöbern. Filtere nach **Alle**, **Integriert**, **Selbst erstellt** oder **Aktiviert**, oder suche nach Namen. Es ist das, was einer Galerie der Fähigkeiten deines Assistenten am nächsten kommt.
 
@@ -37,9 +37,11 @@ Bei jedem Skill kannst du:
 
 Du bist nicht auf den integrierten Satz beschränkt. Phi bringt einen **Skill-Ersteller** mit, der dir hilft, aus einer Beschreibung der Aufgabe einen neuen Skill zu entwerfen und zu speichern; einen Skill anzulegen ist damit selbst ein Skill, um den du einfach bitten kannst. Deine eigenen Skills sind schlichte Anweisungen in deinen eigenen Worten, und du kannst sie jederzeit bearbeiten oder löschen, wenn sich deine Routinen ändern.
 
-## Skills im Chat verwenden
+## Skills im Chat verwenden {#using-skills-in-chat}
 
 Skills laufen über deinen Assistenten, nicht für sich allein. Sobald ein Skill aktiviert ist, kann der Assistent von selbst zu ihm greifen, wenn deine Anfrage zu dem passt, was er tut. Du kannst einen Skill auch selbst in eine Unterhaltung holen: Wähle ihn aus der Skills-Liste, während du eine Nachricht schreibst, auch im [Fragefeld des neuen Tabs](/de/new-tab/), wenn du ausdrücklich festlegen willst, welcher verwendet wird.
+
+Wenn du in der Seitenleiste eine neue Unterhaltung beginnst, werden unter dem Nachrichtenfeld bis zu vier deiner aktivierten Skills vorgeschlagen, die zur aktuellen Seite passen, zum Beispiel ein Video auf einer Videoseite zusammenfassen oder eine gewöhnliche Webseite erklären oder ihre Fakten prüfen. Phi wählt sie anhand der Adresse der Seite aus, nicht mit KI. Ein Klick auf einen sendet ihn sofort, zusammen mit allem, was du schon getippt hattest.
 
 ## Ein Skill kann handeln, also überlege wie bei eigenen Schritten
 

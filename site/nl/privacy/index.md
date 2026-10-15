@@ -60,7 +60,7 @@ Heb je Phi al verwijderd, installeer het dan opnieuw en log met hetzelfde accoun
 
 ### AI uitschakelen {#turning-ai-off}
 
-Wil je een gewone browser, dan kun je alle AI-functies uitschakelen in **Instellingen → Phi AI**. AI uitschakelen sluit je AI-gesprekken en koppelt alle Externe gegevensconnectors los.
+Wil je een gewone browser, dan kun je alle AI-functies uitschakelen in **Instellingen → Phi & AI**. AI uitschakelen sluit je AI-gesprekken en koppelt alle Externe gegevensconnectors los.
 
 Je Geheugen wordt door deze schakelaar niet verwijderd en blijft op je apparaat. Wil je ook wissen wat Phi onthoudt, gebruik dan de wisoptie op de Geheugen-pagina; die verwijdering is definitief en kan niet ongedaan worden gemaakt.
 

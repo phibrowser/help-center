@@ -37,6 +37,6 @@ features:
     link: /ja/memory/
   - icon: ⚙️
     title: 必要なときに使える自動化
-    details: Phiにその場で頼む、バックグラウンドタスクとして走らせる、Phi Sentinelでスケジュールした作業を進め続ける。どれも選べます。
+    details: Phiにその場で頼む、タスクをバックグラウンドで走らせる、Phi Sentinelでスケジュールした作業を進め続ける。どれも選べます。
     link: /ja/automation/
 ---

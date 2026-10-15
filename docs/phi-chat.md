@@ -40,4 +40,4 @@ Linear issues covered (assigned to Jiadong, updated since 2026-09-01): PHI-1545,
 ## Follow-up
 
 - When the Sentinel Dashboard moves into Phi Chat, update `site/phi-chat/` and `site/sentinel/`, and replace the "Tasks page in Phi Sentinel" references in `automation`.
-- Translations for all eight locales are added in the second commit of the same pull request, following the `phi-help-localization` workflow.
+- Translations for all eight locales were added in the same pull request by i18n run `docs/i18n-runs/2026-10-15-phi-chat/`, which also lists the coined renderings awaiting an owner's ruling.

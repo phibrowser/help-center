@@ -21,7 +21,7 @@ Vous découvrez Phi ? Commencez par [Premiers pas](/fr/get-started/) pour l'ins
 L'IA de Phi est intégrée, et active dès que vous êtes connecté. Plutôt qu'une « IA » vague, elle se compose de quatre briques qui font chacune quelque chose de différent :
 
 - La **[Mémoire](/fr/memory/)** construit discrètement du contexte à partir de votre façon de naviguer, pour que l'assistant vous comprenne sans que vous ayez rien à lui apprendre.
-- **L'assistant** est un compagnon de conversation : vous choisissez son nom, vous lui posez des questions et vous lui déléguez du travail.
+- **L'assistant** est un compagnon de conversation : vous choisissez son nom, vous lui posez des questions et vous lui déléguez du travail, dans la barre latérale ou dans [Phi Chat](/fr/phi-chat/), sa propre fenêtre.
 - **Les tâches agentiques** font réellement les choses à votre place, des actions ponctuelles jusqu'au travail en arrière-plan ou planifié qui s'exécute tout seul.
 - Les **[Browser Skills](/fr/skills/)** sont des flux de travail réutilisables que l'assistant peut exécuter à la demande.
 
@@ -45,6 +45,7 @@ Consultez [Confidentialité et vos données](/fr/privacy/) pour le détail.
 - [Synchronisation](/fr/sync/), garder les Espaces, les favoris, les onglets épinglés, les Règles d'URL et les réglages identiques sur chaque Mac.
 - [Thèmes et apparence](/fr/themes/), les thèmes de couleur, clair et sombre, et ce que le thème colore.
 - [Découvrez votre assistant](/fr/ai/), la Mémoire, la conversation avec lui et les Skills.
+- [Phi Chat](/fr/phi-chat/), l'assistant dans sa propre fenêtre, avec toutes vos conversations.
 - [Mémoire](/fr/memory/), comment l'assistant apprend de votre navigation et comment vous gardez la main.
 - [Browser Skills](/fr/skills/), des flux de travail réutilisables : parcourez les Skills intégrées et créez les vôtres.
 - [Le skill phi-browser](/fr/phi-browser-skill/), laisser un agent IA extérieur piloter Phi.
