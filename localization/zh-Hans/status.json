@@ -1,8 +1,8 @@
 {
   "locale": "zh-Hans",
-  "sourceRevision": "b79db2bbf8a420810d25c37821528dadc65411eb",
+  "sourceRevision": "8a0ee5624b9180afcfcab27ba0ebaad549167aae",
   "owners": {
-    "translation": "AI re-translation run 2026-08-28-zh-hans (docs/i18n-runs/2026-08-28-zh-hans); human translation owner to be assigned; peek/kiosk sync by run 2026-08-31-peek-kiosk (docs/i18n-runs/2026-08-31-peek-kiosk); last-Space/auto-Peek sync by run 2026-09-02-last-space-auto-peek (docs/i18n-runs/2026-09-02-last-space-auto-peek); Advanced/Kiosk sync by AI run 2026-09-08-advanced-kiosk (docs/i18n-runs/2026-09-08-advanced-kiosk); Sync docs by AI run 2026-10-14-sync (docs/i18n-runs/2026-10-14-sync)",
+    "translation": "AI re-translation run 2026-08-28-zh-hans (docs/i18n-runs/2026-08-28-zh-hans); human translation owner to be assigned; peek/kiosk sync by run 2026-08-31-peek-kiosk (docs/i18n-runs/2026-08-31-peek-kiosk); last-Space/auto-Peek sync by run 2026-09-02-last-space-auto-peek (docs/i18n-runs/2026-09-02-last-space-auto-peek); Advanced/Kiosk sync by AI run 2026-09-08-advanced-kiosk (docs/i18n-runs/2026-09-08-advanced-kiosk); Sync docs by AI run 2026-10-14-sync (docs/i18n-runs/2026-10-14-sync); new-tab Widgets sync by AI run 2026-10-14-new-tab-widgets (docs/i18n-runs/2026-10-14-new-tab-widgets)",
     "contentReview": ""
   },
   "pages": {

@@ -23,7 +23,7 @@ Las Habilidades integradas no vienen activadas de serie: están ahí para explor
 
 ## La biblioteca de Habilidades
 
-La página **Habilidades** es donde gestionas todo esto. Ábrela desde el menú de la **esquina superior derecha de la nueva pestaña**, el mismo menú donde están tus conversaciones recientes y los widgets, y elige **Habilidades**.
+La página **Habilidades** es donde gestionas todo esto. Ábrela desde el menú de la **esquina superior derecha de la nueva pestaña**, el mismo menú ⋮ que abre **Widgets**, y elige **Habilidades**.
 
 Se abre con una selección destacada de Habilidades integradas y, debajo, puedes explorar el conjunto completo. Filtra por **Todas**, **Integradas**, **Creadas por ti** o **Activadas**, o busca por nombre. Es lo más parecido a una galería de lo que tu asistente puede hacer.
 

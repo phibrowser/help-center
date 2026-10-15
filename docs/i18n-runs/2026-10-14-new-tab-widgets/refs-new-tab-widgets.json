@@ -1,0 +1,218 @@
+{
+  "source": "phi-ai origin/staging 75f5868d5, ai-extension/sidecar/src/locales/<locale>.json (shipped new-tab UI strings)",
+  "labels": {
+    "artifacts.menuLabel": {
+      "en": "Widgets",
+      "de": "Widgets",
+      "es": "Widgets",
+      "fr": "Widgets",
+      "ja": "ウィジェット",
+      "ko": "위젯",
+      "nl": "Widgets",
+      "zh-Hans": "小组件",
+      "zh-Hant": "小工具"
+    },
+    "skills.menuLabel": {
+      "en": "Skills",
+      "de": "Skills",
+      "es": "Habilidades",
+      "fr": "Skills",
+      "ja": "スキル",
+      "ko": "스킬",
+      "nl": "Skills",
+      "zh-Hans": "Skill",
+      "zh-Hant": "Skill"
+    },
+    "promptPreferences.restore": {
+      "en": "Restore hidden prompts",
+      "de": "Ausgeblendete Hinweise wiederherstellen",
+      "es": "Restaurar avisos ocultos",
+      "fr": "Rétablir les rappels masqués",
+      "ja": "非表示にした案内を復元",
+      "ko": "숨긴 안내 복원",
+      "nl": "Verborgen meldingen terugzetten",
+      "zh-Hans": "恢复已隐藏的提示",
+      "zh-Hant": "還原隱藏的提示"
+    },
+    "newtab.custom": {
+      "en": "Custom",
+      "de": "Eigene",
+      "es": "Personalizado",
+      "fr": "Personnalisé",
+      "ja": "カスタム",
+      "ko": "맞춤",
+      "nl": "Aangepast",
+      "zh-Hans": "自定义",
+      "zh-Hant": "自訂"
+    },
+    "newtab.customHint": {
+      "en": "Create your own widgets here",
+      "de": "Erstelle hier deine eigenen Widgets",
+      "es": "Crea tus propios widgets aquí",
+      "fr": "Créez vos propres widgets ici",
+      "ja": "ここで自分だけのウィジェットを作成",
+      "ko": "여기서 나만의 위젯을 만들어 보세요",
+      "nl": "Maak hier je eigen widgets",
+      "zh-Hans": "在这里创建你自己的小组件",
+      "zh-Hant": "在這裡建立你自己的小工具"
+    },
+    "newtab.customHintClose": {
+      "en": "Dismiss",
+      "de": "Ausblenden",
+      "es": "Descartar",
+      "fr": "Ignorer",
+      "ja": "閉じる",
+      "ko": "닫기",
+      "nl": "Sluiten",
+      "zh-Hans": "忽略",
+      "zh-Hant": "忽略"
+    },
+    "widgets.bottomPanel.add": {
+      "en": "Add widget",
+      "de": "Widget hinzufügen",
+      "es": "Agregar widget",
+      "fr": "Ajouter un widget",
+      "ja": "ウィジェットを追加",
+      "ko": "위젯 추가",
+      "nl": "Widget toevoegen",
+      "zh-Hans": "添加小组件",
+      "zh-Hant": "新增小工具"
+    },
+    "widgets.pending.install": {
+      "en": "Install",
+      "de": "Installieren",
+      "es": "Instalar",
+      "fr": "Installer",
+      "ja": "インストール",
+      "ko": "설치",
+      "nl": "Installeren",
+      "zh-Hans": "安装",
+      "zh-Hant": "安裝"
+    },
+    "widgets.pending.refresh": {
+      "en": "Refresh",
+      "de": "Aktualisieren",
+      "es": "Actualizar",
+      "fr": "Actualiser",
+      "ja": "再生成",
+      "ko": "새로고침",
+      "nl": "Vernieuwen",
+      "zh-Hans": "刷新",
+      "zh-Hant": "重新產生"
+    },
+    "widgets.menu.refresh": {
+      "en": "Refresh",
+      "de": "Aktualisieren",
+      "es": "Actualizar",
+      "fr": "Actualiser",
+      "ja": "再読み込み",
+      "ko": "새로고침",
+      "nl": "Vernieuwen",
+      "zh-Hans": "刷新",
+      "zh-Hant": "重新整理"
+    },
+    "widgets.menu.addToPage": {
+      "en": "Add to page",
+      "de": "Zur Seite hinzufügen",
+      "es": "Agregar a la página",
+      "fr": "Ajouter à la page",
+      "ja": "ページに追加",
+      "ko": "페이지에 추가",
+      "nl": "Toevoegen aan pagina",
+      "zh-Hans": "添加到页面",
+      "zh-Hant": "加到頁面"
+    },
+    "widgets.menu.edit": {
+      "en": "Edit",
+      "de": "Bearbeiten",
+      "es": "Editar",
+      "fr": "Modifier",
+      "ja": "編集",
+      "ko": "편집",
+      "nl": "Bewerken",
+      "zh-Hans": "编辑",
+      "zh-Hant": "編輯"
+    },
+    "widgets.menu.delete": {
+      "en": "Delete",
+      "de": "Löschen",
+      "es": "Eliminar",
+      "fr": "Supprimer",
+      "ja": "削除",
+      "ko": "삭제",
+      "nl": "Verwijderen",
+      "zh-Hans": "删除",
+      "zh-Hant": "刪除"
+    },
+    "widgets.menu.deleteAll": {
+      "en": "Delete ALL",
+      "de": "ALLE löschen",
+      "es": "Eliminar TODOS",
+      "fr": "TOUT supprimer",
+      "ja": "すべて削除",
+      "ko": "모두 삭제",
+      "nl": "ALLES verwijderen",
+      "zh-Hans": "全部删除",
+      "zh-Hant": "全部刪除"
+    },
+    "widgets.suggested.badge": {
+      "en": "Suggested",
+      "de": "Vorgeschlagen",
+      "es": "Sugerido",
+      "fr": "Suggéré",
+      "ja": "おすすめ",
+      "ko": "추천",
+      "nl": "Voorgesteld",
+      "zh-Hans": "推荐",
+      "zh-Hant": "推薦"
+    },
+    "widgets.suggested.keepShort": {
+      "en": "Keep",
+      "de": "Behalten",
+      "es": "Conservar",
+      "fr": "Conserver",
+      "ja": "残す",
+      "ko": "유지",
+      "nl": "Behouden",
+      "zh-Hans": "保留",
+      "zh-Hant": "保留"
+    },
+    "widgets.suggested.removed": {
+      "en": "Removing",
+      "de": "Wird entfernt",
+      "es": "Quitando",
+      "fr": "Retrait en cours",
+      "ja": "削除中",
+      "ko": "제거하는 중",
+      "nl": "Wordt verwijderd",
+      "zh-Hans": "正在移除",
+      "zh-Hant": "移除中"
+    },
+    "widgets.suggested.undo": {
+      "en": "Undo",
+      "de": "Rückgängig",
+      "es": "Deshacer",
+      "fr": "Annuler",
+      "ja": "元に戻す",
+      "ko": "실행 취소",
+      "nl": "Ongedaan maken",
+      "zh-Hans": "撤销",
+      "zh-Hant": "復原"
+    },
+    "widgets.suggested.stop": {
+      "en": "Stop suggesting",
+      "de": "Nicht mehr vorschlagen",
+      "es": "Dejar de sugerir",
+      "fr": "Ne plus suggérer",
+      "ja": "おすすめを表示しない",
+      "ko": "추천 그만 받기",
+      "nl": "Geen suggesties meer doen",
+      "zh-Hans": "不再推荐",
+      "zh-Hant": "停止推薦"
+    }
+  },
+  "notes": [
+    "skills.menuLabel: the shipped es/ja/ko values (Habilidades, スキル, 스킬) are retired by the 2026-08-27 glossary decision; use the glossary rendering (Skills, or Skill in CJK) and the locale page's existing wording.",
+    "widgets.pending.refresh and widgets.menu.refresh differ in ja and zh-Hant: quote the pending value for the Refresh button on a suggestion and the menu value for the pinned-widget menu item."
+  ]
+}
