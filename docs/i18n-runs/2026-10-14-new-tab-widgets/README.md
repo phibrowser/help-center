@@ -27,18 +27,30 @@ one sentence on the Skills page) into all eight locales.
 - `localization/<locale>/status.json`: `new-tab/index.md` and
   `skills/index.md` reset to `translation: complete` / `contentReview: todo`
   (the delta is machine translation; the earlier page-level approval no
-  longer covers the whole page), and `sourceRevision` moved to `eb3f991`.
+  longer covers the whole page), and `sourceRevision` moved to `eb3f991`,
+  then to `8a0ee56` after merging `main` (see below).
 - One parallel translator agent per locale; the brief is in
   `brief-common.md`.
 
-## Known follow-up: the baseline commit and squash merges
+## Baseline after merging main
 
-`eb3f991` exists only on `docs/widget-updates`. If the PR is squash-merged,
-`main` will not contain it, and `pnpm test:i18n` will skip the root-content
-staleness check with a warning (the same situation as the `e8cd0d8` baseline
-between 2026-09-02 and 2026-09-28). Either merge the PR in a way that keeps
-`eb3f991` on `main`, or move every locale's `sourceRevision` to the merge
-commit in a follow-up.
+On 2026-10-15 `main` (PR #24, the Sync page and its translations, run
+`2026-10-14-sync`) was merged into this branch as `8a0ee56`. The only
+conflicts were `sourceRevision` in the eight `status.json` files; page states
+merged cleanly, and the result keeps everything from `main` plus this run's
+two page resets and an `owners.translation` note.
+
+The staleness check compares root-language content between `sourceRevision`
+and `HEAD`, so the only baseline that covers both English changes is the merge
+commit itself. Every locale's `sourceRevision` now points at `8a0ee56`.
+`main`'s previous baseline `b79db2b` is a commit from the PR #24 branch that
+squash-merging left off `main`, so on `main` the check had been skipping with
+a warning. On this branch it runs and passes; setting `de` back to `eb3f991`
+makes it fail, as it should.
+
+Squash-merging this PR will strand `8a0ee56` the same way. Afterwards, move
+every locale's `sourceRevision` to the squash commit on `main` so the check
+runs again.
 
 ## Review list for the content reviewer
 
