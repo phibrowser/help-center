@@ -1,8 +1,8 @@
 {
   "locale": "ko",
-  "sourceRevision": "8a0ee5624b9180afcfcab27ba0ebaad549167aae",
+  "sourceRevision": "e4f90f925c31c12a10e4891bae746df7890081a6",
   "owners": {
-    "translation": "Phi i18n pipeline (agent run 2026-08-26); peek/kiosk sync by run 2026-08-31-peek-kiosk (docs/i18n-runs/2026-08-31-peek-kiosk); last-Space/auto-Peek sync by run 2026-09-02-last-space-auto-peek (docs/i18n-runs/2026-09-02-last-space-auto-peek); Advanced/Kiosk sync by AI run 2026-09-08-advanced-kiosk (docs/i18n-runs/2026-09-08-advanced-kiosk); Sync docs by AI run 2026-10-14-sync (docs/i18n-runs/2026-10-14-sync); new-tab Widgets sync by AI run 2026-10-14-new-tab-widgets (docs/i18n-runs/2026-10-14-new-tab-widgets)",
+    "translation": "Phi i18n pipeline (agent run 2026-08-26); peek/kiosk sync by run 2026-08-31-peek-kiosk (docs/i18n-runs/2026-08-31-peek-kiosk); last-Space/auto-Peek sync by run 2026-09-02-last-space-auto-peek (docs/i18n-runs/2026-09-02-last-space-auto-peek); Advanced/Kiosk sync by AI run 2026-09-08-advanced-kiosk (docs/i18n-runs/2026-09-08-advanced-kiosk); Sync docs by AI run 2026-10-14-sync (docs/i18n-runs/2026-10-14-sync); new-tab Widgets sync by AI run 2026-10-14-new-tab-widgets (docs/i18n-runs/2026-10-14-new-tab-widgets); Phi Chat and 2.13 assistant updates by AI run 2026-10-15-phi-chat (docs/i18n-runs/2026-10-15-phi-chat)",
     "contentReview": "Alpha"
   },
   "pages": {
@@ -11,12 +11,12 @@
       "contentReview": "todo"
     },
     "ai/index.md": {
-      "translation": "approved",
-      "contentReview": "approved"
+      "translation": "complete",
+      "contentReview": "todo"
     },
     "automation/index.md": {
-      "translation": "approved",
-      "contentReview": "approved"
+      "translation": "complete",
+      "contentReview": "todo"
     },
     "bookmarks/index.md": {
       "translation": "complete",
@@ -39,8 +39,8 @@
       "contentReview": "todo"
     },
     "index.md": {
-      "translation": "approved",
-      "contentReview": "approved"
+      "translation": "complete",
+      "contentReview": "todo"
     },
     "kiosk/index.md": {
       "translation": "complete",
@@ -66,6 +66,10 @@
       "translation": "complete",
       "contentReview": "todo"
     },
+    "phi-chat/index.md": {
+      "translation": "complete",
+      "contentReview": "todo"
+    },
     "phi-cli/index.md": {
       "translation": "approved",
       "contentReview": "approved"
@@ -75,8 +79,8 @@
       "contentReview": "todo"
     },
     "sentinel/index.md": {
-      "translation": "approved",
-      "contentReview": "approved"
+      "translation": "complete",
+      "contentReview": "todo"
     },
     "skills/index.md": {
       "translation": "complete",
@@ -119,17 +123,17 @@
     "productTerminology": {
       "status": "todo",
       "owner": "Alpha",
-      "evidence": "Reviewed by Alpha; translation drafts and review in PR #15, squash-merged as 54628c0 (authored 2026-08-26 20:47 +0800), Markdown emphasis fixes applied after simulated promotion passed pnpm test:i18n (9 locales); Review reopened for Advanced settings and Kiosk shortcuts; see docs/i18n-runs/2026-09-08-advanced-kiosk. Prior evidence covers earlier content only."
+      "evidence": "Reviewed by Alpha; translation drafts and review in PR #15, squash-merged as 54628c0 (authored 2026-08-26 20:47 +0800), Markdown emphasis fixes applied after simulated promotion passed pnpm test:i18n (9 locales); Review reopened for Advanced settings and Kiosk shortcuts; see docs/i18n-runs/2026-09-08-advanced-kiosk. Prior evidence covers earlier content only. Review reopened for the Phi Chat vocabulary; see docs/i18n-runs/2026-10-15-phi-chat."
     },
     "privacyLegal": {
       "status": "todo",
       "owner": "Alpha",
-      "evidence": "Reviewed by Alpha; translation drafts and review in PR #15, squash-merged as 54628c0 (authored 2026-08-26 20:47 +0800), Markdown emphasis fixes applied after simulated promotion passed pnpm test:i18n (9 locales); Review reopened for the Sync disclosures (new sync page and the privacy page's synced-data bullet); see docs/i18n-runs/2026-10-14-sync. Prior evidence covers earlier content only."
+      "evidence": "Reviewed by Alpha; translation drafts and review in PR #15, squash-merged as 54628c0 (authored 2026-08-26 20:47 +0800), Markdown emphasis fixes applied after simulated promotion passed pnpm test:i18n (9 locales); Review reopened for the Sync disclosures (new sync page and the privacy page's synced-data bullet); see docs/i18n-runs/2026-10-14-sync. Prior evidence covers earlier content only. Review reopened for the new Phi Chat page, which repeats the model-provider disclosure; see docs/i18n-runs/2026-10-15-phi-chat."
     },
     "searchQa": {
       "status": "todo",
       "owner": "Alpha",
-      "evidence": "Reviewed by Alpha; translation drafts and review in PR #15, squash-merged as 54628c0 (authored 2026-08-26 20:47 +0800), Markdown emphasis fixes applied after simulated promotion passed pnpm test:i18n (9 locales); Review reopened for Advanced settings and Kiosk shortcuts; see docs/i18n-runs/2026-09-08-advanced-kiosk. Prior evidence covers earlier content only."
+      "evidence": "Reviewed by Alpha; translation drafts and review in PR #15, squash-merged as 54628c0 (authored 2026-08-26 20:47 +0800), Markdown emphasis fixes applied after simulated promotion passed pnpm test:i18n (9 locales); Review reopened for Advanced settings and Kiosk shortcuts; see docs/i18n-runs/2026-09-08-advanced-kiosk. Prior evidence covers earlier content only. Review reopened for the new Phi Chat page; see docs/i18n-runs/2026-10-15-phi-chat."
     }
   }
 }

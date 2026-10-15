@@ -41,6 +41,8 @@ You are not limited to the built-in set. Phi includes a **Skill Creator** that h
 
 Skills run through your assistant, not on their own. Once a Skill is enabled, the assistant can reach for it by itself when your request matches what it does. You can also bring one into a conversation yourself: pick it from the Skills list while you are writing a message, including from the [new tab's ask box](/new-tab/), when you want to be explicit about which one to use.
 
+When you start a new conversation in the sidebar, up to four of your enabled Skills that fit the current page are suggested under the message box, for example summarising a video on a video page, or explaining or fact-checking an ordinary web page. Phi picks them from the page's address, not with AI. Clicking one sends it straight away, together with anything you had already typed.
+
 ## A Skill can act, so give it the same thought you would give yourself
 
 Skills can do more than fetch and summarise. A Skill that fills forms, posts, or works through a site is doing that as you, from your browser, with your sessions. Two things follow.

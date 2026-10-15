@@ -21,8 +21,11 @@ Esta página reúne gestos y atajos de Phi que no resultan tan evidentes desde l
 | Abrir una nueva ventana de Kiosk desde cualquier aplicación, con el atajo global activado | Comando (⌘) + Opción (⌥) + N                                                                   |
 | Abrir una página de Kiosk o un Peek como pestaña en un Espacio                            | Comando (⌘) + O                                                                                |
 | Abrir el menú de selección de Espacios de Kiosk                                           | Comando (⌘) + Mayúsculas (⇧) + O                                                               |
+| Abrir u ocultar Phi Chat desde cualquier aplicación, con el atajo activado                | Mayúsculas (⇧) tres veces                                                                      |
 
 Activa el atajo global de Kiosk en **Configuración → Navegación → Kiosk**. Para cambiar la combinación de teclas, modifica **Nueva ventana de Kiosk** en **Configuración → Atajos → Archivo**.
+
+El atajo de Phi Chat viene desactivado de forma predeterminada. Actívalo con **Invocar Phi Chat con Mayús Mayús Mayús** en **Configuración → Phi e IA → Phi Sentinel**. No se puede cambiar a otras teclas. Consulta [Phi Chat](/es/phi-chat/#opening-phi-chat).
 
 Cambia los dos atajos para abrir en un Espacio en **Configuración → Atajos → Kiosk y Peek**. Consulta [Kiosk](/es/kiosk/) y [Vista Peek](/es/peek/) para más detalles.
 
@@ -110,7 +113,7 @@ Para anclar tú mismo una ventana de imagen en imagen abierta, mueve el puntero 
 - Abrir el asistente adjunta la pestaña actual de forma predeterminada. Si esa pestaña está en un grupo, Phi puede adjuntar el grupo completo.
 - Un Grupo de pestañas o una Vista dividida puede adjuntarse como una sola unidad.
 
-Para iniciar conversaciones sin la pestaña actual adjunta, desactiva **Añadir automáticamente la pestaña actual como contexto en las conversaciones nuevas** en **Configuración → Phi AI → Barra lateral de IA**.
+Para iniciar conversaciones sin la pestaña actual adjunta, desactiva **Agregar automáticamente la pestaña actual como contexto a las conversaciones nuevas** en **Configuración → Phi e IA → Barra lateral de IA**.
 
 Cuando usas Phi Cloud, el contenido necesario para responder tu pregunta se envía a un proveedor de modelos externo para su procesamiento. Con la IA privada, se queda en tu Mac. Consulta [Privacidad y tus datos](/es/privacy/) para más detalles.
 

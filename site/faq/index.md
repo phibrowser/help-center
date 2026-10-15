@@ -185,7 +185,7 @@ Yes. Phi ships with AI features enabled by default, because they are a core part
 :::
 
 ::: details Can I turn all AI features off?
-Yes, in **Settings → Phi AI**. Turning AI off closes your AI conversations and disconnects any External Data Connectors. Your Memory stays on your device; to erase it as well, use the clear option on the Memory page, and that deletion is permanent.
+Yes, in **Settings → Phi & AI**. Turning AI off closes your AI conversations and disconnects any External Data Connectors. Your Memory stays on your device; to erase it as well, use the clear option on the Memory page, and that deletion is permanent.
 :::
 
 ::: details What are the main AI components?
@@ -221,7 +221,23 @@ The companion you interact with directly inside the browser. You give it a name 
 :::
 
 ::: details How do I talk to the assistant?
-Click the **Chat** button, which sits at the bottom of the sidebar in Performance mode and in the top-right of the page header in Balanced and Comfortable. Or select text on a page, right-click, and choose **Ask [your assistant] about…** to ask about it in context.
+Click the **Chat** button, which sits at the bottom of the sidebar in Performance mode and in the top-right of the page header in Balanced and Comfortable. Or select text on a page, right-click, and choose **Ask [your assistant] about…** to ask about it in context. You can also talk to it in [Phi Chat](/phi-chat/), its own window.
+:::
+
+::: details What is Phi Chat?
+Your assistant in a window of its own, with its own Dock icon. It has the same conversations as the sidebar, and it is the one place that shows conversations from every Profile, with search, categories, and the conversations your tasks report into. Open it from the Phi Sentinel menu bar icon, with **Open in Phi Chat** in the sidebar, or by pressing Shift three times once you turn that on in **Settings → Phi & AI**. See [Phi Chat](/phi-chat/).
+:::
+
+::: details Why can't I see a conversation in the sidebar?
+The sidebar only shows conversations from the Profile you are in, plus those that do not belong to a Profile. Conversations from your other Profiles are in [Phi Chat](/phi-chat/#conversations-from-every-profile), which shows them all.
+:::
+
+::: details Where do task results go?
+Into the conversation where you asked for the task, as a reply from the assistant. The conversation is marked unread, and Phi Chat's **Tasks** view gathers them. See [Automation & Phi Link](/automation/#tasks-report-back-to-their-conversation).
+:::
+
+::: details What happens when I reach the usage limit?
+A banner above the message box tells you, and when there is a set time, says when you can carry on. You can keep typing but cannot send until then. See [Usage limits](/ai/#usage-limits).
 :::
 
 ::: details What can the assistant do?
@@ -265,7 +281,7 @@ Two ways: use the official Phi Link bot, which is the easiest path since you sca
 :::
 
 ::: details What can Phi Link do?
-Chat with your assistant, get notified when tasks succeed or fail, and continue workflows away from the browser.
+Chat with your assistant, get the results of completed task runs, and continue workflows away from the browser.
 :::
 
 ::: details Does Phi Link use the same assistant identity?

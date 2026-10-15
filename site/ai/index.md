@@ -1,5 +1,5 @@
 ---
-description: "Learn how Phi Browser's built-in assistant works, including naming your assistant, talking to it, Chat with Tabs, Memory, Browser Skills, and agentic actions."
+description: "Learn how Phi Browser's built-in assistant works, including naming your assistant, talking to it, managing conversations, Chat with Tabs, Memory, Browser Skills, and agentic actions."
 ---
 
 # Meet your assistant
@@ -10,6 +10,7 @@ That naming is the point. Rather than thinking of it as "an AI", a chatbot, or a
 
 - **[Memory](/memory/)**, how it gets to know you.
 - **Talking to it**, how you reach it and ask for things.
+- **[Phi Chat](/phi-chat/)**, the assistant in its own window, with all your conversations.
 - **Chat with Tabs**, bringing open pages into the conversation as context.
 - **[Browser Skills](/skills/)**, workflows it can carry out for you.
 - **Acting on your behalf**, because it can take actions and run tasks, not just answer. See [Automation & Phi Link](/automation/).
@@ -28,14 +29,41 @@ There are a few ways to reach it:
 
 - Click the **Chat** button. Where it sits depends on your [layout](/layouts/): the bottom of the sidebar in Performance, or the top-right of the page header in Balanced and Comfortable.
 - **Right-click selected text** and choose **Ask [your assistant] about…** to ask about it directly, with the selection coming along as context.
+- **Open [Phi Chat](/phi-chat/)**, the assistant in a window of its own, from the Phi Sentinel menu bar icon or by pressing Shift three times once you have turned that on.
 
 Asking in context beats copying things into a separate chat window. It can answer questions, summarise content, explain pages, and help with tasks, drawing on the current tab, what it remembers about you, and your connected external data.
+
+A new conversation opens with the assistant's avatar and name above the message box. Click the avatar to see its role card. In the sidebar, a few [Browser Skills](/skills/#using-skills-in-chat) that fit the current page are suggested underneath.
+
+### Stopping a reply
+
+Click the stop button in the message box to end a reply. The assistant stops working straight away and keeps whatever it has written so far. Anything it has already done in the browser, such as opening a page or filling a field, is not undone.
+
+If you stop before any of the reply has appeared, Phi takes the message back instead: it is removed from the conversation, and your text, attached tabs, and files go back into the message box so you can change them and send again. A Skill you had picked comes back as plain text. If Phi cannot confirm that the reply stopped, it says so and you can try again.
+
+### Earlier conversations
+
+In the sidebar, the **…** menu at the top lists your ten most recent conversations under **Recent Conversations**, with **Search conversations** at the bottom for finding others by title. The sidebar only shows conversations from the Profile you are in, plus those that do not belong to a Profile. For every conversation, with search, categories, and tidying up, use [Phi Chat](/phi-chat/).
+
+### Going back to a page
+
+Each conversation remembers the last web page it was used with, including the Space and Profile it was in. To pick up where you were, open the sidebar's **…** menu and choose **Back to the latest page**.
+
+Phi brings that page back in its own tab, reusing the original tab if it is still open in that Space, and moves the conversation into that tab's sidebar. The tab you were on keeps its page, and its sidebar starts a new conversation. A Split View comes back as it was. Tab groups, scroll position, and anything typed into the page do not.
+
+The option disappears when the original Space or Profile has been deleted, or the Space has been moved to another Profile. Phi does not substitute a different one. Moving the Space back brings the option back.
+
+### Usage limits
+
+The assistant has a usage allowance. If you reach it, a banner above the message box says so and, when there is a set time, tells you when you can carry on. Until then you can still type, but not send. Memory, widgets, and tasks that run through [Private AI](/sentinel/#private-ai) are not affected. Phi does not show how much of the allowance is left.
 
 ## Chat with Tabs
 
 The assistant can bring the pages you have open into a conversation as context. Attach one or more tabs and ask across them, comparing them, summarising them, or pulling details from several at once, without copying anything into a separate window. Because it understands [Split View and Tab Groups](/layouts/), opening a chat while your current tab is in a group attaches the whole group, and you can attach a Tab Group or Split View as a single unit. That way you can ask about related pages without explaining how they fit together.
 
-By default, opening the assistant attaches the tab you are currently on, so you can ask about what is in front of you right away. If you would rather start each conversation with nothing attached, turn off **Automatically add current tab as context to new conversation** under **Settings → Phi AI → AI Sidebar**. You can still attach tabs by hand whenever you want.
+Tabs you sent with a message stay in the conversation as small cards. Click one to go back to that tab, or to open its page again in a new tab if the tab has since moved on. If a tab you attach has been unloaded to save memory, Phi loads it in the background to read it, without switching to it. That usually works, but a page that does not load in time may be read only partly, or not at all.
+
+By default, opening the assistant attaches the tab you are currently on, so you can ask about what is in front of you right away. If you would rather start each conversation with nothing attached, turn off **Automatically add current tab as context to new conversation** under **Settings → Phi & AI → AI Sidebar**. You can still attach tabs by hand whenever you want.
 
 ## Browser Skills
 
@@ -49,6 +77,7 @@ If you want the AI itself to run on your Mac, [Phi Sentinel](/sentinel/) offers 
 
 ## What's next
 
+- [Phi Chat](/phi-chat/), the assistant in its own window, with every conversation in one place.
 - [Automation & Phi Link](/automation/), letting it take actions and run scheduled tasks, and reaching it from Telegram.
 - [Browser Skills](/skills/), reusable workflows you teach it.
 - [Privacy & Your Data](/privacy/), where your data lives and how to stay in control.

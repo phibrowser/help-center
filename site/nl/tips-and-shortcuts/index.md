@@ -21,8 +21,11 @@ Deze pagina bundelt gebaren en toetscombinaties van Phi die minder duidelijk uit
 | Een nieuw Kiosk-venster vanuit elke app openen, met de toetscombinatie voor alle apps ingeschakeld | Command (⌘) + Option (⌥) + N                                                       |
 | Een Kiosk-pagina of Peek als tabblad in een Space openen                                           | Command (⌘) + O                                                                    |
 | Het menu openen om een Space voor Kiosk te kiezen                                                  | Command (⌘) + Shift (⇧) + O                                                        |
+| Phi Chat openen of verbergen vanuit elke app, met de toetscombinatie ingeschakeld                  | Drie keer Shift (⇧)                                                                |
 
 Schakel de Kiosk-toetscombinatie voor gebruik in elke app in onder **Instellingen → Navigatie → Kiosk**. Om de toetsen te wijzigen pas je **Nieuw Kiosk-venster** aan onder **Instellingen → Toetscombinaties → Archief**.
+
+De toetscombinatie voor Phi Chat staat standaard uit. Schakel hem in met **Phi Chat oproepen met Shift Shift Shift** onder **Instellingen → Phi & AI → Phi Sentinel**. Je kunt hem niet aan andere toetsen toewijzen. Zie [Phi Chat](/nl/phi-chat/#opening-phi-chat).
 
 Wijzig de twee toetscombinaties voor openen in een Space onder **Instellingen → Toetscombinaties → Kiosk en Peek**. Zie [Kiosk](/nl/kiosk/) en [Peek-weergave](/nl/peek/) voor meer informatie.
 
@@ -110,7 +113,7 @@ Wil je een open beeld-in-beeldvenster zelf parkeren, beweeg dan de aanwijzer ero
 - Bij het openen van de assistent wordt het huidige tabblad standaard toegevoegd. Zit dat tabblad in een groep, dan kan Phi de hele groep toevoegen.
 - Een tabbladgroep of Split View kan als één geheel worden toegevoegd.
 
-Wil je gesprekken beginnen zonder het huidige tabblad, schakel dan **Huidig tabblad automatisch als context toevoegen aan een nieuw gesprek** uit onder **Instellingen → Phi AI → AI-zijbalk**.
+Wil je gesprekken beginnen zonder het huidige tabblad, schakel dan **Huidig tabblad automatisch als context toevoegen aan een nieuw gesprek** uit onder **Instellingen → Phi & AI → AI-zijbalk**.
 
 Wanneer je Phi Cloud gebruikt, wordt de inhoud die nodig is om je vraag te beantwoorden voor verwerking naar een externe modelaanbieder gestuurd. Met Privé-AI blijft die op je Mac. Zie [Privacy en je gegevens](/nl/privacy/) voor de details.
 

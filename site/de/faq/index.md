@@ -185,7 +185,7 @@ Ja. Phi wird mit standardmäßig aktivierten KI-Funktionen ausgeliefert, weil si
 :::
 
 ::: details Kann ich alle KI-Funktionen abschalten?
-Ja, in **Einstellungen → Phi AI**. Schaltest du die KI ab, werden deine KI-Unterhaltungen geschlossen und alle verbundenen Externe Daten-Connectors getrennt. Deine Erinnerungen bleiben auf deinem Gerät; um auch sie zu löschen, nutze die Löschoption auf der Erinnerungen-Seite, und diese Löschung ist endgültig.
+Ja, in **Einstellungen → Phi & KI**. Schaltest du die KI ab, werden deine KI-Unterhaltungen geschlossen und alle verbundenen Externe Daten-Connectors getrennt. Deine Erinnerungen bleiben auf deinem Gerät; um auch sie zu löschen, nutze die Löschoption auf der Erinnerungen-Seite, und diese Löschung ist endgültig.
 :::
 
 ::: details Was sind die wichtigsten KI-Bausteine?
@@ -221,7 +221,23 @@ Der Begleiter, mit dem du direkt im Browser sprichst. Du gibst ihm beim Onboardi
 :::
 
 ::: details Wie spreche ich mit dem Assistenten?
-Klicke auf die **Chat**-Taste; sie sitzt im Modus „Performance“ unten in der Seitenleiste, in „Ausgewogen“ und „Komfortabel“ oben rechts in der Kopfzeile der Seite. Oder markiere Text auf einer Seite, klicke mit der rechten Maustaste und wähle **[dein Assistent] zu … fragen**, um im Kontext dazu zu fragen.
+Klicke auf die **Chat**-Taste; sie sitzt im Modus „Performance“ unten in der Seitenleiste, in „Ausgewogen“ und „Komfortabel“ oben rechts in der Kopfzeile der Seite. Oder markiere Text auf einer Seite, klicke mit der rechten Maustaste und wähle **[dein Assistent] zu … fragen**, um im Kontext dazu zu fragen. Du kannst auch in [Phi Chat](/de/phi-chat/) mit ihm sprechen, seinem eigenen Fenster.
+:::
+
+::: details Was ist Phi Chat?
+Dein Assistent in einem eigenen Fenster, mit eigenem Symbol im Dock. Es hat dieselben Unterhaltungen wie die Seitenleiste und ist der einzige Ort, der Unterhaltungen aus allen Profilen zeigt, mit Suche, Kategorien und den Unterhaltungen, in die deine Aufgaben berichten. Öffne es über das Symbol von Phi Sentinel in der Menüleiste, mit **In Phi Chat öffnen** in der Seitenleiste oder durch dreimaliges Drücken der Umschalttaste (⇧), sobald du das unter **Einstellungen → Phi & KI** eingeschaltet hast. Siehe [Phi Chat](/de/phi-chat/).
+:::
+
+::: details Warum sehe ich eine Unterhaltung nicht in der Seitenleiste?
+Die Seitenleiste zeigt nur Unterhaltungen aus dem Profil, in dem du gerade bist, dazu die, die zu keinem Profil gehören. Unterhaltungen aus deinen anderen Profilen findest du in [Phi Chat](/de/phi-chat/#conversations-from-every-profile), das sie alle zeigt.
+:::
+
+::: details Wohin gehen die Ergebnisse von Aufgaben?
+In die Unterhaltung, in der du um die Aufgabe gebeten hast, als Antwort des Assistenten. Die Unterhaltung wird als ungelesen markiert, und die Ansicht **Aufgaben** in Phi Chat sammelt sie. Siehe [Automatisierung & Phi Link](/de/automation/#tasks-report-back-to-their-conversation).
+:::
+
+::: details Was passiert, wenn ich das Nutzungslimit erreiche?
+Ein Banner über dem Nachrichtenfeld weist dich darauf hin und sagt dir, wenn es einen festen Zeitpunkt gibt, wann du weitermachen kannst. Bis dahin kannst du weiter tippen, aber nicht senden. Siehe [Nutzungslimits](/de/ai/#usage-limits).
 :::
 
 ::: details Was kann der Assistent?
@@ -265,7 +281,7 @@ Auf zwei Wegen: Nutze den offiziellen Phi Link-Bot, der einfachste Weg, denn du 
 :::
 
 ::: details Was kann Phi Link?
-Mit deinem Assistenten chatten, dich benachrichtigen, wenn Aufgaben gelingen oder scheitern, und Workflows abseits des Browsers weiterführen.
+Mit deinem Assistenten chatten, die Ergebnisse abgeschlossener Aufgabenausführungen erhalten und Workflows abseits des Browsers weiterführen.
 :::
 
 ::: details Nutzt Phi Link dieselbe Assistenten-Identität?

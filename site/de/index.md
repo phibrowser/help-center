@@ -37,6 +37,6 @@ features:
     link: /de/memory/
   - icon: ⚙️
     title: Automatisierung, wenn du sie brauchst
-    details: Bitte Phi, sofort zu handeln, lass Hintergrundaufgaben nebenher laufen oder halte geplante Arbeit mit Phi Sentinel in Bewegung.
+    details: Bitte Phi, sofort zu handeln, lass Aufgaben im Hintergrund laufen oder halte geplante Arbeit mit Phi Sentinel in Bewegung.
     link: /de/automation/
 ---

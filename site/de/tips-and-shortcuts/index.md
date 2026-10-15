@@ -21,8 +21,11 @@ Diese Seite sammelt Gesten und Kurzbefehle in Phi, die sich nicht direkt aus der
 | Ein neues Kiosk-Fenster aus jeder App öffnen, wenn der globale Kurzbefehl aktiviert ist | Befehlstaste (⌘) + Wahltaste (⌥) + N                                                                                      |
 | Eine Kiosk-Seite oder einen Peek als Tab in einem Space öffnen                          | Befehlstaste (⌘) + O                                                                                                      |
 | Das Menü zur Space-Auswahl in Kiosk öffnen                                              | Befehlstaste (⌘) + Umschalttaste (⇧) + O                                                                                  |
+| Phi Chat aus jeder App öffnen oder ausblenden, wenn der Kurzbefehl aktiviert ist        | Dreimal die Umschalttaste (⇧) drücken                                                                                     |
 
 Aktiviere den globalen Kiosk-Kurzbefehl unter **Einstellungen → Navigation → Kiosk**. Um die Tastenkombination zu ändern, bearbeite **Neues Kiosk-Fenster** unter **Einstellungen → Tastaturkurzbefehle → Ablage**.
+
+Der Phi Chat-Kurzbefehl ist standardmäßig aus. Schalte ihn mit **Phi Chat mit Umschalt Umschalt Umschalt aufrufen** unter **Einstellungen → Phi & KI → Phi Sentinel** ein. Andere Tasten lassen sich dafür nicht festlegen. Siehe [Phi Chat](/de/phi-chat/#opening-phi-chat).
 
 Die beiden Kurzbefehle zum Öffnen in einem Space kannst du unter **Einstellungen → Tastaturkurzbefehle → Kiosk & Peek** ändern. Details findest du unter [Kiosk](/de/kiosk/) und [Peek-Ansicht](/de/peek/).
 
@@ -110,7 +113,7 @@ Um ein offenes Bild-in-Bild-Fenster selbst zu parken, bewege den Zeiger darüber
 - Beim Öffnen des Assistenten wird der aktuelle Tab standardmäßig angehängt. Liegt dieser Tab in einer Gruppe, kann Phi die ganze Gruppe anhängen.
 - Eine Tab-Gruppe oder ein Split View lässt sich als eine Einheit anhängen.
 
-Um Unterhaltungen ohne angehängten aktuellen Tab zu beginnen, schalte **Aktuellen Tab automatisch als Kontext zu neuen Unterhaltungen hinzufügen** unter **Einstellungen → Phi AI → KI-Seitenleiste** aus.
+Um Unterhaltungen ohne angehängten aktuellen Tab zu beginnen, schalte **Aktuellen Tab automatisch als Kontext zu neuen Unterhaltungen hinzufügen** unter **Einstellungen → Phi & KI → KI-Seitenleiste** aus.
 
 Wenn du Phi Cloud verwendest, werden die Inhalte, die zur Beantwortung deiner Frage nötig sind, zur Verarbeitung an einen externen Modellanbieter gesendet. Mit Private KI bleiben sie auf deinem Mac. Details stehen unter [Datenschutz & deine Daten](/de/privacy/).
 

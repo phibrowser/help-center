@@ -28,6 +28,7 @@ export const guideGroups = [
     key: "assistantAutomation",
     items: [
       "assistant",
+      "phiChat",
       "memory",
       "skills",
       "automation",
@@ -60,6 +61,7 @@ export const guideRoutes = {
   themes: "/themes/",
   newTab: "/new-tab/",
   assistant: "/ai/",
+  phiChat: "/phi-chat/",
   memory: "/memory/",
   skills: "/skills/",
   automation: "/automation/",

@@ -21,7 +21,7 @@ Phi funciona en Macs con Apple Silicon (M1 o posterior) con macOS 14 o más reci
 La IA de Phi viene integrada y queda activa en cuanto inicias sesión. En lugar de una «IA» difusa, se compone de cuatro piezas, cada una con su función:
 
 - **[Memoria](/es/memory/)** construye contexto en silencio a partir de cómo navegas, para que el asistente te entienda sin que tengas que enseñarle nada.
-- **El asistente** es un compañero de chat al que tú mismo pones nombre, al que haces preguntas y al que delegas trabajo.
+- **El asistente** es un compañero de chat al que tú mismo pones nombre, al que haces preguntas y al que delegas trabajo, en la barra lateral o en [Phi Chat](/es/phi-chat/), su propia ventana.
 - **Las tareas agénticas** hacen cosas de verdad por ti, desde acciones puntuales hasta trabajo en segundo plano y programado que se ejecuta solo.
 - **[Las Habilidades del navegador](/es/skills/)** son flujos de trabajo reutilizables que el asistente puede ejecutar cuando se lo pides.
 
@@ -45,6 +45,7 @@ Consulta [Privacidad y tus datos](/es/privacy/) para los detalles.
 - [Sincronización](/es/sync/), mantener los Espacios, los marcadores, las pestañas fijadas, las Reglas de URL y los ajustes iguales en cada Mac.
 - [Temas y apariencia](/es/themes/), temas de color, claro y oscuro, y qué cosas colorea el tema.
 - [Conoce a tu asistente](/es/ai/), la Memoria, cómo hablar con él y las Habilidades.
+- [Phi Chat](/es/phi-chat/), el asistente en su propia ventana, con todas tus conversaciones.
 - [Memoria](/es/memory/), cómo aprende el asistente de tu navegación y cómo mantienes el control.
 - [Habilidades del navegador](/es/skills/), flujos de trabajo reutilizables: explora el conjunto integrado y crea los tuyos.
 - [La habilidad phi-browser](/es/phi-browser-skill/), permitir que un agente de IA externo controle Phi.

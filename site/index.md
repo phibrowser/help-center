@@ -37,6 +37,6 @@ features:
     link: /memory/
   - icon: ⚙️
     title: Automation when you need it
-    details: Ask Phi to act now, run Shadow Tasks in the background, or keep scheduled work moving with Phi Sentinel.
+    details: Ask Phi to act now, run tasks in the background, or keep scheduled work moving with Phi Sentinel.
     link: /automation/
 ---

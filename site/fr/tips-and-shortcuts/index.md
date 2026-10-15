@@ -21,8 +21,11 @@ Cette page rassemble les gestes et raccourcis de Phi que l'interface ne rend pas
 | Ouvrir une nouvelle fenêtre Kiosk depuis n'importe quelle app, avec le raccourci global activé | Commande (⌘) + Option (⌥) + N                                                            |
 | Ouvrir une page Kiosk ou un aperçu Peek dans un onglet d'un Espace                             | Commande (⌘) + O                                                                         |
 | Ouvrir le menu de sélection d'Espace de Kiosk                                                  | Commande (⌘) + Maj (⇧) + O                                                               |
+| Ouvrir ou masquer Phi Chat depuis n'importe quelle app, avec le raccourci activé               | Maj (⇧) trois fois                                                                       |
 
 Activez le raccourci global de Kiosk dans **Paramètres → Navigation → Kiosk**. Pour changer les touches, modifiez **Nouvelle fenêtre Kiosk** dans **Paramètres → Raccourcis → Fichier**.
+
+Le raccourci de Phi Chat est désactivé par défaut. Activez-le avec **Invoquer Phi Chat avec Maj Maj Maj** dans **Paramètres → Phi et IA → Phi Sentinel**. Il n'est pas possible de lui attribuer d'autres touches. Consultez [Phi Chat](/fr/phi-chat/#opening-phi-chat).
 
 Modifiez les deux raccourcis d'ouverture dans un Espace dans **Paramètres → Raccourcis → Kiosk et Peek**. Consultez [Kiosk](/fr/kiosk/) et [Vue Peek](/fr/peek/) pour les détails.
 
@@ -110,7 +113,7 @@ Pour ranger vous-même une fenêtre Picture-in-Picture ouverte, placez le pointe
 - Ouvrir l'assistant joint l'onglet actuel par défaut. Si cet onglet fait partie d'un groupe, Phi peut joindre le groupe entier.
 - Un groupe d'onglets ou une Split View peut être joint comme une seule unité.
 
-Pour démarrer des conversations sans joindre l'onglet actuel, désactivez **Ajouter automatiquement l'onglet actuel comme contexte de la nouvelle conversation** dans **Paramètres → Phi AI → Barre latérale IA**.
+Pour démarrer des conversations sans joindre l'onglet actuel, désactivez **Ajouter automatiquement l'onglet actif comme contexte aux nouvelles conversations** dans **Paramètres → Phi et IA → Barre latérale IA**.
 
 Quand vous utilisez Phi Cloud, le contenu nécessaire pour répondre à votre question est envoyé à un fournisseur de modèle tiers pour traitement. Avec l'IA privée, il reste sur votre Mac. Consultez [Confidentialité et vos données](/fr/privacy/) pour les détails.
 

@@ -60,7 +60,7 @@ If you have already uninstalled Phi, install it again and sign in to the same ac
 
 ### Turning AI off
 
-If you want a plain browser, you can disable all AI features in **Settings → Phi AI**. Turning AI off closes your AI conversations and disconnects any External Data Connectors.
+If you want a plain browser, you can disable all AI features in **Settings → Phi & AI**. Turning AI off closes your AI conversations and disconnects any External Data Connectors.
 
 Your Memory is not deleted by this switch, and it stays on your device. If you want to erase what Phi remembers as well, use the clear option on the Memory page; that deletion is permanent and cannot be undone.
 

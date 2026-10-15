@@ -4,13 +4,13 @@ description: "Leer Phi Sentinel kennen, de hulpapp in de macOS-menubalk die je a
 
 # Phi Sentinel
 
-Phi Sentinel is een kleine hulpapp die in de **menubalk** van macOS leeft, los van de browser. Die scheiding is bewust: de browser blijft licht, terwijl een stille achtergrondlaag blijft doorwerken, ook als er geen venster open is. De app heeft twee hoofdtaken: hij houdt je automatisering draaiende, en hij huisvest **Privé-AI**.
+Phi Sentinel is een kleine hulpapp die in de **menubalk** van macOS leeft, los van de browser. Die scheiding is bewust: de browser blijft licht, terwijl een stille achtergrondlaag blijft doorwerken, ook als er geen venster open is. De app heeft twee hoofdtaken: hij houdt je automatisering draaiende, en hij huisvest **Privé-AI**. Zijn menu bevat ook **Open Phi Chat**, een snelle weg naar [Phi Chat](/nl/phi-chat/) vanuit elke plek.
 
 ## Automatisering draaiende houden
 
 Sommige dingen die Phi doet, horen het moment te overleven waarop je erom vroeg. [Geplande taken](/nl/automation/#scheduled-tasks) moeten op hun eigen schema blijven draaien, ook nadat je het browservenster hebt gesloten, en daar is Phi Sentinel voor. Hij voert die taken uit, bewaart je AI-taakgeschiedenis en laat automatisering op de achtergrond doorgaan, zodat een prijscontrole om de paar uur of een pagina die je in de gaten houdt blijft doorlopen, of er nu een browservenster open is of niet.
 
-## Privé-AI
+## Privé-AI {#private-ai}
 
 Normaal handelt **Phi Cloud** de AI-taken van Phi af. **Privé-AI** is de optie om sommige ervan **juist op je Mac** te laten draaien, of via een modelprovider die je zelf kiest, zodat dat werk je machine nooit verlaat.
 

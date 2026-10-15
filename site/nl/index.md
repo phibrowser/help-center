@@ -37,6 +37,6 @@ features:
     link: /nl/memory/
   - icon: ⚙️
     title: Automatisering wanneer je die nodig hebt
-    details: Vraag Phi om direct iets te doen, laat Schaduwtaken op de achtergrond lopen of houd gepland werk op gang met Phi Sentinel.
+    details: Vraag Phi om direct iets te doen, laat taken op de achtergrond lopen of houd gepland werk op gang met Phi Sentinel.
     link: /nl/automation/
 ---

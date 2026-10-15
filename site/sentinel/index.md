@@ -4,7 +4,7 @@ description: "Understand Phi Sentinel, the macOS menu bar companion that keeps a
 
 # Phi Sentinel
 
-Phi Sentinel is a small companion app that lives in the macOS **menu bar**, separate from the browser. Keeping it apart is deliberate: the browser stays light while a quiet background layer keeps working even when no window is open. It does two main jobs: it keeps your automation running, and it hosts **Private AI**.
+Phi Sentinel is a small companion app that lives in the macOS **menu bar**, separate from the browser. Keeping it apart is deliberate: the browser stays light while a quiet background layer keeps working even when no window is open. It does two main jobs: it keeps your automation running, and it hosts **Private AI**. Its menu also has **Open Phi Chat**, a quick way into [Phi Chat](/phi-chat/) from anywhere.
 
 ## Keeping automation running
 

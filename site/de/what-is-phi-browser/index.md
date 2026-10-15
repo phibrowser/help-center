@@ -21,7 +21,7 @@ Neu bei Phi? Beginne mit [Erste Schritte](/de/get-started/), um Phi zu installie
 Phis KI ist eingebaut und läuft, sobald du angemeldet bist. Statt einer vagen „KI“ kommt sie in vier Bausteinen, die jeweils etwas anderes tun:
 
 - **[Erinnerungen](/de/memory/)** bauen im Stillen Kontext daraus auf, wie du surfst, damit der Assistent dich versteht, ohne dass du ihm etwas beibringen musst.
-- **Der Assistent** ist ein Chat-Begleiter, dem du selbst einen Namen gibst, Fragen stellst und Arbeit überträgst.
+- **Der Assistent** ist ein Chat-Begleiter, dem du selbst einen Namen gibst, Fragen stellst und Arbeit überträgst, in der Seitenleiste oder in [Phi Chat](/de/phi-chat/), seinem eigenen Fenster.
 - **Agentische Aufgaben** erledigen wirklich Dinge für dich, von einmaligen Aktionen bis zu Hintergrund- und geplanter Arbeit, die von allein läuft.
 - **[Browser Skills](/de/skills/)** sind wiederverwendbare Workflows, die der Assistent auf Zuruf ausführen kann.
 
@@ -45,6 +45,7 @@ Die Einzelheiten stehen in [Datenschutz & deine Daten](/de/privacy/).
 - [Synchronisierung](/de/sync/), Spaces, Lesezeichen, angeheftete Tabs, URL-Regeln und Einstellungen auf jedem Mac gleich halten.
 - [Designs & Erscheinungsbild](/de/themes/), Farbdesigns, Hell und Dunkel, und was das Design einfärbt.
 - [Lerne deinen Assistenten kennen](/de/ai/), Erinnerungen, das Gespräch mit ihm und Skills.
+- [Phi Chat](/de/phi-chat/), der Assistent in einem eigenen Fenster, mit all deinen Unterhaltungen.
 - [Erinnerungen](/de/memory/), wie der Assistent aus deinem Surfen lernt und wie du die Kontrolle behältst.
 - [Browser Skills](/de/skills/), wiederverwendbare Workflows: den integrierten Satz durchstöbern und eigene erstellen.
 - [Der phi-browser-Skill](/de/phi-browser-skill/), einen externen KI-Agenten Phi steuern lassen.
