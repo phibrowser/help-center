@@ -21,7 +21,7 @@ New to Phi? Start with [Getting Started](/get-started/) to install it and walk t
 Phi's AI is built in and on once you are signed in. Rather than one vague "AI", it comes in four parts that each do something different:
 
 - **[Memory](/memory/)** quietly builds context from how you browse, so the assistant understands you without you teaching it anything.
-- **The assistant** is a chat companion you name yourself, ask questions, and delegate work to.
+- **The assistant** is a chat companion you name yourself, ask questions, and delegate work to, in the sidebar or in [Phi Chat](/phi-chat/), its own window.
 - **Agentic tasks** actually do things for you, from one-off actions to background and scheduled work that runs on its own.
 - **[Browser Skills](/skills/)** are reusable workflows the assistant can run on demand.
 
@@ -45,6 +45,7 @@ See [Privacy & Your Data](/privacy/) for the details.
 - [Sync](/sync/), keeping Spaces, bookmarks, pinned tabs, URL Rules, and settings the same on every Mac.
 - [Themes & Appearance](/themes/), colour themes, light and dark, and what the theme colours.
 - [Meet your assistant](/ai/), Memory, talking to it, and Skills.
+- [Phi Chat](/phi-chat/), the assistant in its own window, with all your conversations.
 - [Memory](/memory/), how the assistant learns from your browsing and how you stay in control.
 - [Browser Skills](/skills/), reusable workflows: browse the built-in set and create your own.
 - [The phi-browser skill](/phi-browser-skill/), letting an outside AI agent drive Phi.

@@ -23,7 +23,7 @@ Built-in Skills are opt-in. They are there to browse, and you add the ones you w
 
 ## The Skills library
 
-The **Skills** page is where you manage all of this. Open it from the menu in the **top-right corner of the new tab**, the same menu that holds your recent conversations and widgets, and choose **Skills**.
+The **Skills** page is where you manage all of this. Open it from the menu in the **top-right corner of the new tab**, the same menu that holds your widgets, and choose **Skills**.
 
 It opens with a spotlight of featured built-in Skills, and below that you can browse the full set. Filter by **All**, **Built-in**, **User created**, or **Enabled**, or search by name. It is the closest thing to a gallery of what your assistant can do.
 
@@ -40,6 +40,8 @@ You are not limited to the built-in set. Phi includes a **Skill Creator** that h
 ## Using Skills in chat
 
 Skills run through your assistant, not on their own. Once a Skill is enabled, the assistant can reach for it by itself when your request matches what it does. You can also bring one into a conversation yourself: pick it from the Skills list while you are writing a message, including from the [new tab's ask box](/new-tab/), when you want to be explicit about which one to use.
+
+When you start a new conversation in the sidebar, up to four of your enabled Skills that fit the current page are suggested under the message box, for example summarising a video on a video page, or explaining or fact-checking an ordinary web page. Phi picks them from the page's address, not with AI. Clicking one sends it straight away, together with anything you had already typed.
 
 ## A Skill can act, so give it the same thought you would give yourself
 

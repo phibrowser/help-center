@@ -21,8 +21,11 @@ This page collects Phi gestures and shortcuts that are less obvious from the int
 | Open a new Kiosk window from any app, with the global shortcut enabled | Command (⌘) + Option (⌥) + N                                       |
 | Open a Kiosk page or Peek as a tab in a Space                          | Command (⌘) + O                                                    |
 | Open the Kiosk Space selection menu                                    | Command (⌘) + Shift (⇧) + O                                        |
+| Open or hide Phi Chat from any app, with the shortcut enabled          | Shift (⇧) three times                                              |
 
 Enable the global Kiosk shortcut under **Settings → Navigation → Kiosk**. To change its keys, edit **New Kiosk Window** under **Settings → Shortcuts → File**.
+
+The Phi Chat shortcut is off by default. Turn it on with **Summon Phi Chat with Shift Shift Shift** under **Settings → Phi & AI → Phi Sentinel**. It cannot be changed to other keys. See [Phi Chat](/phi-chat/#opening-phi-chat).
 
 Change the two Open in Space shortcuts under **Settings → Shortcuts → Kiosk & Peek**. See [Kiosk](/kiosk/) and [Peek View](/peek/) for details.
 
@@ -110,7 +113,7 @@ To park an open Picture-in-Picture window yourself, move the pointer over it and
 - Opening the assistant attaches the current tab by default. If that tab is in a group, Phi can attach the whole group.
 - A Tab Group or Split View can be attached as one unit.
 
-To start conversations without the current tab attached, turn off **Automatically add current tab as context to new conversation** under **Settings → Phi AI → AI Sidebar**.
+To start conversations without the current tab attached, turn off **Automatically add current tab as context to new conversation** under **Settings → Phi & AI → AI Sidebar**.
 
 When you use Phi Cloud, the content needed to answer your question is sent to a third-party model provider for processing. With Private AI, it stays on your Mac. See [Privacy & Your Data](/privacy/) for details.
 
