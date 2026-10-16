@@ -45,6 +45,7 @@
       "agentPasswords": "Gestionnaire de mots de passe pour les agents",
       "sentinel": "Phi Sentinel",
       "privacy": "Confidentialité et vos données",
+      "contentBlocking": "Blocage de contenu",
       "timeMachine": "Sauvegardes Time Machine"
     },
     "controls": {

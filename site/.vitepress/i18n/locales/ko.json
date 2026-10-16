@@ -45,6 +45,7 @@
       "agentPasswords": "에이전트 비밀번호 관리자",
       "sentinel": "Phi Sentinel",
       "privacy": "개인정보 보호 및 데이터",
+      "contentBlocking": "콘텐츠 차단",
       "timeMachine": "Time Machine 백업"
     },
     "controls": {

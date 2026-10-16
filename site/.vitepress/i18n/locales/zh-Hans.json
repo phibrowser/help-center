@@ -45,6 +45,7 @@
       "agentPasswords": "智能体密码管理器",
       "sentinel": "Phi Sentinel",
       "privacy": "隐私与你的数据",
+      "contentBlocking": "内容拦截",
       "timeMachine": "时间机器备份"
     },
     "controls": {
