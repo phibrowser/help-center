@@ -28,7 +28,7 @@ A simple way to hold it: **Spaces organize how things look and feel; Profiles de
 - **Switch** between Spaces from the sidebar with a single click. The sidebar's tabs, bookmarks, and theme change to match, and Phi reopens the Space's window if it is not already open.
 - **Rename** or **Change Icon** / **Change Theme** from the Space's menu. Choose **Follow Global** to drop a per-Space theme override.
 - **Delete** a Space from the same menu, or with **Spaces → Delete Space…** in the menu bar. Deleting a Space also removes the bookmarks and URL Rules that belong to it, and cannot be undone. If pinned tab scope is **Space**, that Space's pinned tabs are removed too. Profile-scoped and App-scoped pinned tabs are not affected.
-- **There is no fixed default Space.** Any Space can be deleted, including the one Phi created when you first opened it. The one rule is that Phi always keeps at least one regular Space, across all Profiles, so **Delete** is not offered while a single Space remains. Create another Space first, then delete the one you no longer want. Incognito Spaces do not count towards that one; they are closed rather than deleted.
+- **There is no fixed default Space.** Any Space can be deleted, including the one Phi created when you first opened it. The one rule is that Phi always keeps at least one regular Space, across all Profiles, so **Delete** is not offered while a single Space remains. Create another Space first, then delete the one you no longer want. Incognito Spaces do not count toward that one; they are closed rather than deleted.
 
 ## URL Rules: route matching sites automatically
 

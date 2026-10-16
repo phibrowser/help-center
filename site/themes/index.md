@@ -4,7 +4,7 @@ description: "Customize Phi Browser with color themes, light or dark appearance,
 
 # Themes & Appearance
 
-Phi lets you set how the browser looks, a colour **theme** plus a **light or dark** choice, and it carries across the whole browser rather than one screen. Pick a look once and the window, the sidebar, and your new tab all follow it.
+Phi lets you set how the browser looks, a color **theme** plus a **light or dark** choice, and it carries across the whole browser rather than one screen. Pick a look once and the window, the sidebar, and your new tab all follow it.
 
 You will find these controls in **Settings → General**.
 
@@ -27,7 +27,7 @@ These are Phi's built-in theme accent colors:
 
 In Phi's picker, **Pure** is displayed as a white swatch with the blue accent as its selection ring. The table above shows the actual accent colors the theme uses elsewhere.
 
-Next to the colors, an **Opacity** slider controls how much the coloured layer shows through the window. Dial the tint up for more colour, or down for something closer to plain.
+Next to the colors, an **Opacity** slider controls how much the colored layer shows through the window. Dial the tint up for more color, or down for something closer to plain.
 
 ## Light, dark, or system
 

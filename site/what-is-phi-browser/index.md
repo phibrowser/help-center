@@ -43,13 +43,13 @@ See [Privacy & Your Data](/privacy/) for the details.
 - [Spaces & Profiles](/spaces/), separate workspaces, isolated Profiles, and URL routing rules.
 - [Bookmarks & Pinned Tabs](/bookmarks/), bookmarks that open in place as tabs, and pinned tabs.
 - [Sync](/sync/), keeping Spaces, bookmarks, pinned tabs, URL Rules, and settings the same on every Mac.
-- [Themes & Appearance](/themes/), colour themes, light and dark, and what the theme colours.
+- [Themes & Appearance](/themes/), color themes, light and dark, and what the theme colors.
 - [Meet your assistant](/ai/), Memory, talking to it, and Skills.
 - [Phi Chat](/phi-chat/), the assistant in its own window, with all your conversations.
 - [Memory](/memory/), how the assistant learns from your browsing and how you stay in control.
 - [Browser Skills](/skills/), reusable workflows: browse the built-in set and create your own.
 - [The phi-browser skill](/phi-browser-skill/), letting an outside AI agent drive Phi.
-- [New Tab & Widgets](/new-tab/), the personalised new tab and its widgets.
+- [New Tab & Widgets](/new-tab/), the personalized new tab and its widgets.
 - [Automation & Phi Link](/automation/), agentic tasks, Phi Sentinel, and Telegram.
 - [Phi Sentinel](/sentinel/), the background app that runs automation and hosts Private AI.
 - [Agent Password Manager](/agent-passwords/), how agents sign in without seeing your passwords.
