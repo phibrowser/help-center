@@ -51,7 +51,7 @@ Deleting a Space also removes the bookmarks and URL Rules that belong to it. Thi
 :::
 
 ::: details Is there a default Space that cannot be deleted?
-No. Any Space can be deleted, including the one Phi created when you first opened it. The one rule is that Phi always keeps at least one regular Space, so **Delete** is not offered while a single Space remains. Create another Space first, then delete the one you no longer want. Incognito Spaces do not count towards that one; they are closed rather than deleted.
+No. Any Space can be deleted, including the one Phi created when you first opened it. The one rule is that Phi always keeps at least one regular Space, so **Delete** is not offered while a single Space remains. Create another Space first, then delete the one you no longer want. Incognito Spaces do not count toward that one; they are closed rather than deleted.
 :::
 
 ::: details How is this different from Arc and Dia?
@@ -131,7 +131,7 @@ Yes. Turn off **Automatically peek from pinned tabs and bookmarks** in **Setting
 :::
 
 ::: details Is this similar to Arc or Dia?
-Yes. Phi uses the same broad living-sidebar idea, where saved pages stay visible and pinned pages sit at the top, while keeping its own bookmark tree and behaviour. See [Switching to Phi](/switching-to-phi/) for the migration comparison and [Bookmarks & Pinned Tabs](/bookmarks/) for the feature details.
+Yes. Phi uses the same broad living-sidebar idea, where saved pages stay visible and pinned pages sit at the top, while keeping its own bookmark tree and behavior. See [Switching to Phi](/switching-to-phi/) for the migration comparison and [Bookmarks & Pinned Tabs](/bookmarks/) for the feature details.
 :::
 
 ## Split View & Tab Groups
@@ -197,7 +197,7 @@ Phi Memory is the system that builds context from your browsing behavior over ti
 :::
 
 ::: details Do I need to save memories manually?
-No. Memory is automatic. Phi observes relevant browsing behaviour and builds context for you in the background.
+No. Memory is automatic. Phi observes relevant browsing behavior and builds context for you in the background.
 :::
 
 ::: details Where is Phi Memory stored?

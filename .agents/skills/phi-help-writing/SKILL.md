@@ -1,11 +1,11 @@
 ---
 name: phi-help-writing
-description: How to write for the Phi help centre and other Phinomenon user-facing docs. Voice, the em-dash ban, product terminology, accuracy rules, and a checker script. Use when writing or editing any page in the help-center repo, release notes, in-product copy, or anything a Phi user will read.
+description: How to write for the Phi help center and other Phinomenon user-facing docs. Voice, the em-dash ban, product terminology, accuracy rules, and a checker script. Use when writing or editing any page in the help-center repo, release notes, in-product copy, or anything a Phi user will read.
 ---
 
 # Writing for Phi
 
-This is how we write for people who use Phi. It exists because in August 2026 we swept the whole help centre and pulled out **289 em-dashes**, one roughly every 65 words, along with a pile of claims that were not quite true. Nearly all of it came from writing quickly rather than writing badly. These rules are what that sweep taught us, so the next person does not have to learn it from a diff.
+This is how we write for people who use Phi. It exists because in August 2026 we swept the whole help center and pulled out **289 em-dashes**, one roughly every 65 words, along with a pile of claims that were not quite true. Nearly all of it came from writing quickly rather than writing badly. These rules are what that sweep taught us, so the next person does not have to learn it from a diff.
 
 Read `references/patterns.md` for the before-and-after examples. Run `scripts/check.py` before you commit.
 
@@ -107,7 +107,7 @@ Specifically: if a page describes AI answering questions, it must be clear that 
 
 ### The Privacy Policy and Terms are the source of truth
 
-If a help page and the policy disagree, the policy is right and the page is a bug. When you change a page that touches data handling, permissions, accounts, payment, or agent behaviour, **open the policy and check**. It is at phibrowser.com/privacy and phibrowser.com/terms.
+If a help page and the policy disagree, the policy is right and the page is a bug. When you change a page that touches data handling, permissions, accounts, payment, or agent behavior, **open the policy and check**. It is at phibrowser.com/privacy and phibrowser.com/terms.
 
 ### Name third parties and their role
 
@@ -162,7 +162,7 @@ description: "One sentence, what the reader will be able to do. Used in search a
 
 ## 6. House spelling
 
-British-leaning, matching the Privacy Policy and Terms: **colour, behaviour, organised, personalised, authorise, recognise**. Keep US spelling only inside quoted UI strings, because the UI says what it says.
+American English, as the company requires: **color, behavior, organized, personalized, authorize, recognize, catalog, toward**. This holds even where the Privacy Policy and Terms use British forms; quote those documents as written. `scripts/check.py` flags common British spellings on English pages.
 
 Other conventions: **Oxford comma yes**. Numbers under ten in words, except versions, sizes, and counts of UI elements. `**bold**` for UI labels the reader must find, `_italic_` sparingly, `` `code` `` for literal input, paths, and settings keys.
 

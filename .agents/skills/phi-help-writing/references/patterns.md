@@ -1,6 +1,6 @@
 # Before and after
 
-Every example is real, taken from the August 2026 help-centre sweep. If you are unsure how to fix a sentence, find the shape that matches it here.
+Every example is real, taken from the August 2026 help-center sweep. If you are unsure how to fix a sentence, find the shape that matches it here.
 
 ---
 
@@ -38,9 +38,9 @@ Full stop. This is the one that most often improves the writing, because the sec
 >
 > **After** — Click one and it opens in place, so that same sidebar entry becomes its live tab.
 
-> **Before** — Memory is automatic — Phi observes relevant browsing behaviour and builds context in the background.
+> **Before** — Memory is automatic — Phi observes relevant browsing behavior and builds context in the background.
 >
-> **After** — Memory is automatic. Phi observes relevant browsing behaviour and builds context in the background.
+> **After** — Memory is automatic. Phi observes relevant browsing behavior and builds context in the background.
 
 ### Because, but written lazily
 
@@ -110,7 +110,7 @@ Vague reassurance is worth less than telling someone exactly who holds their dat
 
 ### The missing risk warning
 
-Nothing in the help centre mentioned that automation can get an account banned, while the Terms said it plainly.
+Nothing in the help center mentioned that automation can get an account banned, while the Terms said it plainly.
 
 > **Added** — Some sites do not want agents, and they will act on it. Reddit is the well-known example: accounts identified as automated get restricted or banned, and that call is theirs to make, not ours. That risk is yours, and it is not something we can appeal or undo on your behalf.
 

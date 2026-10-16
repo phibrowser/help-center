@@ -1,5 +1,5 @@
 ---
-description: "Use Phi Chat, your assistant in its own window, to open conversations from the sidebar, browse conversations from every Profile, organise them into categories, and follow your tasks."
+description: "Use Phi Chat, your assistant in its own window, to open conversations from the sidebar, browse conversations from every Profile, organize them into categories, and follow your tasks."
 ---
 
 # Phi Chat
@@ -46,7 +46,7 @@ Choosing a Profile here only filters the list. It never moves a conversation to 
 
 If you delete a Profile, its conversations are kept. They lose their categories and appear under **Uncategorized** in Phi Chat. If AI features are off at the time, that happens once they are back on.
 
-## Finding and organising conversations
+## Finding and organizing conversations {#finding-and-organising-conversations}
 
 The list shows your most recently active conversations first, 50 at a time. Click **Load more** at the bottom for older ones.
 

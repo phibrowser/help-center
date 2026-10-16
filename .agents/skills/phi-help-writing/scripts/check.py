@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Mechanical checks for Phi help-centre pages.
+"""Mechanical checks for Phi help-center pages.
 
     python3 scripts/check.py site/**/*.md
     python3 scripts/check.py site/ai/index.md --quiet
@@ -18,7 +18,7 @@ BANNED_TERMS = [
     (r"(?<!\*\*)\blog in\b(?! wall)",  "'log in' as a verb. Use 'sign in'. ('a login' as a noun is fine.)", False),
     (r"(?<!\*\*)\blog out\b",          "'log out' as a verb. Use 'sign out'.", False),
     (r"\bregister\b|\bsign up for an account\b", "'register'. Use 'create an account'.", False),
-    # "just"/"simply" are only a problem when they minimise a task the reader has to do.
+    # "just"/"simply" are only a problem when they minimize a task the reader has to do.
     # "not just X" and "it is simply there" are ordinary English and stay.
     (r"(?<!not )\b(just|simply)\s+(click|open|type|select|choose|drag|press|add|enable|disable|turn|use|run|install|set|hit|tap)\b",
                                    "'just'/'simply' before an instruction. Only read by someone who is stuck.", False),
@@ -30,6 +30,41 @@ BANNED_TERMS = [
     (r"phi-browser skills\b",       "the phi-browser skill is singular. There is only one.", True),
     (r"\bMacOS\b|\bMac OS\b|\bOSX\b", "write 'macOS'.", True),
 ]
+
+# House spelling is American. Checked on English pages only, because the same
+# stems are correct in French, Dutch, and German.
+BRITISH_WORDS = re.compile(
+    r"\b(colour\w*|behaviour\w*|favourite\w*|honour\w*|neighbour\w*|"
+    r"centre[sd]?|catalogue[sd]?|licence[sd]?|defence|offence|grey|whilst|amongst|towards|"
+    r"labell(?:ed|ing)|cancell(?:ed|ing)|travell(?:ed|ing)|modell(?:ed|ing))\b",
+    re.I,
+)
+# -ise/-yse verb forms, minus the English words that are always spelled that way.
+BRITISH_ISE = re.compile(r"\b\w+(?:is|ys)(?:e|es|ed|ing|ation|ations)\b", re.I)
+ISE_WORDS = set("""
+    advertise advise apprise arise chastise circumcise comprise compromise concise
+    demise despise devise disguise enterprise excise exercise expertise franchise
+    improvise incise likewise merchandise noise otherwise paradise poise praise
+    precise premise promise raise reprise revise rise supervise surmise surprise
+    televise treatise wise clockwise anticlockwise counterclockwise lengthwise
+    stepwise pairwise bruise cruise guise chaise
+""".split())
+
+
+def british_ise(word):
+    w = word.lower()
+    if w.endswith("ations"):
+        stem = w[:-6] + "e"
+    elif w.endswith("ation"):
+        stem = w[:-5] + "e"
+    elif w.endswith("es") or w.endswith("ed"):
+        stem = w[:-1]
+    elif w.endswith("ing"):
+        stem = w[:-3] + "e"
+    else:
+        stem = w
+    return stem not in ISE_WORDS and not stem.endswith("wise") and len(stem) > 5
+
 
 # "Skills" alone, where it could mean either thing. Advisory, not fatal.
 AMBIGUOUS_SKILLS = re.compile(r"(?<!Browser )(?<!browser )\bSkills\b")
@@ -54,6 +89,16 @@ def check(path, quiet=False):
             fails.append(f"{path}: missing frontmatter 'description:'.")
         if len(re.findall(r"^# ", src, re.M)) != 1:
             fails.append(f"{path}: needs exactly one H1.")
+
+    norm = path.replace(os.sep, "/")
+    if "/site/" in "/" + norm and not re.search(r"(^|/)site/(de|es|fr|ja|ko|nl|zh-Hans|zh-Hant)/", norm):
+        # Anchor ids and link targets keep old slugs on purpose, so links keep working.
+        prose = re.sub(r"\{#[^}]*\}|\]\([^)]*\)", lambda m: " " * len(m.group(0)), src)
+        matches = list(BRITISH_WORDS.finditer(prose))
+        matches += [m for m in BRITISH_ISE.finditer(prose) if british_ise(m.group(0))]
+        for m in sorted(matches, key=lambda m: m.start()):
+            line = src[:m.start()].count("\n") + 1
+            fails.append(f"{path}:{line}: British spelling. House spelling is American (SKILL.md section 6).  ->  {m.group(0)!r}")
 
     for m in AMBIGUOUS_SKILLS.finditer(src):
         line = src[:m.start()].count("\n") + 1

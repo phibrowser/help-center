@@ -10,7 +10,7 @@ In Phi the sidebar is your workspace, and bookmarks and pinned tabs are the two 
 
 In a traditional browser a bookmark is a dead link: clicking it always spawns a fresh tab, and you end up with duplicates of the same page. Phi treats a bookmark as a living entry instead. Click one and it opens in place, so that same sidebar entry becomes its live tab. Close the page and the bookmark stays exactly where it was, ready to open again. If the bookmark is already open, clicking it just activates that tab rather than making a second copy.
 
-This is the idea Arc and Dia popularized: the sidebar holds living things, not a separate archive you visit twice a year. Phi follows that model, while keeping a real bookmark tree, folders included, so you still get the organisation a bookmark archive gives you.
+This is the idea Arc and Dia popularized: the sidebar holds living things, not a separate archive you visit twice a year. Phi follows that model, while keeping a real bookmark tree, folders included, so you still get the organization a bookmark archive gives you.
 
 ## Making and organizing bookmarks
 
@@ -58,6 +58,6 @@ To keep the current page, hold **Command (⌘)** while you double-click the pinn
 A simple split of responsibilities:
 
 - **Pinned tabs** are pages you live in, always at the top, one click away, and shared at the Space, Profile, or App scope you choose.
-- **Bookmarks** are pages you want to keep, organised in folders, scoped to one Space, and opened in place when you need them.
+- **Bookmarks** are pages you want to keep, organized in folders, scoped to one Space, and opened in place when you need them.
 
 If you are switching from Arc or Dia, see [Switching to Phi](/switching-to-phi/) for how Phi's living sidebar, bookmarks, and pinned tabs compare. To bring bookmarks in from another browser or a file, or to save a Space's bookmarks back out to HTML, see [Importing & Exporting](/import-export/).

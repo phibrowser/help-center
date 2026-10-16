@@ -31,7 +31,7 @@ There are a few ways to reach it:
 - **Right-click selected text** and choose **Ask [your assistant] about…** to ask about it directly, with the selection coming along as context.
 - **Open [Phi Chat](/phi-chat/)**, the assistant in a window of its own, from the Phi Sentinel menu bar icon or by pressing Shift three times once you have turned that on.
 
-Asking in context beats copying things into a separate chat window. It can answer questions, summarise content, explain pages, and help with tasks, drawing on the current tab, what it remembers about you, and your connected external data.
+Asking in context beats copying things into a separate chat window. It can answer questions, summarize content, explain pages, and help with tasks, drawing on the current tab, what it remembers about you, and your connected external data.
 
 A new conversation opens with the assistant's avatar and name above the message box. Click the avatar to see its role card. In the sidebar, a few [Browser Skills](/skills/#using-skills-in-chat) that fit the current page are suggested underneath.
 
@@ -59,7 +59,7 @@ The assistant has a usage allowance. If you reach it, a banner above the message
 
 ## Chat with Tabs
 
-The assistant can bring the pages you have open into a conversation as context. Attach one or more tabs and ask across them, comparing them, summarising them, or pulling details from several at once, without copying anything into a separate window. Because it understands [Split View and Tab Groups](/layouts/), opening a chat while your current tab is in a group attaches the whole group, and you can attach a Tab Group or Split View as a single unit. That way you can ask about related pages without explaining how they fit together.
+The assistant can bring the pages you have open into a conversation as context. Attach one or more tabs and ask across them, comparing them, summarizing them, or pulling details from several at once, without copying anything into a separate window. Because it understands [Split View and Tab Groups](/layouts/), opening a chat while your current tab is in a group attaches the whole group, and you can attach a Tab Group or Split View as a single unit. That way you can ask about related pages without explaining how they fit together.
 
 Tabs you sent with a message stay in the conversation as small cards. Click one to go back to that tab, or to open its page again in a new tab if the tab has since moved on. If a tab you attach has been unloaded to save memory, Phi loads it in the background to read it, without switching to it. That usually works, but a page that does not load in time may be read only partly, or not at all.
 
