@@ -45,6 +45,7 @@
       "agentPasswords": "Administrador de contraseñas del agente",
       "sentinel": "Phi Sentinel",
       "privacy": "Privacidad y tus datos",
+      "contentBlocking": "Bloqueo de contenido",
       "timeMachine": "Copias de seguridad de Time Machine"
     },
     "controls": {

@@ -40,7 +40,7 @@ export const guideGroups = [
   },
   {
     key: "privacyRecovery",
-    items: ["privacy", "timeMachine"],
+    items: ["privacy", "contentBlocking", "timeMachine"],
   },
 ] as const;
 
@@ -70,5 +70,6 @@ export const guideRoutes = {
   agentPasswords: "/agent-passwords/",
   sentinel: "/sentinel/",
   privacy: "/privacy/",
+  contentBlocking: "/content-blocking/",
   timeMachine: "/time-machine/",
 } as const;

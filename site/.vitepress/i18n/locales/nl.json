@@ -45,6 +45,7 @@
       "agentPasswords": "Wachtwoordmanager voor agents",
       "sentinel": "Phi Sentinel",
       "privacy": "Privacy & je gegevens",
+      "contentBlocking": "Contentblokkering",
       "timeMachine": "Time Machine-back-ups"
     },
     "controls": {

@@ -45,6 +45,7 @@
       "agentPasswords": "エージェントのパスワードマネージャー",
       "sentinel": "Phi Sentinel",
       "privacy": "プライバシーとデータ",
+      "contentBlocking": "コンテンツブロック",
       "timeMachine": "Time Machineバックアップ"
     },
     "controls": {

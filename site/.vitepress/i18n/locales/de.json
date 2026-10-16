@@ -45,6 +45,7 @@
       "agentPasswords": "Passwortmanager für Agenten",
       "sentinel": "Phi Sentinel",
       "privacy": "Datenschutz & deine Daten",
+      "contentBlocking": "Inhaltsblockierung",
       "timeMachine": "Time Machine-Backups"
     },
     "controls": {
