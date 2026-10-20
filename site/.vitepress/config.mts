@@ -216,6 +216,12 @@ export default defineConfig({
   locales: localeConfig,
   base,
   outDir: ".vitepress/dist/help",
+  // Load the site data (every locale's nav and sidebar) from one shared,
+  // cacheable chunk instead of inlining it into each page's HTML. Inlined, it
+  // was ~95% of every page, and Googlebot crawled its base-less link strings
+  // (`/peek/` instead of `/help/peek/`) as URLs, producing 404s on the main
+  // site. See docs/2026-10-20-site-data-meta-chunk.md.
+  metaChunk: true,
   // Emitted at /help/sitemap.xml. The hostname includes the /help/ base so the
   // generated <loc> URLs are absolute under the sub-path (e.g.
   // https://phibrowser.com/help/faq/). philanding's robots.txt references this
