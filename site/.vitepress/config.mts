@@ -1,6 +1,6 @@
 import { execFileSync } from "node:child_process";
-import { existsSync, statSync } from "node:fs";
-import { resolve } from "node:path";
+import { existsSync, statSync, writeFileSync } from "node:fs";
+import { dirname, resolve } from "node:path";
 import { defineConfig } from "vitepress";
 import type { HeadConfig } from "vitepress";
 import {
@@ -222,6 +222,17 @@ export default defineConfig({
   // (`/peek/` instead of `/help/peek/`) as URLs, producing 404s on the main
   // site. See docs/2026-10-20-site-data-meta-chunk.md.
   metaChunk: true,
+  // Every file under assets/ carries a content hash in its name, so it can be
+  // cached for a year without revalidation (Workers otherwise sends
+  // `max-age=0, must-revalidate`). Workers reads `_headers` from the root of
+  // `assets.directory` in wrangler.jsonc, the parent of outDir, so it is
+  // written there rather than shipped from site/public/.
+  buildEnd(siteConfig) {
+    writeFileSync(
+      resolve(dirname(siteConfig.outDir), "_headers"),
+      `${base}${siteConfig.assetsDir}/*\n  Cache-Control: public, max-age=31536000, immutable\n`,
+    );
+  },
   // Emitted at /help/sitemap.xml. The hostname includes the /help/ base so the
   // generated <loc> URLs are absolute under the sub-path (e.g.
   // https://phibrowser.com/help/faq/). philanding's robots.txt references this
