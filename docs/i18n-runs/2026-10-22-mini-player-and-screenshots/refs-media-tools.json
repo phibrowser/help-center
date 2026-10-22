@@ -1,0 +1,151 @@
+{
+  "source": "phi-browser-mac/Resources/Localizable.xcstrings, captured 2026-10-22; native catalog keys. Only labels and the pixelation terminology used by the final help text are retained.",
+  "sourceSha256": [
+    "f1886ac0fdd6a71f35ec9d8b87ccd9866a8a81041b40668315ff8402043c5b5f"
+  ],
+  "labels": {
+    "settings.shortcuts.command.openSettings": {
+      "en": "Settings",
+      "zh-Hans": "设置",
+      "zh-Hant": "設定",
+      "ja": "設定",
+      "ko": "설정",
+      "de": "Einstellungen",
+      "fr": "Paramètres",
+      "es": "Configuración",
+      "nl": "Instellingen"
+    },
+    "settings.navigation.advancedTitle": {
+      "en": "Advanced",
+      "zh-Hans": "高级",
+      "zh-Hant": "進階",
+      "ja": "詳細",
+      "ko": "고급",
+      "de": "Erweitert",
+      "fr": "Avancés",
+      "es": "Avanzado",
+      "nl": "Geavanceerd"
+    },
+    "settings.advanced.miniPlayer.title": {
+      "en": "Mini Player",
+      "zh-Hans": "迷你播放程序",
+      "zh-Hant": "迷你播放器",
+      "ja": "ミニプレーヤー",
+      "ko": "미니 플레이어",
+      "de": "MiniPlayer",
+      "fr": "Mini-lecteur",
+      "es": "Minirreproductor",
+      "nl": "Minispeler"
+    },
+    "settings.advanced.miniPlayer.offOption": {
+      "en": "Off",
+      "zh-Hans": "关闭",
+      "zh-Hant": "關閉",
+      "ja": "オフ",
+      "ko": "끔",
+      "de": "Aus",
+      "fr": "Désactivé",
+      "es": "Desactivado",
+      "nl": "Uit"
+    },
+    "settings.general.sidebarMedia.dynamicOption": {
+      "en": "Auto",
+      "zh-Hans": "自动",
+      "zh-Hant": "自動",
+      "ja": "自動",
+      "ko": "자동",
+      "de": "Automatisch",
+      "fr": "Auto",
+      "es": "Automático",
+      "nl": "Automatisch"
+    },
+    "settings.general.sidebarMedia.alwaysExpandedOption": {
+      "en": "Always expanded",
+      "zh-Hans": "始终展开",
+      "zh-Hant": "一律展開",
+      "ja": "常に展開",
+      "ko": "항상 확장",
+      "de": "Immer erweitert",
+      "fr": "Toujours développé",
+      "es": "Siempre expandido",
+      "nl": "Altijd uitgeklapt"
+    },
+    "settings.general.sidebarMedia.alwaysCompactOption": {
+      "en": "Always compact",
+      "zh-Hans": "始终紧凑",
+      "zh-Hant": "一律精簡",
+      "ja": "常にコンパクト",
+      "ko": "항상 축소",
+      "de": "Immer kompakt",
+      "fr": "Toujours compact",
+      "es": "Siempre compacto",
+      "nl": "Altijd compact"
+    },
+    "app.fileMenu.copyFullPageScreenshot": {
+      "en": "Capture Full Page",
+      "zh-Hans": "捕捉整个页面",
+      "zh-Hant": "擷取整個網頁",
+      "ja": "ページ全体をキャプチャ",
+      "ko": "전체 페이지 캡처",
+      "de": "Bildschirmfoto der ganzen Seite aufnehmen",
+      "fr": "Capturer la page entière",
+      "es": "Capturar página completa",
+      "nl": "Leg volledige pagina vast"
+    },
+    "app.fileMenu.capturePageArea": {
+      "en": "Capture Area…",
+      "zh-Hans": "捕捉区域…",
+      "zh-Hant": "擷取區域…",
+      "ja": "範囲をキャプチャ…",
+      "ko": "영역 캡처…",
+      "de": "Bildschirmfoto eines Bereichs aufnehmen…",
+      "fr": "Capturer une zone…",
+      "es": "Capturar área…",
+      "nl": "Leg gebied vast…"
+    },
+    "settings.navigation.shortcutsTitle": {
+      "en": "Shortcuts",
+      "zh-Hans": "快捷键",
+      "zh-Hant": "快速鍵",
+      "ja": "ショートカット",
+      "ko": "단축키",
+      "de": "Tastaturkurzbefehle",
+      "fr": "Raccourcis",
+      "es": "Atajos",
+      "nl": "Toetscombinaties"
+    },
+    "settings.shortcuts.group.file": {
+      "en": "File",
+      "zh-Hans": "文件",
+      "zh-Hant": "檔案",
+      "ja": "ファイル",
+      "ko": "파일",
+      "de": "Ablage",
+      "fr": "Fichier",
+      "es": "Archivo",
+      "nl": "Archief"
+    },
+    "browser.screenshot.export": {
+      "en": "Export…",
+      "zh-Hans": "导出…",
+      "zh-Hant": "匯出…",
+      "ja": "書き出す…",
+      "ko": "내보내기…",
+      "de": "Exportieren…",
+      "fr": "Exporter…",
+      "es": "Exportar…",
+      "nl": "Exporteer…"
+    },
+    "browser.screenshot.mosaic": {
+      "en": "Blur",
+      "zh-Hans": "马赛克",
+      "zh-Hant": "馬賽克",
+      "ja": "モザイク",
+      "ko": "모자이크",
+      "de": "Verpixeln",
+      "fr": "Pixellisation",
+      "es": "Pixelar",
+      "nl": "Pixelen"
+    }
+  }
+}

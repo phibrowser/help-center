@@ -1,5 +1,5 @@
 ---
-description: "Lerne nützliche Gesten und Kurzbefehle in Phi Browser kennen, dazu die Anpassung von Spaces, URL-Regeln und die Steuerung von Bild-in-Bild."
+description: "Lerne nützliche Gesten und Kurzbefehle in Phi Browser kennen, dazu die Anpassung von Spaces, URL-Regeln, MiniPlayer, die Steuerung von Bild-in-Bild und Werkzeuge für Bildschirmfotos."
 ---
 
 # Schnelle Tipps für Phi Browser
@@ -16,6 +16,8 @@ Diese Seite sammelt Gesten und Kurzbefehle in Phi, die sich nicht direkt aus der
 | In umgekehrter Reihenfolge wechseln                                                     | Ctrl-Taste (⌃) + Umschalttaste (⇧) + Tab                                                                                  |
 | URL der aktuellen Seite kopieren                                                        | Befehlstaste (⌘) + Umschalttaste (⇧) + C                                                                                  |
 | Offene Tabs durchsuchen                                                                 | Befehlstaste (⌘) + Umschalttaste (⇧) + A                                                                                  |
+| Die ganze Seite aufnehmen                                                               | Befehlstaste (⌘) + Umschalttaste (⇧) + 1                                                                                  |
+| Einen ausgewählten Bereich aufnehmen                                                    | Befehlstaste (⌘) + Umschalttaste (⇧) + 2                                                                                  |
 | Zum vorherigen oder nächsten Space wechseln                                             | Befehlstaste (⌘) + Wahltaste (⌥) + ← oder →                                                                               |
 | Einen der ersten neun Spaces öffnen                                                     | Ctrl-Taste (⌃) + 1 bis 9                                                                                                  |
 | Ein neues Kiosk-Fenster aus jeder App öffnen, wenn der globale Kurzbefehl aktiviert ist | Befehlstaste (⌘) + Wahltaste (⌥) + N                                                                                      |
@@ -106,6 +108,37 @@ Phi kann ein laufendes Video in ein schwebendes Fenster herauslösen, wenn du de
 Bewege ein Bild-in-Bild-Fenster oder ändere seine Größe, und Phi merkt sich Position und Größe für das nächste Mal, wenn diese Website Bild-in-Bild öffnet. Gespeichert wird das pro Website in einem regulären Profil; Inkognito-Spaces behalten es nicht. Ist das gespeicherte Display nicht mehr angeschlossen, verwendet Phi die Standardplatzierung.
 
 Um ein offenes Bild-in-Bild-Fenster selbst zu parken, bewege den Zeiger darüber und klicke auf den Abwärtspfeil mit der Beschriftung **Am Bildschirmrand andocken**. Phi schiebt das Fenster an den nächstgelegenen Bildschirmrand und lässt einen Griff sichtbar. Klicke auf den Griff, um das Fenster zurückzuholen. Dieses Bedienelement funktioniert auch dann, wenn automatisches Bild-in-Bild auf **Aus** steht.
+
+## Hintergrundmedien mit dem MiniPlayer steuern
+
+Der MiniPlayer erscheint unten in der Seitenleiste, wenn unterstützte Audio- oder Videoinhalte in einem Hintergrund-Tab wiedergegeben werden, auch wenn du zu einem anderen Space wechselst. Bei stummgeschalteten Medien erscheint der MiniPlayer nicht automatisch. Der MiniPlayer wird ausgeblendet, wenn du zum Quell-Tab zurückkehrst, wenn dieser Tab in Split View sichtbar ist oder wenn sein Video in Bild-in-Bild läuft.
+
+Mit dem MiniPlayer kannst du die Wiedergabe starten oder pausieren und Titel überspringen. Klicke auf das Website-Symbol, um zum Quell-Tab zurückzukehren. Klicke auf die Lautsprechertaste, um den Lautstärkeregler anzuzeigen. Halte beim Klicken die Wahltaste (⌥) gedrückt, um den Ton stummzuschalten oder die Stummschaltung aufzuheben. Wenn mehrere Hintergrund-Tabs Medien enthalten, wische auf dem MiniPlayer nach links oder rechts, um die Quelle zu wechseln.
+
+Erweitere den MiniPlayer, um Mediendetails zu sehen, zu einer anderen Stelle im Titel zu springen oder Bild-in-Bild zu öffnen. Welche Details und Bedienelemente verfügbar sind, hängt davon ab, was die Website unterstützt.
+
+Wähle einen Modus unter **Einstellungen → Erweitert → MiniPlayer**:
+
+| Modus               | Verhalten                                                                                                                                             |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Aus**             | Der MiniPlayer erscheint nicht automatisch.                                                                                                           |
+| **Automatisch**     | Der MiniPlayer beginnt kompakt und wird erweitert, wenn du den Zeiger darüber bewegst oder er Tastaturfokus erhält. Dies ist die Standardeinstellung. |
+| **Immer erweitert** | Der MiniPlayer wird erweitert angezeigt, sobald unterstützte Hintergrundmedien verfügbar sind.                                                        |
+| **Immer kompakt**   | Der MiniPlayer bleibt kompakt.                                                                                                                        |
+
+## Bildschirmfotos aufnehmen und bearbeiten
+
+Wähle **Ablage → Bildschirmfoto der ganzen Seite aufnehmen** oder drücke Befehlstaste (⌘) + Umschalttaste (⇧) + 1, um die aktuelle Webseite einschließlich der Inhalte außerhalb des sichtbaren Bereichs aufzunehmen.
+
+Wähle **Ablage → Bildschirmfoto eines Bereichs aufnehmen…** oder drücke Befehlstaste (⌘) + Umschalttaste (⇧) + 2. Ziehe dann, um einen Teil der Seite auszuwählen. Scrolle beim Ziehen mit der Maus oder dem Trackpad, oder halte den Zeiger nahe an einem Seitenrand, um die Auswahl über den sichtbaren Bereich hinaus zu erweitern. Lass los, um die Aufnahme zu machen, oder drücke die Esc-Taste, um abzubrechen.
+
+Dies sind die Standardkurzbefehle. Du kannst sie unter **Einstellungen → Tastaturkurzbefehle → Ablage** ändern.
+
+Nach der Aufnahme kopiert Phi das ursprüngliche Bildschirmfoto als PNG in die Zwischenablage und öffnet den Bildeditor.
+
+Im Bildeditor kannst du dein Bildschirmfoto beschneiden, darauf zeichnen, Text und Formen hinzufügen oder einzelne Bereiche verpixeln.
+
+Klicke auf **Exportieren…**, um dein bearbeitetes Bild als PNG, JPG oder PDF zu sichern.
 
 ## Den Assistenten zu deiner aktuellen Arbeit befragen
 

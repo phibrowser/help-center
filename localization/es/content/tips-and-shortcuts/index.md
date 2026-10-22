@@ -1,5 +1,5 @@
 ---
-description: "Aprende gestos y atajos útiles de Phi Browser, la personalización de Espacios, las Reglas de URL y los controles de imagen en imagen."
+description: "Aprende gestos y atajos útiles de Phi Browser, la personalización de Espacios, las Reglas de URL, el Minirreproductor, los controles de imagen en imagen y las herramientas de captura de pantalla."
 ---
 
 # Consejos rápidos para Phi Browser
@@ -8,15 +8,28 @@ Esta página reúne gestos y atajos de Phi que no resultan tan evidentes desde l
 
 ## Referencia de atajos
 
-| Acción                                          | Atajo o gesto                                                                                  |
-| ----------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| Crear una Vista dividida                        | Clic con Opción (⌥) en una pestaña, una pestaña fijada, un marcador o un enlace web compatible |
-| Cambiar entre las pestañas usadas recientemente | Control (⌃) + Tab                                                                              |
-| Cambiar en orden inverso                        | Control (⌃) + Mayúsculas (⇧) + Tab                                                             |
-| Copiar la URL de la página actual               | Comando (⌘) + Mayúsculas (⇧) + C                                                               |
-| Buscar entre las pestañas abiertas              | Comando (⌘) + Mayúsculas (⇧) + A                                                               |
-| Ir al Espacio anterior o siguiente              | Comando (⌘) + Opción (⌥) + ← o →                                                               |
-| Abrir uno de los primeros nueve Espacios        | Control (⌃) + 1 a 9                                                                            |
+| Acción                                                                                    | Atajo o gesto                                                                                  |
+| ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Crear una Vista dividida                                                                  | Clic con Opción (⌥) en una pestaña, una pestaña fijada, un marcador o un enlace web compatible |
+| Ver la vista previa de un enlace en un Peek                                               | Clic con Mayúsculas (⇧) en un enlace web                                                       |
+| Cambiar entre las pestañas usadas recientemente                                           | Control (⌃) + Tab                                                                              |
+| Cambiar en orden inverso                                                                  | Control (⌃) + Mayúsculas (⇧) + Tab                                                             |
+| Copiar la URL de la página actual                                                         | Comando (⌘) + Mayúsculas (⇧) + C                                                               |
+| Buscar entre las pestañas abiertas                                                        | Comando (⌘) + Mayúsculas (⇧) + A                                                               |
+| Capturar la página completa                                                               | Comando (⌘) + Mayúsculas (⇧) + 1                                                               |
+| Capturar un área seleccionada                                                             | Comando (⌘) + Mayúsculas (⇧) + 2                                                               |
+| Ir al Espacio anterior o siguiente                                                        | Comando (⌘) + Opción (⌥) + ← o →                                                               |
+| Abrir uno de los primeros nueve Espacios                                                  | Control (⌃) + 1 a 9                                                                            |
+| Abrir una nueva ventana de Kiosk desde cualquier aplicación, con el atajo global activado | Comando (⌘) + Opción (⌥) + N                                                                   |
+| Abrir una página de Kiosk o un Peek como pestaña en un Espacio                            | Comando (⌘) + O                                                                                |
+| Abrir el menú de selección de Espacios de Kiosk                                           | Comando (⌘) + Mayúsculas (⇧) + O                                                               |
+| Abrir u ocultar Phi Chat desde cualquier aplicación, con el atajo activado                | Mayúsculas (⇧) tres veces                                                                      |
+
+Activa el atajo global de Kiosk en **Configuración → Navegación → Kiosk**. Para cambiar la combinación de teclas, modifica **Nueva ventana de Kiosk** en **Configuración → Atajos → Archivo**.
+
+El atajo de Phi Chat viene desactivado de forma predeterminada. Actívalo con **Invocar Phi Chat con Mayús Mayús Mayús** en **Configuración → Phi e IA → Phi Sentinel**. No se puede cambiar a otras teclas. Consulta [Phi Chat](/es/phi-chat/#opening-phi-chat).
+
+Cambia los dos atajos para abrir en un Espacio en **Configuración → Atajos → Kiosk y Peek**. Consulta [Kiosk](/es/kiosk/) y [Vista Peek](/es/peek/) para más detalles.
 
 ## Crear una Vista dividida
 
@@ -74,17 +87,17 @@ Cada Espacio conserva su propio icono y tema. Al cambiar de Espacio se aplica la
 
 ## Dirige los sitios con Reglas de URL
 
-Abre **Espacios → Reglas de URL…** desde la barra de menús, o abre las Reglas de URL desde **Configuración → Espacios**. Una regla puede coincidir por **Sufijo de dominio**, **Dominio**, **El dominio contiene** o **URL**.
+Abre **Espacios → Reglas de URL…** desde la barra de menús, o abre **Configuración → Navegación** y haz clic en **Administrar reglas de URL…**. Una regla puede coincidir por **Sufijo de dominio**, **Dominio**, **El dominio contiene** o **URL**.
 
-Envía una coincidencia a un Espacio normal o a un Espacio de incógnito. Elige **Preguntar cada vez** si quieres que Phi pregunte antes de mover la página. Cuando varias reglas coinciden, gana la más específica.
+Envía una coincidencia a un Espacio normal, a Incógnito o a Kiosk. Elige **Preguntar cada vez** si quieres que Phi pregunte antes de mover la página. Cuando varias reglas coinciden, gana la más específica.
 
-::: tip Dirigir a un Espacio no aísla las cookies
-Una Regla de URL decide dónde se abre una página. Para mantener separadas las cookies y las sesiones iniciadas, asigna los Espacios de destino a Perfiles distintos.
+::: tip Dirigir a un Espacio normal no aísla las cookies
+Dirigir un sitio a un Espacio normal no aísla sus cookies ni su sesión iniciada. Asigna los Espacios de destino a Perfiles distintos cuando quieras esa separación.
 :::
 
 ## Mantén el video a la vista con imagen en imagen
 
-Phi puede sacar el video en reproducción a una ventana flotante cuando cambias de pestaña o de Espacio. Elige el comportamiento en **Configuración → General → Imagen en imagen automática**.
+Phi puede sacar el video en reproducción a una ventana flotante cuando cambias de pestaña o de Espacio. Elige el comportamiento en **Configuración → Avanzado → Imagen en imagen automática**.
 
 | Modo                   | Comportamiento                                                                                                  |
 | ---------------------- | --------------------------------------------------------------------------------------------------------------- |
@@ -96,13 +109,44 @@ Mueve o redimensiona una ventana de imagen en imagen y Phi recordará su posici�
 
 Para anclar tú mismo una ventana de imagen en imagen abierta, mueve el puntero sobre ella y haz clic en la flecha hacia abajo, con la etiqueta **Anclar en el borde de la pantalla**. Phi arrima la ventana al borde más cercano de la pantalla y deja visible una lengüeta. Haz clic en la lengüeta para traer la ventana de vuelta. Este control funciona incluso cuando la imagen en imagen automática está en **Desactivado**.
 
+## Controla el contenido multimedia en segundo plano con el Minirreproductor
+
+El Minirreproductor aparece en la parte inferior de la barra lateral cuando se reproduce audio o video compatible en una pestaña en segundo plano, incluso cuando cambias a otro Espacio. El contenido multimedia silenciado no hace que el Minirreproductor aparezca automáticamente. El Minirreproductor se oculta cuando vuelves a la pestaña de origen, cuando esa pestaña está visible en una Vista dividida o cuando su video está en imagen dentro de imagen.
+
+Usa el Minirreproductor para reproducir, pausar y cambiar de pista. Haz clic en el icono del sitio para volver a la pestaña de origen. Haz clic en el botón del altavoz para mostrar el control deslizante de volumen; haz clic con Opción (⌥) para silenciar o activar el sonido. Si varias pestañas en segundo plano tienen contenido multimedia, desliza hacia la izquierda o hacia la derecha sobre el Minirreproductor para cambiar de fuente.
+
+Expande el Minirreproductor para ver los detalles del contenido multimedia, desplazarte a otro punto de una pista o abrir imagen dentro de imagen. Los detalles y controles disponibles dependen de lo que admita el sitio web.
+
+Elige un modo en **Configuración → Avanzado → Minirreproductor**:
+
+| Modo                  | Comportamiento                                                                                                            |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Desactivado**       | El Minirreproductor no aparece automáticamente.                                                                           |
+| **Automático**        | Empieza compacto y se expande al pasar el puntero por encima o al recibir el foco del teclado. Es el modo predeterminado. |
+| **Siempre expandido** | Muestra el Minirreproductor expandido siempre que haya contenido multimedia compatible en segundo plano.                  |
+| **Siempre compacto**  | Mantiene el Minirreproductor compacto.                                                                                    |
+
+## Captura y edita imágenes de la página
+
+Elige **Archivo → Capturar página completa** o presiona Comando (⌘) + Mayúsculas (⇧) + 1 para capturar la página web actual, incluido el contenido que queda fuera del área visible.
+
+Elige **Archivo → Capturar área…** o presiona Comando (⌘) + Mayúsculas (⇧) + 2 y arrastra para seleccionar una parte de la página. Mientras arrastras, desplázate con el ratón o el trackpad, o mantén el puntero cerca de un borde de la página para ampliar la selección más allá del área visible. Suelta para capturar o presiona Escape para cancelar.
+
+Estos son los atajos predeterminados. Cámbialos en **Configuración → Atajos → Archivo**.
+
+Después de capturar, Phi copia la captura original al portapapeles como PNG y abre el editor de imágenes.
+
+Usa el editor de imágenes para recortar, dibujar, añadir texto y formas, o pixelar partes de la captura.
+
+Haz clic en **Exportar…** para guardar la imagen editada como PNG, JPG o PDF.
+
 ## Pregunta al asistente sobre tu trabajo actual
 
 - Selecciona un texto, haz clic derecho y elige **Preguntar a [tu asistente] sobre…** para llevar la selección a una conversación.
 - Abrir el asistente adjunta la pestaña actual de forma predeterminada. Si esa pestaña está en un grupo, Phi puede adjuntar el grupo completo.
 - Un Grupo de pestañas o una Vista dividida puede adjuntarse como una sola unidad.
 
-Para iniciar conversaciones sin la pestaña actual adjunta, desactiva **Añadir automáticamente la pestaña actual como contexto en las conversaciones nuevas** en **Configuración → Phi AI → Barra lateral de IA**.
+Para iniciar conversaciones sin la pestaña actual adjunta, desactiva **Agregar automáticamente la pestaña actual como contexto a las conversaciones nuevas** en **Configuración → Phi e IA → Barra lateral de IA**.
 
 Cuando usas Phi Cloud, el contenido necesario para responder tu pregunta se envía a un proveedor de modelos externo para su procesamiento. Con la IA privada, se queda en tu Mac. Consulta [Privacidad y tus datos](/es/privacy/) para más detalles.
 

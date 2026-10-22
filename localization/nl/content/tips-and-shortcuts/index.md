@@ -1,5 +1,5 @@
 ---
-description: "Leer handige gebaren en toetscombinaties in Phi Browser, het personaliseren van Spaces, URL-regels en de bediening van beeld in beeld."
+description: "Leer handige gebaren en toetscombinaties in Phi Browser, het personaliseren van Spaces, URL-regels, Minispeler, de bediening van beeld in beeld, en hulpmiddelen voor schermafbeeldingen."
 ---
 
 # Snelle tips voor Phi Browser
@@ -8,15 +8,28 @@ Deze pagina bundelt gebaren en toetscombinaties van Phi die minder duidelijk uit
 
 ## Overzicht van toetscombinaties
 
-| Actie                                      | Toetscombinatie of gebaar                                                          |
-| ------------------------------------------ | ---------------------------------------------------------------------------------- |
-| Een Split View maken                       | Option (⌥)-klik op een tabblad, vastgezet tabblad, bladwijzer of geschikte weblink |
-| Wisselen tussen recent gebruikte tabbladen | Control (⌃) + Tab                                                                  |
-| In omgekeerde volgorde wisselen            | Control (⌃) + Shift (⇧) + Tab                                                      |
-| De URL van de huidige pagina kopiëren      | Command (⌘) + Shift (⇧) + C                                                        |
-| Open tabbladen doorzoeken                  | Command (⌘) + Shift (⇧) + A                                                        |
-| Naar de vorige of volgende Space gaan      | Command (⌘) + Option (⌥) + ← of →                                                  |
-| Een van de eerste negen Spaces openen      | Control (⌃) + 1 t/m 9                                                              |
+| Actie                                                                                              | Toetscombinatie of gebaar                                                          |
+| -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Een Split View maken                                                                               | Option (⌥)-klik op een tabblad, vastgezet tabblad, bladwijzer of geschikte weblink |
+| Een link vooraf bekijken in een Peek                                                               | Shift (⇧)-klik op een weblink                                                      |
+| Wisselen tussen recent gebruikte tabbladen                                                         | Control (⌃) + Tab                                                                  |
+| In omgekeerde volgorde wisselen                                                                    | Control (⌃) + Shift (⇧) + Tab                                                      |
+| De URL van de huidige pagina kopiëren                                                              | Command (⌘) + Shift (⇧) + C                                                        |
+| Open tabbladen doorzoeken                                                                          | Command (⌘) + Shift (⇧) + A                                                        |
+| De volledige pagina vastleggen                                                                     | Command (⌘) + Shift (⇧) + 1                                                        |
+| Een geselecteerd gebied vastleggen                                                                 | Command (⌘) + Shift (⇧) + 2                                                        |
+| Naar de vorige of volgende Space gaan                                                              | Command (⌘) + Option (⌥) + ← of →                                                  |
+| Een van de eerste negen Spaces openen                                                              | Control (⌃) + 1 t/m 9                                                              |
+| Een nieuw Kiosk-venster vanuit elke app openen, met de toetscombinatie voor alle apps ingeschakeld | Command (⌘) + Option (⌥) + N                                                       |
+| Een Kiosk-pagina of Peek als tabblad in een Space openen                                           | Command (⌘) + O                                                                    |
+| Het menu openen om een Space voor Kiosk te kiezen                                                  | Command (⌘) + Shift (⇧) + O                                                        |
+| Phi Chat openen of verbergen vanuit elke app, met de toetscombinatie ingeschakeld                  | Drie keer Shift (⇧)                                                                |
+
+Schakel de Kiosk-toetscombinatie voor gebruik in elke app in onder **Instellingen → Navigatie → Kiosk**. Om de toetsen te wijzigen pas je **Nieuw Kiosk-venster** aan onder **Instellingen → Toetscombinaties → Archief**.
+
+De toetscombinatie voor Phi Chat staat standaard uit. Schakel hem in met **Phi Chat oproepen met Shift Shift Shift** onder **Instellingen → Phi & AI → Phi Sentinel**. Je kunt hem niet aan andere toetsen toewijzen. Zie [Phi Chat](/nl/phi-chat/#opening-phi-chat).
+
+Wijzig de twee toetscombinaties voor openen in een Space onder **Instellingen → Toetscombinaties → Kiosk en Peek**. Zie [Kiosk](/nl/kiosk/) en [Peek-weergave](/nl/peek/) voor meer informatie.
 
 ## Een Split View maken
 
@@ -74,17 +87,17 @@ Elke Space houdt zijn eigen symbool en thema. Bij het wisselen van Space past Ph
 
 ## Sites routeren met URL-regels
 
-Open **Spaces → URL-regels…** in de menubalk, of open URL-regels via **Instellingen → Spaces**. Een regel kan matchen op **Domeinsuffix**, **Domein**, **Domein bevat** of **URL**.
+Open **Spaces → URL-regels…** in de menubalk, of open **Instellingen → Navigatie** en klik op **Beheer URL-regels…**. Een regel kan matchen op **Domeinsuffix**, **Domein**, **Domein bevat** of **URL**.
 
-Stuur een match naar een gewone Space of een Incognito-Space. Kies **Elke keer vragen** als je wilt dat Phi eerst vraagt voordat de pagina wordt verplaatst. Wanneer meerdere regels matchen, wint de meest specifieke regel.
+Stuur een match naar een gewone Space, Incognito of Kiosk. Kies **Elke keer vragen** als je wilt dat Phi eerst vraagt voordat de pagina wordt verplaatst. Wanneer meerdere regels matchen, wint de meest specifieke regel.
 
-::: tip Space-routering isoleert geen cookies
-Een URL-regel bepaalt waar een pagina opent. Wil je cookies en ingelogde sessies gescheiden houden, wijs de doel-Spaces dan toe aan verschillende Profielen.
+::: tip Routering naar een gewone Space isoleert geen cookies
+Een site naar een gewone Space routeren isoleert de cookies en ingelogde sessies van die site niet. Wijs de doel-Spaces toe aan verschillende Profielen wanneer je die scheiding wilt.
 :::
 
 ## Video in beeld houden met beeld in beeld
 
-Phi kan een spelende video losmaken wanneer je van tabblad of Space wisselt. Kies het gedrag onder **Instellingen → Algemeen → Automatisch beeld in beeld**.
+Phi kan een spelende video losmaken wanneer je van tabblad of Space wisselt. Kies het gedrag onder **Instellingen → Geavanceerd → Automatisch beeld in beeld**.
 
 | Stand                    | Gedrag                                                                                  |
 | ------------------------ | --------------------------------------------------------------------------------------- |
@@ -96,13 +109,44 @@ Verplaats of verklein een beeld-in-beeldvenster en Phi onthoudt de positie en gr
 
 Wil je een open beeld-in-beeldvenster zelf parkeren, beweeg dan de aanwijzer eroverheen en klik op de pijl omlaag met het label **Vastzetten aan de schermrand**. Phi schuift het venster tegen de dichtstbijzijnde schermrand en laat een greep zichtbaar. Klik op de greep om het venster terug te halen. Deze knop werkt ook wanneer automatisch beeld in beeld op **Uit** staat.
 
+## Media op de achtergrond bedienen met Minispeler
+
+Minispeler verschijnt onderaan de zijbalk wanneer ondersteunde audio of video wordt afgespeeld in een tabblad op de achtergrond, ook als je naar een andere Space gaat. Bij media waarvan het geluid is uitgeschakeld, verschijnt Minispeler niet automatisch. Minispeler verdwijnt wanneer je terugkeert naar het tabblad dat de media afspeelt, wanneer dat tabblad zichtbaar is in Split View, of wanneer de video in beeld in beeld wordt afgespeeld.
+
+Gebruik Minispeler om media af te spelen of te pauzeren en nummers over te slaan. Klik op het sitepictogram om terug te keren naar het tabblad dat de media afspeelt. Klik op de luidsprekerknop om de volumeschuifregelaar te tonen; Option (⌥)-klik erop om het geluid uit of in te schakelen. Als meerdere tabbladen op de achtergrond media bevatten, veeg je naar links of rechts over Minispeler om van bron te wisselen.
+
+Klap Minispeler uit om mediadetails te bekijken, naar een ander punt in een nummer te gaan, of beeld in beeld te openen. Welke details en bediening beschikbaar zijn, hangt af van wat de website ondersteunt.
+
+Kies een stand onder **Instellingen → Geavanceerd → Minispeler**:
+
+| Stand                 | Gedrag                                                                                                                                            |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Uit**               | Minispeler verschijnt niet automatisch.                                                                                                           |
+| **Automatisch**       | Minispeler begint compact en klapt uit wanneer je de aanwijzer eroverheen beweegt of de toetsenbordfocus erop zet. Dit is de standaardinstelling. |
+| **Altijd uitgeklapt** | Toon Minispeler uitgeklapt zodra ondersteunde media op de achtergrond beschikbaar zijn.                                                           |
+| **Altijd compact**    | Houd Minispeler compact.                                                                                                                          |
+
+## Schermafbeeldingen maken en bewerken
+
+Kies **Archief → Leg volledige pagina vast** of druk op Command (⌘) + Shift (⇧) + 1 om de huidige webpagina vast te leggen, inclusief inhoud buiten het zichtbare gebied.
+
+Kies **Archief → Leg gebied vast…** of druk op Command (⌘) + Shift (⇧) + 2 en sleep om een deel van de pagina te selecteren. Scrol tijdens het slepen met je muis of trackpad, of houd de aanwijzer bij een paginarand om de selectie uit te breiden tot buiten het zichtbare gebied. Laat los om de schermafbeelding te maken, of druk op Escape om te annuleren.
+
+Dit zijn de standaardtoetscombinaties. Je kunt ze wijzigen onder **Instellingen → Toetscombinaties → Archief**.
+
+Na het vastleggen kopieert Phi de oorspronkelijke schermafbeelding als PNG naar het klembord en opent de afbeeldingseditor.
+
+Gebruik de afbeeldingseditor om je schermafbeelding bij te snijden, te tekenen, tekst en vormen toe te voegen, of delen te pixelen.
+
+Klik op **Exporteer…** om je bewerkte afbeelding op te slaan als PNG, JPG, of PDF.
+
 ## Vraag de assistent naar je huidige werk
 
 - Selecteer tekst, klik er met de rechtermuisknop op en kies **Vraag [je assistent] naar…** om de selectie in een gesprek mee te nemen.
 - Bij het openen van de assistent wordt het huidige tabblad standaard toegevoegd. Zit dat tabblad in een groep, dan kan Phi de hele groep toevoegen.
 - Een tabbladgroep of Split View kan als één geheel worden toegevoegd.
 
-Wil je gesprekken beginnen zonder het huidige tabblad, schakel dan **Huidig tabblad automatisch als context toevoegen aan een nieuw gesprek** uit onder **Instellingen → Phi AI → AI-zijbalk**.
+Wil je gesprekken beginnen zonder het huidige tabblad, schakel dan **Huidig tabblad automatisch als context toevoegen aan een nieuw gesprek** uit onder **Instellingen → Phi & AI → AI-zijbalk**.
 
 Wanneer je Phi Cloud gebruikt, wordt de inhoud die nodig is om je vraag te beantwoorden voor verwerking naar een externe modelaanbieder gestuurd. Met Privé-AI blijft die op je Mac. Zie [Privacy en je gegevens](/nl/privacy/) voor de details.
 

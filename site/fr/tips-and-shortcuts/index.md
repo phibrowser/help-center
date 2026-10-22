@@ -1,5 +1,5 @@
 ---
-description: "Découvrez les gestes et raccourcis utiles de Phi Browser, la personnalisation des Espaces, les Règles d'URL et les commandes Picture-in-Picture."
+description: "Découvrez les gestes et raccourcis utiles de Phi Browser, la personnalisation des Espaces, les Règles d'URL, le Mini-lecteur, les commandes Picture-in-Picture et les outils de capture d'écran."
 ---
 
 # Astuces rapides pour Phi Browser
@@ -16,6 +16,8 @@ Cette page rassemble les gestes et raccourcis de Phi que l'interface ne rend pas
 | Basculer dans l'ordre inverse                                                                  | Contrôle (⌃) + Maj (⇧) + Tab                                                             |
 | Copier l'URL de la page actuelle                                                               | Commande (⌘) + Maj (⇧) + C                                                               |
 | Rechercher dans les onglets ouverts                                                            | Commande (⌘) + Maj (⇧) + A                                                               |
+| Capturer la page entière                                                                       | Commande (⌘) + Maj (⇧) + 1                                                               |
+| Capturer une zone sélectionnée                                                                 | Commande (⌘) + Maj (⇧) + 2                                                               |
 | Passer à l'Espace précédent ou suivant                                                         | Commande (⌘) + Option (⌥) + ← ou →                                                       |
 | Ouvrir l'un des neuf premiers Espaces                                                          | Contrôle (⌃) + 1 à 9                                                                     |
 | Ouvrir une nouvelle fenêtre Kiosk depuis n'importe quelle app, avec le raccourci global activé | Commande (⌘) + Option (⌥) + N                                                            |
@@ -106,6 +108,37 @@ Phi peut détacher la vidéo en cours de lecture quand vous changez d'onglet ou 
 Déplacez ou redimensionnez une fenêtre Picture-in-Picture et Phi mémorise sa position et sa taille pour la prochaine fois que ce site ouvre Picture-in-Picture. Ceci est enregistré par site dans un Profil normal. Les Espaces de navigation privée ne le conservent pas. Si l'écran enregistré n'est plus connecté, Phi utilise l'emplacement par défaut.
 
 Pour ranger vous-même une fenêtre Picture-in-Picture ouverte, placez le pointeur dessus et cliquez sur la flèche vers le bas, intitulée **Ranger au bord de l'écran**. Phi cale la fenêtre contre le bord d'écran le plus proche et laisse une poignée visible. Cliquez sur la poignée pour faire revenir la fenêtre. Cette commande fonctionne même quand le Picture-in-Picture automatique est réglé sur **Désactivé**.
+
+## Contrôler les médias en arrière-plan avec le Mini-lecteur
+
+Le Mini-lecteur apparaît en bas de la barre latérale lorsqu'un contenu audio ou vidéo compatible est en cours de lecture dans un onglet en arrière-plan, y compris lorsque vous passez à un autre Espace. Les médias dont le son est coupé ne font pas apparaître automatiquement le Mini-lecteur. Le Mini-lecteur se masque lorsque vous revenez à l'onglet source, lorsque cet onglet est visible en Split View ou lorsque sa vidéo est en mode Image dans l'image.
+
+Utilisez le Mini-lecteur pour lancer ou mettre en pause la lecture et changer de piste. Cliquez sur l'icône du site pour revenir à l'onglet source. Cliquez sur le bouton du haut-parleur pour afficher le curseur de volume ; maintenez Option (⌥) et cliquez sur ce bouton pour couper ou rétablir le son. Si plusieurs onglets en arrière-plan contiennent des médias, balayez le Mini-lecteur vers la gauche ou la droite pour changer de source.
+
+Développez le Mini-lecteur pour voir les détails du média, vous déplacer dans une piste ou ouvrir le mode Image dans l'image. Les détails et commandes disponibles dépendent de ce que le site web prend en charge.
+
+Choisissez un mode dans **Paramètres → Avancés → Mini-lecteur** :
+
+| Mode                   | Comportement                                                                                                                                       |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Désactivé**          | Le Mini-lecteur n'apparaît pas automatiquement.                                                                                                    |
+| **Auto**               | Le Mini-lecteur s'affiche d'abord sous forme compacte, puis se développe au survol ou lorsqu'il reçoit le focus clavier. C'est le mode par défaut. |
+| **Toujours développé** | Affiche le Mini-lecteur développé dès qu'un média compatible est disponible en arrière-plan.                                                       |
+| **Toujours compact**   | Garde le Mini-lecteur compact.                                                                                                                     |
+
+## Prendre et modifier des captures d'écran
+
+Choisissez **Fichier → Capturer la page entière** ou appuyez sur Commande (⌘) + Maj (⇧) + 1 pour capturer la page web actuelle, y compris le contenu au-delà de la zone visible.
+
+Choisissez **Fichier → Capturer une zone…** ou appuyez sur Commande (⌘) + Maj (⇧) + 2, puis faites glisser le pointeur pour sélectionner une partie de la page. Pendant ce geste, faites défiler la page avec votre souris ou votre trackpad, ou maintenez le pointeur près d'un bord de la page pour étendre la sélection au-delà de la zone visible. Relâchez pour capturer, ou appuyez sur Échap pour annuler.
+
+Ce sont les raccourcis par défaut. Modifiez-les dans **Paramètres → Raccourcis → Fichier**.
+
+Après la capture, Phi copie l'image originale dans le presse-papiers au format PNG et ouvre l'éditeur d'images.
+
+Utilisez l'éditeur d'images pour recadrer votre capture, dessiner, ajouter du texte et des formes, ou appliquer une pixellisation sur certaines zones.
+
+Cliquez sur **Exporter…** pour enregistrer l'image modifiée au format PNG, JPG ou PDF.
 
 ## Interroger l'assistant sur votre travail en cours
 
