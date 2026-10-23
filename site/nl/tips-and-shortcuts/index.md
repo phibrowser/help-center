@@ -1,5 +1,5 @@
 ---
-description: "Leer handige gebaren en toetscombinaties in Phi Browser, het personaliseren van Spaces, URL-regels en de bediening van beeld in beeld."
+description: "Leer handige gebaren en toetscombinaties in Phi Browser, het personaliseren van Spaces, URL-regels, Minispeler, de bediening van beeld in beeld, en hulpmiddelen voor schermafbeeldingen."
 ---
 
 # Snelle tips voor Phi Browser
@@ -16,6 +16,8 @@ Deze pagina bundelt gebaren en toetscombinaties van Phi die minder duidelijk uit
 | In omgekeerde volgorde wisselen                                                                    | Control (⌃) + Shift (⇧) + Tab                                                      |
 | De URL van de huidige pagina kopiëren                                                              | Command (⌘) + Shift (⇧) + C                                                        |
 | Open tabbladen doorzoeken                                                                          | Command (⌘) + Shift (⇧) + A                                                        |
+| De volledige pagina vastleggen                                                                     | Command (⌘) + Shift (⇧) + 1                                                        |
+| Een geselecteerd gebied vastleggen                                                                 | Command (⌘) + Shift (⇧) + 2                                                        |
 | Naar de vorige of volgende Space gaan                                                              | Command (⌘) + Option (⌥) + ← of →                                                  |
 | Een van de eerste negen Spaces openen                                                              | Control (⌃) + 1 t/m 9                                                              |
 | Een nieuw Kiosk-venster vanuit elke app openen, met de toetscombinatie voor alle apps ingeschakeld | Command (⌘) + Option (⌥) + N                                                       |
@@ -106,6 +108,37 @@ Phi kan een spelende video losmaken wanneer je van tabblad of Space wisselt. Kie
 Verplaats of verklein een beeld-in-beeldvenster en Phi onthoudt de positie en grootte voor de volgende keer dat die site beeld in beeld opent. Dit wordt per site bewaard in een gewoon Profiel. Incognito-Spaces bewaren het niet. Is het bewaarde beeldscherm niet meer aangesloten, dan gebruikt Phi de standaardplaatsing.
 
 Wil je een open beeld-in-beeldvenster zelf parkeren, beweeg dan de aanwijzer eroverheen en klik op de pijl omlaag met het label **Vastzetten aan de schermrand**. Phi schuift het venster tegen de dichtstbijzijnde schermrand en laat een greep zichtbaar. Klik op de greep om het venster terug te halen. Deze knop werkt ook wanneer automatisch beeld in beeld op **Uit** staat.
+
+## Media op de achtergrond bedienen met Minispeler
+
+Minispeler verschijnt onderaan de zijbalk wanneer ondersteunde audio of video wordt afgespeeld in een tabblad op de achtergrond, ook als je naar een andere Space gaat. Bij media waarvan het geluid is uitgeschakeld, verschijnt Minispeler niet automatisch. Minispeler verdwijnt wanneer je terugkeert naar het tabblad dat de media afspeelt, wanneer dat tabblad zichtbaar is in Split View, of wanneer de video in beeld in beeld wordt afgespeeld.
+
+Gebruik Minispeler om media af te spelen of te pauzeren en nummers over te slaan. Klik op het sitepictogram om terug te keren naar het tabblad dat de media afspeelt. Klik op de luidsprekerknop om de volumeschuifregelaar te tonen; Option (⌥)-klik erop om het geluid uit of in te schakelen. Als meerdere tabbladen op de achtergrond media bevatten, veeg je naar links of rechts over Minispeler om van bron te wisselen.
+
+Klap Minispeler uit om mediadetails te bekijken, naar een ander punt in een nummer te gaan, of beeld in beeld te openen. Welke details en bediening beschikbaar zijn, hangt af van wat de website ondersteunt.
+
+Kies een stand onder **Instellingen → Geavanceerd → Minispeler**:
+
+| Stand                 | Gedrag                                                                                                                                            |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Uit**               | Minispeler verschijnt niet automatisch.                                                                                                           |
+| **Automatisch**       | Minispeler begint compact en klapt uit wanneer je de aanwijzer eroverheen beweegt of de toetsenbordfocus erop zet. Dit is de standaardinstelling. |
+| **Altijd uitgeklapt** | Toon Minispeler uitgeklapt zodra ondersteunde media op de achtergrond beschikbaar zijn.                                                           |
+| **Altijd compact**    | Houd Minispeler compact.                                                                                                                          |
+
+## Schermafbeeldingen maken en bewerken
+
+Kies **Archief → Leg volledige pagina vast** of druk op Command (⌘) + Shift (⇧) + 1 om de huidige webpagina vast te leggen, inclusief inhoud buiten het zichtbare gebied.
+
+Kies **Archief → Leg gebied vast…** of druk op Command (⌘) + Shift (⇧) + 2 en sleep om een deel van de pagina te selecteren. Scrol tijdens het slepen met je muis of trackpad, of houd de aanwijzer bij een paginarand om de selectie uit te breiden tot buiten het zichtbare gebied. Laat los om de schermafbeelding te maken, of druk op Escape om te annuleren.
+
+Dit zijn de standaardtoetscombinaties. Je kunt ze wijzigen onder **Instellingen → Toetscombinaties → Archief**.
+
+Na het vastleggen kopieert Phi de oorspronkelijke schermafbeelding als PNG naar het klembord en opent de afbeeldingseditor.
+
+Gebruik de afbeeldingseditor om je schermafbeelding bij te snijden, te tekenen, tekst en vormen toe te voegen, of delen te pixelen.
+
+Klik op **Exporteer…** om je bewerkte afbeelding op te slaan als PNG, JPG, of PDF.
 
 ## Vraag de assistent naar je huidige werk
 

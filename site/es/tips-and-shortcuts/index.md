@@ -1,5 +1,5 @@
 ---
-description: "Aprende gestos y atajos útiles de Phi Browser, la personalización de Espacios, las Reglas de URL y los controles de imagen en imagen."
+description: "Aprende gestos y atajos útiles de Phi Browser, la personalización de Espacios, las Reglas de URL, el Minirreproductor, los controles de imagen en imagen y las herramientas de captura de pantalla."
 ---
 
 # Consejos rápidos para Phi Browser
@@ -16,6 +16,8 @@ Esta página reúne gestos y atajos de Phi que no resultan tan evidentes desde l
 | Cambiar en orden inverso                                                                  | Control (⌃) + Mayúsculas (⇧) + Tab                                                             |
 | Copiar la URL de la página actual                                                         | Comando (⌘) + Mayúsculas (⇧) + C                                                               |
 | Buscar entre las pestañas abiertas                                                        | Comando (⌘) + Mayúsculas (⇧) + A                                                               |
+| Capturar la página completa                                                               | Comando (⌘) + Mayúsculas (⇧) + 1                                                               |
+| Capturar un área seleccionada                                                             | Comando (⌘) + Mayúsculas (⇧) + 2                                                               |
 | Ir al Espacio anterior o siguiente                                                        | Comando (⌘) + Opción (⌥) + ← o →                                                               |
 | Abrir uno de los primeros nueve Espacios                                                  | Control (⌃) + 1 a 9                                                                            |
 | Abrir una nueva ventana de Kiosk desde cualquier aplicación, con el atajo global activado | Comando (⌘) + Opción (⌥) + N                                                                   |
@@ -106,6 +108,37 @@ Phi puede sacar el video en reproducción a una ventana flotante cuando cambias 
 Mueve o redimensiona una ventana de imagen en imagen y Phi recordará su posición y tamaño la próxima vez que ese sitio abra la imagen en imagen. Esto se guarda por sitio en un Perfil normal. Los Espacios de incógnito no lo conservan. Si la pantalla guardada ya no está conectada, Phi usa la ubicación predeterminada.
 
 Para anclar tú mismo una ventana de imagen en imagen abierta, mueve el puntero sobre ella y haz clic en la flecha hacia abajo, con la etiqueta **Anclar en el borde de la pantalla**. Phi arrima la ventana al borde más cercano de la pantalla y deja visible una lengüeta. Haz clic en la lengüeta para traer la ventana de vuelta. Este control funciona incluso cuando la imagen en imagen automática está en **Desactivado**.
+
+## Controla el contenido multimedia en segundo plano con el Minirreproductor
+
+El Minirreproductor aparece en la parte inferior de la barra lateral cuando se reproduce audio o video compatible en una pestaña en segundo plano, incluso cuando cambias a otro Espacio. El contenido multimedia silenciado no hace que el Minirreproductor aparezca automáticamente. El Minirreproductor se oculta cuando vuelves a la pestaña de origen, cuando esa pestaña está visible en una Vista dividida o cuando su video está en imagen dentro de imagen.
+
+Usa el Minirreproductor para reproducir, pausar y cambiar de pista. Haz clic en el icono del sitio para volver a la pestaña de origen. Haz clic en el botón del altavoz para mostrar el control deslizante de volumen; haz clic con Opción (⌥) para silenciar o activar el sonido. Si varias pestañas en segundo plano tienen contenido multimedia, desliza hacia la izquierda o hacia la derecha sobre el Minirreproductor para cambiar de fuente.
+
+Expande el Minirreproductor para ver los detalles del contenido multimedia, desplazarte a otro punto de una pista o abrir imagen dentro de imagen. Los detalles y controles disponibles dependen de lo que admita el sitio web.
+
+Elige un modo en **Configuración → Avanzado → Minirreproductor**:
+
+| Modo                  | Comportamiento                                                                                                            |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Desactivado**       | El Minirreproductor no aparece automáticamente.                                                                           |
+| **Automático**        | Empieza compacto y se expande al pasar el puntero por encima o al recibir el foco del teclado. Es el modo predeterminado. |
+| **Siempre expandido** | Muestra el Minirreproductor expandido siempre que haya contenido multimedia compatible en segundo plano.                  |
+| **Siempre compacto**  | Mantiene el Minirreproductor compacto.                                                                                    |
+
+## Captura y edita imágenes de la página
+
+Elige **Archivo → Capturar página completa** o presiona Comando (⌘) + Mayúsculas (⇧) + 1 para capturar la página web actual, incluido el contenido que queda fuera del área visible.
+
+Elige **Archivo → Capturar área…** o presiona Comando (⌘) + Mayúsculas (⇧) + 2 y arrastra para seleccionar una parte de la página. Mientras arrastras, desplázate con el ratón o el trackpad, o mantén el puntero cerca de un borde de la página para ampliar la selección más allá del área visible. Suelta para capturar o presiona Escape para cancelar.
+
+Estos son los atajos predeterminados. Cámbialos en **Configuración → Atajos → Archivo**.
+
+Después de capturar, Phi copia la captura original al portapapeles como PNG y abre el editor de imágenes.
+
+Usa el editor de imágenes para recortar, dibujar, añadir texto y formas, o pixelar partes de la captura.
+
+Haz clic en **Exportar…** para guardar la imagen editada como PNG, JPG o PDF.
 
 ## Pregunta al asistente sobre tu trabajo actual
 

@@ -1,5 +1,5 @@
 ---
-description: "Learn useful Phi Browser gestures, shortcuts, Space customization, URL Rules, and Picture-in-Picture controls."
+description: "Learn useful Phi Browser gestures, shortcuts, Space customization, URL Rules, Mini Player, Picture-in-Picture, and screenshot tools."
 ---
 
 # Quick tips for Phi Browser
@@ -16,6 +16,8 @@ This page collects Phi gestures and shortcuts that are less obvious from the int
 | Switch in reverse order                                                | Control (⌃) + Shift (⇧) + Tab                                      |
 | Copy the current page URL                                              | Command (⌘) + Shift (⇧) + C                                        |
 | Search open tabs                                                       | Command (⌘) + Shift (⇧) + A                                        |
+| Capture the full page                                                  | Command (⌘) + Shift (⇧) + 1                                        |
+| Capture a selected area                                                | Command (⌘) + Shift (⇧) + 2                                        |
 | Move to the previous or next Space                                     | Command (⌘) + Option (⌥) + ← or →                                  |
 | Open one of the first nine Spaces                                      | Control (⌃) + 1 to 9                                               |
 | Open a new Kiosk window from any app, with the global shortcut enabled | Command (⌘) + Option (⌥) + N                                       |
@@ -106,6 +108,37 @@ Phi can pop out playing video when you switch tabs or Spaces. Choose the behavio
 Move or resize a Picture-in-Picture window and Phi remembers its position and size the next time that site opens Picture-in-Picture. This is saved per site in a regular Profile. Incognito Spaces do not retain it. If the saved display is no longer connected, Phi uses the default placement.
 
 To park an open Picture-in-Picture window yourself, move the pointer over it and click the down arrow, labeled **Park at screen edge**. Phi tucks the window against the nearest screen edge and leaves a handle visible. Click the handle to bring the window back. This control works even when automatic Picture-in-Picture is set to **Off**.
+
+## Control background media with Mini Player
+
+Mini Player appears at the bottom of the sidebar when supported audio or video is playing in a background tab, including when you switch to another Space. Muted media does not automatically show Mini Player. Mini Player hides when you return to the source tab, when that tab is visible in Split View, or when its video is in Picture-in-Picture.
+
+Use Mini Player to play or pause and skip tracks. Click its site icon to return to the source tab. Click the speaker button to show the volume slider; Option (⌥)-click it to mute or unmute. If several background tabs have media, swipe left or right across Mini Player to switch sources.
+
+Expand Mini Player to see media details, seek within a track, or open Picture-in-Picture. Available details and controls depend on what the website supports.
+
+Choose a mode under **Settings → Advanced → Mini Player**:
+
+| Mode                | Behavior                                                                    |
+| ------------------- | --------------------------------------------------------------------------- |
+| **Off**             | Mini Player does not appear automatically.                                  |
+| **Auto**            | Start compact and expand on hover or keyboard focus. This is the default.   |
+| **Always expanded** | Show Mini Player expanded whenever supported background media is available. |
+| **Always compact**  | Keep Mini Player compact.                                                   |
+
+## Capture and edit screenshots
+
+Choose **File → Capture Full Page** or press Command (⌘) + Shift (⇧) + 1 to capture the current webpage, including content beyond the visible area.
+
+Choose **File → Capture Area…** or press Command (⌘) + Shift (⇧) + 2, then drag to select part of the page. While dragging, scroll with your mouse or trackpad, or hold the pointer near a page edge to extend the selection beyond the visible area. Release to capture, or press Escape to cancel.
+
+These are the default shortcuts. Change them under **Settings → Shortcuts → File**.
+
+After capture, Phi copies the original screenshot to the clipboard as a PNG and opens the image editor.
+
+Use the image editor to crop, draw, add text and shapes, or blur parts of your screenshot.
+
+Click **Export…** to save your edited image as PNG, JPG, or PDF.
 
 ## Ask the assistant about your current work
 
