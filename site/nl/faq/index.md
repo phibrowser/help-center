@@ -167,7 +167,11 @@ Nee. Tabbladgroepen ordenen pagina's waarmee je actief werkt; bladwijzers beware
 ## Synchronisatie
 
 ::: details Synchroniseert Phi tussen Macs?
-Ja. Log op elke Mac in met hetzelfde Phi-account en stel synchronisatie in via **Instellingen → Synchronisatie**. Spaces, Profielen, bladwijzers, vastgezette tabbladen, URL-regels, ondersteunde instellingen en de browsegeschiedenis van elk Profiel worden gesynchroniseerd, versleuteld op je Mac voordat ze worden geüpload. Wachtwoorden, cookies, automatisch invullen, open tabbladen, Geheugen en gesprekken in Phi Chat niet. Zie [Synchronisatie](/nl/sync/) in de gids.
+Ja. Log op elke Mac in met hetzelfde Phi-account en stel synchronisatie in via **Instellingen → Synchronisatie**. Spaces, Profielen, bladwijzers, vastgezette tabbladen, URL-regels, ondersteunde instellingen en de browsegeschiedenis van elk Profiel worden gesynchroniseerd, versleuteld op je Mac voordat ze worden geüpload. Wachtwoorden, cookies, automatisch invullen, open tabbladen, toetscombinaties, Geheugen en gesprekken in Phi Chat niet; zie [waarom een tweede Mac ze mist](/nl/sync/#missing-shortcuts-and-open-tabs). Kies je **Gebruik de gegevens van je account** bij het toevoegen van een Mac, dan verwijdert Phi eerst de eigen Phi-gegevens van die Mac en vervangt het ze door die van je account. Zie [Synchronisatie](/nl/sync/) in de gids.
+:::
+
+::: details Waarom blijft één Mac hangen op Synchronisatie is niet voltooid?
+Meestal omdat die Mac vastgezette tabbladen vasthoudt die hij niet kan plaatsen: de rij **Vastgezette tabbladen** in **Details** toont **vastgehouden** met een aantal, terwijl de andere Mac **Up-to-date** meldt. De gebruikelijke oorzaak is dat twee standaardprofielen bij het instellen niet aan elkaar zijn gekoppeld. Verwijder die Mac uit synchronisatie en stel hem opnieuw in; dat lost het op. Zie [Eén Mac meldt Synchronisatie is niet voltooid](/nl/sync/#held-pinned-tabs).
 :::
 
 ::: details Wat gebeurt er als ik mijn herstelcode kwijtraak?

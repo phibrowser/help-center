@@ -167,7 +167,11 @@ No. Los Grupos de pestañas organizan páginas con las que estás trabajando act
 ## Sincronización
 
 ::: details ¿Phi se sincroniza entre Mac?
-Sí. Inicia sesión con la misma cuenta de Phi en cada Mac y configúrala en **Configuración → Sincronización**. Se sincronizan los Espacios, los Perfiles, los marcadores, las pestañas fijadas, las Reglas de URL, los ajustes compatibles y el historial de navegación de cada Perfil, cifrados en tu Mac antes de subirse. Las contraseñas, las cookies, el autocompletar, las pestañas abiertas, la Memoria y las conversaciones de Phi Chat, no. Consulta [Sincronización](/es/sync/) en la Guía.
+Sí. Inicia sesión con la misma cuenta de Phi en cada Mac y configúrala en **Configuración → Sincronización**. Se sincronizan los Espacios, los Perfiles, los marcadores, las pestañas fijadas, las Reglas de URL, los ajustes compatibles y el historial de navegación de cada Perfil, cifrados en tu Mac antes de subirse. Las contraseñas, las cookies, el autocompletar, las pestañas abiertas, los atajos de teclado, la Memoria y las conversaciones de Phi Chat, no; consulta [por qué le faltan a un segundo Mac](/es/sync/#missing-shortcuts-and-open-tabs). Si eliges **Usar los datos de tu cuenta** al agregar un Mac, Phi elimina primero los datos de Phi propios de ese Mac y los reemplaza por los de tu cuenta. Consulta [Sincronización](/es/sync/) en la Guía.
+:::
+
+::: details ¿Por qué un Mac sigue indicando que la sincronización no finalizó?
+Normalmente porque retiene pestañas fijadas que no puede colocar: su fila **Pestañas fijadas** en **Detalles** muestra **retenidos** con un número, mientras que el otro Mac dice **Actualizado**. La causa habitual son dos Perfiles predeterminados que no se emparejaron entre sí durante la configuración. Se soluciona eliminando ese Mac de la sincronización y volviendo a configurarlo. Consulta [Un Mac indica que la sincronización no finalizó](/es/sync/#held-pinned-tabs).
 :::
 
 ::: details ¿Qué pasa si pierdo mi código de recuperación?

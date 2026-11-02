@@ -167,7 +167,11 @@ Nein. Tab-Gruppen ordnen Seiten, mit denen du gerade aktiv arbeitest; Lesezeiche
 ## Synchronisierung
 
 ::: details Synchronisiert Phi zwischen Macs?
-Ja. Melde dich auf jedem Mac beim selben Phi-Konto an und richte die Synchronisierung unter **Einstellungen → Synchronisierung** ein. Spaces, Profile, Lesezeichen, angeheftete Tabs, URL-Regeln, unterstützte Einstellungen und der Browserverlauf jedes Profils werden synchronisiert, vor dem Hochladen auf deinem Mac verschlüsselt. Passwörter, Cookies, Autofill-Daten, offene Tabs, Erinnerungen und Unterhaltungen in Phi Chat werden nicht synchronisiert. Siehe [Synchronisierung](/de/sync/) im Leitfaden.
+Ja. Melde dich auf jedem Mac beim selben Phi-Konto an und richte die Synchronisierung unter **Einstellungen → Synchronisierung** ein. Spaces, Profile, Lesezeichen, angeheftete Tabs, URL-Regeln, unterstützte Einstellungen und der Browserverlauf jedes Profils werden synchronisiert, vor dem Hochladen auf deinem Mac verschlüsselt. Passwörter, Cookies, Autofill-Daten, offene Tabs, Tastaturkurzbefehle, Erinnerungen und Unterhaltungen in Phi Chat werden nicht synchronisiert; siehe [warum sie auf einem zweiten Mac fehlen](/de/sync/#missing-shortcuts-and-open-tabs). Wählst du beim Hinzufügen eines Mac **Daten deines Accounts verwenden**, löscht Phi zuerst die eigenen Phi-Daten dieses Mac und ersetzt sie durch die deines Kontos. Siehe [Synchronisierung](/de/sync/) im Leitfaden.
+:::
+
+::: details Warum bleibt ein Mac bei „Synchronisierung nicht abgeschlossen“ hängen?
+Meist, weil er angeheftete Tabs zurückhält, die er nicht einordnen kann: Seine Zeile **Angeheftete Tabs** unter **Details** zeigt **zurückgehalten** mit einer Zahl davor, während der andere Mac **Auf dem neuesten Stand** meldet. Die häufige Ursache sind zwei Standardprofile, die bei der Einrichtung nicht einander zugeordnet wurden. Entfernst du diesen Mac aus der Synchronisierung und richtest ihn erneut ein, ist das behoben. Siehe [Ein Mac meldet „Synchronisierung nicht abgeschlossen“](/de/sync/#held-pinned-tabs).
 :::
 
 ::: details Was passiert, wenn ich meinen Wiederherstellungscode verliere?

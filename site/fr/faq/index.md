@@ -167,7 +167,11 @@ Non. Les Groupes d'onglets organisent les pages sur lesquelles vous travaillez a
 ## Synchronisation
 
 ::: details Phi se synchronise-t-il entre plusieurs Mac ?
-Oui. Connectez-vous au même compte Phi sur chaque Mac et configurez la synchronisation dans **Paramètres → Synchronisation**. Les Espaces, les Profils, les favoris, les onglets épinglés, les Règles d'URL, les réglages pris en charge et l'historique de navigation de chaque Profil sont synchronisés, chiffrés sur votre Mac avant l'envoi. Les mots de passe, les cookies, la saisie automatique, les onglets ouverts, la Mémoire et les conversations Phi Chat ne le sont pas. Voir [Synchronisation](/fr/sync/) dans le Guide.
+Oui. Connectez-vous au même compte Phi sur chaque Mac et configurez la synchronisation dans **Paramètres → Synchronisation**. Les Espaces, les Profils, les favoris, les onglets épinglés, les Règles d'URL, les réglages pris en charge et l'historique de navigation de chaque Profil sont synchronisés, chiffrés sur votre Mac avant l'envoi. Les mots de passe, les cookies, la saisie automatique, les onglets ouverts, les raccourcis clavier, la Mémoire et les conversations Phi Chat ne le sont pas ; voir [pourquoi un deuxième Mac ne les a pas](/fr/sync/#missing-shortcuts-and-open-tabs). Si vous choisissez **Utiliser les données de votre compte** lors de l'ajout d'un Mac, Phi supprime d'abord les données Phi propres à ce Mac et les remplace par celles de votre compte. Voir [Synchronisation](/fr/sync/) dans le Guide.
+:::
+
+::: details Pourquoi un Mac reste-t-il bloqué sur « La synchronisation ne s'est pas terminée » ?
+En général parce qu'il garde des onglets épinglés qu'il ne peut pas placer : sa ligne **Onglets épinglés** dans **Détails** affiche **en suspens** avec un nombre, alors que l'autre Mac indique **À jour**. La cause habituelle est que deux Profils par défaut n'ont pas été associés l'un à l'autre pendant la configuration. Retirer ce Mac de la synchronisation puis le configurer à nouveau règle le problème. Voir [Un Mac ne termine pas la synchronisation](/fr/sync/#held-pinned-tabs).
 :::
 
 ::: details Que se passe-t-il si je perds mon code de récupération ?

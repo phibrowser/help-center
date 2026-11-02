@@ -144,18 +144,34 @@ files are updated by the translators.
 
 Locale results (fill in after the translator run):
 
-| Locale  | H1/H2/H3 | anchors | dashes/您 | status.json | coinages |
-| ------- | -------- | ------- | --------- | ----------- | -------- |
-| de      |          |         |           |             |          |
-| es      |          |         |           |             |          |
-| fr      |          |         |           |             |          |
-| ja      |          |         |           |             |          |
-| ko      |          |         |           |             |          |
-| nl      |          |         |           |             |          |
-| zh-Hans |          |         |           |             |          |
-| zh-Hant |          |         |           |             |          |
+| Locale  | H1/H2/H3    | anchors                                      | dashes/您 | status.json                                                           | coinages                                                                                                                                                                                                                        |
+| ------- | ----------- | -------------------------------------------- | --------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| de      | 1 / 14 / 17 | 22, same order as English, all links resolve | 0 / 0     | sync, faq, privacy complete / review todo; sourceRevision `4321f0ca…` | Synchronisierungsmethode (sync method); Fehlerbehebung (Troubleshooting, Chrome de); count labels quoted lowercase as shipped; tooltip paraphrased                                                                              |
+| es      | 1 / 14 / 17 | 22, same order as English, all links resolve | 0 / 0     | sync, faq, privacy complete / review todo; sourceRevision `4321f0ca…` | Solución de problemas; método de sincronización; "Se conserva:" (parallel to shipped "Se elimina de este Mac"); recuento(s); tooltip paraphrased                                                                                |
+| fr      | 1 / 14 / 17 | 22, same order as English, all links resolve | 0 / 0     | sync, faq, privacy complete / review todo; sourceRevision `4321f0ca…` | mode de synchronisation; Compteur (Details column); count labels quoted lowercase; jumelé / associer from shipped strings; held-pinned-tabs H3 paraphrased                                                                      |
+| ja      | 1 / 14 / 17 | 22, same order as English, all links resolve | 0 / 0     | sync, faq, privacy complete / review todo; sourceRevision `4321f0ca…` | 設定でアカウントを読み込めない場合, 各問題の意味, トラブルシューティング and the six troubleshooting H3s; 保持されるもの (parallel to shipped このMacから削除される項目); 選択メニュー (picker); count labels quoted without 件 |
+| ko      | 1 / 14 / 17 | 22, same order as English, all links resolve | 0 / 0     | sync, faq, privacy complete / review todo; sourceRevision `4321f0ca…` | 문제 해결 (Chrome/Apple ko); 키보드 단축키 (from shipped 단축키); 기본 프로필 (glossary 2026-10-15); 고를 수 있는 메뉴 (picker); ~경우 H3 pattern                                                                               |
+| nl      | 1 / 14 / 17 | 22, same order as English, all links resolve | 0 / 0     | sync, faq, privacy complete / review todo; sourceRevision `4321f0ca…` | De gegevens van je account gebruiken (H3, from shipped label); Problemen oplossen (Apple nl); synchronisatiemethode; knopinfo (tooltip, Apple nl); standaardprofiel                                                             |
+| zh-Hans | 1 / 14 / 17 | 22, same order as English, all links resolve | 0 / 0     | sync, faq, privacy complete / review todo; sourceRevision `4321f0ca…` | 故障排除 (H2, not probed against Apple/Chrome zh-CN corpus); 悬停提示 (tooltip); 键盘快捷键 (from shipped 快捷键); 表头 计数/统计的内容; 保留：; 固定标签页被暂存 (from shipped 已暂存)                                         |
+| zh-Hant | 1 / 14 / 17 | 22, same order as English, all links resolve | 0 / 0     | sync, faq, privacy complete / review todo; sourceRevision `4321f0ca…` | 疑難排解 (Apple/Chrome zh-TW); 工具提示 (Chrome zh-TW); 同步方式 (from shipped 這部 Mac 要如何同步？); 釘選分頁遭到保留 (from shipped 保留); 預設設定檔 (glossary 2026-10-15)                                                   |
 
 ## How to run the locales
 
 One translator per locale with `brief-common.md`, binding vocabulary in
 `refs-sync-status.json`, plus the two earlier refs files it names.
+
+## Locale results (coordinator, 2026-11-02)
+
+Eight translator agents, one per locale, edited `site/<locale>/sync/index.md`, `faq/index.md` and `privacy/index.md` plus `localization/<locale>/status.json`. Gates re-run by the coordinator over the finished tree: every locale has H1/H2/H3 = 1/14/17, the 22 explicit anchors in English order, zero U+2014/U+2013 and zero 您 across the three pages, four locale-prefixed sync links in the FAQ and one in privacy, and 26 table rows on the sync page like English. The coordinator read zh-Hans and zh-Hant in full for the sync method step, Use your account's data, and Troubleshooting (meaning matches English, the no-support-path wording is intact); the other six were checked for structure. `pnpm format`, `format:check`, `test:i18n`, `build` and `i18n:status` results are in the commit that carries the locales.
+
+## Owner review pile (needs a ruling, not applied silently)
+
+- **"A browser migration is running"** (`sync.status.pinnedTabScopeFailing` reason) ships in fr, ja, nl, zh-Hans and zh-Hant as "a migration from another browser is running". Translators doubted it; it is correct: in Phi, a browser migration is the import from another browser. No change.
+- **Pinned tab scope wording split in the shipped catalogue:** es `ámbito` in the scope line vs `alcance` elsewhere; ja 固定タブの適用範囲 vs glossary 固定タブの範囲; ko 고정 탭 범위 vs 고정된 탭 범위. Pages quote the shipped label and keep the glossary term in prose; the client catalogue should pick one.
+- **de Help menu:** shipped "Nutzerdaten verwalten" next to "Benutzerdaten exportieren…"; the older Sync or export section says "Benutzerdaten verwalten". Client-side inconsistency; the page quotes both as shipped.
+- **de:** replace sheet title "Daten dieses Mac ersetzen?" and its button are identical apart from the question mark; "%lld warten auf das Senden" reads awkwardly.
+- **nl:** `sync.pairing.replaceLocal.defaultUnavailable` says "Kies Samenvoegen" but no button carries that label.
+- **zh-Hans:** `overwrite.explanation` says URL 规则 while every other string says 网址规则; the page also mixes 账户 / 账号 (pre-existing).
+- **Dash split:** `replaceLocalFailed` and `profiles.unreadable` carry an em dash only in English; most locales have a colon, semicolon or comma there. Each locale bolds the first clause and paraphrases the rest as English does (ko quotes `unreadable` in full because its first clause cannot stand alone).
+- **ko:** one pre-existing `<strong>재설정…</strong>` followed by a space could be plain bold; left as is.
+- New Troubleshooting headings and the words for tooltip and picker are coined in every locale (table above); the product glossary has no entry for them yet.
