@@ -60,7 +60,7 @@ By default everything happens in the session's hidden agent Space. Two things wi
 - **Your real windows.** `phi -U "Work" goto …` (and the same for `click`, `fill`, `snapshot`, and the rest) drives the visible window of one of your own Spaces instead of a hidden one. Your clicks and the CLI's interleave in the same window, so it acts in small steps and re-reads the page between them.
 - **Browser management.** Commands such as `space-list`, `bookmark-add`, `rules`, `pins`, and `downloads` operate your real browser data app-wide, mirroring what the phi-browser skill can do.
 
-Both are gated behind **Settings → Developer → "Allow agents to operate your Spaces"**, off by default, exactly as for coding agents. Until you turn it on, the CLI is confined to its own agent Spaces.
+Both depend on **Settings → Developer → "Allow agents to operate your Spaces"**, which is on by default, exactly as for coding agents. Turn it off and the CLI is confined to its own agent Spaces.
 
 ## Signing in
 
