@@ -142,7 +142,8 @@ the Reset sync steps and both FAQ answers say what English says, and the
 
 ## Owner review pile (needs a ruling, not applied silently)
 
-- **`sync.recovery.entry.forgotHelp` is not translated in the client yet.**
+- **Update 2026-11-02 (later):** the client translation landed on PR #278 (`8ec3f430`): de, fr, nl and zh-Hans match the Help renderings; zh-Hant ships 忘記復原代碼？ and the Help page now quotes that (H2, link label and links updated); es ships ¿Olvidaste tu código de recuperación? (es-419 preterite, while the shipped backHint on the same page is peninsular ¿No lo has guardado?), ko ships 복구 코드를 잊으셨나요? (honorific 시, while the shipped backHint is plain 해요: 아직 저장하지 않았나요?), ja ships 復旧コードをお忘れですか? with a half-width ? (37 of 40 shipped ja questions end in full-width ？). Owner ruling pending on whether the client strings change to the Help renderings or the three Help pages follow the client.
+- **`sync.recovery.entry.forgotHelp` was not translated in the client when this run was made.**
   The link label renderings in the table above were coined for the Help
   page from each locale's forgot-password pattern (macOS "Passwort
   vergessen?", "Mot de passe oublié ?", "Wachtwoord vergeten?", Apple ja
