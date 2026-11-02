@@ -171,11 +171,11 @@ Oui. Connectez-vous au même compte Phi sur chaque Mac et configurez la synchron
 :::
 
 ::: details Que se passe-t-il si je perds mon code de récupération ?
-Si vous avez encore un Mac configuré pour la synchronisation, vous pouvez ajouter de nouveaux Mac en les approuvant depuis celui-ci. Le code lui-même n'est affiché qu'une fois, ne nous est jamais envoyé, et ne peut être ni renvoyé, ni remplacé, ni réinitialisé. Si vous perdez le code et tous les Mac configurés, plus rien ne peut déverrouiller la copie chiffrée de votre compte.
+Si vous avez encore un Mac configuré pour la synchronisation, vous pouvez ajouter de nouveaux Mac en les approuvant depuis celui-ci. Le code lui-même n'est affiché qu'une fois, ne nous est jamais envoyé, et ne peut être ni renvoyé, ni remplacé, ni réinitialisé. Si le Mac que vous avez est le seul configuré pour la synchronisation, **Réinitialiser la synchronisation** sur ce Mac supprime les données de synchronisation de votre compte pour que vous puissiez configurer à nouveau la synchronisation avec un nouveau code ; vos données de navigation locales restent. Si vous perdez le code et tous les Mac configurés, plus rien ne peut déverrouiller la copie chiffrée de votre compte. Voir [Code de récupération oublié ?](/fr/sync/#forgot-your-recovery-code) dans le Guide.
 :::
 
 ::: details Puis-je retirer un Mac que je n'ai plus ?
-Pas encore. Chaque Mac se retire lui-même, depuis **Paramètres → Synchronisation → Supprimer cet appareil de la synchronisation…**. Un Mac perdu reste sur le compte et continue de recevoir les modifications tant qu'il est connecté. Retirer un Mac ne change pas non plus les clés de chiffrement du compte ; ce que ce Mac avait déjà synchronisé y reste donc.
+Pas encore. Chaque Mac se retire lui-même, depuis **Paramètres → Synchronisation**, sous **Suppression**. Un Mac perdu reste sur le compte et continue de recevoir les modifications tant qu'il est connecté. Retirer un Mac ne change pas non plus les clés de chiffrement du compte ; ce que ce Mac avait déjà synchronisé y reste donc. Le dernier Mac que vous avez encore peut lui aussi se retirer : lorsqu'il est le seul Mac configuré pour la synchronisation, la ligne affiche **Réinitialiser la synchronisation**, une option qui supprime aussi les données de synchronisation du compte. Voir [Réinitialiser la synchronisation](/fr/sync/#reset-sync).
 :::
 
 ## Fonctions d'IA {#ai-features}

@@ -37,16 +37,16 @@ Sommige dingen blijven bewust waar ze zijn:
 - **Een Phi-account, ingelogd op elke Mac.** Zonder account biedt het paneel alleen **Log in om tussen apparaten te synchroniseren**. Heb je ervoor gekozen Phi zonder account te verkennen, zie dan [Later inloggen](/nl/get-started/#signing-in-later).
 - **De officiële build van Phi.** Synchronisatie loopt via de synchronisatiedienst van Phinomenon, en een versie van Phi die je zelf vanaf de opensourcecode bouwt, kan die niet gebruiken.
 
-## Je eerste Mac instellen
+## Je eerste Mac instellen {#set-up-your-first-mac}
 
 1. Open **Instellingen → Synchronisatie** en klik op **Stel synchronisatie in op dit apparaat**. Het venster legt uit wat er gaat gebeuren; klik op **Ga door**.
 2. **Bewaar je herstelcode.** Phi maakt een herstelcode aan en toont die één keer: 27 tekens in groepen van vijf. Klik op **Kopieer** en bewaar de code op een veilige plek, zoals een wachtwoordmanager, en klik daarna op **Ik heb de code bewaard**.
-3. **Bevestig je herstelcode.** Phi vraagt je de bewaarde code in te typen. Streepjes, spaties en hoofdletters maken niet uit. Synchronisatie blijft uit totdat de code klopt, zodat je er niet later achter komt dat hij nooit is bewaard. Sluit je hier het venster, dan vraagt Phi er opnieuw om zodra je het instellen weer opent of Phi opnieuw start.
+3. **Bevestig je herstelcode.** Phi vraagt je de bewaarde code in te typen. Streepjes, spaties en hoofdletters maken niet uit. Heb je de code niet bewaard, klik dan op **Terug**: Phi toont dezelfde code opnieuw, zodat je hem nu kunt bewaren. Synchronisatie blijft uit totdat de code klopt, zodat je er niet later achter komt dat hij nooit is bewaard. Sluit je hier het venster, dan vraagt Phi er opnieuw om zodra je het instellen weer opent of Phi opnieuw start, maar dan is **Terug** verdwenen, omdat Phi de code niet meer heeft zodra het venster is gesloten.
 4. **Koppel je profielen en Spaces.** Op een eerste Mac staat er nog niets in het account om mee te koppelen, dus deze stap bevestigt vooral wat er wordt toegevoegd: kies **Registreer als nieuw** voor elk Profiel en **Voeg alles toe als nieuw** voor de Spaces. Zie [Nog een Mac toevoegen](#add-another-mac) voor wat deze twee stappen doen zodra het account gegevens bevat.
 5. Klik op **Klaar**. Het paneel toont **Eerste synchronisatie is bezig** terwijl deze Mac uploadt, en daarna **Up-to-date**.
 
 ::: warning De herstelcode wordt één keer getoond
-De code wordt op je Mac gemaakt en nooit naar ons verstuurd, dus we kunnen hem niet opnieuw tonen, geen vervangende code sturen en hem niet resetten. Om nog een Mac toe te voegen, heb je de code nodig of een Mac die al is ingesteld. Raak je beide kwijt, dan kan niemand de versleutelde kopie in je account ontgrendelen, wij ook niet.
+De code wordt op je Mac gemaakt en nooit naar ons verstuurd, dus we kunnen hem niet opnieuw tonen, geen vervangende code sturen en hem niet resetten. Om nog een Mac toe te voegen, heb je de code nodig of een Mac die al is ingesteld. Raak je beide kwijt, dan kan niemand de versleutelde kopie in je account ontgrendelen, wij ook niet. Ben je de code al kwijt, zie dan [Herstelcode vergeten?](#forgot-your-recovery-code)
 :::
 
 ## Nog een Mac toevoegen {#add-another-mac}
@@ -64,6 +64,32 @@ Het laden van het account kan tot twee minuten duren terwijl Phi je Spaces telt,
 ### Later voltooien
 
 **Voltooi later** staat op de koppelpagina's. Kies je die, of sluit je het venster, dan blijft deze Mac lokaal browsen: er wordt niets gesynchroniseerd, het paneel toont **Niet gekoppeld** en Phi opent het instellen niet uit zichzelf opnieuw. Ga terug naar **Instellingen → Synchronisatie** en klik op **Ga door met instellen** wanneer je zover bent. Phi laadt je account op dat moment opnieuw, dus keuzes die je nog niet had afgerond, worden niet bewaard.
+
+## Herstelcode vergeten? {#forgot-your-recovery-code}
+
+Niemand kan je herstelcode opnieuw tonen of een nieuwe code maken voor dezelfde synchronisatiegegevens, wij ook niet. Wat je nog kunt doen, hangt af van je situatie. De link **Herstelcode vergeten?** op de pagina **Voer je herstelcode in** opent dit gedeelte.
+
+### Je bent je eerste Mac nog aan het instellen
+
+Sta je op **Bevestig je herstelcode** en heb je het instelvenster nog niet gesloten, klik dan op **Terug**. Phi toont dezelfde code opnieuw. Bewaar de code, klik op **Ik heb de code bewaard** en typ hem in om te bevestigen.
+
+Phi 2.14 en eerder hebben geen knop **Terug**. Heb je het venster gesloten of Phi opnieuw gestart, dan is de code ook weg: Phi blijft erom vragen, maar kan hem niet tonen. Werk Phi in beide gevallen zo nodig bij en begin dan opnieuw met [Synchronisatie resetten](#reset-sync), zoals hieronder beschreven.
+
+### Er is nog een andere Mac ingesteld voor synchronisatie
+
+Je hebt de code niet nodig. Kies op de nieuwe Mac **Vraag goedkeuring van een ander apparaat** en keur het verzoek goed op de Mac die is ingesteld; zie [Nog een Mac toevoegen](#add-another-mac). Synchronisatie blijft werken op de Macs die je hebt.
+
+De code kan nog steeds niet opnieuw worden getoond of vervangen. Houd ten minste één Mac ingesteld voor synchronisatie: zolang dat zo is, kun je Macs toevoegen zonder de code.
+
+### Dit is je enige Mac, of je wilt opnieuw beginnen
+
+Gebruik [Synchronisatie resetten](#reset-sync) op die Mac. Daarmee wordt de Mac uit synchronisatie verwijderd en worden alle synchronisatiegegevens verwijderd die voor je account zijn opgeslagen. Je lokale browsegegevens blijven op de Mac staan, en elke andere Mac waarop synchronisatie voor het account nog was ingesteld, toont daarna [Synchronisatie opnieuw instellen](#set-up-sync-again). Stel vervolgens synchronisatie op deze Mac helemaal opnieuw in, zoals in [Je eerste Mac instellen](#set-up-your-first-mac). Phi maakt een nieuwe herstelcode aan; bewaar die voordat je op **Ik heb de code bewaard** klikt.
+
+**Reset synchronisatie** wordt alleen aangeboden op de laatste Mac die voor het account is ingesteld. Wil je opnieuw beginnen terwijl er nog andere Macs zijn ingesteld, verwijder dan eerst elk van die andere Macs uit synchronisatie.
+
+### Geen Mac die je nog hebt, is ingesteld voor synchronisatie
+
+Ben je de code kwijt en is geen enkele Mac die je nog hebt ingesteld voor synchronisatie, dan kan de versleutelde kopie in je account niet worden ontgrendeld, niet door jou en niet door ons. Een Mac die nog niet is ingesteld voor synchronisatie, kan de synchronisatie van het account ook niet resetten, dus vanaf zo'n Mac kun je niet opnieuw beginnen. Dit geldt ook als je een Mac bent kwijtgeraakt of hebt gewist terwijl hij was ingesteld: die telt nog steeds als ingesteld, en hij kan niet vanaf een andere Mac worden verwijderd.
 
 ## De synchronisatiestatus controleren
 
@@ -84,22 +110,40 @@ Elke Mac kan alleen zichzelf verwijderen, vanuit zijn eigen paneel Synchronisati
 
 ## Een Mac uit de synchronisatie verwijderen {#remove-a-mac-from-sync}
 
-Klik in **Instellingen → Synchronisatie**, onder **Herstel en verwijdering**, op **Verwijder dit apparaat uit synchronisatie…** en bevestig met **Verwijder dit apparaat**.
+Klik in **Instellingen → Synchronisatie**, onder **Verwijdering**, op **Verwijder…** in de rij **Verwijder deze Mac uit synchronisatie** en bevestig met **Verwijder dit apparaat**. Is het instellen op deze Mac nog niet voltooid, dan biedt het instelvenster in plaats daarvan onderaan **Verwijder dit apparaat uit synchronisatie…**.
 
 - Deze Mac stopt met synchroniseren, de synchronisatiedienst trekt zijn toegang in, en de synchronisatie-instellingen, sleutels en koppelingen van Profielen en Spaces worden van deze Mac gewist.
 - Alles waarmee je aan het browsen was, blijft: Spaces, bladwijzers, geschiedenis en vastgezette tabbladen blijven volledig bewaard, en je blijft ingelogd op je account.
 - Je andere Macs merken er niets van en blijven onderling synchroniseren.
 - Wil je deze Mac terughalen, start het instellen dan opnieuw en voeg hem toe via goedkeuring of een herstelcode.
 
-Je kunt de laatste Mac op het account niet verwijderen. Stel eerst synchronisatie in op een andere Mac.
+Is deze Mac de enige Mac op het account die is ingesteld voor synchronisatie, dan is de rij in plaats daarvan **Reset synchronisatie**, omdat het verwijderen van de laatste Mac ook de synchronisatiegegevens van het account verwijdert. Zie [Synchronisatie resetten](#reset-sync).
 
 ::: warning Verwijderen vervangt de sleutels van je account niet
 Een Mac verwijderen zorgt dat hij niets nieuws meer ontvangt, maar verandert de versleutelingssleutels van je account niet en kan niet terughalen wat die Mac al had gesynchroniseerd. Wat erop stond, blijft erop staan.
 :::
 
+### Synchronisatie resetten {#reset-sync}
+
+Is deze Mac de enige Mac op je account die is ingesteld voor synchronisatie, dan toont het onderdeel **Verwijdering** de rij **Reset synchronisatie** met de knop **Reset…**. Resetten verwijdert deze Mac uit synchronisatie en verwijdert alle synchronisatiegegevens die voor dit account zijn opgeslagen, zodat je opnieuw kunt beginnen, bijvoorbeeld nadat je je herstelcode bent kwijtgeraakt.
+
+1. Klik in **Instellingen → Synchronisatie**, onder **Verwijdering**, op **Reset…**.
+2. Phi vraagt **Alle synchronisatiegegevens voor dit account verwijderen?** Klik op **Verwijder alle synchronisatiegegevens** om te bevestigen. Dit kan niet ongedaan worden gemaakt.
+
+- Elk apparaat wordt uit synchronisatie verwijderd, en alles wat voor dit account op de synchronisatieserver is opgeslagen, wordt verwijderd.
+- Je lokale browsegegevens blijven op deze Mac staan: Spaces, bladwijzers, geschiedenis en vastgezette tabbladen blijven bewaard, en je blijft ingelogd op je account.
+- Elke andere Mac waarop synchronisatie voor dit account nog was ingesteld, toont [Synchronisatie opnieuw instellen](#set-up-sync-again).
+- Wil je synchronisatie weer gebruiken, stel die dan helemaal opnieuw in. Phi maakt een nieuwe herstelcode aan.
+
+Verwijder je deze Mac via het instelvenster en blijkt het de laatste te zijn, dan meldt Phi dat: **Dit is het laatste apparaat dat is ingesteld voor synchronisatie. Je kunt het verwijderen, samen met alle synchronisatiegegevens die voor dit account zijn opgeslagen, of eerst synchronisatie op een ander apparaat instellen.** Daarna biedt Phi **Verwijder dit apparaat en alle synchronisatiegegevens…** aan, dat om dezelfde bevestiging vraagt.
+
+Is er intussen een andere Mac aan het account toegevoegd, dan wordt er niets verwijderd. Phi meldt **Er is sindsdien een ander apparaat aan dit account toegevoegd, dus er is niets verwijderd. Je kunt deze Mac in plaats daarvan uit synchronisatie verwijderen.** en de rij verandert terug in **Verwijder deze Mac uit synchronisatie**.
+
 ## Synchronisatie opnieuw instellen {#set-up-sync-again}
 
 Staat er in het paneel **De synchronisatiegegevens van het account zijn gewijzigd. Het synchroniseren van Phi-gegevens is gepauzeerd.**, dan zijn de synchronisatiegegevens in je account gereset en past de instelling van deze Mac er niet meer bij. De gegevens van Phi worden pas weer gesynchroniseerd als je actie onderneemt; opnieuw proberen of opnieuw starten lost het niet op. Klik op **Stel synchronisatie opnieuw in** en bevestig. Phi wist de synchronisatie-instellingen en koppelingsgegevens van deze Mac, behoudt je lokale browsegegevens en wat er in je account staat, en leidt je opnieuw door het instellen, inclusief toevoegen via goedkeuring of een herstelcode.
+
+Je ziet dit ook op een Mac nadat **Reset synchronisatie** is gebruikt op de laatste ingestelde Mac van het account: de synchronisatiegegevens waarmee deze Mac was ingesteld, zijn dan verwijderd.
 
 ## Uitloggen
 
@@ -108,7 +152,7 @@ Uitloggen bij je Phi-account stopt de synchronisatie op die Mac, en er komt niet
 ## Hoe je gegevens worden beschermd
 
 - **Versleuteld voordat ze je Mac verlaten.** Je Macs maken de sleutels aan, en alleen de versleutelde kopie wordt geüpload. De synchronisatiedienst bewaart die kopie en geeft hem door aan je andere Macs; ontsleutelen kan de dienst niet.
-- **Inloggen is niet genoeg om ze te lezen.** Een nieuwe Mac krijgt de sleutel alleen via goedkeuring van een Mac die hem al heeft, of via je herstelcode. Daarom is er nergens een link 'herstelcode vergeten'.
+- **Inloggen is niet genoeg om ze te lezen.** Een nieuwe Mac krijgt de sleutel alleen via goedkeuring van een Mac die hem al heeft, of via je herstelcode. Daarom kan een verloren code ook niet worden hersteld: de link **Herstelcode vergeten?** bij het instellen legt uit welke mogelijkheden je hebt, en geen daarvan brengt de code terug.
 - **Het blijven gegevens die wij voor je bewaren.** De versleutelde kopie staat op de synchronisatiedienst van Phinomenon, dus synchronisatie is een van de dingen die Phi verstuurt. [Privacy & je gegevens](/nl/privacy/) noemt de andere, en het [Privacybeleid](https://phibrowser.com/privacy/) en de [Gebruiksvoorwaarden](https://phibrowser.com/terms/) zijn voor dit alles de gezaghebbende bron.
 
 ## Synchroniseren of exporteren

@@ -41,7 +41,7 @@ corrects the removal path to the shipped labels. Two FAQ answers follow. See
    usted, the locale's existing register and quote characters. CJK bold
    spans that end in an ellipsis use `<strong>` (as in the 2026-10-14 run).
 8. The sync page must end up with one H1 and the same number of H2 as English
-   (12), and the same H3 set.
+   (13, counting "What's next"), and the same H3 set.
 9. Update `localization/<locale>/status.json` for `sync/index.md` and
    `faq/index.md`: `translation: complete`, `contentReview: todo`,
    `sourceRevision` set to the English commit of this run.

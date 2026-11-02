@@ -171,11 +171,11 @@ Ja. Log op elke Mac in met hetzelfde Phi-account en stel synchronisatie in via *
 :::
 
 ::: details Wat gebeurt er als ik mijn herstelcode kwijtraak?
-Heb je nog een Mac die is ingesteld voor synchronisatie, dan kun je nieuwe Macs toevoegen door ze vanaf die Mac goed te keuren. De code zelf wordt één keer getoond, wordt nooit naar ons verstuurd en kan niet opnieuw worden verstuurd, vervangen of gereset. Raak je de code én elke ingestelde Mac kwijt, dan kan niets de versleutelde kopie in je account ontgrendelen.
+Heb je nog een Mac die is ingesteld voor synchronisatie, dan kun je nieuwe Macs toevoegen door ze vanaf die Mac goed te keuren. De code zelf wordt één keer getoond, wordt nooit naar ons verstuurd en kan niet opnieuw worden verstuurd, vervangen of gereset. Is de Mac die je hebt de enige die is ingesteld voor synchronisatie, dan verwijdert **Reset synchronisatie** op die Mac de synchronisatiegegevens van je account, zodat je synchronisatie opnieuw kunt instellen met een nieuwe code; je lokale browsegegevens blijven bewaard. Raak je de code én elke ingestelde Mac kwijt, dan kan niets de versleutelde kopie in je account ontgrendelen. Zie [Herstelcode vergeten?](/nl/sync/#forgot-your-recovery-code) in de gids.
 :::
 
 ::: details Kan ik een Mac verwijderen die ik niet meer heb?
-Nog niet. Elke Mac verwijdert zichzelf, via **Instellingen → Synchronisatie → Verwijder dit apparaat uit synchronisatie…**. Een Mac die je kwijt bent, blijft aan het account gekoppeld en blijft wijzigingen ontvangen zolang hij is ingelogd. Een Mac verwijderen verandert ook de versleutelingssleutels van het account niet, dus wat die Mac al had gesynchroniseerd, blijft erop staan.
+Nog niet. Elke Mac verwijdert zichzelf, via **Instellingen → Synchronisatie** onder **Verwijdering**. Een Mac die je kwijt bent, blijft aan het account gekoppeld en blijft wijzigingen ontvangen zolang hij is ingelogd. Een Mac verwijderen verandert ook de versleutelingssleutels van het account niet, dus wat die Mac al had gesynchroniseerd, blijft erop staan. Ook de laatste Mac die je nog hebt, kan zichzelf verwijderen: is dat de enige Mac die is ingesteld voor synchronisatie, dan is de rij **Reset synchronisatie**, waarmee ook de synchronisatiegegevens van het account worden verwijderd. Zie [Synchronisatie resetten](/nl/sync/#reset-sync).
 :::
 
 ## AI-functies {#ai-features}

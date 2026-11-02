@@ -54,8 +54,8 @@ English only so far, on branch `help/sync-forgot-recovery-code`. See
     says a lost Mac cannot be removed, and adds that the only set-up Mac shows
     **Reset sync** (link `/sync/#reset-sync`).
 
-H2 count of the English sync page: 11 before, 12 after (the new Forgot
-section). The FAQ keeps its H2 count and its three Sync details blocks.
+H2 count of the English sync page, counted as `grep -c '^## '` (which
+includes "What's next"): 12 before, 13 after (the new Forgot section). The FAQ keeps its H2 count and its three Sync details blocks.
 
 Not changed: frontmatter descriptions, `guide.ts`, locale resources, the eight
 locale trees, `localization/*/status.json`.
@@ -109,20 +109,65 @@ compare H2 counts, and the staleness check was skipped as above. Expect it to
 flag the eight `sync/index.md` and `faq/index.md` pages as stale wherever the
 baseline commit is reachable.
 
-Locale results (translators fill in):
+Locale results (run 2026-11-02, eight translator agents, one per locale;
+gates re-run by the coordinator over the finished tree):
 
-| Locale  | sync page H2 = 12 | anchors | no dashes / 您 | status.json | coinages |
-| ------- | ----------------- | ------- | -------------- | ----------- | -------- |
-| de      |                   |         |                |             |          |
-| es      |                   |         |                |             |          |
-| fr      |                   |         |                |             |          |
-| ja      |                   |         |                |             |          |
-| ko      |                   |         |                |             |          |
-| nl      |                   |         |                |             |          |
-| zh-Hans |                   |         |                |             |          |
-| zh-Hant |                   |         |                |             |          |
+| Locale  | sync page H1 / H2 / H3 | anchors (6, same as English) | dashes / 您 | status.json                                 | forgotHelp link label (coined)                          |
+| ------- | ---------------------- | ---------------------------- | ----------- | ------------------------------------------- | ------------------------------------------------------- |
+| de      | 1 / 13 / 6             | all present, links resolve   | 0 / 0       | both pages complete, review todo, `d524ebf` | Wiederherstellungscode vergessen?                       |
+| es      | 1 / 13 / 6             | all present, links resolve   | 0 / 0       | same                                        | ¿Has olvidado tu código de recuperación?                |
+| fr      | 1 / 13 / 6             | all present, links resolve   | 0 / 0       | same                                        | Code de récupération oublié ? (NBSP before ?)           |
+| ja      | 1 / 13 / 6             | all present, links resolve   | 0 / 0       | same                                        | 復旧コードをお忘れですか？ (H2: 復旧コードを忘れた場合) |
+| ko      | 1 / 13 / 6             | all present, links resolve   | 0 / 0       | same                                        | 복구 코드를 잊어버렸나요?                               |
+| nl      | 1 / 13 / 6             | all present, links resolve   | 0 / 0       | same                                        | Herstelcode vergeten?                                   |
+| zh-Hans | 1 / 13 / 6             | all present, links resolve   | 0 / 0       | same                                        | 忘记了恢复代码？                                        |
+| zh-Hant | 1 / 13 / 6             | all present, links resolve   | 0 / 0       | same                                        | 忘記復原代碼了嗎？                                      |
 
-After the locales: `pnpm format:check`, `pnpm test:i18n`, `pnpm build`.
+`sourceRevision` is the full SHA `d524ebf228400112575a08dc013223822b2d21ea`
+in every locale (two translators had written the short form; normalised by
+the coordinator).
+
+After the locales (coordinator, same worktree, pnpm 11.28.5 via `npx`):
+
+| Command                        | Result                                                             |
+| ------------------------------ | ------------------------------------------------------------------ |
+| `pnpm format` + `format:check` | all files use Prettier code style                                  |
+| `pnpm test:i18n`               | passed for 9 locales and 261 Markdown files                        |
+| `pnpm build`                   | passed: 9 locales, 261 pages, 40 search queries                    |
+| `pnpm i18n:status <locale>`    | `registered/review-pending` for all eight (expected: reviews todo) |
+
+Coordinator read: English, zh-Hans and zh-Hant for meaning (the four cases,
+the Reset sync steps and both FAQ answers say what English says, and the
+"no Mac you still have" case promises nothing); the other six for structure.
+
+## Owner review pile (needs a ruling, not applied silently)
+
+- **`sync.recovery.entry.forgotHelp` is not translated in the client yet.**
+  The link label renderings in the table above were coined for the Help
+  page from each locale's forgot-password pattern (macOS "Passwort
+  vergessen?", "Mot de passe oublié ?", "Wachtwoord vergeten?", Apple ja
+  「パスワードをお忘れですか？」, Chrome zh-CN 「忘记了密码？」, Chrome zh-TW
+  「忘記密碼了嗎？」, shipped ko backHint 「아직 저장하지 않았나요?」, shipped es
+  backHint "¿No lo has guardado?"). The translation repository should adopt
+  the same renderings for the client key so the link and the Help heading
+  match; if it rules differently, update the eight pages.
+- **es:** "¿Has olvidado…?" (peninsular present perfect, following the shipped
+  backHint) replaces the old page's "¿Olvidaste…?" (es-419 preterite). Rule
+  which form the product uses.
+- **de:** prose says "Konto" while shipped strings say "Account" (pre-existing
+  split, kept; quoted strings keep "Account").
+- **fr:** shipped buttons say "Supprimer" for removing a device while the prose
+  keeps "retirer" (pre-existing).
+- **ja:** the shipped Removal section title and the "Remove…" button are both
+  削除, so one sentence repeats the word; quoted as shipped. The H2 uses the
+  Apple support heading pattern 「〜を忘れた場合」 rather than the question form.
+- **ko:** the shipped backHint says 윈도우 where the page says 창 (not quoted).
+- **nl:** the `### Reset sync` heading is the infinitive "Synchronisatie
+  resetten" while the bold label stays the shipped **Reset synchronisatie**,
+  mirroring the existing heading/button pair for "Set up sync again".
+- **zh-Hans:** shipped `sync.pairing.removeThisDevice` says 此设备 while the
+  Settings row says 这台 Mac; both quoted as shipped. The page mixes 账户 and
+  账号 (pre-existing).
 
 ## How to run the locales
 

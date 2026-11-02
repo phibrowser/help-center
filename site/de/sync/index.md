@@ -37,16 +37,16 @@ Manches bleibt absichtlich, wo es ist:
 - **Ein Phi-Konto, auf jedem Mac angemeldet.** Ohne Konto bietet der Einstellungsbereich nur **Melde dich an, um geräteübergreifend zu synchronisieren** an. Hast du dich entschieden, Phi ohne Konto zu erkunden, siehe [Später anmelden](/de/get-started/#signing-in-later).
 - **Der offizielle Phi-Build.** Die Synchronisierung läuft über Phinomenons Synchronisierungsdienst, und eine Phi-Version, die du selbst aus dem Open-Source-Code baust, kann ihn nicht nutzen.
 
-## Deinen ersten Mac einrichten
+## Deinen ersten Mac einrichten {#set-up-your-first-mac}
 
 1. Öffne **Einstellungen → Synchronisierung** und klicke auf **Synchronisierung auf diesem Gerät einrichten**. Das Fenster erklärt, was gleich passiert; klicke auf **Weiter**.
 2. **Sichere deinen Wiederherstellungscode.** Phi erstellt einen Wiederherstellungscode und zeigt ihn ein einziges Mal an: 27 Zeichen in Fünfergruppen. Klicke auf **Kopieren**, bewahre ihn an einem sicheren Ort auf, etwa in einem Passwortmanager, und klicke dann auf **Ich habe ihn gesichert**.
-3. **Bestätige deinen Wiederherstellungscode.** Phi bittet dich, den gesicherten Code einzutippen. Bindestriche, Leerzeichen sowie Groß- und Kleinschreibung spielen keine Rolle. Die Synchronisierung bleibt aus, bis der Code stimmt, sodass du nicht erst später merkst, dass er nie gesichert wurde. Schließt du das Fenster an dieser Stelle, fragt Phi erneut, wenn du die Einrichtung das nächste Mal öffnest oder neu startest.
+3. **Bestätige deinen Wiederherstellungscode.** Phi bittet dich, den gesicherten Code einzutippen. Bindestriche, Leerzeichen sowie Groß- und Kleinschreibung spielen keine Rolle. Hast du ihn nicht gesichert, klicke auf **Zurück**: Phi zeigt denselben Code erneut an, damit du ihn jetzt sichern kannst. Die Synchronisierung bleibt aus, bis der Code stimmt, sodass du nicht erst später merkst, dass er nie gesichert wurde. Schließt du das Fenster an dieser Stelle, fragt Phi erneut, wenn du die Einrichtung das nächste Mal öffnest oder neu startest, aber **Zurück** gibt es dann nicht mehr, weil der Code nicht aufbewahrt wird, sobald das Fenster geschlossen ist.
 4. **Ordne deine Profile und Spaces zu.** Auf einem ersten Mac gibt es im Konto noch nichts zuzuordnen, deshalb bestätigt dieser Schritt vor allem, was hinzugefügt wird: Wähle für jedes Profil **Als neu registrieren** und für die Spaces **Alle als neu hinzufügen**. Was die beiden Schritte tun, sobald das Konto Daten enthält, steht unter [Weiteren Mac hinzufügen](#add-another-mac).
 5. Klicke auf **Fertig**. Der Einstellungsbereich zeigt **Erste Synchronisierung läuft**, während dieser Mac hochlädt, danach **Auf dem neuesten Stand**.
 
 ::: warning Der Wiederherstellungscode wird nur einmal angezeigt
-Der Code entsteht auf deinem Mac und wird nie an uns gesendet, deshalb können wir ihn weder erneut anzeigen noch Ersatz schicken oder ihn zurücksetzen. Um einen weiteren Mac hinzuzufügen, brauchst du entweder den Code oder einen Mac, der bereits eingerichtet ist. Verlierst du beides, kann niemand die verschlüsselte Kopie in deinem Konto entsperren, auch wir nicht.
+Der Code entsteht auf deinem Mac und wird nie an uns gesendet, deshalb können wir ihn weder erneut anzeigen noch Ersatz schicken oder ihn zurücksetzen. Um einen weiteren Mac hinzuzufügen, brauchst du entweder den Code oder einen Mac, der bereits eingerichtet ist. Verlierst du beides, kann niemand die verschlüsselte Kopie in deinem Konto entsperren, auch wir nicht. Ist der Code bereits verloren, siehe [Wiederherstellungscode vergessen?](#forgot-your-recovery-code)
 :::
 
 ## Weiteren Mac hinzufügen {#add-another-mac}
@@ -64,6 +64,32 @@ Das Laden des Kontos kann bis zu zwei Minuten dauern, während Phi deine Spaces 
 ### Später abschließen
 
 **Später abschließen** erscheint auf den Zuordnungsseiten. Wählst du es oder schließt das Fenster, browst du auf diesem Mac lokal weiter: Nichts wird synchronisiert, der Einstellungsbereich zeigt **Nicht gekoppelt**, und Phi öffnet die Einrichtung nicht von selbst erneut. Kehre zu **Einstellungen → Synchronisierung** zurück und klicke auf **Einrichtung fortsetzen**, wenn du so weit bist. Phi lädt dein Konto dann neu, deshalb bleiben nicht abgeschlossene Entscheidungen nicht erhalten.
+
+## Wiederherstellungscode vergessen? {#forgot-your-recovery-code}
+
+Niemand kann deinen Wiederherstellungscode erneut anzeigen oder einen neuen für dieselben Synchronisierungsdaten erstellen, auch wir nicht. Was du noch tun kannst, hängt von deiner Situation ab. Der Link **Wiederherstellungscode vergessen?** auf der Seite **Gib deinen Wiederherstellungscode ein** öffnet diesen Abschnitt.
+
+### Du richtest gerade deinen ersten Mac ein
+
+Bist du bei **Bestätige deinen Wiederherstellungscode** und hast das Einrichtungsfenster nicht geschlossen, klicke auf **Zurück**. Phi zeigt denselben Code erneut an. Sichere ihn, klicke auf **Ich habe ihn gesichert** und gib ihn zur Bestätigung ein.
+
+Phi 2.14 und früher haben keine Taste **Zurück**. Hast du das Fenster geschlossen oder Phi neu gestartet, ist der Code ebenfalls weg: Phi fragt weiter danach, kann ihn aber nicht anzeigen. Aktualisiere Phi in beiden Fällen bei Bedarf und fang dann mit [Synchronisierung zurücksetzen](#reset-sync) neu an, wie unten beschrieben.
+
+### Ein anderer Mac ist noch für die Synchronisierung eingerichtet
+
+Du brauchst den Code nicht. Wähle auf dem neuen Mac **Genehmigung von einem anderen Gerät anfordern** und genehmige die Anfrage auf dem eingerichteten Mac; siehe [Weiteren Mac hinzufügen](#add-another-mac). Auf den Macs, die du hast, läuft die Synchronisierung weiter.
+
+Der Code lässt sich trotzdem weder erneut anzeigen noch ersetzen. Lass mindestens einen Mac für die Synchronisierung eingerichtet: Solange einer eingerichtet ist, kannst du Macs ohne den Code hinzufügen.
+
+### Das ist dein einziger Mac, oder du willst neu anfangen
+
+Verwende auf diesem Mac [Synchronisierung zurücksetzen](#reset-sync). Dadurch wird der Mac aus der Synchronisierung entfernt, und alle für dein Konto gespeicherten Synchronisierungsdaten werden gelöscht. Deine lokalen Browserdaten bleiben auf dem Mac, und jeder andere Mac, auf dem die Synchronisierung für das Konto noch eingerichtet war, zeigt danach [Synchronisierung erneut einrichten](#set-up-sync-again) an. Richte die Synchronisierung auf diesem Mac dann von Grund auf neu ein, wie unter [Deinen ersten Mac einrichten](#set-up-your-first-mac) beschrieben. Phi erstellt einen neuen Wiederherstellungscode; sichere ihn, bevor du auf **Ich habe ihn gesichert** klickst.
+
+**Synchronisierung zurücksetzen** wird nur auf dem letzten Mac angeboten, der für das Konto eingerichtet ist. Willst du neu anfangen, während noch andere Macs eingerichtet sind, entferne zuerst jeden der anderen aus der Synchronisierung.
+
+### Kein Mac, den du noch hast, ist für die Synchronisierung eingerichtet
+
+Ist der Code weg und kein Mac, den du noch hast, für die Synchronisierung eingerichtet, lässt sich die verschlüsselte Kopie in deinem Konto nicht entsperren, weder von dir noch von uns. Ein Mac, der noch nicht für die Synchronisierung eingerichtet ist, kann die Synchronisierung des Kontos auch nicht zurücksetzen, es gibt also keinen Weg, von ihm aus neu anzufangen. Das gilt auch für einen Mac, der verloren ging oder gelöscht wurde, während er eingerichtet war: Er zählt weiterhin als eingerichtet und lässt sich nicht von einem anderen Mac aus entfernen.
 
 ## Synchronisierungsstatus prüfen
 
@@ -84,22 +110,40 @@ Jeder Mac kann nur sich selbst entfernen, über seinen eigenen Einstellungsberei
 
 ## Mac aus der Synchronisierung entfernen {#remove-a-mac-from-sync}
 
-Klicke in **Einstellungen → Synchronisierung** unter **Wiederherstellung und Entfernung** auf **Dieses Gerät aus der Synchronisierung entfernen…** und bestätige mit **Dieses Gerät entfernen**.
+Klicke in **Einstellungen → Synchronisierung** unter **Entfernen** in der Zeile **Diesen Mac aus der Synchronisierung entfernen** auf **Entfernen…** und bestätige mit **Dieses Gerät entfernen**. Ist die Einrichtung auf diesem Mac nicht abgeschlossen, bietet das Einrichtungsfenster stattdessen unten **Dieses Gerät aus der Synchronisierung entfernen…** an.
 
 - Dieser Mac hört auf zu synchronisieren, der Synchronisierungsdienst widerruft seinen Zugang, und seine Synchronisierungseinrichtung, seine Schlüssel und die Zuordnung von Profilen und Spaces werden auf diesem Mac gelöscht.
 - Alles, womit du gesurft hast, bleibt: Spaces, Lesezeichen, Verlauf und angeheftete Tabs bleiben vollständig erhalten, und du bleibst bei deinem Konto angemeldet.
 - Deine anderen Macs sind nicht betroffen und synchronisieren weiter untereinander.
 - Um diesen Mac zurückzuholen, starte die Einrichtung erneut und tritt per Genehmigung oder Wiederherstellungscode bei.
 
-Den letzten Mac im Konto kannst du nicht entfernen. Richte zuerst die Synchronisierung auf einem anderen Mac ein.
+Ist dieser Mac der einzige im Konto, der für die Synchronisierung eingerichtet ist, heißt die Zeile stattdessen **Synchronisierung zurücksetzen**, weil das Entfernen des letzten Mac auch die Synchronisierungsdaten des Kontos löscht. Siehe [Synchronisierung zurücksetzen](#reset-sync).
 
 ::: warning Entfernen erneuert die Schlüssel deines Kontos nicht
 Ein entfernter Mac empfängt nichts Neues mehr, aber die Verschlüsselungsschlüssel deines Kontos ändern sich dadurch nicht, und was dieser Mac bereits synchronisiert hatte, lässt sich nicht zurückholen. Was auf ihm war, bleibt auf ihm.
 :::
 
+### Synchronisierung zurücksetzen {#reset-sync}
+
+Ist dieser Mac der einzige Mac, der in deinem Konto für die Synchronisierung eingerichtet ist, zeigt der Abschnitt **Entfernen** die Zeile **Synchronisierung zurücksetzen** mit der Taste **Zurücksetzen…**. Das Zurücksetzen entfernt diesen Mac aus der Synchronisierung und löscht alle für dieses Konto gespeicherten Synchronisierungsdaten, sodass du neu anfangen kannst, etwa nachdem du deinen Wiederherstellungscode verloren hast.
+
+1. Klicke in **Einstellungen → Synchronisierung** unter **Entfernen** auf **Zurücksetzen…**.
+2. Phi fragt **Alle Synchronisierungsdaten für diesen Account löschen?** Klicke zum Bestätigen auf **Alle Synchronisierungsdaten löschen**. Das lässt sich nicht rückgängig machen.
+
+- Jedes Gerät wird aus der Synchronisierung entfernt, und alles, was für dieses Konto auf dem Synchronisierungsserver gespeichert ist, wird gelöscht.
+- Deine lokalen Browserdaten bleiben auf diesem Mac: Spaces, Lesezeichen, Verlauf und angeheftete Tabs bleiben erhalten, und du bleibst bei deinem Konto angemeldet.
+- Jeder andere Mac, auf dem die Synchronisierung für dieses Konto noch eingerichtet war, zeigt [Synchronisierung erneut einrichten](#set-up-sync-again) an.
+- Um die Synchronisierung wieder zu verwenden, richte sie von Grund auf neu ein. Phi erstellt einen neuen Wiederherstellungscode.
+
+Entfernst du diesen Mac über das Einrichtungsfenster und stellt sich heraus, dass er der letzte ist, sagt Phi dir das: **Dies ist das letzte für die Synchronisierung eingerichtete Gerät. Du kannst es entfernen und alle für diesen Account gespeicherten Synchronisierungsdaten löschen oder zuerst die Synchronisierung auf einem anderen Gerät einrichten.** Danach bietet Phi **Dieses Gerät entfernen und alle Synchronisierungsdaten löschen…** an, was nach derselben Bestätigung fragt.
+
+Ist dem Konto in der Zwischenzeit ein anderer Mac beigetreten, wird nichts gelöscht. Phi meldet **Inzwischen ist ein anderes Gerät diesem Account beigetreten, daher wurde nichts gelöscht. Du kannst stattdessen diesen Mac aus der Synchronisierung entfernen.** Die Zeile heißt dann wieder **Diesen Mac aus der Synchronisierung entfernen**.
+
 ## Synchronisierung erneut einrichten {#set-up-sync-again}
 
 Zeigt der Einstellungsbereich **Die Synchronisierungsdaten des Accounts haben sich geändert. Die Synchronisierung von Phi-Daten ist pausiert.**, wurden die Synchronisierungsdaten in deinem Konto zurückgesetzt, und die Einrichtung dieses Mac passt nicht mehr dazu. Phis Daten werden nicht mehr synchronisiert, bis du handelst; erneutes Versuchen oder ein Neustart behebt das nicht. Klicke auf **Synchronisierung erneut einrichten** und bestätige. Phi löscht die Synchronisierungseinrichtung und die Zuordnungsinformationen dieses Mac, behält deine lokalen Browserdaten und das, was in deinem Konto liegt, und führt dich erneut durch die Einrichtung, einschließlich des Beitritts per Genehmigung oder Wiederherstellungscode.
+
+Das siehst du auch auf einem Mac, nachdem auf dem letzten Mac des Kontos **Synchronisierung zurücksetzen** verwendet wurde, weil die Synchronisierungsdaten, mit denen dieser Mac eingerichtet war, gelöscht wurden.
 
 ## Abmelden
 
@@ -108,7 +152,7 @@ Wenn du dich von deinem Phi-Konto abmeldest, endet die Synchronisierung auf dies
 ## Wie deine Daten geschützt sind
 
 - **Verschlüsselt, bevor sie deinen Mac verlassen.** Deine Macs erzeugen die Schlüssel, und nur die verschlüsselte Kopie wird hochgeladen. Der Synchronisierungsdienst speichert sie und gibt sie an deine anderen Macs weiter; entschlüsseln kann er sie nicht.
-- **Anmelden allein reicht nicht, um sie zu lesen.** Ein neuer Mac erhält den Schlüssel nur durch die Genehmigung eines Mac, der ihn bereits besitzt, oder über deinen Wiederherstellungscode. Deshalb gibt es nirgends einen Link „Wiederherstellungscode vergessen“.
+- **Anmelden allein reicht nicht, um sie zu lesen.** Ein neuer Mac erhält den Schlüssel nur durch die Genehmigung eines Mac, der ihn bereits besitzt, oder über deinen Wiederherstellungscode. Deshalb lässt sich ein verlorener Code auch nicht wiederherstellen: Der Link **Wiederherstellungscode vergessen?** in der Einrichtung erklärt deine Möglichkeiten, und keine davon bringt den Code zurück.
 - **Es sind trotzdem Daten, die wir für dich aufbewahren.** Die verschlüsselte Kopie liegt auf Phinomenons Synchronisierungsdienst, die Synchronisierung gehört also zu den Dingen, die Phi sendet. [Datenschutz & deine Daten](/de/privacy/) listet die anderen auf, und die [Datenschutzerklärung](https://phibrowser.com/privacy/) und die [Nutzungsbedingungen](https://phibrowser.com/terms/) sind für all das maßgeblich.
 
 ## Synchronisieren oder exportieren

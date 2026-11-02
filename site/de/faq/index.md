@@ -171,11 +171,11 @@ Ja. Melde dich auf jedem Mac beim selben Phi-Konto an und richte die Synchronisi
 :::
 
 ::: details Was passiert, wenn ich meinen Wiederherstellungscode verliere?
-Hast du noch einen Mac, der für die Synchronisierung eingerichtet ist, kannst du neue Macs hinzufügen, indem du sie dort genehmigst. Der Code selbst wird nur einmal angezeigt, nie an uns gesendet und lässt sich weder erneut senden noch ersetzen oder zurücksetzen. Verlierst du den Code und jeden eingerichteten Mac, kann nichts die verschlüsselte Kopie in deinem Konto entsperren.
+Hast du noch einen Mac, der für die Synchronisierung eingerichtet ist, kannst du neue Macs hinzufügen, indem du sie dort genehmigst. Der Code selbst wird nur einmal angezeigt, nie an uns gesendet und lässt sich weder erneut senden noch ersetzen oder zurücksetzen. Ist der Mac, den du hast, der einzige, der für die Synchronisierung eingerichtet ist, löscht **Synchronisierung zurücksetzen** auf ihm die Synchronisierungsdaten deines Kontos, sodass du die Synchronisierung mit einem neuen Code erneut einrichten kannst; deine lokalen Browserdaten bleiben erhalten. Verlierst du den Code und jeden eingerichteten Mac, kann nichts die verschlüsselte Kopie in deinem Konto entsperren. Siehe [Wiederherstellungscode vergessen?](/de/sync/#forgot-your-recovery-code) im Leitfaden.
 :::
 
 ::: details Kann ich einen Mac entfernen, den ich nicht mehr habe?
-Noch nicht. Jeder Mac entfernt sich selbst, über **Einstellungen → Synchronisierung → Dieses Gerät aus der Synchronisierung entfernen…**. Ein verlorener Mac bleibt im Konto und empfängt weiter Änderungen, solange er angemeldet ist. Das Entfernen eines Mac ändert außerdem nicht die Verschlüsselungsschlüssel des Kontos, was dieser Mac bereits synchronisiert hatte, bleibt also auf ihm.
+Noch nicht. Jeder Mac entfernt sich selbst, unter **Einstellungen → Synchronisierung** im Abschnitt **Entfernen**. Ein verlorener Mac bleibt im Konto und empfängt weiter Änderungen, solange er angemeldet ist. Das Entfernen eines Mac ändert außerdem nicht die Verschlüsselungsschlüssel des Kontos, was dieser Mac bereits synchronisiert hatte, bleibt also auf ihm. Auch der letzte Mac, den du noch hast, kann sich selbst entfernen: Ist er der einzige, der für die Synchronisierung eingerichtet ist, heißt die Zeile **Synchronisierung zurücksetzen**, und dabei werden auch die Synchronisierungsdaten des Kontos gelöscht. Siehe [Synchronisierung zurücksetzen](/de/sync/#reset-sync).
 :::
 
 ## KI-Funktionen {#ai-features}
