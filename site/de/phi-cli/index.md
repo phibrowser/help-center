@@ -60,7 +60,7 @@ Standardmäßig passiert alles im verborgenen Agenten-Space der Sitzung. Zwei Di
 - **Deine echten Fenster.** `phi -U "Work" goto …` (und dasselbe für `click`, `fill`, `snapshot` und den Rest) steuert das sichtbare Fenster eines deiner eigenen Spaces statt eines verborgenen. Deine Klicks und die der CLI greifen im selben Fenster ineinander, deshalb handelt sie in kleinen Schritten und liest die Seite dazwischen neu.
 - **Browserverwaltung.** Befehle wie `space-list`, `bookmark-add`, `rules`, `pins` und `downloads` bedienen deine echten Browserdaten app-weit und spiegeln, was der phi-browser-Skill kann.
 
-Beides liegt hinter **Einstellungen → Entwickler → „Agenten dürfen deine Spaces bedienen“**, standardmäßig aus, genau wie bei Coding-Agenten. Bis du die Berechtigung einschaltest, bleibt die CLI auf ihre eigenen Agenten-Spaces beschränkt.
+Beides hängt von **Einstellungen → Entwickler → „Agenten dürfen deine Spaces bedienen“** ab, und diese Berechtigung ist standardmäßig eingeschaltet, genau wie bei Coding-Agenten. Schalte sie aus, und die CLI bleibt auf ihre eigenen Agenten-Spaces beschränkt.
 
 ## Anmelden
 

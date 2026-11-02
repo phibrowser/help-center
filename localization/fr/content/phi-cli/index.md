@@ -60,7 +60,7 @@ Par défaut, tout se passe dans l'Espace d'agent masqué de la session. Deux cho
 - **Vos vraies fenêtres.** `phi -U "Work" goto …` (et de même pour `click`, `fill`, `snapshot` et les autres) pilote la fenêtre visible d'un de vos propres Espaces au lieu d'une fenêtre masquée. Vos clics et ceux de la CLI s'entremêlent dans la même fenêtre, donc elle agit par petites étapes et relit la page entre chacune.
 - **La gestion du navigateur.** Des commandes comme `space-list`, `bookmark-add`, `rules`, `pins` et `downloads` opèrent sur vos vraies données de navigateur à l'échelle de l'application, à l'image de ce que peut faire le skill phi-browser.
 
-Les deux sont verrouillées derrière **Paramètres → Développeur → « Autoriser les agents à utiliser vos Espaces »**, une option désactivée par défaut, exactement comme pour les agents de codage. Tant que vous ne l'activez pas, la CLI est confinée à ses propres Espaces d'agent.
+Les deux dépendent de **Paramètres → Développeur → « Autoriser les agents à utiliser vos Espaces »**, une option activée par défaut, exactement comme pour les agents de codage. Désactivez-la et la CLI est confinée à ses propres Espaces d'agent.
 
 ## Se connecter
 

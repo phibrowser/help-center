@@ -60,7 +60,7 @@ Standaard gebeurt alles in de verborgen agent-Space van de sessie. Twee dingen v
 - **Je eigen vensters.** `phi -U "Work" goto …` (en hetzelfde voor `click`, `fill`, `snapshot` en de rest) bestuurt het zichtbare venster van een van je eigen Spaces in plaats van een verborgen venster. Jouw klikken en die van de CLI wisselen elkaar af in hetzelfde venster, dus hij handelt in kleine stappen en leest de pagina er tussendoor opnieuw.
 - **Browserbeheer.** Commando's zoals `space-list`, `bookmark-add`, `rules`, `pins` en `downloads` bedienen je echte browsergegevens in de hele app, in lijn met wat de phi-browser-skill kan.
 
-Beide zitten achter **Instellingen → Ontwikkelaar → “Agents toestaan je Spaces te bedienen”**, standaard uit, precies zoals voor codeeragents. Tot je die aanzet, blijft de CLI beperkt tot zijn eigen agent-Spaces.
+Beide zijn afhankelijk van **Instellingen → Ontwikkelaar → “Agents toestaan je Spaces te bedienen”**, die standaard aanstaat, precies zoals voor codeeragents. Zet je die uit, dan blijft de CLI beperkt tot zijn eigen agent-Spaces.
 
 ## Inloggen
 

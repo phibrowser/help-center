@@ -60,7 +60,7 @@ De forma predeterminada, todo ocurre en el Espacio de agente oculto de la sesió
 - **Tus ventanas reales.** `phi -U "Work" goto …` (y lo mismo con `click`, `fill`, `snapshot` y el resto) controla la ventana visible de uno de tus propios Espacios en lugar de una oculta. Tus clics y los de la CLI se entrelazan en la misma ventana, así que actúa en pasos pequeños y vuelve a leer la página entre uno y otro.
 - **Gestión del navegador.** Comandos como `space-list`, `bookmark-add`, `rules`, `pins` y `downloads` operan sobre tus datos reales del navegador en toda la app, reflejando lo que puede hacer la habilidad phi-browser.
 
-Ambas cosas están detrás de **Configuración → Desarrollador → "Permitir que los agentes operen tus Espacios"**, desactivado de forma predeterminada, exactamente igual que para los agentes de programación. Hasta que lo actives, la CLI queda confinada a sus propios Espacios de agente.
+Ambas cosas dependen de **Configuración → Desarrollador → "Permitir que los agentes operen tus Espacios"**, que está activado de forma predeterminada, exactamente igual que para los agentes de programación. Desactívalo y la CLI queda confinada a sus propios Espacios de agente.
 
 ## Iniciar sesión
 
