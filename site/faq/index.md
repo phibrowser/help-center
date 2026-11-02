@@ -167,7 +167,11 @@ No. Tab Groups organize pages you are actively working with; bookmarks store pag
 ## Sync
 
 ::: details Does Phi sync between Macs?
-Yes. Sign in to the same Phi account on each Mac and set it up in **Settings → Sync**. Spaces, Profiles, bookmarks, pinned tabs, URL Rules, supported settings, and each Profile's browsing history sync, encrypted on your Mac before upload. Passwords, cookies, autofill, open tabs, Memory, and Phi Chat conversations do not. See [Sync](/sync/) in the Guide.
+Yes. Sign in to the same Phi account on each Mac and set it up in **Settings → Sync**. Spaces, Profiles, bookmarks, pinned tabs, URL Rules, supported settings, and each Profile's browsing history sync, encrypted on your Mac before upload. Passwords, cookies, autofill, open tabs, keyboard shortcuts, Memory, and Phi Chat conversations do not; see [why a second Mac is missing them](/sync/#missing-shortcuts-and-open-tabs). If you choose **Use your account's data** while adding a Mac, Phi deletes that Mac's own Phi data first and replaces it with your account's. See [Sync](/sync/) in the Guide.
+:::
+
+::: details Why is one Mac stuck on Sync did not finish?
+Usually because it holds pinned tabs it cannot place: its **Pinned tabs** row in **Details** shows **Held** with a number while the other Mac says **Up to date**. The common cause is two Default Profiles that were not matched to each other during setup. Removing that Mac from sync and setting it up again fixes it. See [One Mac says Sync did not finish](/sync/#held-pinned-tabs).
 :::
 
 ::: details What happens if I lose my recovery code?
