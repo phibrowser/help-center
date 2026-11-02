@@ -175,7 +175,7 @@ Normalmente porque retiene pestañas fijadas que no puede colocar: su fila **Pes
 :::
 
 ::: details ¿Qué pasa si pierdo mi código de recuperación?
-Si todavía tienes un Mac configurado para la sincronización, puedes agregar Mac nuevos aprobándolos desde él. El código en sí se muestra una sola vez, nunca se nos envía y no se puede volver a enviar, reemplazar ni restablecer. Si el Mac que tienes es el único configurado para la sincronización, **Restablecer la sincronización** en ese Mac borra los datos de sincronización de tu cuenta para que puedas volver a configurar la sincronización con un código nuevo; tus datos de navegación locales se quedan. Si pierdes el código y todos los Mac configurados, nada puede desbloquear la copia cifrada de tu cuenta. Consulta [¿Has olvidado tu código de recuperación?](/es/sync/#forgot-your-recovery-code) en la Guía.
+Si todavía tienes un Mac configurado para la sincronización, puedes agregar Mac nuevos aprobándolos desde él. El código en sí se muestra una sola vez, nunca se nos envía y no se puede volver a enviar, reemplazar ni restablecer. Si el Mac que tienes es el único configurado para la sincronización, **Restablecer la sincronización** en ese Mac borra los datos de sincronización de tu cuenta para que puedas volver a configurar la sincronización con un código nuevo; tus datos de navegación locales se quedan. Si pierdes el código y todos los Mac configurados, nada puede desbloquear la copia cifrada de tu cuenta. Consulta [¿Olvidaste tu código de recuperación?](/es/sync/#forgot-your-recovery-code) en la Guía.
 :::
 
 ::: details ¿Puedo eliminar un Mac que ya no tengo?

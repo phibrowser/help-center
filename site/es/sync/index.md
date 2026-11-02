@@ -47,7 +47,7 @@ Algunas cosas se quedan donde están a propósito:
 5. Cuando termina la configuración, el panel muestra **Sincronización inicial en curso** mientras este Mac sube los datos, y luego **Actualizado**.
 
 ::: warning El código de recuperación se muestra una sola vez
-El código se crea en tu Mac y nunca se nos envía, así que no podemos volver a mostrarlo, enviarte uno de reemplazo ni restablecerlo. Para agregar otro Mac necesitas el código o un Mac que ya esté configurado. Si pierdes ambos, nadie puede desbloquear la copia cifrada de tu cuenta, ni siquiera nosotros. Si ya has perdido el código, consulta [¿Has olvidado tu código de recuperación?](#forgot-your-recovery-code)
+El código se crea en tu Mac y nunca se nos envía, así que no podemos volver a mostrarlo, enviarte uno de reemplazo ni restablecerlo. Para agregar otro Mac necesitas el código o un Mac que ya esté configurado. Si pierdes ambos, nadie puede desbloquear la copia cifrada de tu cuenta, ni siquiera nosotros. Si ya has perdido el código, consulta [¿Olvidaste tu código de recuperación?](#forgot-your-recovery-code)
 :::
 
 ## Agregar otro Mac {#add-another-mac}
@@ -99,9 +99,9 @@ La configuración lee tu cuenta antes de mostrar ninguna opción. Cuando eso fal
 
 La excepción es un reemplazo que ya ha empezado. Una vez que Phi ha empezado a reemplazar los datos de este Mac, salir no lo cancela. Si se detuvo, por ejemplo por un error o porque Phi se cerró, y cerraste la ventana, la próxima vez que abras la configuración irá directamente a **¿Reemplazar lo que hay en este Mac?**, sin **Atrás**, y **Reemplazar los datos de este Mac** continúa desde donde se detuvo. **Eliminar este dispositivo de la sincronización…** sigue disponible ahí; deja este Mac fuera de la sincronización con lo que el reemplazo todavía no hubiera eliminado.
 
-## ¿Has olvidado tu código de recuperación? {#forgot-your-recovery-code}
+## ¿Olvidaste tu código de recuperación? {#forgot-your-recovery-code}
 
-Nadie puede volver a mostrar tu código de recuperación ni crear uno nuevo para los mismos datos de sincronización, ni siquiera nosotros. Lo que todavía puedes hacer depende de tu situación. El enlace **¿Has olvidado tu código de recuperación?** de la página **Introduce tu código de recuperación** abre esta sección.
+Nadie puede volver a mostrar tu código de recuperación ni crear uno nuevo para los mismos datos de sincronización, ni siquiera nosotros. Lo que todavía puedes hacer depende de tu situación. El enlace **¿Olvidaste tu código de recuperación?** de la página **Introduce tu código de recuperación** abre esta sección.
 
 ### Todavía estás configurando tu primer Mac
 
@@ -261,7 +261,7 @@ Cerrar sesión en tu cuenta de Phi detiene la sincronización en ese Mac, y no l
 ## Cómo se protegen tus datos
 
 - **Cifrados antes de salir de tu Mac.** Tus Mac crean las claves, y solo se sube la copia cifrada. El servicio de sincronización la almacena y la entrega a tus otros Mac; no puede descifrarla.
-- **Iniciar sesión no basta para leerlos.** Un Mac nuevo obtiene la clave solo mediante la aprobación de un Mac que ya la tiene, o con tu código de recuperación. Por eso tampoco se puede recuperar un código perdido: el enlace **¿Has olvidado tu código de recuperación?** de la configuración explica tus opciones, y ninguna de ellas te devuelve el código.
+- **Iniciar sesión no basta para leerlos.** Un Mac nuevo obtiene la clave solo mediante la aprobación de un Mac que ya la tiene, o con tu código de recuperación. Por eso tampoco se puede recuperar un código perdido: el enlace **¿Olvidaste tu código de recuperación?** de la configuración explica tus opciones, y ninguna de ellas te devuelve el código.
 - **Siguen siendo datos que guardamos por ti.** La copia cifrada está en el servicio de sincronización de Phinomenon, así que la sincronización es una de las cosas que Phi envía. [Privacidad y tus datos](/es/privacy/) enumera las demás, y la [Política de privacidad](https://phibrowser.com/privacy/) y los [Términos](https://phibrowser.com/terms/) son la referencia autorizada sobre todo ello.
 
 ## Sincronizar o exportar {#sync-or-export}
