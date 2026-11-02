@@ -1,0 +1,345 @@
+{
+  "source": "phibrowser-mac tag v2.15.0 (24c2345f, Phi 2.15.0 build 944) Resources/Localizable.xcstrings; keys are the catalogue's semantic keys. Every value under labels is a shipped string: quote it verbatim. Keys under notYetShipped exist only on the client's development branch (English source string, no translations yet, not in 2.15.0).",
+  "labels": {
+    "sync.recovery.save.title": {
+      "en": "Save your recovery code",
+      "zh-Hans": "保存你的恢复代码",
+      "zh-Hant": "儲存你的復原代碼",
+      "ja": "復旧コードを保存",
+      "ko": "복구 코드 저장",
+      "de": "Sichere deinen Wiederherstellungscode",
+      "fr": "Enregistrez votre code de récupération",
+      "es": "Guarda tu código de recuperación",
+      "nl": "Bewaar je herstelcode"
+    },
+    "sync.recovery.save.confirm": {
+      "en": "I've saved it",
+      "zh-Hans": "我已保存",
+      "zh-Hant": "我已儲存",
+      "ja": "保存しました",
+      "ko": "저장했어요",
+      "de": "Ich habe ihn gesichert",
+      "fr": "Je l'ai enregistré",
+      "es": "Lo he guardado",
+      "nl": "Ik heb de code bewaard"
+    },
+    "sync.recovery.entry.confirmTitle": {
+      "en": "Confirm your recovery code",
+      "zh-Hans": "确认你的恢复代码",
+      "zh-Hant": "確認你的復原代碼",
+      "ja": "復旧コードを確認",
+      "ko": "복구 코드 확인",
+      "de": "Bestätige deinen Wiederherstellungscode",
+      "fr": "Confirmez votre code de récupération",
+      "es": "Confirma tu código de recuperación",
+      "nl": "Bevestig je herstelcode"
+    },
+    "sync.recovery.entry.title": {
+      "en": "Enter your recovery code",
+      "zh-Hans": "输入你的恢复代码",
+      "zh-Hant": "輸入你的復原代碼",
+      "ja": "復旧コードを入力",
+      "ko": "복구 코드 입력",
+      "de": "Gib deinen Wiederherstellungscode ein",
+      "fr": "Saisissez votre code de récupération",
+      "es": "Introduce tu código de recuperación",
+      "nl": "Voer je herstelcode in"
+    },
+    "sync.recovery.entry.back": {
+      "en": "Back",
+      "zh-Hans": "返回",
+      "zh-Hant": "上一頁",
+      "ja": "戻る",
+      "ko": "뒤로",
+      "de": "Zurück",
+      "fr": "Retour",
+      "es": "Atrás",
+      "nl": "Terug"
+    },
+    "sync.recovery.entry.backHint": {
+      "en": "Didn’t save it? Go back and save it now. The code can’t be shown after this window is closed.",
+      "zh-Hans": "还没保存？请返回并立即保存。关闭此窗口后，该代码将无法再显示。",
+      "zh-Hant": "還沒儲存？請回到上一頁並立即儲存。關閉此視窗後，此代碼將無法再顯示。",
+      "ja": "まだ保存していませんか？戻って今すぐ保存してください。このウインドウを閉じると、コードは表示できなくなります。",
+      "ko": "아직 저장하지 않았나요? 뒤로 돌아가 지금 저장하세요. 이 윈도우를 닫으면 코드를 다시 표시할 수 없어요.",
+      "de": "Noch nicht gesichert? Geh zurück und sichere ihn jetzt. Sobald dieses Fenster geschlossen ist, kann der Code nicht mehr angezeigt werden.",
+      "fr": "Vous ne l'avez pas enregistré ? Revenez en arrière et enregistrez-le maintenant. Le code ne pourra plus être affiché une fois cette fenêtre fermée.",
+      "es": "¿No lo has guardado? Vuelve atrás y guárdalo ahora. El código no se podrá mostrar después de cerrar esta ventana.",
+      "nl": "Nog niet bewaard? Ga terug en bewaar de code nu. Nadat dit venster is gesloten, kan de code niet meer worden getoond."
+    },
+    "sync.recovery.entry.submit": {
+      "en": "Submit",
+      "zh-Hans": "提交",
+      "zh-Hant": "送出",
+      "ja": "送信",
+      "ko": "제출",
+      "de": "Absenden",
+      "fr": "Valider",
+      "es": "Enviar",
+      "nl": "Verstuur"
+    },
+    "sync.setup.joinMethod.title": {
+      "en": "Add this device to your account",
+      "zh-Hans": "将此设备添加到你的账户",
+      "zh-Hant": "將此裝置加入你的帳號",
+      "ja": "このデバイスをアカウントに追加",
+      "ko": "이 기기를 계정에 추가",
+      "de": "Dieses Gerät zu deinem Account hinzufügen",
+      "fr": "Ajouter cet appareil à votre compte",
+      "es": "Agrega este dispositivo a tu cuenta",
+      "nl": "Voeg dit apparaat toe aan je account"
+    },
+    "sync.setup.joinMethod.requestApproval": {
+      "en": "Request approval from another device",
+      "zh-Hans": "请求另一台设备批准",
+      "zh-Hant": "向另一部裝置請求核准",
+      "ja": "別のデバイスに承認をリクエスト",
+      "ko": "다른 기기에 승인 요청",
+      "de": "Genehmigung von einem anderen Gerät anfordern",
+      "fr": "Demander l'approbation d'un autre appareil",
+      "es": "Solicitar aprobación desde otro dispositivo",
+      "nl": "Vraag goedkeuring van een ander apparaat"
+    },
+    "sync.setup.joinMethod.useRecoveryCode": {
+      "en": "Enter a recovery code",
+      "zh-Hans": "输入恢复代码",
+      "zh-Hant": "輸入復原代碼",
+      "ja": "復旧コードを入力",
+      "ko": "복구 코드 입력",
+      "de": "Einen Wiederherstellungscode eingeben",
+      "fr": "Saisir un code de récupération",
+      "es": "Introducir un código de recuperación",
+      "nl": "Voer een herstelcode in"
+    },
+    "sync.devices.setUp": {
+      "en": "Set up sync on this device",
+      "zh-Hans": "在此设备上设置同步",
+      "zh-Hant": "在此裝置上設定同步",
+      "ja": "このデバイスで同期を設定",
+      "ko": "이 기기에서 동기화 설정",
+      "de": "Synchronisierung auf diesem Gerät einrichten",
+      "fr": "Configurer la synchronisation sur cet appareil",
+      "es": "Configurar sincronización en este dispositivo",
+      "nl": "Stel synchronisatie in op dit apparaat"
+    },
+    "sync.setup.notPaired": {
+      "en": "Not paired",
+      "zh-Hans": "未配对",
+      "zh-Hant": "尚未配對",
+      "ja": "未ペアリング",
+      "ko": "페어링되지 않음",
+      "de": "Nicht gekoppelt",
+      "fr": "Non jumelé",
+      "es": "Sin emparejar",
+      "nl": "Niet gekoppeld"
+    },
+    "sync.setup.continueSetup": {
+      "en": "Continue setup",
+      "zh-Hans": "继续设置",
+      "zh-Hant": "繼續設定",
+      "ja": "設定を続ける",
+      "ko": "설정 계속하기",
+      "de": "Einrichtung fortsetzen",
+      "fr": "Continuer la configuration",
+      "es": "Continuar la configuración",
+      "nl": "Ga door met instellen"
+    },
+    "sync.removal.sectionTitle": {
+      "en": "Removal",
+      "zh-Hans": "移除",
+      "zh-Hant": "移除",
+      "ja": "削除",
+      "ko": "제거",
+      "de": "Entfernen",
+      "fr": "Suppression",
+      "es": "Eliminación",
+      "nl": "Verwijdering"
+    },
+    "sync.removal.rowTitle": {
+      "en": "Remove this Mac from sync",
+      "zh-Hans": "将这台 Mac 从同步中移除",
+      "zh-Hant": "將這部 Mac 從同步中移除",
+      "ja": "このMacを同期から削除",
+      "ko": "동기화에서 이 Mac 제거",
+      "de": "Diesen Mac aus der Synchronisierung entfernen",
+      "fr": "Supprimer ce Mac de la synchronisation",
+      "es": "Eliminar este Mac de la sincronización",
+      "nl": "Verwijder deze Mac uit synchronisatie"
+    },
+    "sync.removal.rowAction": {
+      "en": "Remove…",
+      "zh-Hans": "移除…",
+      "zh-Hant": "移除…",
+      "ja": "削除…",
+      "ko": "제거…",
+      "de": "Entfernen…",
+      "fr": "Supprimer…",
+      "es": "Eliminar…",
+      "nl": "Verwijder…"
+    },
+    "sync.removal.confirmation.title": {
+      "en": "Remove this Mac from account sync?",
+      "zh-Hans": "要将这台 Mac 从账户同步中移除吗？",
+      "zh-Hant": "要將這部 Mac 從帳號同步中移除嗎？",
+      "ja": "このMacをアカウントの同期から削除しますか？",
+      "ko": "이 Mac을 계정 동기화에서 제거할까요?",
+      "de": "Diesen Mac aus der Account-Synchronisierung entfernen?",
+      "fr": "Supprimer ce Mac de la synchronisation du compte ?",
+      "es": "¿Eliminar este Mac de la sincronización de la cuenta?",
+      "nl": "Deze Mac uit de accountsynchronisatie verwijderen?"
+    },
+    "sync.removal.confirmation.confirm": {
+      "en": "Remove This Device",
+      "zh-Hans": "移除此设备",
+      "zh-Hant": "移除此裝置",
+      "ja": "このデバイスを削除",
+      "ko": "이 기기 제거",
+      "de": "Dieses Gerät entfernen",
+      "fr": "Supprimer cet appareil",
+      "es": "Eliminar este dispositivo",
+      "nl": "Verwijder dit apparaat"
+    },
+    "sync.removal.resetRowTitle": {
+      "en": "Reset sync",
+      "zh-Hans": "重置同步",
+      "zh-Hant": "重設同步",
+      "ja": "同期をリセット",
+      "ko": "동기화 재설정",
+      "de": "Synchronisierung zurücksetzen",
+      "fr": "Réinitialiser la synchronisation",
+      "es": "Restablecer la sincronización",
+      "nl": "Reset synchronisatie"
+    },
+    "sync.removal.resetRowDescription": {
+      "en": "This is the only device set up for sync. Resetting removes this Mac from sync and deletes all sync data stored for this account. Your local browsing data stays on this Mac.",
+      "zh-Hans": "这是唯一一台设置了同步的设备。重置会将这台 Mac 从同步中移除，并删除为此账户存储的所有同步数据。你的本地浏览数据会保留在这台 Mac 上。",
+      "zh-Hant": "這是唯一一部設定了同步的裝置。重設會將這部 Mac 從同步中移除，並刪除為此帳號儲存的所有同步資料。你的本機瀏覽資料會留在這部 Mac 上。",
+      "ja": "同期が設定されているデバイスはこのMacだけです。リセットすると、このMacが同期から削除され、このアカウントの同期データがすべて削除されます。ローカルの閲覧データはこのMacに残ります。",
+      "ko": "동기화가 설정된 기기는 이 기기뿐이에요. 재설정하면 이 Mac이 동기화에서 제거되고 이 계정에 저장된 모든 동기화 데이터가 삭제돼요. 로컬 브라우징 데이터는 이 Mac에 그대로 남아요.",
+      "de": "Dies ist das einzige für die Synchronisierung eingerichtete Gerät. Beim Zurücksetzen wird dieser Mac aus der Synchronisierung entfernt und alle für diesen Account gespeicherten Synchronisierungsdaten werden gelöscht. Deine lokalen Browserdaten bleiben auf diesem Mac erhalten.",
+      "fr": "Ceci est le seul appareil configuré pour la synchronisation. La réinitialisation supprime ce Mac de la synchronisation ainsi que toutes les données de synchronisation stockées pour ce compte. Vos données de navigation locales restent sur ce Mac.",
+      "es": "Este es el único dispositivo configurado para la sincronización. Restablecerla elimina este Mac de la sincronización y todos los datos de sincronización almacenados para esta cuenta. Tus datos de navegación locales permanecen en este Mac.",
+      "nl": "Dit is het enige apparaat dat is ingesteld voor synchronisatie. Bij het resetten wordt deze Mac uit synchronisatie verwijderd en worden alle synchronisatiegegevens die voor dit account zijn opgeslagen, verwijderd. Je lokale browsegegevens blijven op deze Mac staan."
+    },
+    "sync.removal.resetRowAction": {
+      "en": "Reset…",
+      "zh-Hans": "重置…",
+      "zh-Hant": "重設…",
+      "ja": "リセット…",
+      "ko": "재설정…",
+      "de": "Zurücksetzen…",
+      "fr": "Réinitialiser…",
+      "es": "Restablecer…",
+      "nl": "Reset…"
+    },
+    "sync.pairing.removeThisDevice": {
+      "en": "Remove this device from sync…",
+      "zh-Hans": "将此设备从同步中移除…",
+      "zh-Hant": "從同步中移除此裝置…",
+      "ja": "このデバイスを同期から削除…",
+      "ko": "동기화에서 이 기기 제거…",
+      "de": "Dieses Gerät aus der Synchronisierung entfernen…",
+      "fr": "Supprimer cet appareil de la synchronisation…",
+      "es": "Eliminar este dispositivo de la sincronización…",
+      "nl": "Verwijder dit apparaat uit synchronisatie…"
+    },
+    "sync.removal.lastDeviceResetOffer": {
+      "en": "This is the last device set up for sync. You can remove it and delete all sync data stored for this account, or set up sync on another device first.",
+      "zh-Hans": "这是最后一台设置了同步的设备。你可以将其移除并删除为此账户存储的所有同步数据，或者先在另一台设备上设置同步。",
+      "zh-Hant": "這是最後一部設定了同步的裝置。你可以移除它並刪除為此帳號儲存的所有同步資料，或先在另一部裝置上設定同步。",
+      "ja": "同期が設定されている最後のデバイスです。このデバイスを削除してこのアカウントの同期データをすべて削除することも、先に別のデバイスで同期を設定することもできます。",
+      "ko": "이 기기는 동기화가 설정된 마지막 기기예요. 이 기기를 제거하고 이 계정에 저장된 모든 동기화 데이터를 삭제하거나, 먼저 다른 기기에서 동기화를 설정할 수 있어요.",
+      "de": "Dies ist das letzte für die Synchronisierung eingerichtete Gerät. Du kannst es entfernen und alle für diesen Account gespeicherten Synchronisierungsdaten löschen oder zuerst die Synchronisierung auf einem anderen Gerät einrichten.",
+      "fr": "Ceci est le dernier appareil configuré pour la synchronisation. Vous pouvez le supprimer ainsi que toutes les données de synchronisation stockées pour ce compte, ou configurer d'abord la synchronisation sur un autre appareil.",
+      "es": "Este es el último dispositivo configurado para la sincronización. Puedes eliminarlo junto con todos los datos de sincronización almacenados para esta cuenta, o configurar primero la sincronización en otro dispositivo.",
+      "nl": "Dit is het laatste apparaat dat is ingesteld voor synchronisatie. Je kunt het verwijderen, samen met alle synchronisatiegegevens die voor dit account zijn opgeslagen, of eerst synchronisatie op een ander apparaat instellen."
+    },
+    "sync.removal.resetOffer": {
+      "en": "Remove this device and delete all sync data…",
+      "zh-Hans": "移除此设备并删除所有同步数据…",
+      "zh-Hant": "移除此裝置並刪除所有同步資料…",
+      "ja": "このデバイスを削除して同期データをすべて削除…",
+      "ko": "이 기기 제거 및 모든 동기화 데이터 삭제…",
+      "de": "Dieses Gerät entfernen und alle Synchronisierungsdaten löschen…",
+      "fr": "Supprimer cet appareil et toutes les données de synchronisation…",
+      "es": "Eliminar este dispositivo y todos los datos de sincronización…",
+      "nl": "Verwijder dit apparaat en alle synchronisatiegegevens…"
+    },
+    "sync.removal.resetConfirmTitle": {
+      "en": "Delete all sync data for this account?",
+      "zh-Hans": "要删除此账户的所有同步数据吗？",
+      "zh-Hant": "要刪除此帳號的所有同步資料嗎？",
+      "ja": "このアカウントの同期データをすべて削除しますか？",
+      "ko": "이 계정의 모든 동기화 데이터를 삭제할까요?",
+      "de": "Alle Synchronisierungsdaten für diesen Account löschen?",
+      "fr": "Supprimer toutes les données de synchronisation de ce compte ?",
+      "es": "¿Eliminar todos los datos de sincronización de esta cuenta?",
+      "nl": "Alle synchronisatiegegevens voor dit account verwijderen?"
+    },
+    "sync.removal.resetConfirmBody": {
+      "en": "Every device will be removed from sync, and all data stored on the sync server for this account will be deleted. Your local browsing data stays on this Mac. To use sync again, you’ll need to set it up from scratch.",
+      "zh-Hans": "所有设备都将从同步中移除，同步服务器上为此账户存储的所有数据都将被删除。你的本地浏览数据会保留在这台 Mac 上。若要再次使用同步，你需要从头重新设置。",
+      "zh-Hant": "所有裝置都會從同步中移除，且同步伺服器上為此帳號儲存的所有資料都會刪除。你的本機瀏覽資料會留在這部 Mac 上。若要再次使用同步，你需要從頭重新設定。",
+      "ja": "すべてのデバイスが同期から削除され、このアカウントの同期サーバに保存されているデータはすべて削除されます。ローカルの閲覧データはこのMacに残ります。同期を再び使用するには、最初から設定し直す必要があります。",
+      "ko": "모든 기기가 동기화에서 제거되고, 이 계정에 대해 동기화 서버에 저장된 모든 데이터가 삭제돼요. 로컬 브라우징 데이터는 이 Mac에 그대로 남아요. 동기화를 다시 사용하려면 처음부터 다시 설정해야 해요.",
+      "de": "Alle Geräte werden aus der Synchronisierung entfernt und alle auf dem Synchronisierungsserver für diesen Account gespeicherten Daten werden gelöscht. Deine lokalen Browserdaten bleiben auf diesem Mac erhalten. Um die Synchronisierung wieder zu verwenden, musst du sie von Grund auf neu einrichten.",
+      "fr": "Tous les appareils seront supprimés de la synchronisation et toutes les données stockées sur le serveur de synchronisation pour ce compte seront supprimées. Vos données de navigation locales restent sur ce Mac. Pour utiliser à nouveau la synchronisation, vous devrez la configurer depuis le début.",
+      "es": "Se eliminarán todos los dispositivos de la sincronización, junto con todos los datos almacenados en el servidor de sincronización para esta cuenta. Tus datos de navegación locales permanecen en este Mac. Para volver a usar la sincronización, tendrás que configurarla desde cero.",
+      "nl": "Elk apparaat wordt uit synchronisatie verwijderd en alle gegevens die voor dit account op de synchronisatieserver zijn opgeslagen, worden verwijderd. Je lokale browsegegevens blijven op deze Mac staan. Om synchronisatie opnieuw te gebruiken, moet je deze helemaal opnieuw instellen."
+    },
+    "sync.removal.resetConfirmAction": {
+      "en": "Delete All Sync Data",
+      "zh-Hans": "删除所有同步数据",
+      "zh-Hant": "刪除所有同步資料",
+      "ja": "同期データをすべて削除",
+      "ko": "모든 동기화 데이터 삭제",
+      "de": "Alle Synchronisierungsdaten löschen",
+      "fr": "Supprimer toutes les données de synchronisation",
+      "es": "Eliminar todos los datos de sincronización",
+      "nl": "Verwijder alle synchronisatiegegevens"
+    },
+    "sync.removal.resetRefusedNotLastDevice": {
+      "en": "Another device has joined this account since, so nothing was deleted. You can remove this Mac from sync instead.",
+      "zh-Hans": "此后已有另一台设备加入了此账户，因此没有删除任何内容。你可以改为将这台 Mac 从同步中移除。",
+      "zh-Hant": "在此期間已有另一部裝置加入此帳號，因此沒有刪除任何資料。你可以改為將這部 Mac 從同步中移除。",
+      "ja": "その後、別のデバイスがこのアカウントに参加したため、何も削除されませんでした。代わりに、このMacを同期から削除できます。",
+      "ko": "그 사이에 다른 기기가 이 계정에 참여해서 아무것도 삭제되지 않았어요. 대신 동기화에서 이 Mac을 제거할 수 있어요.",
+      "de": "Inzwischen ist ein anderes Gerät diesem Account beigetreten, daher wurde nichts gelöscht. Du kannst stattdessen diesen Mac aus der Synchronisierung entfernen.",
+      "fr": "Un autre appareil a rejoint ce compte entre-temps, rien n'a donc été supprimé. Vous pouvez plutôt supprimer ce Mac de la synchronisation.",
+      "es": "Otro dispositivo se ha unido a esta cuenta desde entonces, así que no se eliminó nada. En su lugar, puedes eliminar este Mac de la sincronización.",
+      "nl": "Er is sindsdien een ander apparaat aan dit account toegevoegd, dus er is niets verwijderd. Je kunt deze Mac in plaats daarvan uit synchronisatie verwijderen."
+    },
+    "sync.reconfigure.title": {
+      "en": "Set up sync again",
+      "zh-Hans": "重新设置同步",
+      "zh-Hant": "重新設定同步",
+      "ja": "同期をもう一度設定",
+      "ko": "동기화 다시 설정",
+      "de": "Synchronisierung erneut einrichten",
+      "fr": "Configurer à nouveau la synchronisation",
+      "es": "Volver a configurar la sincronización",
+      "nl": "Stel synchronisatie opnieuw in"
+    },
+    "sync.reconfigure.explanation": {
+      "en": "The account’s sync data has changed. Syncing Phi data is paused. Review your account and connection before setting up sync again.",
+      "zh-Hans": "该账户的同步数据已更改。Phi 数据的同步已暂停。请先检查你的账户和网络连接，然后再重新设置同步。",
+      "zh-Hant": "帳號的同步資料已變更。Phi 資料的同步已暫停。請先檢查你的帳號和網路連線，再重新設定同步。",
+      "ja": "アカウントの同期データが変更されています。Phiデータの同期は一時停止中です。もう一度同期を設定する前に、アカウントと接続を確認してください。",
+      "ko": "계정의 동기화 데이터가 변경되었어요. Phi 데이터 동기화가 일시 중지되었어요. 동기화를 다시 설정하기 전에 계정과 연결 상태를 확인해 주세요.",
+      "de": "Die Synchronisierungsdaten des Accounts haben sich geändert. Die Synchronisierung von Phi-Daten ist pausiert. Überprüfe deinen Account und deine Verbindung, bevor du die Synchronisierung erneut einrichtest.",
+      "fr": "Les données de synchronisation du compte ont changé. La synchronisation des données Phi est en pause. Vérifiez votre compte et votre connexion avant de configurer à nouveau la synchronisation.",
+      "es": "Los datos de sincronización de la cuenta han cambiado. La sincronización de los datos de Phi está en pausa. Revisa tu cuenta y tu conexión antes de volver a configurar la sincronización.",
+      "nl": "De synchronisatiegegevens van het account zijn gewijzigd. Het synchroniseren van Phi-gegevens is gepauzeerd. Controleer je account en verbinding voordat je synchronisatie opnieuw instelt."
+    }
+  },
+  "notYetShipped": {
+    "sync.recovery.save.lossWarning": {
+      "en": "If you lose this code and no Mac is still set up for sync, the sync data in your account cannot be recovered. You would have to reset sync and start over.",
+      "status": "not yet translated; ships in the release after 2.15.0; the Help page does not quote it."
+    },
+    "sync.recovery.entry.forgotHelp": {
+      "en": "Forgot your recovery code?",
+      "status": "not yet translated; ships in the release after 2.15.0; opens https://phibrowser.com/help/[<locale>/]sync/#forgot-your-recovery-code. The Help page quotes it as a link label: render it as the natural question in your locale (normally the same wording as your translated H2), list it as a coinage in your report, and the run owner reconciles it once the catalogue ships."
+    }
+  }
+}

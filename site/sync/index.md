@@ -37,16 +37,16 @@ Some things stay where they are on purpose:
 - **A Phi account, signed in on each Mac.** Without one the pane only offers **Sign in to sync across devices**. If you chose to explore without an account, see [Signing in later](/get-started/#signing-in-later).
 - **The official Phi build.** Sync runs through Phinomenon's sync service, and a copy of Phi you build yourself from the open-source code cannot use it.
 
-## Set up your first Mac
+## Set up your first Mac {#set-up-your-first-mac}
 
 1. Open **Settings → Sync** and click **Set up sync on this device**. The window explains what is about to happen; click **Continue**.
 2. **Save your recovery code.** Phi creates a recovery code and shows it once: 27 characters in groups of five. Click **Copy** and put it somewhere safe, such as a password manager, then click **I've saved it**.
-3. **Confirm your recovery code.** Phi asks you to type the code you saved. Dashes, spaces, and letter case do not matter. Sync stays off until the code checks out, so you cannot find out later that it was never saved. If you close the window here, Phi asks again the next time you open setup or restart.
+3. **Confirm your recovery code.** Phi asks you to type the code you saved. Dashes, spaces, and letter case do not matter. If you did not save it, click **Back**: Phi shows the same code again so you can save it now. Sync stays off until the code checks out, so you cannot find out later that it was never saved. If you close the window here, Phi asks again the next time you open setup or restart, but **Back** is gone by then, because the code is not kept once the window closes.
 4. **Match your profiles and Spaces.** On a first Mac there is nothing in the account to match yet, so this step mostly confirms what is added: choose **Register as new** for each Profile and **Add all as new** for the Spaces. See [Add another Mac](#add-another-mac) for what the two steps do once the account has data.
 5. Click **Finish**. The pane shows **Initial sync in progress** while this Mac uploads, then **Up to date**.
 
 ::: warning The recovery code is shown once
-The code is made on your Mac and never sent to us, so we cannot show it again, send a replacement, or reset it. To add another Mac you need either the code or a Mac that is already set up. Lose both and nobody can unlock the encrypted copy in your account, us included.
+The code is made on your Mac and never sent to us, so we cannot show it again, send a replacement, or reset it. To add another Mac you need either the code or a Mac that is already set up. Lose both and nobody can unlock the encrypted copy in your account, us included. If the code is already lost, see [Forgot your recovery code?](#forgot-your-recovery-code)
 :::
 
 ## Add another Mac {#add-another-mac}
@@ -64,6 +64,32 @@ Loading the account can take up to two minutes while Phi counts your Spaces, and
 ### Finish later
 
 **Finish later** appears on the matching pages. Choose it, or close the window, and this Mac keeps browsing locally: nothing syncs, the pane reads **Not paired**, and Phi does not reopen setup on its own. Come back to **Settings → Sync** and click **Continue setup** when you are ready. Phi reloads your account at that point, so unfinished choices are not kept.
+
+## Forgot your recovery code? {#forgot-your-recovery-code}
+
+Nobody can show your recovery code again or make a new one for the same sync data, us included. What you can still do depends on your situation. The **Forgot your recovery code?** link on the **Enter your recovery code** page opens this section.
+
+### You are still setting up your first Mac
+
+If you are on **Confirm your recovery code** and have not closed the setup window, click **Back**. Phi shows the same code again. Save it, click **I've saved it**, and type it to confirm.
+
+Phi 2.14 and earlier have no **Back** button. If you closed the window or restarted Phi, the code is gone too: Phi keeps asking for it but cannot show it. In either case, update Phi if you need to, then start over with [Reset sync](#reset-sync) as described below.
+
+### Another Mac is still set up for sync
+
+You do not need the code. On the new Mac, choose **Request approval from another device** and approve the request on the Mac that is set up; see [Add another Mac](#add-another-mac). Sync keeps working on the Macs you have.
+
+The code still cannot be shown again or replaced. Keep at least one Mac set up for sync: as long as one is, you can add Macs without the code.
+
+### This is your only Mac, or you want to start over
+
+Use [Reset sync](#reset-sync) on that Mac. It removes the Mac from sync and deletes all sync data stored for your account. Your local browsing data stays on the Mac, and any other Mac that still had sync set up for the account shows [Set up sync again](#set-up-sync-again) afterwards. Then set up sync on this Mac from scratch, as in [Set up your first Mac](#set-up-your-first-mac). Phi creates a new recovery code; save it before you click **I've saved it**.
+
+**Reset sync** is only offered on the last Mac set up for the account. If you want to start over while other Macs are still set up, remove each of the others from sync first.
+
+### No Mac you still have is set up for sync
+
+If the code is gone and no Mac you still have is set up for sync, the encrypted copy in your account cannot be unlocked, by you or by us. A Mac that is not set up for sync yet cannot reset the account's sync either, so there is no way to start over from it. This includes a Mac that was lost or erased while it was set up: it still counts as set up, and it cannot be removed from another Mac.
 
 ## Check sync status
 
@@ -84,22 +110,40 @@ Each Mac can only remove itself, from its own Sync pane. There is no way yet to 
 
 ## Remove a Mac from sync {#remove-a-mac-from-sync}
 
-In **Settings → Sync**, under **Recovery and removal**, click **Remove this device from sync…** and confirm with **Remove This Device**.
+In **Settings → Sync**, under **Removal**, click **Remove…** on the **Remove this Mac from sync** row and confirm with **Remove This Device**. If setup is not finished on this Mac, the setup window offers **Remove this device from sync…** at the bottom instead.
 
 - This Mac stops syncing, the sync service revokes it, and its sync setup, keys, and Profile and Space matching are cleared from this Mac.
 - Everything you were browsing stays: Spaces, bookmarks, history, and pinned tabs are kept in full, and you stay signed in to your account.
 - Your other Macs are not affected and keep syncing with each other.
 - To bring this Mac back, start setup again and join by approval or recovery code.
 
-You cannot remove the last Mac on the account. Set up sync on another Mac first.
+When this Mac is the only Mac set up for sync on the account, the row is **Reset sync** instead, because removing the last Mac also deletes the account's sync data. See [Reset sync](#reset-sync).
 
 ::: warning Removal does not re-key your account
 Removing a Mac stops it from receiving anything new, but it does not change your account's encryption keys and cannot pull back what that Mac had already synced. Whatever was on it stays on it.
 :::
 
+### Reset sync {#reset-sync}
+
+When this Mac is the only Mac set up for sync on your account, the **Removal** section shows **Reset sync** with a **Reset…** button. Resetting removes this Mac from sync and deletes all sync data stored for this account, so you can start over, for example after losing your recovery code.
+
+1. In **Settings → Sync**, under **Removal**, click **Reset…**.
+2. Phi asks **Delete all sync data for this account?** Click **Delete All Sync Data** to confirm. This cannot be undone.
+
+- Every device is removed from sync, and everything stored on the sync server for this account is deleted.
+- Your local browsing data stays on this Mac: Spaces, bookmarks, history, and pinned tabs are kept, and you stay signed in to your account.
+- Any other Mac that still had sync set up for this account shows [Set up sync again](#set-up-sync-again).
+- To use sync again, set it up from scratch. Phi creates a new recovery code.
+
+If you remove this Mac from the setup window and it turns out to be the last one, Phi says so: **This is the last device set up for sync. You can remove it and delete all sync data stored for this account, or set up sync on another device first.** It then offers **Remove this device and delete all sync data…**, which asks for the same confirmation.
+
+If another Mac joined the account in the meantime, nothing is deleted. Phi says **Another device has joined this account since, so nothing was deleted. You can remove this Mac from sync instead.** and the row changes back to **Remove this Mac from sync**.
+
 ## Set up sync again {#set-up-sync-again}
 
 If the pane says **The account's sync data has changed. Syncing Phi data is paused.**, the sync data in your account was reset and this Mac's setup no longer matches it. Phi's data stops syncing until you act; retrying or restarting does not clear it. Click **Set up sync again** and confirm. Phi clears this Mac's sync setup and matching information, keeps your local browsing data and what is in your account, and walks you through setup again, including joining by approval or recovery code.
+
+You also see this on a Mac after **Reset sync** was used on the account's last Mac, because the sync data that Mac was set up with has been deleted.
 
 ## Signing out
 
@@ -108,7 +152,7 @@ Signing out of your Phi account stops sync on that Mac, and nothing from your ot
 ## How your data is protected
 
 - **Encrypted before it leaves your Mac.** Your Macs create the keys, and only the encrypted copy is uploaded. The sync service stores it and hands it to your other Macs; it cannot decrypt it.
-- **Signing in is not enough to read it.** A new Mac gets the key only through approval from a Mac that already holds it, or through your recovery code. That is why there is no "forgot your recovery code" link anywhere.
+- **Signing in is not enough to read it.** A new Mac gets the key only through approval from a Mac that already holds it, or through your recovery code. That is also why a lost code cannot be recovered: the **Forgot your recovery code?** link in setup explains your options, and none of them brings the code back.
 - **It is still data we hold for you.** The encrypted copy lives on Phinomenon's sync service, so sync is one of the things Phi sends. [Privacy & Your Data](/privacy/) lists the others, and the [Privacy Policy](https://phibrowser.com/privacy/) and [Terms](https://phibrowser.com/terms/) are the authoritative word on all of it.
 
 ## Sync or export
