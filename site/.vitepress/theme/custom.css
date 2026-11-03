@@ -4,6 +4,32 @@ html {
   scrollbar-gutter: stable;
 }
 
+/*
+ * Keep headings clear of the fixed nav bar when a page is opened from a link
+ * with a #hash (new tab, address bar, external link, reload).
+ *
+ * In VitePress 1.x the router scrolls to the hash with JS, subtracting
+ * `scrollOffset` (default 134px) and adding back the heading's `padding-top`.
+ * On a full page load the browser also runs its native fragment scroll, which
+ * can land after the JS one (seen on slow networks and narrow viewports) and
+ * only respects `scroll-margin-top`, which the 1.x default theme never sets.
+ * These values match the JS landing spot so both paths agree.
+ * `window.scrollTo` ignores `scroll-margin`, so the JS path is not offset
+ * twice.
+ *
+ * Remove when upgrading to VitePress 2.0: since 2.0.0-alpha.18 the default
+ * theme sets `scroll-margin-top` on `.vp-doc [id]` itself and drops
+ * `scrollOffset`.
+ */
+.vp-doc [id] {
+  scroll-margin-top: 134px;
+}
+
+/* h2 has a 24px top padding, which the 1.x JS scroll adds back. */
+.vp-doc h2[id] {
+  scroll-margin-top: calc(134px - 24px);
+}
+
 /* Enlarge the nav bar logo (default is 24px). */
 .VPNavBarTitle .logo {
   height: 32px;
