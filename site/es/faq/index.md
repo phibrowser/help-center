@@ -167,15 +167,19 @@ No. Los Grupos de pestañas organizan páginas con las que estás trabajando act
 ## Sincronización
 
 ::: details ¿Phi se sincroniza entre Mac?
-Sí. Inicia sesión con la misma cuenta de Phi en cada Mac y configúrala en **Configuración → Sincronización**. Se sincronizan los Espacios, los Perfiles, los marcadores, las pestañas fijadas, las Reglas de URL, los ajustes compatibles y el historial de navegación de cada Perfil, cifrados en tu Mac antes de subirse. Las contraseñas, las cookies, el autocompletar, las pestañas abiertas, la Memoria y las conversaciones de Phi Chat, no. Consulta [Sincronización](/es/sync/) en la Guía.
+Sí. Inicia sesión con la misma cuenta de Phi en cada Mac y configúrala en **Configuración → Sincronización**. Se sincronizan los Espacios, los Perfiles, los marcadores, las pestañas fijadas, las Reglas de URL, los ajustes compatibles y el historial de navegación de cada Perfil, cifrados en tu Mac antes de subirse. Las contraseñas, las cookies, el autocompletar, las pestañas abiertas, los atajos de teclado, la Memoria y las conversaciones de Phi Chat, no; consulta [por qué le faltan a un segundo Mac](/es/sync/#missing-shortcuts-and-open-tabs). Si eliges **Usar los datos de tu cuenta** al agregar un Mac, Phi elimina primero los datos de Phi propios de ese Mac y los reemplaza por los de tu cuenta. Consulta [Sincronización](/es/sync/) en la Guía.
+:::
+
+::: details ¿Por qué un Mac sigue indicando que la sincronización no finalizó?
+Normalmente porque retiene pestañas fijadas que no puede colocar: su fila **Pestañas fijadas** en **Detalles** muestra **retenidos** con un número, mientras que el otro Mac dice **Actualizado**. La causa habitual son dos Perfiles predeterminados que no se emparejaron entre sí durante la configuración. Se soluciona eliminando ese Mac de la sincronización y volviendo a configurarlo. Consulta [Un Mac indica que la sincronización no finalizó](/es/sync/#held-pinned-tabs).
 :::
 
 ::: details ¿Qué pasa si pierdo mi código de recuperación?
-Si todavía tienes un Mac configurado para la sincronización, puedes agregar Mac nuevos aprobándolos desde él. El código en sí se muestra una sola vez, nunca se nos envía y no se puede volver a enviar, reemplazar ni restablecer. Si pierdes el código y todos los Mac configurados, nada puede desbloquear la copia cifrada de tu cuenta.
+Si todavía tienes un Mac configurado para la sincronización, puedes agregar Mac nuevos aprobándolos desde él. El código en sí se muestra una sola vez, nunca se nos envía y no se puede volver a enviar, reemplazar ni restablecer. Si el Mac que tienes es el único configurado para la sincronización, **Restablecer la sincronización** en ese Mac borra los datos de sincronización de tu cuenta para que puedas volver a configurar la sincronización con un código nuevo; tus datos de navegación locales se quedan. Si pierdes el código y todos los Mac configurados, nada puede desbloquear la copia cifrada de tu cuenta. Consulta [¿Olvidaste tu código de recuperación?](/es/sync/#forgot-your-recovery-code) en la Guía.
 :::
 
 ::: details ¿Puedo eliminar un Mac que ya no tengo?
-Todavía no. Cada Mac se elimina a sí mismo, desde **Configuración → Sincronización → Eliminar este dispositivo de la sincronización…**. Un Mac que has perdido sigue en la cuenta y sigue recibiendo cambios mientras tenga la sesión iniciada. Además, eliminar un Mac no cambia las claves de cifrado de la cuenta, así que lo que ese Mac ya había sincronizado se queda en él.
+Todavía no. Cada Mac se elimina a sí mismo, desde **Configuración → Sincronización**, en **Eliminación**. Un Mac que has perdido sigue en la cuenta y sigue recibiendo cambios mientras tenga la sesión iniciada. Además, eliminar un Mac no cambia las claves de cifrado de la cuenta, así que lo que ese Mac ya había sincronizado se queda en él. El último Mac que todavía tienes también puede eliminarse a sí mismo: cuando es el único Mac configurado para la sincronización, la fila es **Restablecer la sincronización**, que además borra los datos de sincronización de la cuenta. Consulta [Restablecer la sincronización](/es/sync/#reset-sync).
 :::
 
 ## Funciones de IA {#ai-features}

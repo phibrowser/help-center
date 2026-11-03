@@ -167,15 +167,19 @@ Nee. Tabbladgroepen ordenen pagina's waarmee je actief werkt; bladwijzers beware
 ## Synchronisatie
 
 ::: details Synchroniseert Phi tussen Macs?
-Ja. Log op elke Mac in met hetzelfde Phi-account en stel synchronisatie in via **Instellingen → Synchronisatie**. Spaces, Profielen, bladwijzers, vastgezette tabbladen, URL-regels, ondersteunde instellingen en de browsegeschiedenis van elk Profiel worden gesynchroniseerd, versleuteld op je Mac voordat ze worden geüpload. Wachtwoorden, cookies, automatisch invullen, open tabbladen, Geheugen en gesprekken in Phi Chat niet. Zie [Synchronisatie](/nl/sync/) in de gids.
+Ja. Log op elke Mac in met hetzelfde Phi-account en stel synchronisatie in via **Instellingen → Synchronisatie**. Spaces, Profielen, bladwijzers, vastgezette tabbladen, URL-regels, ondersteunde instellingen en de browsegeschiedenis van elk Profiel worden gesynchroniseerd, versleuteld op je Mac voordat ze worden geüpload. Wachtwoorden, cookies, automatisch invullen, open tabbladen, toetscombinaties, Geheugen en gesprekken in Phi Chat niet; zie [waarom een tweede Mac ze mist](/nl/sync/#missing-shortcuts-and-open-tabs). Kies je **Gebruik de gegevens van je account** bij het toevoegen van een Mac, dan verwijdert Phi eerst de eigen Phi-gegevens van die Mac en vervangt het ze door die van je account. Zie [Synchronisatie](/nl/sync/) in de gids.
+:::
+
+::: details Waarom blijft één Mac hangen op Synchronisatie is niet voltooid?
+Meestal omdat die Mac vastgezette tabbladen vasthoudt die hij niet kan plaatsen: de rij **Vastgezette tabbladen** in **Details** toont **vastgehouden** met een aantal, terwijl de andere Mac **Up-to-date** meldt. De gebruikelijke oorzaak is dat twee standaardprofielen bij het instellen niet aan elkaar zijn gekoppeld. Verwijder die Mac uit synchronisatie en stel hem opnieuw in; dat lost het op. Zie [Eén Mac meldt Synchronisatie is niet voltooid](/nl/sync/#held-pinned-tabs).
 :::
 
 ::: details Wat gebeurt er als ik mijn herstelcode kwijtraak?
-Heb je nog een Mac die is ingesteld voor synchronisatie, dan kun je nieuwe Macs toevoegen door ze vanaf die Mac goed te keuren. De code zelf wordt één keer getoond, wordt nooit naar ons verstuurd en kan niet opnieuw worden verstuurd, vervangen of gereset. Raak je de code én elke ingestelde Mac kwijt, dan kan niets de versleutelde kopie in je account ontgrendelen.
+Heb je nog een Mac die is ingesteld voor synchronisatie, dan kun je nieuwe Macs toevoegen door ze vanaf die Mac goed te keuren. De code zelf wordt één keer getoond, wordt nooit naar ons verstuurd en kan niet opnieuw worden verstuurd, vervangen of gereset. Is de Mac die je hebt de enige die is ingesteld voor synchronisatie, dan verwijdert **Reset synchronisatie** op die Mac de synchronisatiegegevens van je account, zodat je synchronisatie opnieuw kunt instellen met een nieuwe code; je lokale browsegegevens blijven bewaard. Raak je de code én elke ingestelde Mac kwijt, dan kan niets de versleutelde kopie in je account ontgrendelen. Zie [Herstelcode vergeten?](/nl/sync/#forgot-your-recovery-code) in de gids.
 :::
 
 ::: details Kan ik een Mac verwijderen die ik niet meer heb?
-Nog niet. Elke Mac verwijdert zichzelf, via **Instellingen → Synchronisatie → Verwijder dit apparaat uit synchronisatie…**. Een Mac die je kwijt bent, blijft aan het account gekoppeld en blijft wijzigingen ontvangen zolang hij is ingelogd. Een Mac verwijderen verandert ook de versleutelingssleutels van het account niet, dus wat die Mac al had gesynchroniseerd, blijft erop staan.
+Nog niet. Elke Mac verwijdert zichzelf, via **Instellingen → Synchronisatie** onder **Verwijdering**. Een Mac die je kwijt bent, blijft aan het account gekoppeld en blijft wijzigingen ontvangen zolang hij is ingelogd. Een Mac verwijderen verandert ook de versleutelingssleutels van het account niet, dus wat die Mac al had gesynchroniseerd, blijft erop staan. Ook de laatste Mac die je nog hebt, kan zichzelf verwijderen: is dat de enige Mac die is ingesteld voor synchronisatie, dan is de rij **Reset synchronisatie**, waarmee ook de synchronisatiegegevens van het account worden verwijderd. Zie [Synchronisatie resetten](/nl/sync/#reset-sync).
 :::
 
 ## AI-functies {#ai-features}

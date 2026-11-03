@@ -167,15 +167,19 @@ No. Tab Groups organize pages you are actively working with; bookmarks store pag
 ## Sync
 
 ::: details Does Phi sync between Macs?
-Yes. Sign in to the same Phi account on each Mac and set it up in **Settings → Sync**. Spaces, Profiles, bookmarks, pinned tabs, URL Rules, supported settings, and each Profile's browsing history sync, encrypted on your Mac before upload. Passwords, cookies, autofill, open tabs, Memory, and Phi Chat conversations do not. See [Sync](/sync/) in the Guide.
+Yes. Sign in to the same Phi account on each Mac and set it up in **Settings → Sync**. Spaces, Profiles, bookmarks, pinned tabs, URL Rules, supported settings, and each Profile's browsing history sync, encrypted on your Mac before upload. Passwords, cookies, autofill, open tabs, keyboard shortcuts, Memory, and Phi Chat conversations do not; see [why a second Mac is missing them](/sync/#missing-shortcuts-and-open-tabs). If you choose **Use your account's data** while adding a Mac, Phi deletes that Mac's own Phi data first and replaces it with your account's. See [Sync](/sync/) in the Guide.
+:::
+
+::: details Why is one Mac stuck on Sync did not finish?
+Usually because it holds pinned tabs it cannot place: its **Pinned tabs** row in **Details** shows **Held** with a number while the other Mac says **Up to date**. The common cause is two Default Profiles that were not matched to each other during setup. Removing that Mac from sync and setting it up again fixes it. See [One Mac says Sync did not finish](/sync/#held-pinned-tabs).
 :::
 
 ::: details What happens if I lose my recovery code?
-If you still have a Mac that is set up for sync, you can add new Macs by approving them from it. The code itself is shown once, is never sent to us, and cannot be re-sent, replaced, or reset. Lose the code and every Mac that is set up, and nothing can unlock the encrypted copy in your account.
+If you still have a Mac that is set up for sync, you can add new Macs by approving them from it. The code itself is shown once, is never sent to us, and cannot be re-sent, replaced, or reset. If the Mac you have is the only one set up for sync, **Reset sync** on it deletes your account's sync data so you can set up sync again with a new code; your local browsing data stays. Lose the code and every Mac that is set up, and nothing can unlock the encrypted copy in your account. See [Forgot your recovery code?](/sync/#forgot-your-recovery-code) in the Guide.
 :::
 
 ::: details Can I remove a Mac I no longer have?
-Not yet. Each Mac removes itself, from **Settings → Sync → Remove this device from sync…**. A Mac you have lost stays on the account and keeps receiving changes for as long as it is signed in. Removing a Mac also does not change the account's encryption keys, so what that Mac had already synced stays on it.
+Not yet. Each Mac removes itself, from **Settings → Sync** under **Removal**. A Mac you have lost stays on the account and keeps receiving changes for as long as it is signed in. Removing a Mac also does not change the account's encryption keys, so what that Mac had already synced stays on it. The last Mac you still have can remove itself too: when it is the only Mac set up for sync, the row is **Reset sync**, which also deletes the account's sync data. See [Reset sync](/sync/#reset-sync).
 :::
 
 ## AI features

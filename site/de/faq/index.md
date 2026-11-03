@@ -167,15 +167,19 @@ Nein. Tab-Gruppen ordnen Seiten, mit denen du gerade aktiv arbeitest; Lesezeiche
 ## Synchronisierung
 
 ::: details Synchronisiert Phi zwischen Macs?
-Ja. Melde dich auf jedem Mac beim selben Phi-Konto an und richte die Synchronisierung unter **Einstellungen → Synchronisierung** ein. Spaces, Profile, Lesezeichen, angeheftete Tabs, URL-Regeln, unterstützte Einstellungen und der Browserverlauf jedes Profils werden synchronisiert, vor dem Hochladen auf deinem Mac verschlüsselt. Passwörter, Cookies, Autofill-Daten, offene Tabs, Erinnerungen und Unterhaltungen in Phi Chat werden nicht synchronisiert. Siehe [Synchronisierung](/de/sync/) im Leitfaden.
+Ja. Melde dich auf jedem Mac beim selben Phi-Konto an und richte die Synchronisierung unter **Einstellungen → Synchronisierung** ein. Spaces, Profile, Lesezeichen, angeheftete Tabs, URL-Regeln, unterstützte Einstellungen und der Browserverlauf jedes Profils werden synchronisiert, vor dem Hochladen auf deinem Mac verschlüsselt. Passwörter, Cookies, Autofill-Daten, offene Tabs, Tastaturkurzbefehle, Erinnerungen und Unterhaltungen in Phi Chat werden nicht synchronisiert; siehe [warum sie auf einem zweiten Mac fehlen](/de/sync/#missing-shortcuts-and-open-tabs). Wählst du beim Hinzufügen eines Mac **Daten deines Accounts verwenden**, löscht Phi zuerst die eigenen Phi-Daten dieses Mac und ersetzt sie durch die deines Kontos. Siehe [Synchronisierung](/de/sync/) im Leitfaden.
+:::
+
+::: details Warum bleibt ein Mac bei „Synchronisierung nicht abgeschlossen“ hängen?
+Meist, weil er angeheftete Tabs zurückhält, die er nicht einordnen kann: Seine Zeile **Angeheftete Tabs** unter **Details** zeigt **zurückgehalten** mit einer Zahl davor, während der andere Mac **Auf dem neuesten Stand** meldet. Die häufige Ursache sind zwei Standardprofile, die bei der Einrichtung nicht einander zugeordnet wurden. Entfernst du diesen Mac aus der Synchronisierung und richtest ihn erneut ein, ist das behoben. Siehe [Ein Mac meldet „Synchronisierung nicht abgeschlossen“](/de/sync/#held-pinned-tabs).
 :::
 
 ::: details Was passiert, wenn ich meinen Wiederherstellungscode verliere?
-Hast du noch einen Mac, der für die Synchronisierung eingerichtet ist, kannst du neue Macs hinzufügen, indem du sie dort genehmigst. Der Code selbst wird nur einmal angezeigt, nie an uns gesendet und lässt sich weder erneut senden noch ersetzen oder zurücksetzen. Verlierst du den Code und jeden eingerichteten Mac, kann nichts die verschlüsselte Kopie in deinem Konto entsperren.
+Hast du noch einen Mac, der für die Synchronisierung eingerichtet ist, kannst du neue Macs hinzufügen, indem du sie dort genehmigst. Der Code selbst wird nur einmal angezeigt, nie an uns gesendet und lässt sich weder erneut senden noch ersetzen oder zurücksetzen. Ist der Mac, den du hast, der einzige, der für die Synchronisierung eingerichtet ist, löscht **Synchronisierung zurücksetzen** auf ihm die Synchronisierungsdaten deines Kontos, sodass du die Synchronisierung mit einem neuen Code erneut einrichten kannst; deine lokalen Browserdaten bleiben erhalten. Verlierst du den Code und jeden eingerichteten Mac, kann nichts die verschlüsselte Kopie in deinem Konto entsperren. Siehe [Wiederherstellungscode vergessen?](/de/sync/#forgot-your-recovery-code) im Leitfaden.
 :::
 
 ::: details Kann ich einen Mac entfernen, den ich nicht mehr habe?
-Noch nicht. Jeder Mac entfernt sich selbst, über **Einstellungen → Synchronisierung → Dieses Gerät aus der Synchronisierung entfernen…**. Ein verlorener Mac bleibt im Konto und empfängt weiter Änderungen, solange er angemeldet ist. Das Entfernen eines Mac ändert außerdem nicht die Verschlüsselungsschlüssel des Kontos, was dieser Mac bereits synchronisiert hatte, bleibt also auf ihm.
+Noch nicht. Jeder Mac entfernt sich selbst, unter **Einstellungen → Synchronisierung** im Abschnitt **Entfernen**. Ein verlorener Mac bleibt im Konto und empfängt weiter Änderungen, solange er angemeldet ist. Das Entfernen eines Mac ändert außerdem nicht die Verschlüsselungsschlüssel des Kontos, was dieser Mac bereits synchronisiert hatte, bleibt also auf ihm. Auch der letzte Mac, den du noch hast, kann sich selbst entfernen: Ist er der einzige, der für die Synchronisierung eingerichtet ist, heißt die Zeile **Synchronisierung zurücksetzen**, und dabei werden auch die Synchronisierungsdaten des Kontos gelöscht. Siehe [Synchronisierung zurücksetzen](/de/sync/#reset-sync).
 :::
 
 ## KI-Funktionen {#ai-features}

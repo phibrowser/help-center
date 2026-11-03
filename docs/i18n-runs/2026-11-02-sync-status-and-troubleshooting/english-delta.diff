@@ -1,0 +1,249 @@
+diff --git a/site/faq/index.md b/site/faq/index.md
+index 4882344..1345085 100644
+--- a/site/faq/index.md
++++ b/site/faq/index.md
+@@ -167,7 +167,11 @@ No. Tab Groups organize pages you are actively working with; bookmarks store pag
+ ## Sync
+ 
+ ::: details Does Phi sync between Macs?
+-Yes. Sign in to the same Phi account on each Mac and set it up in **Settings → Sync**. Spaces, Profiles, bookmarks, pinned tabs, URL Rules, supported settings, and each Profile's browsing history sync, encrypted on your Mac before upload. Passwords, cookies, autofill, open tabs, Memory, and Phi Chat conversations do not. See [Sync](/sync/) in the Guide.
++Yes. Sign in to the same Phi account on each Mac and set it up in **Settings → Sync**. Spaces, Profiles, bookmarks, pinned tabs, URL Rules, supported settings, and each Profile's browsing history sync, encrypted on your Mac before upload. Passwords, cookies, autofill, open tabs, keyboard shortcuts, Memory, and Phi Chat conversations do not; see [why a second Mac is missing them](/sync/#missing-shortcuts-and-open-tabs). If you choose **Use your account's data** while adding a Mac, Phi deletes that Mac's own Phi data first and replaces it with your account's. See [Sync](/sync/) in the Guide.
++:::
++
++::: details Why is one Mac stuck on Sync did not finish?
++Usually because it holds pinned tabs it cannot place: its **Pinned tabs** row in **Details** shows **Held** with a number while the other Mac says **Up to date**. The common cause is two Default Profiles that were not matched to each other during setup. Removing that Mac from sync and setting it up again fixes it. See [One Mac says Sync did not finish](/sync/#held-pinned-tabs).
+ :::
+ 
+ ::: details What happens if I lose my recovery code?
+diff --git a/site/privacy/index.md b/site/privacy/index.md
+index 4256320..9cc7807 100644
+--- a/site/privacy/index.md
++++ b/site/privacy/index.md
+@@ -28,7 +28,7 @@ Local-first does not mean silent, and you should read this here rather than disc
+ 
+ - **A small anonymous count, always on.** Phi counts how many installations set it as the default browser, use Spaces, use Profiles, and that a crash happened. Counts only, with nothing attached that points back to you.
+ - **Detailed statistics and crash reports, only if you switch them on.** The setting is **Help improve Phi's features and performance** in Settings. Turn it on and Phi sends detailed usage statistics and crash reports, carrying your account identifier. Turn it off and neither is sent; only the anonymous counts above continue.
+-- **Your synced data, only if you set up Sync.** Spaces, bookmarks, pinned tabs, URL Rules, supported settings, and each Profile's browsing history are uploaded to our sync service so your other Macs can fetch them. They are encrypted on your Mac first, with keys only your Macs hold, so the service stores copies it cannot read. See [Sync](/sync/).
++- **Your synced data, only if you set up Sync.** Spaces, bookmarks, pinned tabs, URL Rules, supported settings, and each Profile's browsing history are uploaded to our sync service so your other Macs can fetch them. They are encrypted on your Mac first, with keys only your Macs hold, so the service stores copies it cannot read. If you choose **Use your account's data** while setting up a Mac, Phi deletes that Mac's own Phi data first and replaces it with your account's. See [Sync](/sync/).
+ 
+ Crash reports go to Sentry and are kept for 90 days. A crash report can include a memory snapshot of the process that failed, which may incidentally contain fragments of page content or text you had typed. That is one of the reasons the switch is off until you turn it on.
+ 
+diff --git a/site/sync/index.md b/site/sync/index.md
+index b74a26b..4f40291 100644
+--- a/site/sync/index.md
++++ b/site/sync/index.md
+@@ -8,17 +8,17 @@ Sync keeps Phi's own data the same on every Mac where you are signed in to the s
+ 
+ Everything described here lives in **Settings → Sync**.
+ 
+-## What syncs
+-
+-| What                           | Details                                                                                                                                                                                                                           |
+-| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+-| **Spaces**                     | Name, icon, color, theme, and which Profile each Space belongs to.                                                                                                                                                                |
+-| **Profiles**                   | Profile names, and which Spaces belong to each Profile.                                                                                                                                                                           |
+-| **Bookmarks and folders**      | Every Space's bookmarks, with their folders and order.                                                                                                                                                                            |
+-| **Pinned tabs**                | Pinned tabs, in whichever scope you chose in **Settings → Spaces**.                                                                                                                                                               |
+-| **URL Rules**                  | The rules that route matching sites into a Space, Incognito, or Kiosk.                                                                                                                                                            |
+-| **Supported settings**         | Layout mode, appearance, theme and selection tint, the bookmark bar and full URL settings, the new-tab shortcut, the Incognito close warning, automatic picture-in-picture, the pinned tab scope, and which Space is the default. |
+-| **Browsing data, per Profile** | Browsing history, the browser's own preferences such as the default search engine, and extensions with their synced settings.                                                                                                     |
++## What syncs {#what-syncs}
++
++| What                           | Details                                                                                                                                                                                                                                           |
++| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
++| **Spaces**                     | Name, icon, color, theme, and which Profile each Space belongs to.                                                                                                                                                                                |
++| **Profiles**                   | Profile names, and which Spaces belong to each Profile.                                                                                                                                                                                           |
++| **Bookmarks and folders**      | Every Space's bookmarks, with their folders and order.                                                                                                                                                                                            |
++| **Pinned tabs**                | Pinned tabs, in whichever scope you chose in **Settings → Spaces**.                                                                                                                                                                               |
++| **URL Rules**                  | The rules that route matching sites into a Space, Incognito, or Kiosk.                                                                                                                                                                            |
++| **Supported settings**         | Layout mode, appearance, theme and selection tint, the bookmark bar and full URL settings, **New tab behavior** (what ⌘T opens), the Incognito close warning, automatic picture-in-picture, the pinned tab scope, and which Space is the default. |
++| **Browsing data, per Profile** | Browsing history, the browser's own preferences such as the default search engine, and extensions with their synced settings.                                                                                                                     |
+ 
+ ::: warning Deleting is synced too
+ Delete a Space or a Profile on one Mac and it is deleted from every Mac that syncs with it, bookmarks included. Phi says so in the confirmation dialog, so read it before you confirm.
+@@ -30,6 +30,7 @@ Some things stay where they are on purpose:
+ - **Open tabs.** Ordinary open tabs are not recreated on another Mac. Pinned tabs are.
+ - **Phi Chat and Memory.** Your conversations with the assistant stay on the Mac where you had them, and so does [Memory](/memory/).
+ - **Incognito Spaces**, and the Spaces agents work in. Nothing from them is synced. A URL Rule that sends a site to Incognito is still a rule, so it syncs like any other.
++- **Keyboard shortcuts.** What you set in **Settings → Shortcuts** stays on the Mac where you set it.
+ - **Settings tied to one Mac**, including the AI and agent settings.
+ 
+ ## Before you start
+@@ -42,8 +43,8 @@ Some things stay where they are on purpose:
+ 1. Open **Settings → Sync** and click **Set up sync on this device**. The window explains what is about to happen; click **Continue**.
+ 2. **Save your recovery code.** Phi creates a recovery code and shows it once: 27 characters in groups of five. Click **Copy** and put it somewhere safe, such as a password manager, then click **I've saved it**.
+ 3. **Confirm your recovery code.** Phi asks you to type the code you saved. Dashes, spaces, and letter case do not matter. If you did not save it, click **Back**: Phi shows the same code again so you can save it now. Sync stays off until the code checks out, so you cannot find out later that it was never saved. If you close the window here, Phi asks again the next time you open setup or restart, but **Back** is gone by then, because the code is not kept once the window closes.
+-4. **Match your profiles and Spaces.** On a first Mac there is nothing in the account to match yet, so this step mostly confirms what is added: choose **Register as new** for each Profile and **Add all as new** for the Spaces. See [Add another Mac](#add-another-mac) for what the two steps do once the account has data.
+-5. Click **Finish**. The pane shows **Initial sync in progress** while this Mac uploads, then **Up to date**.
++4. **Phi sets up sync on its own.** On a first Mac the account has nothing to match yet, so there are no matching pages to fill in. Phi adds this Mac's Profiles and Spaces to the account and shows **Setting up sync…** while it does. If Phi could not read everything in the account, it shows the matching pages from [Add another Mac](#add-another-mac) instead.
++5. When setup is done, the pane shows **Initial sync in progress** while this Mac uploads, then **Up to date**.
+ 
+ ::: warning The recovery code is shown once
+ The code is made on your Mac and never sent to us, so we cannot show it again, send a replacement, or reset it. To add another Mac you need either the code or a Mac that is already set up. Lose both and nobody can unlock the encrypted copy in your account, us included. If the code is already lost, see [Forgot your recovery code?](#forgot-your-recovery-code)
+@@ -55,15 +56,48 @@ The code is made on your Mac and never sent to us, so we cannot show it again, s
+ 2. On **Add this device to your account**, choose how this Mac joins:
+    - **Request approval from another device.** Phi shows a short code and waits. On a Mac that is already set up, open **Settings → Sync**: the request appears under **Devices** with the same code and when it expires. Check that the two codes match, then click **Approve**, or **Deny** if you were not expecting it. The code identifies the new Mac and is not a secret, so reading it out over the phone is fine. A denied or expired request offers **Try another way**.
+    - **Enter a recovery code.** Type the code you saved on your first Mac.
+-3. **Match your profiles.** Phi pairs the Profiles on this Mac with the Profiles in your account and asks about the ones it could not match. For each Profile here, choose **Assign to** an account Profile or **Register as new**. Profiles in your account with no counterpart here are listed under **Unclaimed account profiles**, where **Create on this Mac** adds them.
+-4. **Match your Spaces.** For each Space on this Mac, pick the account Space it is, or **Add as new**. **Add all as new** settles every undecided Space at once, and Spaces whose names match exactly are picked for you. Spaces in your account that are not on this Mac appear under **Spaces to add from your account** and are created when you finish. Nothing on this Mac is deleted. Click **Finish**.
+-5. **Review what changes**, which appears only if something on this Mac would be overwritten. When you matched a Space here to one in your account, the account's name, icon, color, and theme replace this Mac's, and the Space may move to the Profile it has in your account. Tabs, bookmarks, pinned tabs, and URL Rules on this Mac are not touched. To keep this Mac's values, go **Back** and add that Space as new instead. Click **Apply** to start sync. If nothing would be overwritten, sync starts as soon as you click **Finish**.
++3. **Choose how this Mac syncs.** When your account already holds data and this Mac has data of its own, Phi asks **How should this Mac sync?** and shows what each side holds:
++   - **Merge this Mac with your account**, marked **Recommended**. You match Profiles and Spaces one by one in the next steps, and bookmarks, pinned tabs, and URL Rules from both sides are kept.
++   - **Use your account's data**. This Mac's Spaces, bookmarks, pinned tabs, URL Rules, and synced settings are replaced with your account's, and Profiles your account does not have are deleted from this Mac. Only this Mac changes, and it cannot be undone. See [Use your account's data](#use-your-accounts-data) before you choose it.
+ 
+-Loading the account can take up to two minutes while Phi counts your Spaces, and it needs a connection: there is no cached copy to fall back on. Once sync starts, bookmarks, pinned tabs, and URL Rules from both Macs are kept, so nothing from either side is lost.
++   A Mac with nothing beyond its Default Profile and default Space, and no bookmarks, pinned tabs, or URL Rules, does not see this step. There is no option that copies this Mac's data over your account.
+ 
+-### Finish later
++4. **Match your profiles.** Phi pairs the Profiles on this Mac with the Profiles in your account and asks about the ones it could not match. This Mac's Default Profile is always matched to your account's default Profile: its row shows that account Profile, with no picker. For each other Profile here, choose **Assign to** an account Profile or **Register as new**. Profiles in your account with no counterpart here are listed under **Unclaimed account profiles**, where **Create on this Mac** adds them. If a choice would break the Default rule, Phi says **This Mac's default profile can only be matched with the account's default profile. Review the matches and try again.**
++5. **Match your Spaces.** For each Space on this Mac, pick the account Space it is, or **Add as new**. **Add all as new** settles every undecided Space at once, and Spaces whose names match exactly are picked for you. Spaces in your account that are not on this Mac appear under **Spaces to add from your account** and are created when you finish. Nothing on this Mac is deleted. Click **Finish**.
++6. **Review what changes**, which appears only if something on this Mac would be overwritten. When you matched a Space here to one in your account, the account's name, icon, color, and theme replace this Mac's, and the Space may move to the Profile it has in your account. Tabs, bookmarks, pinned tabs, and URL Rules on this Mac are not touched. To keep this Mac's values, go **Back** and add that Space as new instead. Click **Apply** to start sync. If nothing would be overwritten, sync starts as soon as you click **Finish**.
+ 
+-**Finish later** appears on the matching pages. Choose it, or close the window, and this Mac keeps browsing locally: nothing syncs, the pane reads **Not paired**, and Phi does not reopen setup on its own. Come back to **Settings → Sync** and click **Continue setup** when you are ready. Phi reloads your account at that point, so unfinished choices are not kept.
++Phi shows only the pages where it has something to ask. When there is nothing to ask, for example on a Mac with only default data, it finishes on its own and shows **Setting up sync…**, and your account's Profiles and Spaces appear on this Mac.
++
++Loading the account can take up to two minutes while Phi counts your Spaces, and it needs a connection: there is no cached copy to fall back on. With **Merge this Mac with your account**, bookmarks, pinned tabs, and URL Rules from both Macs are kept once sync starts, so nothing from either side is lost.
++
++### Use your account's data {#use-your-accounts-data}
++
++Choose this when you do not want to keep what Phi has on this Mac, for example a Mac you only used for testing. Phi deletes this Mac's Phi data first, then downloads your account's.
++
++- **Removed from this Mac:** Spaces other than the default Space, and their open tabs close; bookmarks, pinned tabs, URL Rules, and synced settings; and every Profile your account does not have, together with its history, extensions, and site data.
++- **Kept:** this Mac's Default Profile, and Profiles whose name matches one in your account, keep their history, extensions, and site data. Your account and your other Macs are not affected.
++
++After you click **Continue**, Phi asks **Replace what's on this Mac?** and lists what is removed and what is downloaded. Click **Replace this Mac's data** to go ahead. Phi shows **Replacing this Mac's data…** and the window stays open until it is done. Your account's data then arrives with the first sync, and the pane shows **Initial sync in progress**, which can take a few minutes for a large account. If the replace stops with an error, see [Couldn't finish replacing this Mac's data](#replace-did-not-finish).
++
++::: warning Replacing cannot be undone
++Phi does not keep a copy of what it deletes. If you want one, choose **Finish later** first, export with **Help → Manage User Data → Export User Data…** (see [Importing & Exporting](/import-export/) and [Sync or export](#sync-or-export)), then come back to setup. To keep a local Profile, choose **Merge this Mac with your account** instead.
++:::
++
++### If setup cannot load your account {#setup-cannot-load-account}
++
++Setup reads your account before it shows any choices. When that fails, the window says why and offers **Retry**:
++
++- **Couldn't load your account's Spaces in time.** The account is large or the connection is slow. Check your connection and retry.
++- **Sync isn't available right now, so your account's Spaces couldn't be loaded.** Phi cannot reach sync at the moment. Check that you are online and still signed in, then retry.
++- **Couldn't load your account's profiles.** or **Couldn't load your account's Spaces.** Check your connection and retry.
++- An account Profile marked **Can't be read right now**: Phi keeps retrying in the background, and the rest of setup still works.
++- **Your account's default profile can't be read on this Mac, so this Mac's data can't be replaced right now.** **Use your account's data** cannot run until it can. Choose **Merge this Mac with your account**, or **Finish later** and try again.
++
++### Finish later {#finish-later}
++
++**Finish later** appears on the sync method step and the matching pages. Choose it, or close the window, and this Mac keeps browsing locally: nothing syncs, the pane reads **Not paired**, and Phi does not reopen setup on its own. Come back to **Settings → Sync** and click **Continue setup** when you are ready. Phi reloads your account at that point, so unfinished choices are not kept, including the sync method: the next setup starts with **Merge this Mac with your account** selected.
++
++A replace that has started is the exception. Once Phi has begun replacing this Mac's data, leaving does not cancel it. If it stopped, for example with an error or because Phi quit, and you closed the window, the next time you open setup it goes straight to **Replace what's on this Mac?**, with no **Back**, and **Replace this Mac's data** continues from where it stopped. **Remove this device from sync…** is still offered there; it leaves this Mac out of sync with whatever the replace had not removed yet.
+ 
+ ## Forgot your recovery code? {#forgot-your-recovery-code}
+ 
+@@ -91,16 +125,61 @@ Use [Reset sync](#reset-sync) on that Mac. It removes the Mac from sync and dele
+ 
+ If the code is gone and no Mac you still have is set up for sync, the encrypted copy in your account cannot be unlocked, by you or by us. A Mac that is not set up for sync yet cannot reset the account's sync either, so there is no way to start over from it. This includes a Mac that was lost or erased while it was set up: it still counts as set up, and it cannot be removed from another Mac.
+ 
+-## Check sync status
++## Check sync status {#check-sync-status}
+ 
+ The top of the Sync pane shows where things stand:
+ 
+ - **Up to date**, **Syncing…**, or **Initial sync in progress** while the first sync runs.
+ - **Offline**, with a note that changes will sync when connected. Phi keeps working from local data and sends your changes once the Mac is back online.
+-- **Sync paused.** A Profile on this Mac is not set up for sync yet, usually one you created after setting up. Phi registers it on its own and keeps retrying; the line underneath says why it is waiting, and **Retry** tries at once.
+-- **Needs attention.** Something failed, and **Last problem** names it. **Sign-in expired** means sign in again. **No connection** and **Server error** clear by themselves on the next successful sync. **Sync needs to be reset** is covered in [Set up sync again](#set-up-sync-again).
++- **Sync paused.** A Profile on this Mac is not set up for sync yet, usually one you created after setting up. The pane names the Profiles it waits for and why. Phi registers them on its own and keeps retrying, and **Retry** tries at once. See [Sync paused](#sync-paused).
++- **Needs attention.** Something failed. The line **Some content needs attention. Check the details and your connection.** appears under it, and **Last problem** names the most recent problem and when it happened. See [What each problem means](#needs-attention).
++
++Under the status, **Last successful sync on this Mac** shows when this Mac last finished a sync. **Waiting for profiles to load** means Phi has not read this Mac's list of Profiles yet. It keeps trying on its own, and after five minutes the status turns to **Needs attention**.
++
++If you changed the pinned tab scope, on this Mac or on another one, a line can read **Pinned tab scope change not applied yet**, with the number of attempts and a reason: **A browser migration is running**, **Local browser data is unavailable**, or **Couldn't save pinned tabs on this Mac**. This Mac has not moved its pinned tabs to the new scope yet. Phi keeps retrying on its own and the rest of sync carries on. If the line does not go away, restart Phi, and send feedback with **Feedback** in the menu at the top right of the window if it still does not.
++
++### What each problem means {#needs-attention}
++
++**Last problem** shows one of these. It stays until the next sync that finishes completely clears it.
++
++| Last problem                             | What it means                                                                                               | What you do                                                                                 |
++| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
++| **Sign-in expired**                      | The sync service no longer accepts this Mac's sign-in.                                                      | Sign in to your Phi account again.                                                          |
++| **No connection**                        | This Mac could not reach the sync service.                                                                  | Nothing. It clears on the next successful sync once you are online.                         |
++| **Server error**                         | The sync service returned an error.                                                                         | Nothing. It clears on the next successful sync.                                             |
++| **Server rejected changes**              | The sync service refused some of this Mac's changes, for example after repeated conflicts with another Mac. | Click **Sync Now**. If it comes back, restart Phi, and send feedback if it persists.        |
++| **Couldn't read data on this Mac**       | Phi could not read some of its own data on this Mac.                                                        | Click **Sync Now**. If it comes back, restart Phi, and send feedback if it persists.        |
++| **Couldn't save sync state on this Mac** | Phi could not save its record of what has synced.                                                           | Click **Sync Now**. If it comes back, restart Phi, and send feedback if it persists.        |
++| **Some synced data couldn't be read**    | Something in your account could not be read on this Mac.                                                    | Click **Sync Now**. If it comes back, restart Phi, and send feedback if it persists.        |
++| **Waiting for a profile to be paired**   | Some synced items wait until a Profile on this Mac is paired with your account.                             | Wait for Phi to set up the Profile, or click **Retry** when the pane shows **Sync paused**. |
++| **Sync needs to be reset**               | The sync data in your account was reset and this Mac's setup no longer matches it.                          | Click **Set up sync again**. See [Set up sync again](#set-up-sync-again).                   |
++
++Items that are held, described under [Details](#sync-details), can also keep the status at **Needs attention** without a problem name. See [Pinned tabs are held](#held-pinned-tabs).
++
++### Details {#sync-details}
++
++**Details** lists your Profiles, each with its status for its browsing data, then a row per kind of Phi data: **Settings**, **Spaces**, **Bookmarks**, **Pinned tabs**, and **URL rules**. Each kind's row describes its most recent sync that had changes, and how long ago that was:
+ 
+-**Details** opens a row per kind of Phi data (Spaces, Bookmarks, Pinned tabs, URL rules, Settings) showing what this Mac recently received, sent, and is still waiting to send, plus a row for each Profile's browsing data. **Sync Now** asks this Mac to sync everything straight away. You rarely need it: Phi is told when another Mac changes something and checks on its own as well, and it will not run two syncs less than a minute apart.
++| Count               | What it counts                                                                                                                                                                                                             |
++| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
++| **Received**        | Changes this Mac got from your account.                                                                                                                                                                                    |
++| **Sent**            | Changes this Mac uploaded.                                                                                                                                                                                                 |
++| **Waiting to send** | Changes on this Mac that are not uploaded yet. A later sync sends them.                                                                                                                                                    |
++| **Held**            | Items this Mac received but cannot apply yet. Phi keeps them until it can, for example a pinned tab whose Profile or Space is not paired on this Mac. Pinned tabs that belong to another pinned tab scope are not counted. |
++
++**Waiting to send** and **Held** appear only when they are not zero. A kind with nothing recent shows **No recent changes**.
++
++### Sync Now {#sync-now}
++
++**Sync Now** asks this Mac to sync everything straight away. You rarely need it: Phi is told when another Mac changes something and checks on its own as well, at most once a minute. **Sync Now** skips that wait. While a sync waits or runs, the button shows progress, and its tooltip says what it is waiting for, such as **Waiting for all profiles to be available**.
++
++When a sync you started does not finish, a line under the status says so until you click again:
++
++- The problem's name, from the table above, when one was recorded during that sync.
++- **Sync did not finish**, when the sync stopped without a specific problem. Try again later. If it keeps happening on one Mac, see [Pinned tabs are held](#held-pinned-tabs).
++- **Couldn't start sync. Try again later.**, when this Mac could not start a sync at all.
++
++A sync that finishes adds no line, and **Last successful sync on this Mac** moves to the new time.
+ 
+ ## Devices
+ 
+@@ -145,6 +224,36 @@ If the pane says **The account's sync data has changed. Syncing Phi data is paus
+ 
+ You also see this on a Mac after **Reset sync** was used on the account's last Mac, because the sync data that Mac was set up with has been deleted.
+ 
++## Troubleshooting {#troubleshooting}
++
++### A second Mac did not get my keyboard shortcuts or open tabs {#missing-shortcuts-and-open-tabs}
++
++That is expected. Keyboard shortcuts from **Settings → Shortcuts** never sync, and neither do ordinary open tabs: only pinned tabs do. AI and agent settings also stay on each Mac. Set them on each Mac where you want them. See [What syncs](#what-syncs).
++
++### One Mac says Sync did not finish and holds pinned tabs {#held-pinned-tabs}
++
++One Mac shows **Sync did not finish**, and its **Pinned tabs** row in **Details** shows **Held** with a number, while the other Mac says **Up to date**. **Held** means this Mac received pinned tabs it cannot place, because the Profile or Space they belong to is not paired here.
++
++The usual cause is that the two Macs' Default Profiles were not matched to each other during setup. Macs paired on Phi 2.12 could end up this way. Since Phi 2.13, setup always matches the Default Profile to your account's default Profile.
++
++To fix it today, on the Mac that holds the pinned tabs, [remove the Mac from sync](#remove-a-mac-from-sync), then set it up again as in [Add another Mac](#add-another-mac). Choose **Merge this Mac with your account** if Phi asks how this Mac should sync. Bookmarks, history, and everything else stay on the Mac while you do this, and its Default Profile is matched to your account's default Profile.
++
++### Sync paused, or Waiting for a profile to be paired {#sync-paused}
++
++A Profile you create after setting up sync is not paired yet. Phi registers it with your account on its own, and sync for that Profile starts once it is done. **Retry** in the Sync pane tries at once. If the pause never clears, check your connection and that you are still signed in, then click **Retry** again.
++
++### Sync says Needs attention {#sync-needs-attention}
++
++**Last problem** names what went wrong. [What each problem means](#needs-attention) lists every problem and what to do about it.
++
++### Couldn't finish replacing this Mac's data {#replace-did-not-finish}
++
++If setup stops with **Couldn't finish replacing this Mac's data.** after you chose **Use your account's data**, click **Retry**. Retry picks up where it stopped, and nothing else changes until it is done. Keep Phi open while it runs; for a large account it can take a few minutes. If you close the window, the next setup continues the same replace, as described under [Finish later](#finish-later).
++
++### A Space's name, icon, color, or theme changed after matching {#account-values-replaced}
++
++That is expected. When you match a Space on this Mac to one in your account, the account's name, icon, color, and theme win, and **Review what changes** shows this before you click **Apply**. To keep this Mac's version, go **Back** at that point and choose **Add as new** for that Space: it then syncs as a separate Space. Once the match is applied, this Mac's old values are not kept, so restyle the Space by hand if you want them back; the change syncs to your other Macs too.
++
+ ## Signing out
+ 
+ Signing out of your Phi account stops sync on that Mac, and nothing from your other Macs arrives until you sign in again. Sign back in to the same account and sync picks up where it left off and catches up on what it missed; the Sync pane tells you if there is anything left to finish. Switching to a different account never mixes the two: each account has its own synced data and its own matching.
+@@ -155,7 +264,7 @@ Signing out of your Phi account stops sync on that Mac, and nothing from your ot
+ - **Signing in is not enough to read it.** A new Mac gets the key only through approval from a Mac that already holds it, or through your recovery code. That is also why a lost code cannot be recovered: the **Forgot your recovery code?** link in setup explains your options, and none of them brings the code back.
+ - **It is still data we hold for you.** The encrypted copy lives on Phinomenon's sync service, so sync is one of the things Phi sends. [Privacy & Your Data](/privacy/) lists the others, and the [Privacy Policy](https://phibrowser.com/privacy/) and [Terms](https://phibrowser.com/terms/) are the authoritative word on all of it.
+ 
+-## Sync or export
++## Sync or export {#sync-or-export}
+ 
+ Sync is for Macs you keep using side by side. For a one-off move to a new Mac, or a copy you keep yourself, **Manage User Data → Export User Data…** in the **Help** menu is the better tool; see [Importing & Exporting](/import-export/).
+ 
