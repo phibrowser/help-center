@@ -24,7 +24,7 @@ Puedes abrir tu Memoria siempre que quieras echar un vistazo. En la nueva pesta�
 
 ### Historias {#stories}
 
-De vez en cuando, Phi te escribe una historia breve: una carta sobre algo de tu navegación reciente, como un tema al que volvías una y otra vez, y sobre lo que parecías estar buscando. Las historias aparecen en una tarjeta en la parte inferior derecha de Nebula. Phi las escribe con un modelo de lenguaje, así que los recuerdos en los que se basa una historia se envían al modelo para escribirla.
+De vez en cuando, Phi te escribe una historia breve: una carta sobre algo de tu navegación reciente, como un tema al que volvías una y otra vez, y sobre lo que parecías estar buscando. Las historias aparecen en una tarjeta en la parte inferior derecha de Nebula. Un modelo de lenguaje las escribe a partir de tus recuerdos.
 
 En la tarjeta puedes:
 

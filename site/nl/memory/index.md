@@ -24,7 +24,7 @@ Je kunt je Geheugen openen wanneer je maar wilt kijken. Op het nieuwe tabblad st
 
 ### Verhalen {#stories}
 
-Af en toe schrijft Phi je een kort verhaal: een brief over iets uit je browsen van de laatste tijd, zoals een onderwerp waar je steeds naar terugging, en waar je naar op zoek leek te zijn. Verhalen verschijnen in een kaart rechtsonder in Nebula. Phi schrijft ze met een taalmodel, dus de herinneringen waarop een verhaal is gebaseerd, worden naar het model gestuurd om het te schrijven.
+Af en toe schrijft Phi je een kort verhaal: een brief over iets uit je browsen van de laatste tijd, zoals een onderwerp waar je steeds naar terugging, en waar je naar op zoek leek te zijn. Verhalen verschijnen in een kaart rechtsonder in Nebula. Een taalmodel schrijft ze op basis van je herinneringen.
 
 Op de kaart kun je:
 

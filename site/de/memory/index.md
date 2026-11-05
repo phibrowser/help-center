@@ -24,7 +24,7 @@ Du kannst deine Erinnerungen jederzeit öffnen und nachsehen. Auf der Seite „N
 
 ### Geschichten {#stories}
 
-Ab und zu schreibt dir Phi eine kurze Geschichte: einen Brief über etwas aus deinem Browsen der letzten Zeit, etwa ein Thema, zu dem du immer wieder zurückgekehrt bist, und darüber, worauf du dabei anscheinend aus warst. Geschichten erscheinen in einer Karte unten rechts in Nebula. Phi schreibt sie mit einem Sprachmodell, deshalb werden die Erinnerungen, auf denen eine Geschichte beruht, zum Schreiben an das Modell gesendet.
+Ab und zu schreibt dir Phi eine kurze Geschichte: einen Brief über etwas aus deinem Browsen der letzten Zeit, etwa ein Thema, zu dem du immer wieder zurückgekehrt bist, und darüber, worauf du dabei anscheinend aus warst. Geschichten erscheinen in einer Karte unten rechts in Nebula. Ein Sprachmodell schreibt sie auf Grundlage deiner Erinnerungen.
 
 Auf der Karte kannst du:
 

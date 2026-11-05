@@ -24,7 +24,7 @@ Vous pouvez ouvrir votre Mémoire quand vous voulez y jeter un œil. Sur le nouv
 
 ### Histoires {#stories}
 
-De temps en temps, Phi vous écrit une courte histoire : une lettre à propos d'un élément de votre navigation récente, comme un sujet auquel vous reveniez sans cesse, et ce que vous sembliez y chercher. Les histoires apparaissent dans une carte, en bas à droite de Nebula. Phi les écrit avec un modèle de langage : les souvenirs sur lesquels s'appuie une histoire sont donc envoyés au modèle pour qu'il l'écrive.
+De temps en temps, Phi vous écrit une courte histoire : une lettre à propos d'un élément de votre navigation récente, comme un sujet auquel vous reveniez sans cesse, et ce que vous sembliez y chercher. Les histoires apparaissent dans une carte, en bas à droite de Nebula. Un modèle de langage les écrit à partir de vos souvenirs.
 
 Sur la carte, vous pouvez :
 
