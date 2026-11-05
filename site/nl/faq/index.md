@@ -212,8 +212,12 @@ Lokaal op je apparaat. Local-first-opslag is een kernprincipe van het ontwerp.
 Ja. Je kunt je geheugengegevens rechtstreeks in Phi bekijken, beheren en verwijderen.
 :::
 
+::: details Wat zijn de verhalen in Nebula?
+Korte brieven die Phi je schrijft over iets uit je recente browsegedrag, geput uit je Geheugen. Ze verschijnen in een kaart op de Nebula-pagina, waar je erdoor kunt bladeren, ze kunt beoordelen, Phi Chat iets over een verhaal kunt vragen of een verhaal als afbeelding kunt delen. Zie [Verhalen](/nl/memory/#stories).
+:::
+
 ::: details Stuurt Phi mijn geheugen naar zijn servers?
-Nee. Geheugengegevens blijven lokaal. Taalmodellen kunnen taken verwerken, maar je persoonlijke geheugen wordt niet verstuurd om te worden opgeslagen of voor training te worden gebruikt.
+Nee. Geheugengegevens blijven lokaal. Taalmodellen kunnen taken verwerken, maar je persoonlijke geheugen wordt niet verstuurd om te worden opgeslagen of voor training te worden gebruikt. De enige uitzondering is een melding die je zelf besluit te versturen: als je het Phi-team iets laat weten over een verhaal en het verhaal of de herinneringen erachter meestuurt, gaan die met je melding naar Phinomenon.
 :::
 
 ::: details Gebruikt Phi mijn gegevens om AI-modellen te trainen?

@@ -212,8 +212,12 @@ Lokal auf deinem Gerät. Local-first-Speicherung ist ein zentrales Gestaltungspr
 Ja. Du kannst deine Erinnerungsdaten direkt in Phi ansehen, verwalten und löschen.
 :::
 
+::: details Was sind die Geschichten in Nebula?
+Kurze Briefe, die Phi dir über etwas aus deinem Browsen der letzten Zeit schreibt, auf Grundlage deiner Erinnerungen. Sie erscheinen in einer Karte auf der Nebula-Seite, wo du durch sie blättern, sie bewerten, Phi Chat zu einer davon fragen oder eine als Bild teilen kannst. Siehe [Geschichten](/de/memory/#stories).
+:::
+
 ::: details Sendet Phi meine Erinnerungen an seine Server?
-Nein. Erinnerungsdaten bleiben lokal. Sprachmodelle können Aufgaben verarbeiten, aber deine persönlichen Erinnerungen werden nicht verschickt, um gespeichert oder für Training verwendet zu werden.
+Nein. Erinnerungsdaten bleiben lokal. Sprachmodelle können Aufgaben verarbeiten, aber deine persönlichen Erinnerungen werden nicht verschickt, um gespeichert oder für Training verwendet zu werden. Die einzige Ausnahme ist ein Bericht, den du bewusst sendest: Wenn du dem Phi-Team etwas zu einer Geschichte mitteilst und die Geschichte oder die Erinnerungen beifügst, auf denen sie beruht, gehen diese mit deinem Bericht an Phinomenon.
 :::
 
 ::: details Nutzt Phi meine Daten, um KI-Modelle zu trainieren?

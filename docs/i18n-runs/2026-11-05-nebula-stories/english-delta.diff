@@ -1,0 +1,42 @@
+diff --git a/site/faq/index.md b/site/faq/index.md
+index 1345085..9ffa056 100644
+--- a/site/faq/index.md
++++ b/site/faq/index.md
+@@ -212,8 +212,12 @@ Locally on your device. Local-first storage is a core design principle.
+ Yes. You can view, manage, and delete your memory data directly inside Phi.
+ :::
+ 
++::: details What are the stories in Nebula?
++Short letters Phi writes you about something in your recent browsing, drawn from your Memory. They appear in a card on the Nebula page, where you can page through them, rate them, ask Phi Chat about one, or share one as an image. See [Stories](/memory/#stories).
++:::
++
+ ::: details Does Phi send my memory to its servers?
+-No. Memory data stays local. Language models may process tasks, but your personal memory is not sent off to be stored or used for training.
++No. Memory data stays local. Language models may process tasks, but your personal memory is not sent off to be stored or used for training. The one exception is a report you choose to send: if you tell the Phi team about a story and include the story or the memories it was written from, they go to Phinomenon with your report.
+ :::
+ 
+ ::: details Does Phi use my data to train AI models?
+diff --git a/site/memory/index.md b/site/memory/index.md
+index 428305d..6a65502 100644
+--- a/site/memory/index.md
++++ b/site/memory/index.md
+@@ -22,6 +22,19 @@ What Memory learns is not a black box. **Nebula** is the current visual Memory v
+ 
+ You can open your Memory whenever you want to look. On the new tab, there is an entry just below the search box. In the browser itself, where to find it depends on your [layout mode](/layouts/): in **Performance** and **Balanced** it sits at the **bottom-left**, and in **Comfortable** it moves to the **top-right**.
+ 
++### Stories {#stories}
++
++Now and then Phi writes you a short story: a letter about something in your recent browsing, such as a topic you kept coming back to, and what you seemed to be after. Stories appear in a card at the bottom-right of Nebula. Phi writes them with a language model, so the memories a story draws on are sent to the model to write it.
++
++On the card you can:
++
++- **Page through your stories** with the arrows, the arrow keys, or a swipe on the trackpad. Unread stories come first.
++- **See what a story is based on.** Click the memory count under the story to list them; their stars light up on the map.
++- **Rate it** with a thumbs up or down and, if you like, a reason. Only your rating and reasons are counted, and nothing from the story is sent.
++- **Tell the Phi team** in the same dialog, under **For the Phi team (optional)**. If you write a note or tick **Include this story** or **Include the memories it was written from**, that goes to Phinomenon with some account and system information.
++- **Ask Phi Chat about this story.** Phi Chat opens with the story and its memories attached, and you type the question.
++- **Share this story** as an image, to X or Discord, or by copying or downloading it. The image shows the whole story.
++
+ ## How the assistant uses it
+ 
+ When you ask the assistant a question, summarize a page, or hand it a task, it draws on what it remembers about you alongside what is in front of you right now, whether that is the current tab or a whole [Split View or Tab Group](/layouts/). That is what lets it answer in a way that fits you without you having to re-explain your situation each time. Memory also feeds the personalized [new tab and its widgets](/new-tab/), where what it knows shows up as something useful rather than staying hidden. For more on reaching and talking to the assistant, see [Meet your assistant](/ai/).

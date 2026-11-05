@@ -22,6 +22,19 @@ Lo que la Memoria aprende no es una caja negra. **Nebula** es la vista visual ac
 
 Puedes abrir tu Memoria siempre que quieras echar un vistazo. En la nueva pestaña hay un acceso justo debajo del cuadro de búsqueda. En el propio navegador, dónde encontrarla depende de tu [modo de diseño](/es/layouts/): en **Rendimiento** y **Equilibrado** está en la **parte inferior izquierda**, y en **Cómodo** se mueve a la **parte superior derecha**.
 
+### Historias {#stories}
+
+De vez en cuando, Phi te escribe una historia breve: una carta sobre algo de tu navegación reciente, como un tema al que volvías una y otra vez, y sobre lo que parecías estar buscando. Las historias aparecen en una tarjeta en la parte inferior derecha de Nebula. Phi las escribe con un modelo de lenguaje, así que los recuerdos en los que se basa una historia se envían al modelo para escribirla.
+
+En la tarjeta puedes:
+
+- **Recorrer tus historias** con las flechas, las teclas de flecha o deslizando en el trackpad. Las historias sin leer aparecen primero.
+- **Ver en qué se basa una historia.** Haz clic en el número de recuerdos que aparece bajo la historia para verlos en una lista; sus estrellas se iluminan en el mapa.
+- **Valorarla** con un pulgar hacia arriba o hacia abajo y, si quieres, un motivo. Solo se cuentan tu valoración y tus motivos, y no se envía nada de la historia.
+- **Contarle algo al equipo de Phi** en el mismo cuadro de diálogo, en **Para el equipo de Phi (opcional)**. Si escribes una nota o marcas **Incluir esta historia** o **Incluir los recuerdos en los que se basa**, eso se envía a Phinomenon junto con cierta información de tu cuenta y del sistema.
+- **Preguntar a Phi Chat sobre esta historia.** Phi Chat se abre con la historia y sus recuerdos adjuntos, y la pregunta la escribes tú.
+- **Compartir esta historia** como imagen, en X o Discord, o copiándola o descargándola. La imagen muestra la historia completa.
+
 ## Cómo la usa el asistente
 
 Cuando le haces una pregunta al asistente, le pides resumir una página o le encargas una tarea, se apoya en lo que recuerda de ti junto con lo que tienes delante en ese momento, ya sea la pestaña actual o toda una [Vista dividida o un Grupo de pestañas](/es/layouts/). Eso es lo que le permite responder de una forma que encaja contigo sin que tengas que volver a explicar tu situación cada vez. La Memoria también alimenta la [nueva pestaña personalizada y sus widgets](/es/new-tab/), donde lo que sabe aparece como algo útil en lugar de quedarse oculto. Para más información sobre cómo llegar al asistente y hablar con él, consulta [Conoce a tu asistente](/es/ai/).
