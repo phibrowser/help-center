@@ -217,7 +217,7 @@ De courtes lettres que Phi vous écrit à propos d'un élément de votre navigat
 :::
 
 ::: details Phi envoie-t-il ma mémoire sur ses serveurs ?
-Non. Les données de mémoire restent locales. Des modèles de langage peuvent traiter des tâches, mais votre mémoire personnelle n'est pas envoyée ailleurs pour être stockée ou utilisée pour l'entraînement. La seule exception est un signalement que vous choisissez d'envoyer : si vous écrivez à l'équipe Phi au sujet d'une histoire en joignant cette histoire ou les souvenirs dont elle est tirée, ces éléments sont envoyés à Phinomenon avec votre signalement.
+Non. Les données de mémoire restent locales. Des modèles de langage peuvent traiter des tâches, mais votre mémoire personnelle n'est pas envoyée ailleurs pour être stockée ou utilisée pour l'entraînement.
 :::
 
 ::: details Phi utilise-t-il mes données pour entraîner des modèles d'IA ?

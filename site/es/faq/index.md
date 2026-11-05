@@ -217,7 +217,7 @@ Cartas breves que Phi te escribe sobre algo de tu navegación reciente, a partir
 :::
 
 ::: details ¿Envía Phi mi memoria a sus servidores?
-No. Los datos de la Memoria se quedan en local. Los modelos de lenguaje pueden procesar tareas, pero tu memoria personal no se envía fuera para almacenarla ni para usarla en entrenamiento. La única excepción es un informe que tú decidas enviar: si le cuentas algo al equipo de Phi sobre una historia e incluyes la historia o los recuerdos en los que se basa, se envían a Phinomenon con tu informe.
+No. Los datos de la Memoria se quedan en local. Los modelos de lenguaje pueden procesar tareas, pero tu memoria personal no se envía fuera para almacenarla ni para usarla en entrenamiento.
 :::
 
 ::: details ¿Usa Phi mis datos para entrenar modelos de IA?

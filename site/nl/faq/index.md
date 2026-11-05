@@ -217,7 +217,7 @@ Korte brieven die Phi je schrijft over iets uit je recente browsegedrag, geput u
 :::
 
 ::: details Stuurt Phi mijn geheugen naar zijn servers?
-Nee. Geheugengegevens blijven lokaal. Taalmodellen kunnen taken verwerken, maar je persoonlijke geheugen wordt niet verstuurd om te worden opgeslagen of voor training te worden gebruikt. De enige uitzondering is een melding die je zelf besluit te versturen: als je het Phi-team iets laat weten over een verhaal en het verhaal of de herinneringen erachter meestuurt, gaan die met je melding naar Phinomenon.
+Nee. Geheugengegevens blijven lokaal. Taalmodellen kunnen taken verwerken, maar je persoonlijke geheugen wordt niet verstuurd om te worden opgeslagen of voor training te worden gebruikt.
 :::
 
 ::: details Gebruikt Phi mijn gegevens om AI-modellen te trainen?

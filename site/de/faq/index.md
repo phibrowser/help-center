@@ -217,7 +217,7 @@ Kurze Briefe, die Phi dir über etwas aus deinem Browsen der letzten Zeit schrei
 :::
 
 ::: details Sendet Phi meine Erinnerungen an seine Server?
-Nein. Erinnerungsdaten bleiben lokal. Sprachmodelle können Aufgaben verarbeiten, aber deine persönlichen Erinnerungen werden nicht verschickt, um gespeichert oder für Training verwendet zu werden. Die einzige Ausnahme ist ein Bericht, den du bewusst sendest: Wenn du dem Phi-Team etwas zu einer Geschichte mitteilst und die Geschichte oder die Erinnerungen beifügst, auf denen sie beruht, gehen diese mit deinem Bericht an Phinomenon.
+Nein. Erinnerungsdaten bleiben lokal. Sprachmodelle können Aufgaben verarbeiten, aber deine persönlichen Erinnerungen werden nicht verschickt, um gespeichert oder für Training verwendet zu werden.
 :::
 
 ::: details Nutzt Phi meine Daten, um KI-Modelle zu trainieren?
