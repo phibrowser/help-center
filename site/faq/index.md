@@ -217,7 +217,7 @@ Short letters Phi writes you about something in your recent browsing, drawn from
 :::
 
 ::: details Does Phi send my memory to its servers?
-No. Memory data stays local. Language models may process tasks, but your personal memory is not sent off to be stored or used for training. The one exception is a report you choose to send: if you tell the Phi team about a story and include the story or the memories it was written from, they go to Phinomenon with your report.
+No. Memory data stays local. Language models may process tasks, but your personal memory is not sent off to be stored or used for training.
 :::
 
 ::: details Does Phi use my data to train AI models?

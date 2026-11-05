@@ -1,8 +1,7 @@
 # i18n run 2026-11-05-nebula-stories
 
 Documents Nebula stories, the letters Phi writes from a person's Memory, which
-had no Help coverage, and names the story report as the one way memory leaves
-for Phinomenon in the FAQ. See `english-delta.diff` for the exact English
+had no Help coverage, with a matching FAQ question. See `english-delta.diff` for the exact English
 hunks.
 
 ## What this run changes
@@ -13,8 +12,7 @@ writes them, and six bullets (page through, see what a story is based on,
 rate, tell the Phi team, ask Phi Chat, share as an image).
 
 `site/faq/index.md`: a new question, "What are the stories in Nebula?", right
-before "Does Phi send my memory to its servers?", and one added sentence in
-that answer for the story report.
+before "Does Phi send my memory to its servers?".
 
 ## Evidence for the English
 
@@ -36,7 +34,8 @@ as the app shows them in that locale.
 Eight translator agents, one per locale, edited `site/<locale>/memory/index.md`,
 `site/<locale>/faq/index.md` and `localization/<locale>/status.json`. Trims
 made at review (timings, the sample count label, the single-story removal
-line) were applied by the coordinator in all eight locales. Gates re-run by
+line, and a story-report exception sentence in the FAQ's memory answer, which
+is back to its earlier text) were applied by the coordinator in all eight locales. Gates re-run by
 the coordinator over the finished tree:
 
 - every locale's Memory page has H1/H2/H3 = 1/6/1 like English, one

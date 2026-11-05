@@ -6,8 +6,7 @@ The English Memory page gains a `### Stories {#stories}` section at the end of
 `## Nebula`: what a story is, where its card sits, that a language model
 writes them, and six bullets for what the card lets you do. The FAQ gains one
 `::: details` question ("What are the stories in Nebula?") placed right before
-"Does Phi send my memory to its servers?", and that answer gains one sentence
-naming the story report as the one exception. See `english-delta.diff` for the
+"Does Phi send my memory to its servers?". See `english-delta.diff` for the
 exact hunks.
 
 Background for meaning (do not add any of it to the page): a story is a short
@@ -27,7 +26,7 @@ nothing until the reader types. Sharing makes an image on the device.
    other text on the page.
 2. Apply the FAQ hunks to `site/<locale>/faq/index.md`: the new `::: details`
    question right before the locale's "Does Phi send my memory to its
-   servers?" entry, and the added last sentence of that entry. Keep the
+   servers?" entry. Keep the
    `::: details` format. Do not re-translate other entries.
 3. Internal link: the FAQ entry links to `/<locale>/memory/#stories`.
 4. Bold UI labels exactly as the app shows them in the locale (BINDING):
@@ -42,7 +41,7 @@ nothing until the reader types. Sharing makes an image on the device.
    memories a story draws on go to the model; only the rating and reasons are
    counted and nothing from the story is sent; the report sends the note, the
    story or the memories to Phinomenon with some account and system
-   information; and the FAQ's one exception sentence.
+   information.
 7. House rules: no em or en dashes anywhere, no 您 in Chinese, no Sie or
    usted, the locale's existing register, quote characters and spacing as the
    page already uses them (`locale-rules.md`). CJK bold spans that break the

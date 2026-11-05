@@ -1,8 +1,8 @@
 diff --git a/site/faq/index.md b/site/faq/index.md
-index 1345085..9ffa056 100644
+index 1345085..9942faa 100644
 --- a/site/faq/index.md
 +++ b/site/faq/index.md
-@@ -212,8 +212,12 @@ Locally on your device. Local-first storage is a core design principle.
+@@ -212,6 +212,10 @@ Locally on your device. Local-first storage is a core design principle.
  Yes. You can view, manage, and delete your memory data directly inside Phi.
  :::
  
@@ -11,11 +11,8 @@ index 1345085..9ffa056 100644
 +:::
 +
  ::: details Does Phi send my memory to its servers?
--No. Memory data stays local. Language models may process tasks, but your personal memory is not sent off to be stored or used for training.
-+No. Memory data stays local. Language models may process tasks, but your personal memory is not sent off to be stored or used for training. The one exception is a report you choose to send: if you tell the Phi team about a story and include the story or the memories it was written from, they go to Phinomenon with your report.
+ No. Memory data stays local. Language models may process tasks, but your personal memory is not sent off to be stored or used for training.
  :::
- 
- ::: details Does Phi use my data to train AI models?
 diff --git a/site/memory/index.md b/site/memory/index.md
 index 428305d..6a65502 100644
 --- a/site/memory/index.md
