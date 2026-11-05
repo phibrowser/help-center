@@ -212,8 +212,12 @@ Locally on your device. Local-first storage is a core design principle.
 Yes. You can view, manage, and delete your memory data directly inside Phi.
 :::
 
+::: details What are the stories in Nebula?
+Short letters Phi writes you about something in your recent browsing, drawn from your Memory. They appear in a card on the Nebula page, where you can page through them, rate them, ask Phi Chat about one, or share one as an image. See [Stories](/memory/#stories).
+:::
+
 ::: details Does Phi send my memory to its servers?
-No. Memory data stays local. Language models may process tasks, but your personal memory is not sent off to be stored or used for training.
+No. Memory data stays local. Language models may process tasks, but your personal memory is not sent off to be stored or used for training. The one exception is a report you choose to send: if you tell the Phi team about a story and include the story or the memories it was written from, they go to Phinomenon with your report.
 :::
 
 ::: details Does Phi use my data to train AI models?
