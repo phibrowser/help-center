@@ -22,6 +22,19 @@ What Memory learns is not a black box. **Nebula** is the current visual Memory v
 
 You can open your Memory whenever you want to look. On the new tab, there is an entry just below the search box. In the browser itself, where to find it depends on your [layout mode](/layouts/): in **Performance** and **Balanced** it sits at the **bottom-left**, and in **Comfortable** it moves to the **top-right**.
 
+### Stories {#stories}
+
+Now and then Phi writes you a short story: a letter about something in your recent browsing, such as a topic you kept coming back to, and what you seemed to be after. Stories appear in a card at the bottom-right of Nebula. A language model writes them from your memories.
+
+On the card you can:
+
+- **Page through your stories** with the arrows, the arrow keys, or a swipe on the trackpad. Unread stories come first.
+- **See what a story is based on.** Click the memory count under the story to list them; their stars light up on the map.
+- **Rate it** with a thumbs up or down and, if you like, a reason. Only your rating and reasons are counted, and nothing from the story is sent.
+- **Tell the Phi team** in the same dialog, under **For the Phi team (optional)**. If you write a note or tick **Include this story** or **Include the memories it was written from**, that goes to Phinomenon with some account and system information.
+- **Ask Phi Chat about this story.** Phi Chat opens with the story and its memories attached, and you type the question.
+- **Share this story** as an image, to X or Discord, or by copying or downloading it. The image shows the whole story.
+
 ## How the assistant uses it
 
 When you ask the assistant a question, summarize a page, or hand it a task, it draws on what it remembers about you alongside what is in front of you right now, whether that is the current tab or a whole [Split View or Tab Group](/layouts/). That is what lets it answer in a way that fits you without you having to re-explain your situation each time. Memory also feeds the personalized [new tab and its widgets](/new-tab/), where what it knows shows up as something useful rather than staying hidden. For more on reaching and talking to the assistant, see [Meet your assistant](/ai/).

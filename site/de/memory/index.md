@@ -22,6 +22,19 @@ Was die Erinnerungen lernen, ist keine Blackbox. **Nebula** ist die aktuelle vis
 
 Du kannst deine Erinnerungen jederzeit öffnen und nachsehen. Auf der Seite „Neuer Tab“ gibt es direkt unter dem Suchfeld einen Einstieg. Im Browser selbst hängt der Ort von deinem [Layoutmodus](/de/layouts/) ab: In **Performance** und **Ausgewogen** sitzt er **unten links**, in **Komfortabel** wandert er nach **oben rechts**.
 
+### Geschichten {#stories}
+
+Ab und zu schreibt dir Phi eine kurze Geschichte: einen Brief über etwas aus deinem Browsen der letzten Zeit, etwa ein Thema, zu dem du immer wieder zurückgekehrt bist, und darüber, worauf du dabei anscheinend aus warst. Geschichten erscheinen in einer Karte unten rechts in Nebula. Ein Sprachmodell schreibt sie auf Grundlage deiner Erinnerungen.
+
+Auf der Karte kannst du:
+
+- **Durch deine Geschichten blättern**: mit den Pfeilen, den Pfeiltasten oder durch Streichen auf dem Trackpad. Ungelesene Geschichten kommen zuerst.
+- **Nachsehen, worauf eine Geschichte beruht.** Klicke unter der Geschichte auf die Anzahl der Erinnerungen, um sie aufzulisten; auf der Sternenkarte leuchten dann ihre Sterne auf.
+- **Die Geschichte bewerten**: mit „Daumen hoch“ oder „Daumen runter“ und, wenn du magst, mit einem Grund. Gezählt werden nur deine Bewertung und die gewählten Gründe, und aus der Geschichte wird nichts gesendet.
+- **Dem Phi-Team etwas mitteilen**: im selben Dialog, unter **Für das Phi-Team (optional)**. Schreibst du eine Notiz oder setzt du ein Häkchen bei **Diese Geschichte beifügen** oder **Die Erinnerungen beifügen, auf denen er beruht**, geht das zusammen mit einigen Konto- und Systeminformationen an Phinomenon.
+- **Phi Chat zu dieser Geschichte fragen.** Phi Chat öffnet sich mit der Geschichte und ihren Erinnerungen als Anhang, und die Frage tippst du selbst ein.
+- **Diese Geschichte teilen**: als Bild, auf X oder Discord oder indem du das Bild kopierst oder herunterlädst. Das Bild zeigt die ganze Geschichte.
+
 ## Wie der Assistent sie nutzt
 
 Wenn du dem Assistenten eine Frage stellst, eine Seite zusammenfassen lässt oder ihm eine Aufgabe übergibst, zieht er heran, was er über dich weiß, zusammen mit dem, was gerade vor dir liegt, ob das der aktuelle Tab ist oder eine ganze [Split View oder Tab-Gruppe](/de/layouts/). Genau das erlaubt ihm, so zu antworten, dass es zu dir passt, ohne dass du deine Situation jedes Mal neu erklären musst. Die Erinnerungen speisen auch den personalisierten [neuen Tab mit seinen Widgets](/de/new-tab/), wo das Gelernte als etwas Nützliches auftaucht, statt verborgen zu bleiben. Mehr dazu, wie du den Assistenten erreichst und mit ihm sprichst, steht in [Lerne deinen Assistenten kennen](/de/ai/).

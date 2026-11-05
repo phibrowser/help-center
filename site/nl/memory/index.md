@@ -22,6 +22,19 @@ Wat Geheugen leert, is geen zwarte doos. **Nebula** is de huidige visuele weerga
 
 Je kunt je Geheugen openen wanneer je maar wilt kijken. Op het nieuwe tabblad staat een ingang net onder het zoekvak. In de browser zelf hangt de plek af van je [lay-outmodus](/nl/layouts/): in **Prestaties** en **Gebalanceerd** zit hij **linksonder**, en in **Comfortabel** verhuist hij naar **rechtsboven**.
 
+### Verhalen {#stories}
+
+Af en toe schrijft Phi je een kort verhaal: een brief over iets uit je browsen van de laatste tijd, zoals een onderwerp waar je steeds naar terugging, en waar je naar op zoek leek te zijn. Verhalen verschijnen in een kaart rechtsonder in Nebula. Een taalmodel schrijft ze op basis van je herinneringen.
+
+Op de kaart kun je:
+
+- **Door je verhalen bladeren** met de pijlen, de pijltoetsen of door op de trackpad te swipen. Ongelezen verhalen komen eerst.
+- **Zien waarop een verhaal is gebaseerd.** Klik op het aantal herinneringen onder het verhaal om ze in een lijst te tonen; hun sterren lichten dan op in Nebula.
+- **Een verhaal beoordelen** met een duim omhoog of omlaag en, als je wilt, een reden. Alleen je beoordeling en redenen worden meegeteld, en er wordt niets uit het verhaal verzonden.
+- **Het Phi-team iets laten weten** in hetzelfde dialoogvenster, onder **Voor het Phi-team (optioneel)**. Als je een opmerking schrijft, of **Dit verhaal meesturen** of **De herinneringen achter dit verhaal meesturen** aanvinkt, gaat dat met bepaalde account- en systeeminformatie naar Phinomenon.
+- **Phi Chat een vraag stellen over dit verhaal.** Phi Chat gaat open met het verhaal en de bijbehorende herinneringen als bijlage, en jij typt de vraag.
+- **Dit verhaal delen** als afbeelding, op X of Discord, of door het te kopiëren of te downloaden. De afbeelding toont het hele verhaal.
+
 ## Hoe de assistent het gebruikt
 
 Stel je de assistent een vraag, laat je een pagina samenvatten of geef je hem een taak, dan gebruikt hij wat hij over je onthouden heeft naast wat er nu voor je staat, of dat nu het huidige tabblad is of een hele [Split View of Tabbladgroep](/nl/layouts/). Daardoor kan hij antwoorden op een manier die bij jou past, zonder dat je telkens opnieuw je situatie hoeft uit te leggen. Geheugen voedt ook het gepersonaliseerde [nieuwe tabblad met zijn widgets](/nl/new-tab/), waar wat het weet als iets nuttigs terugkomt in plaats van verborgen te blijven. Meer over hoe je de assistent bereikt en met hem praat, lees je in [Maak kennis met je assistent](/nl/ai/).
