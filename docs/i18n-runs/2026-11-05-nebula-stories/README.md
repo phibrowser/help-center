@@ -34,8 +34,8 @@ as the app shows them in that locale.
 Eight translator agents, one per locale, edited `site/<locale>/memory/index.md`,
 `site/<locale>/faq/index.md` and `localization/<locale>/status.json`. Trims
 made at review (timings, the sample count label, the single-story removal
-line, and a story-report exception sentence in the FAQ's memory answer, which
-is back to its earlier text) were applied by the coordinator in all eight locales. Gates re-run by
+line, a story-report exception sentence in the FAQ's memory answer, which
+is back to its earlier text, and a shorter language-model sentence) were applied by the coordinator in all eight locales. Gates re-run by
 the coordinator over the finished tree:
 
 - every locale's Memory page has H1/H2/H3 = 1/6/1 like English, one

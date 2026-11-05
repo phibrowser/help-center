@@ -24,7 +24,7 @@ You can open your Memory whenever you want to look. On the new tab, there is an 
 
 ### Stories {#stories}
 
-Now and then Phi writes you a short story: a letter about something in your recent browsing, such as a topic you kept coming back to, and what you seemed to be after. Stories appear in a card at the bottom-right of Nebula. Phi writes them with a language model, so the memories a story draws on are sent to the model to write it.
+Now and then Phi writes you a short story: a letter about something in your recent browsing, such as a topic you kept coming back to, and what you seemed to be after. Stories appear in a card at the bottom-right of Nebula. A language model writes them from your memories.
 
 On the card you can:
 

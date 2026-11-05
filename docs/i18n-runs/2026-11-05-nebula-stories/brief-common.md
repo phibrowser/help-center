@@ -37,8 +37,8 @@ nothing until the reader types. Sharing makes an image on the device.
    the card says.
 5. Product names stay English: Phi, Phi Chat, Nebula, Phinomenon, X, Discord.
    Memory, Profile and the rest follow `product-glossary.md`.
-6. Keep every disclosure: a language model writes the stories, so the
-   memories a story draws on go to the model; only the rating and reasons are
+6. Keep every disclosure: a language model writes the stories from the
+   reader's memories; only the rating and reasons are
    counted and nothing from the story is sent; the report sends the note, the
    story or the memories to Phinomenon with some account and system
    information.
