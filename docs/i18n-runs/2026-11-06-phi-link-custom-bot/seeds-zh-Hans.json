@@ -1,0 +1,9 @@
+{
+  "zh-Hans": {
+    "phi-link": {
+      "automation": "Phi Link 官方机器人已下线。要在 Telegram 中使用 Phi，请连接你自己的 Telegram 机器人。你可以为它设置名字和头像。\n\n### 设置自己的机器人\n\n1. 在 Telegram 中打开 **@BotFather**，按提示创建机器人，复制它提供的 **Bot Token**。\n2. 登录 Phi，打开**设置 → Phi 与 AI → Phi Link**。\n3. 在**自定义 Telegram 机器人**中粘贴 Token，验证并保存。\n4. 在 Telegram 中打开你创建的机器人，发送一条消息，测试能否收到回复。\n\n这个机器人仅供你个人使用，请不要分享给他人或邀请他人使用。也请妥善保管 Bot Token，不要泄露给他人。如果验证失败，请检查 Token 和设置中的错误提示。如果提示 webhook 冲突，这个机器人可能正在被其他应用使用。\n\n### 如果你之前使用官方机器人\n\n请按上面的步骤创建并配置自己的机器人。测试能正常收发消息后，可以在设置中解除旧的官方机器人绑定。解除旧绑定不会删除你配置的自定义机器人。\n\n### 检查连接状态\n\n<strong>已关联（Linked）</strong>表示机器人服务正在运行。请在 Telegram 中发送消息，确认能收到回复。要更换机器人，可以先在设置中移除当前机器人，再添加新的机器人。\n",
+      "faqSetup": "Phi Link 官方机器人已下线。请通过 Telegram 的 **@BotFather** 创建自己的机器人，然后在**设置 → Phi 与 AI → Phi Link → 自定义 Telegram 机器人**中粘贴、验证并保存 **Bot Token**。在 Telegram 中打开自己的机器人，发送一条消息测试连接。完整步骤见[设置指南](/zh-Hans/automation/#phi-link)。",
+      "faqIdentity": "是的。你通过自己的 Telegram 机器人使用 Phi 助手，并可以自定义机器人的名字和头像。"
+    }
+  }
+}

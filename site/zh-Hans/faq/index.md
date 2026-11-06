@@ -281,7 +281,7 @@ Phi Link 把 Phi Browser 连到 Telegram，让你在手机上使用助手，离�
 :::
 
 ::: details 怎么设置 Phi Link？
-两种方式：使用官方的 Phi Link 机器人，这是最省事的路径，扫一个二维码、点一下就完成；或者通过 BotFather 创建你自己的 Telegram 机器人，把它的令牌粘贴到 Phi 的设置里。
+Phi Link 官方机器人已下线。请通过 Telegram 的 **@BotFather** 创建自己的机器人，然后在**设置 → Phi 与 AI → Phi Link → 自定义 Telegram 机器人**中粘贴、验证并保存 **Bot Token**。在 Telegram 中打开自己的机器人，发送一条消息测试连接。完整步骤见[设置指南](/zh-Hans/automation/#phi-link)。
 :::
 
 ::: details Phi Link 能做什么？
@@ -289,7 +289,7 @@ Phi Link 把 Phi Browser 连到 Telegram，让你在手机上使用助手，离�
 :::
 
 ::: details Phi Link 用的是同一个助手身份吗？
-是的。同一个助手身份会延续到手机上，桌面和手机体验一致；如果用你自己的机器人，还可以做一些自定义。
+是的。你通过自己的 Telegram 机器人使用 Phi 助手，并可以自定义机器人的名字和头像。
 :::
 
 ## 定价与可用性

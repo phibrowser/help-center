@@ -1,0 +1,9 @@
+{
+  "zh-Hant": {
+    "phi-link": {
+      "automation": "Phi Link 官方機器人已停止服務。若要在 Telegram 中使用 Phi，請連接你自己的 Telegram 機器人。你可以自行設定機器人的名稱和頭像。\n\n### 設定自己的機器人\n\n1. 在 Telegram 中開啟 **@BotFather**，依照指示建立機器人，並複製它提供的 **Bot Token**。\n2. 登入 Phi，開啟**設定 → Phi 與 AI → Phi Link**。\n3. 在**自訂 Telegram 機器人**中貼上 Token，驗證並儲存。\n4. 在 Telegram 中開啟自己的機器人，傳送一則訊息來測試連線。\n\n這個機器人僅供你個人使用，請勿分享給他人或邀請他人使用。也請妥善保管 Bot Token，不要洩露給他人。如果驗證失敗，請檢查 Token 和設定中顯示的錯誤訊息。如果出現 webhook 衝突，可能是其他應用程式正在使用這個機器人。\n\n### 如果你之前使用官方機器人\n\n請依照上面的步驟建立並設定自己的機器人。測試完成後，你可以在設定中解除舊的官方機器人綁定。解除官方機器人綁定不會移除你設定的自訂機器人。\n\n### 檢查連線\n\n<strong>已連結（Linked）</strong>表示機器人服務正在執行。請在 Telegram 中傳送訊息，確認能收到回覆。如果要更換機器人，請先在設定中移除目前的機器人，再加入新的機器人。\n",
+      "faqSetup": "Phi Link 官方機器人已停止服務。請透過 Telegram 的 **@BotFather** 建立自己的機器人，然後在**設定 → Phi 與 AI → Phi Link → 自訂 Telegram 機器人**中貼上、驗證並儲存 **Bot Token**。在 Telegram 中開啟自己的機器人，傳送一則測試訊息。完整步驟請見[設定指南](/zh-Hant/automation/#phi-link)。",
+      "faqIdentity": "是的。你透過自己的 Telegram 機器人使用 Phi 助理，並可以自訂機器人的名稱和頭像。"
+    }
+  }
+}

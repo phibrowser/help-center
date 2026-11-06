@@ -45,9 +45,21 @@ Les tâches planifiées doivent continuer à s'exécuter même quand la fenêtre
 - être notifié quand des tâches réussissent ou échouent,
 - poursuivre vos flux de travail loin du navigateur.
 
-Vous pouvez le configurer de deux façons :
+Le bot officiel de Phi Link n'est plus disponible. Pour utiliser Phi depuis Telegram, connectez votre propre bot Telegram. Vous pouvez choisir son nom et son avatar.
 
-- **Bot officiel de Phi Link**, la voie la plus directe : scannez un code QR, terminez la configuration en un clic, et c'est réglé.
-- **Votre propre bot Telegram**, pour plus de contrôle : créez un bot via le BotFather de Telegram, générez un jeton et collez-le dans les paramètres de Phi. Vous pouvez ainsi personnaliser le nom et l'avatar du bot.
+### Configurer votre bot
 
-L'identité de votre assistant reste la même, si bien que l'expérience reste cohérente entre l'ordinateur et le téléphone.
+1. Ouvrez **@BotFather** dans Telegram et suivez ses instructions pour créer un bot. Copiez le **Bot Token** qu'il vous fournit.
+2. Connectez-vous à Phi et ouvrez **Réglages → Phi et IA → Phi Link**.
+3. Dans **Bot Telegram personnalisé**, collez votre jeton, vérifiez-le et enregistrez-le.
+4. Ouvrez votre bot dans Telegram et envoyez un message pour tester la connexion.
+
+Votre bot est réservé à votre usage personnel. Ne le partagez pas avec d'autres personnes et ne les invitez pas à l'utiliser. Gardez votre Bot Token confidentiel. Si la vérification échoue, vérifiez le jeton et l'erreur affichée dans les réglages. Un conflit de webhook peut indiquer qu'une autre app utilise déjà le bot.
+
+### Si vous utilisiez le bot officiel
+
+Créez et configurez votre propre bot en suivant les étapes ci-dessus. Une fois que vous l'avez testé, vous pouvez dissocier l'ancien bot officiel dans les réglages. Cela ne supprime pas votre bot personnalisé.
+
+### Vérifier la connexion
+
+**Associé** signifie que le service du bot est en cours d'exécution. Envoyez un message dans Telegram pour vérifier que vous recevez une réponse. Pour remplacer le bot, supprimez le bot actuel dans les réglages, puis ajoutez le nouveau.
