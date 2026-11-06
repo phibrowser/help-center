@@ -281,7 +281,7 @@ Phi Link는 Phi Browser를 Telegram과 연결해 줘요. 휴대폰에서 어시�
 :::
 
 ::: details Phi Link는 어떻게 설정하나요?
-두 가지 방법이 있어요. 공식 Phi Link 봇을 사용하는 방법이 가장 간단해요. QR 코드를 스캔하고 클릭 한 번이면 끝나요. 아니면 BotFather로 자기만의 Telegram 봇을 만들고, 그 토큰을 Phi 설정에 붙여넣으면 돼요.
+공식 Phi Link 봇은 서비스가 종료됐어요. Telegram의 **@BotFather**로 나만의 봇을 만든 다음 **설정 → Phi 및 AI → Phi Link → 사용자 지정 Telegram 봇**에 **Bot Token**을 붙여 넣고 확인한 후 저장하세요. Telegram에서 만든 봇을 열고 테스트 메시지를 보내세요. 자세한 내용은 [설정 가이드](/ko/automation/#phi-link)를 참고하세요.
 :::
 
 ::: details Phi Link로 무엇을 할 수 있나요?
@@ -289,7 +289,7 @@ Phi Link는 Phi Browser를 Telegram과 연결해 줘요. 휴대폰에서 어시�
 :::
 
 ::: details Phi Link도 같은 어시스턴트 정체성을 쓰나요?
-네. 같은 어시스턴트 정체성이 그대로 이어져서 데스크톱과 휴대폰에서 일관된 경험을 제공해요. 자기 봇을 사용하는 경우에는 원하는 대로 맞춤 설정할 수도 있어요.
+네. 나만의 Telegram 봇을 통해 Phi 어시스턴트를 사용해요. 봇의 이름과 아바타는 원하는 대로 설정할 수 있어요.
 :::
 
 ## 가격과 제공 현황

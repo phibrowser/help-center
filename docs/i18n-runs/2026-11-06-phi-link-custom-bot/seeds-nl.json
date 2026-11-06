@@ -1,0 +1,9 @@
+{
+  "nl": {
+    "phi-link": {
+      "automation": "De officiële Phi Link-bot is stopgezet. Verbind je eigen Telegram-bot om Phi via Telegram te gebruiken. Je kunt zelf de naam en avatar kiezen.\n\n### Je bot instellen\n\n1. Open **@BotFather** in Telegram en volg de instructies om een bot te maken. Kopieer de **Bot Token** die je krijgt.\n2. Meld je aan bij Phi en open **Instellingen → Phi & AI → Phi Link**.\n3. Plak je token onder **Aangepaste Telegram-bot**, verifieer het en sla het op.\n4. Open je bot in Telegram en stuur een bericht om de verbinding te testen.\n\nJe bot is alleen voor persoonlijk gebruik. Deel hem niet met anderen en nodig anderen niet uit om hem te gebruiken. Houd je Bot Token geheim. Als de verificatie mislukt, controleer dan het token en de foutmelding in de instellingen. Een webhookconflict kan betekenen dat een andere app de bot al gebruikt.\n\n### Als je de officiële bot gebruikte\n\nMaak je eigen bot en stel hem in met de stappen hierboven. Nadat je hem hebt getest, kun je de oude officiële bot ontkoppelen in de instellingen. Het ontkoppelen van de officiële bot verwijdert je eigen bot niet.\n\n### De verbinding controleren\n\n**Gekoppeld** betekent dat de botservice actief is. Stuur een bericht in Telegram om te controleren of je antwoord krijgt. Wil je de bot vervangen, verwijder dan de huidige bot in de instellingen en voeg de nieuwe toe.\n",
+      "faqSetup": "De officiële Phi Link-bot is stopgezet. Maak je eigen bot met **@BotFather** van Telegram. Plak de **Bot Token** vervolgens onder **Instellingen → Phi & AI → Phi Link → Aangepaste Telegram-bot**, verifieer het token en sla het op. Open je bot in Telegram en stuur een testbericht. Zie [de installatiehandleiding](/nl/automation/#phi-link).",
+      "faqIdentity": "Ja. Je gebruikt je Phi-assistent via je eigen Telegram-bot, waarvan je de naam en avatar kunt aanpassen."
+    }
+  }
+}

@@ -1,0 +1,3938 @@
+{
+  "zh-Hans": {
+    "settings.ai.phiLink.sectionTitle": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Link"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Link"
+        }
+      }
+    },
+    "settings.ai.phiSentinel.sectionTitle": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Sentinel"
+        }
+      }
+    },
+    "settings.phiLink.customBot.awaitingLink": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Open Telegram to finish linking"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "打开 Telegram 以完成关联"
+        }
+      }
+    },
+    "settings.phiLink.customBot.botFatherLink": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "here to begin the @BotFather"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "点此开始使用 @BotFather"
+        }
+      }
+    },
+    "settings.phiLink.customBot.configuredStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Configured"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "已配置"
+        }
+      }
+    },
+    "settings.phiLink.customBot.connectButton": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Connect in Telegram"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "在 Telegram 中连接"
+        }
+      }
+    },
+    "settings.phiLink.customBot.description": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Setting up your own Telegram bot using Telegram's @BotFather"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "使用 Telegram 的 @BotFather 设置你自己的 Telegram 机器人"
+        }
+      }
+    },
+    "settings.phiLink.customBot.genericError": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Error"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "错误"
+        }
+      }
+    },
+    "settings.phiLink.customBot.guide.prefixText": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Click "
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "点按 "
+        }
+      }
+    },
+    "settings.phiLink.customBot.guide.suffixText": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": " Telegram bot creation and customization process, follow the on-screen instructions and paste the Bot Token below"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": " Telegram 机器人的创建与自定义流程，请按照屏幕上的说明操作，并将机器人令牌粘贴到下方"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkedStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linked"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "已关联"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkStatus.linked": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linked"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "已关联"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkStatus.linking": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linking..."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "正在关联…"
+        }
+      }
+    },
+    "settings.phiLink.customBot.notConfiguredStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Not configured"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "未配置"
+        }
+      }
+    },
+    "settings.phiLink.customBot.removeAction": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Remove"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "移除"
+        }
+      }
+    },
+    "settings.phiLink.customBot.saveButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Save"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "保存"
+        }
+      }
+    },
+    "settings.phiLink.customBot.serviceIssueStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Service issue"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "服务异常"
+        }
+      }
+    },
+    "settings.phiLink.customBot.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel service is unavailable. Check whether it started normally."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Sentinel 服务不可用。请检查它是否正常启动。"
+        }
+      }
+    },
+    "settings.phiLink.customBot.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Custom Telegram bot"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "自定义 Telegram 机器人"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.hideButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Hide"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "隐藏"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.label": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Bot Token"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "机器人令牌"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.showButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Show"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "显示"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verificationFailure": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verification failed. Please check the token and try again."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "验证失败。请检查令牌后重试。"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verificationSuccess": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Token verified successfully"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "令牌验证成功"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verifyAction": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verify"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "验证"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verifyButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verify"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "验证"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.retirementNotice": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "The official Telegram bot has been retired. Please set up and switch to your own bot as soon as possible."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "官方 Telegram 机器人已停止服务。请尽快设置并切换到你自己的机器人。"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel service is unavailable. Check whether it started normally."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Sentinel 服务不可用。请检查它是否正常启动。"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.telegramIDLabel": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Telegram ID"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Telegram ID"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Official Phi Link Telegram bot"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Link 官方 Telegram 机器人"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.unlinkButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Unlink"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "取消关联"
+        }
+      }
+    },
+    "settings.phiLink.sectionDescription": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Using Telegram to send and receive messages with %@"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "通过 Telegram 与 %@ 收发消息"
+        }
+      }
+    },
+    "settings.phiLink.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "The local IM service is unavailable. Check whether Phi Sentinel started normally and the IM service is running."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "本地 IM 服务不可用。请检查 Phi Sentinel 是否正常启动，以及 IM 服务是否正在运行。"
+        }
+      }
+    },
+    "settings.phiLink.sessionExpiredMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Your Phi session has expired. Please sign in again, then retry Phi Link."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "你的 Phi 会话已过期。请重新登录，然后重试 Phi Link。"
+        }
+      }
+    },
+    "settings.privacy.contentBlocking.list.phiSpecific.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Blocklists"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Blocklists"
+        }
+      }
+    }
+  },
+  "zh-Hant": {
+    "settings.ai.phiLink.sectionTitle": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Link"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Link"
+        }
+      }
+    },
+    "settings.ai.phiSentinel.sectionTitle": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Sentinel"
+        }
+      }
+    },
+    "settings.phiLink.customBot.awaitingLink": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Open Telegram to finish linking"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "開啟 Telegram 以完成連結"
+        }
+      }
+    },
+    "settings.phiLink.customBot.botFatherLink": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "here to begin the @BotFather"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "這裡開始使用 @BotFather"
+        }
+      }
+    },
+    "settings.phiLink.customBot.configuredStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Configured"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "已設定"
+        }
+      }
+    },
+    "settings.phiLink.customBot.connectButton": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Connect in Telegram"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "在 Telegram 中連線"
+        }
+      }
+    },
+    "settings.phiLink.customBot.description": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Setting up your own Telegram bot using Telegram's @BotFather"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "透過 Telegram 的 @BotFather 設定你自己的 Telegram 機器人"
+        }
+      }
+    },
+    "settings.phiLink.customBot.genericError": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Error"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "錯誤"
+        }
+      }
+    },
+    "settings.phiLink.customBot.guide.prefixText": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Click "
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "按一下 "
+        }
+      }
+    },
+    "settings.phiLink.customBot.guide.suffixText": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": " Telegram bot creation and customization process, follow the on-screen instructions and paste the Bot Token below"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": " Telegram 機器人的建立與自訂流程，請依照畫面上的指示操作，並將 Bot Token 貼到下方"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkedStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linked"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "已連結"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkStatus.linked": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linked"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "已連結"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkStatus.linking": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linking..."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "連結中…"
+        }
+      }
+    },
+    "settings.phiLink.customBot.notConfiguredStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Not configured"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "尚未設定"
+        }
+      }
+    },
+    "settings.phiLink.customBot.removeAction": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Remove"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "移除"
+        }
+      }
+    },
+    "settings.phiLink.customBot.saveButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Save"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "儲存"
+        }
+      }
+    },
+    "settings.phiLink.customBot.serviceIssueStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Service issue"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "服務異常"
+        }
+      }
+    },
+    "settings.phiLink.customBot.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel service is unavailable. Check whether it started normally."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Sentinel 服務無法使用。請檢查它是否正常啟動。"
+        }
+      }
+    },
+    "settings.phiLink.customBot.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Custom Telegram bot"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "自訂 Telegram 機器人"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.hideButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Hide"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "隱藏"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.label": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Bot Token"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Bot Token"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.showButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Show"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "顯示"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verificationFailure": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verification failed. Please check the token and try again."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "驗證失敗，請檢查 Token 後再試一次。"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verificationSuccess": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Token verified successfully"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Token 驗證成功"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verifyAction": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verify"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "驗證"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verifyButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verify"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "驗證"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.retirementNotice": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "The official Telegram bot has been retired. Please set up and switch to your own bot as soon as possible."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "官方 Telegram 機器人已終止服務。請儘快設定並改用你自己的機器人。"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel service is unavailable. Check whether it started normally."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Sentinel 服務無法使用。請檢查它是否正常啟動。"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.telegramIDLabel": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Telegram ID"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Telegram ID"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Official Phi Link Telegram bot"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Link 官方 Telegram 機器人"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.unlinkButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Unlink"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "取消連結"
+        }
+      }
+    },
+    "settings.phiLink.sectionDescription": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Using Telegram to send and receive messages with %@"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "透過 Telegram 與 %@ 收發訊息"
+        }
+      }
+    },
+    "settings.phiLink.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "The local IM service is unavailable. Check whether Phi Sentinel started normally and the IM service is running."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "本機 IM 服務無法使用。請檢查 Phi Sentinel 是否正常啟動，以及 IM 服務是否正在執行。"
+        }
+      }
+    },
+    "settings.phiLink.sessionExpiredMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Your Phi session has expired. Please sign in again, then retry Phi Link."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "你的 Phi 工作階段已過期。請重新登入，然後再試一次 Phi Link。"
+        }
+      }
+    },
+    "settings.privacy.contentBlocking.list.phiSpecific.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Blocklists"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Blocklists"
+        }
+      }
+    }
+  },
+  "ja": {
+    "settings.ai.phiLink.sectionTitle": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Link"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Link"
+        }
+      }
+    },
+    "settings.ai.phiSentinel.sectionTitle": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Sentinel"
+        }
+      }
+    },
+    "settings.phiLink.customBot.awaitingLink": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Open Telegram to finish linking"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Telegramを開いて連携を完了"
+        }
+      }
+    },
+    "settings.phiLink.customBot.botFatherLink": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "here to begin the @BotFather"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "こちらから@BotFatherを開始"
+        }
+      }
+    },
+    "settings.phiLink.customBot.configuredStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Configured"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "設定済み"
+        }
+      }
+    },
+    "settings.phiLink.customBot.connectButton": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Connect in Telegram"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Telegramで接続"
+        }
+      }
+    },
+    "settings.phiLink.customBot.description": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Setting up your own Telegram bot using Telegram's @BotFather"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Telegramの@BotFatherを使って独自のTelegramボットを設定します"
+        }
+      }
+    },
+    "settings.phiLink.customBot.genericError": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Error"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "エラー"
+        }
+      }
+    },
+    "settings.phiLink.customBot.guide.prefixText": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Click "
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "クリック "
+        }
+      }
+    },
+    "settings.phiLink.customBot.guide.suffixText": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": " Telegram bot creation and customization process, follow the on-screen instructions and paste the Bot Token below"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": " Telegramボットの作成とカスタマイズの手順に従って、画面の指示どおりにボットトークンを下に貼り付けてください"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkedStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linked"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "連携済み"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkStatus.linked": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linked"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "連携済み"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkStatus.linking": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linking..."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "連携中…"
+        }
+      }
+    },
+    "settings.phiLink.customBot.notConfiguredStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Not configured"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "未設定"
+        }
+      }
+    },
+    "settings.phiLink.customBot.removeAction": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Remove"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "削除"
+        }
+      }
+    },
+    "settings.phiLink.customBot.saveButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Save"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "保存"
+        }
+      }
+    },
+    "settings.phiLink.customBot.serviceIssueStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Service issue"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "サービス障害"
+        }
+      }
+    },
+    "settings.phiLink.customBot.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel service is unavailable. Check whether it started normally."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Sentinelサービスを利用できません。正常に起動しているか確認してください。"
+        }
+      }
+    },
+    "settings.phiLink.customBot.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Custom Telegram bot"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "カスタムTelegramボット"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.hideButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Hide"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "非表示"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.label": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Bot Token"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "ボットトークン"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.showButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Show"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "表示"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verificationFailure": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verification failed. Please check the token and try again."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "確認に失敗しました。トークンを確認して、もう一度お試しください。"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verificationSuccess": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Token verified successfully"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "トークンを確認しました"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verifyAction": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verify"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "確認"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verifyButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verify"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "確認"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.retirementNotice": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "The official Telegram bot has been retired. Please set up and switch to your own bot as soon as possible."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "公式Telegramボットは提供を終了しました。できるだけ早く独自のボットを設定し、切り替えてください。"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel service is unavailable. Check whether it started normally."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Sentinelサービスを利用できません。正常に起動しているか確認してください。"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.telegramIDLabel": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Telegram ID"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Telegram ID"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Official Phi Link Telegram bot"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Link公式Telegramボット"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.unlinkButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Unlink"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "連携を解除"
+        }
+      }
+    },
+    "settings.phiLink.sectionDescription": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Using Telegram to send and receive messages with %@"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Telegramを使って%@とメッセージを送受信します"
+        }
+      }
+    },
+    "settings.phiLink.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "The local IM service is unavailable. Check whether Phi Sentinel started normally and the IM service is running."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "ローカルのIMサービスが利用できません。Phi Sentinelが正常に起動し、IMサービスが動作しているか確認してください。"
+        }
+      }
+    },
+    "settings.phiLink.sessionExpiredMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Your Phi session has expired. Please sign in again, then retry Phi Link."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phiのセッションの有効期限が切れました。もう一度ログインしてから、Phi Linkをやり直してください。"
+        }
+      }
+    },
+    "settings.privacy.contentBlocking.list.phiSpecific.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Blocklists"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Blocklists"
+        }
+      }
+    }
+  },
+  "ko": {
+    "settings.ai.phiLink.sectionTitle": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Link"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Link"
+        }
+      }
+    },
+    "settings.ai.phiSentinel.sectionTitle": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Sentinel"
+        }
+      }
+    },
+    "settings.phiLink.customBot.awaitingLink": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Open Telegram to finish linking"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Telegram을 열어 연결을 완료해 주세요"
+        }
+      }
+    },
+    "settings.phiLink.customBot.botFatherLink": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "here to begin the @BotFather"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "여기에서 @BotFather 시작하기"
+        }
+      }
+    },
+    "settings.phiLink.customBot.configuredStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Configured"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "구성됨"
+        }
+      }
+    },
+    "settings.phiLink.customBot.connectButton": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Connect in Telegram"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Telegram에서 연결"
+        }
+      }
+    },
+    "settings.phiLink.customBot.description": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Setting up your own Telegram bot using Telegram's @BotFather"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Telegram의 @BotFather로 나만의 Telegram 봇 설정하기"
+        }
+      }
+    },
+    "settings.phiLink.customBot.genericError": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Error"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "오류"
+        }
+      }
+    },
+    "settings.phiLink.customBot.guide.prefixText": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Click "
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "클릭: "
+        }
+      }
+    },
+    "settings.phiLink.customBot.guide.suffixText": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": " Telegram bot creation and customization process, follow the on-screen instructions and paste the Bot Token below"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": " Telegram 봇 생성 및 설정 과정을 진행하고, 화면의 안내에 따라 아래에 봇 토큰을 붙여넣으세요"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkedStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linked"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "연결됨"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkStatus.linked": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linked"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "연결됨"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkStatus.linking": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linking..."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "연결 중…"
+        }
+      }
+    },
+    "settings.phiLink.customBot.notConfiguredStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Not configured"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "설정되지 않음"
+        }
+      }
+    },
+    "settings.phiLink.customBot.removeAction": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Remove"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "제거"
+        }
+      }
+    },
+    "settings.phiLink.customBot.saveButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Save"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "저장"
+        }
+      }
+    },
+    "settings.phiLink.customBot.serviceIssueStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Service issue"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "서비스 문제"
+        }
+      }
+    },
+    "settings.phiLink.customBot.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel service is unavailable. Check whether it started normally."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Sentinel 서비스를 사용할 수 없어요. 정상적으로 시작됐는지 확인해 주세요."
+        }
+      }
+    },
+    "settings.phiLink.customBot.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Custom Telegram bot"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "사용자 지정 Telegram 봇"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.hideButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Hide"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "숨기기"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.label": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Bot Token"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "봇 토큰"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.showButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Show"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "표시"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verificationFailure": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verification failed. Please check the token and try again."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "확인에 실패했어요. 토큰을 확인하고 다시 시도해 주세요."
+        }
+      }
+    },
+    "settings.phiLink.customBot.verificationSuccess": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Token verified successfully"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "토큰을 확인했어요"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verifyAction": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verify"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "확인"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verifyButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verify"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "확인"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.retirementNotice": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "The official Telegram bot has been retired. Please set up and switch to your own bot as soon as possible."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "공식 Telegram 봇 서비스가 종료됐어요. 가능한 한 빨리 나만의 봇을 설정하고 그 봇으로 전환해 주세요."
+        }
+      }
+    },
+    "settings.phiLink.officialBot.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel service is unavailable. Check whether it started normally."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Sentinel 서비스를 사용할 수 없어요. 정상적으로 시작됐는지 확인해 주세요."
+        }
+      }
+    },
+    "settings.phiLink.officialBot.telegramIDLabel": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Telegram ID"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Telegram ID"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Official Phi Link Telegram bot"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "공식 Phi Link Telegram 봇"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.unlinkButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Unlink"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "연결 해제"
+        }
+      }
+    },
+    "settings.phiLink.sectionDescription": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Using Telegram to send and receive messages with %@"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Telegram으로 %@와(과) 메시지를 주고받아요"
+        }
+      }
+    },
+    "settings.phiLink.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "The local IM service is unavailable. Check whether Phi Sentinel started normally and the IM service is running."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "로컬 IM 서비스를 사용할 수 없어요. Phi Sentinel이 정상적으로 시작됐는지, IM 서비스가 실행 중인지 확인해 주세요."
+        }
+      }
+    },
+    "settings.phiLink.sessionExpiredMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Your Phi session has expired. Please sign in again, then retry Phi Link."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi 세션이 만료됐어요. 다시 로그인한 뒤 Phi Link를 다시 시도해 주세요."
+        }
+      }
+    },
+    "settings.privacy.contentBlocking.list.phiSpecific.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Blocklists"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Blocklists"
+        }
+      }
+    }
+  },
+  "de": {
+    "settings.ai.phiLink.sectionTitle": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Link"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Link"
+        }
+      }
+    },
+    "settings.ai.phiSentinel.sectionTitle": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Sentinel"
+        }
+      }
+    },
+    "settings.phiLink.customBot.awaitingLink": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Open Telegram to finish linking"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Öffne Telegram, um die Verknüpfung abzuschließen"
+        }
+      }
+    },
+    "settings.phiLink.customBot.botFatherLink": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "here to begin the @BotFather"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "hier, um den @BotFather zu starten"
+        }
+      }
+    },
+    "settings.phiLink.customBot.configuredStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Configured"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Konfiguriert"
+        }
+      }
+    },
+    "settings.phiLink.customBot.connectButton": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Connect in Telegram"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "In Telegram verbinden"
+        }
+      }
+    },
+    "settings.phiLink.customBot.description": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Setting up your own Telegram bot using Telegram's @BotFather"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Eigenen Telegram-Bot mit @BotFather von Telegram einrichten"
+        }
+      }
+    },
+    "settings.phiLink.customBot.genericError": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Error"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Fehler"
+        }
+      }
+    },
+    "settings.phiLink.customBot.guide.prefixText": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Click "
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Klicke "
+        }
+      }
+    },
+    "settings.phiLink.customBot.guide.suffixText": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": " Telegram bot creation and customization process, follow the on-screen instructions and paste the Bot Token below"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": " und den Erstellungs- und Anpassungsprozess für deinen Telegram-Bot zu durchlaufen. Folge den Anweisungen auf dem Bildschirm und füge das Bot-Token unten ein"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkedStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linked"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Verknüpft"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkStatus.linked": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linked"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Verknüpft"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkStatus.linking": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linking..."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Wird verknüpft…"
+        }
+      }
+    },
+    "settings.phiLink.customBot.notConfiguredStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Not configured"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Nicht konfiguriert"
+        }
+      }
+    },
+    "settings.phiLink.customBot.removeAction": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Remove"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Entfernen"
+        }
+      }
+    },
+    "settings.phiLink.customBot.saveButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Save"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Speichern"
+        }
+      }
+    },
+    "settings.phiLink.customBot.serviceIssueStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Service issue"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Dienststörung"
+        }
+      }
+    },
+    "settings.phiLink.customBot.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel service is unavailable. Check whether it started normally."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Der Phi Sentinel-Dienst ist nicht verfügbar. Prüfe, ob er normal gestartet ist."
+        }
+      }
+    },
+    "settings.phiLink.customBot.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Custom Telegram bot"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Eigener Telegram-Bot"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.hideButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Hide"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Ausblenden"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.label": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Bot Token"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Bot-Token"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.showButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Show"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Anzeigen"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verificationFailure": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verification failed. Please check the token and try again."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Überprüfung fehlgeschlagen. Bitte prüfe das Token und versuche es erneut."
+        }
+      }
+    },
+    "settings.phiLink.customBot.verificationSuccess": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Token verified successfully"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Token erfolgreich überprüft"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verifyAction": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verify"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Überprüfen"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verifyButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verify"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Überprüfen"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.retirementNotice": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "The official Telegram bot has been retired. Please set up and switch to your own bot as soon as possible."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Der offizielle Telegram-Bot wurde eingestellt. Bitte richte so bald wie möglich deinen eigenen Bot ein und wechsle zu diesem."
+        }
+      }
+    },
+    "settings.phiLink.officialBot.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel service is unavailable. Check whether it started normally."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Der Phi Sentinel-Dienst ist nicht verfügbar. Prüfe, ob er normal gestartet ist."
+        }
+      }
+    },
+    "settings.phiLink.officialBot.telegramIDLabel": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Telegram ID"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Telegram-ID"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Official Phi Link Telegram bot"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Offizieller Phi Link Telegram-Bot"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.unlinkButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Unlink"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Verknüpfung aufheben"
+        }
+      }
+    },
+    "settings.phiLink.sectionDescription": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Using Telegram to send and receive messages with %@"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Telegram wird verwendet, um Nachrichten mit %@ auszutauschen"
+        }
+      }
+    },
+    "settings.phiLink.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "The local IM service is unavailable. Check whether Phi Sentinel started normally and the IM service is running."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Der lokale IM-Dienst ist nicht verfügbar. Prüfe, ob Phi Sentinel normal gestartet ist und der IM-Dienst läuft."
+        }
+      }
+    },
+    "settings.phiLink.sessionExpiredMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Your Phi session has expired. Please sign in again, then retry Phi Link."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Deine Phi-Sitzung ist abgelaufen. Bitte melde dich erneut an und versuche Phi Link dann noch einmal."
+        }
+      }
+    },
+    "settings.privacy.contentBlocking.list.phiSpecific.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Blocklists"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Blocklists"
+        }
+      }
+    }
+  },
+  "fr": {
+    "settings.ai.phiLink.sectionTitle": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Link"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Link"
+        }
+      }
+    },
+    "settings.ai.phiSentinel.sectionTitle": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Sentinel"
+        }
+      }
+    },
+    "settings.phiLink.customBot.awaitingLink": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Open Telegram to finish linking"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Ouvrez Telegram pour terminer l'association"
+        }
+      }
+    },
+    "settings.phiLink.customBot.botFatherLink": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "here to begin the @BotFather"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "ici pour commencer avec @BotFather"
+        }
+      }
+    },
+    "settings.phiLink.customBot.configuredStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Configured"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Configuré"
+        }
+      }
+    },
+    "settings.phiLink.customBot.connectButton": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Connect in Telegram"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Connecter dans Telegram"
+        }
+      }
+    },
+    "settings.phiLink.customBot.description": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Setting up your own Telegram bot using Telegram's @BotFather"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Configuration de votre propre bot Telegram avec @BotFather de Telegram"
+        }
+      }
+    },
+    "settings.phiLink.customBot.genericError": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Error"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Erreur"
+        }
+      }
+    },
+    "settings.phiLink.customBot.guide.prefixText": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Click "
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Cliquez sur "
+        }
+      }
+    },
+    "settings.phiLink.customBot.guide.suffixText": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": " Telegram bot creation and customization process, follow the on-screen instructions and paste the Bot Token below"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": " de création et de personnalisation du bot Telegram, suivez les instructions à l'écran et collez le jeton du bot ci-dessous"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkedStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linked"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Associé"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkStatus.linked": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linked"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Associé"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkStatus.linking": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linking..."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Association en cours…"
+        }
+      }
+    },
+    "settings.phiLink.customBot.notConfiguredStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Not configured"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Non configuré"
+        }
+      }
+    },
+    "settings.phiLink.customBot.removeAction": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Remove"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Supprimer"
+        }
+      }
+    },
+    "settings.phiLink.customBot.saveButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Save"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Enregistrer"
+        }
+      }
+    },
+    "settings.phiLink.customBot.serviceIssueStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Service issue"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Problème de service"
+        }
+      }
+    },
+    "settings.phiLink.customBot.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel service is unavailable. Check whether it started normally."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Le service Phi Sentinel est indisponible. Vérifiez qu'il a démarré normalement."
+        }
+      }
+    },
+    "settings.phiLink.customBot.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Custom Telegram bot"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Bot Telegram personnalisé"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.hideButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Hide"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Masquer"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.label": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Bot Token"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Jeton du bot"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.showButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Show"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Afficher"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verificationFailure": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verification failed. Please check the token and try again."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Échec de la vérification. Vérifiez le jeton et réessayez."
+        }
+      }
+    },
+    "settings.phiLink.customBot.verificationSuccess": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Token verified successfully"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Jeton vérifié avec succès"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verifyAction": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verify"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Vérifier"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verifyButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verify"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Vérifier"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.retirementNotice": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "The official Telegram bot has been retired. Please set up and switch to your own bot as soon as possible."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Le bot Telegram officiel a été définitivement arrêté. Veuillez configurer votre propre bot et passer à celui-ci dès que possible."
+        }
+      }
+    },
+    "settings.phiLink.officialBot.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel service is unavailable. Check whether it started normally."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Le service Phi Sentinel est indisponible. Vérifiez qu'il a démarré normalement."
+        }
+      }
+    },
+    "settings.phiLink.officialBot.telegramIDLabel": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Telegram ID"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "ID Telegram"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Official Phi Link Telegram bot"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Bot Telegram officiel de Phi Link"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.unlinkButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Unlink"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Dissocier"
+        }
+      }
+    },
+    "settings.phiLink.sectionDescription": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Using Telegram to send and receive messages with %@"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Utilisation de Telegram pour envoyer et recevoir des messages avec %@"
+        }
+      }
+    },
+    "settings.phiLink.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "The local IM service is unavailable. Check whether Phi Sentinel started normally and the IM service is running."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Le service de messagerie local est indisponible. Vérifiez que Phi Sentinel a démarré normalement et que le service de messagerie est en cours d'exécution."
+        }
+      }
+    },
+    "settings.phiLink.sessionExpiredMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Your Phi session has expired. Please sign in again, then retry Phi Link."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Votre session Phi a expiré. Veuillez vous reconnecter, puis réessayer Phi Link."
+        }
+      }
+    },
+    "settings.privacy.contentBlocking.list.phiSpecific.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Blocklists"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Blocklists"
+        }
+      }
+    }
+  },
+  "es": {
+    "settings.ai.phiLink.sectionTitle": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Link"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Link"
+        }
+      }
+    },
+    "settings.ai.phiSentinel.sectionTitle": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Sentinel"
+        }
+      }
+    },
+    "settings.phiLink.customBot.awaitingLink": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Open Telegram to finish linking"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Abre Telegram para terminar la vinculación"
+        }
+      }
+    },
+    "settings.phiLink.customBot.botFatherLink": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "here to begin the @BotFather"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "aquí para comenzar con @BotFather"
+        }
+      }
+    },
+    "settings.phiLink.customBot.configuredStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Configured"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Configurado"
+        }
+      }
+    },
+    "settings.phiLink.customBot.connectButton": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Connect in Telegram"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Conectar en Telegram"
+        }
+      }
+    },
+    "settings.phiLink.customBot.description": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Setting up your own Telegram bot using Telegram's @BotFather"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Configura tu propio bot de Telegram con el @BotFather de Telegram"
+        }
+      }
+    },
+    "settings.phiLink.customBot.genericError": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Error"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Error"
+        }
+      }
+    },
+    "settings.phiLink.customBot.guide.prefixText": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Click "
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Haz clic en "
+        }
+      }
+    },
+    "settings.phiLink.customBot.guide.suffixText": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": " Telegram bot creation and customization process, follow the on-screen instructions and paste the Bot Token below"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": " el proceso de creación y personalización del bot de Telegram; sigue las instrucciones en pantalla y pega el Token del bot abajo"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkedStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linked"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Vinculado"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkStatus.linked": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linked"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Vinculado"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkStatus.linking": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linking..."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Vinculando…"
+        }
+      }
+    },
+    "settings.phiLink.customBot.notConfiguredStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Not configured"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Sin configurar"
+        }
+      }
+    },
+    "settings.phiLink.customBot.removeAction": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Remove"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Quitar"
+        }
+      }
+    },
+    "settings.phiLink.customBot.saveButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Save"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Guardar"
+        }
+      }
+    },
+    "settings.phiLink.customBot.serviceIssueStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Service issue"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Problema del servicio"
+        }
+      }
+    },
+    "settings.phiLink.customBot.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel service is unavailable. Check whether it started normally."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "El servicio de Phi Sentinel no está disponible. Comprueba si se inició correctamente."
+        }
+      }
+    },
+    "settings.phiLink.customBot.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Custom Telegram bot"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Bot de Telegram personalizado"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.hideButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Hide"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Ocultar"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.label": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Bot Token"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Token del bot"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.showButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Show"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Mostrar"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verificationFailure": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verification failed. Please check the token and try again."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Error de verificación. Revisa el token y vuelve a intentarlo."
+        }
+      }
+    },
+    "settings.phiLink.customBot.verificationSuccess": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Token verified successfully"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Token verificado correctamente"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verifyAction": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verify"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Verificar"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verifyButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verify"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Verificar"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.retirementNotice": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "The official Telegram bot has been retired. Please set up and switch to your own bot as soon as possible."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "El bot de Telegram oficial ya no está disponible. Configura tu propio bot y cambia a él lo antes posible."
+        }
+      }
+    },
+    "settings.phiLink.officialBot.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel service is unavailable. Check whether it started normally."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "El servicio de Phi Sentinel no está disponible. Comprueba si se inició correctamente."
+        }
+      }
+    },
+    "settings.phiLink.officialBot.telegramIDLabel": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Telegram ID"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "ID de Telegram"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Official Phi Link Telegram bot"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Bot de Telegram oficial de Phi Link"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.unlinkButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Unlink"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Desvincular"
+        }
+      }
+    },
+    "settings.phiLink.sectionDescription": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Using Telegram to send and receive messages with %@"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Usa Telegram para enviar y recibir mensajes con %@"
+        }
+      }
+    },
+    "settings.phiLink.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "The local IM service is unavailable. Check whether Phi Sentinel started normally and the IM service is running."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "El servicio de mensajería local no está disponible. Comprueba si Phi Sentinel se inició correctamente y si el servicio de mensajería está en ejecución."
+        }
+      }
+    },
+    "settings.phiLink.sessionExpiredMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Your Phi session has expired. Please sign in again, then retry Phi Link."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Tu sesión de Phi caducó. Inicia sesión de nuevo y vuelve a intentar Phi Link."
+        }
+      }
+    },
+    "settings.privacy.contentBlocking.list.phiSpecific.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Blocklists"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Blocklists"
+        }
+      }
+    }
+  },
+  "nl": {
+    "settings.ai.phiLink.sectionTitle": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Link"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Link"
+        }
+      }
+    },
+    "settings.ai.phiSentinel.sectionTitle": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Sentinel"
+        }
+      }
+    },
+    "settings.phiLink.customBot.awaitingLink": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Open Telegram to finish linking"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Open Telegram om het koppelen af te ronden"
+        }
+      }
+    },
+    "settings.phiLink.customBot.botFatherLink": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "here to begin the @BotFather"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "hier om de @BotFather te starten"
+        }
+      }
+    },
+    "settings.phiLink.customBot.configuredStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Configured"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Geconfigureerd"
+        }
+      }
+    },
+    "settings.phiLink.customBot.connectButton": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Connect in Telegram"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Verbinden in Telegram"
+        }
+      }
+    },
+    "settings.phiLink.customBot.description": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Setting up your own Telegram bot using Telegram's @BotFather"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Je eigen Telegram-bot instellen via @BotFather van Telegram"
+        }
+      }
+    },
+    "settings.phiLink.customBot.genericError": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Error"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Fout"
+        }
+      }
+    },
+    "settings.phiLink.customBot.guide.prefixText": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Click "
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Klik op "
+        }
+      }
+    },
+    "settings.phiLink.customBot.guide.suffixText": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": " Telegram bot creation and customization process, follow the on-screen instructions and paste the Bot Token below"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": " Telegram-bot maken en aanpassen: volg de instructies op het scherm en plak het bottoken hieronder"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkedStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linked"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Gekoppeld"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkStatus.linked": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linked"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Gekoppeld"
+        }
+      }
+    },
+    "settings.phiLink.customBot.linkStatus.linking": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Linking..."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Koppelen…"
+        }
+      }
+    },
+    "settings.phiLink.customBot.notConfiguredStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Not configured"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Niet geconfigureerd"
+        }
+      }
+    },
+    "settings.phiLink.customBot.removeAction": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Remove"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Verwijder"
+        }
+      }
+    },
+    "settings.phiLink.customBot.saveButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Save"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Bewaar"
+        }
+      }
+    },
+    "settings.phiLink.customBot.serviceIssueStatus": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Service issue"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Serviceprobleem"
+        }
+      }
+    },
+    "settings.phiLink.customBot.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel service is unavailable. Check whether it started normally."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "De Phi Sentinel-service is niet beschikbaar. Controleer of de service normaal is gestart."
+        }
+      }
+    },
+    "settings.phiLink.customBot.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Custom Telegram bot"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Aangepaste Telegram-bot"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.hideButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Hide"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Verberg"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.label": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Bot Token"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Bot-token"
+        }
+      }
+    },
+    "settings.phiLink.customBot.tokenField.showButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Show"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Toon"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verificationFailure": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verification failed. Please check the token and try again."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Verificatie mislukt. Controleer het token en probeer het opnieuw."
+        }
+      }
+    },
+    "settings.phiLink.customBot.verificationSuccess": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Token verified successfully"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Token geverifieerd"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verifyAction": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verify"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Verifieer"
+        }
+      }
+    },
+    "settings.phiLink.customBot.verifyButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Verify"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Verifieer"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.retirementNotice": {
+      "en": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "The official Telegram bot has been retired. Please set up and switch to your own bot as soon as possible."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "De officiële Telegram-bot is stopgezet. Stel zo snel mogelijk je eigen bot in en stap daarop over."
+        }
+      }
+    },
+    "settings.phiLink.officialBot.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Sentinel service is unavailable. Check whether it started normally."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "De Phi Sentinel-service is niet beschikbaar. Controleer of de service normaal is gestart."
+        }
+      }
+    },
+    "settings.phiLink.officialBot.telegramIDLabel": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Telegram ID"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Telegram-ID"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Official Phi Link Telegram bot"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Officiële Telegram-bot van Phi Link"
+        }
+      }
+    },
+    "settings.phiLink.officialBot.unlinkButton": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Unlink"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Ontkoppel"
+        }
+      }
+    },
+    "settings.phiLink.sectionDescription": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Using Telegram to send and receive messages with %@"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Telegram gebruiken om berichten te versturen en te ontvangen met %@"
+        }
+      }
+    },
+    "settings.phiLink.serviceUnavailableMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "The local IM service is unavailable. Check whether Phi Sentinel started normally and the IM service is running."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "De lokale IM-service is niet beschikbaar. Controleer of Phi Sentinel normaal is gestart en of de IM-service draait."
+        }
+      }
+    },
+    "settings.phiLink.sessionExpiredMessage": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Your Phi session has expired. Please sign in again, then retry Phi Link."
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Je Phi-sessie is verlopen. Log opnieuw in en probeer Phi Link daarna nogmaals."
+        }
+      }
+    },
+    "settings.privacy.contentBlocking.list.phiSpecific.title": {
+      "en": {
+        "stringUnit": {
+          "state": "new",
+          "value": "Phi Blocklists"
+        }
+      },
+      "target": {
+        "stringUnit": {
+          "state": "translated",
+          "value": "Phi Blocklists"
+        }
+      }
+    }
+  }
+}

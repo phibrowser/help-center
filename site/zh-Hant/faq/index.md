@@ -282,7 +282,7 @@ Phi Link 把 Phi Browser 連接到 Telegram，讓你在手機上使用你的助�
 :::
 
 ::: details 如何設定 Phi Link？
-兩種方式：使用官方 Phi Link 機器人，這是最簡單的方式，掃描 QR Code、再點一下就完成；或透過 BotFather 建立你自己的 Telegram 機器人，把它的權杖貼進 Phi 的設定。
+Phi Link 官方機器人已停止服務。請透過 Telegram 的 **@BotFather** 建立自己的機器人，然後在**設定 → Phi 與 AI → Phi Link → 自訂 Telegram 機器人**中貼上、驗證並儲存 **Bot Token**。在 Telegram 中開啟自己的機器人，傳送一則測試訊息。完整步驟請見[設定指南](/zh-Hant/automation/#phi-link)。
 :::
 
 ::: details Phi Link 能做什麼？
@@ -290,7 +290,7 @@ Phi Link 把 Phi Browser 連接到 Telegram，讓你在手機上使用你的助�
 :::
 
 ::: details Phi Link 用的是同一個助理身分嗎？
-是。同一個助理身分會延續過去，讓桌面和手機的體驗一致；如果你使用自己的機器人，還可以進一步自訂。
+是的。你透過自己的 Telegram 機器人使用 Phi 助理，並可以自訂機器人的名稱和頭像。
 :::
 
 ## 價格與供應情況

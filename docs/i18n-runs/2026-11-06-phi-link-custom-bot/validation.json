@@ -1,0 +1,12 @@
+{
+  "run": "2026-11-06-phi-link-custom-bot",
+  "locales": ["zh-Hans", "zh-Hant", "ja", "ko", "de", "fr", "es", "nl"],
+  "seeds": "passed structure, coverage, links, heading/step counts, banned characters",
+  "build": "passed: 9 locales, 261 pages, 40 search queries",
+  "sourceBaseline": "warning: previous baseline 4321f0ca165c5556b1f4b41b457f4923ce34d2ec unavailable; source staleness skipped by test:i18n",
+  "localeStatus": "attention-needed: existing baseline unavailable; approvals remain pending",
+  "writingEnglish": "passed, 2 files",
+  "writingAllChanged": "16 French utilise false positives; no other failures",
+  "independentReview": "pending",
+  "deployment": "not performed"
+}

@@ -45,9 +45,21 @@ Geplande taken moeten blijven draaien, ook wanneer het browservenster gesloten i
 - een melding krijgen wanneer taken slagen of mislukken,
 - workflows voortzetten buiten de browser.
 
-Instellen kan op twee manieren:
+De officiële Phi Link-bot is stopgezet. Verbind je eigen Telegram-bot om Phi via Telegram te gebruiken. Je kunt zelf de naam en avatar kiezen.
 
-- **De officiële Phi Link-bot**, de eenvoudigste route: scan een QR-code, rond de installatie af met één klik en je bent klaar.
-- **Je eigen Telegram-bot**, voor meer controle: maak een bot via Telegrams BotFather, genereer een token en plak die in de instellingen van Phi. Zo kun je de naam en avatar van de bot aanpassen.
+### Je bot instellen
 
-Dezelfde assistent-identiteit reist mee, dus de ervaring blijft consistent tussen desktop en telefoon.
+1. Open **@BotFather** in Telegram en volg de instructies om een bot te maken. Kopieer de **Bot Token** die je krijgt.
+2. Meld je aan bij Phi en open **Instellingen → Phi & AI → Phi Link**.
+3. Plak je token onder **Aangepaste Telegram-bot**, verifieer het en sla het op.
+4. Open je bot in Telegram en stuur een bericht om de verbinding te testen.
+
+Je bot is alleen voor persoonlijk gebruik. Deel hem niet met anderen en nodig anderen niet uit om hem te gebruiken. Houd je Bot Token geheim. Als de verificatie mislukt, controleer dan het token en de foutmelding in de instellingen. Een webhookconflict kan betekenen dat een andere app de bot al gebruikt.
+
+### Als je de officiële bot gebruikte
+
+Maak je eigen bot en stel hem in met de stappen hierboven. Nadat je hem hebt getest, kun je de oude officiële bot ontkoppelen in de instellingen. Het ontkoppelen van de officiële bot verwijdert je eigen bot niet.
+
+### De verbinding controleren
+
+**Gekoppeld** betekent dat de botservice actief is. Stuur een bericht in Telegram om te controleren of je antwoord krijgt. Wil je de bot vervangen, verwijder dan de huidige bot in de instellingen en voeg de nieuwe toe.

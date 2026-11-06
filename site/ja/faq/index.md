@@ -281,7 +281,7 @@ Phi LinkはPhi BrowserをTelegramにつなぎます。スマートフォンか�
 :::
 
 ::: details Phi Linkはどうやって設定しますか？
-方法は2つあります。公式のPhi Linkボットを使うのが最も手軽で、QRコードをスキャンして1クリックで完了します。もう1つは、BotFatherで自分のTelegramボットを作成し、そのトークンをPhiの設定に貼り付ける方法です。
+Phi Linkの公式ボットはサービスを終了しました。Telegramの<strong>@BotFather</strong>で自分のボットを作成し、**設定 → Phi & AI → Phi Link → カスタムTelegramボット**に**Bot Token**を貼り付け、確認して保存してください。Telegramで自分のボットを開き、テスト用のメッセージを送ってください。詳しくは[設定ガイド](/ja/automation/#phi-link)をご覧ください。
 :::
 
 ::: details Phi Linkで何ができますか？
@@ -289,7 +289,7 @@ Phi LinkはPhi BrowserをTelegramにつなぎます。スマートフォンか�
 :::
 
 ::: details Phi Linkでも同じアシスタントですか？
-はい。同じアシスタントのアイデンティティがそのまま引き継がれ、デスクトップとスマートフォンで一貫した体験になります。自分のボットを使う場合はカスタマイズも可能です。
+はい。自分のTelegramボットを通じてPhiのアシスタントを使えます。ボットの名前とアバターは自分で設定できます。
 :::
 
 ## 料金と提供状況

@@ -87,9 +87,21 @@ Scheduled tasks need to keep running even when the browser window is closed. **P
 - get the results of completed task runs,
 - continue workflows away from the browser.
 
-You can set it up two ways:
+The official Phi Link bot has been retired. To use Phi from Telegram, connect your own Telegram bot. You can choose its name and avatar.
 
-- **Official Phi Link bot**, the easiest path: scan a QR code, finish setup in one click, and you are done.
-- **Your own Telegram bot**, for more control, create a bot via Telegram's BotFather, generate a token, and paste it into Phi's settings. This lets you customize the bot's name and avatar.
+### Set up your bot
 
-The same assistant identity carries over, so the experience stays consistent between desktop and phone.
+1. Open **@BotFather** in Telegram and follow its instructions to create a bot. Copy the **Bot Token** it gives you.
+2. Sign in to Phi and open **Settings → Phi & AI → Phi Link**.
+3. In **Custom Telegram bot**, paste your token, verify it, and save.
+4. Open your bot in Telegram and send a message to test the connection.
+
+Your bot is for your personal use. Do not share it with others or invite others to use it. Keep your Bot Token private. If verification fails, check the token and the error shown in settings. A webhook conflict can mean another app is already using the bot.
+
+### If you used the official bot
+
+Create and configure your own bot using the steps above. Once you have tested it, you can unlink the old official bot in settings. Unlinking the official bot does not remove your custom bot.
+
+### Check the connection
+
+**Linked** means the bot service is running. Send a message in Telegram to check that you can receive a reply. If you need to replace the bot, remove the current bot in settings and add the new one.

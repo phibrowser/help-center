@@ -87,9 +87,21 @@ Geplante Aufgaben müssen weiterlaufen, auch wenn das Browserfenster geschlossen
 - die Ergebnisse abgeschlossener Aufgabenausführungen erhalten,
 - Workflows abseits des Browsers fortsetzen.
 
-Einrichten kannst du es auf zwei Arten:
+Der offizielle Phi Link-Bot wurde eingestellt. Um Phi über Telegram zu nutzen, verbinde deinen eigenen Telegram-Bot. Namen und Avatar kannst du selbst wählen.
 
-- **Offizieller Phi Link-Bot**, der einfachste Weg: QR-Code scannen, die Einrichtung mit einem Klick abschließen, fertig.
-- **Dein eigener Telegram-Bot**, für mehr Kontrolle: Erstelle über Telegrams BotFather einen Bot, erzeuge einen Token und füge ihn in Phis Einstellungen ein. So kannst du Namen und Avatar des Bots anpassen.
+### Deinen Bot einrichten
 
-Die Identität deines Assistenten bleibt dieselbe, das Erlebnis bleibt also zwischen Desktop und Smartphone einheitlich.
+1. Öffne **@BotFather** in Telegram und folge den Anweisungen, um einen Bot zu erstellen. Kopiere den **Bot Token**, den du erhältst.
+2. Melde dich bei Phi an und öffne **Einstellungen → Phi & KI → Phi Link**.
+3. Füge unter **Eigener Telegram-Bot** deinen Token ein, überprüfe ihn und speichere ihn.
+4. Öffne deinen Bot in Telegram und sende eine Nachricht, um die Verbindung zu testen.
+
+Dein Bot ist nur für deinen persönlichen Gebrauch gedacht. Teile ihn nicht mit anderen und lade niemanden ein, ihn zu nutzen. Halte deinen Bot Token geheim. Wenn die Überprüfung fehlschlägt, prüfe den Token und die Fehlermeldung in den Einstellungen. Ein Webhook-Konflikt kann bedeuten, dass eine andere App den Bot bereits verwendet.
+
+### Wenn du den offiziellen Bot genutzt hast
+
+Erstelle und konfiguriere deinen eigenen Bot wie oben beschrieben. Nachdem du ihn getestet hast, kannst du in den Einstellungen die Verknüpfung mit dem alten offiziellen Bot aufheben. Dein eigener Bot wird dadurch nicht entfernt.
+
+### Die Verbindung prüfen
+
+**Verknüpft** bedeutet, dass der Bot-Dienst läuft. Sende eine Nachricht in Telegram, um zu prüfen, ob du eine Antwort erhältst. Wenn du den Bot ersetzen möchtest, entferne den aktuellen Bot in den Einstellungen und füge den neuen hinzu.

@@ -45,9 +45,21 @@ Las tareas programadas necesitan seguir ejecutándose aunque la ventana del nave
 - recibir avisos cuando las tareas terminan bien o fallan,
 - continuar flujos de trabajo lejos del navegador.
 
-Puedes configurarlo de dos maneras:
+El bot oficial de Phi Link ya no está disponible. Para usar Phi desde Telegram, conecta tu propio bot de Telegram. Puedes elegir su nombre y su avatar.
 
-- **Bot oficial de Phi Link**, el camino más directo: escanea un código QR, termina la configuración con un clic y listo.
-- **Tu propio bot de Telegram**, para tener más control: crea un bot con el BotFather de Telegram, genera un token y pégalo en la configuración de Phi. Así puedes personalizar el nombre y el avatar del bot.
+### Configurar tu bot
 
-La misma identidad del asistente se mantiene, así que la experiencia es coherente entre el escritorio y el teléfono.
+1. Abre **@BotFather** en Telegram y sigue sus instrucciones para crear un bot. Copia el **Bot Token** que te proporciona.
+2. Inicia sesión en Phi y abre **Configuración → Phi e IA → Phi Link**.
+3. En **Bot de Telegram personalizado**, pega tu token, verifícalo y guárdalo.
+4. Abre tu bot en Telegram y envía un mensaje para probar la conexión.
+
+Tu bot es para tu uso personal. No lo compartas con otras personas ni las invites a usarlo. Mantén tu Bot Token en privado. Si la verificación falla, revisa el token y el error que aparece en la configuración. Un conflicto de webhook puede indicar que otra app ya está usando el bot.
+
+### Si usabas el bot oficial
+
+Crea y configura tu propio bot siguiendo los pasos anteriores. Una vez que lo hayas probado, puedes desvincular el antiguo bot oficial en la configuración. Desvincular el bot oficial no elimina tu bot personalizado.
+
+### Comprobar la conexión
+
+**Vinculado** significa que el servicio del bot está en ejecución. Envía un mensaje en Telegram para comprobar que recibes una respuesta. Si necesitas cambiar de bot, elimina el bot actual en la configuración y añade el nuevo.

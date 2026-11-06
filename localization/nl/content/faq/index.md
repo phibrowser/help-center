@@ -239,7 +239,7 @@ Phi Link verbindt Phi Browser met Telegram, zodat je je assistent vanaf je telef
 :::
 
 ::: details Hoe stel ik Phi Link in?
-Op twee manieren: gebruik de officiële Phi Link-bot, de makkelijkste route omdat je een QR-code scant en met één klik klaar bent, of maak via BotFather je eigen Telegram-bot en plak het token ervan in de instellingen van Phi.
+De officiële Phi Link-bot is stopgezet. Maak je eigen bot met **@BotFather** van Telegram. Plak de **Bot Token** vervolgens onder **Instellingen → Phi & AI → Phi Link → Aangepaste Telegram-bot**, verifieer het token en sla het op. Open je bot in Telegram en stuur een testbericht. Zie [de installatiehandleiding](/nl/automation/#phi-link).
 :::
 
 ::: details Wat kan Phi Link doen?
@@ -247,7 +247,7 @@ Chatten met je assistent, meldingen krijgen wanneer taken slagen of mislukken, e
 :::
 
 ::: details Gebruikt Phi Link dezelfde assistent-identiteit?
-Ja. Dezelfde assistent-identiteit gaat mee voor een consistente ervaring op desktop en telefoon, met optionele aanpassing als je je eigen bot gebruikt.
+Ja. Je gebruikt je Phi-assistent via je eigen Telegram-bot, waarvan je de naam en avatar kunt aanpassen.
 :::
 
 ## Prijs en beschikbaarheid

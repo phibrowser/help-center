@@ -281,7 +281,7 @@ Phi Link relie Phi Browser à Telegram, pour utiliser votre assistant depuis vot
 :::
 
 ::: details Comment configurer Phi Link ?
-Deux possibilités : utiliser le bot Phi Link officiel, la voie la plus rapide puisque vous scannez un code QR et terminez en un clic, ou créer votre propre bot Telegram via BotFather et coller son jeton dans les paramètres de Phi.
+Le bot officiel de Phi Link n'est plus disponible. Créez votre propre bot avec **@BotFather** dans Telegram, puis collez, vérifiez et enregistrez son **Bot Token** dans **Réglages → Phi et IA → Phi Link → Bot Telegram personnalisé**. Ouvrez votre bot dans Telegram et envoyez un message de test. Consultez [le guide de configuration](/fr/automation/#phi-link).
 :::
 
 ::: details Que peut faire Phi Link ?
@@ -289,7 +289,7 @@ Discuter avec votre assistant, recevoir les résultats des exécutions de tâche
 :::
 
 ::: details Phi Link utilise-t-il la même identité d'assistant ?
-Oui. La même identité d'assistant vous suit, pour une expérience cohérente entre l'ordinateur et le téléphone, avec une personnalisation possible si vous utilisez votre propre bot.
+Oui. Vous utilisez votre assistant Phi via votre propre bot Telegram, dont vous pouvez personnaliser le nom et l'avatar.
 :::
 
 ## Tarifs et disponibilité
