@@ -22,6 +22,19 @@ Ce que la Mémoire apprend n'est pas une boîte noire. **Nebula** est la vue vis
 
 Vous pouvez ouvrir votre Mémoire quand vous voulez y jeter un œil. Sur le nouvel onglet, une entrée se trouve juste sous la zone de recherche. Dans le navigateur lui-même, son emplacement dépend de votre [mode de disposition](/fr/layouts/) : en **Performance** et **Équilibré**, elle se trouve en **bas à gauche** ; en **Confortable**, elle passe en **haut à droite**.
 
+### Histoires {#stories}
+
+De temps en temps, Phi vous écrit une courte histoire : une lettre à propos d'un élément de votre navigation récente, comme un sujet auquel vous reveniez sans cesse, et ce que vous sembliez y chercher. Les histoires apparaissent dans une carte, en bas à droite de Nebula. Un modèle de langage les écrit à partir de vos souvenirs.
+
+Sur la carte, vous pouvez :
+
+- **Parcourir vos histoires** avec les flèches, les touches fléchées ou un balayage sur le trackpad. Les histoires non lues viennent en premier.
+- **Voir sur quoi repose une histoire.** Cliquez sur le nombre de souvenirs sous l'histoire pour en afficher la liste ; leurs étoiles s'allument sur la carte.
+- **L'évaluer** avec un pouce pointant vers le haut ou vers le bas et, si vous le souhaitez, en choisissant une raison. Seules votre note et vos raisons sont comptabilisées, et rien de l'histoire n'est envoyé.
+- **Écrire à l'équipe Phi** dans la même boîte de dialogue, sous **Pour l'équipe Phi (facultatif)**. Si vous rédigez une note ou cochez **Joindre cette histoire** ou **Joindre les souvenirs dont elle est tirée**, ces éléments sont envoyés à Phinomenon avec certaines informations relatives à votre compte et à votre système.
+- **Poser une question à Phi Chat sur cette histoire.** Phi Chat s'ouvre avec l'histoire et ses souvenirs joints, et c'est vous qui tapez la question.
+- **Partager cette histoire** sous forme d'image, sur X ou Discord, ou en la copiant ou en la téléchargeant. L'image montre l'histoire en entier.
+
 ## Comment l'assistant l'utilise
 
 Quand vous posez une question à l'assistant, résumez une page ou lui confiez une tâche, il s'appuie sur ce dont il se souvient à votre sujet en plus de ce qui est devant vous à l'instant, que ce soit l'onglet actuel ou toute une [Split View ou un Groupe d'onglets](/fr/layouts/). C'est ce qui lui permet de répondre d'une manière qui vous correspond sans que vous ayez à réexpliquer votre situation à chaque fois. La Mémoire alimente aussi le [nouvel onglet personnalisé et ses widgets](/fr/new-tab/), où ce qu'elle sait se traduit en quelque chose d'utile au lieu de rester caché. Pour savoir comment joindre l'assistant et lui parler, voir [Faites connaissance avec votre assistant](/fr/ai/).

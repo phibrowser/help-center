@@ -212,6 +212,10 @@ Localmente, en tu dispositivo. Guardar primero en local es un principio central 
 Sí. Puedes ver, administrar y eliminar tus datos de memoria directamente dentro de Phi.
 :::
 
+::: details ¿Qué son las historias de Nebula?
+Cartas breves que Phi te escribe sobre algo de tu navegación reciente, a partir de tu Memoria. Aparecen en una tarjeta en la página de Nebula, donde puedes recorrerlas, valorarlas, preguntar a Phi Chat sobre una o compartir una como imagen. Consulta [Historias](/es/memory/#stories).
+:::
+
 ::: details ¿Envía Phi mi memoria a sus servidores?
 No. Los datos de la Memoria se quedan en local. Los modelos de lenguaje pueden procesar tareas, pero tu memoria personal no se envía fuera para almacenarla ni para usarla en entrenamiento.
 :::
