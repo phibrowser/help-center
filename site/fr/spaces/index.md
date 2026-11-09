@@ -30,6 +30,16 @@ Une façon simple de le retenir : **les Espaces organisent l'apparence et le con
 - **Supprimez** un Espace depuis le même menu, ou avec **Espaces → Supprimer l'Espace…** dans la barre des menus. Supprimer un Espace supprime aussi les favoris et les Règles d'URL qui lui appartiennent, et cette action est irréversible. Si la portée des onglets épinglés est **Espace**, les onglets épinglés de cet Espace sont supprimés aussi. Les onglets épinglés de portée Profil ou App ne sont pas affectés.
 - **Il n'y a pas d'Espace par défaut imposé.** N'importe quel Espace peut être supprimé, y compris celui que Phi a créé lors du premier démarrage. La seule règle est que Phi conserve toujours au moins un Espace normal, tous Profils confondus ; **Supprimer** n'est donc pas proposé tant qu'il ne reste qu'un seul Espace. Créez d'abord un autre Espace, puis supprimez celui dont vous ne voulez plus. Les Espaces de navigation privée n'entrent pas dans ce compte ; ils sont fermés, pas supprimés.
 
+## Supprimer un Profil {#deleting-a-profile}
+
+Supprimer un Espace ne supprime jamais son Profil. Un Profil que vous n'utilisez plus reste là, avec ses cookies, son historique et ses extensions, jusqu'à ce que vous le supprimiez :
+
+1. Supprimez tous les Espaces qui utilisent ce Profil. Phi ne supprime un Profil qu'une fois qu'aucun Espace ne l'utilise.
+2. Choisissez **Espaces → Supprimer le profil** dans la barre des menus et sélectionnez le Profil, ou sélectionnez-le dans **Paramètres → Profils** et supprimez-le depuis cet écran. Un Profil encore utilisé par un Espace est indiqué **utilisé par un Espace**.
+3. Confirmez. Cette action supprime définitivement les cookies, l'historique, les extensions et les autres données de navigation du Profil, et elle est irréversible. Si vous utilisez la synchronisation, le Profil est aussi supprimé de vos autres appareils synchronisés. Les conversations Phi Chat de ce Profil sont conservées, sous **Sans catégorie**.
+
+Le Profil créé par Phi lors de sa première ouverture ne peut pas être supprimé.
+
 ## Règles d'URL : diriger automatiquement les sites correspondants {#url-rules-route-matching-sites-automatically}
 
 Les **Règles d'URL** reconnaissent un site et l'ouvrent dans un Espace normal, en Navigation privée ou dans Kiosk, quel que soit l'endroit où vous cliquez ou saisissez le lien.

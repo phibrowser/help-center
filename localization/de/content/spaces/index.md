@@ -27,20 +27,31 @@ Eine einfache Merkregel: **Spaces ordnen, wie alles aussieht und sich anfühlt; 
 - **Erstelle** einen Space über die Spaces-Leiste in der Seitenleiste. Du gibst ihm einen Namen und wählst, zu welchem Profil er gehört, oder legst direkt dort ein **Neues Profil** an, wenn dieser Space vollständig getrennt sein soll.
 - **Wechsle** zwischen Spaces mit einem einzigen Klick in der Seitenleiste. Tabs, Lesezeichen und Design der Seitenleiste ändern sich passend dazu, und Phi öffnet das Fenster des Space erneut, falls es nicht bereits offen ist.
 - **Umbenennen**, **Symbol ändern** und **Design ändern** findest du im Menü des Space. Wähle **Global folgen**, damit der Space wieder dein globales Design verwendet, statt eines eigenen.
-- **Lösche** einen Space über dasselbe Menü. Beim Löschen eines Space werden auch die zugehörigen Lesezeichen und URL-Regeln entfernt; das lässt sich nicht rückgängig machen. Steht der Geltungsbereich angehefteter Tabs auf **Space**, werden auch die angehefteten Tabs dieses Space entfernt. Angeheftete Tabs mit Geltungsbereich Profil oder App sind nicht betroffen.
+- **Lösche** einen Space über dasselbe Menü oder mit **Spaces → Space löschen…** in der Menüleiste. Beim Löschen eines Space werden auch die zugehörigen Lesezeichen und URL-Regeln entfernt; das lässt sich nicht rückgängig machen. Steht der Geltungsbereich angehefteter Tabs auf **Space**, werden auch die angehefteten Tabs dieses Space entfernt. Angeheftete Tabs mit Geltungsbereich Profil oder App sind nicht betroffen.
+- **Es gibt keinen festen Standard-Space.** Jeder Space lässt sich löschen, auch der, den Phi beim ersten Start angelegt hat. Die einzige Regel: Phi behält immer mindestens einen regulären Space, über alle Profile hinweg, deshalb wird **Löschen** nicht angeboten, solange nur ein einziger Space übrig ist. Lege zuerst einen weiteren Space an und lösche dann den, den du nicht mehr brauchst. Inkognito-Spaces zählen dabei nicht mit; sie werden geschlossen, nicht gelöscht.
 
-## URL-Regeln: Websites automatisch in den richtigen Space schicken {#url-rules-send-sites-to-the-right-space-automatically}
+## Ein Profil löschen {#deleting-a-profile}
 
-Spaces sind am nützlichsten, wenn die richtigen Seiten am richtigen Ort landen, ohne dass du darüber nachdenken musst. Genau das leisten **URL-Regeln**: Eine Regel erkennt eine Website und öffnet sie in dem Space, den du festlegst, egal wo du den Link anklickst oder eintippst.
+Beim Löschen eines Space wird sein Profil nie gelöscht. Ein Profil, das du nicht mehr nutzt, bleibt mit seinen Cookies, seinem Verlauf und seinen Erweiterungen bestehen, bis du es löschst:
 
-Öffne **URL-Regeln…** über das Menü **Spaces** in der Menüleiste oder über den Bereich „Spaces“ in den Einstellungen, um die Regeln aller Spaces an einem Ort zu verwalten. Eine Regel greift nach einem dieser Kriterien:
+1. Lösche jeden Space, der das Profil verwendet. Phi löscht ein Profil erst, wenn kein Space es mehr verwendet.
+2. Wähle **Spaces → Profil löschen** in der Menüleiste und dann das Profil, oder wähle es unter **Einstellungen → Profile** aus und lösche es dort. Ein Profil, das noch ein Space verwendet, ist mit **von einem Space verwendet** gekennzeichnet.
+3. Bestätige. Dadurch werden Cookies, Verlauf, Erweiterungen und andere Browserdaten des Profils dauerhaft entfernt; das lässt sich nicht rückgängig machen. Wenn du die Synchronisierung nutzt, wird das Profil auch auf deinen anderen synchronisierten Geräten gelöscht. Phi Chat-Unterhaltungen aus diesem Profil bleiben unter **Ohne Kategorie** erhalten.
+
+Das Profil, das Phi beim ersten Öffnen erstellt hat, kann nicht gelöscht werden.
+
+## URL-Regeln: passende Websites automatisch lenken {#url-rules-route-matching-sites-automatically}
+
+**URL-Regeln** erkennen eine Website und öffnen sie in einem regulären Space, in Inkognito oder in Kiosk, egal wo du den Link anklickst oder eintippst.
+
+Öffne **URL-Regeln…** über das Menü **Spaces** in der Menüleiste, oder öffne **Einstellungen → Navigation** und klicke auf **URL-Regeln verwalten…**. Eine Regel greift nach einem dieser Kriterien:
 
 - **Domain-Suffix**, `figma.com` samt aller Subdomains.
 - **Domain**, ein exakter Host wie `www.example.com`.
 - **Domain enthält**, jeder Host, der ein Wort enthält, etwa `git`.
 - **URL**, ein Host plus Pfadpräfix, etwa `example.com/team`.
 
-Neben deinen regulären Spaces kann eine Regel auch **Inkognito** als Ziel haben: Passende Websites öffnen sich dann in einem [Inkognito-Space](/de/incognito/), der bei Bedarf neu erstellt wird, wenn gerade keiner offen ist.
+Eine Regel kann einen regulären Space, **Inkognito** oder **Kiosk** als Ziel haben. **Inkognito** lenkt passende Websites in einen [Inkognito-Space](/de/incognito/) und erstellt bei Bedarf einen neuen. **Kiosk** öffnet jeden Treffer in einem leichtgewichtigen Fenster außerhalb deiner Spaces. Wie diese Fenster funktionieren, steht unter [Kiosk](/de/kiosk/).
 
 Stelle eine Regel auf **Jedes Mal fragen**, statt still umzuleiten. Öffnet sich ein passender Link, zeigt Phi die Auswahl **In welchem Space öffnen?**, damit du entscheiden kannst. Dein aktueller Space ist markiert, und du kannst die Seite auch dort behalten, wo du bist. Könnten mehrere Regeln passen, gewinnt die spezifischste (ein längerer Pfad schlägt einen kürzeren; ein exakter Host schlägt einen Platzhalter).
 
@@ -50,4 +61,4 @@ Für Browsen, das nichts hinterlassen soll, öffnet **Ablage → Neuer Inkognito
 
 ## Wie das mit dem Rest von Phi zusammenhängt
 
-Spaces bauen auf dem Seitenleisten-Arbeitsbereich auf, den [Layouts & Navigation](/de/layouts/) beschreibt, und die Farben einzelner Spaces nutzen dieselbe Palette wie [Designs & Erscheinungsbild](/de/themes/). Wenn du von Arc oder Dia wechselst, findest du in [Umstieg auf Phi](/de/switching-to-phi/) den Migrationsvergleich. Weil Profile Cookies und Verlauf isolieren, ist auch das, was der Assistent sehen kann, auf das Profil beschränkt, in dem du gerade browst. Wie mit deinen Daten umgegangen wird, steht in [Datenschutz & deine Daten](/de/privacy/).
+Spaces bauen auf dem Seitenleisten-Arbeitsbereich auf, den [Layouts & Navigation](/de/layouts/) beschreibt, und die Farben einzelner Spaces nutzen dieselbe Palette wie [Designs & Erscheinungsbild](/de/themes/). Wenn du von Arc oder Dia wechselst, findest du in [Umstieg auf Phi](/de/switching-to-phi/) den Migrationsvergleich. Weil Profile Cookies und Verlauf isolieren, ist auch das, was der Assistent sehen kann, auf das Profil beschränkt, in dem du gerade browst. Wie mit deinen Daten umgegangen wird, steht in [Datenschutz & deine Daten](/de/privacy/). Wenn du dieselben Spaces und Profile auf mehr als einem Mac haben willst, siehe [Synchronisierung](/de/sync/).

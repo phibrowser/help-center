@@ -30,6 +30,16 @@ Eine einfache Merkregel: **Spaces ordnen, wie alles aussieht und sich anfühlt; 
 - **Lösche** einen Space über dasselbe Menü oder mit **Spaces → Space löschen…** in der Menüleiste. Beim Löschen eines Space werden auch die zugehörigen Lesezeichen und URL-Regeln entfernt; das lässt sich nicht rückgängig machen. Steht der Geltungsbereich angehefteter Tabs auf **Space**, werden auch die angehefteten Tabs dieses Space entfernt. Angeheftete Tabs mit Geltungsbereich Profil oder App sind nicht betroffen.
 - **Es gibt keinen festen Standard-Space.** Jeder Space lässt sich löschen, auch der, den Phi beim ersten Start angelegt hat. Die einzige Regel: Phi behält immer mindestens einen regulären Space, über alle Profile hinweg, deshalb wird **Löschen** nicht angeboten, solange nur ein einziger Space übrig ist. Lege zuerst einen weiteren Space an und lösche dann den, den du nicht mehr brauchst. Inkognito-Spaces zählen dabei nicht mit; sie werden geschlossen, nicht gelöscht.
 
+## Ein Profil löschen {#deleting-a-profile}
+
+Beim Löschen eines Space wird sein Profil nie gelöscht. Ein Profil, das du nicht mehr nutzt, bleibt mit seinen Cookies, seinem Verlauf und seinen Erweiterungen bestehen, bis du es löschst:
+
+1. Lösche jeden Space, der das Profil verwendet. Phi löscht ein Profil erst, wenn kein Space es mehr verwendet.
+2. Wähle **Spaces → Profil löschen** in der Menüleiste und dann das Profil, oder wähle es unter **Einstellungen → Profile** aus und lösche es dort. Ein Profil, das noch ein Space verwendet, ist mit **von einem Space verwendet** gekennzeichnet.
+3. Bestätige. Dadurch werden Cookies, Verlauf, Erweiterungen und andere Browserdaten des Profils dauerhaft entfernt; das lässt sich nicht rückgängig machen. Wenn du die Synchronisierung nutzt, wird das Profil auch auf deinen anderen synchronisierten Geräten gelöscht. Phi Chat-Unterhaltungen aus diesem Profil bleiben unter **Ohne Kategorie** erhalten.
+
+Das Profil, das Phi beim ersten Öffnen erstellt hat, kann nicht gelöscht werden.
+
 ## URL-Regeln: passende Websites automatisch lenken {#url-rules-route-matching-sites-automatically}
 
 **URL-Regeln** erkennen eine Website und öffnen sie in einem regulären Space, in Inkognito oder in Kiosk, egal wo du den Link anklickst oder eintippst.

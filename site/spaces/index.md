@@ -30,6 +30,16 @@ A simple way to hold it: **Spaces organize how things look and feel; Profiles de
 - **Delete** a Space from the same menu, or with **Spaces → Delete Space…** in the menu bar. Deleting a Space also removes the bookmarks and URL Rules that belong to it, and cannot be undone. If pinned tab scope is **Space**, that Space's pinned tabs are removed too. Profile-scoped and App-scoped pinned tabs are not affected.
 - **There is no fixed default Space.** Any Space can be deleted, including the one Phi created when you first opened it. The one rule is that Phi always keeps at least one regular Space, across all Profiles, so **Delete** is not offered while a single Space remains. Create another Space first, then delete the one you no longer want. Incognito Spaces do not count toward that one; they are closed rather than deleted.
 
+## Deleting a Profile {#deleting-a-profile}
+
+Deleting a Space never deletes its Profile. A Profile you no longer use stays, with its cookies, history, and extensions, until you delete it:
+
+1. Delete every Space that uses the Profile. Phi deletes a Profile only once no Space uses it.
+2. Choose **Spaces → Delete Profile** in the menu bar and pick the Profile, or select it in **Settings → Profiles** and delete it there. A Profile a Space still uses is marked **in use by a Space**.
+3. Confirm. This permanently removes the Profile's cookies, history, extensions, and other browser data, and cannot be undone. If you use Sync, the Profile is deleted from your other synced devices too. Phi Chat conversations from that Profile are kept, under **Uncategorized**.
+
+The Profile Phi created when you first opened it cannot be deleted.
+
 ## URL Rules: route matching sites automatically
 
 **URL Rules** match a site and open it in a regular Space, Incognito, or Kiosk, no matter where you click or type the link.

@@ -30,6 +30,16 @@ Een eenvoudig ezelsbruggetje: **Spaces bepalen hoe alles eruitziet en aanvoelt; 
 - **Verwijder** een Space via hetzelfde menu, of met **Spaces → Verwijder Space…** in de menubalk. Bij het verwijderen van een Space verdwijnen ook de bladwijzers en URL-regels die erbij horen, en dat kan niet ongedaan worden gemaakt. Staat het bereik van vastgezette tabbladen op **Space**, dan worden de vastgezette tabbladen van die Space ook verwijderd. Vastgezette tabbladen met het bereik Profiel of App blijven staan.
 - **Er is geen vaste standaard-Space.** Elke Space kan worden verwijderd, ook de Space die Phi aanmaakte toen je het voor het eerst opende. De enige regel is dat Phi altijd minstens één gewone Space bewaart, over alle Profielen heen, zodat **Verwijder** niet wordt aangeboden zolang er nog maar één Space over is. Maak eerst een andere Space aan en verwijder daarna de Space die je niet meer wilt. Incognito-Spaces tellen daarbij niet mee; die worden gesloten, niet verwijderd.
 
+## Een Profiel verwijderen {#deleting-a-profile}
+
+Een Space verwijderen verwijdert nooit het bijbehorende Profiel. Een Profiel dat je niet meer gebruikt blijft bestaan, met zijn cookies, geschiedenis en extensies, totdat je het verwijdert:
+
+1. Verwijder elke Space die het Profiel gebruikt. Phi verwijdert een Profiel pas als geen enkele Space het nog gebruikt.
+2. Kies **Spaces → Verwijder profiel** in de menubalk en kies het Profiel, of selecteer het in **Instellingen → Profielen** en verwijder het daar. Een Profiel dat een Space nog gebruikt, is gemarkeerd met **in gebruik door een Space**.
+3. Bevestig. De cookies, geschiedenis, extensies en andere browsergegevens van het Profiel worden definitief verwijderd, en dat kan niet ongedaan worden gemaakt. Gebruik je Synchronisatie, dan wordt het Profiel ook van je andere gesynchroniseerde apparaten verwijderd. Phi Chat-gesprekken uit dat Profiel blijven bewaard, onder **Zonder categorie**.
+
+Het Profiel dat Phi aanmaakte toen je het voor het eerst opende, kan niet worden verwijderd.
+
 ## URL-regels: stuur overeenkomende sites automatisch door {#url-rules-route-matching-sites-automatically}
 
 **URL-regels** herkennen een website en openen die in een gewone Space, Incognito of Kiosk, waar je de link ook aanklikt of intypt.

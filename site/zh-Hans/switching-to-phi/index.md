@@ -6,6 +6,8 @@ description: "从 Chrome、Safari、Arc 或 Dia 迁移到 Phi Browser 的指南�
 
 如果你正从 Chrome、Safari、Arc 或 Dia 迁移到 Phi，这篇指南先讲清心智模型上的变化。各功能指南仍会深入讲解每个方面；这一页给你的是一张迁移地图。
 
+要把数据带过来，请使用 **Phi** 菜单。**从其他浏览器导入...** 会把 Chrome、Safari、Arc 或 Dia 中的书签、历史记录和其他数据添加到你当前所在的空间（见 [导入与导出](/zh-Hans/import-export/)）。如果你来自 Arc 或 Zen，**从其他浏览器迁移…** 能做得更多，它会在 Phi 中重建你的个人资料和空间（见 [从 Arc 或 Zen 迁移](/zh-Hans/migrate/)）。
+
 ## 来自 Chrome 或 Safari
 
 先用**舒适模式**。它保留了最熟悉的形态：标签页在顶部，地址栏可见，整体布局接近传统浏览器。侧边栏仍然在，但你不必第一天就完全切换到侧边栏工作方式。
@@ -24,6 +26,8 @@ description: "从 Chrome、Safari、Arc 或 Dia 迁移到 Phi Browser 的指南�
 
 如果 Arc 的侧边栏模式适合你，Phi 应该会让你觉得熟悉，但细节有所不同。
 
+你不必手动重建 Arc 的侧边栏。**从其他浏览器迁移…** 会为每个 Arc 个人资料创建一个 Phi 个人资料，为每个 Arc 空间创建一个 Phi 空间，把每个空间侧边栏中固定的项目变成它的书签，并把你的 Favorites 变成固定标签页。它会带过来什么、会留下什么，见 [从 Arc 或 Zen 迁移](/zh-Hans/migrate/)。
+
 Arc 和 Phi 都把工作区层与隔离层分开。在 Phi 里，**空间**是侧边栏中可见的工作区，而**个人资料**是底层的 Cookie、历史记录、登录状态和扩展程序。一个个人资料可以支撑多个空间，所以你可以拥有多个共用同一登录会话的工作区。
 
 Phi 的**网址规则**受 Arc 的 Air Traffic Control 启发：匹配的网站可以在常规空间、无痕或 Kiosk 中打开，或者先问你要在哪里打开。具体实现是 Phi 自己的，但目标一致：自动把链接放进正确的上下文。
@@ -34,6 +38,7 @@ Phi 的**网址规则**受 Arc 的 Air Traffic Control 启发：匹配的网站�
 
 推荐接着读：
 
+- [从 Arc 或 Zen 迁移](/zh-Hans/migrate/)，在 Phi 中重建你的 Arc 空间。
 - [空间与个人资料](/zh-Hans/spaces/)，空间、个人资料和网址规则。
 - [书签与固定标签页](/zh-Hans/bookmarks/)，活书签与可配置的固定标签页范围。
 - [Peek 视图](/zh-Hans/peek/)，在不离开当前页面的情况下预览链接。

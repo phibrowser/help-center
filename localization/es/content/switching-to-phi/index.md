@@ -6,6 +6,8 @@ description: "Guía de migración para pasar a Phi Browser desde Chrome, Safari,
 
 Si vienes a Phi desde Chrome, Safari, Arc o Dia, esta guía explica primero los cambios de modelo mental. Las guías detalladas de cada función siguen cubriendo cada área a fondo; esta página te da el mapa de la migración.
 
+Para traer tus datos, usa el menú **Phi**. **Importar desde otro navegador...** añade marcadores, historial y otros datos de Chrome, Safari, Arc o Dia al Espacio en el que estás (consulta [Importar y exportar](/es/import-export/)). Si vienes de Arc o Zen, **Migrar desde otro navegador…** va más allá y recrea tus Perfiles y Espacios en Phi (consulta [Migrar desde Arc o Zen](/es/migrate/)).
+
 ## Si vienes de Chrome o Safari
 
 Empieza con el **modo Cómodo**. Es el que conserva la forma más familiar: pestañas arriba, una barra de direcciones visible y un diseño cercano al de un navegador tradicional. La barra lateral sigue ahí, pero no tienes que adoptar todo el flujo de trabajo de la barra lateral desde el primer día.
@@ -24,18 +26,22 @@ Buenas lecturas para continuar:
 
 Phi debería resultarte familiar si el modelo de barra lateral de Arc te funcionaba, pero los detalles son distintos.
 
+No tienes que reconstruir a mano tu barra lateral de Arc. **Migrar desde otro navegador…** crea un Perfil de Phi por cada perfil de Arc y un Espacio de Phi por cada Espacio de Arc, convierte los elementos fijados de la barra lateral de cada Espacio en sus marcadores y convierte tus Favorites en pestañas fijadas. Consulta [Migrar desde Arc o Zen](/es/migrate/) para ver qué se transfiere y qué se queda atrás.
+
 Tanto Arc como Phi separan la capa de espacio de trabajo de la capa de aislamiento. En Phi, un **Espacio** es el espacio de trabajo visible en la barra lateral, mientras que un **Perfil** es lo que hay debajo: las cookies, el historial, los inicios de sesión y las extensiones. Un Perfil puede respaldar varios Espacios, así que puedes tener varios espacios de trabajo que comparten la misma sesión iniciada.
 
-Las **Reglas de URL** de Phi se inspiran en el Air Traffic Control de Arc: los sitios que coinciden pueden abrirse en el Espacio que les asignes, o preguntarte dónde abrirse. La implementación exacta es propia de Phi, pero el objetivo es el mismo: poner los enlaces en el contexto correcto automáticamente.
+Las **Reglas de URL** de Phi se inspiran en el Air Traffic Control de Arc: los sitios que coinciden pueden abrirse en un Espacio normal, en Incógnito o en Kiosk, o preguntarte dónde abrirse. La implementación exacta es propia de Phi, pero el objetivo es el mismo: poner los enlaces en el contexto correcto automáticamente.
 
-La mayor diferencia en marcadores es que Phi conserva un árbol de marcadores completo con carpetas. Arc abandonó los marcadores tradicionales en favor de las pestañas fijadas y los Favoritos; Phi conserva ambas ideas. Los marcadores se mantienen organizados en la barra lateral y se abren donde están, como pestañas vivas. Las pestañas fijadas se sitúan arriba para las páginas en las que vives, y tú decides si pertenecen a un Espacio, a un Perfil o a la app entera.
+La mayor diferencia en marcadores es que Phi conserva un árbol de marcadores completo con carpetas. Arc abandonó los marcadores tradicionales en favor de las pestañas fijadas y los Favorites; Phi conserva ambas ideas. Los marcadores se mantienen organizados en la barra lateral y se abren donde están, como pestañas vivas. Las pestañas fijadas se sitúan arriba para las páginas en las que vives, y tú decides si pertenecen a un Espacio, a un Perfil o a la app entera.
 
-Phi no tiene un equivalente del Peek de Arc. Abrir un enlace desde una pestaña fijada navega con normalidad dentro de la pestaña.
+Phi tiene su propia versión del Peek de Arc. Cuando un enlace en una pestaña fijada o en un marcador lleva a un sitio distinto, Phi lo muestra como vista previa en un panel flotante sobre la página en lugar de alejar esa pestaña de la suya. Puedes cerrar la vista previa, conservarla como pestaña o abrirla junto a la original como Vista dividida. Consulta [Vista Peek](/es/peek/) para el comportamiento completo y los ajustes que la desactivan o la reservan solo para el clic con Mayúsculas.
 
 Buenas lecturas para continuar:
 
+- [Migrar desde Arc o Zen](/es/migrate/) para recrear tus Espacios de Arc en Phi.
 - [Espacios y Perfiles](/es/spaces/) para los Espacios, los Perfiles y las Reglas de URL.
 - [Marcadores y pestañas fijadas](/es/bookmarks/) para los marcadores vivos y el alcance configurable de las pestañas fijadas.
+- [Vista Peek](/es/peek/) para ver una vista previa de los enlaces sin salir de la página en la que estás.
 - [Temas y apariencia](/es/themes/) para los colores por Espacio y los temas globales.
 
 ## Si vienes de Dia

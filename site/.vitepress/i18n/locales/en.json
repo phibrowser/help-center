@@ -31,6 +31,7 @@
       "peek": "Peek View",
       "kiosk": "Kiosk",
       "importExport": "Importing & Exporting",
+      "migrate": "Migrating from Arc or Zen",
       "sync": "Sync",
       "tabManagement": "Managing Tabs & Bookmarks",
       "themes": "Themes & Appearance",

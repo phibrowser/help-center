@@ -27,20 +27,31 @@ Une façon simple de le retenir : **les Espaces organisent l'apparence et le con
 - **Créez** un Espace depuis la bande des Espaces dans la barre latérale. Vous lui donnez un nom et choisissez le Profil auquel il appartient, ou créez un **Nouveau profil** directement à cet endroit si cet Espace doit être entièrement séparé.
 - **Changez** d'Espace depuis la barre latérale d'un simple clic. Les onglets, les favoris et le thème de la barre latérale changent en conséquence, et Phi rouvre la fenêtre de l'Espace si elle n'est pas déjà ouverte.
 - **Renommer**, **Modifier l'icône** et **Modifier le thème** se trouvent dans le menu de l'Espace. Choisissez **Suivre le thème global** pour abandonner le thème propre à l'Espace.
-- **Supprimez** un Espace depuis le même menu. Supprimer un Espace supprime aussi les favoris et les Règles d'URL qui lui appartiennent, et cette action est irréversible. Si la portée des onglets épinglés est **Espace**, les onglets épinglés de cet Espace sont supprimés aussi. Les onglets épinglés de portée Profil ou App ne sont pas affectés.
+- **Supprimez** un Espace depuis le même menu, ou avec **Espaces → Supprimer l'Espace…** dans la barre des menus. Supprimer un Espace supprime aussi les favoris et les Règles d'URL qui lui appartiennent, et cette action est irréversible. Si la portée des onglets épinglés est **Espace**, les onglets épinglés de cet Espace sont supprimés aussi. Les onglets épinglés de portée Profil ou App ne sont pas affectés.
+- **Il n'y a pas d'Espace par défaut imposé.** N'importe quel Espace peut être supprimé, y compris celui que Phi a créé lors du premier démarrage. La seule règle est que Phi conserve toujours au moins un Espace normal, tous Profils confondus ; **Supprimer** n'est donc pas proposé tant qu'il ne reste qu'un seul Espace. Créez d'abord un autre Espace, puis supprimez celui dont vous ne voulez plus. Les Espaces de navigation privée n'entrent pas dans ce compte ; ils sont fermés, pas supprimés.
 
-## Règles d'URL : envoyer les sites vers le bon Espace automatiquement {#url-rules-send-sites-to-the-right-space-automatically}
+## Supprimer un Profil {#deleting-a-profile}
 
-Les Espaces sont le plus utiles quand les bonnes pages arrivent au bon endroit sans que vous ayez à y penser. C'est le rôle des **Règles d'URL** : une règle reconnaît un site et l'ouvre dans l'Espace que vous lui attribuez, quel que soit l'endroit où vous cliquez ou saisissez le lien.
+Supprimer un Espace ne supprime jamais son Profil. Un Profil que vous n'utilisez plus reste là, avec ses cookies, son historique et ses extensions, jusqu'à ce que vous le supprimiez :
 
-Ouvrez **Règles d'URL…** depuis le menu **Espaces** de la barre des menus, ou depuis la section Espaces des Paramètres, pour gérer les règles de tous les Espaces au même endroit. Chaque règle s'applique par :
+1. Supprimez tous les Espaces qui utilisent ce Profil. Phi ne supprime un Profil qu'une fois qu'aucun Espace ne l'utilise.
+2. Choisissez **Espaces → Supprimer le profil** dans la barre des menus et sélectionnez le Profil, ou sélectionnez-le dans **Paramètres → Profils** et supprimez-le depuis cet écran. Un Profil encore utilisé par un Espace est indiqué **utilisé par un Espace**.
+3. Confirmez. Cette action supprime définitivement les cookies, l'historique, les extensions et les autres données de navigation du Profil, et elle est irréversible. Si vous utilisez la synchronisation, le Profil est aussi supprimé de vos autres appareils synchronisés. Les conversations Phi Chat de ce Profil sont conservées, sous **Sans catégorie**.
+
+Le Profil créé par Phi lors de sa première ouverture ne peut pas être supprimé.
+
+## Règles d'URL : diriger automatiquement les sites correspondants {#url-rules-route-matching-sites-automatically}
+
+Les **Règles d'URL** reconnaissent un site et l'ouvrent dans un Espace normal, en Navigation privée ou dans Kiosk, quel que soit l'endroit où vous cliquez ou saisissez le lien.
+
+Ouvrez **Règles d'URL…** depuis le menu **Espaces** de la barre des menus, ou ouvrez **Paramètres → Navigation** et cliquez sur **Gérer les règles d'URL…**. Chaque règle s'applique par :
 
 - **Suffixe de domaine**, `figma.com` et tous ses sous-domaines.
 - **Domaine**, un hôte exact, comme `www.example.com`.
 - **Le domaine contient**, tout hôte contenant un mot, comme `git`.
 - **URL**, un hôte plus un préfixe de chemin, comme `example.com/team`.
 
-En plus de vos Espaces classiques, une règle peut cibler **Navigation privée** : les sites correspondants s'ouvrent alors dans un [Espace de navigation privée](/fr/incognito/), créé à la demande quand aucun n'est ouvert.
+Une règle peut cibler un Espace normal, **Navigation privée** ou **Kiosk**. **Navigation privée** dirige les sites correspondants vers un [Espace de navigation privée](/fr/incognito/), créé quand il le faut. **Kiosk** ouvre chaque correspondance dans une fenêtre légère en dehors de vos Espaces. Voir [Kiosk](/fr/kiosk/) pour le fonctionnement de ces fenêtres.
 
 Réglez une règle sur **Toujours demander** plutôt que de router en silence. Quand un lien correspondant s'ouvre, Phi affiche un sélecteur **Ouvrir dans quel Espace ?** pour vous laisser choisir. Votre Espace actuel est signalé, et vous pouvez garder la page là où vous êtes. Quand plusieurs règles pourraient correspondre, la plus spécifique l'emporte (un chemin plus long l'emporte sur un plus court ; un hôte exact l'emporte sur une correspondance générique).
 
@@ -50,4 +61,4 @@ Pour une navigation qui ne doit rien laisser derrière elle, **Fichier → Nouve
 
 ## Comment cela s'articule avec le reste de Phi
 
-Les Espaces s'appuient sur l'espace de travail de la barre latérale décrit dans [Dispositions et navigation](/fr/layouts/), et les couleurs par Espace utilisent la même palette que [Thèmes et apparence](/fr/themes/). Si vous venez d'Arc ou de Dia, voir [Passer à Phi](/fr/switching-to-phi/) pour la comparaison de migration. Comme les Profils isolent les cookies et l'historique, ce que l'assistant peut voir est limité au Profil dans lequel vous naviguez. Voir [Confidentialité et vos données](/fr/privacy/) pour la façon dont vos données sont traitées.
+Les Espaces s'appuient sur l'espace de travail de la barre latérale décrit dans [Dispositions et navigation](/fr/layouts/), et les couleurs par Espace utilisent la même palette que [Thèmes et apparence](/fr/themes/). Si vous venez d'Arc ou de Dia, voir [Passer à Phi](/fr/switching-to-phi/) pour la comparaison de migration. Comme les Profils isolent les cookies et l'historique, ce que l'assistant peut voir est limité au Profil dans lequel vous naviguez. Voir [Confidentialité et vos données](/fr/privacy/) pour la façon dont vos données sont traitées. Pour retrouver les mêmes Espaces et Profils sur plusieurs Mac, voir [Synchronisation](/fr/sync/).

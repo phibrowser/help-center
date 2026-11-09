@@ -6,6 +6,8 @@ description: "Ein Umstiegsleitfaden für den Wechsel zu Phi Browser von Chrome, 
 
 Wenn du von Chrome, Safari, Arc oder Dia zu Phi wechselst, erklärt dir dieser Leitfaden zuerst, wie sich das Denkmodell ändert. Die ausführlichen Funktionsseiten behandeln weiterhin jeden Bereich im Detail; diese Seite gibt dir die Landkarte für den Umstieg.
 
+Um deine Daten zu übernehmen, nutze das Menü **Phi**. **Aus anderem Browser importieren...** fügt Lesezeichen, Verlauf und andere Daten aus Chrome, Safari, Arc oder Dia zu dem Space hinzu, in dem du gerade bist (siehe [Importieren & Exportieren](/de/import-export/)). Wenn du von Arc oder Zen kommst, geht **Aus anderem Browser migrieren…** weiter und baut deine Profile und Spaces in Phi nach (siehe [Von Arc oder Zen migrieren](/de/migrate/)).
+
 ## Wenn du von Chrome oder Safari kommst
 
 Starte mit dem Modus **Komfortabel**. Er behält die vertrauteste Form bei: Tabs oben, eine sichtbare Adressleiste und ein Layout nah am klassischen Browser. Die Seitenleiste ist trotzdem da, aber du musst dir den kompletten Seitenleisten-Workflow nicht gleich am ersten Tag zulegen.
@@ -24,16 +26,19 @@ Gute nächste Lektüre:
 
 Wenn das Seitenleisten-Modell von Arc für dich funktioniert hat, dürfte sich Phi vertraut anfühlen; die Details sind aber anders.
 
+Du musst deine Arc-Seitenleiste nicht von Hand neu aufbauen. **Aus anderem Browser migrieren…** erstellt für jedes Arc-Profil ein Phi-Profil und für jeden Arc-Space einen Phi-Space, macht aus den angehefteten Seitenleisten-Elementen jedes Space dessen Lesezeichen und aus deinen Favorites angeheftete Tabs. Unter [Von Arc oder Zen migrieren](/de/migrate/) steht, was übernommen wird und was zurückbleibt.
+
 Arc und Phi trennen beide die Arbeitsbereich-Ebene von der Isolations-Ebene. In Phi ist ein **Space** der sichtbare Arbeitsbereich in der Seitenleiste, während ein **Profil** darunter die Cookies, den Verlauf, die Anmeldedaten und die Erweiterungen bündelt. Ein Profil kann mehreren Spaces zugrunde liegen, du kannst also mehrere Arbeitsbereiche haben, die sich dieselbe angemeldete Sitzung teilen.
 
 Phis **URL-Regeln** sind von Arcs Air Traffic Control inspiriert: Passende Websites können sich in einem regulären Space, in Inkognito oder in Kiosk öffnen, oder sie fragen dich, wo sie geöffnet werden sollen. Die konkrete Umsetzung ist Phis eigene, aber das Ziel ist dasselbe: Links automatisch in den richtigen Kontext bringen.
 
-Der größte Unterschied bei Lesezeichen: Phi behält einen vollständigen Lesezeichenbaum mit Ordnern. Arc hat klassische Lesezeichen zugunsten von angehefteten Tabs und Favoriten aufgegeben; Phi behält beide Ideen. Lesezeichen bleiben in der Seitenleiste organisiert und öffnen sich an Ort und Stelle als vollwertige Tabs. Angeheftete Tabs sitzen oben für Seiten, in denen du zu Hause bist, und du entscheidest, ob sie zu einem Space, einem Profil oder der ganzen App gehören.
+Der größte Unterschied bei Lesezeichen: Phi behält einen vollständigen Lesezeichenbaum mit Ordnern. Arc hat klassische Lesezeichen zugunsten von angehefteten Tabs und Favorites aufgegeben; Phi behält beide Ideen. Lesezeichen bleiben in der Seitenleiste organisiert und öffnen sich an Ort und Stelle als vollwertige Tabs. Angeheftete Tabs sitzen oben für Seiten, in denen du zu Hause bist, und du entscheidest, ob sie zu einem Space, einem Profil oder der ganzen App gehören.
 
 Phi hat seine eigene Version von Arcs Peek. Führt ein Link in einem angehefteten Tab oder Lesezeichen zu einer anderen Website, zeigt Phi ihn als Vorschau in einem schwebenden Panel über der Seite an, statt den Tab von seiner eigenen Seite wegzuführen. Du kannst die Vorschau schließen, als Tab behalten oder neben dem Original als Split View öffnen. Das vollständige Verhalten und die Einstellungen, mit denen du Peek ausschaltest oder nur für den Klick mit gedrückter Umschalttaste behältst, stehen unter [Peek-Ansicht](/de/peek/).
 
 Gute nächste Lektüre:
 
+- [Von Arc oder Zen migrieren](/de/migrate/) zum Nachbauen deiner Arc-Spaces in Phi.
 - [Spaces & Profile](/de/spaces/) zu Spaces, Profilen und URL-Regeln.
 - [Lesezeichen & angeheftete Tabs](/de/bookmarks/) zu lebendigen Lesezeichen und dem einstellbaren Geltungsbereich angehefteter Tabs.
 - [Peek-Ansicht](/de/peek/) zur Vorschau von Links, ohne die Seite zu verlassen, auf der du gerade bist.

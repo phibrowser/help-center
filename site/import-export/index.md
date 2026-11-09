@@ -1,12 +1,16 @@
 ---
-description: "How to import bookmarks and history into Phi Browser from another browser or a file (Bookmarks HTML, Safari History JSON, Safari Export Archive ZIP), what each file type imports, and how to export your bookmarks to an HTML file."
+description: "How to import bookmarks and history into Phi Browser from another browser or a file (Bookmarks HTML, Safari History JSON, Safari Export Archive ZIP), what each file type imports, how Import differs from Migrate, and how to export your bookmarks to an HTML file."
 ---
 
 # Importing & Exporting
 
-Phi can bring in bookmarks and browsing history from other browsers, either directly from an installed browser or from a file you already have. It can also export a Space's bookmarks back out to a standard HTML file. This page covers both directions, and spells out exactly what each kind of file brings in.
+Phi can bring in bookmarks, browsing history, and for some browsers cookies and extensions, either directly from an installed browser or from a file you already have. It can also export a Space's bookmarks back out to a standard HTML file. This page covers both directions, and spells out exactly what each kind of file brings in.
 
-If you are new to Phi and just want the migration overview, start with [Switching to Phi](/switching-to-phi/) and come back here for the details.
+If you are new to Phi and want the migration overview, start with [Switching to Phi](/switching-to-phi/) and come back here for the details.
+
+::: tip Import or Migrate
+The **Phi** menu also has **Migrate from Another Browser…**, which is a different command. **Import** adds bookmarks, history, and other data to the Space you are in. **Migrate** recreates your Arc or Zen Profiles and Spaces as new ones in Phi, each with its own bookmarks and pinned tabs, and leaves your existing Phi setup untouched. If you are moving from Arc or Zen and want your Spaces back as they were, see [Migrating from Arc or Zen](/migrate/).
+:::
 
 ## Two ways to import
 
@@ -15,12 +19,21 @@ There are two entry points, and both open the same **Browser data** import scree
 - **During first run.** The onboarding flow offers to import while you are setting Phi up.
 - **Anytime later.** Open the **Phi** menu (the bold app menu next to the Apple menu) and choose **Import from Another Browser…**.
 
-The import screen gives you four sources: **From Chrome**, **From Safari**, **From Arc**, and **From a file**. Chrome, Safari, and Arc read the installed browser's data directly and let you pick which data types to bring over. The sections below go into **From a file** in more detail.
+The import screen can offer five sources: **From Chrome**, **From Arc**, **From Dia**, **From Safari**, and **From a file**. Chrome, Arc, and Dia appear only when Phi finds that browser's data on this Mac; Safari and **From a file** are always listed. The browser sources read the installed browser's data directly and let you pick which data types to bring over:
 
-Imports land in the [Space](/spaces/) you run the import from. Bookmarks join that Space's bookmark tree, and history joins your browsing history. Importing is not available in [Incognito](/incognito/); switch to a regular Space or window first.
+| Source              | Data types you can pick                     |
+| ------------------- | ------------------------------------------- |
+| Chrome, Arc, or Dia | Bookmarks, history, cookies, and extensions |
+| Safari              | Bookmarks and history                       |
+
+The sections below go into **From a file** in more detail.
+
+Imports land in the [Space](/spaces/) you run the import from. Bookmarks join that Space's bookmark tree. History, cookies, and extensions go to the Space's Profile, so every Space that shares that Profile sees them. Importing is not available in [Incognito](/incognito/); switch to a regular Space or window first.
 
 ::: tip Quit Safari before importing from it
 If you use **From Safari**, quit Safari first. Safari keeps some recent activity in memory and only writes it fully to disk when it closes, so importing while it is still running can miss your latest bookmarks and history. This does not apply to **From a file**, which reads a snapshot you already exported.
+
+Phi also needs **Full Disk Access** to read Safari's data. If it does not have it yet, the import screen asks for it and offers **Open Settings**.
 :::
 
 ## Importing from a file
@@ -70,7 +83,8 @@ Export a Space's bookmarks to HTML, then use **From a file** to bring them back 
 
 ## What to read next
 
-- [Bookmarks & Pinned Tabs](/bookmarks/): how bookmarks behave once they are in Phi.
-- [Spaces & Profiles](/spaces/): why imports land in a Space, and how Profiles separate your data.
-- [Switching to Phi](/switching-to-phi/): the full migration map from Chrome, Safari, Arc, and Dia.
-- [Time Machine Backups](/time-machine/): automatic rollback snapshots and full user-data export.
+- [Bookmarks & Pinned Tabs](/bookmarks/), how bookmarks behave once they are in Phi.
+- [Spaces & Profiles](/spaces/), why imports land in a Space, and how Profiles separate your data.
+- [Migrating from Arc or Zen](/migrate/), recreating your Arc or Zen Profiles and Spaces in Phi.
+- [Switching to Phi](/switching-to-phi/), the full migration map from Chrome, Safari, Arc, and Dia.
+- [Time Machine Backups](/time-machine/), automatic rollback snapshots and full user-data export.

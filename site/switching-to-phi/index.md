@@ -6,6 +6,8 @@ description: "A migration guide for moving to Phi Browser from Chrome, Safari, A
 
 If you are moving to Phi from Chrome, Safari, Arc, or Dia, this guide explains the mental model changes first. The detailed feature guides still cover each area in depth; this page gives you the migration map.
 
+To bring your data across, use the **Phi** menu. **Import from Another Browser…** adds bookmarks, history, and other data from Chrome, Safari, Arc, or Dia to the Space you are in (see [Importing & Exporting](/import-export/)). If you are coming from Arc or Zen, **Migrate from Another Browser…** goes further and recreates your Profiles and Spaces in Phi (see [Migrating from Arc or Zen](/migrate/)).
+
 ## Coming from Chrome or Safari
 
 Start with **Comfortable Mode**. It keeps the most familiar shape: tabs on top, a visible URL bar, and a layout close to a traditional browser. The sidebar is still there, but you do not have to adopt the full sidebar workflow on day one.
@@ -24,6 +26,8 @@ Good next reads:
 
 Phi should feel familiar if Arc's sidebar model worked for you, but the details are different.
 
+You do not have to rebuild your Arc sidebar by hand. **Migrate from Another Browser…** creates a Phi Profile for each Arc profile and a Phi Space for each Arc Space, turns each Space's pinned sidebar items into its bookmarks, and turns your Favorites into pinned tabs. See [Migrating from Arc or Zen](/migrate/) for what it brings across and what it leaves behind.
+
 Arc and Phi both separate the workspace layer from the isolation layer. In Phi, a **Space** is the visible workspace in the sidebar, while a **Profile** is the cookies, history, logins, and extensions underneath. A Profile can back several Spaces, so you can have multiple workspaces that share the same signed-in session.
 
 Phi's **URL Rules** are inspired by Arc's Air Traffic Control: matching sites can open in a regular Space, Incognito, or Kiosk, or ask you where to open them. The exact implementation is Phi's own, but the goal is the same: put links in the right context automatically.
@@ -34,6 +38,7 @@ Phi has its own take on Arc's Peek. When a link in a pinned tab or bookmark lead
 
 Good next reads:
 
+- [Migrating from Arc or Zen](/migrate/) for recreating your Arc Spaces in Phi.
 - [Spaces & Profiles](/spaces/) for Spaces, Profiles, and URL Rules.
 - [Bookmarks & Pinned Tabs](/bookmarks/) for living bookmarks and configurable pinned tab scope.
 - [Peek View](/peek/) for previewing links without leaving the page you are on.
