@@ -74,7 +74,7 @@ El informe enumera cada Perfil y cada Espacio con lo que le ha pasado: cuántos 
 
 ## Migrar de nuevo {#migrating-again}
 
-Phi recuerda que migraste desde un navegador a tu cuenta. Si empiezas otra migración desde el mismo navegador, primero te avisa: migrar de nuevo crea un segundo conjunto de Perfiles y Espacios y no actualiza el primero. Elige **Migrar de nuevo** solo si eso es lo que quieres. Para empezar de cero, elimina los Espacios de la primera ejecución antes de volver a migrar (consulta [Espacios y Perfiles](/es/spaces/)), para no acabar con dos copias una al lado de la otra.
+Phi recuerda que migraste desde un navegador a tu cuenta. Si empiezas otra migración desde el mismo navegador, primero te avisa: migrar de nuevo crea un segundo conjunto de Perfiles y Espacios y no actualiza el primero. Elige **Migrar de nuevo** solo si eso es lo que quieres. Para empezar de cero sin acabar con dos copias una al lado de la otra, elimina lo que creó la primera ejecución antes de volver a migrar: primero sus Espacios y luego sus Perfiles. Eliminar un Espacio deja en su sitio su Perfil, junto con las cookies, el historial y las extensiones de ese Perfil. Consulta [Eliminar un Perfil](/es/spaces/#deleting-a-profile).
 
 No hay sincronización continua con Arc ni con Zen. Una migración es una copia única de lo que tenía el origen en ese momento.
 

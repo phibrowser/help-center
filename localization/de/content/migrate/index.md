@@ -74,7 +74,7 @@ Der Bericht listet jedes Profil und jeden Space mit dem auf, was damit passiert 
 
 ## Erneut migrieren {#migrating-again}
 
-Phi merkt sich, dass du aus einem Browser in dein Konto migriert hast. Startest du eine weitere Migration aus demselben Browser, warnt es dich vorher: Eine erneute Migration erstellt einen zweiten Satz Profile und Spaces und aktualisiert den ersten nicht. Wähle **Erneut migrieren** nur, wenn du genau das willst. Wenn du neu anfangen willst, lösche die Spaces aus dem ersten Durchlauf, bevor du erneut migrierst (siehe [Spaces & Profile](/de/spaces/)), damit du nicht zwei Kopien nebeneinander hast.
+Phi merkt sich, dass du aus einem Browser in dein Konto migriert hast. Startest du eine weitere Migration aus demselben Browser, warnt es dich vorher: Eine erneute Migration erstellt einen zweiten Satz Profile und Spaces und aktualisiert den ersten nicht. Wähle **Erneut migrieren** nur, wenn du genau das willst. Wenn du ohne zwei Kopien nebeneinander neu anfangen willst, lösche vor der erneuten Migration, was der erste Durchlauf erstellt hat: zuerst seine Spaces, dann seine Profile. Beim Löschen eines Space bleiben sein Profil und dessen Cookies, Verlauf und Erweiterungen erhalten. Siehe [Ein Profil löschen](/de/spaces/#deleting-a-profile).
 
 Es gibt keine laufende Synchronisierung mit Arc oder Zen. Eine Migration ist eine einmalige Kopie dessen, was die Quelle in diesem Moment hatte.
 

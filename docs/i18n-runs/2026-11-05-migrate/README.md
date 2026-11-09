@@ -31,6 +31,24 @@ locales). After reading all eight reports, the coordinator issued
 `brief-corrections.md`; every agent applied it. The coordinator read both
 Chinese pages in full for meaning and checked the others mechanically.
 
+## Round 3: Deleting a Profile
+
+Fangzhou's review (2026-11-09) pointed out that deleting the first run's
+Spaces before migrating again leaves its Profiles behind. English gained a
+**Deleting a Profile** section on `spaces` (`{#deleting-a-profile}`) and the
+Migrate page's "Migrating again" paragraph now links to it; see
+`english-delta-round3.diff`. Facts are from phibrowser-mac `v2.15.0`
+(`AppController+Menu.swift` `rebuildDeleteProfileSubmenu`,
+`SyncedDeletionConfirmation.swift`): the default Profile is not offered for
+deletion, an in-use Profile is labelled and refused.
+
+One translator agent per locale applied `brief-round3.md` with
+`refs-delete-profile.json` (12 shipped strings). The coordinator checked every
+locale for the four quoted labels against the catalog, the anchor and link,
+three steps, no dashes and no 您, and read both Chinese versions in full.
+`spaces` is now `translation: complete` / `contentReview: todo` in every
+locale.
+
 ## Rulings in this run
 
 | Concept                        | Ruling                                                                                                                                                              | Evidence                                                                                                                                                         |

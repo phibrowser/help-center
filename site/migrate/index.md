@@ -74,7 +74,7 @@ The report lists every Profile and Space with what happened to it: how many book
 
 ## Migrating again
 
-Phi remembers that you migrated from a browser into your account. If you start another migration from the same browser, it warns you first: migrating again creates a second set of Profiles and Spaces and does not update the first. Choose **Migrate Again** only if that is what you want. To start over, delete the Spaces from the first run before migrating again (see [Spaces & Profiles](/spaces/)), so you do not end up with two copies side by side.
+Phi remembers that you migrated from a browser into your account. If you start another migration from the same browser, it warns you first: migrating again creates a second set of Profiles and Spaces and does not update the first. Choose **Migrate Again** only if that is what you want. To start over without two copies side by side, delete what the first run created before migrating again: first its Spaces, then its Profiles. Deleting a Space leaves its Profile, and that Profile's cookies, history, and extensions, in place. See [Deleting a Profile](/spaces/#deleting-a-profile).
 
 There is no ongoing sync with Arc or Zen. A migration is a one-time copy of what the source had at that moment.
 

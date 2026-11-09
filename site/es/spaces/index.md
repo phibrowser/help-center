@@ -30,6 +30,16 @@ Una forma sencilla de recordarlo: **los Espacios organizan cómo se ven y se sie
 - **Elimina** un Espacio desde el mismo menú, o con **Espacios → Eliminar Espacio…** en la barra de menús. Eliminar un Espacio también borra los marcadores y las Reglas de URL que le pertenecen, y no se puede deshacer. Si el alcance de pestañas fijadas es **Espacio**, las pestañas fijadas de ese Espacio también se eliminan. Las pestañas fijadas con alcance de Perfil o de Aplicación no se ven afectadas.
 - **No hay un Espacio predeterminado fijo.** Cualquier Espacio se puede eliminar, incluido el que Phi creó la primera vez que lo abriste. La única regla es que Phi conserva siempre al menos un Espacio normal, contando todos los Perfiles, así que **Eliminar** no se ofrece mientras quede un solo Espacio. Crea otro Espacio primero y luego elimina el que ya no quieras. Los Espacios de incógnito no cuentan para ese mínimo; se cierran, no se eliminan.
 
+## Eliminar un Perfil {#deleting-a-profile}
+
+Eliminar un Espacio nunca elimina su Perfil. Un Perfil que ya no usas se queda, con sus cookies, su historial y sus extensiones, hasta que lo eliminas:
+
+1. Elimina todos los Espacios que usan el Perfil. Phi solo elimina un Perfil cuando ningún Espacio lo usa.
+2. Elige **Espacios → Eliminar perfil** en la barra de menús y selecciona el Perfil, o selecciónalo en **Configuración → Perfiles** y elimínalo ahí. Un Perfil que todavía usa un Espacio aparece marcado como **en uso por un Espacio**.
+3. Confirma. Esto elimina de forma permanente las cookies, el historial, las extensiones y otros datos de navegación del Perfil, y no se puede deshacer. Si usas Sincronización, el Perfil también se elimina de tus otros dispositivos sincronizados. Las conversaciones de Phi Chat de ese Perfil se conservan, dentro de **Sin categoría**.
+
+El Perfil que Phi creó la primera vez que lo abriste no se puede eliminar.
+
 ## Reglas de URL: dirige los sitios que coinciden automáticamente {#url-rules-route-matching-sites-automatically}
 
 Las **Reglas de URL** coinciden con un sitio y lo abren en un Espacio normal, en Incógnito o en Kiosk, sin importar dónde hagas clic en el enlace o dónde lo escribas.

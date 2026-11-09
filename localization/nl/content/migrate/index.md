@@ -74,7 +74,7 @@ Het rapport toont elk Profiel en elke Space met wat ermee is gebeurd: hoeveel bl
 
 ## Opnieuw migreren {#migrating-again}
 
-Phi onthoudt dat je vanuit een browser naar je account hebt gemigreerd. Start je opnieuw een migratie vanuit dezelfde browser, dan waarschuwt Phi je eerst: opnieuw migreren maakt een tweede set Profielen en Spaces aan en werkt de eerste niet bij. Kies **Migreer opnieuw** alleen als dat is wat je wilt. Wil je opnieuw beginnen, verwijder dan eerst de Spaces van de eerste migratie (zie [Spaces en Profielen](/nl/spaces/)), zodat je niet met twee kopieën naast elkaar eindigt.
+Phi onthoudt dat je vanuit een browser naar je account hebt gemigreerd. Start je opnieuw een migratie vanuit dezelfde browser, dan waarschuwt Phi je eerst: opnieuw migreren maakt een tweede set Profielen en Spaces aan en werkt de eerste niet bij. Kies **Migreer opnieuw** alleen als dat is wat je wilt. Wil je opnieuw beginnen zonder twee kopieën naast elkaar, verwijder dan eerst wat de eerste migratie heeft aangemaakt: eerst de Spaces, daarna de Profielen. Een Space verwijderen laat het bijbehorende Profiel staan, met de cookies, geschiedenis en extensies van dat Profiel. Zie [Een Profiel verwijderen](/nl/spaces/#deleting-a-profile).
 
 Er is geen doorlopende synchronisatie met Arc of Zen. Een migratie is een eenmalige kopie van wat de bron op dat moment had.
 

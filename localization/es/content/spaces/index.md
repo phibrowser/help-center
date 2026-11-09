@@ -27,20 +27,31 @@ Una forma sencilla de recordarlo: **los Espacios organizan cómo se ven y se sie
 - **Crea** un Espacio desde la franja de Espacios en la barra lateral. Le das un nombre y eliges a qué Perfil pertenece, o creas un **Nuevo perfil** ahí mismo si este Espacio debe estar completamente separado.
 - **Cambia** de Espacio desde la barra lateral con un solo clic. Las pestañas, los marcadores y el tema de la barra lateral cambian para coincidir, y Phi reabre la ventana del Espacio si no está ya abierta.
 - **Renombra** el Espacio, o usa **Cambiar icono** / **Cambiar tema** desde su menú. Elige **Seguir tema global** para quitar el tema propio del Espacio.
-- **Elimina** un Espacio desde el mismo menú. Eliminar un Espacio también borra los marcadores y las Reglas de URL que le pertenecen, y no se puede deshacer. Si el alcance de pestañas fijadas es **Espacio**, las pestañas fijadas de ese Espacio también se eliminan. Las pestañas fijadas con alcance de Perfil o de Aplicación no se ven afectadas.
+- **Elimina** un Espacio desde el mismo menú, o con **Espacios → Eliminar Espacio…** en la barra de menús. Eliminar un Espacio también borra los marcadores y las Reglas de URL que le pertenecen, y no se puede deshacer. Si el alcance de pestañas fijadas es **Espacio**, las pestañas fijadas de ese Espacio también se eliminan. Las pestañas fijadas con alcance de Perfil o de Aplicación no se ven afectadas.
+- **No hay un Espacio predeterminado fijo.** Cualquier Espacio se puede eliminar, incluido el que Phi creó la primera vez que lo abriste. La única regla es que Phi conserva siempre al menos un Espacio normal, contando todos los Perfiles, así que **Eliminar** no se ofrece mientras quede un solo Espacio. Crea otro Espacio primero y luego elimina el que ya no quieras. Los Espacios de incógnito no cuentan para ese mínimo; se cierran, no se eliminan.
 
-## Reglas de URL: envía los sitios al Espacio correcto automáticamente {#url-rules-send-sites-to-the-right-space-automatically}
+## Eliminar un Perfil {#deleting-a-profile}
 
-Los Espacios resultan más útiles cuando las páginas correctas llegan al lugar correcto sin que tengas que pensarlo. Las **Reglas de URL** hacen justo eso: una regla coincide con un sitio y lo abre en el Espacio que le asignes, sin importar dónde hagas clic en el enlace o dónde lo escribas.
+Eliminar un Espacio nunca elimina su Perfil. Un Perfil que ya no usas se queda, con sus cookies, su historial y sus extensiones, hasta que lo eliminas:
 
-Abre **Reglas de URL…** desde el menú **Espacios** de la barra de menús, o desde la sección Espacios de la Configuración, para administrar las reglas de todos los Espacios en un solo lugar. Cada regla coincide por:
+1. Elimina todos los Espacios que usan el Perfil. Phi solo elimina un Perfil cuando ningún Espacio lo usa.
+2. Elige **Espacios → Eliminar perfil** en la barra de menús y selecciona el Perfil, o selecciónalo en **Configuración → Perfiles** y elimínalo ahí. Un Perfil que todavía usa un Espacio aparece marcado como **en uso por un Espacio**.
+3. Confirma. Esto elimina de forma permanente las cookies, el historial, las extensiones y otros datos de navegación del Perfil, y no se puede deshacer. Si usas Sincronización, el Perfil también se elimina de tus otros dispositivos sincronizados. Las conversaciones de Phi Chat de ese Perfil se conservan, dentro de **Sin categoría**.
+
+El Perfil que Phi creó la primera vez que lo abriste no se puede eliminar.
+
+## Reglas de URL: dirige los sitios que coinciden automáticamente {#url-rules-route-matching-sites-automatically}
+
+Las **Reglas de URL** coinciden con un sitio y lo abren en un Espacio normal, en Incógnito o en Kiosk, sin importar dónde hagas clic en el enlace o dónde lo escribas.
+
+Abre **Reglas de URL…** desde el menú **Espacios** de la barra de menús, o abre **Configuración → Navegación** y haz clic en **Administrar reglas de URL…**. Cada regla coincide por:
 
 - **Sufijo de dominio**, `figma.com` y todos sus subdominios.
 - **Dominio**, un host exacto, como `www.example.com`.
 - **El dominio contiene**, cualquier host que contenga una palabra, como `git`.
 - **URL**, un host más un prefijo de ruta, como `example.com/team`.
 
-Además de tus Espacios normales, una regla puede apuntar a **Incógnito**: los sitios que coincidan se abren entonces en un [Espacio de incógnito](/es/incognito/), creado bajo demanda cuando no hay ninguno abierto.
+Una regla puede apuntar a un Espacio normal, a **Incógnito** o a **Kiosk**. **Incógnito** dirige los sitios que coincidan a un [Espacio de incógnito](/es/incognito/), creando uno cuando hace falta. **Kiosk** abre cada coincidencia en una ventana ligera fuera de tus Espacios. Consulta [Kiosk](/es/kiosk/) para saber cómo funcionan esas ventanas.
 
 Configura una regla como **Preguntar cada vez** en lugar de redirigir en silencio. Cuando se abre un enlace que coincide, Phi muestra un selector **¿En qué Espacio abrirlo?** para que elijas. Tu Espacio actual aparece marcado, y puedes dejar la página donde estás. Cuando varias reglas podrían coincidir, gana la más específica (una ruta más larga vence a una más corta; un host exacto vence a un comodín).
 
@@ -50,4 +61,4 @@ Para la navegación que no debe dejar nada atrás, **Archivo → Nuevo Espacio d
 
 ## Cómo se conecta esto con el resto de Phi
 
-Los Espacios se apoyan en el área de trabajo de la barra lateral descrita en [Diseños y navegación](/es/layouts/), y los colores por Espacio usan la misma paleta que [Temas y apariencia](/es/themes/). Si vienes de Arc o Dia, consulta [Cambiarse a Phi](/es/switching-to-phi/) para la comparación de migración. Como los Perfiles aíslan las cookies y el historial, lo que el asistente puede ver queda limitado al Perfil en el que estás navegando. Consulta [Privacidad y tus datos](/es/privacy/) para saber cómo se tratan tus datos.
+Los Espacios se apoyan en el área de trabajo de la barra lateral descrita en [Diseños y navegación](/es/layouts/), y los colores por Espacio usan la misma paleta que [Temas y apariencia](/es/themes/). Si vienes de Arc o Dia, consulta [Cambiarse a Phi](/es/switching-to-phi/) para la comparación de migración. Como los Perfiles aíslan las cookies y el historial, lo que el asistente puede ver queda limitado al Perfil en el que estás navegando. Consulta [Privacidad y tus datos](/es/privacy/) para saber cómo se tratan tus datos. Para tener los mismos Espacios y Perfiles en más de un Mac, consulta [Sincronización](/es/sync/).

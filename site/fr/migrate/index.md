@@ -74,7 +74,7 @@ Le rapport liste chaque Profil et chaque Espace avec ce qui lui est arrivé : c
 
 ## Migrer à nouveau {#migrating-again}
 
-Phi retient que vous avez déjà migré depuis un navigateur vers votre compte. Si vous lancez une autre migration depuis le même navigateur, Phi vous prévient d'abord : migrer à nouveau crée un second ensemble de Profils et d'Espaces et ne met pas à jour le premier. Ne choisissez **Migrer à nouveau** que si c'est bien ce que vous voulez. Pour repartir de zéro, supprimez les Espaces de la première migration avant de migrer à nouveau (voir [Espaces et Profils](/fr/spaces/)), pour ne pas vous retrouver avec deux copies côte à côte.
+Phi retient que vous avez déjà migré depuis un navigateur vers votre compte. Si vous lancez une autre migration depuis le même navigateur, Phi vous prévient d'abord : migrer à nouveau crée un second ensemble de Profils et d'Espaces et ne met pas à jour le premier. Ne choisissez **Migrer à nouveau** que si c'est bien ce que vous voulez. Pour repartir de zéro sans vous retrouver avec deux copies côte à côte, supprimez ce que la première migration a créé avant de migrer à nouveau : d'abord ses Espaces, puis ses Profils. Supprimer un Espace laisse en place son Profil, ainsi que les cookies, l'historique et les extensions de ce Profil. Voir [Supprimer un Profil](/fr/spaces/#deleting-a-profile).
 
 Il n'y a pas de synchronisation continue avec Arc ou Zen. Une migration est une copie ponctuelle de ce que contenait la source à ce moment-là.
 
