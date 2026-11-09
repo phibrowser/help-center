@@ -1,26 +1,39 @@
 ---
-description: "Cómo importar marcadores e historial en Phi Browser desde otro navegador o desde un archivo (HTML de marcadores, JSON de historial de Safari, ZIP de exportación de Safari), qué importa cada tipo de archivo y cómo exportar tus marcadores a un archivo HTML."
+description: "Cómo importar marcadores e historial en Phi Browser desde otro navegador o desde un archivo (HTML de marcadores, JSON de historial de Safari, ZIP de exportación de Safari), qué importa cada tipo de archivo, en qué se diferencia Importar de Migrar y cómo exportar tus marcadores a un archivo HTML."
 ---
 
 # Importar y exportar
 
-Phi puede traer marcadores e historial de navegación desde otros navegadores, ya sea directamente desde un navegador instalado o desde un archivo que ya tengas. También puede exportar los marcadores de un Espacio a un archivo HTML estándar. Esta página cubre ambas direcciones y detalla exactamente qué trae cada tipo de archivo.
+Phi puede traer marcadores, historial de navegación y, con algunos navegadores, cookies y extensiones desde otros navegadores, ya sea directamente desde un navegador instalado o desde un archivo que ya tengas. También puede exportar los marcadores de un Espacio a un archivo HTML estándar. Esta página cubre ambas direcciones y detalla exactamente qué trae cada tipo de archivo.
 
-Si acabas de llegar a Phi y solo quieres el panorama general de la migración, empieza por [Cambiarse a Phi](/es/switching-to-phi/) y vuelve aquí para los detalles.
+Si acabas de llegar a Phi y quieres el panorama general de la migración, empieza por [Cambiar a Phi](/es/switching-to-phi/) y vuelve aquí para los detalles.
+
+::: tip Importar o migrar
+El menú **Phi** también tiene **Migrar desde otro navegador…**, que es un comando distinto. **Importar** añade marcadores, historial y otros datos al Espacio en el que estás. **Migrar** recrea tus Perfiles y Espacios de Arc o Zen como Perfiles y Espacios nuevos en Phi, cada uno con sus propios marcadores y pestañas fijadas, y no toca tu configuración de Phi existente. Si te mudas desde Arc o Zen y quieres recuperar tus Espacios tal como estaban, consulta [Migrar desde Arc o Zen](/es/migrate/).
+:::
 
 ## Dos formas de importar
 
 Hay dos puntos de entrada, y ambos abren la misma pantalla de importación **Datos del navegador**:
 
 - **Durante la primera ejecución.** La configuración inicial ofrece importar mientras pones Phi en marcha.
-- **En cualquier momento después.** Abre el menú **Phi** (el menú de la app en negrita, junto al menú Apple) y elige **Importar desde otro navegador…**.
+- **En cualquier momento después.** Abre el menú **Phi** (el menú de la app en negrita, junto al menú Apple) y elige **Importar desde otro navegador...**.
 
-La pantalla de importación ofrece cuatro orígenes: **Desde Chrome**, **Desde Safari**, **Desde Arc** y **Desde un archivo**. Chrome, Safari y Arc leen directamente los datos del navegador instalado y te dejan elegir qué tipos de datos traer. Las secciones siguientes explican **Desde un archivo** con más detalle.
+La pantalla de importación puede ofrecer cinco orígenes: **Desde Chrome**, **Desde Arc**, **Desde Dia**, **Desde Safari** y **Desde un archivo**. Chrome, Arc y Dia solo aparecen cuando Phi encuentra los datos de ese navegador en este Mac; Safari y **Desde un archivo** aparecen siempre. Los orígenes de navegador leen directamente los datos del navegador instalado y te dejan elegir qué tipos de datos traer:
 
-Las importaciones llegan al [Espacio](/es/spaces/) desde el que ejecutas la importación. Los marcadores se unen al árbol de marcadores de ese Espacio, y el historial se une a tu historial de navegación. Importar no está disponible en [Incógnito](/es/incognito/); cambia primero a un Espacio o una ventana normal.
+| Origen            | Tipos de datos que puedes elegir             |
+| ----------------- | -------------------------------------------- |
+| Chrome, Arc o Dia | Marcadores, historial, cookies y extensiones |
+| Safari            | Marcadores e historial                       |
+
+Las secciones siguientes explican **Desde un archivo** con más detalle.
+
+Las importaciones llegan al [Espacio](/es/spaces/) desde el que ejecutas la importación. Los marcadores se unen al árbol de marcadores de ese Espacio. El historial, las cookies y las extensiones van al Perfil del Espacio, así que todos los Espacios que comparten ese Perfil los ven. Importar no está disponible en [Incógnito](/es/incognito/); cambia primero a un Espacio o una ventana normal.
 
 ::: tip Sal de Safari antes de importar desde él
 Si usas **Desde Safari**, sal de Safari primero. Safari mantiene parte de la actividad reciente en memoria y solo la escribe por completo en disco al cerrarse, así que importar mientras sigue abierto puede omitir tus marcadores e historial más recientes. Esto no se aplica a **Desde un archivo**, que lee una instantánea que ya exportaste.
+
+Phi también necesita **Acceso total al disco** para leer los datos de Safari. Si aún no lo tiene, la pantalla de importación lo solicita y ofrece **Abrir Configuración**.
 :::
 
 ## Importar desde un archivo
@@ -70,7 +83,8 @@ Exporta los marcadores de un Espacio a HTML y luego usa **Desde un archivo** par
 
 ## Qué leer a continuación
 
-- [Marcadores y pestañas fijadas](/es/bookmarks/): cómo se comportan los marcadores una vez que están en Phi.
-- [Espacios y Perfiles](/es/spaces/): por qué las importaciones llegan a un Espacio y cómo los Perfiles separan tus datos.
-- [Cambiarse a Phi](/es/switching-to-phi/): el mapa completo de migración desde Chrome, Safari, Arc y Dia.
-- [Copias de seguridad de Time Machine](/es/time-machine/): instantáneas de reversión automáticas y exportación completa de los datos de usuario.
+- [Marcadores y pestañas fijadas](/es/bookmarks/), cómo se comportan los marcadores una vez que están en Phi.
+- [Espacios y Perfiles](/es/spaces/), por qué las importaciones llegan a un Espacio y cómo los Perfiles separan tus datos.
+- [Migrar desde Arc o Zen](/es/migrate/), recrear tus Perfiles y Espacios de Arc o Zen en Phi.
+- [Cambiar a Phi](/es/switching-to-phi/), el mapa completo de migración desde Chrome, Safari, Arc y Dia.
+- [Copias de seguridad de Time Machine](/es/time-machine/), instantáneas de reversión automáticas y exportación completa de los datos de usuario.

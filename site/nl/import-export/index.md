@@ -1,26 +1,39 @@
 ---
-description: "Zo importeer je bladwijzers en geschiedenis in Phi Browser vanuit een andere browser of een bestand (bladwijzers-HTML, Safari-geschiedenis-JSON, Safari-exportarchief-ZIP), wat elk bestandstype importeert, en hoe je je bladwijzers naar een HTML-bestand exporteert."
+description: "Zo importeer je bladwijzers en geschiedenis in Phi Browser vanuit een andere browser of een bestand (bladwijzers-HTML, Safari-geschiedenis-JSON, Safari-exportarchief-ZIP), wat elk bestandstype importeert, hoe importeren verschilt van migreren, en hoe je je bladwijzers naar een HTML-bestand exporteert."
 ---
 
 # Importeren en exporteren
 
-Phi kan bladwijzers en browsegeschiedenis overnemen uit andere browsers, rechtstreeks uit een geïnstalleerde browser of uit een bestand dat je al hebt. Het kan de bladwijzers van een Space ook weer exporteren naar een standaard HTML-bestand. Deze pagina behandelt beide richtingen en benoemt precies wat elk soort bestand binnenbrengt.
+Phi kan bladwijzers, browsegeschiedenis en, voor sommige browsers, cookies en extensies overnemen uit andere browsers, rechtstreeks uit een geïnstalleerde browser of uit een bestand dat je al hebt. Het kan de bladwijzers van een Space ook weer exporteren naar een standaard HTML-bestand. Deze pagina behandelt beide richtingen en benoemt precies wat elk soort bestand binnenbrengt.
 
 Ben je nieuw bij Phi en wil je eerst het migratieoverzicht, begin dan bij [Overstappen naar Phi](/nl/switching-to-phi/) en kom hier terug voor de details.
+
+::: tip Importeren of migreren
+Het **Phi**-menu heeft ook **Migreer uit een andere browser…**, en dat is een ander commando. Importeren voegt bladwijzers, geschiedenis en andere gegevens toe aan de Space waarin je zit. Migreren bouwt je Profielen en Spaces uit Arc of Zen opnieuw op als nieuwe in Phi, elk met eigen bladwijzers en vastgezette tabbladen, en laat je bestaande Phi-opstelling onaangeroerd. Stap je over vanuit Arc of Zen en wil je je Spaces terug zoals ze waren, zie dan [Migreren vanuit Arc of Zen](/nl/migrate/).
+:::
 
 ## Twee manieren om te importeren
 
 Er zijn twee ingangen, en beide openen hetzelfde importscherm **Browsergegevens**:
 
 - **Bij de eerste start.** Tijdens de introductie biedt Phi aan om te importeren terwijl je Phi instelt.
-- **Op elk later moment.** Open het **Phi**-menu (het vetgedrukte appmenu naast het Apple-menu) en kies **Importeren uit een andere browser…**.
+- **Op elk later moment.** Open het **Phi**-menu (het vetgedrukte appmenu naast het Apple-menu) en kies **Importeer uit een andere browser...**.
 
-Het importscherm biedt vier bronnen: **Uit Chrome**, **Uit Safari**, **Uit Arc** en **Uit een bestand**. Chrome, Safari en Arc lezen de gegevens van de geïnstalleerde browser rechtstreeks en laten je kiezen welke soorten gegevens je overneemt. De secties hieronder gaan dieper in op **Uit een bestand**.
+Het importscherm kan vijf bronnen bieden: **Uit Chrome**, **Uit Arc**, **Uit Dia**, **Uit Safari** en **Uit een bestand**. Chrome, Arc en Dia verschijnen alleen als Phi de gegevens van die browser op deze Mac vindt; Safari en **Uit een bestand** staan er altijd. De browserbronnen lezen de gegevens van de geïnstalleerde browser rechtstreeks en laten je kiezen welke soorten gegevens je overneemt:
 
-Wat je importeert, komt terecht in de [Space](/nl/spaces/) van waaruit je de import start. Bladwijzers komen in de bladwijzerstructuur van die Space, en geschiedenis komt in je browsegeschiedenis. Importeren is niet beschikbaar in [Incognito](/nl/incognito/); schakel eerst over naar een gewone Space of een gewoon venster.
+| Bron               | Soorten gegevens die je kunt kiezen             |
+| ------------------ | ----------------------------------------------- |
+| Chrome, Arc of Dia | Bladwijzers, geschiedenis, cookies en extensies |
+| Safari             | Bladwijzers en geschiedenis                     |
+
+De secties hieronder gaan dieper in op **Uit een bestand**.
+
+Wat je importeert, komt terecht in de [Space](/nl/spaces/) van waaruit je de import start. Bladwijzers komen in de bladwijzerstructuur van die Space. Geschiedenis, cookies en extensies gaan naar het Profiel van de Space, zodat elke Space die dat Profiel deelt ze ziet. Importeren is niet beschikbaar in [Incognito](/nl/incognito/); schakel eerst over naar een gewone Space of een gewoon venster.
 
 ::: tip Stop Safari voordat je eruit importeert
 Gebruik je **Uit Safari**, stop Safari dan eerst. Safari houdt recente activiteit deels in het geheugen en schrijft die pas volledig naar schijf bij het afsluiten, dus importeren terwijl Safari nog draait kan je nieuwste bladwijzers en geschiedenis missen. Dit geldt niet voor **Uit een bestand**, dat een momentopname leest die je al hebt geëxporteerd.
+
+Phi heeft ook **Volledige schijftoegang** nodig om de gegevens van Safari te lezen. Heeft Phi die nog niet, dan vraagt het importscherm erom en biedt het **Open instellingen** aan.
 :::
 
 ## Importeren uit een bestand
@@ -70,7 +83,8 @@ Exporteer de bladwijzers van een Space naar HTML en haal ze daarna met **Uit een
 
 ## Verder lezen
 
-- [Bladwijzers en vastgezette tabbladen](/nl/bookmarks/): hoe bladwijzers zich gedragen zodra ze in Phi staan.
-- [Spaces en Profielen](/nl/spaces/): waarom imports in een Space terechtkomen, en hoe Profielen je gegevens scheiden.
-- [Overstappen naar Phi](/nl/switching-to-phi/): de volledige migratiekaart vanuit Chrome, Safari, Arc en Dia.
-- [Time Machine-back-ups](/nl/time-machine/): automatische terugzetmomentopnamen en volledige export van gebruikersgegevens.
+- [Bladwijzers en vastgezette tabbladen](/nl/bookmarks/), hoe bladwijzers zich gedragen zodra ze in Phi staan.
+- [Spaces en Profielen](/nl/spaces/), waarom imports in een Space terechtkomen, en hoe Profielen je gegevens scheiden.
+- [Migreren vanuit Arc of Zen](/nl/migrate/), je Profielen en Spaces uit Arc of Zen opnieuw aanmaken in Phi.
+- [Overstappen naar Phi](/nl/switching-to-phi/), de volledige migratiekaart vanuit Chrome, Safari, Arc en Dia.
+- [Time Machine-back-ups](/nl/time-machine/), automatische terugzetmomentopnamen en volledige export van gebruikersgegevens.

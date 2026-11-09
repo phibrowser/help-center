@@ -6,6 +6,8 @@ description: "Un guide de migration vers Phi Browser depuis Chrome, Safari, Arc 
 
 Si vous passez à Phi depuis Chrome, Safari, Arc ou Dia, ce guide commence par les changements de modèle mental. Les guides détaillés couvrent toujours chaque domaine en profondeur ; cette page vous donne la carte de la migration.
 
+Pour récupérer vos données, utilisez le menu **Phi**. **Importer depuis un autre navigateur…** ajoute des favoris, de l'historique et d'autres données de Chrome, Safari, Arc ou Dia à l'Espace où vous êtes (voir [Importation et exportation](/fr/import-export/)). Si vous venez d'Arc ou de Zen, **Migrer depuis un autre navigateur…** va plus loin et recrée vos Profils et vos Espaces dans Phi (voir [Migrer depuis Arc ou Zen](/fr/migrate/)).
+
 ## Vous venez de Chrome ou de Safari
 
 Commencez par le mode **Confortable**. Il garde la forme la plus familière : onglets en haut, barre d'adresse visible et une disposition proche d'un navigateur traditionnel. La barre latérale est toujours là, mais rien ne vous oblige à adopter tout le flux de travail de la barre latérale dès le premier jour.
@@ -24,6 +26,8 @@ Bonnes lectures pour la suite :
 
 Phi devrait vous sembler familier si le modèle de barre latérale d'Arc vous convenait, mais les détails diffèrent.
 
+Vous n'avez pas à reconstruire votre barre latérale Arc à la main. **Migrer depuis un autre navigateur…** crée un Profil Phi pour chaque profil Arc et un Espace Phi pour chaque Espace Arc, transforme les éléments épinglés de la barre latérale de chaque Espace en favoris de l'Espace, et transforme vos Favorites en onglets épinglés. Consultez [Migrer depuis Arc ou Zen](/fr/migrate/) pour savoir ce qui est transféré et ce qui ne l'est pas.
+
 Arc et Phi séparent tous deux la couche « espace de travail » de la couche d'isolation. Dans Phi, un **Espace** est l'espace de travail visible dans la barre latérale, tandis qu'un **Profil** regroupe les cookies, l'historique, les identifiants et les extensions en dessous. Un même Profil peut porter plusieurs Espaces : vous pouvez donc avoir plusieurs espaces de travail qui partagent la même session connectée.
 
 Les **Règles d'URL** de Phi s'inspirent de l'Air Traffic Control d'Arc : les sites correspondants peuvent s'ouvrir dans un Espace normal, en Navigation privée ou dans Kiosk, ou vous demander où s'ouvrir. La mise en œuvre est propre à Phi, mais l'objectif est le même : placer automatiquement les liens dans le bon contexte.
@@ -34,6 +38,7 @@ Phi a sa propre version du Peek d'Arc. Quand un lien d'un onglet épinglé ou d'
 
 Bonnes lectures pour la suite :
 
+- [Migrer depuis Arc ou Zen](/fr/migrate/) pour recréer vos Espaces Arc dans Phi.
 - [Espaces et Profils](/fr/spaces/) pour les Espaces, les Profils et les Règles d'URL.
 - [Favoris et onglets épinglés](/fr/bookmarks/) pour les favoris vivants et la portée configurable des onglets épinglés.
 - [Vue Peek](/fr/peek/) pour prévisualiser les liens sans quitter la page où vous êtes.

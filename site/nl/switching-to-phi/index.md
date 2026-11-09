@@ -6,6 +6,8 @@ description: "Een migratiegids voor de overstap naar Phi Browser vanuit Chrome, 
 
 Stap je vanuit Chrome, Safari, Arc of Dia over op Phi, dan legt deze gids eerst uit hoe het denkmodel verandert. De uitgebreide functiegidsen behandelen elk onderdeel nog steeds in de diepte; deze pagina geeft je de migratiekaart.
 
+Om je gegevens over te zetten gebruik je het **Phi**-menu. **Importeer uit een andere browser...** voegt bladwijzers, geschiedenis en andere gegevens uit Chrome, Safari, Arc of Dia toe aan de Space waarin je zit (zie [Importeren en exporteren](/nl/import-export/)). Kom je van Arc of Zen, dan gaat **Migreer uit een andere browser…** verder en bouwt het je Profielen en Spaces opnieuw op in Phi (zie [Migreren vanuit Arc of Zen](/nl/migrate/)).
+
 ## Vanuit Chrome of Safari
 
 Begin met de modus **Comfortabel**. Die houdt de meest vertrouwde vorm aan: tabbladen bovenaan, een zichtbare adresbalk en een lay-out die dicht bij een traditionele browser blijft. De zijbalk is er nog steeds, maar je hoeft de volledige zijbalkworkflow niet op dag één over te nemen.
@@ -24,16 +26,19 @@ Lees hierna:
 
 Als het zijbalkmodel van Arc voor jou werkte, zal Phi vertrouwd aanvoelen, maar de details verschillen.
 
+Je hoeft je Arc-zijbalk niet met de hand opnieuw op te bouwen. **Migreer uit een andere browser…** maakt een Phi-Profiel aan voor elk Arc-profiel en een Phi-Space voor elke Arc-Space, maakt van de vastgezette zijbalkitems van elke Space zijn bladwijzers, en maakt van je Favorites vastgezette tabbladen. Zie [Migreren vanuit Arc of Zen](/nl/migrate/) voor wat het meebrengt en wat het achterlaat.
+
 Arc en Phi scheiden allebei de werkruimtelaag van de isolatielaag. In Phi is een **Space** de zichtbare werkruimte in de zijbalk, terwijl een **Profiel** eronder de cookies, geschiedenis, inloggegevens en extensies bevat. Eén profiel kan meerdere Spaces ondersteunen, dus je kunt meerdere werkruimtes hebben die dezelfde ingelogde sessie delen.
 
 Phi's **URL-regels** zijn geïnspireerd op Arcs Air Traffic Control: sites die aan een regel voldoen, kunnen openen in een gewone Space, Incognito of Kiosk, of vragen je waar ze moeten openen. De precieze uitwerking is die van Phi zelf, maar het doel is hetzelfde: links automatisch in de juiste context plaatsen.
 
-Het grootste verschil bij bladwijzers is dat Phi een volledige bladwijzerboom met mappen behoudt. Arc liet traditionele bladwijzers vallen ten gunste van vastgezette tabbladen en favorieten; Phi houdt beide ideeën aan. Bladwijzers blijven georganiseerd in de zijbalk en openen ter plekke als levende tabbladen. Vastgezette tabbladen staan bovenaan voor pagina's waar je in leeft, en jij bepaalt of ze bij één Space, één profiel of de hele app horen.
+Het grootste verschil bij bladwijzers is dat Phi een volledige bladwijzerboom met mappen behoudt. Arc liet traditionele bladwijzers vallen ten gunste van vastgezette tabbladen en Favorites; Phi houdt beide ideeën aan. Bladwijzers blijven georganiseerd in de zijbalk en openen ter plekke als levende tabbladen. Vastgezette tabbladen staan bovenaan voor pagina's waar je in leeft, en jij bepaalt of ze bij één Space, één profiel of de hele app horen.
 
 Phi heeft een eigen kijk op Arcs Peek. Wanneer een link in een vastgezet tabblad of bladwijzer naar een andere site leidt, toont Phi er een voorbeeld van in een zwevend paneel boven de pagina, in plaats van dat tabblad van zijn eigen pagina weg te halen. Je kunt het voorbeeld sluiten, als tabblad houden of naast het origineel openen als Split View. Zie [Peek-weergave](/nl/peek/) voor het volledige gedrag en de instellingen waarmee je het uitzet of alleen voor Shift-klik bewaart.
 
 Lees hierna:
 
+- [Migreren vanuit Arc of Zen](/nl/migrate/) voor het opnieuw aanmaken van je Arc-Spaces in Phi.
 - [Spaces & profielen](/nl/spaces/) voor Spaces, profielen en URL-regels.
 - [Bladwijzers & vastgezette tabbladen](/nl/bookmarks/) voor levende bladwijzers en het instelbare bereik van vastgezette tabbladen.
 - [Peek-weergave](/nl/peek/) voor het vooraf bekijken van links zonder de pagina te verlaten waar je bent.

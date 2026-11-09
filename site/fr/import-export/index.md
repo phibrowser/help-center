@@ -1,12 +1,16 @@
 ---
-description: "Comment importer favoris et historique dans Phi Browser depuis un autre navigateur ou un fichier (favoris HTML, historique Safari JSON, archive d'exportation Safari ZIP), ce que chaque type de fichier importe, et comment exporter vos favoris vers un fichier HTML."
+description: "Comment importer favoris et historique dans Phi Browser depuis un autre navigateur ou un fichier (favoris HTML, historique Safari JSON, archive d'exportation Safari ZIP), ce que chaque type de fichier importe, en quoi l'importation diffère de la migration, et comment exporter vos favoris vers un fichier HTML."
 ---
 
 # Importation et exportation
 
-Phi peut récupérer les favoris et l'historique de navigation d'autres navigateurs, soit directement depuis un navigateur installé, soit depuis un fichier que vous avez déjà. Il peut aussi exporter les favoris d'un Espace vers un fichier HTML standard. Cette page couvre les deux directions et détaille précisément ce que chaque type de fichier importe.
+Phi peut récupérer les favoris, l'historique de navigation et, pour certains navigateurs, les cookies et les extensions d'autres navigateurs, soit directement depuis un navigateur installé, soit depuis un fichier que vous avez déjà. Il peut aussi exporter les favoris d'un Espace vers un fichier HTML standard. Cette page couvre les deux directions et détaille précisément ce que chaque type de fichier importe.
 
 Si vous découvrez Phi et souhaitez d'abord une vue d'ensemble de la migration, commencez par [Passer à Phi](/fr/switching-to-phi/) et revenez ici pour les détails.
+
+::: tip Importer ou migrer
+Le menu **Phi** contient aussi **Migrer depuis un autre navigateur…**, qui est une commande différente. **Importer** ajoute des favoris, de l'historique et d'autres données à l'Espace où vous êtes. **Migrer** recrée vos Profils et vos Espaces Arc ou Zen sous forme de nouveaux Profils et Espaces dans Phi, chacun avec ses propres favoris et onglets épinglés, et laisse votre configuration Phi existante intacte. Si vous quittez Arc ou Zen et voulez retrouver vos Espaces tels qu'ils étaient, consultez [Migrer depuis Arc ou Zen](/fr/migrate/).
+:::
 
 ## Deux façons d'importer
 
@@ -15,12 +19,21 @@ Il existe deux points d'entrée, et les deux ouvrent le même écran d'importati
 - **Au premier lancement.** Le parcours d'accueil vous propose d'importer pendant que vous configurez Phi.
 - **À tout moment ensuite.** Ouvrez le menu **Phi** (le menu de l'app en gras à côté du menu Pomme) et choisissez **Importer depuis un autre navigateur…**.
 
-L'écran d'importation vous propose quatre sources : **Depuis Chrome**, **Depuis Safari**, **Depuis Arc** et **Depuis un fichier**. Chrome, Safari et Arc lisent directement les données du navigateur installé et vous laissent choisir les types de données à récupérer. Les sections ci-dessous détaillent **Depuis un fichier**.
+L'écran d'importation peut proposer cinq sources : **Depuis Chrome**, **Depuis Arc**, **Depuis Dia**, **Depuis Safari** et **Depuis un fichier**. Chrome, Arc et Dia n'apparaissent que si Phi trouve les données de ce navigateur sur ce Mac ; Safari et **Depuis un fichier** sont toujours proposés. Les sources de navigateur lisent directement les données du navigateur installé et vous laissent choisir les types de données à récupérer :
 
-Les importations arrivent dans l'[Espace](/fr/spaces/) depuis lequel vous lancez l'importation. Les favoris rejoignent l'arborescence de favoris de cet Espace, et l'historique rejoint votre historique de navigation. L'importation n'est pas disponible en [navigation privée](/fr/incognito/) ; passez d'abord dans un Espace ou une fenêtre normale.
+| Source             | Types de données que vous pouvez choisir   |
+| ------------------ | ------------------------------------------ |
+| Chrome, Arc ou Dia | Favoris, historique, cookies et extensions |
+| Safari             | Favoris et historique                      |
+
+Les sections ci-dessous détaillent **Depuis un fichier**.
+
+Les importations arrivent dans l'[Espace](/fr/spaces/) depuis lequel vous lancez l'importation. Les favoris rejoignent l'arborescence de favoris de cet Espace. L'historique, les cookies et les extensions vont dans le Profil de cet Espace, si bien que tous les Espaces qui partagent ce Profil les voient. L'importation n'est pas disponible en [navigation privée](/fr/incognito/) ; passez d'abord dans un Espace ou une fenêtre normale.
 
 ::: tip Quittez Safari avant d'importer depuis celui-ci
 Si vous utilisez **Depuis Safari**, quittez d'abord Safari. Safari garde une partie de l'activité récente en mémoire et ne l'écrit entièrement sur le disque qu'à sa fermeture ; importer pendant qu'il tourne encore peut donc manquer vos derniers favoris et votre historique le plus récent. Cela ne s'applique pas à **Depuis un fichier**, qui lit un instantané que vous avez déjà exporté.
+
+Phi a aussi besoin de l'**accès complet au disque** pour lire les données de Safari. S'il ne l'a pas encore, l'écran d'importation le demande et propose **Ouvrir les Réglages**.
 :::
 
 ## Importer depuis un fichier
@@ -70,7 +83,8 @@ Exportez les favoris d'un Espace en HTML, puis utilisez **Depuis un fichier** po
 
 ## À lire ensuite
 
-- [Favoris et onglets épinglés](/fr/bookmarks/) : comment les favoris se comportent une fois dans Phi.
-- [Espaces et profils](/fr/spaces/) : pourquoi les importations arrivent dans un Espace, et comment les Profils séparent vos données.
-- [Passer à Phi](/fr/switching-to-phi/) : la carte de migration complète depuis Chrome, Safari, Arc et Dia.
-- [Sauvegardes Time Machine](/fr/time-machine/) : instantanés de restauration automatiques et exportation complète des données utilisateur.
+- [Favoris et onglets épinglés](/fr/bookmarks/), comment les favoris se comportent une fois dans Phi.
+- [Espaces et Profils](/fr/spaces/), pourquoi les importations arrivent dans un Espace, et comment les Profils séparent vos données.
+- [Migrer depuis Arc ou Zen](/fr/migrate/), recréer vos Profils et vos Espaces Arc ou Zen dans Phi.
+- [Passer à Phi](/fr/switching-to-phi/), la carte de migration complète depuis Chrome, Safari, Arc et Dia.
+- [Sauvegardes Time Machine](/fr/time-machine/), instantanés de restauration automatiques et exportation complète des données utilisateur.

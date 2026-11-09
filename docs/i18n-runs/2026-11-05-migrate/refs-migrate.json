@@ -1,0 +1,1022 @@
+{
+  "source": "phibrowser-mac tag v2.15.0 (24c2345f, Phi 2.15.0 build 944) Resources/Localizable.xcstrings. Every value under labels is a shipped string: quote UI labels verbatim. A null means the locale has no shipped rendering.",
+  "labels": {
+    "app.browserMigration.pick.continueButton": {
+      "en": "Continue",
+      "comment": "Browser migration wizard - button that opens the preview for the picked source",
+      "de": "Weiter",
+      "es": "Continuar",
+      "fr": "Continuer",
+      "ja": "続ける",
+      "ko": "계속",
+      "nl": "Ga door",
+      "zh-Hans": "继续",
+      "zh-Hant": "繼續"
+    },
+    "app.browserMigration.pick.noSourcesFound": {
+      "en": "Phi didn't find Arc, Dia or Zen on this Mac.",
+      "comment": "Browser migration wizard - shown in place of the source list when none of the browsers Phi can migrate from is installed",
+      "de": "Phi hat Arc, Dia oder Zen auf diesem Mac nicht gefunden.",
+      "es": "Phi no encontró Arc, Dia ni Zen en este Mac.",
+      "fr": "Phi n'a trouvé ni Arc, ni Dia, ni Zen sur ce Mac.",
+      "ja": "PhiはこのMacでArc、Dia、Zenを見つけられませんでした。",
+      "ko": "Phi가 이 Mac에서 Arc, Dia, Zen을 찾지 못했어요.",
+      "nl": "Phi heeft Arc, Dia of Zen niet op deze Mac gevonden.",
+      "zh-Hans": "Phi 未在这台 Mac 上找到 Arc、Dia 或 Zen。",
+      "zh-Hant": "Phi 在這台 Mac 上找不到 Arc、Dia 或 Zen。"
+    },
+    "app.browserMigration.pick.subtitle": {
+      "en": "Phi recreates your Profiles and Spaces from another browser. It only ever creates — nothing you already have is changed.",
+      "comment": "Browser migration wizard - explanation above the source list",
+      "de": "Phi baut deine Profile und Spaces aus einem anderen Browser nach. Dabei wird nur Neues erstellt; nichts, was du schon hast, wird verändert.",
+      "es": "Phi recrea tus Perfiles y Espacios desde otro navegador. Solo crea elementos nuevos: no se modifica nada de lo que ya tienes.",
+      "fr": "Phi recrée vos Profils et vos Espaces depuis un autre navigateur. Il ne fait que créer : rien de ce que vous avez déjà n'est modifié.",
+      "ja": "他のブラウザのプロファイルとスペースをPhiが再現します。新しく作成するだけで、今あるものは何も変更されません。",
+      "ko": "Phi가 다른 브라우저의 프로필과 스페이스를 그대로 다시 만들어요. 새로 만들기만 할 뿐, 이미 있는 것은 아무것도 바뀌지 않아요.",
+      "nl": "Phi bouwt je Profielen en Spaces uit een andere browser opnieuw op. Er komt alleen iets bij: niets van wat je al hebt wordt gewijzigd.",
+      "zh-Hans": "Phi 会重新创建你在其他浏览器中的个人资料和空间。整个过程只会新建内容，你已有的一切都不会被更改。",
+      "zh-Hant": "Phi 會重新建立你在其他瀏覽器中的設定檔和空間。整個過程只會新增，不會變更你現有的任何內容。"
+    },
+    "app.browserMigration.pick.unreadable": {
+      "en": "Phi couldn't read %1$@'s data. Open %1$@ once so it writes its sidebar, then try again.",
+      "comment": "Browser migration wizard - shown when the picked source is installed but its data can't be parsed; %1$@ is the source browser's name, appearing twice",
+      "de": "Phi konnte die Daten von %1$@ nicht lesen. Öffne %1$@ einmal, damit die Seitenleiste geschrieben wird, und versuche es dann erneut.",
+      "es": "Phi no pudo leer los datos de %1$@. Abre %1$@ una vez para que escriba su barra lateral y vuelve a intentarlo.",
+      "fr": "Phi n'a pas pu lire les données de %1$@. Ouvrez %1$@ une fois pour qu'il enregistre sa barre latérale, puis réessayez.",
+      "ja": "Phiは%1$@のデータを読み取れませんでした。%1$@を一度起動してサイドバーのデータを保存させてから、もう一度お試しください。",
+      "ko": "Phi가 %1$@의 데이터를 읽지 못했어요. 사이드바 정보가 저장되도록 %1$@ 앱을 한 번 실행한 다음 다시 시도해 주세요.",
+      "nl": "Phi kon de gegevens van %1$@ niet lezen. Open %1$@ één keer zodat die zijn zijbalk wegschrijft, en probeer het daarna opnieuw.",
+      "zh-Hans": "Phi 未能读取 %1$@ 的数据。请打开一次 %1$@，让它写入侧边栏数据，然后再试一次。",
+      "zh-Hant": "Phi 無法讀取 %1$@ 的資料。請先開啟 %1$@ 一次，讓它寫入側邊欄資料，然後再試一次。"
+    },
+    "app.browserMigration.preflight.keychain": {
+      "en": "macOS will ask to use %@'s encryption key so your cookies can come across. Choose “Always Allow”, or it asks again for every Profile.",
+      "comment": "Browser migration wizard - warns that the OS Keychain prompt is coming before a run starts; %@ is the source browser's name",
+      "de": "macOS bittet um Zugriff auf den Verschlüsselungsschlüssel von %@, damit deine Cookies übernommen werden können. Wähle „Immer erlauben“, sonst fragt macOS bei jedem Profil erneut.",
+      "es": "macOS pedirá permiso para usar la clave de cifrado de %@ para que tus cookies puedan transferirse. Elige “Permitir siempre” o te lo volverá a pedir con cada Perfil.",
+      "fr": "macOS demandera l'autorisation d'utiliser la clé de chiffrement de %@ pour que vos cookies puissent être transférés. Choisissez « Toujours autoriser », sinon la demande réapparaîtra pour chaque Profil.",
+      "ja": "Cookieを引き継ぐため、macOSが%@の暗号化キーの使用許可を求めます。「常に許可」を選択しないと、プロファイルごとに毎回確認が表示されます。",
+      "ko": "쿠키를 가져올 수 있도록 macOS가 %@의 암호화 키 사용 권한을 요청해요. “항상 허용”을 선택해 주세요. 그렇지 않으면 프로필마다 다시 요청해요.",
+      "nl": "macOS vraagt om de versleutelingssleutel van %@ te gebruiken, zodat je cookies kunnen worden overgezet. Kies “Sta altijd toe”, anders vraagt macOS het voor elk Profiel opnieuw.",
+      "zh-Hans": "macOS 会请求使用 %@ 的加密密钥，以便迁移你的 Cookie。请选择「始终允许」，否则每个个人资料都会再次询问。",
+      "zh-Hant": "macOS 會要求使用 %@ 的加密金鑰，以便將你的 Cookie 移轉過來。請選擇「永遠允許」，否則每個設定檔都會再次詢問。"
+    },
+    "app.browserMigration.preflight.quitZen": {
+      "en": "Zen is running. Quit it before you start so its latest changes come across — Phi reads copies of Zen's files, and anything Zen hasn't saved yet would be missed.",
+      "comment": "Browser migration wizard - advises quitting Zen before a run starts; shown only while Zen is running",
+      "de": "Zen läuft gerade. Beende Zen vor dem Start, damit die letzten Änderungen übernommen werden. Phi liest Kopien der Zen-Dateien, und alles, was Zen noch nicht gespeichert hat, würde fehlen.",
+      "es": "Zen está abierto. Ciérralo antes de empezar para que se transfieran sus últimos cambios: Phi lee copias de los archivos de Zen, y cualquier cosa que Zen aún no haya guardado quedaría fuera.",
+      "fr": "Zen est en cours d'exécution. Quittez-le avant de commencer pour que ses derniers changements soient transférés : Phi lit des copies des fichiers de Zen, et tout ce que Zen n'a pas encore enregistré serait ignoré.",
+      "ja": "Zenが起動中です。最新の変更を引き継ぐため、開始する前にZenを終了してください。PhiはZenのファイルのコピーを読み取るため、Zenがまだ保存していない内容は移行されません。",
+      "ko": "Zen이 실행 중이에요. 최신 변경 사항까지 가져올 수 있도록 시작하기 전에 Zen을 종료해 주세요. Phi는 Zen 파일의 복사본을 읽기 때문에, Zen이 아직 저장하지 않은 내용은 누락될 수 있어요.",
+      "nl": "Zen is actief. Stop Zen voordat je begint, zodat de laatste wijzigingen meekomen: Phi leest kopieën van de bestanden van Zen, en alles wat Zen nog niet heeft bewaard zou ontbreken.",
+      "zh-Hans": "Zen 正在运行。请在开始前退出 Zen，以便迁移它最新的更改：Phi 读取的是 Zen 文件的副本，Zen 尚未保存的内容会被遗漏。",
+      "zh-Hant": "Zen 正在執行中。請先結束 Zen 再開始，讓最新的變更能一併移轉過來：Phi 讀取的是 Zen 檔案的副本，Zen 尚未儲存的內容不會包含在內。"
+    },
+    "app.browserMigration.preview.accountRequired": {
+      "en": "Sign in to Phi — or continue as a guest — before migrating.",
+      "comment": "Browser migration wizard - shown instead of starting when no account is bound",
+      "de": "Melde dich vor der Migration bei Phi an oder fahre als Gast fort.",
+      "es": "Inicia sesión en Phi (o continúa como invitado) antes de migrar.",
+      "fr": "Avant de migrer, connectez-vous à Phi ou continuez en tant qu'invité.",
+      "ja": "移行する前に、Phiにログインするか、ゲストとして続けてください。",
+      "ko": "마이그레이션하기 전에 Phi에 로그인하거나 게스트로 계속해 주세요.",
+      "nl": "Log in bij Phi (of ga door als gast) voordat je migreert.",
+      "zh-Hans": "迁移前请先登录 Phi，或以访客身份继续。",
+      "zh-Hant": "開始移轉前，請先登入 Phi，或以訪客身分繼續。"
+    },
+    "app.browserMigration.preview.alreadyMigratedBanner": {
+      "en": "You already migrated from %@ for this account. Migrating again creates a second set of Profiles and Spaces — it doesn't update the first.",
+      "comment": "Browser migration wizard - stated before Start that a run would be a second migration; %@ is the source browser's name",
+      "de": "Du hast für dieses Konto bereits aus %@ migriert. Eine erneute Migration erstellt einen zweiten Satz Profile und Spaces; der erste wird nicht aktualisiert.",
+      "es": "Ya migraste desde %@ con esta cuenta. Migrar de nuevo crea un segundo conjunto de Perfiles y Espacios; no actualiza el primero.",
+      "fr": "Vous avez déjà migré depuis %@ pour ce compte. Migrer à nouveau crée un second ensemble de Profils et d'Espaces, sans mettre à jour le premier.",
+      "ja": "このアカウントでは、%@からすでに移行しています。もう一度移行すると、プロファイルとスペースがもう1セット作成されます。最初のセットが更新されるわけではありません。",
+      "ko": "이 계정에서는 이미 %@에서 마이그레이션한 적이 있어요. 다시 마이그레이션하면 프로필과 스페이스 세트가 하나 더 만들어지며, 기존 세트는 업데이트되지 않아요.",
+      "nl": "Je hebt voor dit account al uit %@ gemigreerd. Opnieuw migreren maakt een tweede set Profielen en Spaces aan: de eerste wordt niet bijgewerkt.",
+      "zh-Hans": "你已经用此账号从 %@ 迁移过。再次迁移会创建第二套个人资料和空间，而不会更新第一套。",
+      "zh-Hant": "你已經用這個帳號從 %@ 移轉過。再次移轉會建立第二組設定檔和空間，不會更新原有的那一組。"
+    },
+    "app.browserMigration.preview.backButton": {
+      "en": "Back",
+      "comment": "Browser migration wizard - button returning from the preview to the source list",
+      "de": "Zurück",
+      "es": "Atrás",
+      "fr": "Retour",
+      "ja": "戻る",
+      "ko": "뒤로",
+      "nl": "Terug",
+      "zh-Hans": "返回",
+      "zh-Hant": "上一頁"
+    },
+    "app.browserMigration.preview.cancelButton": {
+      "en": "Cancel",
+      "comment": "Browser migration wizard - button closing the wizard without migrating",
+      "de": "Abbrechen",
+      "es": "Cancelar",
+      "fr": "Annuler",
+      "ja": "キャンセル",
+      "ko": "취소",
+      "nl": "Annuleer",
+      "zh-Hans": "取消",
+      "zh-Hant": "取消"
+    },
+    "app.browserMigration.preview.defaultProfileBound": {
+      "en": "Phi couldn't tell which profile this belongs to, so it will go to %@.",
+      "comment": "Browser migration wizard - note on a Space whose source profile record is unreadable; %@ is the Profile it will be created under",
+      "de": "Phi konnte nicht erkennen, zu welchem Profil das gehört, daher wird es unter %@ erstellt.",
+      "es": "Phi no pudo determinar a qué perfil pertenece, así que irá a %@.",
+      "fr": "Phi n'a pas pu déterminer à quel profil cet Espace appartient, il sera donc placé dans %@.",
+      "ja": "Phiはどのプロファイルに属するのか判別できなかったため、%@に作成されます。",
+      "ko": "Phi가 어느 프로필에 속하는지 알 수 없어서 %@에 만들어져요.",
+      "nl": "Phi kon niet bepalen bij welk profiel dit hoort, dus gaat het naar %@.",
+      "zh-Hans": "Phi 无法确定它属于哪个个人资料，因此会将它归入 %@。",
+      "zh-Hant": "Phi 無法判斷這個空間屬於哪個設定檔，因此會將它放到 %@ 之下。"
+    },
+    "app.browserMigration.preview.heading": {
+      "en": "Review what will be created",
+      "comment": "Browser migration wizard - heading of the review step",
+      "de": "Sieh dir an, was erstellt wird",
+      "es": "Revisa lo que se creará",
+      "fr": "Vérifiez ce qui sera créé",
+      "ja": "作成される内容を確認",
+      "ko": "만들어질 항목 확인",
+      "nl": "Bekijk wat er wordt aangemaakt",
+      "zh-Hans": "确认将要创建的内容",
+      "zh-Hant": "檢視將建立的內容"
+    },
+    "app.browserMigration.preview.noSpaces": {
+      "en": "No Spaces",
+      "comment": "Browser migration wizard - reason a source profile is skipped and creates nothing",
+      "de": "Keine Spaces",
+      "es": "Sin Espacios",
+      "fr": "Aucun Espace",
+      "ja": "スペースなし",
+      "ko": "스페이스 없음",
+      "nl": "Geen Spaces",
+      "zh-Hans": "没有空间",
+      "zh-Hant": "沒有任何空間"
+    },
+    "app.browserMigration.preview.nothingTicked": {
+      "en": "Choose at least one Space to migrate.",
+      "comment": "Browser migration wizard - why Start is disabled when the user has unticked everything",
+      "de": "Wähle mindestens einen Space zum Migrieren aus.",
+      "es": "Elige al menos un Espacio para migrar.",
+      "fr": "Choisissez au moins un Espace à migrer.",
+      "ja": "移行するスペースを1つ以上選択してください。",
+      "ko": "마이그레이션할 스페이스를 하나 이상 선택해 주세요.",
+      "nl": "Kies minstens één Space om te migreren.",
+      "zh-Hans": "请至少选择一个要迁移的空间。",
+      "zh-Hant": "請至少選擇一個要移轉的空間。"
+    },
+    "app.browserMigration.preview.nothingToMigrate": {
+      "en": "Phi found %1$@, but there's nothing here to migrate — no %2$@ profile has data Phi can move.",
+      "comment": "Browser migration wizard - shown under the tree when the source read fine and offers nothing; %1$@ and %2$@ are both the source browser's name",
+      "de": "Phi hat %1$@ gefunden, aber hier gibt es nichts zu migrieren: Kein %2$@-Profil enthält Daten, die Phi übernehmen kann.",
+      "es": "Phi encontró %1$@, pero aquí no hay nada que migrar: ningún perfil de %2$@ tiene datos que Phi pueda mover.",
+      "fr": "Phi a trouvé %1$@, mais il n'y a rien à migrer ici : aucun profil %2$@ ne contient de données que Phi puisse déplacer.",
+      "ja": "Phiは%1$@を見つけましたが、移行できるものがありません。%2$@のどのプロファイルにも、Phiが引き継げるデータがありません。",
+      "ko": "Phi가 %1$@ 브라우저를 찾았지만, 마이그레이션할 항목이 없어요. Phi가 옮길 수 있는 데이터가 있는 %2$@ 프로필이 없어요.",
+      "nl": "Phi heeft %1$@ gevonden, maar er valt hier niets te migreren: geen enkel %2$@-profiel heeft gegevens die Phi kan overzetten.",
+      "zh-Hans": "Phi 找到了 %1$@，但这里没有可迁移的内容：没有任何 %2$@ 个人资料包含 Phi 可以迁移的数据。",
+      "zh-Hant": "Phi 找到了 %1$@，但這裡沒有可移轉的內容：沒有任何 %2$@ 設定檔含有 Phi 可以移轉的資料。"
+    },
+    "app.browserMigration.preview.profileCount": {
+      "en": {
+        "one": "%d Profile",
+        "other": "%d Profiles"
+      },
+      "comment": "Browser migration wizard - Profile count in the preview summary; %d is the number of Profiles",
+      "de": {
+        "one": "%d Profil",
+        "other": "%d Profile"
+      },
+      "es": {
+        "one": "%d Perfil",
+        "other": "%d Perfiles"
+      },
+      "fr": {
+        "one": "%d Profil",
+        "other": "%d Profils"
+      },
+      "ja": "%d個のプロファイル",
+      "ko": "프로필 %d개",
+      "nl": {
+        "one": "%d Profiel",
+        "other": "%d Profielen"
+      },
+      "zh-Hans": "%d 个个人资料",
+      "zh-Hant": "%d 個設定檔"
+    },
+    "app.browserMigration.preview.refusedPinnedTabScope": {
+      "en": "Pinned tabs are being rearranged for a new pinned tab scope. Try again in a moment.",
+      "comment": "Browser migration wizard - shown after Start when a pinned tab scope change is still being applied on this Mac",
+      "de": "Angeheftete Tabs werden gerade für einen neuen Geltungsbereich neu angeordnet. Versuche es in Kürze erneut.",
+      "es": "Las pestañas fijadas se están reorganizando para un nuevo ámbito de pestañas fijadas. Inténtalo de nuevo dentro de un momento.",
+      "fr": "Les onglets épinglés sont en cours de réorganisation pour appliquer leur nouvelle portée. Réessayez dans un instant.",
+      "ja": "新しい固定タブの適用範囲に合わせて固定タブを再配置しています。しばらくしてからもう一度お試しください。",
+      "ko": "새 고정 탭 범위에 맞춰 고정된 탭을 다시 정리하는 중이에요. 잠시 후 다시 시도해 주세요.",
+      "nl": "Vastgezette tabbladen worden herschikt voor een nieuw bereik van vastgezette tabbladen. Probeer het over een ogenblik opnieuw.",
+      "zh-Hans": "正在按新的固定标签页范围重新整理固定标签页。请稍后再试。",
+      "zh-Hant": "正在依新的釘選分頁範圍重新排列釘選分頁。請稍候再試一次。"
+    },
+    "app.browserMigration.preview.refusedRunning": {
+      "en": "A migration is already running. Try again when it has finished.",
+      "comment": "Browser migration wizard - shown after Start when another migration run is still in progress",
+      "de": "Es läuft bereits eine Migration. Versuche es erneut, sobald sie abgeschlossen ist.",
+      "es": "Ya hay una migración en curso. Inténtalo de nuevo cuando haya terminado.",
+      "fr": "Une migration est déjà en cours. Réessayez une fois celle-ci terminée.",
+      "ja": "移行がすでに実行中です。移行が完了してから、もう一度お試しください。",
+      "ko": "마이그레이션이 이미 진행 중이에요. 마이그레이션이 끝난 후 다시 시도해 주세요.",
+      "nl": "Er is al een migratie bezig. Probeer het opnieuw wanneer die is voltooid.",
+      "zh-Hans": "已有一个迁移正在进行。请等它完成后再试。",
+      "zh-Hant": "已有一項移轉正在進行。請在移轉完成後再試一次。"
+    },
+    "app.browserMigration.preview.spaceCount": {
+      "en": {
+        "one": "%d Space",
+        "other": "%d Spaces"
+      },
+      "comment": "Browser migration wizard - Space count in the preview summary; %d is the number of Spaces",
+      "de": {
+        "one": "%d Space",
+        "other": "%d Spaces"
+      },
+      "es": {
+        "one": "%d Espacio",
+        "other": "%d Espacios"
+      },
+      "fr": {
+        "one": "%d Espace",
+        "other": "%d Espaces"
+      },
+      "ja": "%d個のスペース",
+      "ko": "스페이스 %d개",
+      "nl": {
+        "one": "%d Space",
+        "other": "%d Spaces"
+      },
+      "zh-Hans": "%d 个空间",
+      "zh-Hant": "%d 個空間"
+    },
+    "app.browserMigration.preview.startButton": {
+      "en": "Start Migration",
+      "comment": "Browser migration wizard - button starting the migration run",
+      "de": "Migration starten",
+      "es": "Iniciar migración",
+      "fr": "Démarrer la migration",
+      "ja": "移行を開始",
+      "ko": "마이그레이션 시작",
+      "nl": "Start migratie",
+      "zh-Hans": "开始迁移",
+      "zh-Hant": "開始移轉"
+    },
+    "app.browserMigration.preview.summary": {
+      "en": "Will create %1$@ and %2$@.",
+      "comment": "Browser migration wizard - what the previewed run creates; %1$@ is a Profile count such as \"2 Profiles\", %2$@ a Space count such as \"4 Spaces\"",
+      "de": "Es werden %1$@ und %2$@ erstellt.",
+      "es": "Se crearán %1$@ y %2$@.",
+      "fr": "%1$@ et %2$@ seront créés.",
+      "ja": "%1$@と%2$@を作成します。",
+      "ko": "%1$@와 %2$@를 만들 예정이에요.",
+      "nl": "Er worden %1$@ en %2$@ aangemaakt.",
+      "zh-Hans": "将创建 %1$@、%2$@。",
+      "zh-Hant": "將建立 %1$@ 和 %2$@。"
+    },
+    "app.browserMigration.report.bookmarkCount": {
+      "en": {
+        "one": "%d bookmark",
+        "other": "%d bookmarks"
+      },
+      "comment": "Browser migration wizard - how many bookmarks a migrated Space received; %d is the number of bookmarks",
+      "de": {
+        "one": "%d Lesezeichen",
+        "other": "%d Lesezeichen"
+      },
+      "es": {
+        "one": "%d marcador",
+        "other": "%d marcadores"
+      },
+      "fr": {
+        "one": "%d favori",
+        "other": "%d favoris"
+      },
+      "ja": "%d件のブックマーク",
+      "ko": "북마크 %d개",
+      "nl": {
+        "one": "%d bladwijzer",
+        "other": "%d bladwijzers"
+      },
+      "zh-Hans": "%d 个书签",
+      "zh-Hant": "%d 個書籤"
+    },
+    "app.browserMigration.report.bookmarksFailed": {
+      "en": "Bookmarks couldn't be saved",
+      "comment": "Browser migration wizard - shown on a Space whose Bookmarks did not persist",
+      "de": "Lesezeichen konnten nicht gespeichert werden",
+      "es": "No se pudieron guardar los marcadores",
+      "fr": "Les favoris n'ont pas pu être enregistrés",
+      "ja": "ブックマークを保存できませんでした",
+      "ko": "북마크를 저장하지 못함",
+      "nl": "Bladwijzers konden niet worden bewaard",
+      "zh-Hans": "书签未能保存",
+      "zh-Hant": "書籤無法儲存"
+    },
+    "app.browserMigration.report.bookmarksNoneInSource": {
+      "en": "No bookmarks — this Space had none in %@",
+      "comment": "Browser migration wizard - shown on a Space whose source tree carried no bookmarks; %@ is the source browser's name",
+      "de": "Keine Lesezeichen: Dieser Space hatte in %@ keine.",
+      "es": "Sin marcadores: este Espacio no tenía ninguno en %@",
+      "fr": "Aucun favori : cet Espace n'en avait pas dans %@",
+      "ja": "ブックマークなし（%@のこのスペースにはありませんでした）",
+      "ko": "북마크 없음. 이 스페이스는 %@에서도 북마크가 없었어요.",
+      "nl": "Geen bladwijzers: deze Space had er geen in %@",
+      "zh-Hans": "没有书签：此空间在 %@ 中本来就没有书签",
+      "zh-Hant": "沒有書籤：這個空間在 %@ 中沒有任何書籤"
+    },
+    "app.browserMigration.report.bookmarksNoneSaved": {
+      "en": "No bookmarks were saved",
+      "comment": "Browser migration wizard - shown on a Space whose source tree carried bookmarks of which none landed",
+      "de": "Es wurden keine Lesezeichen gespeichert",
+      "es": "No se guardó ningún marcador",
+      "fr": "Aucun favori n'a été enregistré",
+      "ja": "ブックマークは1つも保存されませんでした",
+      "ko": "저장된 북마크 없음",
+      "nl": "Er zijn geen bladwijzers bewaard",
+      "zh-Hans": "未能保存任何书签",
+      "zh-Hant": "未儲存任何書籤"
+    },
+    "app.browserMigration.report.browserDataFailed": {
+      "en": "Couldn't be imported",
+      "comment": "Browser migration wizard - shown when a migrated Profile's browser-data import came back failed: against its history, cookies and extensions rows in the detail grid, and as the outcome of the promoted failure",
+      "de": "Import fehlgeschlagen",
+      "es": "No se pudo importar",
+      "fr": "Importation impossible",
+      "ja": "インポートできませんでした",
+      "ko": "가져오지 못함",
+      "nl": "Importeren mislukt",
+      "zh-Hans": "未能导入",
+      "zh-Hant": "無法匯入"
+    },
+    "app.browserMigration.report.browserDataRequested": {
+      "en": "Import finished",
+      "comment": "Browser migration wizard - shown when a migrated Profile's history and cookies import ran to completion; deliberately not a claim about what landed",
+      "de": "Import abgeschlossen",
+      "es": "Importación finalizada",
+      "fr": "Importation terminée",
+      "ja": "インポート完了",
+      "ko": "가져오기 완료",
+      "nl": "Importeren voltooid",
+      "zh-Hans": "导入已完成",
+      "zh-Hant": "匯入完成"
+    },
+    "app.browserMigration.report.doneButton": {
+      "en": "Done",
+      "comment": "Browser migration wizard - button dismissing the report and closing the window",
+      "de": "Fertig",
+      "es": "Listo",
+      "fr": "Terminé",
+      "ja": "完了",
+      "ko": "완료",
+      "nl": "Gereed",
+      "zh-Hans": "完成",
+      "zh-Hant": "完成"
+    },
+    "app.browserMigration.report.extensionsNoneFound": {
+      "en": "None found",
+      "comment": "Browser migration wizard - shown against a migrated Profile's extensions when the source profile carried none",
+      "de": "Keine gefunden",
+      "es": "No se encontró ninguna",
+      "fr": "Aucune extension trouvée",
+      "ja": "見つかりませんでした",
+      "ko": "발견된 항목 없음",
+      "nl": "Geen gevonden",
+      "zh-Hans": "未找到",
+      "zh-Hant": "沒有找到任何項目"
+    },
+    "app.browserMigration.report.extensionsTriggered": {
+      "en": "Install started for %d",
+      "comment": "Browser migration wizard - how many extensions a migrated Profile had installation started for; %d is the number of extensions",
+      "de": "Installation für %d gestartet",
+      "es": "Instalación iniciada para %d",
+      "fr": "Installation lancée pour %d",
+      "ja": "%d件のインストールを開始",
+      "ko": "%d개 설치 시작됨",
+      "nl": "Installatie gestart voor %d",
+      "zh-Hans": "已开始安装 %d 个",
+      "zh-Hant": "已開始安裝 %d 個"
+    },
+    "app.browserMigration.report.goToSpaceButton": {
+      "en": "Go to %@",
+      "comment": "Browser migration wizard - button switching to the first Space the run created; %@ is that Space's name",
+      "de": "Zu %@ wechseln",
+      "es": "Ir a %@",
+      "fr": "Accéder à %@",
+      "ja": "%@へ移動",
+      "ko": "%@(으)로 이동",
+      "nl": "Ga naar %@",
+      "zh-Hans": "前往 %@",
+      "zh-Hant": "前往 %@"
+    },
+    "app.browserMigration.report.heading": {
+      "en": "Migration finished",
+      "comment": "Browser migration wizard - heading of the report shown once a run has ended",
+      "de": "Migration abgeschlossen",
+      "es": "Migración finalizada",
+      "fr": "Migration terminée",
+      "ja": "移行が完了しました",
+      "ko": "마이그레이션 완료",
+      "nl": "Migratie voltooid",
+      "zh-Hans": "迁移完成",
+      "zh-Hant": "移轉完成"
+    },
+    "app.browserMigration.report.labelBrowserData": {
+      "en": "History & cookies",
+      "comment": "Browser migration wizard - label of a migrated Profile's history and cookies outcome in the report's detail grid",
+      "de": "Verlauf & Cookies",
+      "es": "Historial y cookies",
+      "fr": "Historique et cookies",
+      "ja": "履歴とCookie",
+      "ko": "방문 기록 및 쿠키",
+      "nl": "Geschiedenis en cookies",
+      "zh-Hans": "历史记录和 Cookie",
+      "zh-Hant": "歷史記錄與 Cookie"
+    },
+    "app.browserMigration.report.labelBrowserDataAndExtensions": {
+      "en": "History, cookies & extensions",
+      "comment": "Browser migration wizard - subject of the promoted failure of a migrated Profile's browser-data import, which covers all three at once",
+      "de": "Verlauf, Cookies & Erweiterungen",
+      "es": "Historial, cookies y extensiones",
+      "fr": "Historique, cookies et extensions",
+      "ja": "履歴、Cookie、拡張機能",
+      "ko": "방문 기록, 쿠키 및 확장 프로그램",
+      "nl": "Geschiedenis, cookies en extensies",
+      "zh-Hans": "历史记录、Cookie 和扩展程序",
+      "zh-Hant": "歷史記錄、Cookie 與擴充功能"
+    },
+    "app.browserMigration.report.labelExtensions": {
+      "en": "Extensions",
+      "comment": "Browser migration wizard - label of a migrated Profile's extensions outcome",
+      "de": "Erweiterungen",
+      "es": "Extensiones",
+      "fr": "Extensions",
+      "ja": "拡張機能",
+      "ko": "확장 프로그램",
+      "nl": "Extensies",
+      "zh-Hans": "扩展程序",
+      "zh-Hant": "擴充功能"
+    },
+    "app.browserMigration.report.labelPinnedTabs": {
+      "en": "Pinned tabs",
+      "comment": "Browser migration wizard - label of a migrated Profile's pinned tabs outcome",
+      "de": "Angeheftete Tabs",
+      "es": "Pestañas fijadas",
+      "fr": "Onglets épinglés",
+      "ja": "固定タブ",
+      "ko": "고정된 탭",
+      "nl": "Vastgezette tabbladen",
+      "zh-Hans": "固定的标签页",
+      "zh-Hant": "釘選分頁"
+    },
+    "app.browserMigration.report.labelRecentHistory": {
+      "en": "Recent history",
+      "comment": "Browser migration wizard - label of a migrated Profile's history outcome in the report's detail grid when history was the only data the source's import was asked for, as with Zen; \"recent\" because the import keeps only the most recent entries",
+      "de": "Neuester Verlauf",
+      "es": "Historial reciente",
+      "fr": "Historique récent",
+      "ja": "最近の履歴",
+      "ko": "최근 방문 기록",
+      "nl": "Recente geschiedenis",
+      "zh-Hans": "近期历史记录",
+      "zh-Hant": "近期歷史記錄"
+    },
+    "app.browserMigration.report.notCreated": {
+      "en": "Not created",
+      "comment": "Browser migration wizard - outcome of a Profile or Space the run failed to create",
+      "de": "Nicht erstellt",
+      "es": "No creado",
+      "fr": "Non créé",
+      "ja": "作成されませんでした",
+      "ko": "만들지 못함",
+      "nl": "Niet aangemaakt",
+      "zh-Hans": "未创建",
+      "zh-Hant": "未建立"
+    },
+    "app.browserMigration.report.pinnedTabCount": {
+      "en": "%d added",
+      "comment": "Browser migration wizard - how many pinned tabs a migrated Profile received; %d is the number of pinned tabs",
+      "de": "%d hinzugefügt",
+      "es": "Añadidas: %d",
+      "fr": "Ajouts : %d",
+      "ja": "%d件追加",
+      "ko": "%d개 추가됨",
+      "nl": "%d toegevoegd",
+      "zh-Hans": "已添加 %d 个",
+      "zh-Hant": "已加入 %d 個"
+    },
+    "app.browserMigration.report.pinnedTabsDropped": {
+      "en": "%1$d of %2$d couldn't be added",
+      "comment": "Browser migration wizard - how many of a Profile's pinned entries the run could not turn into pinned tabs; %1$d is the number that were dropped, %2$d how many the plan carried",
+      "de": "%1$d von %2$d nicht hinzugefügt",
+      "es": "Sin añadir: %1$d de %2$d",
+      "fr": "Impossible d'ajouter %1$d sur %2$d",
+      "ja": "%2$d件中%1$d件を追加できませんでした",
+      "ko": "%2$d개 중 %1$d개를 추가하지 못함",
+      "nl": "%1$d van %2$d niet toegevoegd",
+      "zh-Hans": "%2$d 个中有 %1$d 个未能添加",
+      "zh-Hant": "%2$d 個中有 %1$d 個無法加入"
+    },
+    "app.browserMigration.report.pinnedTabsLeftBehind": {
+      "en": {
+        "one": "%d pinned tab was left behind because its Profile had no Spaces.",
+        "other": "%d pinned tabs were left behind because their Profile had no Spaces."
+      },
+      "comment": "Browser migration wizard - report note counting the source's pinned entries the run could not place because the Profile they belong to has no Spaces and so was not created; %d is the number of them",
+      "de": {
+        "one": "%d angehefteter Tab wurde nicht übernommen, weil sein Profil keine Spaces hatte.",
+        "other": "%d angeheftete Tabs wurden nicht übernommen, weil ihr Profil keine Spaces hatte."
+      },
+      "es": {
+        "one": "%d pestaña fijada se quedó fuera porque su Perfil no tenía Espacios.",
+        "other": "%d pestañas fijadas se quedaron fuera porque su Perfil no tenía Espacios."
+      },
+      "fr": {
+        "one": "%d onglet épinglé a été laissé de côté parce que son Profil n'avait aucun Espace.",
+        "other": "%d onglets épinglés ont été laissés de côté parce que leur Profil n'avait aucun Espace."
+      },
+      "ja": "所属するプロファイルにスペースがなかったため、%d件の固定タブは移行されませんでした。",
+      "ko": "고정된 탭 %d개는 속한 프로필에 스페이스가 없어서 가져오지 못했어요.",
+      "nl": {
+        "one": "%d vastgezet tabblad is achtergebleven omdat zijn Profiel geen Spaces had.",
+        "other": "%d vastgezette tabbladen zijn achtergebleven omdat hun Profiel geen Spaces had."
+      },
+      "zh-Hans": "%d 个固定标签页因所属个人资料没有空间而未被迁移。",
+      "zh-Hant": "有 %d 個釘選分頁因所屬的設定檔沒有任何空間而未能移轉。"
+    },
+    "app.browserMigration.report.pinnedTabsNoneInSource": {
+      "en": "None in %@",
+      "comment": "Browser migration wizard - shown against a migrated Profile's pinned tabs when the source profile had none; %@ is the source browser's name",
+      "de": "Keine in %@",
+      "es": "Ninguna en %@",
+      "fr": "Aucun dans %@",
+      "ja": "%@にはありませんでした",
+      "ko": "%@에 없음",
+      "nl": "Geen in %@",
+      "zh-Hans": "%@ 中没有",
+      "zh-Hant": "%@ 中沒有任何項目"
+    },
+    "app.browserMigration.report.profileCount": {
+      "en": {
+        "one": "%d Profile",
+        "other": "%d Profiles"
+      },
+      "comment": "Browser migration wizard - Profile count in the report summary; %d is the number of Profiles the run created",
+      "de": {
+        "one": "%d Profil",
+        "other": "%d Profile"
+      },
+      "es": {
+        "one": "%d Perfil",
+        "other": "%d Perfiles"
+      },
+      "fr": {
+        "one": "%d Profil",
+        "other": "%d Profils"
+      },
+      "ja": "%d個のプロファイル",
+      "ko": "프로필 %d개",
+      "nl": {
+        "one": "%d Profiel",
+        "other": "%d Profielen"
+      },
+      "zh-Hans": "%d 个个人资料",
+      "zh-Hant": "%d 個設定檔"
+    },
+    "app.browserMigration.report.profileNotCreated": {
+      "en": "Profile not created",
+      "comment": "Browser migration wizard - promoted failure of a Profile the run could not create",
+      "de": "Profil nicht erstellt",
+      "es": "Perfil no creado",
+      "fr": "Profil non créé",
+      "ja": "プロファイルが作成されませんでした",
+      "ko": "프로필을 만들지 못함",
+      "nl": "Profiel niet aangemaakt",
+      "zh-Hans": "个人资料未创建",
+      "zh-Hant": "未能建立設定檔"
+    },
+    "app.browserMigration.report.spaceCount": {
+      "en": {
+        "one": "%d Space",
+        "other": "%d Spaces"
+      },
+      "comment": "Browser migration wizard - Space count in the report summary; %d is the number of Spaces the run created",
+      "de": {
+        "one": "%d Space",
+        "other": "%d Spaces"
+      },
+      "es": {
+        "one": "%d Espacio",
+        "other": "%d Espacios"
+      },
+      "fr": {
+        "one": "%d Espace",
+        "other": "%d Espaces"
+      },
+      "ja": "%d個のスペース",
+      "ko": "스페이스 %d개",
+      "nl": {
+        "one": "%d Space",
+        "other": "%d Spaces"
+      },
+      "zh-Hans": "%d 个空间",
+      "zh-Hant": "%d 個空間"
+    },
+    "app.browserMigration.report.spaceNotCreated": {
+      "en": "Space not created",
+      "comment": "Browser migration wizard - promoted failure of a Space the run could not create",
+      "de": "Space nicht erstellt",
+      "es": "Espacio no creado",
+      "fr": "Espace non créé",
+      "ja": "スペースが作成されませんでした",
+      "ko": "스페이스를 만들지 못함",
+      "nl": "Space niet aangemaakt",
+      "zh-Hans": "空间未创建",
+      "zh-Hant": "未能建立空間"
+    },
+    "app.browserMigration.report.summaryCreated": {
+      "en": "Created %1$@ and %2$@.",
+      "comment": "Browser migration wizard - summary of what a run created; %1$@ is a Profile count such as \"2 Profiles\", %2$@ a Space count such as \"5 Spaces\"",
+      "de": "Es wurden %1$@ und %2$@ erstellt.",
+      "es": "Se crearon %1$@ y %2$@.",
+      "fr": "%1$@ et %2$@ ont été créés.",
+      "ja": "%1$@と%2$@を作成しました。",
+      "ko": "%1$@와 %2$@를 만들었어요.",
+      "nl": "%1$@ en %2$@ aangemaakt.",
+      "zh-Hans": "已创建 %1$@、%2$@。",
+      "zh-Hant": "已建立 %1$@ 和 %2$@。"
+    },
+    "app.browserMigration.report.summaryNothingCreated": {
+      "en": "Nothing was created.",
+      "comment": "Browser migration wizard - summary of a run that created no Profile and no Space",
+      "de": "Es wurde nichts erstellt.",
+      "es": "No se creó nada.",
+      "fr": "Rien n'a été créé.",
+      "ja": "何も作成されませんでした。",
+      "ko": "만들어진 항목이 없어요.",
+      "nl": "Er is niets aangemaakt.",
+      "zh-Hans": "未创建任何内容。",
+      "zh-Hant": "未建立任何項目。"
+    },
+    "app.browserMigration.report.summaryProblems": {
+      "en": {
+        "one": "%d thing needs your attention.",
+        "other": "%d things need your attention."
+      },
+      "comment": "Browser migration wizard - how many promoted failures the report lists; %d is the number of them",
+      "de": {
+        "one": "%d Punkt erfordert deine Aufmerksamkeit.",
+        "other": "%d Punkte erfordern deine Aufmerksamkeit."
+      },
+      "es": {
+        "one": "%d elemento requiere tu atención.",
+        "other": "%d elementos requieren tu atención."
+      },
+      "fr": {
+        "one": "%d élément nécessite votre attention.",
+        "other": "%d éléments nécessitent votre attention."
+      },
+      "ja": "確認が必要な項目が%d件あります。",
+      "ko": "확인이 필요한 항목이 %d개 있어요.",
+      "nl": {
+        "one": "%d ding heeft je aandacht nodig.",
+        "other": "%d dingen hebben je aandacht nodig."
+      },
+      "zh-Hans": "有 %d 项需要你注意。",
+      "zh-Hant": "有 %d 個項目需要你留意。"
+    },
+    "app.browserMigration.rerun.cancelButton": {
+      "en": "Cancel",
+      "comment": "Browser migration wizard - button dismissing the second-migration confirmation without starting anything",
+      "de": "Abbrechen",
+      "es": "Cancelar",
+      "fr": "Annuler",
+      "ja": "キャンセル",
+      "ko": "취소",
+      "nl": "Annuleer",
+      "zh-Hans": "取消",
+      "zh-Hant": "取消"
+    },
+    "app.browserMigration.rerun.confirmButton": {
+      "en": "Migrate Again",
+      "comment": "Browser migration wizard - button starting a second migration from a source this account has already migrated from",
+      "de": "Erneut migrieren",
+      "es": "Migrar de nuevo",
+      "fr": "Migrer à nouveau",
+      "ja": "もう一度移行",
+      "ko": "다시 마이그레이션",
+      "nl": "Migreer opnieuw",
+      "zh-Hans": "再次迁移",
+      "zh-Hant": "再次移轉"
+    },
+    "app.browserMigration.rerun.message": {
+      "en": "You've migrated from this browser into this account before. Phi will create a new set of Profiles and Spaces — the ones you already have stay exactly as they are.",
+      "comment": "Browser migration wizard - explains that a second migration creates a fresh set of Profiles and Spaces rather than updating the first one's",
+      "de": "Du hast aus diesem Browser schon einmal in dieses Konto migriert. Phi erstellt einen neuen Satz Profile und Spaces; alles, was du schon hast, bleibt genau so, wie es ist.",
+      "es": "Ya migraste desde este navegador a esta cuenta anteriormente. Phi creará un nuevo conjunto de Perfiles y Espacios: los que ya tienes se quedan exactamente como están.",
+      "fr": "Vous avez déjà migré depuis ce navigateur vers ce compte. Phi créera un nouvel ensemble de Profils et d'Espaces : ceux que vous avez déjà restent exactement tels quels.",
+      "ja": "このブラウザからこのアカウントへは、以前に移行したことがあります。Phiはプロファイルとスペースの新しいセットを作成します。すでにあるものはそのまま変わりません。",
+      "ko": "이 브라우저에서 이 계정으로 마이그레이션한 적이 있어요. Phi가 새로운 프로필과 스페이스 세트를 만들며, 이미 있는 항목은 그대로 유지돼요.",
+      "nl": "Je hebt al eerder uit deze browser naar dit account gemigreerd. Phi maakt een nieuwe set Profielen en Spaces aan: alles wat je al hebt blijft precies zoals het is.",
+      "zh-Hans": "你之前已经从这个浏览器迁移到此账号。Phi 会创建一套新的个人资料和空间，你已有的那些会保持原样。",
+      "zh-Hant": "你之前已經從這個瀏覽器移轉到這個帳號。Phi 會建立一組全新的設定檔和空間，你現有的則會完全保持原樣。"
+    },
+    "app.browserMigration.rerun.title": {
+      "en": "Migrate from %@ again?",
+      "comment": "Browser migration wizard - title of the confirmation shown when this account has already migrated from the picked source; %@ is the source browser's name",
+      "de": "Erneut aus %@ migrieren?",
+      "es": "¿Migrar de nuevo desde %@?",
+      "fr": "Migrer à nouveau depuis %@ ?",
+      "ja": "%@からもう一度移行しますか？",
+      "ko": "%@에서 다시 마이그레이션할까요?",
+      "nl": "Opnieuw migreren uit %@?",
+      "zh-Hans": "再次从 %@ 迁移？",
+      "zh-Hant": "要再次從 %@ 移轉嗎？"
+    },
+    "app.browserMigration.run.closeButton": {
+      "en": "Close",
+      "comment": "Browser migration wizard - button closing the window while the run carries on",
+      "de": "Schließen",
+      "es": "Cerrar",
+      "fr": "Fermer",
+      "ja": "閉じる",
+      "ko": "닫기",
+      "nl": "Sluit",
+      "zh-Hans": "关闭",
+      "zh-Hant": "關閉"
+    },
+    "app.browserMigration.run.creatingUnit": {
+      "en": "Creating %@",
+      "comment": "Browser migration wizard - the unit of the run being worked on; %@ is a Profile or Space name",
+      "de": "%@ wird erstellt",
+      "es": "Creando %@",
+      "fr": "Création de %@",
+      "ja": "%@を作成中",
+      "ko": "%@ 만드는 중",
+      "nl": "%@ wordt aangemaakt",
+      "zh-Hans": "正在创建 %@",
+      "zh-Hant": "正在建立 %@"
+    },
+    "app.browserMigration.run.heading": {
+      "en": "Migrating…",
+      "comment": "Browser migration wizard - heading while a run is working",
+      "de": "Migration läuft…",
+      "es": "Migrando…",
+      "fr": "Migration en cours…",
+      "ja": "移行中…",
+      "ko": "마이그레이션 중…",
+      "nl": "Bezig met migreren…",
+      "zh-Hans": "正在迁移…",
+      "zh-Hant": "正在移轉…"
+    },
+    "app.browserMigration.run.subtitle": {
+      "en": "This can take a few minutes.",
+      "comment": "Browser migration wizard - subtitle shown while a run is working",
+      "de": "Das kann einige Minuten dauern.",
+      "es": "Esto puede tardar unos minutos.",
+      "fr": "Cette opération peut prendre quelques minutes.",
+      "ja": "数分かかることがあります。",
+      "ko": "몇 분 정도 걸릴 수 있어요.",
+      "nl": "Dit kan een paar minuten duren.",
+      "zh-Hans": "这可能需要几分钟。",
+      "zh-Hant": "這可能需要幾分鐘。"
+    },
+    "app.browserMigration.run.unitPositionProfile": {
+      "en": "Profile %1$d of %2$d",
+      "comment": "Browser migration wizard - where the Profile being created sits in the run; %1$d is its number, %2$d how many units the run has",
+      "de": "Profil %1$d von %2$d",
+      "es": "Perfil %1$d de %2$d",
+      "fr": "Profil %1$d sur %2$d",
+      "ja": "プロファイル%1$d/%2$d",
+      "ko": "프로필 %1$d/%2$d",
+      "nl": "Profiel %1$d van %2$d",
+      "zh-Hans": "个人资料 %1$d / %2$d",
+      "zh-Hant": "設定檔：第 %1$d 項，共 %2$d 項"
+    },
+    "app.browserMigration.run.unitPositionSpace": {
+      "en": "Space %1$d of %2$d",
+      "comment": "Browser migration wizard - where the Space being created sits in the run; %1$d is its number, %2$d how many units the run has",
+      "de": "Space %1$d von %2$d",
+      "es": "Espacio %1$d de %2$d",
+      "fr": "Espace %1$d sur %2$d",
+      "ja": "スペース%1$d/%2$d",
+      "ko": "스페이스 %1$d/%2$d",
+      "nl": "Space %1$d van %2$d",
+      "zh-Hans": "空间 %1$d / %2$d",
+      "zh-Hant": "空間：第 %1$d 項，共 %2$d 項"
+    },
+    "app.browserMigration.title": {
+      "en": "Migrate to Phi",
+      "comment": "Browser migration wizard - heading of the source step; the window title is a key of its own",
+      "de": "Zu Phi migrieren",
+      "es": "Migrar a Phi",
+      "fr": "Migrer vers Phi",
+      "ja": "Phiへ移行",
+      "ko": "Phi로 마이그레이션",
+      "nl": "Naar Phi migreren",
+      "zh-Hans": "迁移到 Phi",
+      "zh-Hant": "移轉到 Phi"
+    },
+    "app.browserMigration.windowTitle": {
+      "en": "Migrate to Phi",
+      "comment": "Browser migration wizard - window title",
+      "de": "Zu Phi migrieren",
+      "es": "Migrar a Phi",
+      "fr": "Migrer vers Phi",
+      "ja": "Phiへ移行",
+      "ko": "Phi로 마이그레이션",
+      "nl": "Naar Phi migreren",
+      "zh-Hans": "迁移到 Phi",
+      "zh-Hant": "移轉到 Phi"
+    },
+    "app.browserMigration.zen.container.numbered": {
+      "en": "Container %d",
+      "comment": "Browser migration wizard - name of the Profile made from a Zen container that has no readable name; %d is the container's number",
+      "de": "Umgebung %d",
+      "es": "Contenedor %d",
+      "fr": "Conteneur %d",
+      "ja": "コンテナー%d",
+      "ko": "컨테이너 %d",
+      "nl": "Container %d",
+      "zh-Hans": "容器 %d",
+      "zh-Hant": "容器 %d"
+    },
+    "app.browserMigration.zen.untitledSpaceName": {
+      "en": "Untitled Space",
+      "comment": "Browser migration wizard - fallback name for a Zen workspace that has no name",
+      "de": "Unbenannter Space",
+      "es": "Espacio sin título",
+      "fr": "Espace sans titre",
+      "ja": "名称未設定のスペース",
+      "ko": "이름 없는 스페이스",
+      "nl": "Naamloze Space",
+      "zh-Hans": "未命名空间",
+      "zh-Hant": "未命名空間"
+    },
+    "app.phiMenu.importFromAnotherBrowser": {
+      "en": "Import from Another Browser...",
+      "comment": "Phi menu - Menu item opening the window that imports bookmarks and settings from another browser",
+      "de": "Aus anderem Browser importieren...",
+      "es": "Importar desde otro navegador...",
+      "fr": "Importer depuis un autre navigateur…",
+      "ja": "他のブラウザからインポート…",
+      "ko": "다른 브라우저에서 가져오기...",
+      "nl": "Importeer uit een andere browser...",
+      "zh-Hans": "从其他浏览器导入...",
+      "zh-Hant": "從其他瀏覽器匯入…"
+    },
+    "app.phiMenu.migrateFromAnotherBrowser": {
+      "en": "Migrate from Another Browser…",
+      "comment": "Phi menu - Menu item opening the wizard that recreates another browser's profiles and spaces in Phi",
+      "de": "Aus anderem Browser migrieren…",
+      "es": "Migrar desde otro navegador…",
+      "fr": "Migrer depuis un autre navigateur…",
+      "ja": "他のブラウザから移行…",
+      "ko": "다른 브라우저에서 마이그레이션…",
+      "nl": "Migreer uit een andere browser…",
+      "zh-Hans": "从其他浏览器迁移…",
+      "zh-Hant": "從其他瀏覽器移轉…"
+    },
+    "oobe.importBrowserData.importButton": {
+      "en": "Choose File…",
+      "comment": "Import browser data page - Button to pick a file to import",
+      "de": "Datei auswählen…",
+      "es": "Seleccionar archivo…",
+      "fr": "Choisir un fichier…",
+      "ja": "ファイルを選択…",
+      "ko": "파일 선택…",
+      "nl": "Kies bestand…",
+      "zh-Hans": "选取文件…",
+      "zh-Hant": "選擇檔案…"
+    },
+    "oobe.importBrowserData.initialTitle": {
+      "en": "Browser data",
+      "comment": "Import browser data page - Initial page title",
+      "de": "Browserdaten",
+      "es": "Datos del navegador",
+      "fr": "Données du navigateur",
+      "ja": "ブラウザデータ",
+      "ko": "브라우저 데이터",
+      "nl": "Browsergegevens",
+      "zh-Hans": "浏览器数据",
+      "zh-Hant": "瀏覽器資料"
+    },
+    "oobe.importBrowserData.permission.fullDiskAccessDescription": {
+      "en": "Phi needs Full Disk Access to import your data from Safari.",
+      "comment": "Import browser data page - Description explaining why Full Disk Access permission is needed",
+      "de": "Phi benötigt Festplattenvollzugriff, um deine Daten aus Safari zu importieren.",
+      "es": "Phi necesita Acceso total al disco para importar tus datos de Safari.",
+      "fr": "Phi a besoin d'un accès complet au disque pour importer vos données depuis Safari.",
+      "ja": "SafariからデータをインポートするにはPhiにフルディスクアクセスの許可が必要です。",
+      "ko": "Safari에서 데이터를 가져오려면 Phi에 전체 디스크 접근 권한이 필요해요.",
+      "nl": "Phi heeft Volledige schijftoegang nodig om je gegevens uit Safari te importeren.",
+      "zh-Hans": "Phi 需要完全磁盘访问权限才能从 Safari 导入你的数据。",
+      "zh-Hant": "Phi 需要「完全取用磁碟」權限，才能從 Safari 匯入你的資料。"
+    },
+    "oobe.importBrowserData.permission.openSettingsButton": {
+      "en": "Open Settings",
+      "comment": "Import browser data page - Button to open system settings for granting permissions",
+      "de": "Einstellungen öffnen",
+      "es": "Abrir Configuración",
+      "fr": "Ouvrir les Réglages",
+      "ja": "設定を開く",
+      "ko": "시스템 설정 열기",
+      "nl": "Open instellingen",
+      "zh-Hans": "打开设置",
+      "zh-Hant": "開啟「系統設定」"
+    },
+    "oobe.importBrowserData.permission.title": {
+      "en": "Permissions",
+      "comment": "Import browser data page - Page title when showing permission request",
+      "de": "Berechtigungen",
+      "es": "Permisos",
+      "fr": "Autorisations",
+      "ja": "アクセス権限",
+      "ko": "권한",
+      "nl": "Machtigingen",
+      "zh-Hans": "权限",
+      "zh-Hant": "權限"
+    },
+    "oobe.importBrowserData.safari.quitReminder": {
+      "en": "Please quit Safari before importing its data.",
+      "comment": "Import browser data page - Reminder to quit Safari before importing so its data can be read",
+      "de": "Beende Safari, bevor du seine Daten importierst.",
+      "es": "Cierra Safari antes de importar sus datos.",
+      "fr": "Quittez Safari avant d'importer ses données.",
+      "ja": "Safariのデータをインポートする前に、Safariを終了してください。",
+      "ko": "Safari 데이터를 가져오기 전에 Safari를 종료해 주세요.",
+      "nl": "Stop Safari voordat je de gegevens ervan importeert.",
+      "zh-Hans": "请先退出 Safari，然后再导入其数据。",
+      "zh-Hant": "請先結束 Safari，再匯入它的資料。"
+    },
+    "oobe.importBrowserData.source.arcOption": {
+      "en": "From Arc",
+      "comment": "Import browser data page - Option label to import data from Arc browser",
+      "de": "Aus Arc",
+      "es": "Desde Arc",
+      "fr": "Depuis Arc",
+      "ja": "Arcから",
+      "ko": "Arc에서",
+      "nl": "Uit Arc",
+      "zh-Hans": "从 Arc 导入",
+      "zh-Hant": "從 Arc"
+    },
+    "oobe.importBrowserData.source.chromeOption": {
+      "en": "From Chrome",
+      "comment": "Import browser data page - Option label to import data from Chrome browser",
+      "de": "Aus Chrome",
+      "es": "Desde Chrome",
+      "fr": "Depuis Chrome",
+      "ja": "Chromeから",
+      "ko": "Chrome에서",
+      "nl": "Uit Chrome",
+      "zh-Hans": "从 Chrome 导入",
+      "zh-Hant": "從 Chrome"
+    },
+    "oobe.importBrowserData.source.diaOption": {
+      "en": "From Dia",
+      "comment": "Import browser data page - Option label to import data from Dia browser",
+      "de": "Aus Dia",
+      "es": "Desde Dia",
+      "fr": "Depuis Dia",
+      "ja": "Diaから",
+      "ko": "Dia에서",
+      "nl": "Uit Dia",
+      "zh-Hans": "从 Dia 导入",
+      "zh-Hant": "從 Dia"
+    },
+    "oobe.importBrowserData.source.fileOption": {
+      "en": "From a file",
+      "comment": "Import browser data page - Option label to import data from a file",
+      "de": "Aus einer Datei",
+      "es": "Desde un archivo",
+      "fr": "Depuis un fichier",
+      "ja": "ファイルから",
+      "ko": "파일에서",
+      "nl": "Uit een bestand",
+      "zh-Hans": "从文件导入",
+      "zh-Hant": "從檔案"
+    },
+    "oobe.importBrowserData.source.safariOption": {
+      "en": "From Safari",
+      "comment": "Import browser data page - Option label to import data from Safari browser",
+      "de": "Aus Safari",
+      "es": "Desde Safari",
+      "fr": "Depuis Safari",
+      "ja": "Safariから",
+      "ko": "Safari에서",
+      "nl": "Uit Safari",
+      "zh-Hans": "从 Safari 导入",
+      "zh-Hant": "從 Safari"
+    }
+  }
+}
