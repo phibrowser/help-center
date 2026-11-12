@@ -232,9 +232,19 @@ export default defineConfig({
   // The same hook writes /help/llms.txt and /help/llms-full.txt from the
   // root-locale pages. See docs/llms-txt.md.
   async buildEnd(siteConfig) {
+    // Workers serves .txt as `text/plain` with no charset, and the llms files
+    // contain non-ASCII characters, so their encoding is declared here.
     writeFileSync(
       resolve(dirname(siteConfig.outDir), "_headers"),
-      `${base}${siteConfig.assetsDir}/*\n  Cache-Control: public, max-age=31536000, immutable\n`,
+      [
+        `${base}${siteConfig.assetsDir}/*`,
+        "  Cache-Control: public, max-age=31536000, immutable",
+        ...["llms.txt", "llms-full.txt"].flatMap((file) => [
+          `${base}${file}`,
+          "  Content-Type: text/plain; charset=utf-8",
+        ]),
+        "",
+      ].join("\n"),
     );
 
     const pages = await createContentLoader("**/*.md", {

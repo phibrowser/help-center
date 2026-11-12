@@ -100,6 +100,21 @@ if (listedCount !== sourceFiles.length) {
   );
 }
 
+// Workers serves .txt without a charset unless _headers declares one.
+const headers = await readFile(
+  path.join(path.dirname(DIST_DIRECTORY), "_headers"),
+  "utf8",
+);
+for (const name of ["llms.txt", "llms-full.txt"]) {
+  if (
+    !headers.includes(
+      `/help/${name}\n  Content-Type: text/plain; charset=utf-8\n`,
+    )
+  ) {
+    failures.push(`_headers does not declare the charset of /help/${name}`);
+  }
+}
+
 // No VitePress-only syntax or site-relative link survives in either file.
 for (const [name, text] of [
   ["llms.txt", llmsTxt],
