@@ -81,8 +81,12 @@ Links to other hosts are not requested.
 
 ## After a deploy
 
-- Both URLs should answer 200 with `Content-Type: text/plain`. Workers
-  static assets choose the type from the `.txt` extension.
+- Both URLs should answer 200 with
+  `Content-Type: text/plain; charset=utf-8`. Workers static assets choose
+  `text/plain` from the `.txt` extension but send no charset (seen on
+  2026-11-12 after the first deploy), and both files contain non-ASCII
+  characters, so `buildEnd` adds a `Content-Type` rule for each file to
+  `_headers`. `scripts/test-llms-build.mjs` checks that the rules are there.
 - `/help/*` is cached at the Cloudflare edge. If the old 404 is still served,
   check `cf-cache-status` and purge the two URLs.
 
