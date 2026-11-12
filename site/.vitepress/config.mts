@@ -1,7 +1,7 @@
 import { execFileSync } from "node:child_process";
 import { existsSync, statSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
-import { defineConfig } from "vitepress";
+import { createContentLoader, defineConfig } from "vitepress";
 import type { HeadConfig } from "vitepress";
 import {
   defaultLocaleResource,
@@ -13,6 +13,7 @@ import {
   localeRoutePrefixes,
   localeSearchOptions,
 } from "./i18n-config";
+import { buildLlmsFiles } from "./llms-txt";
 
 // Deployed under the /help/ sub-path. VitePress prepends this base to asset and
 // internal-link URLs (nav/sidebar links, theme logo, bundled assets) and to
@@ -227,11 +228,35 @@ export default defineConfig({
   // `max-age=0, must-revalidate`). Workers reads `_headers` from the root of
   // `assets.directory` in wrangler.jsonc, the parent of outDir, so it is
   // written there rather than shipped from site/public/.
-  buildEnd(siteConfig) {
+  //
+  // The same hook writes /help/llms.txt and /help/llms-full.txt from the
+  // root-locale pages. See docs/llms-txt.md.
+  async buildEnd(siteConfig) {
     writeFileSync(
       resolve(dirname(siteConfig.outDir), "_headers"),
       `${base}${siteConfig.assetsDir}/*\n  Cache-Control: public, max-age=31536000, immutable\n`,
     );
+
+    const pages = await createContentLoader("**/*.md", {
+      includeSrc: true,
+    }).load();
+    const { llmsTxt, llmsFullTxt } = buildLlmsFiles(
+      pages
+        .filter(
+          (page) =>
+            !localeRoutePrefixes.some((prefix) =>
+              page.url.startsWith(`${prefix}/`),
+            ),
+        )
+        .map((page) => ({
+          url: page.url,
+          src: page.src ?? "",
+          frontmatter: page.frontmatter,
+        })),
+      { baseUrl: productionBaseUrl, resource: defaultLocaleResource },
+    );
+    writeFileSync(resolve(siteConfig.outDir, "llms.txt"), llmsTxt);
+    writeFileSync(resolve(siteConfig.outDir, "llms-full.txt"), llmsFullTxt);
   },
   // Emitted at /help/sitemap.xml. The hostname includes the /help/ base so the
   // generated <loc> URLs are absolute under the sub-path (e.g.
