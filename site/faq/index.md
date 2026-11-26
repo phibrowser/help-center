@@ -1,5 +1,5 @@
 ---
-description: "Find quick answers about Phi Browser layouts, Spaces, Incognito Spaces, bookmarks, Split View, sync, AI features, Phi Sentinel, Phi Link, pricing, privacy, and Time Machine Backups."
+description: "Find quick answers about Phi Browser layouts, Spaces, Incognito Spaces, bookmarks, Split View, sync, AI features, Private AI, Phi Sentinel, Phi Link, pricing, privacy, and Time Machine Backups."
 ---
 
 # Frequently Asked Questions
@@ -260,18 +260,40 @@ Tasks the assistant performs when you ask, such as navigating pages or interacti
 Recurring automations that run on a schedule you define, for example monitoring a product price or watching a page for changes.
 :::
 
+## Private AI
+
+::: details What is Phi Cloud? Is it an agent?
+No. The assistant is the agent: it decides what to do. Phi Cloud is the AI service built into Phi that supplies the model the assistant thinks with, by default. It uses your Phi sign-in, needs no API key, and counts toward your usage allowance. See [The assistant, Phi Cloud, and AI providers](/private-ai/#assistant-phi-cloud-and-providers).
+:::
+
+::: details How does Phi Cloud relate to AI providers like Ollama or OpenAI?
+They are alternatives for the same job. Each AI task, such as Chat or Web tasks, takes its model from one source: Phi Cloud, a local model on your Mac, or a provider you connect yourself. Phi Cloud is the built-in default, and the others are yours to set up. See [How the sources compare](/private-ai/#comparing-sources).
+:::
+
+::: details Will Phi use the AI provider I added?
+Only for the tasks you assign to it, and only while Private AI is on. Adding a provider by itself changes nothing, and every task you have not changed stays on Phi Cloud. See [When Phi uses your provider](/private-ai/#when-phi-uses-your-provider).
+:::
+
+::: details Does Private AI keep everything on my Mac?
+Only the tasks that use a model on your Mac or on your own network. A task you give to a cloud provider such as OpenAI goes to that provider. By default, a task whose local source stops responding falls back to Phi Cloud for the time being; to prevent that, choose **Pause affected AI features (never send data to the cloud)**. See [When a local source is unavailable](/private-ai/#when-a-local-source-is-unavailable).
+:::
+
+::: details What do I need to run models on my Mac?
+An Apple Silicon Mac with at least 16 GB of memory and 10 GB of free disk. Chat and Web tasks need a larger model, which in practice means 32 GB of memory or more. See [Requirements](/private-ai/#requirements) and [Recommended models](/private-ai/#recommended-models).
+:::
+
 ## Phi Sentinel
 
 ::: details What is Phi Sentinel?
-Phi Sentinel is the background AI orchestrator for Phi Browser. It executes scheduled tasks and keeps your AI task history, running from the macOS menu bar.
+Phi Sentinel manages Phi's background services on your Mac: the services that run your tasks, build your Memory, index your connected data, and route AI requests. Its Runner starts, watches over, and updates them. See [Phi Sentinel](/sentinel/).
 :::
 
 ::: details Why is Phi Sentinel separate from the browser?
-So scheduled tasks and persistent AI workflows can keep running even when the browser window is closed.
+So scheduled tasks and the other background services keep running even when the browser window is closed, while the browser itself stays light.
 :::
 
-::: details Why was it designed this way?
-Keeping the browser lightweight while maintaining a persistent automation layer makes the whole system more practical.
+::: details Where do I find Private AI settings?
+In Phi Chat, under the settings (gear) button, choose **Private AI**. From the browser, go to **Settings → Phi & AI → Phi Sentinel → Private AI**. See [Private AI](/private-ai/#turning-on-private-ai).
 :::
 
 ## Phi Link

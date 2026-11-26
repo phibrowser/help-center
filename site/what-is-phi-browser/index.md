@@ -31,7 +31,7 @@ Read [Meet your assistant](/ai/) for Memory, talking to it, and Skills, and [Aut
 
 Phi is local-first. What Phi remembers lives on your Mac, is never used to train AI models, and stays under your control. You can view it, manage it, and delete it.
 
-There is a second half to that, and it is worth knowing before you rely on it: when the assistant answers a question, the content needed to answer goes to the model provider you picked, because that is the only way a model can answer. It passes through us without being stored. If you would rather it never left your Mac at all, [Phi Sentinel](/sentinel/) can run models locally instead.
+There is a second half to that, and it is worth knowing before you rely on it: when the assistant answers a question, the content needed to answer goes to a model provider, because that is the only way a model can answer. With Phi Cloud, it passes through us without being stored. If you would rather it never left your Mac at all, [Private AI](/private-ai/) can run some tasks on your Mac instead.
 
 See [Privacy & Your Data](/privacy/) for the details.
 
@@ -51,7 +51,8 @@ See [Privacy & Your Data](/privacy/) for the details.
 - [The phi-browser skill](/phi-browser-skill/), letting an outside AI agent drive Phi.
 - [New Tab & Widgets](/new-tab/), the personalized new tab and its widgets.
 - [Automation & Phi Link](/automation/), agentic tasks, Phi Sentinel, and Telegram.
-- [Phi Sentinel](/sentinel/), the background app that runs automation and hosts Private AI.
+- [Private AI](/private-ai/), running AI on your Mac or with your own AI provider, and what Phi Cloud is.
+- [Phi Sentinel](/sentinel/), the background services behind automation and Private AI.
 - [Agent Password Manager](/agent-passwords/), how agents sign in without seeing your passwords.
 - [Privacy & Your Data](/privacy/), how your data is handled.
 - [Time Machine Backups](/time-machine/), rolling back to a previous version after a major update.

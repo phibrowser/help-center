@@ -44,6 +44,7 @@
       "phiBrowserSkill": "phi-browser 스킬",
       "phiCli": "Phi CLI",
       "agentPasswords": "에이전트 비밀번호 관리자",
+      "privateAi": "프라이빗 AI",
       "sentinel": "Phi Sentinel",
       "privacy": "개인정보 보호 및 데이터",
       "contentBlocking": "콘텐츠 차단",
