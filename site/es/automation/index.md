@@ -54,7 +54,7 @@ Cuando una conversación tiene tareas, aparece en su barra superior un botón co
 
 El menú **…** de la tarea incluye **Ejecutar ahora** y **Pausar programación** o **Reanudar programación**.
 
-El panel no edita ni elimina tareas. Para cambiar lo que hace una tarea, o para eliminarla, pídeselo al asistente en la conversación de la tarea, o usa la página **Tareas** de Phi Sentinel.
+El panel no edita ni elimina tareas. Para cambiar lo que hace una tarea, o para eliminarla, pídeselo al asistente en la conversación de la tarea, o usa el **Administrador de tareas** de [Phi Chat](/es/phi-chat/), el botón situado a la izquierda de la búsqueda, en la parte superior de la lista de conversaciones.
 
 ### Cuando Phi no estaba en ejecución
 
@@ -77,7 +77,7 @@ Lo que el agente hace siguiendo tus instrucciones lo hace como tú, desde tu nav
 
 ## Phi Sentinel
 
-Las tareas programadas necesitan seguir ejecutándose aunque la ventana del navegador esté cerrada. **Phi Sentinel** es la app en segundo plano de la barra de menús de macOS que lo hace posible, y además aloja la IA privada, la opción de ejecutar parte de la IA en tu propio Mac. Consulta [Phi Sentinel](/es/sentinel/) para ver el panorama completo.
+Las tareas programadas necesitan seguir ejecutándose aunque la ventana del navegador esté cerrada. **Phi Sentinel** lo hace posible: ejecuta los servicios en segundo plano de Phi, incluido el que ejecuta tus tareas, por separado del navegador. Consulta [Phi Sentinel](/es/sentinel/) para ver el panorama completo, e [IA privada](/es/private-ai/) si quieres que las tareas usen un modelo en tu Mac o tu propio proveedor de IA.
 
 ## Phi Link
 

@@ -1,5 +1,5 @@
 ---
-description: "Vind snelle antwoorden over lay-outs, Spaces, Incognito-Spaces, bladwijzers, Split View, synchronisatie, AI-functies, Phi Sentinel, Phi Link, prijzen, privacy en Time Machine-back-ups in Phi Browser."
+description: "Vind snelle antwoorden over lay-outs, Spaces, Incognito-Spaces, bladwijzers, Split View, synchronisatie, AI-functies, Privé-AI, Phi Sentinel, Phi Link, prijzen, privacy en Time Machine-back-ups in Phi Browser."
 ---
 
 # Veelgestelde vragen
@@ -260,18 +260,40 @@ Taken die de assistent uitvoert wanneer jij erom vraagt, zoals pagina's doorlope
 Terugkerende automatiseringen die draaien volgens een schema dat jij bepaalt, bijvoorbeeld een productprijs volgen of een pagina op wijzigingen in de gaten houden.
 :::
 
-## Phi Sentinel
+## Privé-AI
+
+::: details Wat is Phi Cloud? Is het een agent?
+Nee. De assistent is de agent: hij beslist wat er gebeurt. Phi Cloud is de AI-dienst die in Phi is ingebouwd en standaard het model levert waarmee de assistent nadenkt. Het werkt met het account waarmee je bij Phi bent ingelogd, heeft geen API-sleutel nodig en telt mee voor je gebruikstegoed. Zie [De assistent, Phi Cloud en AI-providers](/nl/private-ai/#assistant-phi-cloud-and-providers).
+:::
+
+::: details Hoe verhoudt Phi Cloud zich tot AI-providers zoals Ollama of OpenAI?
+Het zijn alternatieven voor hetzelfde werk. Elke AI-taak, zoals Chat of Webtaken, haalt zijn model uit één bron: Phi Cloud, een lokaal model op je Mac of een provider die je zelf koppelt. Phi Cloud is de ingebouwde standaard, en de andere stel je zelf in. Zie [Hoe de bronnen zich verhouden](/nl/private-ai/#comparing-sources).
+:::
+
+::: details Gebruikt Phi de AI-provider die ik heb toegevoegd?
+Alleen voor de taken die je eraan toewijst, en alleen zolang Privé-AI aanstaat. Alleen een provider toevoegen verandert niets, en elke taak die je niet hebt gewijzigd, blijft op Phi Cloud. Zie [Wanneer Phi je provider gebruikt](/nl/private-ai/#when-phi-uses-your-provider).
+:::
+
+::: details Houdt Privé-AI alles op mijn Mac?
+Alleen de taken die een model op je Mac of in je eigen netwerk gebruiken. Een taak die je aan een cloudprovider zoals OpenAI geeft, gaat naar die provider. Standaard valt een taak waarvan de lokale bron niet meer reageert tijdelijk terug op Phi Cloud; wil je dat voorkomen, kies dan **Getroffen AI-functies pauzeren (nooit gegevens naar de cloud sturen)**. Zie [Als een lokale bron niet beschikbaar is](/nl/private-ai/#when-a-local-source-is-unavailable).
+:::
+
+::: details Wat heb ik nodig om modellen op mijn Mac te draaien?
+Een Mac met Apple Silicon, minstens 16 GB werkgeheugen en 10 GB vrije schijfruimte. Chat en Webtaken hebben een groter model nodig, en dat betekent in de praktijk 32 GB werkgeheugen of meer. Zie [Vereisten](/nl/private-ai/#requirements) en [Aanbevolen modellen](/nl/private-ai/#recommended-models).
+:::
+
+## Phi Sentinel {#phi-sentinel}
 
 ::: details Wat is Phi Sentinel?
-Phi Sentinel is de AI-orkestrator op de achtergrond voor Phi Browser. Hij voert geplande taken uit en bewaart je AI-taakgeschiedenis, en draait vanuit de menubalk van macOS.
+Phi Sentinel beheert de achtergrondservices van Phi op je Mac: de services die je taken uitvoeren, je Geheugen opbouwen, je gekoppelde gegevens indexeren en AI-verzoeken doorsturen. De Runner ervan start, bewaakt en updatet ze. Zie [Phi Sentinel](/nl/sentinel/).
 :::
 
 ::: details Waarom staat Phi Sentinel los van de browser?
-Zodat geplande taken en doorlopende AI-workflows kunnen blijven draaien, ook als het browservenster gesloten is.
+Zodat geplande taken en de andere achtergrondservices blijven draaien, ook als het browservenster gesloten is, terwijl de browser zelf licht blijft.
 :::
 
-::: details Waarom is het zo ontworpen?
-De browser licht houden en tegelijk een blijvende automatiseringslaag aanhouden maakt het hele systeem praktischer.
+::: details Waar vind ik de instellingen van Privé-AI?
+Kies in Phi Chat onder de instellingenknop (het tandwiel) **Privé-AI**. Ga vanuit de browser naar **Instellingen → Phi & AI → Phi Sentinel → Privé-AI**. Zie [Privé-AI](/nl/private-ai/#turning-on-private-ai).
 :::
 
 ## Phi Link

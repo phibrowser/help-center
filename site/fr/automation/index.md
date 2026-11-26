@@ -54,7 +54,7 @@ Quand une conversation contient des tâches, un bouton en forme d'horloge accomp
 
 Le menu **…** de la tâche propose **Exécuter maintenant**, et **Suspendre la planification** ou **Reprendre la planification**.
 
-Le panneau ne permet ni de modifier ni de supprimer des tâches. Pour changer ce que fait une tâche, ou pour la supprimer, demandez-le à l'assistant dans la conversation de la tâche, ou utilisez la page **Tâches** de Phi Sentinel.
+Le panneau ne permet ni de modifier ni de supprimer des tâches. Pour changer ce que fait une tâche, ou pour la supprimer, demandez-le à l'assistant dans la conversation de la tâche, ou utilisez le **Gestionnaire de tâches** dans [Phi Chat](/fr/phi-chat/), le bouton situé à gauche de la recherche en haut de la liste des conversations.
 
 ### Quand Phi n'était pas en cours d'exécution
 
@@ -77,7 +77,7 @@ Ce que l'agent fait sur vos instructions, il le fait en votre nom, depuis votre 
 
 ## Phi Sentinel
 
-Les tâches planifiées doivent continuer à s'exécuter même quand la fenêtre du navigateur est fermée. **Phi Sentinel** est l'app d'arrière-plan dans la barre des menus de macOS qui rend cela possible ; elle héberge aussi l'IA privée, l'option qui exécute une partie de l'IA sur votre propre Mac. Consultez [Phi Sentinel](/fr/sentinel/) pour la vue d'ensemble.
+Les tâches planifiées doivent continuer à s'exécuter même quand la fenêtre du navigateur est fermée. **Phi Sentinel** rend cela possible : il fait tourner les services d'arrière-plan de Phi, dont celui qui exécute vos tâches, séparément du navigateur. Consultez [Phi Sentinel](/fr/sentinel/) pour la vue d'ensemble, et [IA privée](/fr/private-ai/) si vous voulez que vos tâches utilisent un modèle sur votre Mac ou votre propre fournisseur d'IA.
 
 ## Phi Link
 

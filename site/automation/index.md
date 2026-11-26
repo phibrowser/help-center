@@ -54,7 +54,7 @@ When a conversation has tasks, a clock button with a count appears in its top ba
 
 The task's **…** menu has **Run now**, and **Pause schedule** or **Resume schedule**.
 
-The panel does not edit or delete tasks. To change what a task does, or to delete it, ask the assistant in the task's conversation, or use the **Tasks** page in Phi Sentinel.
+The panel does not edit or delete tasks. To change what a task does, or to delete it, ask the assistant in the task's conversation, or use **Task Manager** in [Phi Chat](/phi-chat/), the button to the left of search at the top of the conversation list.
 
 ### When Phi was not running
 
@@ -77,7 +77,7 @@ What the agent does under your instruction is done as you, from your browser, wi
 
 ## Phi Sentinel
 
-Scheduled tasks need to keep running even when the browser window is closed. **Phi Sentinel** is the background app in the macOS menu bar that makes that possible, and it also hosts Private AI, the option to run some AI on your own Mac. See [Phi Sentinel](/sentinel/) for the full picture.
+Scheduled tasks need to keep running even when the browser window is closed. **Phi Sentinel** makes that possible: it runs Phi's background services, including the one that runs your tasks, separately from the browser. See [Phi Sentinel](/sentinel/) for the full picture, and [Private AI](/private-ai/) if you want tasks to use a model on your Mac or your own AI provider.
 
 ## Phi Link
 

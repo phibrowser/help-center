@@ -20,7 +20,7 @@ Phi erhebt niemals:
 
 Phi verkauft keine aus deinem Surfen abgeleiteten Daten und verwendet weder deine Erinnerungen noch deinen Browsing-Kontext oder deine KI-Interaktionen, um Modelle zu trainieren.
 
-Eine Feinheit, die man kennen sollte: Zur Verarbeitung von Aufgaben können große Sprachmodelle von Anbietern wie Anthropic, OpenAI, Google oder SpaceXAI zum Einsatz kommen. Wenn du **Phi Cloud** verwendest, wird der Inhalt, den eine Anfrage zu ihrer Beantwortung braucht, an den Anbieter des von dir gewählten Modells gesendet, denn nur so kann ein Modell sie beantworten. Er passiert uns, ohne gespeichert zu werden, kommt unter unserem Konto an statt unter deinem und wird nie für Training verwendet. Mit **Private KI** verlässt er deinen Mac gar nicht erst. Deine persönlichen Erinnerungen bleiben in beiden Fällen lokal und werden nie als Eigentum einer Cloud behandelt.
+Eine Feinheit, die man kennen sollte: Zur Verarbeitung von Aufgaben können große Sprachmodelle von Anbietern wie Anthropic, OpenAI, Google oder SpaceXAI zum Einsatz kommen. Wenn du **Phi Cloud** verwendest, wird der Inhalt, den eine Anfrage zu ihrer Beantwortung braucht, an den Anbieter des Modells gesendet, das Phi Cloud nutzt, denn nur so kann ein Modell sie beantworten. Er passiert uns, ohne gespeichert zu werden, kommt unter unserem Konto an statt unter deinem und wird nie für Training verwendet. Mit [Private KI](/de/private-ai/) verlässt eine Aufgabe, die du auf ein Modell auf deinem Mac verlegst, deinen Mac gar nicht erst, und eine Aufgabe, die du einem eigenen KI-Anbieter gibst, geht an diesen Anbieter statt an Phi Cloud. Deine persönlichen Erinnerungen bleiben in beiden Fällen lokal und werden nie als Eigentum einer Cloud behandelt.
 
 ## Was Phi sendet {#what-phi-does-send}
 
@@ -36,7 +36,7 @@ Es gibt keine Einstellung, die die anonyme Grundzählung abschaltet. Wenn du ein
 
 Die [Datenschutzerklärung](https://phibrowser.com/privacy/) ist die vollständige und maßgebliche Fassung von alledem.
 
-Du kannst außerdem eingrenzen, was deinen Mac überhaupt verlässt. Mit **Private KI**, betrieben über [Phi Sentinel](/de/sentinel/), laufen manche dieser Aufgaben vollständig auf deinem eigenen Rechner und brauchen deshalb von vornherein kein Cloud-Modell.
+Du kannst außerdem eingrenzen, was deinen Mac überhaupt verlässt. Mit [Private KI](/de/private-ai/) laufen manche dieser Aufgaben vollständig auf deinem eigenen Rechner und brauchen deshalb von vornherein kein Cloud-Modell. Standardmäßig weicht eine Aufgabe, deren lokale Quelle nicht mehr antwortet, vorübergehend auf Phi Cloud aus. Soll sie stattdessen pausieren, wähle das unter [Wenn eine lokale Quelle nicht verfügbar ist](/de/private-ai/#when-a-local-source-is-unavailable).
 
 ## Nutzungsstatistiken {#usage-statistics}
 

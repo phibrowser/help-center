@@ -1,5 +1,5 @@
 ---
-description: "Encuentra respuestas rápidas sobre los diseños de Phi Browser, los Espacios, los Espacios de incógnito, los marcadores, la Vista dividida, la sincronización, las funciones de IA, Phi Sentinel, Phi Link, los precios, la privacidad y las copias de seguridad de Time Machine."
+description: "Encuentra respuestas rápidas sobre los diseños de Phi Browser, los Espacios, los Espacios de incógnito, los marcadores, la Vista dividida, la sincronización, las funciones de IA, la IA privada, Phi Sentinel, Phi Link, los precios, la privacidad y las copias de seguridad de Time Machine."
 ---
 
 # Preguntas frecuentes
@@ -260,18 +260,40 @@ Tareas que el asistente realiza cuando se lo pides, como navegar por páginas o 
 Automatizaciones recurrentes que se ejecutan según la programación que definas, por ejemplo, vigilar el precio de un producto u observar si una página cambia.
 :::
 
-## Phi Sentinel
+## IA privada
+
+::: details ¿Qué es Phi Cloud? ¿Es un agente?
+No. El agente es el asistente: es quien decide qué hacer. Phi Cloud es el servicio de IA integrado en Phi que proporciona, de forma predeterminada, el modelo con el que piensa el asistente. Usa tu inicio de sesión de Phi, no necesita clave de API y cuenta para tu límite de uso. Consulta [El asistente, Phi Cloud y los proveedores de IA](/es/private-ai/#assistant-phi-cloud-and-providers).
+:::
+
+::: details ¿Qué relación hay entre Phi Cloud y proveedores de IA como Ollama u OpenAI?
+Son alternativas para el mismo trabajo. Cada tarea de IA, como Chat o Tareas web, obtiene su modelo de una sola fuente: Phi Cloud, un modelo local en tu Mac o un proveedor que conectas tú mismo. Phi Cloud es la opción integrada predeterminada, y las demás las configuras tú. Consulta [Cómo se comparan las fuentes](/es/private-ai/#comparing-sources).
+:::
+
+::: details ¿Usará Phi el proveedor de IA que he añadido?
+Solo para las tareas que le asignes, y solo mientras la IA privada esté activada. Añadir un proveedor no cambia nada por sí solo, y todas las tareas que no hayas cambiado siguen en Phi Cloud. Consulta [Cuándo usa Phi tu proveedor](/es/private-ai/#when-phi-uses-your-provider).
+:::
+
+::: details ¿La IA privada lo mantiene todo en mi Mac?
+Solo las tareas que usan un modelo en tu Mac o en tu propia red. Una tarea que asignas a un proveedor en la nube, como OpenAI, va a ese proveedor. De forma predeterminada, una tarea cuya fuente local deja de responder recurre a Phi Cloud de forma temporal; para evitarlo, elige **Pausar las funciones de IA afectadas (nunca enviar datos a la nube)**. Consulta [Cuando una fuente local no está disponible](/es/private-ai/#when-a-local-source-is-unavailable).
+:::
+
+::: details ¿Qué necesito para ejecutar modelos en mi Mac?
+Un Mac con Apple Silicon, al menos 16 GB de memoria y 10 GB de espacio libre en disco. Chat y Tareas web necesitan un modelo más grande, lo que en la práctica significa 32 GB de memoria o más. Consulta [Requisitos](/es/private-ai/#requirements) y [Modelos recomendados](/es/private-ai/#recommended-models).
+:::
+
+## Phi Sentinel {#phi-sentinel}
 
 ::: details ¿Qué es Phi Sentinel?
-Phi Sentinel es el orquestador de IA en segundo plano de Phi Browser. Ejecuta las tareas programadas y conserva tu historial de tareas de IA, y funciona desde la barra de menús de macOS.
+Phi Sentinel gestiona los servicios en segundo plano de Phi en tu Mac: los servicios que ejecutan tus tareas, construyen tu Memoria, indexan tus datos conectados y dirigen las peticiones de IA. Su Runner los inicia, los vigila y los actualiza. Consulta [Phi Sentinel](/es/sentinel/).
 :::
 
 ::: details ¿Por qué Phi Sentinel está separado del navegador?
-Para que las tareas programadas y los flujos de trabajo de IA persistentes puedan seguir ejecutándose incluso con la ventana del navegador cerrada.
+Para que las tareas programadas y los demás servicios en segundo plano sigan ejecutándose incluso con la ventana del navegador cerrada, mientras el propio navegador se mantiene ligero.
 :::
 
-::: details ¿Por qué se diseñó así?
-Mantener el navegador ligero mientras se conserva una capa de automatización persistente hace más práctico el sistema en su conjunto.
+::: details ¿Dónde está la configuración de la IA privada?
+En Phi Chat, en el botón de configuración (el engranaje), elige **IA privada**. Desde el navegador, ve a **Configuración → Phi e IA → Phi Sentinel → IA privada**. Consulta [IA privada](/es/private-ai/#turning-on-private-ai).
 :::
 
 ## Phi Link

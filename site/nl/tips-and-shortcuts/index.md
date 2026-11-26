@@ -148,7 +148,7 @@ Klik op **Exporteer…** om je bewerkte afbeelding op te slaan als PNG, JPG, of 
 
 Wil je gesprekken beginnen zonder het huidige tabblad, schakel dan **Huidig tabblad automatisch als context toevoegen aan een nieuw gesprek** uit onder **Instellingen → Phi & AI → AI-zijbalk**.
 
-Wanneer je Phi Cloud gebruikt, wordt de inhoud die nodig is om je vraag te beantwoorden voor verwerking naar een externe modelaanbieder gestuurd. Met Privé-AI blijft die op je Mac. Zie [Privacy en je gegevens](/nl/privacy/) voor de details.
+Wanneer je Phi Cloud gebruikt, wordt de inhoud die nodig is om je vraag te beantwoorden voor verwerking naar een externe modelaanbieder gestuurd. Met [Privé-AI](/nl/private-ai/) en een model op je Mac blijft die op je Mac. Zie [Privacy en je gegevens](/nl/privacy/) voor de details.
 
 ## Volgende stappen
 

@@ -1,47 +1,67 @@
 ---
-description: "Leer Phi Sentinel kennen, de hulpapp in de macOS-menubalk die je automatisering draaiende houdt en sommige AI-taken via Privé-AI op je Mac kan laten lopen."
+description: "Leer Phi Sentinel kennen, de beheerder van de achtergrondservices van Phi op je Mac, die de services achter de assistent draait, hun gegevens bewaart en geplande taken laat doorlopen nadat de browser is gesloten."
 ---
 
 # Phi Sentinel
 
-Phi Sentinel is een kleine hulpapp die in de **menubalk** van macOS leeft, los van de browser. Die scheiding is bewust: de browser blijft licht, terwijl een stille achtergrondlaag blijft doorwerken, ook als er geen venster open is. De app heeft twee hoofdtaken: hij houdt je automatisering draaiende, en hij huisvest **Privé-AI**. Zijn menu bevat ook **Open Phi Chat**, een snelle weg naar [Phi Chat](/nl/phi-chat/) vanuit elke plek.
+Phi Sentinel beheert de achtergrondservices van Phi op je Mac. Veel van wat de assistent doet, gebeurt buiten het browservenster: geplande taken uitvoeren, je Geheugen opbouwen, zoeken in de gegevens die je hebt gekoppeld, en AI-verzoeken naar de juiste plek sturen. Dat werk doet een set services die op de achtergrond draaien, en Phi Sentinel zorgt dat ze goed blijven draaien.
 
-## Automatisering draaiende houden
+Het wordt samen met Phi Browser geïnstalleerd, en in het dagelijks gebruik hoef je er niets mee te doen. In de instellingen van Phi Chat heten deze services gewoon **Achtergrondservices**.
 
-Sommige dingen die Phi doet, horen het moment te overleven waarop je erom vroeg. [Geplande taken](/nl/automation/#scheduled-tasks) moeten op hun eigen schema blijven draaien, ook nadat je het browservenster hebt gesloten, en daar is Phi Sentinel voor. Hij voert die taken uit, bewaart je AI-taakgeschiedenis en laat automatisering op de achtergrond doorgaan, zodat een prijscontrole om de paar uur of een pagina die je in de gaten houdt blijft doorlopen, of er nu een browservenster open is of niet.
+## Wat het doet {#what-it-does}
 
-## Privé-AI {#private-ai}
+### Achtergrondservices draaien {#running-background-services}
 
-Normaal handelt **Phi Cloud** de AI-taken van Phi af. **Privé-AI** is de optie om sommige ervan **juist op je Mac** te laten draaien, of via een modelprovider die je zelf kiest, zodat dat werk je machine nooit verlaat.
+In Phi Sentinel zit een proces dat de **Runner** heet, met als enige taak het beheren van de achtergrondservices. Het regelt:
 
-Het is **opt-in en staat standaard uit**. Zet je het aan, dan krijg je er een paar dingen voor terug:
+- **Starten en bewaken.** Het start elke service wanneer die nodig is, controleert regelmatig of die gezond is, en start hem opnieuw als er iets misgaat.
+- **Updates.** Het downloadt en installeert nieuwe versies van de services op de achtergrond. Het controleert eerst de handtekening van elke update, en gaat terug naar de vorige versie als een nieuwe niet goed draait.
+- **Je instellingen doorgeven.** Het geeft de keuzes die je in de instellingen maakt, zoals de bronnen per taak in [Privé-AI](/nl/private-ai/), door aan de services die ze nodig hebben.
 
-- **Privacy.** Voor de taken die lokaal draaien, blijven de gegevens op je Mac en gaan ze niet naar een cloudmodel.
-- **Offline.** Die taken blijven werken zonder internetverbinding.
-- **Geen kosten per verzoek.** Draaien op je eigen hardware kent geen gebruikskosten.
+De Runner houdt alleen de services draaiende. Met je inhoud doet het niets: je gesprekken, pagina's en gegevens worden door de services zelf verwerkt en gaan nooit door de Runner.
 
-### Het werkt per taak
+Tot de services die het beheert, horen:
 
-Privé-AI is niet alles-of-niets. Het geldt per taak, en Phi is eerlijk over welke taken het kan overnemen. Met het model dat het voor je klaarzet draaien **Geheugen** en **Zoeken in gegevens** standaard op je Mac, terwijl **Chat** en **Webtaken** op **Phi Cloud** blijven, omdat die een sterker model nodig hebben dan het lichte model dat voor achtergrondwerk wordt meegeleverd, en ze verhuizen alleen naar je apparaat als je een groter model installeert. Het Privé-AI-scherm toont dit als dekking: hoeveel van je AI-taken privé draaien en hoeveel er nog naar Phi Cloud gaan, zodat je altijd weet waar elk soort werk gebeurt.
+- **De assistentservice**, die je gesprekken en taken bewaart, en geplande taken en achtergrondtaken uitvoert.
+- **De Geheugenservice**, die je Geheugen opbouwt uit je browsen.
+- **De indexeringsservice voor gegevens**, die de gegevens indexeert die je koppelt, zodat Zoeken in gegevens ze kan vinden.
+- **De AI Gateway**, die elk AI-verzoek naar de bron stuurt die je ervoor hebt gekozen. Standaard is dat Phi Cloud, en met Privé-AI aan kan dat een lokaal model zijn of een provider van jezelf.
+- **AI Guardrail**, dat tekst op deze Mac controleert op gevoelige informatie. Zie hieronder.
+- **Lokale modellen**, die pas worden geïnstalleerd en gedraaid nadat je Privé-AI hebt ingesteld.
 
-### Je eigen provider gebruiken
+### Geheimen buiten Geheugen houden {#ai-guardrail}
 
-Modellen op het apparaat zijn niet de enige optie. Je kunt een taak ook laten lopen via een modelprovider die je zelf draait, bijvoorbeeld **Ollama**, **LM Studio** of elk OpenAI-compatibel eindpunt, en Phi stuurt die taak daarheen in plaats van naar Phi Cloud.
+**AI Guardrail** is een detectieservice die op je Mac draait. Voordat de Geheugenservice iets nieuws opslaat, laat die het door AI Guardrail controleren. Vindt AI Guardrail een geheim, zoals een wachtwoord, een API-sleutel, een privésleutel, een herstelzin of een herstelcode, dan wordt het hele item uit je Geheugen weggelaten.
 
-### Wat je nodig hebt
+- De controle gebeurt volledig op deze Mac. Wat er wordt gecontroleerd, wordt nergens naartoe gestuurd.
+- Het houdt alleen geheimen buiten en herschrijft nooit iets. Gewone persoonlijke gegevens, zoals namen en telefoonnummers, worden gewoon opgeslagen, en je kunt ze bekijken en verwijderen in [Geheugen](/nl/memory/).
 
-Privé-AI werkt het best op een Mac met **Apple Silicon** en minstens **16 GB RAM**. Wanneer je het inschakelt, controleert de installatie je hardware en vrije schijfruimte en downloadt die wat er nodig is voordat de lokale modellen aangaan.
+### Je gegevens bewaren {#keeping-your-data}
 
-### Inschakelen
+De services bewaren hun gegevens op je Mac, in lokale databases: je gesprekken, je taken en hun uitvoeringen, je Geheugen en de index van je gekoppelde gegevens.
 
-Open Phi Sentinel vanuit de menubalk, zoek **Privé-AI** in de instellingen en zet het aan. Van daaruit word je door de installatie geleid en zie je, zodra alles klaar is, welke taken naar je apparaat zijn verhuisd.
+In Phi Chat kun je onder **Instellingen → Back-up en updates**:
 
-## Zelf de controle houden
+- **Gegevens exporteren**, een kopie van je instellingen en gegevens opslaan om naar een andere Mac over te zetten. API-sleutels van providers zitten er niet bij.
+- **Lokale snapshot**, een kopie op deze Mac opslaan waar je naar terug kunt gaan. Snapshots verlaten deze Mac nooit.
 
-Privé-AI verdiept Phi's local-first-aanpak: niet alleen je geheugen, ook de AI zelf kan op je eigen machine draaien. Voor waar je gegevens staan en wat Phi wel en niet verzamelt, zie [Privacy & jouw gegevens](/nl/privacy/).
+### Taken laten doorlopen nadat de browser is gesloten {#keeping-tasks-running}
+
+[Geplande taken](/nl/automation/#scheduled-tasks) moeten volgens hun eigen schema draaien, of er nu een browservenster open is of niet. Omdat Phi Sentinel los van de browser draait, loopt een prijscontrole om de paar uur of een pagina die je in de gaten houdt gewoon door nadat je het browservenster hebt gesloten.
+
+## De achtergrondservices controleren {#checking-status}
+
+Open de instellingen in Phi Chat:
+
+- **Algemeen** toont of de achtergrondservices goed draaien en welke versie je hebt, met **Achtergrondservices opnieuw starten**.
+- **Services** toont de status van elke service. Staat er **Alles werkt**, dan hoef je niets te doen.
+- **Logs** is voor als er iets mis is en je dat wilt melden. Klik op **Opslaan** naast **Diagnostische logs**, en Phi bewaart een ZIP-bestand in je map Downloads dat je naar de ondersteuning van Phi kunt sturen.
+
+In de browser kun je onder **Instellingen → Phi & AI → Phi Sentinel** de opties **Start Phi Sentinel wanneer je op je Mac inlogt** en **Phi Chat oproepen met Shift Shift Shift** aan- of uitzetten (zie [Phi Chat](/nl/phi-chat/#opening-phi-chat)).
 
 ## Volgende stappen
 
+- [Privé-AI](/nl/private-ai/), AI-taken op je Mac laten draaien of bij je eigen AI-provider.
 - [Automatisering & Phi Link](/nl/automation/), acties op verzoek, geplande taken en Phi gebruiken vanuit Telegram.
-- [Privacy & jouw gegevens](/nl/privacy/), waar je gegevens staan en hoe je de controle houdt.
+- [Privacy & je gegevens](/nl/privacy/), waar je gegevens staan en hoe je de controle houdt.
 - [FAQ](/nl/faq/#phi-sentinel), korte antwoorden over Phi Sentinel.

@@ -55,7 +55,7 @@ The option disappears when the original Space or Profile has been deleted, or th
 
 ### Usage limits
 
-The assistant has a usage allowance. If you reach it, a banner above the message box says so and, when there is a set time, tells you when you can carry on. Until then you can still type, but not send. Memory, widgets, and tasks that run through [Private AI](/sentinel/#private-ai) are not affected. Phi does not show how much of the allowance is left.
+The assistant has a usage allowance. If you reach it, a banner above the message box says so and, when there is a set time, tells you when you can carry on. Until then you can still type, but not send. Memory, widgets, and tasks that run through [Private AI](/private-ai/) are not affected. Phi does not show how much of the allowance is left.
 
 ## Chat with Tabs
 
@@ -73,7 +73,7 @@ Browser Skills are reusable workflows. Teach it a multi-step task once and it ca
 
 Worth knowing, because "built in" can sound like "never leaves your Mac". Memory does stay on your device. Your questions do not: when you ask something, the content needed to answer it goes to the provider of the model you are using, because that is the only way a model can answer. It passes through us without being stored, and it arrives under our account rather than yours, so the provider is not told who you are.
 
-If you want the AI itself to run on your Mac, [Phi Sentinel](/sentinel/) offers Private AI, which keeps some tasks entirely local. [Privacy & Your Data](/privacy/) covers all of this properly.
+If you want the AI itself to run on your Mac, or to use an AI provider of your own, see [Private AI](/private-ai/). [Privacy & Your Data](/privacy/) covers all of this properly.
 
 ## What's next
 

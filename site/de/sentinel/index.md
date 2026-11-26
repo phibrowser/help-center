@@ -1,47 +1,67 @@
 ---
-description: "Phi Sentinel verstehen: der Begleiter in der macOS-Menüleiste, der deine Automatisierung am Laufen hält und manche KI-Aufgaben über Private KI auf deinem Mac ausführen kann."
+description: "Phi Sentinel verstehen: Phis Verwaltung der Hintergrunddienste auf deinem Mac, die die Dienste hinter dem Assistenten ausführt, ihre Daten aufbewahrt und geplante Aufgaben weiterlaufen lässt, nachdem der Browser geschlossen ist."
 ---
 
 # Phi Sentinel
 
-Phi Sentinel ist eine kleine Begleit-App, die in der **Menüleiste** von macOS lebt, getrennt vom Browser. Diese Trennung ist Absicht: Der Browser bleibt leicht, während eine stille Hintergrundschicht weiterarbeitet, auch wenn kein Fenster offen ist. Phi Sentinel hat zwei Hauptaufgaben: Es hält deine Automatisierung am Laufen, und es beherbergt **Private KI**. Sein Menü enthält außerdem **Phi Chat öffnen**, einen schnellen Weg zu [Phi Chat](/de/phi-chat/), wo immer du gerade bist.
+Phi Sentinel verwaltet die Hintergrunddienste von Phi auf deinem Mac. Vieles von dem, was der Assistent tut, geschieht außerhalb des Browserfensters: geplante Aufgaben ausführen, deine Erinnerungen aufbauen, die Daten durchsuchen, die du verbunden hast, und KI-Anfragen dorthin schicken, wo sie hinmüssen. Diese Arbeit erledigt eine Reihe von Diensten, die im Hintergrund laufen, und Phi Sentinel sorgt dafür, dass sie ordnungsgemäß laufen.
 
-## Automatisierung am Laufen halten
+Es wird mit Phi Browser installiert, und im Alltag musst du damit nichts tun. In den Einstellungen von Phi Chat heißen diese Dienste schlicht **Hintergrunddienste**.
 
-Manches von dem, was Phi tut, soll den Moment überdauern, in dem du darum gebeten hast. [Geplante Aufgaben](/de/automation/#scheduled-tasks) müssen nach ihrem eigenen Zeitplan weiterlaufen, auch nachdem du das Browserfenster geschlossen hast, und genau dafür ist Phi Sentinel da. Es führt diese Aufgaben aus, bewahrt den Verlauf deiner KI-Aufgaben auf und lässt Automatisierung im Hintergrund weiterlaufen, sodass eine Preisprüfung alle paar Stunden oder eine Seite, die du beobachtest, weitergeht, ob ein Browserfenster offen ist oder nicht.
+## Was es tut {#what-it-does}
 
-## Private KI {#private-ai}
+### Hintergrunddienste ausführen {#running-background-services}
 
-Normalerweise erledigt **Phi Cloud** die KI-Aufgaben von Phi. **Private KI** ist die Option, einige davon **stattdessen auf deinem Mac** laufen zu lassen, oder über einen Modellanbieter deiner Wahl, sodass diese Arbeit deinen Rechner nie verlässt.
+In Phi Sentinel steckt ein Prozess namens **Runner**, dessen einzige Aufgabe es ist, die Hintergrunddienste zu verwalten. Er übernimmt:
 
-Sie ist **Opt-in und standardmäßig aus**. Schaltest du sie ein, bekommst du einiges zurück:
+- **Starten und Überwachen.** Er startet jeden Dienst, wenn er gebraucht wird, prüft regelmäßig, ob er fehlerfrei läuft, und startet ihn neu, wenn etwas schiefgeht.
+- **Updates.** Er lädt neue Versionen der Dienste im Hintergrund herunter und installiert sie. Vorher prüft er die Signatur jedes Updates, und läuft eine neue Version nicht richtig, kehrt er zur vorherigen zurück.
+- **Weitergeben deiner Einstellungen.** Er reicht, was du in den Einstellungen festlegst, etwa die Aufgabenquellen in [Private KI](/de/private-ai/), an die Dienste weiter, die es brauchen.
 
-- **Privatsphäre.** Bei Aufgaben, die lokal laufen, bleiben die Daten auf deinem Mac und werden nicht an ein Cloud-Modell gesendet.
-- **Offline.** Diese Aufgaben funktionieren auch ohne Internetverbindung weiter.
-- **Keine Kosten pro Anfrage.** Auf eigener Hardware zu rechnen kostet keine Nutzungsgebühr.
+Der Runner hält die Dienste nur am Laufen. Mit deinen Inhalten hat er nichts zu tun: Deine Unterhaltungen, Seiten und Daten werden von den Diensten selbst verarbeitet und laufen nie durch den Runner.
 
-### Es gilt Aufgabe für Aufgabe
+Zu den Diensten, die er verwaltet, gehören:
 
-Private KI ist nicht alles oder nichts. Sie gilt pro Aufgabe, und Phi ist ehrlich dabei, welche sie übernehmen kann. Mit dem Modell, das sie für dich einrichtet, laufen **Erinnerungen** und **Datensuche** standardmäßig auf deinem Mac, während **Chat** und **Webaufgaben** auf **Phi Cloud** bleiben, denn diese brauchen ein stärkeres Modell als das leichtgewichtige, das für Hintergrundarbeit mitgeliefert wird, und sie wechseln nur dann aufs Gerät, wenn du ein größeres installierst. Der Bildschirm „Private KI“ zeigt das als Abdeckung, also wie viele deiner KI-Aufgaben privat laufen und wie viele noch zu Phi Cloud gehen, damit du immer weißt, wo jede Art von Arbeit stattfindet.
+- **Der Assistentendienst**, der deine Unterhaltungen und Aufgaben aufbewahrt und geplante und Hintergrundaufgaben ausführt.
+- **Der Dienst für Erinnerungen**, der aus deinem Surfen deine Erinnerungen aufbaut.
+- **Der Indexierungsdienst**, der die Daten indexiert, die du verbindest, damit die Datensuche sie finden kann.
+- **Das AI Gateway**, das jede KI-Anfrage an die Quelle schickt, die du dafür gewählt hast. Standardmäßig ist das Phi Cloud, und mit eingeschalteter Private KI kann es ein lokales Modell oder ein eigener Anbieter sein.
+- **AI Guardrail**, das auf diesem Mac Text auf sensible Informationen prüft. Siehe unten.
+- **Lokale Modelle**, die erst installiert und ausgeführt werden, nachdem du Private KI eingerichtet hast.
 
-### Eigenen Anbieter anbinden
+### Geheimnisse aus den Erinnerungen heraushalten {#ai-guardrail}
 
-Modelle auf dem Gerät sind nicht die einzige Option. Du kannst eine Aufgabe auch auf einen Modellanbieter richten, den du selbst betreibst, zum Beispiel **Ollama**, **LM Studio** oder einen beliebigen OpenAI-kompatiblen Endpunkt, und Phi leitet diese Aufgabe dann dorthin statt zu Phi Cloud.
+**AI Guardrail** ist ein Erkennungsdienst, der auf deinem Mac läuft. Bevor der Dienst für Erinnerungen etwas Neues speichert, lässt er es von AI Guardrail prüfen. Findet AI Guardrail ein Geheimnis wie ein Passwort, einen API-Schlüssel, einen privaten Schlüssel, eine Wiederherstellungsphrase oder einen Wiederherstellungscode, wird der gesamte Eintrag nicht in deine Erinnerungen aufgenommen.
 
-### Was du brauchst
+- Die Prüfung findet vollständig auf diesem Mac statt. Was geprüft wird, wird nirgendwohin gesendet.
+- AI Guardrail hält nur Geheimnisse fern und schreibt nie etwas um. Gewöhnliche persönliche Angaben wie Namen und Telefonnummern werden wie üblich gespeichert, und du kannst sie unter [Erinnerungen](/de/memory/) ansehen und löschen.
 
-Private KI funktioniert am besten auf einem Mac mit **Apple Silicon** und mindestens **16 GB RAM**. Beim Aktivieren prüft die Einrichtung deine Hardware und deinen freien Speicherplatz und lädt herunter, was sie braucht, bevor die lokalen Modelle eingeschaltet werden.
+### Deine Daten aufbewahren {#keeping-your-data}
 
-### Einschalten
+Die Dienste bewahren ihre Daten auf deinem Mac auf, in lokalen Datenbanken: deine Unterhaltungen, deine Aufgaben und ihre Ausführungen, deine Erinnerungen und den Index deiner verbundenen Daten.
 
-Öffne Phi Sentinel über die Menüleiste, suche in den Einstellungen **Private KI** und schalte sie ein. Von dort führt dich die App durch die Einrichtung und zeigt dir, welche Aufgaben aufs Gerät gewechselt sind, sobald alles bereit ist.
+In Phi Chat findest du unter **Einstellungen → Sicherung und Updates**:
 
-## Die Kontrolle behalten
+- **Daten exportieren**, das eine Kopie deiner Einstellungen und Daten speichert, die du auf einen anderen Mac mitnehmen kannst. API-Schlüssel von Anbietern sind nicht enthalten.
+- **Lokaler Snapshot**, das eine Kopie auf diesem Mac speichert, zu der du zurückkehren kannst. Snapshots verlassen diesen Mac nie.
 
-Private KI vertieft Phis Local-First-Ansatz: Nicht nur deine Erinnerungen, auch die KI selbst kann auf deinem eigenen Rechner laufen. Wo deine Daten liegen und was Phi erhebt und was nicht, steht in [Datenschutz & deine Daten](/de/privacy/).
+### Aufgaben weiterlaufen lassen, nachdem der Browser geschlossen ist {#keeping-tasks-running}
+
+[Geplante Aufgaben](/de/automation/#scheduled-tasks) müssen nach ihrem eigenen Zeitplan laufen, ob ein Browserfenster offen ist oder nicht. Weil Phi Sentinel getrennt vom Browser läuft, geht eine Preisprüfung alle paar Stunden oder eine Seite, die du beobachtest, auch dann weiter, wenn du das Browserfenster geschlossen hast.
+
+## Den Zustand der Hintergrunddienste prüfen {#checking-status}
+
+Öffne die Einstellungen in Phi Chat:
+
+- **Allgemein** zeigt, ob die Hintergrunddienste ordnungsgemäß laufen und welche Version du hast, mit **Hintergrunddienste neu starten**.
+- **Dienste** zeigt den Zustand jedes einzelnen Dienstes. Steht dort **Alles funktioniert**, ist nichts zu tun.
+- **Protokolle** ist für den Fall gedacht, dass etwas nicht stimmt und du es melden willst. Klicke neben **Diagnoseprotokolle** auf **Speichern**, und Phi speichert eine ZIP-Datei in deinem Ordner „Downloads“, die du an den Phi-Support senden kannst.
+
+Im Browser kannst du unter **Einstellungen → Phi & KI → Phi Sentinel** die Optionen **Phi Sentinel starten, wenn du dich an deinem Mac anmeldest** und **Phi Chat mit Umschalt Umschalt Umschalt aufrufen** ein- oder ausschalten (siehe [Phi Chat](/de/phi-chat/#opening-phi-chat)).
 
 ## Nächste Schritte
 
+- [Private KI](/de/private-ai/), KI-Aufgaben auf deinem Mac oder mit deinem eigenen KI-Anbieter ausführen.
 - [Automatisierung & Phi Link](/de/automation/), Aktionen auf Zuruf, geplante Aufgaben und Phi aus Telegram nutzen.
 - [Datenschutz & deine Daten](/de/privacy/), wo deine Daten liegen und wie du die Kontrolle behältst.
 - [FAQ](/de/faq/#phi-sentinel), schnelle Antworten zu Phi Sentinel.

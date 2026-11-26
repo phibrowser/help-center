@@ -54,7 +54,7 @@ description: "瞭解 Phi Browser 如何處理隨選動作、背景與排程任�
 
 任務的 **…** 選單提供**立即執行**，以及**暫停排程**或**恢復排程**。
 
-這個面板不能編輯或刪除任務。若要變更任務的內容或刪除任務，請在任務所在的對話中告訴助理，或使用 Phi Sentinel 的「**任務**」頁面。
+這個面板不能編輯或刪除任務。若要變更任務的內容或刪除任務，請在任務所在的對話中告訴助理，或使用 [Phi Chat](/zh-Hant/phi-chat/) 中的「**任務管理員**」，也就是對話列表頂端搜尋左邊的按鈕。
 
 ### Phi 沒有在執行時
 
@@ -77,7 +77,7 @@ description: "瞭解 Phi Browser 如何處理隨選動作、背景與排程任�
 
 ## Phi Sentinel
 
-排程任務需要在瀏覽器視窗關閉後仍持續執行。**Phi Sentinel** 是位於 macOS 選單列的背景應用程式，讓這件事成為可能；它同時承載私有 AI，也就是把部分 AI 放在你自己的 Mac 上執行的選項。完整介紹請見 [Phi Sentinel](/zh-Hant/sentinel/)。
+排程任務需要在瀏覽器視窗關閉後仍持續執行。**Phi Sentinel** 讓這件事成為可能：它與瀏覽器分開，執行 Phi 的背景服務，其中包括執行你任務的那一項服務。完整介紹請見 [Phi Sentinel](/zh-Hant/sentinel/)；如果你希望任務使用你 Mac 上的模型或你自己的 AI 供應商，請見[私有 AI](/zh-Hant/private-ai/)。
 
 ## Phi Link {#phi-link}
 

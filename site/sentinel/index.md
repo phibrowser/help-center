@@ -1,47 +1,67 @@
 ---
-description: "Understand Phi Sentinel, the macOS menu bar companion that keeps automation running and can route some AI tasks through Private AI on your Mac."
+description: "Understand Phi Sentinel, Phi's background service manager on your Mac, which runs the services behind the assistant, keeps their data, and lets scheduled tasks run after the browser closes."
 ---
 
 # Phi Sentinel
 
-Phi Sentinel is a small companion app that lives in the macOS **menu bar**, separate from the browser. Keeping it apart is deliberate: the browser stays light while a quiet background layer keeps working even when no window is open. It does two main jobs: it keeps your automation running, and it hosts **Private AI**. Its menu also has **Open Phi Chat**, a quick way into [Phi Chat](/phi-chat/) from anywhere.
+Phi Sentinel manages Phi's background services on your Mac. Much of what the assistant does happens outside the browser window: running scheduled tasks, building your Memory, searching the data you have connected, and sending AI requests where they need to go. A set of services running in the background does that work, and Phi Sentinel keeps them running properly.
 
-## Keeping automation running
+It is installed with Phi Browser, and day to day you do not need to do anything with it. In Phi Chat's settings, these services are simply called **Background services**.
 
-Some of what Phi does is meant to outlive the moment you asked for it. [Scheduled tasks](/automation/#scheduled-tasks) need to keep running on their own schedule even after you close the browser window, and that is what Phi Sentinel is for. It executes those tasks, keeps your AI task history, and lets automation continue in the background, so a price check every few hours or a page you are watching keeps going whether or not a browser window is open.
+## What it does {#what-it-does}
 
-## Private AI
+### Running background services {#running-background-services}
 
-Normally Phi's AI tasks are handled by **Phi Cloud**. **Private AI** is the option to run some of them **on your Mac instead**, or through a model provider you choose, so that work never leaves your machine.
+Inside Phi Sentinel is a process called the **Runner**, whose only job is managing the background services. It handles:
 
-It is **opt-in and off by default**. When you turn it on, you get a few things in return:
+- **Starting and watching over them.** It starts each service when it is needed, checks regularly that it is healthy, and restarts it when something goes wrong.
+- **Updates.** It downloads and installs new versions of the services in the background. It checks each update's signature first, and goes back to the previous version if a new one does not run properly.
+- **Passing on your settings.** It hands the choices you make in settings, such as the task sources in [Private AI](/private-ai/), to the services that need them.
 
-- **Privacy.** For the tasks that run locally, the data stays on your Mac and is not sent to a cloud model.
-- **Offline.** Those tasks keep working without an internet connection.
-- **No per-request cost.** Running on your own hardware has no usage charge.
+The Runner only keeps the services running. It does not handle your content: your conversations, pages, and data are processed by the services themselves and never pass through the Runner.
 
-### It works task by task
+The services it manages include:
 
-Private AI is not all-or-nothing. It applies per task, and Phi is honest about which ones it can take over. With the model it sets up for you, **Memory** and **Data search** run on your Mac by default, while **Chat** and **Web tasks** stay on **Phi Cloud**, because those need a stronger model than the lightweight one shipped for background work, and they only move on-device if you install a larger one. The Private AI screen shows this as coverage, meaning how many of your AI tasks are running privately versus still going to Phi Cloud, so you always know where each kind of work is happening.
+- **The assistant service**, which keeps your conversations and tasks, and runs scheduled and background tasks.
+- **The Memory service**, which builds your Memory from your browsing.
+- **The data indexing service**, which indexes the data you connect so Data search can find it.
+- **The AI Gateway**, which sends each AI request to the source you chose for it. That is Phi Cloud by default, and with Private AI turned on it can be a local model or a provider of your own.
+- **AI Guardrail**, which checks text for sensitive information on this Mac. See below.
+- **Local models**, installed and run only after you set up Private AI.
 
-### Bring your own provider
+### Keeping secrets out of Memory {#ai-guardrail}
 
-On-device models are not the only option. You can also point a task at a model provider you run yourself, for example **Ollama**, **LM Studio**, or any OpenAI-compatible endpoint, and Phi will route that task there instead of to Phi Cloud.
+**AI Guardrail** is a detection service that runs on your Mac. Before the Memory service saves something new, it asks AI Guardrail to check it. If it finds a secret such as a password, an API key, a private key, a recovery phrase, or a recovery code, the whole item is left out of your Memory.
 
-### What you need
+- The check happens entirely on this Mac. What it checks is not sent anywhere.
+- It only keeps secrets out and never rewrites anything. Ordinary personal details such as names and phone numbers are saved as usual, and you can review and delete them in [Memory](/memory/).
 
-Private AI works best on an **Apple Silicon** Mac with at least **16 GB of RAM**. When you enable it, setup checks your hardware and free disk space and downloads what it needs before turning the local models on.
+### Keeping your data {#keeping-your-data}
 
-### Turning it on
+The services keep their data on your Mac, in local databases: your conversations, your tasks and their runs, your Memory, and the index of your connected data.
 
-Open Phi Sentinel from the menu bar, find **Private AI** in its settings, and switch it on. From there it walks you through setup and shows you which tasks have moved on-device once it is ready.
+In Phi Chat, under **Settings → Backup and updates**, you can:
 
-## Staying in control
+- **Export data**, saving a copy of your settings and data to move to another Mac. Provider API keys are not included.
+- **Local snapshot**, saving a copy on this Mac that you can go back to. Snapshots never leave this Mac.
 
-Private AI deepens Phi's local-first approach: it lets the AI itself run on your own machine, not just your memory. For where your data lives and what Phi does and does not collect, see [Privacy & Your Data](/privacy/).
+### Keeping tasks running after the browser closes {#keeping-tasks-running}
+
+[Scheduled tasks](/automation/#scheduled-tasks) need to run on their own schedule whether or not a browser window is open. Because Phi Sentinel runs separately from the browser, a price check every few hours or a page you are watching keeps going after you close the browser window.
+
+## Checking on the background services {#checking-status}
+
+Open the settings in Phi Chat:
+
+- **General** shows whether the background services are running properly and which version you have, with **Restart background services**.
+- **Services** shows the state of each service. When it says **Everything is working**, there is nothing to do.
+- **Logs** is for when something is wrong and you want to report it. Click **Save** next to **Diagnostic logs**, and Phi saves a ZIP file to your Downloads folder that you can send to Phi support.
+
+In the browser, under **Settings → Phi & AI → Phi Sentinel**, you can choose whether to **Launch Phi Sentinel when you sign in to your Mac**, and whether to **Summon Phi Chat with Shift Shift Shift** (see [Phi Chat](/phi-chat/#opening-phi-chat)).
 
 ## What's next
 
+- [Private AI](/private-ai/), running AI tasks on your Mac or with your own AI provider.
 - [Automation & Phi Link](/automation/), on-demand actions, scheduled tasks, and using Phi from Telegram.
 - [Privacy & Your Data](/privacy/), where your data lives and how to stay in control.
 - [FAQ](/faq/#phi-sentinel), quick answers about Phi Sentinel.

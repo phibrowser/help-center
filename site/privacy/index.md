@@ -20,7 +20,7 @@ Phi will never collect:
 
 Phi does not sell your browsing-derived data, and it does not use your memory, browsing context, or AI interactions to train models.
 
-A nuance worth knowing: large language models from providers such as Anthropic, OpenAI, Google, or SpaceXAI may be used to process tasks. When you use **Phi Cloud**, the content a request needs to be answered is sent to the provider of the model you picked, because that is the only way a model can answer it. It passes through us without being stored, it arrives under our account rather than yours, and it is never used for training. With **Private AI** it does not leave your Mac at all. Your personal memory stays local either way, and is never treated as a cloud-owned asset.
+A nuance worth knowing: large language models from providers such as Anthropic, OpenAI, Google, or SpaceXAI may be used to process tasks. When you use **Phi Cloud**, the content a request needs to be answered is sent to the provider of the model Phi Cloud uses, because that is the only way a model can answer it. It passes through us without being stored, it arrives under our account rather than yours, and it is never used for training. With [Private AI](/private-ai/), a task you move to a model on your Mac does not leave it at all, and a task you give to an AI provider of your own goes to that provider instead of Phi Cloud. Your personal memory stays local either way, and is never treated as a cloud-owned asset.
 
 ## What Phi does send
 
@@ -36,7 +36,7 @@ There is no setting that turns off the anonymous baseline. If you want a browser
 
 The [Privacy Policy](https://phibrowser.com/privacy/) is the full and authoritative version of all of this.
 
-You can also narrow what leaves your Mac at all. With **Private AI**, run through [Phi Sentinel](/sentinel/), some of those tasks run entirely on your own machine, so they need no cloud model in the first place.
+You can also narrow what leaves your Mac at all. With [Private AI](/private-ai/), some of those tasks run entirely on your own machine, so they need no cloud model in the first place. By default, a task whose local source stops responding falls back to Phi Cloud for the time being. If you would rather it paused, choose that under [When a local source is unavailable](/private-ai/#when-a-local-source-is-unavailable).
 
 ## Usage statistics
 

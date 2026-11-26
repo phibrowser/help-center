@@ -54,7 +54,7 @@ Heeft een gesprek taken, dan verschijnt er in de bovenbalk een klokknop met een 
 
 Het menu **…** van de taak bevat **Nu uitvoeren**, en **Planning pauzeren** of **Planning hervatten**.
 
-Het paneel bewerkt of verwijdert geen taken. Wil je wijzigen wat een taak doet, of hem verwijderen, vraag het dan aan de assistent in het gesprek van de taak, of gebruik de pagina **Taken** in Phi Sentinel.
+Het paneel bewerkt of verwijdert geen taken. Wil je wijzigen wat een taak doet, of hem verwijderen, vraag het dan aan de assistent in het gesprek van de taak, of gebruik **Takenbeheer** in [Phi Chat](/nl/phi-chat/), de knop links van het zoekveld boven aan de gesprekkenlijst.
 
 ### Als Phi niet draaide
 
@@ -77,7 +77,7 @@ Wat de agent op jouw instructie doet, doet hij als jou, vanuit jouw browser, met
 
 ## Phi Sentinel
 
-Geplande taken moeten blijven draaien, ook wanneer het browservenster gesloten is. **Phi Sentinel** is de achtergrondapp in de macOS-menubalk die dat mogelijk maakt, en hij host ook Privé-AI, de optie om een deel van de AI op je eigen Mac te draaien. Zie [Phi Sentinel](/nl/sentinel/) voor het volledige beeld.
+Geplande taken moeten blijven draaien, ook wanneer het browservenster gesloten is. **Phi Sentinel** maakt dat mogelijk: het draait de achtergrondservices van Phi, waaronder de service die je taken uitvoert, los van de browser. Zie [Phi Sentinel](/nl/sentinel/) voor het volledige beeld, en [Privé-AI](/nl/private-ai/) als je taken een model op je Mac of je eigen AI-provider wilt laten gebruiken.
 
 ## Phi Link {#phi-link}
 

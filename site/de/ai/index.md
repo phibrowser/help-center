@@ -55,7 +55,7 @@ Die Option verschwindet, wenn der ursprüngliche Space oder das ursprüngliche P
 
 ### Nutzungslimits {#usage-limits}
 
-Für den Assistenten gilt ein Nutzungskontingent. Erreichst du es, weist ein Banner über dem Nachrichtenfeld darauf hin und sagt dir, wenn es einen festen Zeitpunkt gibt, wann du weitermachen kannst. Bis dahin kannst du weiter tippen, aber nicht senden. Erinnerungen, Widgets und Aufgaben, die über [Private KI](/de/sentinel/#private-ai) laufen, sind nicht betroffen. Phi zeigt nicht an, wie viel vom Kontingent noch übrig ist.
+Für den Assistenten gilt ein Nutzungskontingent. Erreichst du es, weist ein Banner über dem Nachrichtenfeld darauf hin und sagt dir, wenn es einen festen Zeitpunkt gibt, wann du weitermachen kannst. Bis dahin kannst du weiter tippen, aber nicht senden. Erinnerungen, Widgets und Aufgaben, die über [Private KI](/de/private-ai/) laufen, sind nicht betroffen. Phi zeigt nicht an, wie viel vom Kontingent noch übrig ist.
 
 ## Chat mit Tabs {#chat-with-tabs}
 
@@ -73,7 +73,7 @@ Browser Skills sind wiederverwendbare Arbeitsabläufe. Bringe ihm eine mehrstufi
 
 Das solltest du wissen, denn „eingebaut“ kann klingen wie „verlässt nie deinen Mac“. Die Erinnerungen bleiben tatsächlich auf deinem Gerät. Deine Fragen nicht: Wenn du etwas fragst, gehen die zur Antwort nötigen Inhalte an den Anbieter des Modells, das du verwendest, denn nur so kann ein Modell antworten. Sie passieren uns, ohne gespeichert zu werden, und sie kommen unter unserem Konto an, nicht unter deinem, sodass der Anbieter nicht erfährt, wer du bist.
 
-Soll die KI selbst auf deinem Mac laufen, bietet [Phi Sentinel](/de/sentinel/) Private KI an, die einige Aufgaben vollständig lokal hält. [Datenschutz & deine Daten](/de/privacy/) behandelt all das ausführlich.
+Soll die KI selbst auf deinem Mac laufen oder möchtest du einen eigenen KI-Anbieter nutzen, sieh dir [Private KI](/de/private-ai/) an. [Datenschutz & deine Daten](/de/privacy/) behandelt all das ausführlich.
 
 ## Nächste Schritte
 

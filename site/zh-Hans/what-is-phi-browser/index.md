@@ -31,7 +31,7 @@ Phi 的 AI 内置在浏览器里，登录后即为开启状态。它不是一个
 
 Phi 是本地优先的。Phi 记住的内容保存在你的 Mac 上，绝不会用于训练 AI 模型，并且始终由你掌控。你可以查看、管理和删除它。
 
-这件事还有另一半，最好在你依赖它之前就知道：助手回答问题时，回答所需的内容会发送给你选择的模型提供商，因为模型只有拿到内容才能作答。这些内容经我们中转，但不会被存储。如果你希望它完全不离开你的 Mac，可以改用 [Phi Sentinel](/zh-Hans/sentinel/) 在本地运行模型。
+这件事还有另一半，最好在你依赖它之前就知道：助手回答问题时，回答所需的内容会发送给模型提供商，因为模型只有拿到内容才能作答。使用 Phi Cloud 时，这些内容经我们中转，但不会被存储。如果你希望它完全不离开你的 Mac，可以改用[私有 AI](/zh-Hans/private-ai/)，让部分任务在你的 Mac 上运行。
 
 详情见[隐私与你的数据](/zh-Hans/privacy/)。
 
@@ -51,7 +51,8 @@ Phi 是本地优先的。Phi 记住的内容保存在你的 Mac 上，绝不会�
 - [phi-browser skill](/zh-Hans/phi-browser-skill/)，让外部 AI 智能体驱动 Phi。
 - [新标签页与小组件](/zh-Hans/new-tab/)，个性化的新标签页及其小组件。
 - [自动化与 Phi Link](/zh-Hans/automation/)，智能体任务、Phi Sentinel 和 Telegram。
-- [Phi Sentinel](/zh-Hans/sentinel/)，运行自动化并承载私有 AI 的后台应用。
+- [私有 AI](/zh-Hans/private-ai/)，在你的 Mac 上或用你自己的 AI 提供商运行 AI，以及 Phi Cloud 是什么。
+- [Phi Sentinel](/zh-Hans/sentinel/)，自动化和私有 AI 背后的后台服务。
 - [智能体密码管理器](/zh-Hans/agent-passwords/)，智能体如何在看不到你密码的情况下登录。
 - [隐私与你的数据](/zh-Hans/privacy/)，你的数据如何被处理。
 - [时间机器备份](/zh-Hans/time-machine/)，在重大更新后回滚到之前的版本。

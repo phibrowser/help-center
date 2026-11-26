@@ -148,7 +148,7 @@ Click **Export…** to save your edited image as PNG, JPG, or PDF.
 
 To start conversations without the current tab attached, turn off **Automatically add current tab as context to new conversation** under **Settings → Phi & AI → AI Sidebar**.
 
-When you use Phi Cloud, the content needed to answer your question is sent to a third-party model provider for processing. With Private AI, it stays on your Mac. See [Privacy & Your Data](/privacy/) for details.
+When you use Phi Cloud, the content needed to answer your question is sent to a third-party model provider for processing. With [Private AI](/private-ai/) and a model on your Mac, it stays on your Mac. See [Privacy & Your Data](/privacy/) for details.
 
 ## What's next
 

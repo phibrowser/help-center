@@ -1,5 +1,5 @@
 ---
-description: "Schnelle Antworten zu Layouts, Spaces, Inkognito-Spaces, Lesezeichen, Split View, Synchronisierung, KI-Funktionen, Phi Sentinel, Phi Link, Preisen, Datenschutz und Time Machine-Backups in Phi Browser."
+description: "Schnelle Antworten zu Layouts, Spaces, Inkognito-Spaces, Lesezeichen, Split View, Synchronisierung, KI-Funktionen, Private KI, Phi Sentinel, Phi Link, Preisen, Datenschutz und Time Machine-Backups in Phi Browser."
 ---
 
 # Häufig gestellte Fragen
@@ -260,18 +260,40 @@ Aufgaben, die der Assistent ausführt, wenn du darum bittest, etwa durch Seiten 
 Wiederkehrende Automatisierungen, die nach einem von dir festgelegten Zeitplan laufen, zum Beispiel einen Produktpreis beobachten oder eine Seite auf Änderungen überwachen.
 :::
 
-## Phi Sentinel
+## Private KI {#private-ai}
+
+::: details Was ist Phi Cloud? Ist das ein Agent?
+Nein. Der Assistent ist der Agent: Er entscheidet, was zu tun ist. Phi Cloud ist der in Phi eingebaute KI-Dienst, der standardmäßig das Modell liefert, mit dem der Assistent denkt. Phi Cloud nutzt deine Phi-Anmeldung, braucht keinen API-Schlüssel und zählt zu deinem Nutzungskontingent. Siehe [Der Assistent, Phi Cloud und KI-Anbieter](/de/private-ai/#assistant-phi-cloud-and-providers).
+:::
+
+::: details Wie hängt Phi Cloud mit KI-Anbietern wie Ollama oder OpenAI zusammen?
+Sie sind Alternativen für dieselbe Aufgabe. Jede KI-Aufgabe, etwa Chat oder Webaufgaben, bezieht ihr Modell aus einer Quelle: Phi Cloud, einem lokalen Modell auf deinem Mac oder einem Anbieter, den du selbst verbindest. Phi Cloud ist der eingebaute Standard, die anderen richtest du selbst ein. Siehe [Die Quellen im Vergleich](/de/private-ai/#comparing-sources).
+:::
+
+::: details Nutzt Phi den KI-Anbieter, den ich hinzugefügt habe?
+Nur für die Aufgaben, die du ihm zuweist, und nur, solange Private KI eingeschaltet ist. Einen Anbieter hinzuzufügen ändert für sich allein nichts, und jede Aufgabe, die du nicht geändert hast, bleibt auf Phi Cloud. Siehe [Wann Phi deinen Anbieter nutzt](/de/private-ai/#when-phi-uses-your-provider).
+:::
+
+::: details Hält Private KI alles auf meinem Mac?
+Nur die Aufgaben, die ein Modell auf deinem Mac oder in deinem eigenen Netzwerk nutzen. Eine Aufgabe, die du einem Cloud-Anbieter wie OpenAI gibst, geht an diesen Anbieter. Standardmäßig weicht eine Aufgabe, deren lokale Quelle nicht mehr antwortet, vorübergehend auf Phi Cloud aus; um das zu verhindern, wähle **Betroffene KI-Funktionen pausieren (niemals Daten an die Cloud senden)**. Siehe [Wenn eine lokale Quelle nicht verfügbar ist](/de/private-ai/#when-a-local-source-is-unavailable).
+:::
+
+::: details Was brauche ich, um Modelle auf meinem Mac auszuführen?
+Einen Mac mit Apple Silicon, mindestens 16 GB Arbeitsspeicher und 10 GB freiem Speicherplatz. Chat und Webaufgaben brauchen ein größeres Modell, was in der Praxis 32 GB Arbeitsspeicher oder mehr bedeutet. Siehe [Voraussetzungen](/de/private-ai/#requirements) und [Empfohlene Modelle](/de/private-ai/#recommended-models).
+:::
+
+## Phi Sentinel {#phi-sentinel}
 
 ::: details Was ist Phi Sentinel?
-Phi Sentinel ist der KI-Orchestrator, der für Phi Browser im Hintergrund arbeitet. Er führt geplante Aufgaben aus und bewahrt deinen Verlauf der KI-Aufgaben auf, und er läuft in der macOS-Menüleiste.
+Phi Sentinel verwaltet die Hintergrunddienste von Phi auf deinem Mac: die Dienste, die deine Aufgaben ausführen, deine Erinnerungen aufbauen, deine verbundenen Daten indexieren und KI-Anfragen weiterleiten. Sein Runner startet, überwacht und aktualisiert sie. Siehe [Phi Sentinel](/de/sentinel/).
 :::
 
 ::: details Warum ist Phi Sentinel vom Browser getrennt?
-Damit geplante Aufgaben und dauerhafte KI-Workflows weiterlaufen können, auch wenn das Browserfenster geschlossen ist.
+Damit geplante Aufgaben und die anderen Hintergrunddienste weiterlaufen, auch wenn das Browserfenster geschlossen ist, während der Browser selbst leicht bleibt.
 :::
 
-::: details Warum wurde es so entworfen?
-Den Browser leichtgewichtig zu halten und zugleich eine dauerhafte Automatisierungsschicht zu pflegen macht das Gesamtsystem praktischer.
+::: details Wo finde ich die Einstellungen für Private KI?
+Wähle in Phi Chat über die Einstellungstaste (Zahnrad) **Private KI**. Im Browser gehst du zu **Einstellungen → Phi & KI → Phi Sentinel → Private KI**. Siehe [Private KI](/de/private-ai/#turning-on-private-ai).
 :::
 
 ## Phi Link

@@ -31,7 +31,7 @@ Lisez [Découvrez votre assistant](/fr/ai/) pour la Mémoire, la conversation av
 
 Phi fonctionne d'abord en local. Ce que Phi retient vit sur votre Mac, ne sert jamais à entraîner des modèles d'IA et reste sous votre contrôle. Vous pouvez le consulter, le gérer et le supprimer.
 
-Cette promesse a une seconde moitié, à connaître avant de vous y fier : quand l'assistant répond à une question, le contenu nécessaire à la réponse part chez le fournisseur de modèle que vous avez choisi, car c'est la seule façon pour un modèle de répondre. Il transite par nous sans être stocké. Si vous préférez que rien ne quitte jamais votre Mac, [Phi Sentinel](/fr/sentinel/) peut à la place exécuter des modèles en local.
+Cette promesse a une seconde moitié, à connaître avant de vous y fier : quand l'assistant répond à une question, le contenu nécessaire à la réponse part chez un fournisseur de modèle, car c'est la seule façon pour un modèle de répondre. Avec Phi Cloud, il transite par nous sans être stocké. Si vous préférez que rien ne quitte jamais votre Mac, l'[IA privée](/fr/private-ai/) peut à la place exécuter certaines tâches sur votre Mac.
 
 Consultez [Confidentialité et vos données](/fr/privacy/) pour le détail.
 
@@ -51,7 +51,8 @@ Consultez [Confidentialité et vos données](/fr/privacy/) pour le détail.
 - [Le skill phi-browser](/fr/phi-browser-skill/), laisser un agent IA extérieur piloter Phi.
 - [Nouvel onglet et widgets](/fr/new-tab/), la page Nouvel onglet personnalisée et ses widgets.
 - [Automatisation et Phi Link](/fr/automation/), les tâches agentiques, Phi Sentinel et Telegram.
-- [Phi Sentinel](/fr/sentinel/), l'app d'arrière-plan qui exécute l'automatisation et héberge l'IA privée.
+- [IA privée](/fr/private-ai/), exécuter l'IA sur votre Mac ou avec votre propre fournisseur d'IA, et ce qu'est Phi Cloud.
+- [Phi Sentinel](/fr/sentinel/), les services d'arrière-plan derrière l'automatisation et l'IA privée.
 - [Gestionnaire de mots de passe pour les agents](/fr/agent-passwords/), comment les agents se connectent sans voir vos mots de passe.
 - [Confidentialité et vos données](/fr/privacy/), comment vos données sont traitées.
 - [Sauvegardes Time Machine](/fr/time-machine/), revenir à une version précédente après une mise à jour majeure.

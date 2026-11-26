@@ -20,7 +20,7 @@ Phi verzamelt nooit:
 
 Phi verkoopt geen gegevens die uit je browsen zijn afgeleid, en gebruikt je geheugen, browsecontext of AI-interacties niet om modellen te trainen.
 
-Een nuance die het weten waard is: voor het verwerken van taken kunnen grote taalmodellen worden gebruikt van aanbieders zoals Anthropic, OpenAI, Google of SpaceXAI. Wanneer je **Phi Cloud** gebruikt, wordt de inhoud die nodig is om een verzoek te beantwoorden naar de aanbieder van het door jou gekozen model gestuurd, omdat een model het alleen zo kan beantwoorden. Die inhoud passeert ons zonder te worden bewaard, komt daar binnen onder ons account in plaats van het jouwe, en wordt nooit voor training gebruikt. Met **Privé-AI** verlaat de inhoud je Mac helemaal niet. Je persoonlijke geheugen blijft in beide gevallen lokaal en wordt nooit behandeld als bezit van de cloud.
+Een nuance die het weten waard is: voor het verwerken van taken kunnen grote taalmodellen worden gebruikt van aanbieders zoals Anthropic, OpenAI, Google of SpaceXAI. Wanneer je **Phi Cloud** gebruikt, wordt de inhoud die nodig is om een verzoek te beantwoorden, gestuurd naar de aanbieder van het model dat Phi Cloud gebruikt, omdat een model het alleen zo kan beantwoorden. Die inhoud passeert ons zonder te worden bewaard, komt daar binnen onder ons account in plaats van het jouwe, en wordt nooit voor training gebruikt. Met [Privé-AI](/nl/private-ai/) verlaat een taak die je naar een model op je Mac verplaatst je Mac helemaal niet, en gaat een taak die je aan een eigen AI-provider geeft naar die provider in plaats van naar Phi Cloud. Je persoonlijke geheugen blijft in beide gevallen lokaal en wordt nooit behandeld als bezit van de cloud.
 
 ## Wat Phi wel verstuurt {#what-phi-does-send}
 
@@ -36,7 +36,7 @@ Er is geen instelling die de anonieme basistelling uitschakelt. Wil je een brows
 
 Het [Privacybeleid](https://phibrowser.com/privacy/) is de volledige en gezaghebbende versie van dit alles.
 
-Je kunt ook verder beperken wat je Mac überhaupt verlaat. Met **Privé-AI**, dat via [Phi Sentinel](/nl/sentinel/) draait, worden sommige van die taken volledig op je eigen machine uitgevoerd, zodat er in de eerste plaats geen cloudmodel nodig is.
+Je kunt ook verder beperken wat je Mac überhaupt verlaat. Met [Privé-AI](/nl/private-ai/) worden sommige van die taken volledig op je eigen machine uitgevoerd, zodat er in de eerste plaats geen cloudmodel nodig is. Standaard valt een taak waarvan de lokale bron niet meer reageert tijdelijk terug op Phi Cloud. Wil je liever dat die pauzeert, kies dat dan onder [Als een lokale bron niet beschikbaar is](/nl/private-ai/#when-a-local-source-is-unavailable).
 
 ## Gebruiksstatistieken {#usage-statistics}
 
