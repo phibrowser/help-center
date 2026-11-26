@@ -20,7 +20,7 @@ Phi ne collectera jamais :
 
 Phi ne vend pas les données issues de votre navigation, et n'utilise ni votre Mémoire, ni votre contexte de navigation, ni vos interactions avec l'IA pour entraîner des modèles.
 
-Une nuance à connaître : de grands modèles de langage de fournisseurs comme Anthropic, OpenAI, Google ou SpaceXAI peuvent être utilisés pour traiter des tâches. Quand vous utilisez **Phi Cloud**, le contenu dont une requête a besoin pour recevoir une réponse est envoyé au fournisseur du modèle que vous avez choisi, car c'est la seule façon pour un modèle d'y répondre. Il transite par nous sans être stocké, il arrive sous notre compte et non le vôtre, et il n'est jamais utilisé pour l'entraînement. Avec l'**IA privée**, il ne quitte pas du tout votre Mac. Votre Mémoire personnelle reste locale dans les deux cas, et n'est jamais traitée comme un actif détenu dans le cloud.
+Une nuance à connaître : de grands modèles de langage de fournisseurs comme Anthropic, OpenAI, Google ou SpaceXAI peuvent être utilisés pour traiter des tâches. Quand vous utilisez **Phi Cloud**, le contenu dont une requête a besoin pour recevoir une réponse est envoyé au fournisseur du modèle qu'utilise Phi Cloud, car c'est la seule façon pour un modèle d'y répondre. Il transite par nous sans être stocké, il arrive sous notre compte et non le vôtre, et il n'est jamais utilisé pour l'entraînement. Avec l'[IA privée](/fr/private-ai/), une tâche que vous faites passer sur un modèle installé sur votre Mac ne quitte pas du tout votre Mac, et une tâche que vous confiez à votre propre fournisseur d'IA part chez ce fournisseur au lieu de Phi Cloud. Votre Mémoire personnelle reste locale dans les deux cas, et n'est jamais traitée comme un actif détenu dans le cloud.
 
 ## Ce que Phi envoie {#what-phi-does-send}
 
@@ -36,7 +36,7 @@ Aucun réglage ne désactive ce socle anonyme. Si vous voulez un navigateur qui 
 
 La [Politique de confidentialité](https://phibrowser.com/privacy/) est la version complète et faisant foi de tout ceci.
 
-Vous pouvez aussi réduire ce qui quitte votre Mac. Avec l'**IA privée**, exécutée via [Phi Sentinel](/fr/sentinel/), certaines de ces tâches s'exécutent entièrement sur votre propre machine, et n'ont donc besoin d'aucun modèle cloud.
+Vous pouvez aussi réduire ce qui quitte votre Mac. Avec l'[IA privée](/fr/private-ai/), certaines de ces tâches s'exécutent entièrement sur votre propre machine, et n'ont donc besoin d'aucun modèle cloud. Par défaut, une tâche dont la source locale cesse de répondre bascule temporairement vers Phi Cloud. Si vous préférez qu'elle soit suspendue, choisissez cette option sous [Quand une source locale est indisponible](/fr/private-ai/#when-a-local-source-is-unavailable).
 
 ## Statistiques d'utilisation {#usage-statistics}
 

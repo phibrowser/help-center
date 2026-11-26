@@ -148,7 +148,7 @@ Haz clic en **Exportar…** para guardar la imagen editada como PNG, JPG o PDF.
 
 Para iniciar conversaciones sin la pestaña actual adjunta, desactiva **Agregar automáticamente la pestaña actual como contexto a las conversaciones nuevas** en **Configuración → Phi e IA → Barra lateral de IA**.
 
-Cuando usas Phi Cloud, el contenido necesario para responder tu pregunta se envía a un proveedor de modelos externo para su procesamiento. Con la IA privada, se queda en tu Mac. Consulta [Privacidad y tus datos](/es/privacy/) para más detalles.
+Cuando usas Phi Cloud, el contenido necesario para responder tu pregunta se envía a un proveedor de modelos externo para su procesamiento. Con la [IA privada](/es/private-ai/) y un modelo en tu Mac, se queda en tu Mac. Consulta [Privacidad y tus datos](/es/privacy/) para más detalles.
 
 ## Próximos pasos
 

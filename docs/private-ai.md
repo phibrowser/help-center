@@ -26,6 +26,7 @@ A user asked, in a support ticket, what Phi Cloud is, whether it is an agent, ho
 - The Memory index (the `embedding` purpose) stays on Phi Cloud after setup and moves with a manual Data search choice. Kept on the page because it matters to privacy-minded readers.
 - Recommended models and memory tiers are editorial guidance, approved for publication by the owner on 2026-11-26. They are not in any source. Model names are given as examples of a size class.
 - AI Guardrail is described as what phi-memory uses it for: rejecting confirmed secrets before a Memory write. Its fail-open behavior is deliberately not described (owner, 2026-11-26).
+- Runner is introduced by name on the Sentinel page and kept in English in every locale, against the glossary's semantic rendering, because that rendering collides with the shipped "Background services" label. Awaiting an owner ruling; see `docs/i18n-runs/2026-11-26-private-ai/README.md`.
 - The automation page's "Tasks page in Phi Sentinel" now points to **Task Manager** in Phi Chat, which replaced it.
 
 ## Follow-up

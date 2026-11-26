@@ -20,7 +20,7 @@ Phi nunca recopilará:
 
 Phi no vende los datos derivados de tu navegación, y no usa tu memoria, tu contexto de navegación ni tus interacciones con la IA para entrenar modelos.
 
-Un matiz que conviene conocer: para procesar tareas pueden usarse grandes modelos de lenguaje de proveedores como Anthropic, OpenAI, Google o SpaceXAI. Cuando usas **Phi Cloud**, el contenido que una petición necesita para ser respondida se envía al proveedor del modelo que elegiste, porque esa es la única forma en que un modelo puede responderla. Pasa a través de nosotros sin almacenarse, llega bajo nuestra cuenta y no bajo la tuya, y nunca se usa para entrenamiento. Con la **IA privada** no sale de tu Mac en absoluto. Tu memoria personal se queda en local en cualquiera de los dos casos, y nunca se trata como un activo propiedad de la nube.
+Un matiz que conviene conocer: para procesar tareas pueden usarse grandes modelos de lenguaje de proveedores como Anthropic, OpenAI, Google o SpaceXAI. Cuando usas **Phi Cloud**, el contenido que una petición necesita para ser respondida se envía al proveedor del modelo que usa Phi Cloud, porque esa es la única forma en que un modelo puede responderla. Pasa a través de nosotros sin almacenarse, llega bajo nuestra cuenta y no bajo la tuya, y nunca se usa para entrenamiento. Con la [IA privada](/es/private-ai/), una tarea que pasas a un modelo en tu Mac no sale de él en absoluto, y una tarea que asignas a un proveedor de IA propio va a ese proveedor en lugar de a Phi Cloud. Tu memoria personal se queda en local en cualquiera de los dos casos, y nunca se trata como un activo propiedad de la nube.
 
 ## Qué sí envía Phi {#what-phi-does-send}
 
@@ -36,7 +36,7 @@ No hay ningún ajuste que desactive el recuento anónimo de base. Si quieres un 
 
 La [Política de privacidad](https://phibrowser.com/privacy/) es la versión completa y autorizada de todo esto.
 
-También puedes reducir aún más lo que sale de tu Mac. Con la **IA privada**, que se ejecuta a través de [Phi Sentinel](/es/sentinel/), algunas de esas tareas se ejecutan por completo en tu propia máquina, así que no necesitan ningún modelo en la nube.
+También puedes reducir aún más lo que sale de tu Mac. Con la [IA privada](/es/private-ai/), algunas de esas tareas se ejecutan por completo en tu propia máquina, así que no necesitan ningún modelo en la nube. De forma predeterminada, una tarea cuya fuente local deja de responder recurre a Phi Cloud de forma temporal. Si prefieres que se pause, elígelo en [Cuando una fuente local no está disponible](/es/private-ai/#when-a-local-source-is-unavailable).
 
 ## Estadísticas de uso {#usage-statistics}
 

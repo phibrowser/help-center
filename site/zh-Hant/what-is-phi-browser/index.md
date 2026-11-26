@@ -31,7 +31,7 @@ Phi 的 AI 是內建的，登入後即啟用。它不是一團模糊的「AI」�
 
 Phi 是本機優先的。Phi 記得的內容存放在你的 Mac 上，永遠不會被拿去訓練 AI 模型，而且始終在你的掌控之中。你可以檢視、管理，也可以刪除。
 
-這句話還有後半段，在你依賴它之前值得先知道：當助理回答問題時，回答所需的內容會送到你選擇的模型供應商，因為模型只有這樣才能作答。內容會經過我們，過程中不會被儲存。如果你希望資料完全不離開你的 Mac，[Phi Sentinel](/zh-Hant/sentinel/) 可以改在本機執行模型。
+這句話還有後半段，在你依賴它之前值得先知道：當助理回答問題時，回答所需的內容會送到模型供應商，因為模型只有這樣才能作答。使用 Phi Cloud 時，內容會經過我們，過程中不會被儲存。如果你希望資料完全不離開你的 Mac，[私有 AI](/zh-Hant/private-ai/) 可以改為讓部分任務在你的 Mac 上執行。
 
 詳情請見[隱私權與你的資料](/zh-Hant/privacy/)。
 
@@ -51,7 +51,8 @@ Phi 是本機優先的。Phi 記得的內容存放在你的 Mac 上，永遠不�
 - [phi-browser skill](/zh-Hant/phi-browser-skill/)，讓外部 AI 代理操控 Phi。
 - [新分頁與小工具](/zh-Hant/new-tab/)，個人化的新分頁與它的小工具。
 - [自動化與 Phi Link](/zh-Hant/automation/)，AI 代理任務、Phi Sentinel 與 Telegram。
-- [Phi Sentinel](/zh-Hant/sentinel/)，執行自動化並承載私有 AI 的背景應用程式。
+- [私有 AI](/zh-Hant/private-ai/)，在你的 Mac 上或透過你自己的 AI 供應商執行 AI，以及 Phi Cloud 是什麼。
+- [Phi Sentinel](/zh-Hant/sentinel/)，自動化和私有 AI 背後的背景服務。
 - [AI 代理密碼管理員](/zh-Hant/agent-passwords/)，代理如何在看不到你密碼的情況下登入。
 - [隱私權與你的資料](/zh-Hant/privacy/)，你的資料如何被處理。
 - [時光機備份](/zh-Hant/time-machine/)，重大更新後回復到先前的版本。

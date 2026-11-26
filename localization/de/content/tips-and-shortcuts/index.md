@@ -148,7 +148,7 @@ Klicke auf **Exportieren…**, um dein bearbeitetes Bild als PNG, JPG oder PDF z
 
 Um Unterhaltungen ohne angehängten aktuellen Tab zu beginnen, schalte **Aktuellen Tab automatisch als Kontext zu neuen Unterhaltungen hinzufügen** unter **Einstellungen → Phi & KI → KI-Seitenleiste** aus.
 
-Wenn du Phi Cloud verwendest, werden die Inhalte, die zur Beantwortung deiner Frage nötig sind, zur Verarbeitung an einen externen Modellanbieter gesendet. Mit Private KI bleiben sie auf deinem Mac. Details stehen unter [Datenschutz & deine Daten](/de/privacy/).
+Wenn du Phi Cloud verwendest, werden die Inhalte, die zur Beantwortung deiner Frage nötig sind, zur Verarbeitung an einen externen Modellanbieter gesendet. Mit [Private KI](/de/private-ai/) und einem Modell auf deinem Mac bleiben sie auf deinem Mac. Details stehen unter [Datenschutz & deine Daten](/de/privacy/).
 
 ## Nächste Schritte
 

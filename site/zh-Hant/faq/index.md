@@ -1,5 +1,5 @@
 ---
-description: "快速找到關於 Phi Browser 版面配置、空間、無痕空間、書籤、分割畫面、同步、AI 功能、Phi Sentinel、Phi Link、價格、隱私權和時光機備份的解答。"
+description: "快速找到關於 Phi Browser 版面配置、空間、無痕空間、書籤、分割畫面、同步、AI 功能、私有 AI、Phi Sentinel、Phi Link、價格、隱私權和時光機備份的解答。"
 ---
 
 # 常見問題
@@ -261,18 +261,40 @@ Phi 記憶是隨著時間從你的瀏覽行為建立上下文的系統，全程�
 按照你定義的排程重複執行的自動化，例如監控某項商品的價格，或盯著某個頁面看有沒有變動。
 :::
 
-## Phi Sentinel
+## 私有 AI {#private-ai}
+
+::: details 什麼是 Phi Cloud？它是 AI 代理嗎？
+不是。助理才是 AI 代理：由它決定要做什麼。Phi Cloud 是 Phi 內建的 AI 服務，預設提供助理用來思考的模型。它使用你的 Phi 登入身分，不需要 API 金鑰，並會計入你的使用額度。請見[助理、Phi Cloud 與 AI 供應商](/zh-Hant/private-ai/#assistant-phi-cloud-and-providers)。
+:::
+
+::: details Phi Cloud 和 Ollama 或 OpenAI 等 AI 供應商有什麼關係？
+它們是同一份工作的不同選擇。每項 AI 任務，例如對話或網頁任務，都從一個來源取得模型：Phi Cloud、你 Mac 上的本機模型，或你自行連接的供應商。Phi Cloud 是內建的預設來源，其他來源則要由你自己設定。請見[各來源比較](/zh-Hant/private-ai/#comparing-sources)。
+:::
+
+::: details Phi 會使用我加入的 AI 供應商嗎？
+只會用在你指派給它的任務，而且只在私有 AI 開啟期間。單單加入供應商不會改變任何事，你沒有變更過的任務都會留在 Phi Cloud。請見 [Phi 何時會使用你的供應商](/zh-Hant/private-ai/#when-phi-uses-your-provider)。
+:::
+
+::: details 私有 AI 會讓所有內容都留在我的 Mac 上嗎？
+只有使用你 Mac 上或你自己網路中模型的任務才會。你交給 OpenAI 等雲端供應商的任務，會送到那個供應商。預設情況下，本機來源停止回應的任務會暫時改用 Phi Cloud；若要避免這種情況，請選擇**暫停受影響的 AI 功能（絕不將資料傳送到雲端）**。請見[本機來源無法使用時](/zh-Hant/private-ai/#when-a-local-source-is-unavailable)。
+:::
+
+::: details 在我的 Mac 上執行模型需要什麼條件？
+一部配備至少 16 GB 記憶體和 10 GB 可用磁碟空間的 Apple Silicon Mac。對話和網頁任務需要較大的模型，實際上這代表 32 GB 以上的記憶體。請見[系統需求](/zh-Hant/private-ai/#requirements)和[推薦模型](/zh-Hant/private-ai/#recommended-models)。
+:::
+
+## Phi Sentinel {#phi-sentinel}
 
 ::: details 什麼是 Phi Sentinel？
-Phi Sentinel 是 Phi Browser 的背景 AI 調度中心。它會執行排程任務並保存你的 AI 任務歷史記錄，常駐在 macOS 選單列運作。
+Phi Sentinel 負責管理 Phi 在你 Mac 上的背景服務：執行你的任務、建立你的記憶、為你連接的資料建立索引，以及轉送 AI 請求的那些服務。它的 Runner 負責啟動、看顧和更新這些服務。請見 [Phi Sentinel](/zh-Hant/sentinel/)。
 :::
 
 ::: details 為什麼 Phi Sentinel 和瀏覽器分開？
-這樣即使瀏覽器視窗已經關閉，排程任務和持續性的 AI 工作流程仍能繼續執行。
+這樣即使瀏覽器視窗已經關閉，排程任務和其他背景服務仍能繼續執行，瀏覽器本身也能保持輕量。
 :::
 
-::: details 為什麼要這樣設計？
-讓瀏覽器保持輕量，同時維持一個常駐的自動化層，整個系統會更實用。
+::: details 私有 AI 設定在哪裡？
+在 Phi Chat 中，按一下設定（齒輪）按鈕，選擇**私有 AI**。在瀏覽器中，前往**設定 → Phi 與 AI → Phi Sentinel → 私有 AI**。請見[私有 AI](/zh-Hant/private-ai/#turning-on-private-ai)。
 :::
 
 ## Phi Link

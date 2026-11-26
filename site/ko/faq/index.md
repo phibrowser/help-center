@@ -1,5 +1,5 @@
 ---
-description: "Phi Browser의 레이아웃, 스페이스, 시크릿 스페이스, 북마크, Split View, 동기화, AI 기능, Phi Sentinel, Phi Link, 가격, 개인정보 보호, Time Machine 백업에 대한 빠른 답변을 찾아보세요."
+description: "Phi Browser의 레이아웃, 스페이스, 시크릿 스페이스, 북마크, Split View, 동기화, AI 기능, 프라이빗 AI, Phi Sentinel, Phi Link, 가격, 개인정보 보호, Time Machine 백업에 대한 빠른 답변을 찾아보세요."
 ---
 
 # 자주 묻는 질문
@@ -260,18 +260,40 @@ AI가 질문에 답하는 데서 그치지 않는다는 뜻이에요. 브라우�
 내가 정한 일정에 따라 반복 실행되는 자동화예요. 예를 들어 상품 가격을 지켜보거나 페이지의 변경 사항을 감시할 수 있어요.
 :::
 
+## 프라이빗 AI
+
+::: details Phi Cloud는 무엇인가요? 에이전트인가요?
+아니에요. 에이전트는 어시스턴트예요. 무엇을 할지 정하는 쪽이 어시스턴트죠. Phi Cloud는 Phi에 내장된 AI 서비스로, 어시스턴트가 생각하는 데 쓰는 모델을 기본으로 제공해요. Phi 로그인을 사용하고, API 키가 필요 없고, 사용량 한도에 포함돼요. [어시스턴트, Phi Cloud, AI 제공자](/ko/private-ai/#assistant-phi-cloud-and-providers)를 참고하세요.
+:::
+
+::: details Phi Cloud는 Ollama나 OpenAI 같은 AI 제공자와 어떤 관계인가요?
+같은 일을 맡는 대안이에요. 채팅이나 웹 작업 같은 AI 작업은 각각 하나의 소스에서 모델을 가져와요. Phi Cloud, 내 Mac의 로컬 모델, 또는 직접 연결한 제공자 중 하나예요. Phi Cloud는 기본으로 내장되어 있고, 나머지는 직접 설정해야 해요. [소스 비교](/ko/private-ai/#comparing-sources)를 참고하세요.
+:::
+
+::: details 내가 추가한 AI 제공자를 Phi가 사용하나요?
+내가 그 제공자에게 맡긴 작업에만, 그리고 프라이빗 AI가 켜져 있는 동안에만 사용해요. 제공자를 추가하는 것만으로는 아무것도 바뀌지 않고, 바꾸지 않은 작업은 모두 Phi Cloud에 남아요. [Phi가 내 제공자를 사용할 때](/ko/private-ai/#when-phi-uses-your-provider)를 참고하세요.
+:::
+
+::: details 프라이빗 AI를 쓰면 모든 게 내 Mac에 남나요?
+내 Mac이나 내 네트워크에 있는 모델을 쓰는 작업만 남아요. OpenAI 같은 클라우드 제공자에게 맡긴 작업은 그 제공자에게 가요. 기본적으로 로컬 소스가 응답하지 않는 작업은 당분간 Phi Cloud로 전환돼요. 이를 막으려면 다음 옵션을 선택하세요: **영향받는 AI 기능 일시 중지(클라우드로 데이터를 절대 보내지 않음)**. [로컬 소스를 사용할 수 없을 때](/ko/private-ai/#when-a-local-source-is-unavailable)를 참고하세요.
+:::
+
+::: details 내 Mac에서 모델을 실행하려면 무엇이 필요한가요?
+RAM 16GB 이상, 디스크 여유 공간 10GB 이상인 Apple Silicon Mac이 필요해요. 채팅과 웹 작업에는 더 큰 모델이 필요해서, 실제로는 RAM 32GB 이상이 필요해요. [필요한 사양](/ko/private-ai/#requirements)과 [권장 모델](/ko/private-ai/#recommended-models)을 참고하세요.
+:::
+
 ## Phi Sentinel {#phi-sentinel}
 
 ::: details Phi Sentinel이란 무엇인가요?
-Phi Sentinel은 Phi Browser의 백그라운드 AI 오케스트레이터예요. macOS 메뉴 막대에서 실행되면서 예약 작업을 수행하고 AI 작업 기록을 보관해요.
+Phi Sentinel은 Mac에서 Phi의 백그라운드 서비스를 관리해요. 작업을 실행하고, 메모리를 만들고, 연결한 데이터를 인덱싱하고, AI 요청을 보내는 서비스들이에요. Phi Sentinel의 Runner가 이 서비스들을 시작하고, 상태를 지켜보고, 업데이트해요. [Phi Sentinel](/ko/sentinel/)을 참고하세요.
 :::
 
 ::: details Phi Sentinel은 왜 브라우저와 분리되어 있나요?
-브라우저 윈도우가 닫혀 있어도 예약 작업과 지속적인 AI 워크플로가 계속 실행될 수 있게 하기 위해서예요.
+브라우저 윈도우가 닫혀 있어도 예약 작업과 다른 백그라운드 서비스가 계속 실행되게 하면서, 브라우저 자체는 가볍게 유지하기 위해서예요.
 :::
 
-::: details 왜 이런 설계를 택했나요?
-브라우저는 가볍게 유지하면서 지속적인 자동화 계층을 따로 두면, 시스템 전체가 더 실용적이 되기 때문이에요.
+::: details 프라이빗 AI 설정은 어디에 있나요?
+Phi Chat에서 설정(톱니바퀴) 버튼을 누르고 **프라이빗 AI**를 선택하세요. 브라우저에서는 **설정 → Phi 및 AI → Phi Sentinel → 프라이빗 AI**로 이동하세요. [프라이빗 AI](/ko/private-ai/#turning-on-private-ai)를 참고하세요.
 :::
 
 ## Phi Link

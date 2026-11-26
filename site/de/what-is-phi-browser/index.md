@@ -31,7 +31,7 @@ Lies [Lerne deinen Assistenten kennen](/de/ai/) zu Erinnerungen, dem Gespräch m
 
 Phi ist local-first. Was Phi sich merkt, liegt auf deinem Mac, wird nie zum Trainieren von KI-Modellen verwendet und bleibt unter deiner Kontrolle. Du kannst es einsehen, verwalten und löschen.
 
-Dazu gehört eine zweite Hälfte, und die solltest du kennen, bevor du dich darauf verlässt: Wenn der Assistent eine Frage beantwortet, gehen die zum Beantworten nötigen Inhalte an den Modellanbieter, den du ausgewählt hast, denn nur so kann ein Modell antworten. Sie passieren uns dabei, ohne gespeichert zu werden. Wenn du lieber willst, dass nichts davon deinen Mac verlässt, kann [Phi Sentinel](/de/sentinel/) Modelle stattdessen lokal ausführen.
+Dazu gehört eine zweite Hälfte, und die solltest du kennen, bevor du dich darauf verlässt: Wenn der Assistent eine Frage beantwortet, gehen die zum Beantworten nötigen Inhalte an einen Modellanbieter, denn nur so kann ein Modell antworten. Mit Phi Cloud passieren sie uns dabei, ohne gespeichert zu werden. Wenn du lieber willst, dass nichts davon deinen Mac verlässt, kann [Private KI](/de/private-ai/) stattdessen einige Aufgaben auf deinem Mac ausführen.
 
 Die Einzelheiten stehen in [Datenschutz & deine Daten](/de/privacy/).
 
@@ -51,7 +51,8 @@ Die Einzelheiten stehen in [Datenschutz & deine Daten](/de/privacy/).
 - [Der phi-browser-Skill](/de/phi-browser-skill/), einen externen KI-Agenten Phi steuern lassen.
 - [Neuer Tab & Widgets](/de/new-tab/), der personalisierte neue Tab und seine Widgets.
 - [Automatisierung & Phi Link](/de/automation/), agentische Aufgaben, Phi Sentinel und Telegram.
-- [Phi Sentinel](/de/sentinel/), die Hintergrund-App, die Automatisierung ausführt und die Private KI beherbergt.
+- [Private KI](/de/private-ai/), KI auf deinem Mac oder mit deinem eigenen KI-Anbieter ausführen, und was Phi Cloud ist.
+- [Phi Sentinel](/de/sentinel/), die Hintergrunddienste hinter Automatisierung und Private KI.
 - [Passwortmanager für Agenten](/de/agent-passwords/), wie Agenten sich anmelden, ohne deine Passwörter zu sehen.
 - [Datenschutz & deine Daten](/de/privacy/), wie mit deinen Daten umgegangen wird.
 - [Time Machine-Backups](/de/time-machine/), nach einem großen Update zu einer früheren Version zurückkehren.

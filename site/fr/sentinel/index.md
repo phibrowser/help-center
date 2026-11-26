@@ -1,47 +1,67 @@
 ---
-description: "Comprenez Phi Sentinel, le compagnon de la barre des menus macOS qui maintient l'automatisation en marche et peut acheminer certaines tâches d'IA vers l'IA privée sur votre Mac."
+description: "Comprenez Phi Sentinel, le gestionnaire des services d'arrière-plan de Phi sur votre Mac, qui fait tourner les services sur lesquels repose l'assistant, conserve leurs données et permet aux tâches planifiées de s'exécuter après la fermeture du navigateur."
 ---
 
 # Phi Sentinel
 
-Phi Sentinel est une petite application compagnon qui vit dans la **barre des menus** de macOS, à part du navigateur. Cette séparation est délibérée : le navigateur reste léger pendant qu'une couche discrète en arrière-plan continue de travailler même quand aucune fenêtre n'est ouverte. Elle remplit deux missions principales : maintenir votre automatisation en marche et héberger l'**IA privée**. Son menu propose aussi **Ouvrir Phi Chat**, un accès rapide à [Phi Chat](/fr/phi-chat/) depuis n'importe où.
+Phi Sentinel gère les services d'arrière-plan de Phi sur votre Mac. Une bonne partie de ce que fait l'assistant se passe en dehors de la fenêtre du navigateur : exécuter les tâches planifiées, construire votre Mémoire, effectuer des recherches dans les données que vous avez connectées, et acheminer les requêtes d'IA là où elles doivent aller. Un ensemble de services qui tournent en arrière-plan accomplit ce travail, et Phi Sentinel veille à leur bon fonctionnement.
 
-## Maintenir l'automatisation en marche
+Il est installé avec Phi Browser, et au quotidien vous n'avez rien à en faire. Dans les paramètres de Phi Chat, ces services s'appellent simplement **Services d'arrière-plan**.
 
-Une partie de ce que fait Phi est censée survivre au moment où vous l'avez demandé. Les [tâches planifiées](/fr/automation/#scheduled-tasks) doivent continuer à s'exécuter selon leur propre planification même après la fermeture de la fenêtre du navigateur, et c'est à cela que sert Phi Sentinel. Il exécute ces tâches, conserve l'historique de vos tâches d'IA et laisse l'automatisation continuer en arrière-plan : une vérification de prix toutes les quelques heures ou une page que vous surveillez continue, qu'une fenêtre de navigateur soit ouverte ou non.
+## Ce qu'il fait {#what-it-does}
 
-## IA privée {#private-ai}
+### Faire tourner les services d'arrière-plan {#running-background-services}
 
-Normalement, les tâches d'IA de Phi sont traitées par **Phi Cloud**. L'**IA privée** est l'option pour en exécuter certaines **sur votre Mac à la place**, ou via un fournisseur de modèles que vous choisissez, pour que ce travail ne quitte jamais votre machine.
+Phi Sentinel contient un processus appelé **Runner**, dont le seul rôle est de gérer les services d'arrière-plan. Il s'occupe de trois choses :
 
-Elle est **facultative et désactivée par défaut**. Quand vous l'activez, voici ce que vous y gagnez :
+- **Les démarrer et les surveiller.** Il démarre chaque service quand on en a besoin, vérifie régulièrement qu'il est en bonne santé et le redémarre en cas de problème.
+- **Les mises à jour.** Il télécharge et installe en arrière-plan les nouvelles versions des services. Il vérifie d'abord la signature de chaque mise à jour, et revient à la version précédente si une nouvelle version ne fonctionne pas correctement.
+- **Transmettre vos réglages.** Il transmet les choix que vous faites dans les paramètres, comme les sources des tâches dans l'[IA privée](/fr/private-ai/), aux services qui en ont besoin.
 
-- **Confidentialité.** Pour les tâches qui s'exécutent localement, les données restent sur votre Mac et ne sont pas envoyées à un modèle dans le cloud.
-- **Hors ligne.** Ces tâches continuent de fonctionner sans connexion Internet.
-- **Aucun coût par requête.** Tourner sur votre propre matériel n'entraîne aucuns frais d'utilisation.
+Le Runner ne fait que maintenir les services en marche. Il ne traite pas votre contenu : vos conversations, vos pages et vos données sont traitées par les services eux-mêmes et ne passent jamais par le Runner.
 
-### Cela fonctionne tâche par tâche
+Parmi les services qu'il gère :
 
-L'IA privée n'est pas tout ou rien. Elle s'applique tâche par tâche, et Phi est honnête sur celles qu'elle peut prendre en charge. Avec le modèle qu'elle installe pour vous, **Mémoire** et **Recherche de données** s'exécutent sur votre Mac par défaut, tandis que **Chat** et **Tâches web** restent sur **Phi Cloud**, parce que ces tâches demandent un modèle plus puissant que le modèle léger livré pour le travail d'arrière-plan, et elles ne passent sur l'appareil que si vous en installez un plus grand. L'écran IA privée présente cela comme une couverture, c'est-à-dire combien de vos tâches d'IA s'exécutent en privé et combien vont encore vers Phi Cloud, pour que vous sachiez toujours où se fait chaque type de travail.
+- **Le service de l'assistant**, qui conserve vos conversations et vos tâches, et exécute les tâches planifiées et les tâches en arrière-plan.
+- **Le service de Mémoire**, qui construit votre Mémoire à partir de votre navigation.
+- **Le service d'indexation des données**, qui indexe les données que vous connectez pour que Recherche de données puisse les trouver.
+- **L'AI Gateway**, qui envoie chaque requête d'IA à la source que vous avez choisie pour elle. Par défaut, c'est Phi Cloud ; avec l'IA privée activée, ce peut être un modèle local ou l'un de vos propres fournisseurs.
+- **AI Guardrail**, qui vérifie sur ce Mac si un texte contient des informations sensibles. Voir ci-dessous.
+- **Les modèles locaux**, installés et exécutés uniquement après la configuration de l'IA privée.
 
-### Apportez votre propre fournisseur
+### Garder les secrets hors de la Mémoire {#ai-guardrail}
 
-Les modèles sur l'appareil ne sont pas la seule option. Vous pouvez aussi pointer une tâche vers un fournisseur de modèles que vous administrez vous-même, par exemple **Ollama**, **LM Studio** ou tout point de terminaison compatible OpenAI, et Phi acheminera cette tâche vers lui plutôt que vers Phi Cloud.
+**AI Guardrail** est un service de détection qui s'exécute sur votre Mac. Avant que le service de Mémoire n'enregistre un nouvel élément, il demande à AI Guardrail de le vérifier. Si celui-ci y trouve un secret, comme un mot de passe, une clé API, une clé privée, une phrase de récupération ou un code de récupération, l'élément entier est exclu de votre Mémoire.
 
-### Ce qu'il vous faut
+- La vérification se fait entièrement sur ce Mac. Ce qui est vérifié n'est envoyé nulle part.
+- Il se contente d'écarter les secrets et ne réécrit jamais rien. Les informations personnelles ordinaires, comme les noms et les numéros de téléphone, sont enregistrées normalement, et vous pouvez les consulter et les supprimer dans [Mémoire](/fr/memory/).
 
-L'IA privée fonctionne mieux sur un **Mac avec puce Apple** doté d'au moins **16 Go de RAM**. Quand vous l'activez, l'installation vérifie votre matériel et l'espace disque libre, puis télécharge ce qu'il lui faut avant d'activer les modèles locaux.
+### Conserver vos données {#keeping-your-data}
 
-### L'activer
+Les services conservent leurs données sur votre Mac, dans des bases de données locales : vos conversations, vos tâches et leurs exécutions, votre Mémoire et l'index de vos données connectées.
 
-Ouvrez Phi Sentinel depuis la barre des menus, repérez **IA privée** dans ses réglages et activez-la. De là, elle vous guide dans l'installation et vous montre quelles tâches sont passées sur l'appareil une fois prête.
+Dans Phi Chat, sous **Paramètres → Sauvegarde et mises à jour**, vous disposez de :
 
-## Garder la main
+- **Exporter les données**, pour enregistrer une copie de vos réglages et de vos données à transférer sur un autre Mac. Les clés API des fournisseurs ne sont pas incluses.
+- **Instantané local**, pour enregistrer sur ce Mac une copie à laquelle vous pourrez revenir. Les instantanés ne quittent jamais ce Mac.
 
-L'IA privée approfondit la logique « local d'abord » de Phi : elle permet à l'IA elle-même de tourner sur votre machine, pas seulement à votre mémoire. Pour savoir où vivent vos données et ce que Phi collecte ou non, voir [Confidentialité et vos données](/fr/privacy/).
+### Maintenir les tâches après la fermeture du navigateur {#keeping-tasks-running}
+
+Les [tâches planifiées](/fr/automation/#scheduled-tasks) doivent s'exécuter selon leur propre planning, qu'une fenêtre de navigateur soit ouverte ou non. Comme Phi Sentinel s'exécute à part du navigateur, une vérification de prix toutes les quelques heures ou une page que vous surveillez continue après la fermeture de la fenêtre du navigateur.
+
+## Vérifier l'état des services d'arrière-plan {#checking-status}
+
+Ouvrez les paramètres dans Phi Chat :
+
+- **Général** indique si les services d'arrière-plan fonctionnent correctement et quelle version vous avez, avec **Redémarrer les services d'arrière-plan**.
+- **Services** indique l'état de chaque service. Quand il affiche **Tout fonctionne**, il n'y a rien à faire.
+- **Journaux** sert quand quelque chose ne va pas et que vous voulez le signaler. Cliquez sur **Enregistrer** à côté de **Journaux de diagnostic** : Phi enregistre dans votre dossier Téléchargements un fichier ZIP que vous pouvez envoyer à l'assistance Phi.
+
+Dans le navigateur, sous **Paramètres → Phi et IA → Phi Sentinel**, vous pouvez choisir d'activer ou non **Lancer Phi Sentinel à l'ouverture de session sur votre Mac** et **Invoquer Phi Chat avec Maj Maj Maj** (consultez [Phi Chat](/fr/phi-chat/#opening-phi-chat)).
 
 ## Et ensuite
 
+- [IA privée](/fr/private-ai/), exécuter des tâches d'IA sur votre Mac ou avec votre propre fournisseur d'IA.
 - [Automatisation et Phi Link](/fr/automation/), actions à la demande, tâches planifiées et utilisation de Phi depuis Telegram.
 - [Confidentialité et vos données](/fr/privacy/), où vivent vos données et comment garder la main.
 - [FAQ](/fr/faq/#phi-sentinel), réponses rapides sur Phi Sentinel.

@@ -55,7 +55,7 @@ L'option disparaît quand l'Espace ou le Profil d'origine a été supprimé, ou 
 
 ### Limites d'utilisation {#usage-limits}
 
-L'assistant dispose d'un quota d'utilisation. Si vous l'atteignez, un bandeau au-dessus du champ de message vous le signale et, quand une heure précise est prévue, vous indique quand vous pourrez continuer. D'ici là, vous pouvez toujours écrire, mais pas envoyer. La Mémoire, les widgets et les tâches qui passent par l'[IA privée](/fr/sentinel/#private-ai) ne sont pas concernés. Phi n'indique pas la part du quota qui reste.
+L'assistant dispose d'un quota d'utilisation. Si vous l'atteignez, un bandeau au-dessus du champ de message vous le signale et, quand une heure précise est prévue, vous indique quand vous pourrez continuer. D'ici là, vous pouvez toujours écrire, mais pas envoyer. La Mémoire, les widgets et les tâches qui passent par l'[IA privée](/fr/private-ai/) ne sont pas concernés. Phi n'indique pas la part du quota qui reste.
 
 ## Conversation avec les onglets {#chat-with-tabs}
 
@@ -73,7 +73,7 @@ Les Browser Skills sont des workflows réutilisables. Apprenez-lui une tâche en
 
 Bon à savoir, parce que « intégré » peut donner l'impression que « rien ne quitte jamais votre Mac ». La Mémoire, elle, reste sur votre appareil. Vos questions, non : quand vous demandez quelque chose, le contenu nécessaire pour y répondre part chez le fournisseur du modèle que vous utilisez, parce que c'est la seule façon pour un modèle de répondre. Il transite par nous sans être stocké, et il arrive sous notre compte plutôt que le vôtre, si bien que votre identité n'est pas communiquée au fournisseur.
 
-Si vous voulez que l'IA elle-même s'exécute sur votre Mac, [Phi Sentinel](/fr/sentinel/) propose l'IA privée, qui garde certaines tâches entièrement locales. [Confidentialité et vos données](/fr/privacy/) couvre tout cela en détail.
+Si vous voulez que l'IA elle-même s'exécute sur votre Mac, ou utiliser votre propre fournisseur d'IA, consultez [IA privée](/fr/private-ai/). [Confidentialité et vos données](/fr/privacy/) couvre tout cela en détail.
 
 ## Pour aller plus loin
 

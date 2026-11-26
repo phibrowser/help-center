@@ -54,7 +54,7 @@ description: "了解 Phi Browser 如何处理按需操作、后台任务和定�
 
 任务的 **…** 菜单中有**立即运行**，以及**暂停定时运行**或**恢复定时运行**。
 
-这个面板不能编辑或删除任务。要修改任务的内容或删除任务，在任务所在的对话中告诉助手，或者使用 Phi Sentinel 中的**任务**页面。
+这个面板不能编辑或删除任务。要修改任务的内容或删除任务，在任务所在的对话中告诉助手，或者使用 [Phi Chat](/zh-Hans/phi-chat/) 中的**任务管理器**，也就是对话列表顶部、搜索左侧的那个按钮。
 
 ### Phi 没有运行时
 
@@ -77,7 +77,7 @@ description: "了解 Phi Browser 如何处理按需操作、后台任务和定�
 
 ## Phi Sentinel
 
-定时任务需要在浏览器窗口关闭后继续运行。**Phi Sentinel** 就是让这一点成为可能的后台应用，它位于 macOS 菜单栏，同时还承载私有 AI，也就是把部分 AI 放在你自己的 Mac 上运行的选项。完整介绍请看 [Phi Sentinel](/zh-Hans/sentinel/)。
+定时任务需要在浏览器窗口关闭后继续运行。**Phi Sentinel** 让这一点成为可能：它独立于浏览器运行 Phi 的后台服务，其中就包括执行你的任务的那个服务。完整介绍请看 [Phi Sentinel](/zh-Hans/sentinel/)；如果你希望任务使用你 Mac 上的模型或你自己的 AI 提供商，请看[私有 AI](/zh-Hans/private-ai/)。
 
 ## Phi Link {#phi-link}
 

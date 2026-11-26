@@ -31,7 +31,7 @@ Lees [Maak kennis met je assistent](/nl/ai/) voor Geheugen, ermee praten en Skil
 
 Phi is local-first. Wat Phi onthoudt, staat op je Mac, wordt nooit gebruikt om AI-modellen te trainen en blijft onder jouw controle. Je kunt het bekijken, beheren en verwijderen.
 
-Daar hoort een tweede helft bij, en die wil je kennen voordat je erop bouwt: wanneer de assistent een vraag beantwoordt, gaat de inhoud die nodig is voor het antwoord naar de modelaanbieder die je hebt gekozen, want alleen zo kan een model antwoorden. Die inhoud passeert ons zonder te worden opgeslagen. Wil je liever dat er helemaal niets je Mac verlaat, dan kan [Phi Sentinel](/nl/sentinel/) modellen lokaal draaien.
+Daar hoort een tweede helft bij, en die wil je kennen voordat je erop bouwt: wanneer de assistent een vraag beantwoordt, gaat de inhoud die nodig is voor het antwoord naar een modelaanbieder, want alleen zo kan een model antwoorden. Met Phi Cloud passeert die inhoud ons zonder te worden opgeslagen. Wil je liever dat er helemaal niets je Mac verlaat, dan kan [Privé-AI](/nl/private-ai/) sommige taken op je Mac laten draaien.
 
 Zie [Privacy & je gegevens](/nl/privacy/) voor de details.
 
@@ -51,7 +51,8 @@ Zie [Privacy & je gegevens](/nl/privacy/) voor de details.
 - [De phi-browser-skill](/nl/phi-browser-skill/), een externe AI-agent Phi laten besturen.
 - [Nieuw tabblad & widgets](/nl/new-tab/), het gepersonaliseerde nieuwe tabblad en zijn widgets.
 - [Automatisering & Phi Link](/nl/automation/), agentische taken, Phi Sentinel en Telegram.
-- [Phi Sentinel](/nl/sentinel/), de achtergrondapp die automatisering draait en Privé-AI host.
+- [Privé-AI](/nl/private-ai/), AI op je Mac laten draaien of met je eigen AI-provider, en wat Phi Cloud is.
+- [Phi Sentinel](/nl/sentinel/), de achtergrondservices achter automatisering en Privé-AI.
 - [Wachtwoordmanager voor agents](/nl/agent-passwords/), hoe agents inloggen zonder je wachtwoorden te zien.
 - [Privacy & je gegevens](/nl/privacy/), hoe er met je gegevens wordt omgegaan.
 - [Time Machine-back-ups](/nl/time-machine/), teruggaan naar een eerdere versie na een grote update.

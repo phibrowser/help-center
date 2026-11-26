@@ -1,0 +1,559 @@
+diff --git a/site/.vitepress/i18n/guide.ts b/site/.vitepress/i18n/guide.ts
+index 8895697..b7f0a88 100644
+--- a/site/.vitepress/i18n/guide.ts
++++ b/site/.vitepress/i18n/guide.ts
+@@ -36,6 +36,7 @@ export const guideGroups = [
+       "phiBrowserSkill",
+       "phiCli",
+       "agentPasswords",
++      "privateAi",
+       "sentinel",
+     ],
+   },
+@@ -70,6 +71,7 @@ export const guideRoutes = {
+   phiBrowserSkill: "/phi-browser-skill/",
+   phiCli: "/phi-cli/",
+   agentPasswords: "/agent-passwords/",
++  privateAi: "/private-ai/",
+   sentinel: "/sentinel/",
+   privacy: "/privacy/",
+   contentBlocking: "/content-blocking/",
+diff --git a/site/.vitepress/i18n/locales/de.json b/site/.vitepress/i18n/locales/de.json
+index 3639b00..9dcaad0 100644
+--- a/site/.vitepress/i18n/locales/de.json
++++ b/site/.vitepress/i18n/locales/de.json
+@@ -44,6 +44,7 @@
+       "phiBrowserSkill": "Der phi-browser-Skill",
+       "phiCli": "Die Phi CLI",
+       "agentPasswords": "Passwortmanager für Agenten",
++      "privateAi": "Private KI",
+       "sentinel": "Phi Sentinel",
+       "privacy": "Datenschutz & deine Daten",
+       "contentBlocking": "Inhaltsblockierung",
+diff --git a/site/.vitepress/i18n/locales/en.json b/site/.vitepress/i18n/locales/en.json
+index 9a73dd5..480a182 100644
+--- a/site/.vitepress/i18n/locales/en.json
++++ b/site/.vitepress/i18n/locales/en.json
+@@ -44,6 +44,7 @@
+       "phiBrowserSkill": "The phi-browser skill",
+       "phiCli": "The Phi CLI",
+       "agentPasswords": "Agent Password Manager",
++      "privateAi": "Private AI",
+       "sentinel": "Phi Sentinel",
+       "privacy": "Privacy & Your Data",
+       "contentBlocking": "Content blocking",
+diff --git a/site/.vitepress/i18n/locales/es.json b/site/.vitepress/i18n/locales/es.json
+index d4e837c..c2b7a86 100644
+--- a/site/.vitepress/i18n/locales/es.json
++++ b/site/.vitepress/i18n/locales/es.json
+@@ -44,6 +44,7 @@
+       "phiBrowserSkill": "La habilidad phi-browser",
+       "phiCli": "La CLI de Phi",
+       "agentPasswords": "Administrador de contraseñas del agente",
++      "privateAi": "IA privada",
+       "sentinel": "Phi Sentinel",
+       "privacy": "Privacidad y tus datos",
+       "contentBlocking": "Bloqueo de contenido",
+diff --git a/site/.vitepress/i18n/locales/fr.json b/site/.vitepress/i18n/locales/fr.json
+index 41a6578..dcd5d4a 100644
+--- a/site/.vitepress/i18n/locales/fr.json
++++ b/site/.vitepress/i18n/locales/fr.json
+@@ -44,6 +44,7 @@
+       "phiBrowserSkill": "Le skill phi-browser",
+       "phiCli": "La CLI Phi",
+       "agentPasswords": "Gestionnaire de mots de passe pour les agents",
++      "privateAi": "IA privée",
+       "sentinel": "Phi Sentinel",
+       "privacy": "Confidentialité et vos données",
+       "contentBlocking": "Blocage de contenu",
+diff --git a/site/.vitepress/i18n/locales/ja.json b/site/.vitepress/i18n/locales/ja.json
+index 381ba1a..261e3a1 100644
+--- a/site/.vitepress/i18n/locales/ja.json
++++ b/site/.vitepress/i18n/locales/ja.json
+@@ -44,6 +44,7 @@
+       "phiBrowserSkill": "phi-browser skill",
+       "phiCli": "Phi CLI",
+       "agentPasswords": "エージェントのパスワードマネージャー",
++      "privateAi": "プライベートAI",
+       "sentinel": "Phi Sentinel",
+       "privacy": "プライバシーとデータ",
+       "contentBlocking": "コンテンツブロック",
+diff --git a/site/.vitepress/i18n/locales/ko.json b/site/.vitepress/i18n/locales/ko.json
+index 2bf3552..765a360 100644
+--- a/site/.vitepress/i18n/locales/ko.json
++++ b/site/.vitepress/i18n/locales/ko.json
+@@ -44,6 +44,7 @@
+       "phiBrowserSkill": "phi-browser 스킬",
+       "phiCli": "Phi CLI",
+       "agentPasswords": "에이전트 비밀번호 관리자",
++      "privateAi": "프라이빗 AI",
+       "sentinel": "Phi Sentinel",
+       "privacy": "개인정보 보호 및 데이터",
+       "contentBlocking": "콘텐츠 차단",
+diff --git a/site/.vitepress/i18n/locales/nl.json b/site/.vitepress/i18n/locales/nl.json
+index a96d9da..d3803a0 100644
+--- a/site/.vitepress/i18n/locales/nl.json
++++ b/site/.vitepress/i18n/locales/nl.json
+@@ -44,6 +44,7 @@
+       "phiBrowserSkill": "De phi-browser-skill",
+       "phiCli": "De Phi CLI",
+       "agentPasswords": "Wachtwoordmanager voor agents",
++      "privateAi": "Privé-AI",
+       "sentinel": "Phi Sentinel",
+       "privacy": "Privacy & je gegevens",
+       "contentBlocking": "Contentblokkering",
+diff --git a/site/.vitepress/i18n/locales/zh-Hans.json b/site/.vitepress/i18n/locales/zh-Hans.json
+index 017a9c8..6c6b9da 100644
+--- a/site/.vitepress/i18n/locales/zh-Hans.json
++++ b/site/.vitepress/i18n/locales/zh-Hans.json
+@@ -44,6 +44,7 @@
+       "phiBrowserSkill": "phi-browser skill",
+       "phiCli": "Phi CLI",
+       "agentPasswords": "智能体密码管理器",
++      "privateAi": "私有 AI",
+       "sentinel": "Phi Sentinel",
+       "privacy": "隐私与你的数据",
+       "contentBlocking": "内容拦截",
+diff --git a/site/.vitepress/i18n/locales/zh-Hant.json b/site/.vitepress/i18n/locales/zh-Hant.json
+index ecbf4d8..3e257fe 100644
+--- a/site/.vitepress/i18n/locales/zh-Hant.json
++++ b/site/.vitepress/i18n/locales/zh-Hant.json
+@@ -44,6 +44,7 @@
+       "phiBrowserSkill": "phi-browser skill",
+       "phiCli": "Phi CLI",
+       "agentPasswords": "AI 代理密碼管理員",
++      "privateAi": "私有 AI",
+       "sentinel": "Phi Sentinel",
+       "privacy": "隱私權與你的資料",
+       "contentBlocking": "內容封鎖",
+diff --git a/site/ai/index.md b/site/ai/index.md
+index 558b67f..0731705 100644
+--- a/site/ai/index.md
++++ b/site/ai/index.md
+@@ -55,7 +55,7 @@ The option disappears when the original Space or Profile has been deleted, or th
+ 
+ ### Usage limits
+ 
+-The assistant has a usage allowance. If you reach it, a banner above the message box says so and, when there is a set time, tells you when you can carry on. Until then you can still type, but not send. Memory, widgets, and tasks that run through [Private AI](/sentinel/#private-ai) are not affected. Phi does not show how much of the allowance is left.
++The assistant has a usage allowance. If you reach it, a banner above the message box says so and, when there is a set time, tells you when you can carry on. Until then you can still type, but not send. Memory, widgets, and tasks that run through [Private AI](/private-ai/) are not affected. Phi does not show how much of the allowance is left.
+ 
+ ## Chat with Tabs
+ 
+@@ -73,7 +73,7 @@ Browser Skills are reusable workflows. Teach it a multi-step task once and it ca
+ 
+ Worth knowing, because "built in" can sound like "never leaves your Mac". Memory does stay on your device. Your questions do not: when you ask something, the content needed to answer it goes to the provider of the model you are using, because that is the only way a model can answer. It passes through us without being stored, and it arrives under our account rather than yours, so the provider is not told who you are.
+ 
+-If you want the AI itself to run on your Mac, [Phi Sentinel](/sentinel/) offers Private AI, which keeps some tasks entirely local. [Privacy & Your Data](/privacy/) covers all of this properly.
++If you want the AI itself to run on your Mac, or to use an AI provider of your own, see [Private AI](/private-ai/). [Privacy & Your Data](/privacy/) covers all of this properly.
+ 
+ ## What's next
+ 
+diff --git a/site/automation/index.md b/site/automation/index.md
+index 8e19509..64cc870 100644
+--- a/site/automation/index.md
++++ b/site/automation/index.md
+@@ -54,7 +54,7 @@ When a conversation has tasks, a clock button with a count appears in its top ba
+ 
+ The task's **…** menu has **Run now**, and **Pause schedule** or **Resume schedule**.
+ 
+-The panel does not edit or delete tasks. To change what a task does, or to delete it, ask the assistant in the task's conversation, or use the **Tasks** page in Phi Sentinel.
++The panel does not edit or delete tasks. To change what a task does, or to delete it, ask the assistant in the task's conversation, or use **Task Manager** in [Phi Chat](/phi-chat/), the button to the left of search at the top of the conversation list.
+ 
+ ### When Phi was not running
+ 
+@@ -77,7 +77,7 @@ What the agent does under your instruction is done as you, from your browser, wi
+ 
+ ## Phi Sentinel
+ 
+-Scheduled tasks need to keep running even when the browser window is closed. **Phi Sentinel** is the background app in the macOS menu bar that makes that possible, and it also hosts Private AI, the option to run some AI on your own Mac. See [Phi Sentinel](/sentinel/) for the full picture.
++Scheduled tasks need to keep running even when the browser window is closed. **Phi Sentinel** makes that possible: it runs Phi's background services, including the one that runs your tasks, separately from the browser. See [Phi Sentinel](/sentinel/) for the full picture, and [Private AI](/private-ai/) if you want tasks to use a model on your Mac or your own AI provider.
+ 
+ ## Phi Link
+ 
+diff --git a/site/faq/index.md b/site/faq/index.md
+index d68fcdd..3fd08a0 100644
+--- a/site/faq/index.md
++++ b/site/faq/index.md
+@@ -1,5 +1,5 @@
+ ---
+-description: "Find quick answers about Phi Browser layouts, Spaces, Incognito Spaces, bookmarks, Split View, sync, AI features, Phi Sentinel, Phi Link, pricing, privacy, and Time Machine Backups."
++description: "Find quick answers about Phi Browser layouts, Spaces, Incognito Spaces, bookmarks, Split View, sync, AI features, Private AI, Phi Sentinel, Phi Link, pricing, privacy, and Time Machine Backups."
+ ---
+ 
+ # Frequently Asked Questions
+@@ -260,18 +260,40 @@ Tasks the assistant performs when you ask, such as navigating pages or interacti
+ Recurring automations that run on a schedule you define, for example monitoring a product price or watching a page for changes.
+ :::
+ 
++## Private AI
++
++::: details What is Phi Cloud? Is it an agent?
++No. The assistant is the agent: it decides what to do. Phi Cloud is the AI service built into Phi that supplies the model the assistant thinks with, by default. It uses your Phi sign-in, needs no API key, and counts toward your usage allowance. See [The assistant, Phi Cloud, and AI providers](/private-ai/#assistant-phi-cloud-and-providers).
++:::
++
++::: details How does Phi Cloud relate to AI providers like Ollama or OpenAI?
++They are alternatives for the same job. Each AI task, such as Chat or Web tasks, takes its model from one source: Phi Cloud, a local model on your Mac, or a provider you connect yourself. Phi Cloud is the built-in default, and the others are yours to set up. See [How the sources compare](/private-ai/#comparing-sources).
++:::
++
++::: details Will Phi use the AI provider I added?
++Only for the tasks you assign to it, and only while Private AI is on. Adding a provider by itself changes nothing, and every task you have not changed stays on Phi Cloud. See [When Phi uses your provider](/private-ai/#when-phi-uses-your-provider).
++:::
++
++::: details Does Private AI keep everything on my Mac?
++Only the tasks that use a model on your Mac or on your own network. A task you give to a cloud provider such as OpenAI goes to that provider. By default, a task whose local source stops responding falls back to Phi Cloud for the time being; to prevent that, choose **Pause affected AI features (never send data to the cloud)**. See [When a local source is unavailable](/private-ai/#when-a-local-source-is-unavailable).
++:::
++
++::: details What do I need to run models on my Mac?
++An Apple Silicon Mac with at least 16 GB of memory and 10 GB of free disk. Chat and Web tasks need a larger model, which in practice means 32 GB of memory or more. See [Requirements](/private-ai/#requirements) and [Recommended models](/private-ai/#recommended-models).
++:::
++
+ ## Phi Sentinel
+ 
+ ::: details What is Phi Sentinel?
+-Phi Sentinel is the background AI orchestrator for Phi Browser. It executes scheduled tasks and keeps your AI task history, running from the macOS menu bar.
++Phi Sentinel manages Phi's background services on your Mac: the services that run your tasks, build your Memory, index your connected data, and route AI requests. Its Runner starts, watches over, and updates them. See [Phi Sentinel](/sentinel/).
+ :::
+ 
+ ::: details Why is Phi Sentinel separate from the browser?
+-So scheduled tasks and persistent AI workflows can keep running even when the browser window is closed.
++So scheduled tasks and the other background services keep running even when the browser window is closed, while the browser itself stays light.
+ :::
+ 
+-::: details Why was it designed this way?
+-Keeping the browser lightweight while maintaining a persistent automation layer makes the whole system more practical.
++::: details Where do I find Private AI settings?
++In Phi Chat, under the settings (gear) button, choose **Private AI**. From the browser, go to **Settings → Phi & AI → Phi Sentinel → Private AI**. See [Private AI](/private-ai/#turning-on-private-ai).
+ :::
+ 
+ ## Phi Link
+diff --git a/site/privacy/index.md b/site/privacy/index.md
+index 9cc7807..8607c90 100644
+--- a/site/privacy/index.md
++++ b/site/privacy/index.md
+@@ -20,7 +20,7 @@ Phi will never collect:
+ 
+ Phi does not sell your browsing-derived data, and it does not use your memory, browsing context, or AI interactions to train models.
+ 
+-A nuance worth knowing: large language models from providers such as Anthropic, OpenAI, Google, or SpaceXAI may be used to process tasks. When you use **Phi Cloud**, the content a request needs to be answered is sent to the provider of the model you picked, because that is the only way a model can answer it. It passes through us without being stored, it arrives under our account rather than yours, and it is never used for training. With **Private AI** it does not leave your Mac at all. Your personal memory stays local either way, and is never treated as a cloud-owned asset.
++A nuance worth knowing: large language models from providers such as Anthropic, OpenAI, Google, or SpaceXAI may be used to process tasks. When you use **Phi Cloud**, the content a request needs to be answered is sent to the provider of the model Phi Cloud uses, because that is the only way a model can answer it. It passes through us without being stored, it arrives under our account rather than yours, and it is never used for training. With [Private AI](/private-ai/), a task you move to a model on your Mac does not leave it at all, and a task you give to an AI provider of your own goes to that provider instead of Phi Cloud. Your personal memory stays local either way, and is never treated as a cloud-owned asset.
+ 
+ ## What Phi does send
+ 
+@@ -36,7 +36,7 @@ There is no setting that turns off the anonymous baseline. If you want a browser
+ 
+ The [Privacy Policy](https://phibrowser.com/privacy/) is the full and authoritative version of all of this.
+ 
+-You can also narrow what leaves your Mac at all. With **Private AI**, run through [Phi Sentinel](/sentinel/), some of those tasks run entirely on your own machine, so they need no cloud model in the first place.
++You can also narrow what leaves your Mac at all. With [Private AI](/private-ai/), some of those tasks run entirely on your own machine, so they need no cloud model in the first place. By default, a task whose local source stops responding falls back to Phi Cloud for the time being. If you would rather it paused, choose that under [When a local source is unavailable](/private-ai/#when-a-local-source-is-unavailable).
+ 
+ ## Usage statistics
+ 
+diff --git a/site/private-ai/index.md b/site/private-ai/index.md
+new file mode 100644
+index 0000000..be52905
+--- /dev/null
++++ b/site/private-ai/index.md
+@@ -0,0 +1,175 @@
++---
++description: "Understand Private AI: what Phi Cloud is, how it relates to your own AI providers, and how to run AI tasks on your Mac or with a service you choose, such as Ollama or LM Studio."
++---
++
++# Private AI
++
++Phi's AI features run on **Phi Cloud** by default. **Private AI** lets you decide, task by task, who handles each kind of AI work: Phi Cloud, a model downloaded to this Mac, or an AI provider you connect yourself, such as Ollama, LM Studio, OpenAI, or OpenRouter.
++
++Private AI is off by default. If you never turn it on, every AI feature works as usual and uses Phi Cloud.
++
++## The assistant, Phi Cloud, and AI providers {#assistant-phi-cloud-and-providers}
++
++These three are easy to mix up, so it helps to separate them first:
++
++- **The assistant** is the one you named. It is Phi's agent: it works out what you are asking for and decides what to do, whether that is reading a page, running a Browser Skill, acting in the browser, or creating a task. It is the same assistant whichever model it uses, and your conversations, Memory, and tasks do not change with the model.
++- **A model** is the "brain" the assistant borrows to think. At each step, the assistant sends what it needs to a model, and the model answers.
++- **An AI source** decides where that model runs. There are three kinds:
++  - **Phi Cloud**, the AI service built into Phi. It is not an agent and not one particular model. It is a set of cloud models that Phi connects to and manages for you. It uses your Phi sign-in, needs no API key, and does not ask you to pick a model.
++  - **Local models**, models downloaded to this Mac that run on this Mac.
++  - **Your providers**, AI services you connect yourself, with your own address, account, or API key.
++
++So Phi Cloud sits in the same place as Ollama or OpenAI: it is one answer to "where does the assistant's model run?" The difference is that Phi Cloud is built in and works out of the box, while the others are yours to set up.
++
++### How the sources compare {#comparing-sources}
++
++|                               | Phi Cloud                                                           | Local models                                       | Your local providers (Ollama, LM Studio)              | Your cloud providers (OpenAI, OpenRouter, Codex, and others) |
++| ----------------------------- | ------------------------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------ |
++| What you need                 | Nothing beyond signing in to Phi                                    | One setup step, which downloads them               | Ollama or LM Studio installed and running             | An account or API key with that service                      |
++| Where your content goes       | Through Phi, to the model provider Phi uses                         | Nowhere. It stays on this Mac                      | The address you set, usually this Mac or your network | Straight from your Mac to that service                       |
++| Whose account it arrives as   | Phi's. The model provider is not told who you are                   | Not applicable                                     | Not applicable                                        | Yours, through your own account or key                       |
++| Cost                          | Included with Phi, within your [usage allowance](/ai/#usage-limits) | Free, using this Mac's memory and processing power | Free, using the computer it runs on                   | That service's own pricing                                   |
++| Counts toward Phi's allowance | Yes                                                                 | No                                                 | No                                                    | No                                                           |
++| Works offline                 | No                                                                  | Yes                                                | Yes, when it runs on this Mac                         | No                                                           |
++| Quality                       | Consistent, suited to every task                                    | Depends on model size, usually below cloud models  | Depends on the model you choose                       | Depends on the model you choose                              |
++
++For how Phi Cloud handles your content, see [Privacy & Your Data](/privacy/). When you use a cloud provider of your own, that provider's privacy policy is the one that applies.
++
++## When Phi uses your provider {#when-phi-uses-your-provider}
++
++Adding a provider on its own changes nothing. Phi uses it only when both of these are true:
++
++1. Under **Private AI → AI tasks**, you have chosen one of that provider's models as the source for a task.
++2. The **Private AI** switch is on.
++
++Any task you have not changed keeps using Phi Cloud. Turning Private AI off sends every task back to Phi Cloud straight away, but your choices are kept, so turning it on again restores them without another setup.
++
++## Choosing a source for each task {#choosing-a-source-for-each-task}
++
++Private AI is not all-or-nothing. You set it task by task, and the top of the page shows how many tasks are not on Phi Cloud, as **Running privately: 2 of 4 AI tasks**, for example.
++
++| AI task         | What it covers                                        | Sources you can choose                                  |
++| --------------- | ----------------------------------------------------- | ------------------------------------------------------- |
++| **Chat**        | Replies in the sidebar and in Phi Chat                | Phi Cloud, local models, your providers, Codex          |
++| **Memory**      | Background work such as browsing Memory and summaries | Phi Cloud, local models, your providers, Codex          |
++| **Web tasks**   | The assistant acting in the browser, and automation   | Phi Cloud, local models, your providers, Codex          |
++| **Data search** | Searching the data you have connected                 | Only Phi Cloud, or the local search model Phi downloads |
++
++A few more rows sit alongside them:
++
++- **Vision fallback.** When the model you chose for a task cannot read images, images go to the model set here instead. It starts as **Not configured**.
++- **AI tab organization** is handled by Apple Intelligence on macOS and cannot be changed. It does not appear on Macs without Apple Intelligence.
++- **Image generation** always uses Phi Cloud.
++
++When you switch a task to a different source, Phi tests that model first. If the test fails, the task goes back to its previous source and you are told why.
++
++Once Chat uses a source other than Phi Cloud, the chat shows **You're using Private AI**, because answers may differ in quality from online models.
++
++## Turning on Private AI {#turning-on-private-ai}
++
++There are two ways in to the Private AI settings:
++
++- In [Phi Chat](/phi-chat/), click the settings (gear) button in the top bar and choose **Private AI**.
++- In the browser, go to **Settings → Phi & AI → Phi Sentinel → Private AI**, which opens the same page in Phi Chat.
++
++The first time you turn the switch on, Phi checks whether this Mac can run local models:
++
++- **If it can**, the setup window lists the download size, roughly how much memory the models use while running, and which tasks will move to this Mac. Click **Start setup** and Phi installs the local runtime, downloads the models, starts them, and verifies them. You can **Minimize** the window and let setup carry on in the background. Until it finishes, every AI feature keeps using Phi Cloud.
++- **If it cannot**, the window says why. You can still click **Use your own AI service** to connect your own providers without local models.
++
++### Requirements {#requirements}
++
++| Item      | Requirement                                                     |
++| --------- | --------------------------------------------------------------- |
++| Chip      | Apple Silicon. Intel Macs cannot run local models               |
++| Memory    | At least 16 GB                                                  |
++| Free disk | At least 10 GB, and at least 2 GB more than the download itself |
++
++None of this applies if you only connect your own providers, such as Ollama on another computer on your network, or OpenAI.
++
++### What setup installs {#what-setup-installs}
++
++Setup currently downloads two models, which use about 7 GB of memory together while running:
++
++- **Gemma 4 E4B (4-bit)**, for **Memory**.
++- **BGE-M3**, for **Data search**.
++
++**Chat** and **Web tasks** stay on Phi Cloud. Those two need a model that reliably handles long context and tool calls, and Phi moves them to this Mac automatically only when a local model of 20 billion parameters or more is available. The Gemma model that setup downloads has about 4 billion: good for background work, not for carrying a conversation. You can still switch Chat to it by hand under **AI tasks**, as long as it passes the test. When setup finishes, it tells you exactly which tasks now run on this Mac.
++
++After setup, the index that Memory uses to find related items is still built on Phi Cloud. If you want that done on this Mac too, choose the local model for **Data search** by hand once, and both move to this Mac.
++
++## Connecting Ollama or LM Studio {#connecting-ollama-or-lm-studio}
++
++Ollama and LM Studio are free apps for running open models on your own computer. Both are built into Phi as providers, at `http://127.0.0.1:11434` for Ollama and `http://127.0.0.1:1234/v1` for LM Studio by default.
++
++1. Install and open Ollama or LM Studio, and download a model (see [Recommended models](#recommended-models)).
++   - Ollama: run `ollama pull <model>` in Terminal, for example `ollama pull gpt-oss:20b`.
++   - LM Studio: search for a model in the app, download it, and start the local server on the **Developer** page.
++2. In Phi Chat, open **Settings → AI providers** and choose **Ollama** or **LM Studio**.
++3. Turn on **Use this provider**. If the service runs on another computer on your network, change **Base URL** to that computer's address.
++4. Click **Load** to fetch its models. Under **Model access**, choose **Allow all models**, or **Selected models only** and tick the ones you want.
++5. Pick a model, click **Test**, and once it reports a successful connection, click **Save changes**.
++6. Go back to **Private AI** and, under **AI tasks**, choose that model for the task you want to move, such as **Chat**.
++7. Turn on the **Private AI** switch.
++
++For any other service with an OpenAI-compatible API, use **Add Custom Provider** and enter a name, the base URL, and an API key if the service needs one.
++
++Worth knowing:
++
++- The base URL can be `http` or `https`, and the API key is optional, since local services usually do not need one. A key sent to an `http` address travels unencrypted, so use `https` for anything that is not on your own Mac or network.
++- Ollama or LM Studio has to stay open. If the computer sleeps or the app quits, the affected tasks follow your [fallback setting](#when-a-local-source-is-unavailable).
++- Web tasks and long conversations carry a lot of text. If replies come back incomplete, or the assistant fails to finish an action, raise the context length, to 32K for example: in Ollama's settings with **Context length**, or in LM Studio with **Context Length** when you load the model. A longer context uses more memory.
++- For other computers on your network to reach Ollama, Ollama on that computer has to listen on its network address (`OLLAMA_HOST=0.0.0.0`).
++
++## Recommended models {#recommended-models}
++
++Open models move quickly, so treat the names below as examples. A newer model of the same size works just as well. Two things matter most: the model has to be big enough, and it has to fit in memory. A model uses roughly its download size in memory while running, plus a few GB, and macOS and your other apps need room too.
++
++| Your Mac's memory | Suggestion                                                                                                                                          |
++| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
++| 16 GB             | Use setup so Memory and Data search run on this Mac, and keep Chat and Web tasks on Phi Cloud. This much memory cannot hold a model suited to Chat  |
++| 32 GB             | You can run a 20-billion-parameter class model for Chat, for example **gpt-oss-20b** (Ollama: `gpt-oss:20b`) or **Qwen3 30B** (Ollama: `qwen3:30b`) |
++| 64 GB             | You can pick a steadier 30-billion-parameter class model, for example **Qwen3 32B** (Ollama: `qwen3:32b`), with room for a longer context           |
++| 128 GB or more    | You can run a 100-billion-parameter class model, for example **gpt-oss-120b** (Ollama: `gpt-oss:120b`), which comes closer to cloud models          |
++
++By task:
++
++- **Chat and Web tasks:** choose a model with 20 billion parameters or more that supports tool calling (function calling). Web tasks lean on tool calls the hardest, and small models often fail at them.
++- **Vision fallback:** choose a model that can read images, for example Gemma 3 12B (Ollama: `gemma3:12b`) or Qwen2.5-VL 7B (Ollama: `qwen2.5vl:7b`).
++- **Memory:** the Gemma model from setup is enough, and there is usually no reason to change it.
++- **Data search:** only the local search model Phi downloads, or Phi Cloud.
++
++However large, a local model usually falls short of the frontier models behind Phi Cloud. If answer quality matters more to you than keeping content on your Mac, leaving Chat and Web tasks on Phi Cloud is a sensible choice.
++
++## When a local source is unavailable {#when-a-local-source-is-unavailable}
++
++When a local model, Ollama, or LM Studio stops responding, Phi follows the setting **When a local or self-hosted source is unavailable**:
++
++- **Automatically fall back to Phi Cloud (default)**. The affected tasks use Phi Cloud for the time being, so AI features keep working. It also means that, during that time, their content goes to the cloud.
++- **Pause affected AI features (never send data to the cloud)**. The affected features pause until the local source responds again.
++
++If the reason you turned on Private AI is to keep content on this Mac, choose the second option.
++
++This setting covers local and self-hosted sources only. When a cloud provider such as OpenAI, OpenRouter, or Codex fails, Phi does not switch to Phi Cloud.
++
++When something goes wrong, the Private AI page shows **Needs attention**, with a **Restart local service** button.
++
++## Using Codex {#using-codex}
++
++If you have a ChatGPT subscription and have signed in to Codex on this Mac, you can use that subscription as an AI provider. Go to **Settings → AI providers → Codex** and click **Connect**. Phi uses the sign-in Codex already keeps, without copying your credentials.
++
++- Install Codex and run `codex login` in Terminal first. Phi cannot read a Codex sign-in stored in the Keychain.
++- Codex can serve Chat, Memory, Web tasks, and Vision fallback, but not Data search.
++- What Codex does counts toward your ChatGPT subscription's limits. If you run out, or the sign-in stops working, Phi does not switch to another source.
++
++## Turning off and resetting {#turning-off-and-resetting}
++
++- **Turn off Private AI** with its switch. Every task goes back to Phi Cloud at once, and the downloaded models and your choices are kept.
++- **Remove a provider** with **Remove provider** on its page. Tasks that used it go back to Phi Cloud.
++- **Reset** with **Reset AI settings** under **Advanced settings**. It moves every task back to Phi Cloud, clears your providers and their API keys, and deletes the local models.
++
++## What's next
++
++- [Meet your assistant](/ai/), what the assistant can do for you.
++- [Phi Sentinel](/sentinel/), the background service that runs Private AI.
++- [Privacy & Your Data](/privacy/), where your data lives and what Phi sends.
+diff --git a/site/sentinel/index.md b/site/sentinel/index.md
+index d3d7c78..f8d4e4c 100644
+--- a/site/sentinel/index.md
++++ b/site/sentinel/index.md
+@@ -1,47 +1,67 @@
+ ---
+-description: "Understand Phi Sentinel, the macOS menu bar companion that keeps automation running and can route some AI tasks through Private AI on your Mac."
++description: "Understand Phi Sentinel, Phi's background service manager on your Mac, which runs the services behind the assistant, keeps their data, and lets scheduled tasks run after the browser closes."
+ ---
+ 
+ # Phi Sentinel
+ 
+-Phi Sentinel is a small companion app that lives in the macOS **menu bar**, separate from the browser. Keeping it apart is deliberate: the browser stays light while a quiet background layer keeps working even when no window is open. It does two main jobs: it keeps your automation running, and it hosts **Private AI**. Its menu also has **Open Phi Chat**, a quick way into [Phi Chat](/phi-chat/) from anywhere.
++Phi Sentinel manages Phi's background services on your Mac. Much of what the assistant does happens outside the browser window: running scheduled tasks, building your Memory, searching the data you have connected, and sending AI requests where they need to go. A set of services running in the background does that work, and Phi Sentinel keeps them running properly.
+ 
+-## Keeping automation running
++It is installed with Phi Browser, and day to day you do not need to do anything with it. In Phi Chat's settings, these services are simply called **Background services**.
+ 
+-Some of what Phi does is meant to outlive the moment you asked for it. [Scheduled tasks](/automation/#scheduled-tasks) need to keep running on their own schedule even after you close the browser window, and that is what Phi Sentinel is for. It executes those tasks, keeps your AI task history, and lets automation continue in the background, so a price check every few hours or a page you are watching keeps going whether or not a browser window is open.
++## What it does {#what-it-does}
+ 
+-## Private AI
++### Running background services {#running-background-services}
+ 
+-Normally Phi's AI tasks are handled by **Phi Cloud**. **Private AI** is the option to run some of them **on your Mac instead**, or through a model provider you choose, so that work never leaves your machine.
++Inside Phi Sentinel is a process called the **Runner**, whose only job is managing the background services. It handles:
+ 
+-It is **opt-in and off by default**. When you turn it on, you get a few things in return:
++- **Starting and watching over them.** It starts each service when it is needed, checks regularly that it is healthy, and restarts it when something goes wrong.
++- **Updates.** It downloads and installs new versions of the services in the background. It checks each update's signature first, and goes back to the previous version if a new one does not run properly.
++- **Passing on your settings.** It hands the choices you make in settings, such as the task sources in [Private AI](/private-ai/), to the services that need them.
+ 
+-- **Privacy.** For the tasks that run locally, the data stays on your Mac and is not sent to a cloud model.
+-- **Offline.** Those tasks keep working without an internet connection.
+-- **No per-request cost.** Running on your own hardware has no usage charge.
++The Runner only keeps the services running. It does not handle your content: your conversations, pages, and data are processed by the services themselves and never pass through the Runner.
+ 
+-### It works task by task
++The services it manages include:
+ 
+-Private AI is not all-or-nothing. It applies per task, and Phi is honest about which ones it can take over. With the model it sets up for you, **Memory** and **Data search** run on your Mac by default, while **Chat** and **Web tasks** stay on **Phi Cloud**, because those need a stronger model than the lightweight one shipped for background work, and they only move on-device if you install a larger one. The Private AI screen shows this as coverage, meaning how many of your AI tasks are running privately versus still going to Phi Cloud, so you always know where each kind of work is happening.
++- **The assistant service**, which keeps your conversations and tasks, and runs scheduled and background tasks.
++- **The Memory service**, which builds your Memory from your browsing.
++- **The data indexing service**, which indexes the data you connect so Data search can find it.
++- **The AI Gateway**, which sends each AI request to the source you chose for it. That is Phi Cloud by default, and with Private AI turned on it can be a local model or a provider of your own.
++- **AI Guardrail**, which checks text for sensitive information on this Mac. See below.
++- **Local models**, installed and run only after you set up Private AI.
+ 
+-### Bring your own provider
++### Keeping secrets out of Memory {#ai-guardrail}
+ 
+-On-device models are not the only option. You can also point a task at a model provider you run yourself, for example **Ollama**, **LM Studio**, or any OpenAI-compatible endpoint, and Phi will route that task there instead of to Phi Cloud.
++**AI Guardrail** is a detection service that runs on your Mac. Before the Memory service saves something new, it asks AI Guardrail to check it. If it finds a secret such as a password, an API key, a private key, a recovery phrase, or a recovery code, the whole item is left out of your Memory.
+ 
+-### What you need
++- The check happens entirely on this Mac. What it checks is not sent anywhere.
++- It only keeps secrets out and never rewrites anything. Ordinary personal details such as names and phone numbers are saved as usual, and you can review and delete them in [Memory](/memory/).
+ 
+-Private AI works best on an **Apple Silicon** Mac with at least **16 GB of RAM**. When you enable it, setup checks your hardware and free disk space and downloads what it needs before turning the local models on.
++### Keeping your data {#keeping-your-data}
+ 
+-### Turning it on
++The services keep their data on your Mac, in local databases: your conversations, your tasks and their runs, your Memory, and the index of your connected data.
+ 
+-Open Phi Sentinel from the menu bar, find **Private AI** in its settings, and switch it on. From there it walks you through setup and shows you which tasks have moved on-device once it is ready.
++In Phi Chat, under **Settings → Backup and updates**, you can:
+ 
+-## Staying in control
++- **Export data**, saving a copy of your settings and data to move to another Mac. Provider API keys are not included.
++- **Local snapshot**, saving a copy on this Mac that you can go back to. Snapshots never leave this Mac.
+ 
+-Private AI deepens Phi's local-first approach: it lets the AI itself run on your own machine, not just your memory. For where your data lives and what Phi does and does not collect, see [Privacy & Your Data](/privacy/).
++### Keeping tasks running after the browser closes {#keeping-tasks-running}
++
++[Scheduled tasks](/automation/#scheduled-tasks) need to run on their own schedule whether or not a browser window is open. Because Phi Sentinel runs separately from the browser, a price check every few hours or a page you are watching keeps going after you close the browser window.
++
++## Checking on the background services {#checking-status}
++
++Open the settings in Phi Chat:
++
++- **General** shows whether the background services are running properly and which version you have, with **Restart background services**.
++- **Services** shows the state of each service. When it says **Everything is working**, there is nothing to do.
++- **Logs** is for when something is wrong and you want to report it. Click **Save** next to **Diagnostic logs**, and Phi saves a ZIP file to your Downloads folder that you can send to Phi support.
++
++In the browser, under **Settings → Phi & AI → Phi Sentinel**, you can choose whether to **Launch Phi Sentinel when you sign in to your Mac**, and whether to **Summon Phi Chat with Shift Shift Shift** (see [Phi Chat](/phi-chat/#opening-phi-chat)).
+ 
+ ## What's next
+ 
++- [Private AI](/private-ai/), running AI tasks on your Mac or with your own AI provider.
+ - [Automation & Phi Link](/automation/), on-demand actions, scheduled tasks, and using Phi from Telegram.
+ - [Privacy & Your Data](/privacy/), where your data lives and how to stay in control.
+ - [FAQ](/faq/#phi-sentinel), quick answers about Phi Sentinel.
+diff --git a/site/tips-and-shortcuts/index.md b/site/tips-and-shortcuts/index.md
+index c4b9a83..f595c68 100644
+--- a/site/tips-and-shortcuts/index.md
++++ b/site/tips-and-shortcuts/index.md
+@@ -148,7 +148,7 @@ Click **Export…** to save your edited image as PNG, JPG, or PDF.
+ 
+ To start conversations without the current tab attached, turn off **Automatically add current tab as context to new conversation** under **Settings → Phi & AI → AI Sidebar**.
+ 
+-When you use Phi Cloud, the content needed to answer your question is sent to a third-party model provider for processing. With Private AI, it stays on your Mac. See [Privacy & Your Data](/privacy/) for details.
++When you use Phi Cloud, the content needed to answer your question is sent to a third-party model provider for processing. With [Private AI](/private-ai/) and a model on your Mac, it stays on your Mac. See [Privacy & Your Data](/privacy/) for details.
+ 
+ ## What's next
+ 
+diff --git a/site/what-is-phi-browser/index.md b/site/what-is-phi-browser/index.md
+index fd1eb00..942e440 100644
+--- a/site/what-is-phi-browser/index.md
++++ b/site/what-is-phi-browser/index.md
+@@ -31,7 +31,7 @@ Read [Meet your assistant](/ai/) for Memory, talking to it, and Skills, and [Aut
+ 
+ Phi is local-first. What Phi remembers lives on your Mac, is never used to train AI models, and stays under your control. You can view it, manage it, and delete it.
+ 
+-There is a second half to that, and it is worth knowing before you rely on it: when the assistant answers a question, the content needed to answer goes to the model provider you picked, because that is the only way a model can answer. It passes through us without being stored. If you would rather it never left your Mac at all, [Phi Sentinel](/sentinel/) can run models locally instead.
++There is a second half to that, and it is worth knowing before you rely on it: when the assistant answers a question, the content needed to answer goes to a model provider, because that is the only way a model can answer. With Phi Cloud, it passes through us without being stored. If you would rather it never left your Mac at all, [Private AI](/private-ai/) can run some tasks on your Mac instead.
+ 
+ See [Privacy & Your Data](/privacy/) for the details.
+ 
+@@ -51,7 +51,8 @@ See [Privacy & Your Data](/privacy/) for the details.
+ - [The phi-browser skill](/phi-browser-skill/), letting an outside AI agent drive Phi.
+ - [New Tab & Widgets](/new-tab/), the personalized new tab and its widgets.
+ - [Automation & Phi Link](/automation/), agentic tasks, Phi Sentinel, and Telegram.
+-- [Phi Sentinel](/sentinel/), the background app that runs automation and hosts Private AI.
++- [Private AI](/private-ai/), running AI on your Mac or with your own AI provider, and what Phi Cloud is.
++- [Phi Sentinel](/sentinel/), the background services behind automation and Private AI.
+ - [Agent Password Manager](/agent-passwords/), how agents sign in without seeing your passwords.
+ - [Privacy & Your Data](/privacy/), how your data is handled.
+ - [Time Machine Backups](/time-machine/), rolling back to a previous version after a major update.

@@ -55,7 +55,7 @@ De optie verdwijnt wanneer de oorspronkelijke Space of het oorspronkelijke Profi
 
 ### Gebruikslimieten {#usage-limits}
 
-De assistent heeft een gebruikstegoed. Bereik je dat, dan meldt een banner boven het berichtveld dat en, als er een vast tijdstip is, wanneer je verder kunt. Tot dan kun je nog typen, maar niet versturen. Geheugen, widgets en taken die via [Privé-AI](/nl/sentinel/#private-ai) lopen, hebben hier geen last van. Phi toont niet hoeveel van het tegoed er nog over is.
+De assistent heeft een gebruikstegoed. Bereik je dat, dan meldt een banner boven het berichtveld dat en, als er een vast tijdstip is, wanneer je verder kunt. Tot dan kun je nog typen, maar niet versturen. Geheugen, widgets en taken die via [Privé-AI](/nl/private-ai/) lopen, hebben hier geen last van. Phi toont niet hoeveel van het tegoed er nog over is.
 
 ## Chatten met tabbladen {#chat-with-tabs}
 
@@ -73,7 +73,7 @@ Browser Skills zijn herbruikbare workflows. Leer hem één keer een taak met mee
 
 Goed om te weten, want "ingebouwd" kan klinken als "verlaat je Mac nooit". Geheugen blijft inderdaad op je apparaat. Je vragen niet: stel je iets, dan gaat de inhoud die nodig is om te antwoorden naar de aanbieder van het model dat je gebruikt, want alleen zo kan een model antwoorden. Het passeert ons zonder te worden opgeslagen, en het komt daar aan onder ons account in plaats van het jouwe, dus de aanbieder krijgt niet te horen wie je bent.
 
-Wil je dat de AI zelf op je Mac draait, dan biedt [Phi Sentinel](/nl/sentinel/) Privé-AI, waarmee sommige taken volledig lokaal blijven. [Privacy en je gegevens](/nl/privacy/) behandelt dit alles grondig.
+Wil je dat de AI zelf op je Mac draait, of wil je een eigen AI-provider gebruiken, zie dan [Privé-AI](/nl/private-ai/). [Privacy en je gegevens](/nl/privacy/) behandelt dit alles grondig.
 
 ## Verder lezen
 

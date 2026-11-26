@@ -55,7 +55,7 @@ La opción desaparece si el Espacio o el Perfil original se ha eliminado, o si e
 
 ### Límites de uso {#usage-limits}
 
-El asistente tiene un límite de uso. Si lo alcanzas, un aviso encima del cuadro de mensaje te lo indica y, cuando hay una hora fijada, te dice cuándo puedes continuar. Hasta entonces puedes seguir escribiendo, pero no enviar. La Memoria, los widgets y las tareas que se ejecutan a través de la [IA privada](/es/sentinel/#private-ai) no se ven afectados. Phi no muestra cuánto te queda del límite.
+El asistente tiene un límite de uso. Si lo alcanzas, un aviso encima del cuadro de mensaje te lo indica y, cuando hay una hora fijada, te dice cuándo puedes continuar. Hasta entonces puedes seguir escribiendo, pero no enviar. La Memoria, los widgets y las tareas que se ejecutan a través de la [IA privada](/es/private-ai/) no se ven afectados. Phi no muestra cuánto te queda del límite.
 
 ## Chat con pestañas {#chat-with-tabs}
 
@@ -73,7 +73,7 @@ Las Habilidades del navegador son flujos de trabajo reutilizables. Enséñale un
 
 Conviene saberlo, porque "integrado" puede sonar a "nunca sale de tu Mac". La Memoria sí se queda en tu dispositivo. Tus preguntas no: cuando preguntas algo, el contenido necesario para responder va al proveedor del modelo que estés usando, porque es la única forma en que un modelo puede responder. Pasa a través de nosotros sin almacenarse, y llega bajo nuestra cuenta y no bajo la tuya, de modo que al proveedor no se le dice quién eres.
 
-Si quieres que la propia IA se ejecute en tu Mac, [Phi Sentinel](/es/sentinel/) ofrece IA privada, que mantiene algunas tareas totalmente en local. [Privacidad y tus datos](/es/privacy/) trata todo esto en detalle.
+Si quieres que la propia IA se ejecute en tu Mac, o usar un proveedor de IA propio, consulta [IA privada](/es/private-ai/). [Privacidad y tus datos](/es/privacy/) trata todo esto en detalle.
 
 ## Próximos pasos
 

@@ -1,5 +1,5 @@
 ---
-description: "快速查找关于 Phi Browser 布局、空间、无痕空间、书签、分屏视图、同步、AI 功能、Phi Sentinel、Phi Link、定价、隐私和时间机器备份的答案。"
+description: "快速查找关于 Phi Browser 布局、空间、无痕空间、书签、分屏视图、同步、AI 功能、私有 AI、Phi Sentinel、Phi Link、定价、隐私和时间机器备份的答案。"
 ---
 
 # 常见问题
@@ -260,18 +260,40 @@ Phi 记忆是一套系统，随着时间推移从你的浏览行为中构建上�
 按你设定的时间表循环运行的自动化，比如监控某件商品的价格，或者盯着某个页面的变化。
 :::
 
+## 私有 AI {#private-ai}
+
+::: details 什么是 Phi Cloud？它是智能体吗？
+不是。助手才是智能体：由它决定要做什么。Phi Cloud 是 Phi 内置的 AI 服务，默认为助手提供思考所用的模型。它使用你的 Phi 登录，不需要 API 密钥，并且计入你的用量额度。见[助手、Phi Cloud 和 AI 提供商](/zh-Hans/private-ai/#assistant-phi-cloud-and-providers)。
+:::
+
+::: details Phi Cloud 和 Ollama、OpenAI 这类 AI 提供商是什么关系？
+它们是同一项工作的不同选择。每类 AI 任务（比如对话或网页任务）都从一个来源获取模型：Phi Cloud、你 Mac 上的本地模型，或者你自己连接的提供商。Phi Cloud 是内置的默认来源，其他来源需要你自己配置。见[几种来源的区别](/zh-Hans/private-ai/#comparing-sources)。
+:::
+
+::: details Phi 会使用我添加的 AI 提供商吗？
+只用于你分配给它的任务，而且只在私有 AI 打开时使用。只是添加一个提供商，什么都不会改变；没有改过来源的任务都继续使用 Phi Cloud。见 [Phi 什么时候会用你的提供商](/zh-Hans/private-ai/#when-phi-uses-your-provider)。
+:::
+
+::: details 私有 AI 会让所有内容都留在我的 Mac 上吗？
+只有使用你 Mac 上或你自己局域网里模型的任务才会。交给 OpenAI 等云端提供商的任务会发给那个提供商。默认情况下，本地来源没有响应时，受影响的任务会暂时回退到 Phi Cloud；要避免这种情况，请选择**暂停受影响的 AI 功能（绝不向云端发送数据）**。见[本地来源不可用时](/zh-Hans/private-ai/#when-a-local-source-is-unavailable)。
+:::
+
+::: details 要在我的 Mac 上运行模型，需要什么条件？
+一台搭载 Apple 芯片、至少有 16GB 内存和 10GB 可用磁盘空间的 Mac。对话和网页任务需要更大的模型，实际上意味着 32GB 或更多内存。见[配置要求](/zh-Hans/private-ai/#requirements)和[推荐模型](/zh-Hans/private-ai/#recommended-models)。
+:::
+
 ## Phi Sentinel {#phi-sentinel}
 
 ::: details 什么是 Phi Sentinel？
-Phi Sentinel 是 Phi Browser 的后台 AI 编排器。它执行定时任务，保存你的 AI 任务历史记录，从 macOS 菜单栏运行。
+Phi Sentinel 管理 Phi 在你 Mac 上的后台服务：负责执行你的任务、整理你的记忆、为你连接的数据建立索引，以及调度 AI 请求的那些服务。它的 Runner 负责启动、看护和更新这些服务。见 [Phi Sentinel](/zh-Hans/sentinel/)。
 :::
 
 ::: details 为什么 Phi Sentinel 和浏览器是分开的？
-这样即使浏览器窗口关闭了，定时任务和持续运行的 AI 工作流也能继续。
+这样即使浏览器窗口关闭了，定时任务和其他后台服务也能继续运行，浏览器本身也能保持轻量。
 :::
 
-::: details 为什么这样设计？
-让浏览器保持轻量，同时维持一个持续运行的自动化层，整个系统会更实用。
+::: details 在哪里找到私有 AI 设置？
+在 Phi Chat 中，点按设置（齿轮）按钮，选择**私有 AI**。在浏览器中，前往**设置 → Phi 与 AI → Phi Sentinel → 私有 AI**。见[私有 AI](/zh-Hans/private-ai/#turning-on-private-ai)。
 :::
 
 ## Phi Link

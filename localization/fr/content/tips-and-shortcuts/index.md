@@ -148,7 +148,7 @@ Cliquez sur **Exporter…** pour enregistrer l'image modifiée au format PNG, JP
 
 Pour démarrer des conversations sans joindre l'onglet actuel, désactivez **Ajouter automatiquement l'onglet actif comme contexte aux nouvelles conversations** dans **Paramètres → Phi et IA → Barre latérale IA**.
 
-Quand vous utilisez Phi Cloud, le contenu nécessaire pour répondre à votre question est envoyé à un fournisseur de modèle tiers pour traitement. Avec l'IA privée, il reste sur votre Mac. Consultez [Confidentialité et vos données](/fr/privacy/) pour les détails.
+Quand vous utilisez Phi Cloud, le contenu nécessaire pour répondre à votre question est envoyé à un fournisseur de modèle tiers pour traitement. Avec l'[IA privée](/fr/private-ai/) et un modèle sur votre Mac, il reste sur votre Mac. Consultez [Confidentialité et vos données](/fr/privacy/) pour les détails.
 
 ## Pour continuer
 

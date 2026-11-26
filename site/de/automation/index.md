@@ -54,7 +54,7 @@ Hat eine Unterhaltung Aufgaben, erscheint in ihrer oberen Leiste eine Uhr-Taste 
 
 Das Menü **…** der Aufgabe enthält **Jetzt ausführen** sowie **Zeitplan pausieren** oder **Zeitplan fortsetzen**.
 
-Im Feld lassen sich Aufgaben weder bearbeiten noch löschen. Um zu ändern, was eine Aufgabe tut, oder um sie zu löschen, frage den Assistenten in der Unterhaltung der Aufgabe oder nutze die Seite **Aufgaben** in Phi Sentinel.
+Im Feld lassen sich Aufgaben weder bearbeiten noch löschen. Um zu ändern, was eine Aufgabe tut, oder um sie zu löschen, frage den Assistenten in der Unterhaltung der Aufgabe oder nutze **Aufgabenverwaltung** in [Phi Chat](/de/phi-chat/), die Taste links neben der Suche oben in der Liste der Unterhaltungen.
 
 ### Wenn Phi nicht lief
 
@@ -77,7 +77,7 @@ Was der Agent auf deine Anweisung hin tut, tut er als du, aus deinem Browser, mi
 
 ## Phi Sentinel
 
-Geplante Aufgaben müssen weiterlaufen, auch wenn das Browserfenster geschlossen ist. **Phi Sentinel** ist die Hintergrund-App in der macOS-Menüleiste, die das möglich macht. Sie beherbergt außerdem die Private KI, also die Möglichkeit, einen Teil der KI auf deinem eigenen Mac laufen zu lassen. Das ganze Bild findest du unter [Phi Sentinel](/de/sentinel/).
+Geplante Aufgaben müssen weiterlaufen, auch wenn das Browserfenster geschlossen ist. **Phi Sentinel** macht das möglich: Es führt die Hintergrunddienste von Phi aus, darunter den, der deine Aufgaben ausführt, getrennt vom Browser. Das ganze Bild findest du unter [Phi Sentinel](/de/sentinel/) und unter [Private KI](/de/private-ai/), wenn Aufgaben ein Modell auf deinem Mac oder deinen eigenen KI-Anbieter nutzen sollen.
 
 ## Phi Link
 

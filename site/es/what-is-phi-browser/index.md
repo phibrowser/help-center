@@ -31,7 +31,7 @@ Lee [Conoce a tu asistente](/es/ai/) para la Memoria, cómo hablar con él y las
 
 Phi trabaja primero en local. Lo que Phi recuerda vive en tu Mac, nunca se usa para entrenar modelos de IA y permanece bajo tu control. Puedes verlo, gestionarlo y eliminarlo.
 
-Hay una segunda mitad, y conviene conocerla antes de confiar en ello: cuando el asistente responde una pregunta, el contenido necesario para responder se envía al proveedor de modelos que hayas elegido, porque es la única manera de que un modelo pueda responder. Pasa por nosotros sin que lo almacenemos. Si prefieres que nunca salga de tu Mac, [Phi Sentinel](/es/sentinel/) puede ejecutar modelos en local.
+Hay una segunda mitad, y conviene conocerla antes de confiar en ello: cuando el asistente responde una pregunta, el contenido necesario para responder se envía a un proveedor de modelos, porque es la única manera de que un modelo pueda responder. Con Phi Cloud, pasa por nosotros sin que lo almacenemos. Si prefieres que nunca salga de tu Mac, la [IA privada](/es/private-ai/) puede ejecutar algunas tareas en tu Mac.
 
 Consulta [Privacidad y tus datos](/es/privacy/) para los detalles.
 
@@ -51,7 +51,8 @@ Consulta [Privacidad y tus datos](/es/privacy/) para los detalles.
 - [La habilidad phi-browser](/es/phi-browser-skill/), permitir que un agente de IA externo controle Phi.
 - [Nueva pestaña y widgets](/es/new-tab/), la nueva pestaña personalizada y sus widgets.
 - [Automatización y Phi Link](/es/automation/), tareas agénticas, Phi Sentinel y Telegram.
-- [Phi Sentinel](/es/sentinel/), la app en segundo plano que ejecuta la automatización y aloja la IA privada.
+- [IA privada](/es/private-ai/), ejecutar la IA en tu Mac o con tu propio proveedor de IA, y qué es Phi Cloud.
+- [Phi Sentinel](/es/sentinel/), los servicios en segundo plano en los que se apoyan la automatización y la IA privada.
 - [Administrador de contraseñas del agente](/es/agent-passwords/), cómo inician sesión los agentes sin ver tus contraseñas.
 - [Privacidad y tus datos](/es/privacy/), cómo se tratan tus datos.
 - [Copias de seguridad de Time Machine](/es/time-machine/), volver a una versión anterior tras una actualización importante.
